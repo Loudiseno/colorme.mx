@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-nunito: 'Nunito Sans', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-nunito);
+  background-color: #FDF8F3;
+  color: #2A2A2A;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Soft background texture */
+.bg-watercolor {
+  background: 
+    radial-gradient(ellipse at 20% 30%, rgba(232, 213, 213, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(212, 223, 230, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(197, 207, 198, 0.2) 0%, transparent 60%);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply inline-block px-8 py-4 bg-terracotta text-cream rounded-full 
+         font-medium tracking-wide transition-all duration-300
+         hover:bg-clay hover:shadow-lg hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply inline-block px-8 py-4 border border-clay text-clay rounded-full 
+         font-medium tracking-wide transition-all duration-300
+         hover:bg-clay hover:text-cream;
+}
+
+/* Link underline animation */
+.link-hover {
+  @apply relative;
+}
+
+.link-hover::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-px bg-current transition-all duration-300;
+}
+
+.link-hover:hover::after {
+  @apply w-full;
+}
+
+/* Form inputs */
+input, textarea, select {
+  @apply w-full px-4 py-3 bg-white/60 border border-sand rounded-lg
+         text-ink placeholder:text-clay/60
+         focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20
+         transition-all duration-200;
+}
+
+/* Section spacing */
+.section {
+  @apply py-16 md:py-24 lg:py-32;
+}
+
+/* Card hover */
+.card-lift {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+}
