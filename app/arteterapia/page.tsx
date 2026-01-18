@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import Script from 'next/script'
 import { ArrowLeft, Check, Calendar } from 'lucide-react'
 import { siteConfig, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/seo'
@@ -40,13 +41,30 @@ const benefits = [
   'Transformar el dolor en creación',
 ]
 
-const forWhom = [
-  'Personas atravesando procesos de duelo',
-  'Quienes buscan autoconocimiento y crecimiento personal',
-  'Personas con ansiedad, estrés o dificultades emocionales',
-  'Quienes tienen dificultad para expresar sus emociones verbalmente',
-  'Personas en procesos de cambio o transición',
-  'Cualquiera que quiera explorar el arte como herramienta de sanación',
+const audiences = [
+  {
+    title: 'Niños',
+    description: 'El arte les permite expresar lo que aún no saben nombrar.',
+    image: '/helado.png',
+  },
+  {
+    title: 'Adolescentes',
+    description: 'Un espacio seguro para explorar su identidad y emociones.',
+    image: '/adolecente.png',
+  },
+  {
+    title: 'Adultos',
+    description: 'Reconectar con la creatividad y procesar experiencias de vida.',
+    image: '/cafe.png',
+  },
+]
+
+const helpsWith = [
+  { icon: '/Frame 20.png', text: 'Esperanza y transformación' },
+  { icon: '/Frame 21.png', text: 'Expresión emocional' },
+  { icon: '/Frame 22.png', text: 'Cambios de vida' },
+  { icon: '/Frame 23.png', text: 'Autodescubrimiento' },
+  { icon: '/Frame 24.png', text: 'Procesamiento de duelo' },
 ]
 
 export default function ArteterapiaPage() {
@@ -76,11 +94,14 @@ export default function ArteterapiaPage() {
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-blush/20">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-mist/30 relative overflow-hidden">
+        <div className="absolute top-20 right-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl" />
+        <div className="absolute bottom-10 left-20 w-24 h-24 rounded-full bg-cyan/10 blur-xl" />
+
+        <div className="max-w-4xl mx-auto px-6 relative z-10">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-charcoal/60 hover:text-terracotta transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-charcoal/60 hover:text-teal transition-colors mb-8"
           >
             <ArrowLeft size={18} />
             Volver al inicio
@@ -89,7 +110,7 @@ export default function ArteterapiaPage() {
             Arteterapia
           </h1>
           <p className="text-xl text-charcoal/80 leading-relaxed max-w-2xl">
-            Acompañamiento emocional a través del arte para expresar, comprender 
+            Acompañamiento emocional a través del arte para expresar, comprender
             y transformar emociones. No necesitas saber dibujar ni tener experiencia artística.
           </p>
         </div>
@@ -103,55 +124,103 @@ export default function ArteterapiaPage() {
           </h2>
           <div className="space-y-4 text-charcoal/80 leading-relaxed">
             <p>
-              La arteterapia es una forma de acompañamiento terapéutico que utiliza 
-              el proceso creativo como herramienta para la expresión emocional y el 
-              autoconocimiento. A través del dibujo, la pintura, el collage, el modelado 
-              y otras técnicas artísticas, puedes explorar y comunicar lo que a veces 
+              La arteterapia es una forma de acompañamiento terapéutico que utiliza
+              el proceso creativo como herramienta para la expresión emocional y el
+              autoconocimiento. A través del dibujo, la pintura, el collage, el modelado
+              y otras técnicas artísticas, puedes explorar y comunicar lo que a veces
               es difícil expresar con palabras.
             </p>
             <p>
-              En las sesiones de arteterapia, <strong>no importa el resultado estético</strong>. 
-              No se trata de crear algo "bonito" o de tener habilidades artísticas. 
-              El foco está en el proceso: en lo que surge mientras creas, en las emociones 
+              En las sesiones de arteterapia, <strong className="text-teal">no importa el resultado estético</strong>.
+              No se trata de crear algo "bonito" o de tener habilidades artísticas.
+              El foco está en el proceso: en lo que surge mientras creas, en las emociones
               que emergen, en los descubrimientos que haces sobre ti mismo/a.
             </p>
             <p>
-              Como arteterapeuta, te acompaño en este proceso de exploración, creando 
-              un espacio seguro donde puedas expresarte libremente y trabajar con lo 
+              Como arteterapeuta, te acompaño en este proceso de exploración, creando
+              un espacio seguro donde puedas expresarte libremente y trabajar con lo
               que aparece, sin juicios ni expectativas.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="section bg-sand/30">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-8">
-            Beneficios de la arteterapia
+      {/* Who is it for */}
+      <section className="section bg-frost/30">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="font-display text-3xl md:text-4xl text-ink mb-8 text-center">
+            ¿Para quién es la arteterapia?
           </h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <Check className="text-terracotta flex-shrink-0 mt-1" size={20} />
-                <span className="text-charcoal/80">{benefit}</span>
+          <div className="grid md:grid-cols-3 gap-8">
+            {audiences.map((audience, index) => (
+              <div key={index} className="text-center group">
+                <div className="relative w-48 h-48 mx-auto mb-6">
+                  <Image
+                    src={audience.image}
+                    alt={audience.title}
+                    fill
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <h3 className="font-display text-2xl text-ink mb-2">{audience.title}</h3>
+                <p className="text-charcoal/70">{audience.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* For whom */}
+      {/* Benefits */}
       <section className="section">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-display text-3xl md:text-4xl text-ink mb-8">
+                Beneficios de la arteterapia
+              </h2>
+              <div className="grid gap-4">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-glow/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Check className="text-teal" size={14} />
+                    </div>
+                    <span className="text-charcoal/80">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                src="/AdobeStock_210373409-1024x683.jpeg"
+                alt="Arteterapia - Expresión a través del arte"
+                width={600}
+                height={400}
+                className="rounded-3xl shadow-2xl shadow-teal/10"
+              />
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-glow/30 rounded-full blur-xl -z-10" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What it helps with */}
+      <section className="section bg-canvas-soft">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-8">
-            ¿Para quién es la arteterapia?
+          <h2 className="font-display text-3xl md:text-4xl text-ink mb-10 text-center">
+            ¿En qué puede ayudarte?
           </h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {forWhom.map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-terracotta flex-shrink-0 mt-2" />
-                <span className="text-charcoal/80">{item}</span>
+          <div className="flex flex-wrap justify-center gap-8">
+            {helpsWith.map((item, index) => (
+              <div key={index} className="text-center group">
+                <div className="w-20 h-20 mx-auto mb-3 relative">
+                  <Image
+                    src={item.icon}
+                    alt={item.text}
+                    fill
+                    className="object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-base text-charcoal/70 max-w-[140px]">{item.text}</p>
               </div>
             ))}
           </div>
@@ -159,32 +228,32 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* How it works */}
-      <section className="section bg-blush/20">
+      <section className="section bg-mist/30">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-display text-3xl md:text-4xl text-ink mb-8">
             ¿Cómo funcionan las sesiones?
           </h2>
           <div className="space-y-6">
-            <div className="bg-cream rounded-2xl p-6">
+            <div className="bg-white rounded-2xl p-6 shadow-lg shadow-teal/5">
               <h3 className="font-display text-xl text-ink mb-2">Primera consulta gratuita</h3>
               <p className="text-charcoal/70">
-                Comenzamos con una breve conversación de 15 minutos donde me cuentas 
-                qué te trae aquí y juntos/as exploramos si la arteterapia es el camino 
+                Comenzamos con una breve conversación de 15 minutos donde me cuentas
+                qué te trae aquí y juntos/as exploramos si la arteterapia es el camino
                 adecuado para ti.
               </p>
             </div>
-            <div className="bg-cream rounded-2xl p-6">
+            <div className="bg-white rounded-2xl p-6 shadow-lg shadow-teal/5">
               <h3 className="font-display text-xl text-ink mb-2">Sesiones individuales</h3>
               <p className="text-charcoal/70">
-                Sesiones de 50 minutos donde trabajamos a tu ritmo, usando diferentes 
-                materiales y técnicas según lo que necesites explorar. Disponibles 
+                Sesiones de 50 minutos donde trabajamos a tu ritmo, usando diferentes
+                materiales y técnicas según lo que necesites explorar. Disponibles
                 presenciales u online.
               </p>
             </div>
-            <div className="bg-cream rounded-2xl p-6">
+            <div className="bg-white rounded-2xl p-6 shadow-lg shadow-teal/5">
               <h3 className="font-display text-xl text-ink mb-2">Talleres grupales</h3>
               <p className="text-charcoal/70">
-                Encuentros seguros para crear en comunidad, compartir experiencias 
+                Encuentros seguros para crear en comunidad, compartir experiencias
                 y sanar desde lo colectivo. La duración varía según el objetivo del taller.
               </p>
             </div>
@@ -199,14 +268,14 @@ export default function ArteterapiaPage() {
             ¿Listo/a para comenzar?
           </h2>
           <p className="text-charcoal/70 mb-8">
-            Agenda tu primera consulta gratuita y descubre cómo el arte puede 
+            Agenda tu primera consulta gratuita y descubre cómo el arte puede
             ayudarte en tu proceso.
           </p>
           <a
             href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center gap-2"
+            className="btn-gradient inline-flex items-center gap-2"
           >
             <Calendar size={18} />
             Agenda tu sesión gratuita

@@ -20,22 +20,29 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="py-24 md:py-32 flex items-center justify-center relative bg-watercolor pt-28 md:pt-32">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-ink mb-6">
-            <span className="block">Crea.</span>
-            <span className="block text-terracotta">Siente.</span>
-            <span className="block">Transforma.</span>
+      <section className="min-h-screen flex items-center justify-center relative bg-watercolor pt-20 overflow-hidden">
+        {/* Decorative floating elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 right-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl animate-float" />
+          <div className="absolute bottom-1/4 left-10 w-24 h-24 rounded-full bg-teal/10 blur-xl animate-float-delayed" />
+          <div className="absolute top-1/3 left-1/4 w-16 h-16 rounded-full bg-cyan/10 blur-lg animate-float-slow" />
+        </div>
+
+        <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-ink mb-8">
+            <span className="block opacity-0 animate-slide-up stagger-1">Crea.</span>
+            <span className="block text-teal opacity-0 animate-slide-up stagger-2">Siente.</span>
+            <span className="block opacity-0 animate-slide-up stagger-3">Transforma.</span>
           </h1>
-          <p className="text-lg md:text-xl text-charcoal/80 max-w-2xl mx-auto mb-10">
-            El lugar en donde puedes crear tu propia historia a través de la arteterapia 
+          <p className="text-lg md:text-xl text-charcoal/80 max-w-2xl mx-auto mb-10 opacity-0 animate-fade-up stagger-4">
+            El lugar en donde puedes crear tu propia historia a través de la arteterapia
             y la tanatología. Acompañamiento para sanar el duelo y transformar tus emociones.
           </p>
           <a
             href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
+            className="btn-gradient opacity-0 animate-fade-up stagger-5"
           >
             Agenda tu primera sesión ¡Gratis!
           </a>
@@ -43,15 +50,17 @@ export default function HomePage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 md:py-28 bg-sand/30">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <blockquote className="font-display text-2xl md:text-4xl text-ink leading-relaxed">
-            «Sanar no es seguir las líneas.
+      <section className="py-20 md:py-28 bg-mist/50 relative">
+        <div className="max-w-3xl mx-auto px-6 text-center relative">
+          <span className="quote-mark absolute -top-8 left-0 md:left-10">"</span>
+          <blockquote className="font-display text-2xl md:text-4xl text-ink leading-relaxed relative z-10">
+            Sanar no es seguir las líneas.
             <br />
-            <span className="text-terracotta">Es dibujar las tuyas propias.</span>»
+            <span className="text-teal">Es dibujar las tuyas propias.</span>
           </blockquote>
-          <p className="mt-8 text-charcoal/70">
-            No hay reglas ni caminos fijos. No se trata de vivir sin sentir, 
+          <span className="quote-mark absolute -bottom-16 right-0 md:right-10 rotate-180">"</span>
+          <p className="mt-12 text-charcoal/70 relative z-10">
+            No hay reglas ni caminos fijos. No se trata de vivir sin sentir,
             sino de dar espacio a las emociones, permitirnos habitarlas y transformarlas.
           </p>
         </div>
@@ -63,25 +72,25 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {/* Arteterapia Card */}
             <Link href="/arteterapia" className="group">
-              <article className="bg-blush/30 rounded-3xl overflow-hidden card-lift h-full flex flex-col">
-                <div className="relative aspect-[4/3] w-full">
+              <article className="bg-frost/50 rounded-3xl overflow-hidden card-lift h-full border border-teal-glow/30">
+                <div className="aspect-[4/3] relative overflow-hidden bg-mist/30">
                   <Image
                     src="/COLORME_logo-12-scaled.jpg"
-                    alt="Arteterapia - Color Me"
+                    alt="Arteterapia - Terapia a través del arte"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-8 lg:p-10 flex-1 flex flex-col">
-                  <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 group-hover:text-terracotta transition-colors">
+                <div className="p-8 lg:p-10">
+                  <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 group-hover:text-teal transition-colors">
                     Arteterapia
                   </h2>
-                  <p className="text-charcoal/70 leading-relaxed mb-6 flex-1">
+                  <p className="text-charcoal/70 leading-relaxed mb-6">
                     Acompañamiento emocional a través del arte para expresar, comprender
                     y transformar emociones, sin buscar resultados estéticos ni requerir
                     experiencia artística.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-terracotta font-medium">
+                  <span className="inline-flex items-center gap-2 text-teal font-medium">
                     Quiero saber más
                     <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
                   </span>
@@ -90,25 +99,25 @@ export default function HomePage() {
             </Link>
 
             {/* Tanatología Card */}
-            <Link href="/tanatologia" className="group">
-              <article className="bg-mist/30 rounded-3xl overflow-hidden card-lift h-full flex flex-col">
-                <div className="relative aspect-[4/3] w-full">
+            <Link href="/tanatologia" className="group md:mt-12">
+              <article className="bg-frost/50 rounded-3xl overflow-hidden card-lift h-full border border-teal-glow/30">
+                <div className="aspect-[4/3] relative overflow-hidden bg-mist/30">
                   <Image
                     src="/ojo-11-scaled.jpg"
-                    alt="Tanatología - Color Me"
+                    alt="Tanatología - Acompañamiento en duelo"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-8 lg:p-10 flex-1 flex flex-col">
-                  <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 group-hover:text-terracotta transition-colors">
+                <div className="p-8 lg:p-10">
+                  <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 group-hover:text-teal transition-colors">
                     Tanatología
                   </h2>
-                  <p className="text-charcoal/70 leading-relaxed mb-6 flex-1">
+                  <p className="text-charcoal/70 leading-relaxed mb-6">
                     Acompaña procesos de pérdida, cambio y duelo, ayudando a resignificar
                     lo vivido para seguir con sentido, desde un enfoque humano y compasivo.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-terracotta font-medium">
+                  <span className="inline-flex items-center gap-2 text-teal font-medium">
                     Quiero saber más
                     <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
                   </span>
@@ -120,36 +129,36 @@ export default function HomePage() {
       </section>
 
       {/* Session Types */}
-      <section className="section bg-cream">
+      <section className="section bg-canvas-soft">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-blush/50 flex items-center justify-center mx-auto mb-4">
-                <User className="text-terracotta" size={28} />
+            <div className="text-center group">
+              <div className="w-20 h-20 rounded-full bg-teal-glow/30 flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-glow/50 transition-colors duration-300">
+                <User className="text-teal" size={32} />
               </div>
               <h3 className="font-display text-xl text-ink mb-2">Terapias individuales</h3>
-              <p className="text-charcoal/70 text-sm">
-                Presenciales u online. Sesiones adaptadas a tu ritmo y proceso personal, 
+              <p className="text-charcoal/70">
+                Presenciales u online. Sesiones adaptadas a tu ritmo y proceso personal,
                 con un acompañamiento cercano.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-mist/50 flex items-center justify-center mx-auto mb-4">
-                <Users className="text-terracotta" size={28} />
+            <div className="text-center group">
+              <div className="w-20 h-20 rounded-full bg-teal-glow/30 flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-glow/50 transition-colors duration-300">
+                <Users className="text-teal" size={32} />
               </div>
               <h3 className="font-display text-xl text-ink mb-2">Talleres grupales</h3>
-              <p className="text-charcoal/70 text-sm">
-                Presenciales u online. Encuentros seguros para crear, compartir 
+              <p className="text-charcoal/70">
+                Presenciales u online. Encuentros seguros para crear, compartir
                 y sanar desde lo colectivo.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-sage/50 flex items-center justify-center mx-auto mb-4">
-                <Building2 className="text-terracotta" size={28} />
+            <div className="text-center group">
+              <div className="w-20 h-20 rounded-full bg-teal-glow/30 flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-glow/50 transition-colors duration-300">
+                <Building2 className="text-teal" size={32} />
               </div>
               <h3 className="font-display text-xl text-ink mb-2">Empresas y colectivos</h3>
-              <p className="text-charcoal/70 text-sm">
-                Presenciales u online. Espacios diseñados a medida según los 
+              <p className="text-charcoal/70">
+                Presenciales u online. Espacios diseñados a medida según los
                 objetivos del grupo.
               </p>
             </div>
@@ -174,63 +183,74 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <h2 className="font-display text-4xl md:text-5xl text-ink mb-6">Sobre mí</h2>
-              <p className="text-lg text-terracotta font-medium mb-4">
+              <p className="text-lg text-teal font-medium mb-4">
                 Diseñadora, artista, fotógrafa y tanatóloga.
               </p>
               <div className="space-y-4 text-charcoal/80 leading-relaxed">
                 <p>
-                  No siempre podemos elegir lo que nos pasa, pero sí cómo darle sentido. 
-                  Mi historia me enseñó que sentir también es sanar y que en medio del 
+                  No siempre podemos elegir lo que nos pasa, pero sí cómo darle sentido.
+                  Mi historia me enseñó que sentir también es sanar y que en medio del
                   dolor pueden nacer caminos nuevos.
                 </p>
                 <p>
-                  El arte y la tanatología fueron el refugio y la puerta de regreso a mí. 
-                  Hoy acompaño a otras personas en sus propios procesos de duelo, cambio 
-                  o cierre, creando espacios seguros para habitar lo que sienten y 
+                  El arte y la tanatología fueron el refugio y la puerta de regreso a mí.
+                  Hoy acompaño a otras personas en sus propios procesos de duelo, cambio
+                  o cierre, creando espacios seguros para habitar lo que sienten y
                   transformar lo vivido con respeto y creatividad.
                 </p>
               </div>
             </div>
-            <div className="relative rounded-3xl aspect-square overflow-hidden">
-              <Image
-                src="/Photography-Portfolio-Website-in-Grey-Black-Light-Experimental-Style_page-0001-2-1536x1502.jpg"
-                alt="Lourdes - Color Me"
-                fill
-                className="object-cover"
-              />
+            <div className="relative">
+              <div className="rounded-3xl overflow-hidden shadow-2xl shadow-teal/10">
+                <Image
+                  src="/Photography-Portfolio-Website-in-Grey-Black-Light-Experimental-Style_page-0001-2-1536x1502.jpg"
+                  alt="Lou - Arteterapeuta y Tanatóloga"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </div>
+              {/* Decorative element */}
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-glow/30 rounded-full blur-xl -z-10" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Book Section */}
-      <section className="section bg-sand/30" id="indeleble">
+      <section className="section bg-mist/30" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1 relative rounded-3xl aspect-[3/4] overflow-hidden">
-              <Image
-                src="/indeleble.png"
-                alt="Indeleble - Libro de Lourdes"
-                fill
-                className="object-cover"
-              />
+            <div className="order-2 lg:order-1 relative">
+              <div className="relative z-10">
+                <Image
+                  src="/indeleble.png"
+                  alt="Indeleble - Libro por Lou"
+                  width={600}
+                  height={450}
+                  className="w-full h-auto rounded-2xl shadow-2xl shadow-ink/10"
+                />
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-6 -left-6 w-32 h-32 bg-teal-glow/20 rounded-full blur-2xl" />
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-cyan/20 rounded-full blur-xl" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="font-display text-4xl md:text-5xl text-ink mb-2">Indeleble</h2>
-              <p className="text-lg text-terracotta font-medium mb-6">
+              <p className="text-lg text-teal font-medium mb-6">
                 Mi libro: Un testimonio real de transformación y resiliencia.
               </p>
               <div className="space-y-4 text-charcoal/80 leading-relaxed mb-8">
                 <p>
-                  Crees que eres invencible, hasta que la vida cambia en un instante. 
-                  Cuando el cáncer llega sin avisar, los sueños se detienen y la 
-                  incertidumbre lo envuelve todo. Pero también surge algo más: la 
-                  fuerza para enfrentar lo impensable y la capacidad de sanar, no 
+                  Crees que eres invencible, hasta que la vida cambia en un instante.
+                  Cuando el cáncer llega sin avisar, los sueños se detienen y la
+                  incertidumbre lo envuelve todo. Pero también surge algo más: la
+                  fuerza para enfrentar lo impensable y la capacidad de sanar, no
                   solo el cuerpo, sino el alma.
                 </p>
                 <p>
-                  Más que un testimonio sobre la enfermedad, es un relato sobre la vida, 
-                  la resiliencia y la belleza que persiste en el caos. Una historia 
+                  Más que un testimonio sobre la enfermedad, es un relato sobre la vida,
+                  la resiliencia y la belleza que persiste en el caos. Una historia
                   honesta y esperanzadora que te hará replantearte lo que realmente importa.
                 </p>
               </div>

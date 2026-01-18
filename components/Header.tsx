@@ -32,7 +32,9 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+        isScrolled
+          ? 'bg-canvas/95 backdrop-blur-lg shadow-sm py-3'
+          : 'bg-transparent py-5'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
@@ -43,7 +45,7 @@ export default function Header() {
             width={150}
             height={28}
             priority
-            className="h-7 md:h-8 w-auto"
+            className="h-8 md:h-9 w-auto"
           />
         </Link>
 
@@ -53,7 +55,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm tracking-wide text-charcoal link-hover hover:text-terracotta transition-colors"
+              className="text-sm font-medium tracking-wide text-charcoal link-hover hover:text-teal transition-colors"
             >
               {item.name}
             </Link>
@@ -68,7 +70,7 @@ export default function Header() {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-charcoal hover:text-terracotta transition-colors"
+              className="text-charcoal hover:text-teal transition-colors duration-300"
               aria-label={social.name}
             >
               <social.icon size={18} strokeWidth={1.5} />
@@ -79,17 +81,20 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-ink p-2"
+          className="md:hidden text-ink p-2 hover:text-teal transition-colors"
           aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Full Screen with Teal Gradient */}
         <div
-          className={`fixed inset-0 bg-cream/98 backdrop-blur-lg md:hidden transition-all duration-500 ${
+          className={`fixed inset-0 md:hidden transition-all duration-500 ${
             isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
           }`}
+          style={{
+            background: 'linear-gradient(135deg, #FEF9F6 0%, #F0FDFA 50%, #E6FFFE 100%)'
+          }}
         >
           <div className="flex flex-col items-center justify-center h-full gap-8">
             {navigation.map((item, index) => (
@@ -97,7 +102,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`font-display text-3xl text-ink hover:text-terracotta transition-all duration-300 ${
+                className={`font-display text-3xl text-ink hover:text-teal transition-all duration-300 ${
                   isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
@@ -106,13 +111,16 @@ export default function Header() {
               </Link>
             ))}
             <div className="flex items-center gap-6 mt-8">
-              {socials.map((social) => (
+              {socials.map((social, index) => (
                 <a
                   key={social.name}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-charcoal hover:text-terracotta transition-colors"
+                  className={`text-charcoal hover:text-teal transition-all duration-300 ${
+                    isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                  }`}
+                  style={{ transitionDelay: `${(navigation.length + index) * 100}ms` }}
                   aria-label={social.name}
                 >
                   <social.icon size={24} strokeWidth={1.5} />

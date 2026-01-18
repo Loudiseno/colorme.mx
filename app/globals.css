@@ -2,11 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
 :root {
-  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
-  --font-nunito: 'Nunito Sans', system-ui, sans-serif;
+  --font-lora: 'Lora', Georgia, serif;
+  --font-montserrat: 'Montserrat', system-ui, sans-serif;
+
+  /* Teal palette */
+  --color-teal: #0D9488;
+  --color-teal-light: #5EEAD4;
+  --color-teal-glow: #B2F7EF;
+  --color-teal-dark: #0F766E;
+  --color-cyan: #22D3EE;
+
+  /* Backgrounds */
+  --color-canvas: #FEF9F6;
+  --color-canvas-soft: #FFFBF8;
+  --color-mist: #F0FDFA;
+  --color-frost: #E6FFFE;
+
+  /* Text */
+  --color-ink: #1A1A2E;
+  --color-charcoal: #334155;
+  --color-slate: #64748B;
+
+  /* Gradients */
+  --gradient-teal: linear-gradient(135deg, #0D9488, #22D3EE);
+  --gradient-soft: radial-gradient(ellipse at 30% 20%, rgba(178,247,239,0.2), transparent 50%),
+                   radial-gradient(ellipse at 70% 80%, rgba(240,253,250,0.4), transparent 50%);
+  --shadow-glow: 0 0 40px rgba(13, 148, 136, 0.3);
+
+  /* Animation timing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 html {
@@ -14,37 +42,69 @@ html {
 }
 
 body {
-  font-family: var(--font-nunito);
-  background-color: #FDF8F3;
-  color: #2A2A2A;
+  font-family: var(--font-montserrat);
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
   line-height: 1.7;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 19px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-cormorant);
-  font-weight: 400;
-  line-height: 1.2;
+  font-family: var(--font-lora);
+  font-weight: 500;
+  line-height: 1.3;
 }
 
-/* Soft background texture */
+/* Soft background with teal tints */
 .bg-watercolor {
-  background: 
-    radial-gradient(ellipse at 20% 30%, rgba(232, 213, 213, 0.3) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 70%, rgba(212, 223, 230, 0.3) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(197, 207, 198, 0.2) 0%, transparent 60%);
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(178, 247, 239, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(240, 253, 250, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(94, 234, 212, 0.15) 0%, transparent 60%);
+}
+
+/* Noise texture overlay */
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* Button styles */
 .btn-primary {
-  @apply inline-block px-8 py-4 bg-terracotta text-cream rounded-full 
+  @apply inline-block px-8 py-4 bg-teal text-white rounded-full
          font-medium tracking-wide transition-all duration-300
-         hover:bg-clay hover:shadow-lg hover:-translate-y-0.5;
+         hover:bg-teal-dark hover:shadow-lg hover:-translate-y-0.5
+         hover:shadow-teal/30;
 }
 
 .btn-secondary {
-  @apply inline-block px-8 py-4 border border-clay text-clay rounded-full 
+  @apply inline-block px-8 py-4 border-2 border-teal text-teal rounded-full
          font-medium tracking-wide transition-all duration-300
-         hover:bg-clay hover:text-cream;
+         hover:bg-teal hover:text-white;
+}
+
+/* Gradient button */
+.btn-gradient {
+  @apply inline-block px-8 py-4 rounded-full font-medium tracking-wide
+         transition-all duration-300 text-white
+         hover:-translate-y-0.5;
+  background: var(--gradient-teal);
+  box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 6px 25px rgba(13, 148, 136, 0.45);
 }
 
 /* Link underline animation */
@@ -54,19 +114,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .link-hover::after {
   content: '';
-  @apply absolute bottom-0 left-0 w-0 h-px bg-current transition-all duration-300;
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-teal transition-all duration-300;
 }
 
 .link-hover:hover::after {
   @apply w-full;
 }
 
-/* Form inputs */
-input, textarea, select {
-  @apply w-full px-4 py-3 bg-white/60 border border-sand rounded-lg
-         text-ink placeholder:text-clay/60
-         focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20
-         transition-all duration-200;
+/* Form inputs with floating labels */
+.form-input {
+  @apply w-full px-4 py-3 bg-transparent border-b-2 border-silver
+         text-ink placeholder:text-slate/50
+         focus:outline-none focus:border-teal
+         transition-all duration-300;
+}
+
+.form-input:focus {
+  box-shadow: 0 2px 0 0 var(--color-teal);
+}
+
+/* Full styled input */
+.form-input-full {
+  @apply w-full px-4 py-3 bg-white/60 border-2 border-silver/50 rounded-xl
+         text-ink placeholder:text-slate/50
+         focus:outline-none focus:border-teal focus:ring-4 focus:ring-teal/10
+         transition-all duration-300;
 }
 
 /* Section spacing */
@@ -74,7 +146,97 @@ input, textarea, select {
   @apply py-16 md:py-24 lg:py-32;
 }
 
-/* Card hover */
+/* Card hover with lift and glow */
 .card-lift {
-  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  @apply transition-all duration-500;
+}
+
+.card-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(13, 148, 136, 0.15);
+}
+
+/* Frosted glass effect */
+.glass {
+  @apply bg-white/70 backdrop-blur-lg;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-teal {
+  @apply bg-teal-glow/20 backdrop-blur-lg;
+  border: 1px solid rgba(178, 247, 239, 0.3);
+}
+
+/* Staggered animation delays */
+.stagger-1 { animation-delay: 0ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 200ms; }
+.stagger-4 { animation-delay: 300ms; }
+.stagger-5 { animation-delay: 400ms; }
+.stagger-6 { animation-delay: 500ms; }
+
+/* Text gradient */
+.text-gradient {
+  background: var(--gradient-teal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Outlined text */
+.text-outline {
+  -webkit-text-stroke: 2px var(--color-teal);
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glow effect */
+.glow-teal {
+  box-shadow: var(--shadow-glow);
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out 2s infinite;
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 3D card tilt effect */
+.card-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-3d:hover {
+  transform: rotateY(5deg) rotateX(5deg);
+}
+
+/* Quote styling */
+.quote-mark {
+  @apply text-teal-glow/40 font-display;
+  font-size: 120px;
+  line-height: 1;
 }

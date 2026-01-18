@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Quote } from 'lucide-react'
 
 const testimonials = [
   {
@@ -40,21 +39,28 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <section className="section bg-sand/30">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <Quote size={48} className="mx-auto text-terracotta/30 mb-8" strokeWidth={1} />
+    <section className="section bg-frost/50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-teal-glow/10 blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-cyan/10 blur-2xl" />
+      </div>
+
+      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+        {/* Large quote mark */}
+        <span className="quote-mark block mb-4">"</span>
 
         <div className="min-h-[200px] flex items-center justify-center">
           <div
-            className={`transition-all duration-300 ${
-              isAnimating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+            className={`transition-all duration-500 ${
+              isAnimating ? 'opacity-0 translate-y-4 scale-95' : 'opacity-100 translate-y-0 scale-100'
             }`}
           >
             <blockquote className="font-display text-xl md:text-2xl lg:text-3xl text-ink leading-relaxed mb-8">
-              «{testimonials[current].quote}»
+              {testimonials[current].quote}
             </blockquote>
             <cite className="not-italic">
-              <span className="block font-medium text-terracotta">
+              <span className="block font-medium text-teal text-lg">
                 {testimonials[current].name}
               </span>
               <span className="block text-charcoal/60 text-sm mt-1">
@@ -64,6 +70,7 @@ export default function Testimonials() {
           </div>
         </div>
 
+        {/* Progress indicators */}
         <div className="flex items-center justify-center gap-3 mt-10">
           {testimonials.map((_, index) => (
             <button
@@ -75,8 +82,10 @@ export default function Testimonials() {
                   setIsAnimating(false)
                 }, 300)
               }}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === current ? 'bg-terracotta w-8' : 'bg-clay/30 w-2 hover:bg-clay/50'
+              className={`h-1 rounded-full transition-all duration-500 ${
+                index === current
+                  ? 'bg-teal w-10'
+                  : 'bg-silver/40 w-4 hover:bg-teal/50'
               }`}
               aria-label={`Ver testimonio ${index + 1}`}
             />

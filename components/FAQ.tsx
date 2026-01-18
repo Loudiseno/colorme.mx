@@ -42,7 +42,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section className="section" id="faq">
+    <section className="section bg-canvas-soft" id="faq">
       {/* FAQ Schema for SEO */}
       <Script
         id="faq-schema"
@@ -62,27 +62,43 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-2">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-clay/20 last:border-0">
+            <div
+              key={index}
+              className={`rounded-2xl transition-all duration-300 ${
+                openIndex === index
+                  ? 'bg-white shadow-lg shadow-teal/5'
+                  : 'bg-transparent hover:bg-white/50'
+              }`}
+            >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full py-5 flex items-start justify-between gap-4 text-left"
+                className="w-full px-6 py-5 flex items-start justify-between gap-4 text-left"
                 aria-expanded={openIndex === index}
               >
                 <span className="font-display text-lg md:text-xl text-ink pr-4">
                   {faq.question}
                 </span>
-                <span className="flex-shrink-0 mt-1 text-terracotta">
-                  {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
+                <span
+                  className={`flex-shrink-0 mt-1 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    openIndex === index
+                      ? 'bg-teal text-white rotate-0'
+                      : 'bg-teal-glow/30 text-teal rotate-0'
+                  }`}
+                >
+                  {openIndex === index ? <Minus size={18} /> : <Plus size={18} />}
                 </span>
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96 pb-5' : 'max-h-0'
+                  openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <p className="text-charcoal/70 leading-relaxed">{faq.answer}</p>
+                <div className="px-6 pb-5">
+                  <div className="w-12 h-0.5 bg-teal/30 mb-4" />
+                  <p className="text-charcoal/70 leading-relaxed">{faq.answer}</p>
+                </div>
               </div>
             </div>
           ))}
