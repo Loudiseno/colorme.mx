@@ -84,7 +84,7 @@ export default function HomePage() {
                       alt="Lou - Arteterapeuta y Tanatóloga"
                       width={600}
                       height={450}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <div className="flex-1">
