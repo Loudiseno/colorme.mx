@@ -162,15 +162,15 @@ export default function HomePage() {
             <span className="text-primary-dark font-medium text-sm uppercase tracking-wider">Nuevo</span>
           </div>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-ink mb-6">
-            Crea Tu Guía Personalizada
+            Crea Tus Ejercicios Personalizados
           </h2>
           <p className="text-lg md:text-xl text-charcoal max-w-2xl mx-auto mb-8 leading-relaxed">
-            Responde unas preguntas breves y recibe una guía personalizada con ejercicios de arteterapia
+            Responde unas preguntas breves y recibe ejercicios de arteterapia
             diseñados específicamente para la emoción que quieres trabajar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/hoja-de-trabajo" className="btn-gradient text-lg">
-              Crear Mi Guía Personalizada
+              Crear Mis Ejercicios Personalizados
             </Link>
             <p className="text-sm text-slate">
               Gratis • PDF descargable • Personalizado

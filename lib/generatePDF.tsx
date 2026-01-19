@@ -1,142 +1,130 @@
 import { Document, Page, Text, View, StyleSheet, pdf, Image } from '@react-pdf/renderer';
 import type { ArtTherapyExercise } from './artTherapyExercises';
 
-// Styles for the PDF
+// Styles for single-page PDF with brand colors
 const styles = StyleSheet.create({
   page: {
-    padding: 40,
+    padding: 35,
     fontFamily: 'Helvetica',
-    backgroundColor: '#FDFCFA',
+    backgroundColor: '#FFFFFF',
   },
   header: {
-    marginBottom: 25,
-    paddingBottom: 20,
+    marginBottom: 15,
+    paddingBottom: 12,
     borderBottomWidth: 2,
-    borderBottomColor: '#0D9488',
+    borderBottomColor: '#B2F7EF',
     alignItems: 'center',
   },
   logo: {
-    width: 120,
+    width: 100,
     height: 'auto',
-    marginBottom: 10,
+    marginBottom: 8,
   },
   title: {
-    fontSize: 22,
-    marginBottom: 8,
-    color: '#0D9488',
+    fontSize: 18,
+    marginBottom: 4,
+    color: '#000000',
     fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  subtitle: {
-    fontSize: 11,
-    color: '#6B7A8C',
     textAlign: 'center',
   },
   infoBox: {
-    backgroundColor: '#F0F7F6',
-    padding: 15,
-    borderRadius: 8,
-    marginBottom: 25,
+    backgroundColor: '#F8F8F8',
+    padding: 10,
+    borderRadius: 6,
+    marginBottom: 15,
   },
   infoRow: {
     flexDirection: 'row',
-    marginBottom: 6,
+    marginBottom: 4,
   },
   label: {
-    fontSize: 10,
-    color: '#3D4852',
+    fontSize: 9,
+    color: '#000000',
     fontWeight: 'bold',
-    width: 140,
+    width: 120,
   },
   value: {
-    fontSize: 10,
-    color: '#1C1C28',
+    fontSize: 9,
+    color: '#333333',
     flex: 1,
   },
   sectionTitle: {
-    fontSize: 16,
-    color: '#0D9488',
+    fontSize: 14,
+    color: '#000000',
     fontWeight: 'bold',
-    marginTop: 20,
-    marginBottom: 12,
+    marginTop: 10,
+    marginBottom: 8,
   },
   exerciseTitle: {
-    fontSize: 14,
-    color: '#0F766E',
+    fontSize: 12,
+    color: '#000000',
     fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  description: {
-    fontSize: 11,
-    color: '#3D4852',
-    marginBottom: 15,
-    lineHeight: 1.5,
-  },
-  subsectionTitle: {
-    fontSize: 11,
-    color: '#0D9488',
-    fontWeight: 'bold',
-    marginTop: 12,
     marginBottom: 6,
   },
+  description: {
+    fontSize: 9,
+    color: '#333333',
+    marginBottom: 10,
+    lineHeight: 1.4,
+  },
+  subsectionTitle: {
+    fontSize: 10,
+    color: '#000000',
+    fontWeight: 'bold',
+    marginTop: 8,
+    marginBottom: 4,
+  },
   materialsBox: {
-    backgroundColor: '#F0F7F6',
-    padding: 12,
-    borderRadius: 6,
-    marginBottom: 15,
+    backgroundColor: '#F8F8F8',
+    padding: 8,
+    borderRadius: 4,
+    marginBottom: 10,
   },
   materialItem: {
-    fontSize: 10,
-    color: '#1C1C28',
-    marginBottom: 4,
+    fontSize: 8,
+    color: '#333333',
+    marginBottom: 2,
     marginLeft: 5,
   },
   instructionItem: {
-    fontSize: 10,
-    color: '#1C1C28',
-    marginBottom: 8,
-    lineHeight: 1.5,
-    paddingLeft: 15,
+    fontSize: 8,
+    color: '#333333',
+    marginBottom: 4,
+    lineHeight: 1.3,
+    paddingLeft: 10,
   },
   benefitsBox: {
-    backgroundColor: '#E8F4F3',
-    padding: 12,
-    borderRadius: 6,
-    marginTop: 15,
-    marginBottom: 20,
+    backgroundColor: '#F8F8F8',
+    padding: 8,
+    borderRadius: 4,
+    marginTop: 8,
+    marginBottom: 10,
   },
   benefitsText: {
-    fontSize: 10,
-    color: '#0F766E',
-    lineHeight: 1.5,
+    fontSize: 8,
+    color: '#333333',
+    lineHeight: 1.3,
   },
   disclaimer: {
-    marginTop: 30,
-    padding: 15,
-    backgroundColor: '#FFF9E6',
-    borderRadius: 6,
-    borderLeftWidth: 3,
-    borderLeftColor: '#F59E0B',
+    marginTop: 15,
+    paddingTop: 10,
   },
   disclaimerText: {
-    fontSize: 9,
-    color: '#92400E',
-    lineHeight: 1.5,
+    fontSize: 7,
+    color: '#666666',
+    lineHeight: 1.3,
     textAlign: 'justify',
   },
   footer: {
-    position: 'absolute',
-    bottom: 30,
-    left: 40,
-    right: 40,
-    textAlign: 'center',
-    paddingTop: 10,
+    marginTop: 10,
+    paddingTop: 6,
     borderTopWidth: 1,
-    borderTopColor: '#CBD5E1',
+    borderTopColor: '#E0E0E0',
+    textAlign: 'center',
   },
   copyright: {
-    fontSize: 8,
-    color: '#6B7A8C',
+    fontSize: 7,
+    color: '#999999',
   },
 });
 
@@ -148,7 +136,7 @@ interface WorksheetData {
   emotion: string;
 }
 
-// PDF Document Component
+// PDF Document Component - Single Page
 const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises: ArtTherapyExercise[] }) => {
   const currentDate = new Date().toLocaleDateString('es-MX', {
     year: 'numeric',
@@ -156,7 +144,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
     day: 'numeric'
   });
 
-  const exercise = exercises[0]; // Solo usamos el primer ejercicio
+  const exercise = exercises[0];
 
   return (
     <Document>
@@ -167,8 +155,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
             src="/COLORME_logo-19-768x141.png"
             style={styles.logo}
           />
-          <Text style={styles.title}>Guía Personalizada de Arteterapia</Text>
-          <Text style={styles.subtitle}>Ejercicio terapéutico diseñado especialmente para ti</Text>
+          <Text style={styles.title}>Ejercicios Personalizados</Text>
         </View>
 
         {/* Personal Information */}
@@ -200,52 +187,35 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
         </View>
 
         {/* Exercise Section */}
-        <Text style={styles.sectionTitle}>Tu Ejercicio Personalizado</Text>
-
         {exercise && (
           <>
             <Text style={styles.exerciseTitle}>{exercise.title}</Text>
-
             <Text style={styles.description}>{exercise.description}</Text>
 
-            <Text style={styles.subsectionTitle}>⏱ Duración estimada: {exercise.duration}</Text>
+            <Text style={styles.subsectionTitle}>⏱ Duración: {exercise.duration}</Text>
 
             {/* Materials */}
             <Text style={styles.subsectionTitle}>Materiales necesarios:</Text>
             <View style={styles.materialsBox}>
               {exercise.materials.map((material, idx) => (
-                <Text key={idx} style={styles.materialItem}>
-                  • {material}
-                </Text>
+                <Text key={idx} style={styles.materialItem}>• {material}</Text>
               ))}
             </View>
 
             {/* Instructions */}
-            <Text style={styles.subsectionTitle}>Instrucciones paso a paso:</Text>
-            {exercise.instructions.map((instruction, idx) => (
-              <View key={idx} style={{ marginBottom: 10 }}>
-                <Text style={styles.instructionItem}>
-                  <Text style={{ fontWeight: 'bold' }}>{idx + 1}.</Text> {instruction}
-                </Text>
-              </View>
+            <Text style={styles.subsectionTitle}>Instrucciones:</Text>
+            {exercise.instructions.slice(0, 5).map((instruction, idx) => (
+              <Text key={idx} style={styles.instructionItem}>
+                {idx + 1}. {instruction}
+              </Text>
             ))}
 
             {/* Benefits */}
             <View style={styles.benefitsBox}>
-              <Text style={{ fontSize: 10, fontWeight: 'bold', color: '#0F766E', marginBottom: 6 }}>
-                💚 Beneficios terapéuticos:
+              <Text style={{ fontSize: 8, fontWeight: 'bold', color: '#000000', marginBottom: 3 }}>
+                Beneficios:
               </Text>
               <Text style={styles.benefitsText}>{exercise.benefits}</Text>
-            </View>
-
-            {/* Additional Note */}
-            <View style={{ marginTop: 20, padding: 12, backgroundColor: '#F0F7F6', borderRadius: 6 }}>
-              <Text style={{ fontSize: 10, color: '#3D4852', lineHeight: 1.5 }}>
-                <Text style={{ fontWeight: 'bold' }}>Nota importante: </Text>
-                Recuerda que no se trata de crear "arte perfecto", sino de expresarte auténticamente.
-                Tómate tu tiempo con este ejercicio. El proceso creativo en sí mismo es terapéutico.
-                Permite que tus emociones fluyan sin juicio.
-              </Text>
             </View>
           </>
         )}
@@ -253,14 +223,12 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
         {/* Disclaimer */}
         <View style={styles.disclaimer}>
           <Text style={styles.disclaimerText}>
-            Los ejercicios propuestos son únicamente una sugerencia de trabajo personal, basada en la información
-            proporcionada por el usuario. Bajo ninguna circunstancia sustituyen una consulta, diagnóstico, tratamiento,
-            atención profesional o intervención clínica, psicológica, psiquiátrica o médica.
+            Los ejercicios propuestos son únicamente una sugerencia de trabajo personal, basada en la información proporcionada por el usuario. Bajo ninguna circunstancia sustituyen una consulta, diagnóstico, tratamiento, atención profesional o intervención clínica, psicológica, psiquiátrica o médica.
           </Text>
         </View>
 
         {/* Footer */}
-        <View style={styles.footer} fixed>
+        <View style={styles.footer}>
           <Text style={styles.copyright}>Copyright 2026 ColorMe - Todos los derechos reservados</Text>
         </View>
       </Page>
@@ -275,7 +243,7 @@ export async function generateWorksheetPDF(data: WorksheetData, exercises: ArtTh
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `GuiaPersonalizada_${data.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
+    link.download = `EjerciciosPersonalizados_${data.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
