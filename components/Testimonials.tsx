@@ -1,7 +1,3 @@
-'use client'
-
-import { useState, useEffect } from 'react'
-
 const testimonials = [
   {
     quote:
@@ -24,20 +20,6 @@ const testimonials = [
 ]
 
 export default function Testimonials() {
-  const [current, setCurrent] = useState(0)
-  const [isAnimating, setIsAnimating] = useState(false)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIsAnimating(true)
-      setTimeout(() => {
-        setCurrent((prev) => (prev + 1) % testimonials.length)
-        setIsAnimating(false)
-      }, 300)
-    }, 6000)
-    return () => clearInterval(timer)
-  }, [])
-
   return (
     <section className="py-12 md:py-16 bg-frost/50 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -46,49 +28,44 @@ export default function Testimonials() {
         <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-cyan/10 blur-2xl" />
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-        {/* Large quote mark */}
-        <span className="quote-mark block mb-4">"</span>
-
-        <div className="min-h-[200px] flex items-center justify-center">
-          <div
-            className={`transition-all duration-500 ${
-              isAnimating ? 'opacity-0 translate-y-4 scale-95' : 'opacity-100 translate-y-0 scale-100'
-            }`}
-          >
-            <blockquote className="font-display text-xl md:text-2xl lg:text-3xl text-ink leading-relaxed mb-8">
-              {testimonials[current].quote}
-            </blockquote>
-            <cite className="not-italic">
-              <span className="block font-medium text-teal text-lg">
-                {testimonials[current].name}
-              </span>
-              <span className="block text-charcoal/60 text-sm mt-1">
-                {testimonials[current].role}
-              </span>
-            </cite>
-          </div>
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
+        {/* Section header */}
+        <div className="text-center mb-10">
+          <h2 className="font-display text-3xl md:text-4xl text-ink mb-3">
+            Lo que dicen quienes han vivido el proceso
+          </h2>
+          <p className="text-charcoal/60">
+            Cada historia es única, pero el camino siempre comienza con un primer paso.
+          </p>
         </div>
 
-        {/* Progress indicators */}
-        <div className="flex items-center justify-center gap-3 mt-10">
-          {testimonials.map((_, index) => (
-            <button
+        {/* Testimonial cards grid */}
+        <div className="grid md:grid-cols-3 gap-6">
+          {testimonials.map((testimonial, index) => (
+            <article
               key={index}
-              onClick={() => {
-                setIsAnimating(true)
-                setTimeout(() => {
-                  setCurrent(index)
-                  setIsAnimating(false)
-                }, 300)
-              }}
-              className={`h-1 rounded-full transition-all duration-500 ${
-                index === current
-                  ? 'bg-teal w-10'
-                  : 'bg-silver/40 w-4 hover:bg-teal/50'
-              }`}
-              aria-label={`Ver testimonio ${index + 1}`}
-            />
+              className="bg-white rounded-2xl p-6 shadow-sm border border-teal-glow/20 hover:shadow-lg hover:shadow-teal/5 transition-all duration-300 flex flex-col"
+            >
+              {/* Quote mark */}
+              <span className="text-teal-glow/40 font-display text-6xl leading-none mb-2">
+                "
+              </span>
+
+              {/* Quote text */}
+              <blockquote className="font-display text-lg text-ink leading-relaxed flex-grow mb-6">
+                {testimonial.quote}
+              </blockquote>
+
+              {/* Author */}
+              <cite className="not-italic border-t border-teal-glow/20 pt-4">
+                <span className="block font-medium text-teal">
+                  {testimonial.name}
+                </span>
+                <span className="block text-charcoal/60 text-sm mt-0.5">
+                  {testimonial.role}
+                </span>
+              </cite>
+            </article>
           ))}
         </div>
       </div>

@@ -314,6 +314,87 @@ export default function HomePage() {
 
       <SectionDivider />
 
+      {/* Blog Section */}
+      <section className="py-12 md:py-16 bg-white" id="blog">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-4xl md:text-5xl text-ink mb-4">Blog</h2>
+            <p className="text-charcoal/70 max-w-2xl mx-auto">
+              Reflexiones, herramientas y acompañamiento para tu proceso de sanación.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Article 1 */}
+            <article className="group bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift">
+              <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-teal-glow/30 to-cyan/20">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-teal/40 text-6xl font-display">01</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs text-teal font-medium uppercase tracking-wider">Arteterapia</span>
+                <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
+                  El arte como puente hacia las emociones
+                </h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                  Descubre cómo la expresión artística puede ayudarte a conectar con lo que sientes sin necesidad de palabras.
+                </p>
+                <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                  Leer más
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                </span>
+              </div>
+            </article>
+
+            {/* Article 2 */}
+            <article className="group bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift">
+              <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-cyan/20 to-teal-glow/30">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-teal/40 text-6xl font-display">02</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs text-teal font-medium uppercase tracking-wider">Tanatología</span>
+                <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
+                  El duelo no tiene un camino fijo
+                </h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                  Cada persona vive la pérdida de manera única. Aquí exploramos cómo honrar tu propio proceso.
+                </p>
+                <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                  Leer más
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                </span>
+              </div>
+            </article>
+
+            {/* Article 3 */}
+            <article className="group bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift">
+              <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-teal/20 to-cyan/30">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-teal/40 text-6xl font-display">03</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs text-teal font-medium uppercase tracking-wider">Bienestar</span>
+                <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
+                  Pequeños rituales para el día a día
+                </h3>
+                <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                  Prácticas sencillas que puedes incorporar en tu rutina para cultivar la calma y la conexión contigo.
+                </p>
+                <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                  Leer más
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
       {/* Contact Section */}
       <section className="py-12 md:py-16" id="contacto">
         <div className="max-w-3xl mx-auto px-6">
