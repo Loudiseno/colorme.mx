@@ -324,51 +324,55 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Article 1 */}
-            <article className="group bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift">
-              <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-teal-glow/30 to-cyan/20">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-teal/40 text-6xl font-display">01</span>
+            {/* Article 1 - ¿Qué es la Arteterapia? */}
+            <Link href="/blog/que-es-arteterapia" className="group">
+              <article className="bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift h-full">
+                <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-teal-glow/30 to-cyan/20">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="text-teal/40 text-6xl font-display">01</span>
+                  </div>
                 </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs text-teal font-medium uppercase tracking-wider">Arteterapia</span>
-                <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
-                  El arte como puente hacia las emociones
-                </h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
-                  Descubre cómo la expresión artística puede ayudarte a conectar con lo que sientes sin necesidad de palabras.
-                </p>
-                <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
-                  Leer más
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </span>
-              </div>
-            </article>
-
-            {/* Article 2 */}
-            <article className="group bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift">
-              <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-cyan/20 to-teal-glow/30">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-teal/40 text-6xl font-display">02</span>
+                <div className="p-6">
+                  <span className="text-xs text-teal font-medium uppercase tracking-wider">Arteterapia</span>
+                  <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
+                    ¿Qué es la Arteterapia? Guía Completa
+                  </h3>
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                    Descubre cómo la expresión artística puede ayudarte a conectar con lo que sientes sin necesidad de palabras.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                    Leer más
+                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  </span>
                 </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs text-teal font-medium uppercase tracking-wider">Tanatología</span>
-                <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
-                  El duelo no tiene un camino fijo
-                </h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
-                  Cada persona vive la pérdida de manera única. Aquí exploramos cómo honrar tu propio proceso.
-                </p>
-                <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
-                  Leer más
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </span>
-              </div>
-            </article>
+              </article>
+            </Link>
 
-            {/* Article 3 */}
+            {/* Article 2 - Arteterapia para Pacientes con Cáncer */}
+            <Link href="/blog/arteterapia-cancer" className="group">
+              <article className="bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift h-full">
+                <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-cyan/20 to-teal-glow/30">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="text-teal/40 text-6xl font-display">02</span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <span className="text-xs text-teal font-medium uppercase tracking-wider">Arteterapia</span>
+                  <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
+                    Arteterapia para Pacientes con Cáncer
+                  </h3>
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                    Cómo el arte puede acompañarte durante el tratamiento oncológico, desde mi experiencia como sobreviviente.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                    Leer más
+                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </article>
+            </Link>
+
+            {/* Article 3 - Placeholder */}
             <article className="group bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift">
               <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-teal/20 to-cyan/30">
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -376,16 +380,15 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-6">
-                <span className="text-xs text-teal font-medium uppercase tracking-wider">Bienestar</span>
-                <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
+                <span className="text-xs text-teal font-medium uppercase tracking-wider">Próximamente</span>
+                <h3 className="font-display text-xl text-ink mt-2 mb-3">
                   Pequeños rituales para el día a día
                 </h3>
                 <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
                   Prácticas sencillas que puedes incorporar en tu rutina para cultivar la calma y la conexión contigo.
                 </p>
-                <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
-                  Leer más
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                <span className="inline-flex items-center gap-2 text-charcoal/40 text-sm font-medium">
+                  Próximamente
                 </span>
               </div>
             </article>
