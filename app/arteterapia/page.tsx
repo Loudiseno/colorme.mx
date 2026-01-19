@@ -60,11 +60,31 @@ const audiences = [
 ]
 
 const helpsWith = [
-  { icon: '/Frame 20.png', text: 'Esperanza y transformación' },
-  { icon: '/Frame 21.png', text: 'Expresión emocional' },
-  { icon: '/Frame 22.png', text: 'Cambios de vida' },
-  { icon: '/Frame 23.png', text: 'Autodescubrimiento' },
-  { icon: '/Frame 24.png', text: 'Procesamiento de duelo' },
+  {
+    icon: '/Frame 21.png',
+    title: 'Duelo',
+    description: 'Creamos un espacio seguro para procesar la ausencia y el dolor.'
+  },
+  {
+    icon: '/Frame 23.png',
+    title: 'Autoconocimiento',
+    description: 'Exploramos tus emociones y patrones con compasión.'
+  },
+  {
+    icon: '/Frame 20.png',
+    title: 'Cambios de vida',
+    description: 'Transiciones como separaciones, mudanzas, nuevos comienzos.'
+  },
+  {
+    icon: '/Frame 24.png',
+    title: 'Enfermedades',
+    description: 'Canalizamos el miedo y acompañamos emocionalmente.'
+  },
+  {
+    icon: '/Frame 22.png',
+    title: 'Ansiedad y estrés',
+    description: 'Liberamos la tensión a través de la reconexión creativa.'
+  },
 ]
 
 export default function ArteterapiaPage() {
@@ -203,24 +223,31 @@ export default function ArteterapiaPage() {
         </div>
       </section>
 
-      {/* What it helps with */}
+      {/* What it helps with - Infographic */}
       <section className="section bg-canvas-soft">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-10 text-center">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 text-center">
             ¿En qué puede ayudarte?
           </h2>
-          <div className="flex flex-wrap justify-center gap-8">
+          <p className="text-charcoal/70 text-center mb-10 max-w-2xl mx-auto">
+            La arteterapia te acompaña en diferentes momentos y procesos de vida.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {helpsWith.map((item, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-20 h-20 mx-auto mb-3 relative">
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-5 text-center shadow-sm border border-teal-glow/20 hover:shadow-md hover:border-teal-glow/40 transition-all duration-300 group"
+              >
+                <div className="w-16 h-16 mx-auto mb-4 relative">
                   <Image
                     src={item.icon}
-                    alt={item.text}
+                    alt={item.title}
                     fill
                     className="object-contain group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <p className="text-base text-charcoal/70 max-w-[140px]">{item.text}</p>
+                <h3 className="font-display text-lg text-ink mb-2">{item.title}</h3>
+                <p className="text-sm text-charcoal/70 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>

@@ -43,6 +43,39 @@ const situations = [
   'Duelos no resueltos del pasado',
 ]
 
+const typesOfLoss = [
+  {
+    icon: '/Frame 21.png',
+    title: 'Relacionales',
+    description: 'Pérdida de vínculos importantes: muerte, rupturas, distanciamiento familiar.',
+  },
+  {
+    icon: '/Frame 23.png',
+    title: 'Intrapersonal',
+    description: 'Pérdidas de identidad: crisis de propósito, cambio de carrera, sensación de fracaso.',
+  },
+  {
+    icon: '/Frame 29.png',
+    title: 'Materiales',
+    description: 'Pérdida de empleo, dificultades económicas, pérdida del hogar.',
+  },
+  {
+    icon: '/Frame 22.png',
+    title: 'Salud',
+    description: 'Cambios físicos o mentales: enfermedad crónica, discapacidad, infertilidad.',
+  },
+  {
+    icon: '/Frame 30.png',
+    title: 'Evolutivas',
+    description: 'Transiciones de vida: jubilación, envejecimiento, nido vacío.',
+  },
+  {
+    icon: '/Frame 28.png',
+    title: 'Ambiguas',
+    description: 'Pérdidas no reconocidas socialmente: desapariciones, relaciones ocultas.',
+  },
+]
+
 const process = [
   {
     title: 'Escucha activa',
@@ -158,6 +191,37 @@ export default function TanatologiaPage() {
               lo vive de manera diferente, y mi rol es acompañarte en tu proceso
               particular, respetando tu ritmo y tus necesidades.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Types of Loss - Infographic */}
+      <section className="section bg-canvas-soft">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 text-center">
+            Tipos de pérdidas que acompañamos
+          </h2>
+          <p className="text-charcoal/70 text-center mb-10 max-w-2xl mx-auto">
+            El duelo no solo surge ante la muerte. Hay muchos tipos de pérdidas que merecen ser nombradas y acompañadas.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {typesOfLoss.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-5 text-center shadow-sm border border-teal-glow/20 hover:shadow-md hover:border-teal-glow/40 transition-all duration-300 group"
+              >
+                <div className="w-16 h-16 mx-auto mb-4 relative">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    fill
+                    className="object-contain group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="font-display text-lg text-ink mb-2">{item.title}</h3>
+                <p className="text-sm text-charcoal/70 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
