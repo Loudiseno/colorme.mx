@@ -35,43 +35,23 @@ export default function HomePage() {
         }}
       />
 
-      {/* Hero Section */}
-      <section className="min-h-[50vh] flex items-center justify-center relative bg-watercolor pt-24 pb-12 overflow-hidden">
+      {/* Hero: Intro + About Lou */}
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24 relative bg-watercolor overflow-hidden" id="sobremi">
         {/* Decorative floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 right-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl animate-float" />
           <div className="absolute bottom-1/4 left-10 w-24 h-24 rounded-full bg-teal/10 blur-xl animate-float-delayed" />
-          <div className="absolute top-1/3 left-1/4 w-16 h-16 rounded-full bg-cyan/10 blur-lg animate-float-slow" />
         </div>
 
-        <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-ink mb-8">
-            <span className="block opacity-0 animate-slide-up stagger-1">Crea.</span>
-            <span className="block text-teal opacity-0 animate-slide-up stagger-2">Siente.</span>
-            <span className="block opacity-0 animate-slide-up stagger-3">Transforma.</span>
-          </h1>
-          <a
-            href={siteConfig.calendly}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-gradient opacity-0 animate-fade-up stagger-4"
-          >
-            Agenda tu primera sesión ¡Gratis!
-          </a>
-        </div>
-      </section>
-
-      {/* Intro + About Lou Section */}
-      <section className="section" id="sobremi">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
-            <div>
-              <h2 className="font-display text-3xl md:text-4xl text-ink mb-6">
+            <div className="flex flex-col justify-center">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-ink mb-6 opacity-0 animate-slide-up stagger-1">
                 Un espacio para sanar
                 <span className="text-teal"> a través del arte</span>
-              </h2>
-              <div className="space-y-4 text-charcoal/80 leading-relaxed">
+              </h1>
+              <div className="space-y-4 text-charcoal/80 leading-relaxed opacity-0 animate-fade-up stagger-2">
                 <p>
                   Color Me es un lugar donde puedes crear tu propia historia a través
                   de la arteterapia y la tanatología. Aquí no hay reglas ni caminos fijos.
@@ -82,36 +62,37 @@ export default function HomePage() {
                   para sanar el duelo y reconectar contigo.
                 </p>
               </div>
-              <a
-                href={siteConfig.calendly}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-8 text-teal font-medium hover:gap-3 transition-all"
-              >
-                Agenda una sesión gratuita
-                <ArrowRight size={18} />
-              </a>
+              <div className="opacity-0 animate-fade-up stagger-3">
+                <a
+                  href={siteConfig.calendly}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-gradient inline-block mt-8"
+                >
+                  Agenda tu primera sesión ¡Gratis!
+                </a>
+              </div>
             </div>
 
             {/* Right: About Lou */}
-            <div className="relative">
-              <div className="bg-frost/50 rounded-3xl p-6 md:p-8 border border-teal-glow/30">
-                <div className="flex flex-col sm:flex-row gap-6 items-start">
-                  <div className="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 rounded-2xl overflow-hidden shadow-lg shadow-teal/10">
+            <div className="relative flex flex-col opacity-0 animate-fade-up stagger-2">
+              <div className="bg-frost/50 rounded-3xl p-8 md:p-10 border border-teal-glow/30 flex-1 flex flex-col">
+                <div className="flex flex-col h-full">
+                  <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg shadow-teal/10 mb-6">
                     <Image
                       src="/Photography-Portfolio-Website-in-Grey-Black-Light-Experimental-Style_page-0001-2-1536x1502.jpg"
                       alt="Lou - Arteterapeuta y Tanatóloga"
-                      width={160}
-                      height={160}
+                      width={600}
+                      height={450}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div>
-                    <h3 className="font-display text-2xl text-ink mb-1">Hola, soy Lou</h3>
-                    <p className="text-teal font-medium text-sm mb-3">
+                  <div className="flex-1">
+                    <h2 className="font-display text-2xl md:text-3xl text-ink mb-2">Hola, soy Lou</h2>
+                    <p className="text-teal font-medium mb-4">
                       Diseñadora, artista, fotógrafa y tanatóloga
                     </p>
-                    <p className="text-charcoal/70 text-sm leading-relaxed">
+                    <p className="text-charcoal/70 leading-relaxed">
                       El arte y la tanatología fueron mi refugio y la puerta de regreso a mí.
                       Hoy acompaño a otras personas en sus propios procesos de duelo, cambio
                       o cierre, creando espacios seguros para habitar lo que sienten.
@@ -120,7 +101,7 @@ export default function HomePage() {
                 </div>
               </div>
               {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-glow/30 rounded-full blur-xl -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-teal-glow/30 rounded-full blur-xl -z-10" />
             </div>
           </div>
         </div>
