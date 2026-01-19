@@ -111,12 +111,12 @@ export default function HomePage() {
 
       {/* Services Section */}
       <section className="py-12 md:py-16" id="servicios">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Arteterapia Card */}
             <Link href="/arteterapia" className="group">
-              <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30 flex">
-                <div className="w-28 md:w-36 flex-shrink-0 relative overflow-hidden bg-mist/30">
+              <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30">
+                <div className="aspect-[3/2] relative overflow-hidden bg-mist/30">
                   <Image
                     src="/COLORME_logo-12-scaled.jpg"
                     alt="Arteterapia - Terapia a través del arte"
@@ -124,11 +124,11 @@ export default function HomePage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-5 md:p-6 flex flex-col justify-center">
+                <div className="p-5">
                   <h2 className="font-display text-xl md:text-2xl text-ink mb-2 group-hover:text-teal transition-colors">
                     Arteterapia
                   </h2>
-                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
                     Acompañamiento emocional a través del arte para expresar y transformar emociones.
                   </p>
                   <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
@@ -141,8 +141,8 @@ export default function HomePage() {
 
             {/* Tanatología Card */}
             <Link href="/tanatologia" className="group">
-              <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30 flex">
-                <div className="w-28 md:w-36 flex-shrink-0 relative overflow-hidden bg-mist/30">
+              <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30">
+                <div className="aspect-[3/2] relative overflow-hidden bg-mist/30">
                   <Image
                     src="/ojo-11-scaled.jpg"
                     alt="Tanatología - Acompañamiento en duelo"
@@ -150,11 +150,11 @@ export default function HomePage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-5 md:p-6 flex flex-col justify-center">
+                <div className="p-5">
                   <h2 className="font-display text-xl md:text-2xl text-ink mb-2 group-hover:text-teal transition-colors">
                     Tanatología
                   </h2>
-                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
                     Acompañamiento en procesos de pérdida, cambio y duelo con un enfoque humano.
                   </p>
                   <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
@@ -171,7 +171,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-canvas-soft">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
@@ -236,7 +236,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Book Section */}
-      <section className="py-12 md:py-16 bg-mist/30" id="indeleble">
+      <section className="py-12 md:py-16 bg-white" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 relative">

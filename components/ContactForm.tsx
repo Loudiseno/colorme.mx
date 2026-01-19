@@ -165,7 +165,10 @@ export default function ContactForm() {
         </div>
       </div>
 
-      <div className="relative">
+      <div>
+        <label htmlFor="tipoSesion" className="block text-sm font-medium text-charcoal mb-3">
+          ¿Qué tipo de sesión te gustaría? *
+        </label>
         <select
           id="tipoSesion"
           required
@@ -178,9 +181,6 @@ export default function ContactForm() {
           <option value="grupal">Grupal</option>
           <option value="taller">Taller</option>
         </select>
-        <label className="block text-sm font-medium text-charcoal mb-2 -mt-14 relative z-10 bg-canvas px-1 ml-3 w-fit">
-          ¿Qué tipo de sesión te gustaría? *
-        </label>
       </div>
 
       <div>
