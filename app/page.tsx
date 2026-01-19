@@ -7,6 +7,22 @@ import FAQ from '@/components/FAQ'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
 
+function SectionDivider() {
+  return (
+    <div className="section-divider">
+      <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 12C20 12 25 4 40 4C55 4 55 20 60 20C65 20 65 4 80 4C95 4 100 12 120 12"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <circle cx="60" cy="12" r="3" fill="currentColor" />
+      </svg>
+    </div>
+  )
+}
+
 export default function HomePage() {
   return (
     <>
@@ -66,6 +82,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SectionDivider />
+
       {/* Services Section */}
       <section className="section" id="servicios">
         <div className="max-w-6xl mx-auto px-6">
@@ -90,16 +108,16 @@ export default function HomePage() {
                     y transformar emociones, sin buscar resultados estéticos ni requerir
                     experiencia artística.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-teal font-medium">
+                  <span className="inline-flex items-center gap-2 px-6 py-3 border border-teal/40 rounded-full text-teal font-medium transition-all duration-300 group-hover:bg-teal group-hover:text-white group-hover:border-teal group-hover:shadow-md">
                     Quiero saber más
-                    <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </article>
             </Link>
 
             {/* Tanatología Card */}
-            <Link href="/tanatologia" className="group md:mt-12">
+            <Link href="/tanatologia" className="group">
               <article className="bg-frost/50 rounded-3xl overflow-hidden card-lift h-full border border-teal-glow/30">
                 <div className="aspect-[4/3] relative overflow-hidden bg-mist/30">
                   <Image
@@ -117,9 +135,9 @@ export default function HomePage() {
                     Acompaña procesos de pérdida, cambio y duelo, ayudando a resignificar
                     lo vivido para seguir con sentido, desde un enfoque humano y compasivo.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-teal font-medium">
+                  <span className="inline-flex items-center gap-2 px-6 py-3 border border-teal/40 rounded-full text-teal font-medium transition-all duration-300 group-hover:bg-teal group-hover:text-white group-hover:border-teal group-hover:shadow-md">
                     Quiero saber más
-                    <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </article>
@@ -127,6 +145,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <SectionDivider />
 
       {/* Session Types */}
       <section className="section bg-canvas-soft">
@@ -168,14 +188,16 @@ export default function HomePage() {
               href={siteConfig.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white rounded-full text-teal font-medium shadow-lg shadow-teal/10 border border-teal-glow/50 transition-all duration-300 hover:shadow-xl hover:shadow-teal/20 hover:border-teal hover:-translate-y-0.5 hover:bg-teal hover:text-white"
             >
-              <Calendar size={18} />
+              <Calendar size={20} />
               Agenda tu sesión
             </a>
           </div>
         </div>
       </section>
+
+      <SectionDivider />
 
       {/* About Section */}
       <section className="section" id="sobremi">
@@ -216,6 +238,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <SectionDivider />
 
       {/* Book Section */}
       <section className="section bg-mist/30" id="indeleble">
@@ -277,8 +301,12 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SectionDivider />
+
       {/* Testimonials */}
       <Testimonials />
+
+      <SectionDivider />
 
       {/* Contact Section */}
       <section className="section" id="contacto">
@@ -292,6 +320,8 @@ export default function HomePage() {
           <ContactForm />
         </div>
       </section>
+
+      <SectionDivider />
 
       {/* FAQ */}
       <FAQ />

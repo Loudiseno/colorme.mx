@@ -101,10 +101,21 @@ h1, h2, h3, h4, h5, h6 {
          hover:-translate-y-0.5;
   background: var(--gradient-teal);
   box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+  animation: pulse-glow 2s ease-in-out 0.5s 3;
 }
 
 .btn-gradient:hover {
   box-shadow: 0 6px 25px rgba(13, 148, 136, 0.45);
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(13, 148, 136, 0.55), 0 0 20px rgba(13, 148, 136, 0.3);
+  }
 }
 
 /* Link underline animation */
@@ -239,4 +250,15 @@ h1, h2, h3, h4, h5, h6 {
   @apply text-teal-glow/40 font-display;
   font-size: 120px;
   line-height: 1;
+}
+
+/* Section divider flourish */
+.section-divider {
+  @apply flex items-center justify-center py-8 md:py-12;
+}
+
+.section-divider svg {
+  @apply text-teal-glow/60;
+  width: 120px;
+  height: auto;
 }
