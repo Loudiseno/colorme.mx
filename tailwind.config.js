@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Primary teal palette
+        // Primary teal palette - enriched
         teal: {
           DEFAULT: '#0D9488',
           light: '#5EEAD4',
@@ -15,19 +15,21 @@ module.exports = {
           dark: '#0F766E',
         },
         cyan: '#22D3EE',
+        sage: '#A7C4BC',
 
-        // Backgrounds
+        // Refined paper-like backgrounds
         canvas: {
-          DEFAULT: '#FEF9F6',
-          soft: '#FFFBF8',
+          DEFAULT: '#F8F6F3',
+          soft: '#FDFCFA',
+          warm: '#F5F2ED',
         },
-        mist: '#F0FDFA',
-        frost: '#E6FFFE',
+        mist: '#F0F7F6',
+        frost: '#E8F4F3',
 
-        // Text colors
-        ink: '#1A1A2E',
-        charcoal: '#334155',
-        slate: '#64748B',
+        // Text colors - deeper, richer
+        ink: '#1C1C28',
+        charcoal: '#3D4852',
+        slate: '#6B7A8C',
         silver: '#CBD5E1',
 
         // Accent

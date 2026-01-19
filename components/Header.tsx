@@ -50,12 +50,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-base font-medium tracking-wide text-charcoal link-hover hover:text-teal transition-colors"
+              className="nav-link"
             >
               {item.name}
             </Link>
@@ -87,25 +87,29 @@ export default function Header() {
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Mobile Menu - Full Screen with Teal Gradient */}
+        {/* Mobile Menu - Full Screen with Refined Gradient */}
         <div
           className={`fixed inset-0 md:hidden transition-all duration-500 ${
             isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
           }`}
           style={{
-            background: 'linear-gradient(135deg, #FEF9F6 0%, #F0FDFA 50%, #E6FFFE 100%)'
+            background: 'linear-gradient(135deg, #FDFCFA 0%, #F0F7F6 50%, #E8F4F3 100%)'
           }}
         >
-          <div className="flex flex-col items-center justify-center h-full gap-8">
+          <div className="flex flex-col items-center justify-center h-full gap-10">
             {navigation.map((item, index) => (
               <Link
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`font-display text-3xl text-ink hover:text-teal transition-all duration-300 ${
+                className={`text-2xl text-ink hover:text-teal transition-all duration-300 tracking-widest uppercase ${
                   isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
+                style={{
+                  fontFamily: 'var(--font-cormorant)',
+                  fontWeight: 500,
+                  transitionDelay: `${index * 100}ms`
+                }}
               >
                 {item.name}
               </Link>
