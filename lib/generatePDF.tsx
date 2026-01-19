@@ -14,11 +14,6 @@ const styles = StyleSheet.create({
     borderBottomColor: '#0D9488', // primary teal
     paddingBottom: 20,
   },
-  logo: {
-    width: 150,
-    height: 'auto',
-    marginBottom: 15,
-  },
   title: {
     fontSize: 24,
     color: '#0D9488', // primary teal
@@ -154,21 +149,15 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
     day: 'numeric'
   });
 
-  // Get absolute URL for logo (needed for client-side PDF generation)
-  const logoUrl = typeof window !== 'undefined'
-    ? `${window.location.origin}/COLORME_logo-19-768x141.png`
-    : '/COLORME_logo-19-768x141.png';
-
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        {/* Header with Logo */}
+        {/* Header */}
         <View style={styles.header}>
-          <Image
-            src={logoUrl}
-            style={styles.logo}
-          />
-          <Text style={styles.title}>Hoja de Trabajo Personalizada de Arteterapia</Text>
+          <Text style={{ fontSize: 28, color: '#0D9488', fontWeight: 'bold', marginBottom: 8, fontFamily: 'Helvetica-Bold' }}>
+            ColorMe
+          </Text>
+          <Text style={styles.title}>Práctica Personalizada de Arteterapia</Text>
           <Text style={styles.subtitle}>Ejercicios terapéuticos diseñados especialmente para ti</Text>
         </View>
 
@@ -247,7 +236,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
       {exercises.slice(2).map((exercise, index) => (
         <Page key={exercise.id} size="A4" style={styles.page}>
           <View style={styles.header}>
-            <Text style={styles.title}>Hoja de Trabajo Personalizada</Text>
+            <Text style={styles.title}>Práctica Personalizada</Text>
             <Text style={styles.subtitle}>{data.name} • {currentDate}</Text>
           </View>
 
@@ -332,6 +321,13 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
           </Text>
         </View>
 
+        {/* Disclaimer */}
+        <View style={{ marginTop: 30, padding: 15, backgroundColor: '#FFF9E6', borderRadius: 8, borderLeft: 3, borderLeftColor: '#F59E0B' }}>
+          <Text style={{ fontSize: 9, color: '#92400E', textAlign: 'center', lineHeight: 1.5, fontStyle: 'italic' }}>
+            Los ejercicios compartidos son solo una sugerencia de práctica personal y no reemplazan atención profesional, terapéutica o clínica.
+          </Text>
+        </View>
+
         {/* Footer */}
         <View style={styles.footer} fixed>
           <Text style={styles.copyright}>Copyright 2026 ColorMe • Todos los derechos reservados</Text>
@@ -353,7 +349,7 @@ export async function generateWorksheetPDF(data: WorksheetData, exercises: ArtTh
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `HojaDeTrabajo_${data.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
+    link.download = `PracticaPersonalizada_${data.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
