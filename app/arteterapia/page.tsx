@@ -298,6 +298,35 @@ export default function ArteterapiaPage() {
         </div>
       </section>
 
+      {/* Worksheet CTA */}
+      <section className="section bg-gradient-to-br from-primary/5 via-mist to-canvas">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 border-2 border-primary-glow/40 shadow-xl">
+            <div className="text-center mb-8">
+              <div className="inline-block mb-4 px-4 py-2 bg-primary-glow/40 rounded-full">
+                <span className="text-primary-dark font-medium text-sm uppercase tracking-wider">Nuevo Recurso</span>
+              </div>
+              <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
+                Empieza desde casa con tu hoja de trabajo personalizada
+              </h2>
+              <p className="text-charcoal/80 max-w-2xl mx-auto leading-relaxed">
+                ¿No estás seguro/a si la arteterapia es para ti? Crea una hoja de trabajo personalizada
+                con ejercicios terapéuticos que puedes hacer por tu cuenta. Es gratis y te ayudará
+                a experimentar el poder sanador del arte.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link href="/hoja-de-trabajo" className="btn-primary">
+                Crear Mi Hoja de Trabajo Gratis
+              </Link>
+              <span className="text-sm text-slate">
+                PDF descargable • Ejercicios personalizados
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section">
         <div className="max-w-3xl mx-auto px-6 text-center">

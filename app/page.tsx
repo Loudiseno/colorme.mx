@@ -150,6 +150,66 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Worksheet CTA Section */}
+      <section className="py-16 md:py-20 relative overflow-hidden bg-gradient-to-br from-primary/5 via-mist to-canvas">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 right-20 w-64 h-64 bg-primary-light rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent-sage rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <div className="inline-block mb-4 px-4 py-2 bg-primary-glow/40 rounded-full">
+            <span className="text-primary-dark font-medium text-sm uppercase tracking-wider">Nuevo</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-ink mb-6">
+            Crea Tu Hoja de Trabajo Personalizada
+          </h2>
+          <p className="text-lg md:text-xl text-charcoal max-w-2xl mx-auto mb-8 leading-relaxed">
+            Responde unas preguntas breves y recibe una hoja de trabajo con ejercicios de arteterapia
+            diseñados específicamente para la emoción que quieres trabajar.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/hoja-de-trabajo" className="btn-gradient text-lg">
+              Crear Mi Hoja de Trabajo
+            </Link>
+            <p className="text-sm text-slate">
+              Gratis • PDF descargable • Personalizado
+            </p>
+          </div>
+
+          {/* Preview features */}
+          <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">
+            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-primary-glow/30">
+              <div className="w-12 h-12 bg-primary-glow rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">✨</span>
+              </div>
+              <h3 className="font-display text-lg text-ink mb-2">Personalizado</h3>
+              <p className="text-sm text-charcoal/70">
+                Ejercicios seleccionados según tus necesidades emocionales específicas
+              </p>
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-primary-glow/30">
+              <div className="w-12 h-12 bg-primary-glow rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🎨</span>
+              </div>
+              <h3 className="font-display text-lg text-ink mb-2">Práctico</h3>
+              <p className="text-sm text-charcoal/70">
+                Instrucciones paso a paso con materiales accesibles que ya tienes en casa
+              </p>
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-primary-glow/30">
+              <div className="w-12 h-12 bg-primary-glow rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">📄</span>
+              </div>
+              <h3 className="font-display text-lg text-ink mb-2">Profesional</h3>
+              <p className="text-sm text-charcoal/70">
+                PDF elegante listo para imprimir con ejercicios basados en evidencia
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Session Types */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
