@@ -36,7 +36,7 @@ export default function HomePage() {
       />
 
       {/* Hero: Intro + About Lou */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 relative bg-watercolor overflow-hidden" id="sobremi">
+      <section className="pt-28 pb-12 md:pt-36 md:pb-16 relative bg-watercolor overflow-hidden" id="sobremi">
         {/* Decorative floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 right-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl animate-float" />
@@ -110,13 +110,13 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Services Section */}
-      <section className="section" id="servicios">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+      <section className="py-12 md:py-16" id="servicios">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {/* Arteterapia Card */}
             <Link href="/arteterapia" className="group">
-              <article className="bg-frost/50 rounded-3xl overflow-hidden card-lift h-full border border-teal-glow/30">
-                <div className="aspect-[4/3] relative overflow-hidden bg-mist/30">
+              <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30 flex">
+                <div className="w-28 md:w-36 flex-shrink-0 relative overflow-hidden bg-mist/30">
                   <Image
                     src="/COLORME_logo-12-scaled.jpg"
                     alt="Arteterapia - Terapia a través del arte"
@@ -124,18 +124,16 @@ export default function HomePage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-8 lg:p-10">
-                  <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 group-hover:text-teal transition-colors">
+                <div className="p-5 md:p-6 flex flex-col justify-center">
+                  <h2 className="font-display text-xl md:text-2xl text-ink mb-2 group-hover:text-teal transition-colors">
                     Arteterapia
                   </h2>
-                  <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Acompañamiento emocional a través del arte para expresar, comprender
-                    y transformar emociones, sin buscar resultados estéticos ni requerir
-                    experiencia artística.
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                    Acompañamiento emocional a través del arte para expresar y transformar emociones.
                   </p>
-                  <span className="inline-flex items-center gap-2 px-6 py-3 border border-teal/40 rounded-full text-teal font-medium transition-all duration-300 group-hover:bg-teal group-hover:text-white group-hover:border-teal group-hover:shadow-md">
-                    Quiero saber más
-                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                  <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                    Saber más
+                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </article>
@@ -143,8 +141,8 @@ export default function HomePage() {
 
             {/* Tanatología Card */}
             <Link href="/tanatologia" className="group">
-              <article className="bg-frost/50 rounded-3xl overflow-hidden card-lift h-full border border-teal-glow/30">
-                <div className="aspect-[4/3] relative overflow-hidden bg-mist/30">
+              <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30 flex">
+                <div className="w-28 md:w-36 flex-shrink-0 relative overflow-hidden bg-mist/30">
                   <Image
                     src="/ojo-11-scaled.jpg"
                     alt="Tanatología - Acompañamiento en duelo"
@@ -152,17 +150,16 @@ export default function HomePage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-8 lg:p-10">
-                  <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 group-hover:text-teal transition-colors">
+                <div className="p-5 md:p-6 flex flex-col justify-center">
+                  <h2 className="font-display text-xl md:text-2xl text-ink mb-2 group-hover:text-teal transition-colors">
                     Tanatología
                   </h2>
-                  <p className="text-charcoal/70 leading-relaxed mb-6">
-                    Acompaña procesos de pérdida, cambio y duelo, ayudando a resignificar
-                    lo vivido para seguir con sentido, desde un enfoque humano y compasivo.
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                    Acompañamiento en procesos de pérdida, cambio y duelo con un enfoque humano.
                   </p>
-                  <span className="inline-flex items-center gap-2 px-6 py-3 border border-teal/40 rounded-full text-teal font-medium transition-all duration-300 group-hover:bg-teal group-hover:text-white group-hover:border-teal group-hover:shadow-md">
-                    Quiero saber más
-                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                  <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                    Saber más
+                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </article>
@@ -174,7 +171,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Session Types */}
-      <section className="section bg-canvas-soft">
+      <section className="py-12 md:py-16 bg-canvas-soft">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
@@ -223,7 +220,7 @@ export default function HomePage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-16 md:py-24 relative">
+      <section className="py-12 md:py-16 relative">
         <div className="max-w-3xl mx-auto px-6 text-center relative">
           <span className="quote-mark absolute -top-8 left-0 md:left-10">"</span>
           <blockquote className="font-display text-2xl md:text-4xl text-ink leading-relaxed relative z-10">
@@ -239,7 +236,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Book Section */}
-      <section className="section bg-mist/30" id="indeleble">
+      <section className="py-12 md:py-16 bg-mist/30" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
@@ -306,7 +303,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Contact Section */}
-      <section className="section" id="contacto">
+      <section className="py-12 md:py-16" id="contacto">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-4xl md:text-5xl text-ink mb-4">Contáctame</h2>

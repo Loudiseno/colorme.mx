@@ -39,7 +39,7 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <section className="section bg-frost/50 relative overflow-hidden">
+    <section className="py-12 md:py-16 bg-frost/50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-teal-glow/10 blur-3xl" />

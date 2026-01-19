@@ -64,9 +64,9 @@ const process = [
 ]
 
 const sessionTypes = [
-  { icon: '/Frame 25.png', title: 'Individual', description: 'Sesiones personalizadas a tu ritmo' },
-  { icon: '/Frame 26.png', title: 'Grupal', description: 'Sanar en comunidad con otros' },
-  { icon: '/Frame 27.png', title: 'Empresarial', description: 'Apoyo para equipos y organizaciones' },
+  { icon: '/columpio.png', title: 'Sesiones individuales', description: 'Adaptadas a tu ritmo, tu historia y tu necesidad actual.' },
+  { icon: '/corazon.png', title: 'Talleres grupales', description: 'Espacios de contención compartida para nombrar, soltar y reconstruir desde la escucha colectiva.' },
+  { icon: '/adolecente hombre.png', title: 'Colectivos o empresas', description: 'Acompañamiento en procesos organizacionales con pérdidas, cierres, despidos o transiciones internas.' },
 ]
 
 export default function TanatologiaPage() {
