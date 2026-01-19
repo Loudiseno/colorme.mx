@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Script from 'next/script'
 import Image from 'next/image'
-import { ArrowRight, Users, User, Building2, Calendar } from 'lucide-react'
+import { ArrowRight, Calendar } from 'lucide-react'
 import { siteConfig, generateBookSchema } from '@/lib/seo'
 import FAQ from '@/components/FAQ'
 import Testimonials from '@/components/Testimonials'
@@ -172,36 +172,48 @@ export default function HomePage() {
 
       {/* Session Types */}
       <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="w-20 h-20 rounded-full bg-teal-glow/30 flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-glow/50 transition-colors duration-300">
-                <User className="text-teal" size={32} />
+              <div className="w-24 h-24 mx-auto mb-4 relative">
+                <Image
+                  src="/columpio.png"
+                  alt="Terapias individuales"
+                  fill
+                  className="object-contain group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
               <h3 className="font-display text-xl text-ink mb-2">Terapias individuales</h3>
-              <p className="text-charcoal/70">
-                Presenciales u online. Sesiones adaptadas a tu ritmo y proceso personal,
-                con un acompañamiento cercano.
+              <p className="text-charcoal/70 text-sm">
+                Presenciales u online. Sesiones adaptadas a tu ritmo y proceso personal.
               </p>
             </div>
             <div className="text-center group">
-              <div className="w-20 h-20 rounded-full bg-teal-glow/30 flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-glow/50 transition-colors duration-300">
-                <Users className="text-teal" size={32} />
+              <div className="w-24 h-24 mx-auto mb-4 relative">
+                <Image
+                  src="/corazon.png"
+                  alt="Talleres grupales"
+                  fill
+                  className="object-contain group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
               <h3 className="font-display text-xl text-ink mb-2">Talleres grupales</h3>
-              <p className="text-charcoal/70">
-                Presenciales u online. Encuentros seguros para crear, compartir
-                y sanar desde lo colectivo.
+              <p className="text-charcoal/70 text-sm">
+                Presenciales u online. Encuentros seguros para crear y sanar en comunidad.
               </p>
             </div>
             <div className="text-center group">
-              <div className="w-20 h-20 rounded-full bg-teal-glow/30 flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-glow/50 transition-colors duration-300">
-                <Building2 className="text-teal" size={32} />
+              <div className="w-24 h-24 mx-auto mb-4 relative">
+                <Image
+                  src="/adolecente hombre.png"
+                  alt="Empresas y colectivos"
+                  fill
+                  className="object-contain group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
               <h3 className="font-display text-xl text-ink mb-2">Empresas y colectivos</h3>
-              <p className="text-charcoal/70">
-                Presenciales u online. Espacios diseñados a medida según los
-                objetivos del grupo.
+              <p className="text-charcoal/70 text-sm">
+                Presenciales u online. Espacios diseñados a medida para grupos.
               </p>
             </div>
           </div>
