@@ -89,43 +89,55 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Button styles - refined and organic */
 .btn-primary {
-  @apply inline-block px-7 py-3.5 bg-teal text-white
+  @apply inline-block px-7 py-3.5 text-ink
          transition-all duration-300
-         hover:bg-teal-dark hover:shadow-md hover:-translate-y-0.5;
+         hover:shadow-md hover:-translate-y-0.5;
+  background: #b2f7ef;
   font-family: var(--font-cormorant);
   font-size: 1.0625rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  border-radius: 2px;
+  border-radius: 16px;
+}
+
+.btn-primary:hover {
+  background: #5EEAD4;
 }
 
 .btn-secondary {
-  @apply inline-block px-7 py-3.5 border border-teal text-teal
-         transition-all duration-300
-         hover:bg-teal hover:text-white;
+  @apply inline-block px-7 py-3.5 text-ink
+         transition-all duration-300;
+  background: #b2f7ef;
+  border: 2px solid #b2f7ef;
   font-family: var(--font-cormorant);
   font-size: 1.0625rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  border-radius: 2px;
+  border-radius: 16px;
+}
+
+.btn-secondary:hover {
+  background: #5EEAD4;
+  border-color: #5EEAD4;
 }
 
 /* Primary CTA button - elegant solid style */
 .btn-gradient {
-  @apply inline-block px-8 py-4 bg-teal text-white
+  @apply inline-block px-8 py-4 text-ink
          transition-all duration-500
          hover:-translate-y-0.5;
+  background: #b2f7ef;
   font-family: var(--font-cormorant);
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: 0.05em;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(178, 247, 239, 0.4);
 }
 
 .btn-gradient:hover {
-  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.3);
-  background: var(--color-teal-dark);
+  box-shadow: 0 4px 16px rgba(178, 247, 239, 0.6);
+  background: #5EEAD4;
 }
 
 /* Elegant navigation links */

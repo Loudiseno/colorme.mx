@@ -178,7 +178,8 @@ export default function SobreMi() {
           </p>
           <Link
             href="/#contacto"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-teal text-white rounded-full font-medium shadow-lg shadow-teal/20 hover:shadow-xl hover:shadow-teal/30 hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-flex items-center gap-3 px-8 py-4 text-ink font-medium shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            style={{ background: '#b2f7ef', borderRadius: '16px', boxShadow: '0 2px 8px rgba(178, 247, 239, 0.4)' }}
           >
             <Calendar size={20} />
             Agenda tu primera sesión gratis
