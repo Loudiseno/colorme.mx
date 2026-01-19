@@ -167,48 +167,71 @@ export default function TanatologiaPage() {
 
       {/* What is it */}
       <section className="section">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-6">
-            ¿Qué es la tanatología?
-          </h2>
-          <div className="space-y-4 text-charcoal/80 leading-relaxed">
-            <p>
-              La tanatología es una disciplina que se enfoca en acompañar a las personas
-              en sus procesos de pérdida, duelo y muerte. Aunque su nombre proviene del
-              griego <em>thanatos</em> (muerte), la tanatología es en realidad una
-              disciplina sobre la <strong className="text-teal">vida</strong>: sobre cómo seguir viviendo
-              después de una pérdida significativa.
-            </p>
-            <p>
-              Como tanatóloga, mi trabajo es ofrecerte un espacio seguro donde puedas
-              expresar tu dolor, procesar tus emociones y encontrar formas de integrar
-              la pérdida en tu historia de vida. No se trata de "superar" el duelo
-              como si fuera algo que hay que dejar atrás, sino de aprender a vivir
-              con él de una manera que te permita seguir adelante.
-            </p>
-            <p>
-              El duelo no tiene un tiempo definido ni un camino único. Cada persona
-              lo vive de manera diferente, y mi rol es acompañarte en tu proceso
-              particular, respetando tu ritmo y tus necesidades.
-            </p>
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-display text-3xl md:text-4xl text-ink mb-6">
+                ¿Qué es la tanatología?
+              </h2>
+              <div className="space-y-4 text-charcoal/80 leading-relaxed">
+                <p>
+                  La tanatología es una disciplina que se enfoca en acompañar a las personas
+                  en sus procesos de pérdida, duelo y muerte. Aunque su nombre proviene del
+                  griego <em>thanatos</em> (muerte), la tanatología es en realidad una
+                  disciplina sobre la <strong className="text-teal">vida</strong>: sobre cómo seguir viviendo
+                  después de una pérdida significativa.
+                </p>
+                <p>
+                  Como tanatóloga, mi trabajo es ofrecerte un espacio seguro donde puedas
+                  expresar tu dolor, procesar tus emociones y encontrar formas de integrar
+                  la pérdida en tu historia de vida. No se trata de "superar" el duelo
+                  como si fuera algo que hay que dejar atrás, sino de aprender a vivir
+                  con él de una manera que te permita seguir adelante.
+                </p>
+                <p>
+                  El duelo no tiene un tiempo definido ni un camino único. Cada persona
+                  lo vive de manera diferente, y mi rol es acompañarte en tu proceso
+                  particular, respetando tu ritmo y tus necesidades.
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                src="/2-2.jpg"
+                alt="Las etapas del duelo: negación, enojo, negociación, depresión, aceptación"
+                width={600}
+                height={450}
+                className="w-full h-auto rounded-2xl shadow-lg shadow-teal/10"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Types of Loss - Infographic */}
-      <section className="section bg-canvas-soft">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 text-center">
-            Tipos de pérdidas que acompañamos
-          </h2>
-          <p className="text-charcoal/70 text-center mb-10 max-w-2xl mx-auto">
-            El duelo no solo surge ante la muerte. Hay muchos tipos de pérdidas que merecen ser nombradas y acompañadas.
-          </p>
+      <section className="section bg-frost/40 relative overflow-hidden">
+        {/* Decorative teal accents */}
+        <div className="absolute top-10 right-10 w-32 h-32 rounded-full bg-teal-glow/30 blur-3xl" />
+        <div className="absolute bottom-10 left-10 w-40 h-40 rounded-full bg-cyan/20 blur-3xl" />
+        <div className="absolute top-1/3 right-1/4 w-24 h-24 rounded-full bg-teal/10 blur-2xl" />
+
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1 bg-teal/10 text-teal text-sm font-medium rounded-full mb-4">
+              Acompañamiento
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
+              Tipos de pérdidas que acompañamos
+            </h2>
+            <p className="text-charcoal/70 max-w-2xl mx-auto">
+              El duelo no solo surge ante la muerte. Hay muchos tipos de pérdidas que merecen ser nombradas y acompañadas.
+            </p>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {typesOfLoss.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-5 text-center shadow-sm border border-teal-glow/20 hover:shadow-md hover:border-teal-glow/40 transition-all duration-300 group"
+                className="bg-white rounded-2xl p-5 text-center shadow-sm border-2 border-teal-glow/30 hover:shadow-lg hover:border-teal/40 hover:-translate-y-1 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 mx-auto mb-4 relative">
                   <Image
@@ -218,7 +241,7 @@ export default function TanatologiaPage() {
                     className="object-contain group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="font-display text-lg text-ink mb-2">{item.title}</h3>
+                <h3 className="font-display text-lg text-teal mb-2">{item.title}</h3>
                 <p className="text-sm text-charcoal/70 leading-relaxed">{item.description}</p>
               </div>
             ))}

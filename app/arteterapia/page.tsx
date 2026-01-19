@@ -224,19 +224,29 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* What it helps with - Infographic */}
-      <section className="section bg-canvas-soft">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-4 text-center">
-            ¿En qué puede ayudarte?
-          </h2>
-          <p className="text-charcoal/70 text-center mb-10 max-w-2xl mx-auto">
-            La arteterapia te acompaña en diferentes momentos y procesos de vida.
-          </p>
+      <section className="section bg-frost/40 relative overflow-hidden">
+        {/* Decorative teal accents */}
+        <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-teal-glow/30 blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-cyan/20 blur-3xl" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-teal/10 blur-2xl" />
+
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1 bg-teal/10 text-teal text-sm font-medium rounded-full mb-4">
+              Acompañamiento
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
+              ¿En qué puede ayudarte?
+            </h2>
+            <p className="text-charcoal/70 max-w-2xl mx-auto">
+              La arteterapia te acompaña en diferentes momentos y procesos de vida.
+            </p>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {helpsWith.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-5 text-center shadow-sm border border-teal-glow/20 hover:shadow-md hover:border-teal-glow/40 transition-all duration-300 group"
+                className="bg-white rounded-2xl p-5 text-center shadow-sm border-2 border-teal-glow/30 hover:shadow-lg hover:border-teal/40 hover:-translate-y-1 transition-all duration-300 group"
               >
                 <div className="w-16 h-16 mx-auto mb-4 relative">
                   <Image
@@ -246,7 +256,7 @@ export default function ArteterapiaPage() {
                     className="object-contain group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="font-display text-lg text-ink mb-2">{item.title}</h3>
+                <h3 className="font-display text-lg text-teal mb-2">{item.title}</h3>
                 <p className="text-sm text-charcoal/70 leading-relaxed">{item.description}</p>
               </div>
             ))}
