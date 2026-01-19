@@ -87,42 +87,45 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-/* Button styles */
+/* Button styles - refined and organic */
 .btn-primary {
-  @apply inline-block px-8 py-4 bg-teal text-white rounded-full
-         font-medium tracking-wide transition-all duration-300
-         hover:bg-teal-dark hover:shadow-lg hover:-translate-y-0.5
-         hover:shadow-teal/30;
+  @apply inline-block px-7 py-3.5 bg-teal text-white
+         transition-all duration-300
+         hover:bg-teal-dark hover:shadow-md hover:-translate-y-0.5;
+  font-family: var(--font-cormorant);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  border-radius: 2px;
 }
 
 .btn-secondary {
-  @apply inline-block px-8 py-4 border-2 border-teal text-teal rounded-full
-         font-medium tracking-wide transition-all duration-300
+  @apply inline-block px-7 py-3.5 border border-teal text-teal
+         transition-all duration-300
          hover:bg-teal hover:text-white;
+  font-family: var(--font-cormorant);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  border-radius: 2px;
 }
 
-/* Gradient button */
+/* Primary CTA button - elegant solid style */
 .btn-gradient {
-  @apply inline-block px-8 py-4 rounded-full font-medium tracking-wide
-         transition-all duration-300 text-white
+  @apply inline-block px-8 py-4 bg-teal text-white
+         transition-all duration-500
          hover:-translate-y-0.5;
-  background: var(--gradient-teal);
-  box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
-  animation: pulse-glow 2s ease-in-out 0.5s 3;
+  font-family: var(--font-cormorant);
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.2);
 }
 
 .btn-gradient:hover {
-  box-shadow: 0 6px 25px rgba(13, 148, 136, 0.45);
-  animation: pulse-glow 1.5s ease-in-out infinite;
-}
-
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
-  }
-  50% {
-    box-shadow: 0 4px 30px rgba(13, 148, 136, 0.55), 0 0 20px rgba(13, 148, 136, 0.3);
-  }
+  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.3);
+  background: var(--color-teal-dark);
 }
 
 /* Elegant navigation links */

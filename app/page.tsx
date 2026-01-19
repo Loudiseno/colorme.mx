@@ -222,9 +222,9 @@ export default function HomePage() {
               href={siteConfig.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white rounded-full text-teal font-medium shadow-lg shadow-teal/10 border border-teal-glow/50 transition-all duration-300 hover:shadow-xl hover:shadow-teal/20 hover:border-teal hover:-translate-y-0.5 hover:bg-teal hover:text-white"
+              className="btn-secondary inline-flex items-center gap-2"
             >
-              <Calendar size={20} />
+              <Calendar size={18} />
               Agenda tu sesión
             </a>
           </div>

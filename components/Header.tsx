@@ -11,6 +11,7 @@ const navigation = [
   { name: 'Tanatología', href: '/tanatologia' },
   { name: 'Sobre mí', href: '/#sobremi' },
   { name: 'Mi libro', href: '/#indeleble' },
+  { name: 'Blog', href: '/#blog' },
 ]
 
 const socials = [
