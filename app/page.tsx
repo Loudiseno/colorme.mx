@@ -36,7 +36,7 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="min-h-[60vh] flex items-center justify-center relative bg-watercolor pt-24 pb-16 overflow-hidden">
+      <section className="min-h-[50vh] flex items-center justify-center relative bg-watercolor pt-24 pb-12 overflow-hidden">
         {/* Decorative floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 right-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl animate-float" />
@@ -50,35 +50,79 @@ export default function HomePage() {
             <span className="block text-teal opacity-0 animate-slide-up stagger-2">Siente.</span>
             <span className="block opacity-0 animate-slide-up stagger-3">Transforma.</span>
           </h1>
-          <p className="text-lg md:text-xl text-charcoal/80 max-w-2xl mx-auto mb-10 opacity-0 animate-fade-up stagger-4">
-            El lugar en donde puedes crear tu propia historia a través de la arteterapia
-            y la tanatología. Acompañamiento para sanar el duelo y transformar tus emociones.
-          </p>
           <a
             href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-gradient opacity-0 animate-fade-up stagger-5"
+            className="btn-gradient opacity-0 animate-fade-up stagger-4"
           >
             Agenda tu primera sesión ¡Gratis!
           </a>
         </div>
       </section>
 
-      {/* Quote Section */}
-      <section className="py-20 md:py-28 bg-mist/50 relative">
-        <div className="max-w-3xl mx-auto px-6 text-center relative">
-          <span className="quote-mark absolute -top-8 left-0 md:left-10">"</span>
-          <blockquote className="font-display text-2xl md:text-4xl text-ink leading-relaxed relative z-10">
-            Sanar no es seguir las líneas.
-            <br />
-            <span className="text-teal">Es dibujar las tuyas propias.</span>
-          </blockquote>
-          <span className="quote-mark absolute -bottom-16 right-0 md:right-10 rotate-180">"</span>
-          <p className="mt-12 text-charcoal/70 relative z-10">
-            No hay reglas ni caminos fijos. No se trata de vivir sin sentir,
-            sino de dar espacio a las emociones, permitirnos habitarlas y transformarlas.
-          </p>
+      {/* Intro + About Lou Section */}
+      <section className="section" id="sobremi">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Practice Introduction */}
+            <div>
+              <h2 className="font-display text-3xl md:text-4xl text-ink mb-6">
+                Un espacio para sanar
+                <span className="text-teal"> a través del arte</span>
+              </h2>
+              <div className="space-y-4 text-charcoal/80 leading-relaxed">
+                <p>
+                  Color Me es un lugar donde puedes crear tu propia historia a través
+                  de la arteterapia y la tanatología. Aquí no hay reglas ni caminos fijos.
+                </p>
+                <p>
+                  No se trata de vivir sin sentir, sino de dar espacio a las emociones,
+                  permitirnos habitarlas y transformarlas. Acompañamiento profesional
+                  para sanar el duelo y reconectar contigo.
+                </p>
+              </div>
+              <a
+                href={siteConfig.calendly}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-8 text-teal font-medium hover:gap-3 transition-all"
+              >
+                Agenda una sesión gratuita
+                <ArrowRight size={18} />
+              </a>
+            </div>
+
+            {/* Right: About Lou */}
+            <div className="relative">
+              <div className="bg-frost/50 rounded-3xl p-6 md:p-8 border border-teal-glow/30">
+                <div className="flex flex-col sm:flex-row gap-6 items-start">
+                  <div className="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 rounded-2xl overflow-hidden shadow-lg shadow-teal/10">
+                    <Image
+                      src="/Photography-Portfolio-Website-in-Grey-Black-Light-Experimental-Style_page-0001-2-1536x1502.jpg"
+                      alt="Lou - Arteterapeuta y Tanatóloga"
+                      width={160}
+                      height={160}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-display text-2xl text-ink mb-1">Hola, soy Lou</h3>
+                    <p className="text-teal font-medium text-sm mb-3">
+                      Diseñadora, artista, fotógrafa y tanatóloga
+                    </p>
+                    <p className="text-charcoal/70 text-sm leading-relaxed">
+                      El arte y la tanatología fueron mi refugio y la puerta de regreso a mí.
+                      Hoy acompaño a otras personas en sus propios procesos de duelo, cambio
+                      o cierre, creando espacios seguros para habitar lo que sienten.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Decorative element */}
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-glow/30 rounded-full blur-xl -z-10" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -197,45 +241,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SectionDivider />
-
-      {/* About Section */}
-      <section className="section" id="sobremi">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <h2 className="font-display text-4xl md:text-5xl text-ink mb-6">Sobre mí</h2>
-              <p className="text-lg text-teal font-medium mb-4">
-                Diseñadora, artista, fotógrafa y tanatóloga.
-              </p>
-              <div className="space-y-4 text-charcoal/80 leading-relaxed">
-                <p>
-                  No siempre podemos elegir lo que nos pasa, pero sí cómo darle sentido.
-                  Mi historia me enseñó que sentir también es sanar y que en medio del
-                  dolor pueden nacer caminos nuevos.
-                </p>
-                <p>
-                  El arte y la tanatología fueron el refugio y la puerta de regreso a mí.
-                  Hoy acompaño a otras personas en sus propios procesos de duelo, cambio
-                  o cierre, creando espacios seguros para habitar lo que sienten y
-                  transformar lo vivido con respeto y creatividad.
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl shadow-teal/10">
-                <Image
-                  src="/Photography-Portfolio-Website-in-Grey-Black-Light-Experimental-Style_page-0001-2-1536x1502.jpg"
-                  alt="Lou - Arteterapeuta y Tanatóloga"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto"
-                />
-              </div>
-              {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-glow/30 rounded-full blur-xl -z-10" />
-            </div>
-          </div>
+      {/* Quote Section */}
+      <section className="py-16 md:py-24 relative">
+        <div className="max-w-3xl mx-auto px-6 text-center relative">
+          <span className="quote-mark absolute -top-8 left-0 md:left-10">"</span>
+          <blockquote className="font-display text-2xl md:text-4xl text-ink leading-relaxed relative z-10">
+            Sanar no es seguir las líneas.
+            <br />
+            <span className="text-teal">Es dibujar las tuyas propias.</span>
+          </blockquote>
+          <span className="quote-mark absolute -bottom-16 right-0 md:right-10 rotate-180">"</span>
+          <p className="mt-10 text-charcoal/60 relative z-10 italic">— Lou</p>
         </div>
       </section>
 
