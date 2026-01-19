@@ -62,13 +62,13 @@ export default function HomePage() {
             <div className="relative flex flex-col opacity-0 animate-fade-up stagger-2">
               <div className="bg-frost/50 rounded-3xl p-8 md:p-10 border border-teal-glow/30 flex-1 flex flex-col">
                 <div className="flex flex-col h-full">
-                  <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg shadow-teal/10 mb-6">
+                  <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-lg shadow-teal/10 mb-6">
                     <Image
                       src="/Photography-Portfolio-Website-in-Grey-Black-Light-Experimental-Style_page-0001-2-1536x1502.jpg"
                       alt="Lou - Arteterapeuta y Tanatóloga"
                       width={600}
-                      height={450}
-                      className="w-full h-full object-cover"
+                      height={600}
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   <div className="flex-1">
