@@ -7,7 +7,7 @@ import ScrollToTop from './ScrollToTop'
 const navigation = [
   { name: 'Arteterapia', href: '/arteterapia' },
   { name: 'Tanatología', href: '/tanatologia' },
-  { name: 'Sobre mí', href: '/#sobremi' },
+  { name: 'Sobre mí', href: '/sobre-mi' },
   { name: 'Mi libro', href: '/#indeleble' },
 ]
 

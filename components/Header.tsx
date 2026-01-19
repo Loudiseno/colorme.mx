@@ -9,7 +9,7 @@ import { siteConfig } from '@/lib/seo'
 const navigation = [
   { name: 'Arteterapia', href: '/arteterapia' },
   { name: 'Tanatología', href: '/tanatologia' },
-  { name: 'Sobre mí', href: '/#sobremi' },
+  { name: 'Sobre mí', href: '/sobre-mi' },
   { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Blog', href: '/#blog' },
 ]
