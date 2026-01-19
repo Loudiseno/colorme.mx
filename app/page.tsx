@@ -116,24 +116,24 @@ export default function HomePage() {
             {/* Arteterapia Card */}
             <Link href="/arteterapia" className="group">
               <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30">
-                <div className="aspect-[3/2] relative overflow-hidden bg-mist/30">
+                <div className="aspect-[4/3] relative overflow-hidden bg-white">
                   <Image
                     src="/COLORME_logo-12-scaled.jpg"
                     alt="Arteterapia - Terapia a través del arte"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
                 <div className="p-5">
-                  <h2 className="font-display text-xl md:text-2xl text-ink mb-2 group-hover:text-teal transition-colors">
+                  <h2 className="font-display text-2xl md:text-3xl text-ink mb-2 group-hover:text-teal transition-colors">
                     Arteterapia
                   </h2>
-                  <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
+                  <p className="text-charcoal/70 leading-relaxed mb-3">
                     Acompañamiento emocional a través del arte para expresar y transformar emociones.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                  <span className="inline-flex items-center gap-2 text-teal font-medium">
                     Saber más
-                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </article>
@@ -142,24 +142,24 @@ export default function HomePage() {
             {/* Tanatología Card */}
             <Link href="/tanatologia" className="group">
               <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30">
-                <div className="aspect-[3/2] relative overflow-hidden bg-mist/30">
+                <div className="aspect-[4/3] relative overflow-hidden bg-white">
                   <Image
                     src="/ojo-11-scaled.jpg"
                     alt="Tanatología - Acompañamiento en duelo"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
                 <div className="p-5">
-                  <h2 className="font-display text-xl md:text-2xl text-ink mb-2 group-hover:text-teal transition-colors">
+                  <h2 className="font-display text-2xl md:text-3xl text-ink mb-2 group-hover:text-teal transition-colors">
                     Tanatología
                   </h2>
-                  <p className="text-charcoal/70 text-sm leading-relaxed mb-3">
+                  <p className="text-charcoal/70 leading-relaxed mb-3">
                     Acompañamiento en procesos de pérdida, cambio y duelo con un enfoque humano.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                  <span className="inline-flex items-center gap-2 text-teal font-medium">
                     Saber más
-                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </article>
@@ -175,7 +175,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="w-24 h-24 mx-auto mb-4 relative">
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
                 <Image
                   src="/columpio.png"
                   alt="Terapias individuales"
@@ -183,13 +183,13 @@ export default function HomePage() {
                   className="object-contain group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <h3 className="font-display text-xl text-ink mb-2">Terapias individuales</h3>
-              <p className="text-charcoal/70 text-sm">
+              <h3 className="font-display text-2xl md:text-3xl text-ink mb-3">Terapias individuales</h3>
+              <p className="text-charcoal/70 text-base md:text-lg">
                 Presenciales u online. Sesiones adaptadas a tu ritmo y proceso personal.
               </p>
             </div>
             <div className="text-center group">
-              <div className="w-24 h-24 mx-auto mb-4 relative">
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
                 <Image
                   src="/corazon.png"
                   alt="Talleres grupales"
@@ -197,13 +197,13 @@ export default function HomePage() {
                   className="object-contain group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <h3 className="font-display text-xl text-ink mb-2">Talleres grupales</h3>
-              <p className="text-charcoal/70 text-sm">
+              <h3 className="font-display text-2xl md:text-3xl text-ink mb-3">Talleres grupales</h3>
+              <p className="text-charcoal/70 text-base md:text-lg">
                 Presenciales u online. Encuentros seguros para crear y sanar en comunidad.
               </p>
             </div>
             <div className="text-center group">
-              <div className="w-24 h-24 mx-auto mb-4 relative">
+              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
                 <Image
                   src="/adolecente hombre.png"
                   alt="Empresas y colectivos"
@@ -211,8 +211,8 @@ export default function HomePage() {
                   className="object-contain group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <h3 className="font-display text-xl text-ink mb-2">Empresas y colectivos</h3>
-              <p className="text-charcoal/70 text-sm">
+              <h3 className="font-display text-2xl md:text-3xl text-ink mb-3">Empresas y colectivos</h3>
+              <p className="text-charcoal/70 text-base md:text-lg">
                 Presenciales u online. Espacios diseñados a medida para grupos.
               </p>
             </div>
