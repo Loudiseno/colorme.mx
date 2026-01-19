@@ -1,14 +1,5 @@
-import { Document, Page, Text, View, StyleSheet, pdf, Image, Font } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, pdf, Image } from '@react-pdf/renderer';
 import type { ArtTherapyExercise } from './artTherapyExercises';
-
-// Register fonts for better typography (using system fonts)
-Font.register({
-  family: 'Helvetica',
-  fonts: [
-    { src: 'Helvetica', fontWeight: 'normal' },
-    { src: 'Helvetica-Bold', fontWeight: 'bold' },
-  ]
-});
 
 // Define styles matching the ColorMe brand
 const styles = StyleSheet.create({
@@ -163,13 +154,18 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
     day: 'numeric'
   });
 
+  // Get absolute URL for logo (needed for client-side PDF generation)
+  const logoUrl = typeof window !== 'undefined'
+    ? `${window.location.origin}/COLORME_logo-19-768x141.png`
+    : '/COLORME_logo-19-768x141.png';
+
   return (
     <Document>
       <Page size="A4" style={styles.page}>
         {/* Header with Logo */}
         <View style={styles.header}>
           <Image
-            src="/COLORME_logo-19-768x141.png"
+            src={logoUrl}
             style={styles.logo}
           />
           <Text style={styles.title}>Hoja de Trabajo Personalizada de Arteterapia</Text>

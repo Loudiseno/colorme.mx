@@ -34,7 +34,10 @@ export default function WorksheetPage() {
       await generateWorksheetPDF(formData, exercises);
     } catch (error) {
       console.error('Error generating PDF:', error);
-      alert('Hubo un error al generar tu hoja de trabajo. Por favor intenta de nuevo.');
+      // Show more detailed error in development
+      const errorMessage = error instanceof Error ? error.message : 'Error desconocido';
+      console.error('Detalles del error:', errorMessage);
+      alert(`Hubo un error al generar tu hoja de trabajo. Por favor intenta de nuevo.\n\n${process.env.NODE_ENV === 'development' ? `Error: ${errorMessage}` : ''}`);
     } finally {
       setIsGenerating(false);
     }
