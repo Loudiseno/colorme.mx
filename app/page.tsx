@@ -7,22 +7,6 @@ import FAQ from '@/components/FAQ'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
 
-function SectionDivider() {
-  return (
-    <div className="section-divider">
-      <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M0 12C20 12 25 4 40 4C55 4 55 20 60 20C65 20 65 4 80 4C95 4 100 12 120 12"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-        <circle cx="60" cy="12" r="3" fill="currentColor" />
-      </svg>
-    </div>
-  )
-}
-
 export default function HomePage() {
   return (
     <>
@@ -47,7 +31,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-red-600 mb-6 opacity-0 animate-slide-up stagger-1">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-ink mb-6 opacity-0 animate-slide-up stagger-1">
                 Un espacio para sanar
                 <span className="text-teal"> a través del arte</span>
               </h1>
@@ -107,8 +91,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SectionDivider />
-
       {/* Services Section */}
       <section className="py-12 md:py-16" id="servicios">
         <div className="max-w-4xl mx-auto px-6">
@@ -167,8 +149,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <SectionDivider />
 
       {/* Session Types */}
       <section className="py-12 md:py-16 bg-white">
@@ -245,8 +225,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SectionDivider />
-
       {/* Book Section */}
       <section className="py-12 md:py-16 bg-white" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
@@ -307,12 +285,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SectionDivider />
-
       {/* Testimonials */}
       <Testimonials />
-
-      <SectionDivider />
 
       {/* Blog Section */}
       <section className="py-12 md:py-16 bg-white" id="blog">
@@ -396,8 +370,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SectionDivider />
-
       {/* Contact Section */}
       <section className="py-12 md:py-16" id="contacto">
         <div className="max-w-3xl mx-auto px-6">
@@ -410,8 +382,6 @@ export default function HomePage() {
           <ContactForm />
         </div>
       </section>
-
-      <SectionDivider />
 
       {/* FAQ */}
       <FAQ />
