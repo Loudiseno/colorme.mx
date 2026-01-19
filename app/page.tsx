@@ -47,7 +47,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-ink mb-6 opacity-0 animate-slide-up stagger-1">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-red-600 mb-6 opacity-0 animate-slide-up stagger-1">
                 Un espacio para sanar
                 <span className="text-teal"> a través del arte</span>
               </h1>
