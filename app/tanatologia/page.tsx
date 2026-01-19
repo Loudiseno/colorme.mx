@@ -45,32 +45,32 @@ const situations = [
 
 const typesOfLoss = [
   {
-    icon: '/Frame 21.png',
+    icon: '/Frame-21-2.png',
     title: 'Relacionales',
     description: 'Pérdida de vínculos importantes: muerte, rupturas, distanciamiento familiar.',
   },
   {
-    icon: '/Frame 23.png',
+    icon: '/Frame-23-1.png',
     title: 'Intrapersonal',
     description: 'Pérdidas de identidad: crisis de propósito, cambio de carrera, sensación de fracaso.',
   },
   {
-    icon: '/Frame 29.png',
+    icon: '/Frame-29.png',
     title: 'Materiales',
     description: 'Pérdida de empleo, dificultades económicas, pérdida del hogar.',
   },
   {
-    icon: '/Frame 22.png',
+    icon: '/Frame-22.png',
     title: 'Salud',
     description: 'Cambios físicos o mentales: enfermedad crónica, discapacidad, infertilidad.',
   },
   {
-    icon: '/Frame 30.png',
+    icon: '/Frame-30.png',
     title: 'Evolutivas',
     description: 'Transiciones de vida: jubilación, envejecimiento, nido vacío.',
   },
   {
-    icon: '/Frame 28.png',
+    icon: '/Frame-28.png',
     title: 'Ambiguas',
     description: 'Pérdidas no reconocidas socialmente: desapariciones, relaciones ocultas.',
   },

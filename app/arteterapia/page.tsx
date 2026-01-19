@@ -61,27 +61,27 @@ const audiences = [
 
 const helpsWith = [
   {
-    icon: '/Frame 21.png',
+    icon: '/Frame-21.png',
     title: 'Duelo',
     description: 'Creamos un espacio seguro para procesar la ausencia y el dolor.'
   },
   {
-    icon: '/Frame 23.png',
+    icon: '/Frame-23-1.png',
     title: 'Autoconocimiento',
     description: 'Exploramos tus emociones y patrones con compasión.'
   },
   {
-    icon: '/Frame 20.png',
+    icon: '/Frame-20-1.png',
     title: 'Cambios de vida',
     description: 'Transiciones como separaciones, mudanzas, nuevos comienzos.'
   },
   {
-    icon: '/Frame 24.png',
+    icon: '/Frame-24-1.png',
     title: 'Enfermedades',
     description: 'Canalizamos el miedo y acompañamos emocionalmente.'
   },
   {
-    icon: '/Frame 22.png',
+    icon: '/Frame-22.png',
     title: 'Ansiedad y estrés',
     description: 'Liberamos la tensión a través de la reconexión creativa.'
   },
