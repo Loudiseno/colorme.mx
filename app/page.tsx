@@ -20,7 +20,7 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative bg-watercolor pt-20 overflow-hidden">
+      <section className="min-h-[60vh] flex items-center justify-center relative bg-watercolor pt-24 pb-16 overflow-hidden">
         {/* Decorative floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 right-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl animate-float" />
