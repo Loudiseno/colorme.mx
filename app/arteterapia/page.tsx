@@ -307,17 +307,17 @@ export default function ArteterapiaPage() {
                 <span className="text-primary-dark font-medium text-sm uppercase tracking-wider">Nuevo Recurso</span>
               </div>
               <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
-                Empieza desde casa con tu hoja de trabajo personalizada
+                Empieza desde casa con tu práctica personalizada
               </h2>
               <p className="text-charcoal/80 max-w-2xl mx-auto leading-relaxed">
-                ¿No estás seguro/a si la arteterapia es para ti? Crea una hoja de trabajo personalizada
+                ¿No estás seguro/a si la arteterapia es para ti? Crea una práctica personalizada
                 con ejercicios terapéuticos que puedes hacer por tu cuenta. Es gratis y te ayudará
                 a experimentar el poder sanador del arte.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/hoja-de-trabajo" className="btn-primary">
-                Crear Mi Hoja de Trabajo Gratis
+                Crear Mi Práctica Personalizada Gratis
               </Link>
               <span className="text-sm text-slate">
                 PDF descargable • Ejercicios personalizados

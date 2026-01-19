@@ -34,7 +34,10 @@ export default function WorksheetPage() {
       await generateWorksheetPDF(formData, exercises);
     } catch (error) {
       console.error('Error generating PDF:', error);
-      alert('Hubo un error al generar tu hoja de trabajo. Por favor intenta de nuevo.');
+      // Show more detailed error in development
+      const errorMessage = error instanceof Error ? error.message : 'Error desconocido';
+      console.error('Detalles del error:', errorMessage);
+      alert(`Hubo un error al generar tu práctica personalizada. Por favor intenta de nuevo.\n\n${process.env.NODE_ENV === 'development' ? `Error: ${errorMessage}` : ''}`);
     } finally {
       setIsGenerating(false);
     }
@@ -58,10 +61,10 @@ export default function WorksheetPage() {
 
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-ink mb-6 animate-fade-up">
-            Hoja de Trabajo Personalizada
+            Práctica Personalizada
           </h1>
           <p className="text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed animate-fade-up stagger-1">
-            Crea tu propia hoja de trabajo de arteterapia personalizada. Responde unas preguntas breves y recibe ejercicios terapéuticos diseñados específicamente para ti.
+            Crea tu propia práctica personalizada de arteterapia personalizada. Responde unas preguntas breves y recibe ejercicios terapéuticos diseñados específicamente para ti.
           </p>
         </div>
       </section>
@@ -182,7 +185,7 @@ export default function WorksheetPage() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                       </svg>
-                      Generando tu hoja de trabajo...
+                      Generando tu práctica personalizada...
                     </span>
                   ) : (
                     'Generar Mi Hoja de Trabajo'
@@ -193,7 +196,7 @@ export default function WorksheetPage() {
 
             {/* Info Box */}
             <div className="mt-8 p-6 bg-mist rounded-xl border-l-4 border-primary">
-              <h3 className="font-display text-lg text-ink mb-2">¿Qué incluye tu hoja de trabajo?</h3>
+              <h3 className="font-display text-lg text-ink mb-2">¿Qué incluye tu práctica personalizada?</h3>
               <ul className="space-y-2 text-charcoal">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
@@ -222,7 +225,7 @@ export default function WorksheetPage() {
           {/* Additional Info */}
           <div className="mt-12 text-center">
             <p className="text-slate mb-4">
-              Tus respuestas son privadas y se usan únicamente para generar tu hoja de trabajo personalizada.
+              Tus respuestas son privadas y se usan únicamente para generar tu práctica personalizada personalizada.
             </p>
             <p className="text-sm text-slate">
               ¿Necesitas apoyo adicional?{' '}
