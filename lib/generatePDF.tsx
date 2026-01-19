@@ -1,23 +1,142 @@
-import { Document, Page, Text, View, StyleSheet, pdf } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, pdf, Image } from '@react-pdf/renderer';
 import type { ArtTherapyExercise } from './artTherapyExercises';
 
-// Minimal styles
+// Styles for the PDF
 const styles = StyleSheet.create({
   page: {
     padding: 40,
     fontFamily: 'Helvetica',
+    backgroundColor: '#FDFCFA',
   },
-  title: {
-    fontSize: 24,
-    marginBottom: 20,
-    color: '#0D9488',
+  header: {
+    marginBottom: 25,
+    paddingBottom: 20,
+    borderBottomWidth: 2,
+    borderBottomColor: '#0D9488',
+    alignItems: 'center',
   },
-  text: {
-    fontSize: 12,
+  logo: {
+    width: 120,
+    height: 'auto',
     marginBottom: 10,
   },
-  section: {
+  title: {
+    fontSize: 22,
+    marginBottom: 8,
+    color: '#0D9488',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  subtitle: {
+    fontSize: 11,
+    color: '#6B7A8C',
+    textAlign: 'center',
+  },
+  infoBox: {
+    backgroundColor: '#F0F7F6',
+    padding: 15,
+    borderRadius: 8,
+    marginBottom: 25,
+  },
+  infoRow: {
+    flexDirection: 'row',
+    marginBottom: 6,
+  },
+  label: {
+    fontSize: 10,
+    color: '#3D4852',
+    fontWeight: 'bold',
+    width: 140,
+  },
+  value: {
+    fontSize: 10,
+    color: '#1C1C28',
+    flex: 1,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    color: '#0D9488',
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginBottom: 12,
+  },
+  exerciseTitle: {
+    fontSize: 14,
+    color: '#0F766E',
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  description: {
+    fontSize: 11,
+    color: '#3D4852',
     marginBottom: 15,
+    lineHeight: 1.5,
+  },
+  subsectionTitle: {
+    fontSize: 11,
+    color: '#0D9488',
+    fontWeight: 'bold',
+    marginTop: 12,
+    marginBottom: 6,
+  },
+  materialsBox: {
+    backgroundColor: '#F0F7F6',
+    padding: 12,
+    borderRadius: 6,
+    marginBottom: 15,
+  },
+  materialItem: {
+    fontSize: 10,
+    color: '#1C1C28',
+    marginBottom: 4,
+    marginLeft: 5,
+  },
+  instructionItem: {
+    fontSize: 10,
+    color: '#1C1C28',
+    marginBottom: 8,
+    lineHeight: 1.5,
+    paddingLeft: 15,
+  },
+  benefitsBox: {
+    backgroundColor: '#E8F4F3',
+    padding: 12,
+    borderRadius: 6,
+    marginTop: 15,
+    marginBottom: 20,
+  },
+  benefitsText: {
+    fontSize: 10,
+    color: '#0F766E',
+    lineHeight: 1.5,
+  },
+  disclaimer: {
+    marginTop: 30,
+    padding: 15,
+    backgroundColor: '#FFF9E6',
+    borderRadius: 6,
+    borderLeftWidth: 3,
+    borderLeftColor: '#F59E0B',
+  },
+  disclaimerText: {
+    fontSize: 9,
+    color: '#92400E',
+    lineHeight: 1.5,
+    textAlign: 'justify',
+  },
+  footer: {
+    position: 'absolute',
+    bottom: 30,
+    left: 40,
+    right: 40,
+    textAlign: 'center',
+    paddingTop: 10,
+    borderTopWidth: 1,
+    borderTopColor: '#CBD5E1',
+  },
+  copyright: {
+    fontSize: 8,
+    color: '#6B7A8C',
   },
 });
 
@@ -29,44 +148,125 @@ interface WorksheetData {
   emotion: string;
 }
 
-// Minimal PDF Document
-const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises: ArtTherapyExercise[] }) => (
-  <Document>
-    <Page size="A4" style={styles.page}>
-      <Text style={styles.title}>ColorMe - Guía Personalizada</Text>
+// PDF Document Component
+const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises: ArtTherapyExercise[] }) => {
+  const currentDate = new Date().toLocaleDateString('es-MX', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
 
-      <View style={styles.section}>
-        <Text style={styles.text}>Nombre: {data.name}</Text>
-        <Text style={styles.text}>Edad: {data.age}</Text>
-        <Text style={styles.text}>Género: {data.gender}</Text>
-        <Text style={styles.text}>Emoción: {data.emotion}</Text>
-      </View>
+  const exercise = exercises[0]; // Solo usamos el primer ejercicio
 
-      <Text style={styles.title}>Tus Ejercicios</Text>
-
-      {exercises.map((exercise, index) => (
-        <View key={index} style={styles.section}>
-          <Text style={{ fontSize: 14, fontWeight: 'bold', marginBottom: 5 }}>
-            {index + 1}. {exercise.title}
-          </Text>
-          <Text style={styles.text}>{exercise.description}</Text>
-          <Text style={styles.text}>Duración: {exercise.duration}</Text>
+  return (
+    <Document>
+      <Page size="A4" style={styles.page}>
+        {/* Header with Logo */}
+        <View style={styles.header}>
+          <Image
+            src="/COLORME_logo-19-768x141.png"
+            style={styles.logo}
+          />
+          <Text style={styles.title}>Guía Personalizada de Arteterapia</Text>
+          <Text style={styles.subtitle}>Ejercicio terapéutico diseñado especialmente para ti</Text>
         </View>
-      ))}
 
-      <View style={{ marginTop: 30, padding: 10, backgroundColor: '#FFF9E6' }}>
-        <Text style={{ fontSize: 10, textAlign: 'center' }}>
-          Los ejercicios compartidos son solo una sugerencia de práctica personal
-          y no reemplazan atención profesional, terapéutica o clínica.
-        </Text>
-      </View>
+        {/* Personal Information */}
+        <View style={styles.infoBox}>
+          <View style={styles.infoRow}>
+            <Text style={styles.label}>Nombre:</Text>
+            <Text style={styles.value}>{data.name}</Text>
+          </View>
+          <View style={styles.infoRow}>
+            <Text style={styles.label}>Fecha:</Text>
+            <Text style={styles.value}>{currentDate}</Text>
+          </View>
+          <View style={styles.infoRow}>
+            <Text style={styles.label}>Edad:</Text>
+            <Text style={styles.value}>{data.age} años</Text>
+          </View>
+          <View style={styles.infoRow}>
+            <Text style={styles.label}>Género:</Text>
+            <Text style={styles.value}>{data.gender}</Text>
+          </View>
+          <View style={styles.infoRow}>
+            <Text style={styles.label}>Emoción a trabajar:</Text>
+            <Text style={styles.value}>{data.emotion}</Text>
+          </View>
+          <View style={styles.infoRow}>
+            <Text style={styles.label}>Lo que estoy procesando:</Text>
+            <Text style={styles.value}>{data.griefOrGoal}</Text>
+          </View>
+        </View>
 
-      <Text style={{ fontSize: 10, textAlign: 'center', marginTop: 20 }}>
-        Copyright 2026 ColorMe - Todos los derechos reservados
-      </Text>
-    </Page>
-  </Document>
-);
+        {/* Exercise Section */}
+        <Text style={styles.sectionTitle}>Tu Ejercicio Personalizado</Text>
+
+        {exercise && (
+          <>
+            <Text style={styles.exerciseTitle}>{exercise.title}</Text>
+
+            <Text style={styles.description}>{exercise.description}</Text>
+
+            <Text style={styles.subsectionTitle}>⏱ Duración estimada: {exercise.duration}</Text>
+
+            {/* Materials */}
+            <Text style={styles.subsectionTitle}>Materiales necesarios:</Text>
+            <View style={styles.materialsBox}>
+              {exercise.materials.map((material, idx) => (
+                <Text key={idx} style={styles.materialItem}>
+                  • {material}
+                </Text>
+              ))}
+            </View>
+
+            {/* Instructions */}
+            <Text style={styles.subsectionTitle}>Instrucciones paso a paso:</Text>
+            {exercise.instructions.map((instruction, idx) => (
+              <View key={idx} style={{ marginBottom: 10 }}>
+                <Text style={styles.instructionItem}>
+                  <Text style={{ fontWeight: 'bold' }}>{idx + 1}.</Text> {instruction}
+                </Text>
+              </View>
+            ))}
+
+            {/* Benefits */}
+            <View style={styles.benefitsBox}>
+              <Text style={{ fontSize: 10, fontWeight: 'bold', color: '#0F766E', marginBottom: 6 }}>
+                💚 Beneficios terapéuticos:
+              </Text>
+              <Text style={styles.benefitsText}>{exercise.benefits}</Text>
+            </View>
+
+            {/* Additional Note */}
+            <View style={{ marginTop: 20, padding: 12, backgroundColor: '#F0F7F6', borderRadius: 6 }}>
+              <Text style={{ fontSize: 10, color: '#3D4852', lineHeight: 1.5 }}>
+                <Text style={{ fontWeight: 'bold' }}>Nota importante: </Text>
+                Recuerda que no se trata de crear "arte perfecto", sino de expresarte auténticamente.
+                Tómate tu tiempo con este ejercicio. El proceso creativo en sí mismo es terapéutico.
+                Permite que tus emociones fluyan sin juicio.
+              </Text>
+            </View>
+          </>
+        )}
+
+        {/* Disclaimer */}
+        <View style={styles.disclaimer}>
+          <Text style={styles.disclaimerText}>
+            Los ejercicios propuestos son únicamente una sugerencia de trabajo personal, basada en la información
+            proporcionada por el usuario. Bajo ninguna circunstancia sustituyen una consulta, diagnóstico, tratamiento,
+            atención profesional o intervención clínica, psicológica, psiquiátrica o médica.
+          </Text>
+        </View>
+
+        {/* Footer */}
+        <View style={styles.footer} fixed>
+          <Text style={styles.copyright}>Copyright 2026 ColorMe - Todos los derechos reservados</Text>
+        </View>
+      </Page>
+    </Document>
+  );
+};
 
 // Generate PDF function
 export async function generateWorksheetPDF(data: WorksheetData, exercises: ArtTherapyExercise[]) {
@@ -75,7 +275,7 @@ export async function generateWorksheetPDF(data: WorksheetData, exercises: ArtTh
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `GuiaPersonalizada_${data.name.replace(/\s+/g, '_')}.pdf`;
+    link.download = `GuiaPersonalizada_${data.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

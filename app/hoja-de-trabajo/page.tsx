@@ -27,7 +27,7 @@ export default function WorksheetPage() {
         formData.emotion,
         formData.griefOrGoal,
         parseInt(formData.age) || 25,
-        4 // Get 4 exercises
+        1 // Get only 1 most relevant exercise
       );
 
       // Generate and download PDF
@@ -200,7 +200,7 @@ export default function WorksheetPage() {
               <ul className="space-y-2 text-charcoal">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
-                  <span>3-5 ejercicios de arteterapia personalizados basados en tu emoción y situación</span>
+                  <span>Un ejercicio de arteterapia personalizado basado en tu emoción y situación específica</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
