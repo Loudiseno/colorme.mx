@@ -1,4 +1,4 @@
-import { Document, Page, Text, View, StyleSheet, pdf, Image } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, pdf } from '@react-pdf/renderer';
 import type { ArtTherapyExercise } from './artTherapyExercises';
 
 // Define styles matching the ColorMe brand
@@ -157,7 +157,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
           <Text style={{ fontSize: 28, color: '#0D9488', fontWeight: 'bold', marginBottom: 8, fontFamily: 'Helvetica-Bold' }}>
             ColorMe
           </Text>
-          <Text style={styles.title}>Práctica Personalizada de Arteterapia</Text>
+          <Text style={styles.title}>Guía Personalizada de Arteterapia</Text>
           <Text style={styles.subtitle}>Ejercicios terapéuticos diseñados especialmente para ti</Text>
         </View>
 
@@ -236,7 +236,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
       {exercises.slice(2).map((exercise, index) => (
         <Page key={exercise.id} size="A4" style={styles.page}>
           <View style={styles.header}>
-            <Text style={styles.title}>Práctica Personalizada</Text>
+            <Text style={styles.title}>Guía Personalizada</Text>
             <Text style={styles.subtitle}>{data.name} • {currentDate}</Text>
           </View>
 
@@ -349,7 +349,7 @@ export async function generateWorksheetPDF(data: WorksheetData, exercises: ArtTh
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `PracticaPersonalizada_${data.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
+    link.download = `GuiaPersonalizada_${data.name.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

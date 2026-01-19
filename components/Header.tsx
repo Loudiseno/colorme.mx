@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Arteterapia', href: '/arteterapia' },
   { name: 'Tanatología', href: '/tanatologia' },
   { name: 'Sobre mí', href: '/sobre-mi' },
-  { name: 'Práctica Personalizada', href: '/hoja-de-trabajo' },
+  { name: 'Guía Personalizada', href: '/hoja-de-trabajo' },
   { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Blog', href: '/#blog' },
 ]
