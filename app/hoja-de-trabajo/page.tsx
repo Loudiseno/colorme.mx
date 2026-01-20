@@ -27,7 +27,7 @@ export default function WorksheetPage() {
         formData.emotion,
         formData.griefOrGoal,
         parseInt(formData.age) || 25,
-        4 // Get 4 exercises
+        1 // Get only 1 most relevant exercise
       );
 
       // Generate and download PDF
@@ -37,7 +37,7 @@ export default function WorksheetPage() {
       // Show more detailed error in development
       const errorMessage = error instanceof Error ? error.message : 'Error desconocido';
       console.error('Detalles del error:', errorMessage);
-      alert(`Hubo un error al generar tu guía personalizada. Por favor intenta de nuevo.\n\n${process.env.NODE_ENV === 'development' ? `Error: ${errorMessage}` : ''}`);
+      alert(`Hubo un error al generar tus ejercicios personalizados. Por favor intenta de nuevo.\n\n${process.env.NODE_ENV === 'development' ? `Error: ${errorMessage}` : ''}`);
     } finally {
       setIsGenerating(false);
     }
@@ -61,10 +61,10 @@ export default function WorksheetPage() {
 
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-ink mb-6 animate-fade-up">
-            Guía Personalizada
+            Ejercicios Personalizados
           </h1>
           <p className="text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed animate-fade-up stagger-1">
-            Crea tu propia guía personalizada de arteterapia personalizada. Responde unas preguntas breves y recibe ejercicios terapéuticos diseñados específicamente para ti.
+            Crea tus propios ejercicios personalizados de arteterapia. Responde unas preguntas breves y recibe ejercicios diseñados específicamente para ti.
           </p>
         </div>
       </section>
@@ -185,10 +185,10 @@ export default function WorksheetPage() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                       </svg>
-                      Generando tu guía personalizada...
+                      Generando tus ejercicios personalizados...
                     </span>
                   ) : (
-                    'Generar Mi Guía Personalizada'
+                    'Generar Mis Ejercicios Personalizados'
                   )}
                 </button>
               </div>
@@ -196,11 +196,11 @@ export default function WorksheetPage() {
 
             {/* Info Box */}
             <div className="mt-8 p-6 bg-mist rounded-xl border-l-4 border-primary">
-              <h3 className="font-display text-lg text-ink mb-2">¿Qué incluye tu guía personalizada?</h3>
+              <h3 className="font-display text-lg text-ink mb-2">¿Qué incluyen tus ejercicios personalizados?</h3>
               <ul className="space-y-2 text-charcoal">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
-                  <span>3-5 ejercicios de arteterapia personalizados basados en tu emoción y situación</span>
+                  <span>Un ejercicio de arteterapia personalizado basado en tu emoción y situación específica</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
@@ -225,7 +225,7 @@ export default function WorksheetPage() {
           {/* Additional Info */}
           <div className="mt-12 text-center">
             <p className="text-slate mb-4">
-              Tus respuestas son privadas y se usan únicamente para generar tu guía personalizada personalizada.
+              Tus respuestas son privadas y se usan únicamente para generar tus ejercicios personalizados.
             </p>
             <p className="text-sm text-slate">
               ¿Necesitas apoyo adicional?{' '}
