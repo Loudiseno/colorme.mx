@@ -20,49 +20,40 @@ export default function HomePage() {
       />
 
       {/* Hero: Intro + About Lou */}
-      <section className="pt-28 pb-12 md:pt-36 md:pb-16 relative bg-watercolor overflow-hidden" id="sobremi">
-        {/* Decorative floating elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 right-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl animate-float" />
-          <div className="absolute bottom-1/4 left-10 w-24 h-24 rounded-full bg-teal/10 blur-xl animate-float-delayed" />
-        </div>
-
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <section className="pt-28 pb-12 md:pt-36 md:pb-16 bg-white" id="sobremi">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-ink mb-6 opacity-0 animate-slide-up stagger-1">
-                Un espacio para sanar
-                <span className="text-teal"> a través del arte</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-6">
+                Explora tus emociones
+                <span className="text-black"> a través del arte</span>
               </h1>
-              <div className="space-y-4 text-charcoal/80 leading-relaxed opacity-0 animate-fade-up stagger-2">
+              <div className="space-y-4 text-black/70 leading-relaxed">
                 <p>
-                  Color Me es un lugar donde puedes crear tu propia historia a través
-                  de la arteterapia y la tanatología. Aquí no hay reglas ni caminos fijos.
+                  Acompañamiento en duelo, pérdida y cambio a través de arteterapia y tanatología.
                 </p>
                 <p>
-                  No se trata de vivir sin sentir, sino de dar espacio a las emociones,
-                  permitirnos habitarlas y transformarlas. Acompañamiento profesional
-                  para sanar el duelo y reconectar contigo.
+                  Un espacio profesional para explorar emociones, procesar experiencias y reconectar contigo.
                 </p>
               </div>
-              <div className="opacity-0 animate-fade-up stagger-3">
+              <div>
                 <a
                   href={siteConfig.calendly}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-gradient inline-block mt-8"
+                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block mt-8"
                 >
-                  Agenda tu primera sesión ¡Gratis!
+                  Agendar sesión gratuita
                 </a>
               </div>
             </div>
 
             {/* Right: About Lou */}
-            <div className="relative flex flex-col opacity-0 animate-fade-up stagger-2">
-              <div className="bg-frost/50 rounded-3xl p-8 md:p-10 border border-teal-glow/30 flex-1 flex flex-col">
+            <div className="relative flex flex-col">
+              <div className="bg-[#B2F7EF]/10 rounded-3xl p-8 md:p-10 border border-[#B2F7EF] flex-1 flex flex-col">
                 <div className="flex flex-col h-full">
-                  <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg shadow-teal/10 mb-6">
+                  <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
                       src="/Photography-Portfolio-Website-in-Grey-Black-Light-Experimental-Style_page-0001-2-1536x1502.jpg"
                       alt="Lou - Arteterapeuta y Tanatóloga"
@@ -72,50 +63,46 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="flex-1">
-                    <h2 className="font-display text-2xl md:text-3xl text-ink mb-2">Hola, soy Lou</h2>
-                    <p className="text-teal font-medium mb-4">
+                    <h2 className="text-2xl md:text-3xl text-black mb-2">Hola, soy Lou</h2>
+                    <p className="text-black font-medium mb-4">
                       Diseñadora, artista, fotógrafa y tanatóloga
                     </p>
-                    <p className="text-charcoal/70 leading-relaxed">
-                      El arte y la tanatología fueron mi refugio y la puerta de regreso a mí.
-                      Hoy acompaño a otras personas en sus propios procesos de duelo, cambio
-                      o cierre, creando espacios seguros para habitar lo que sienten.
+                    <p className="text-black/70 leading-relaxed">
+                      El arte y la tanatología fueron mi refugio. Hoy acompaño a personas en procesos de duelo, cambio o cierre, creando espacios seguros para explorar emociones.
                     </p>
                   </div>
                 </div>
               </div>
-              {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-teal-glow/30 rounded-full blur-xl -z-10" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-12 md:py-16" id="servicios">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="servicios">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-6">
             {/* Arteterapia Card */}
             <Link href="/arteterapia" className="group">
-              <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30">
+              <article className="bg-white rounded-2xl overflow-hidden h-full border border-[#B2F7EF] hover:border-black transition-all">
                 <div className="aspect-[4/3] relative overflow-hidden bg-white">
                   <Image
                     src="/COLORME_logo-12-scaled.jpg"
-                    alt="Arteterapia - Terapia a través del arte"
+                    alt="Arteterapia"
                     fill
-                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain p-4"
                   />
                 </div>
                 <div className="p-5">
-                  <h2 className="font-display text-2xl md:text-3xl text-ink mb-2 group-hover:text-teal transition-colors">
+                  <h2 className="text-2xl md:text-3xl text-black mb-2">
                     Arteterapia
                   </h2>
-                  <p className="text-charcoal/70 leading-relaxed mb-3">
-                    Acompañamiento emocional a través del arte para expresar y transformar emociones.
+                  <p className="text-black/70 leading-relaxed mb-3">
+                    Explora y procesa emociones a través del arte.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-teal font-medium">
-                    Saber más
-                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                  <span className="inline-flex items-center gap-2 text-black font-medium text-sm">
+                    Ver más
+                    <ArrowRight size={16} />
                   </span>
                 </div>
               </article>
@@ -123,25 +110,25 @@ export default function HomePage() {
 
             {/* Tanatología Card */}
             <Link href="/tanatologia" className="group">
-              <article className="bg-frost/50 rounded-2xl overflow-hidden card-lift h-full border border-teal-glow/30">
+              <article className="bg-white rounded-2xl overflow-hidden h-full border border-[#B2F7EF] hover:border-black transition-all">
                 <div className="aspect-[4/3] relative overflow-hidden bg-white">
                   <Image
                     src="/ojo-11-scaled.jpg"
-                    alt="Tanatología - Acompañamiento en duelo"
+                    alt="Tanatología"
                     fill
-                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-700"
+                    className="object-contain p-4"
                   />
                 </div>
                 <div className="p-5">
-                  <h2 className="font-display text-2xl md:text-3xl text-ink mb-2 group-hover:text-teal transition-colors">
+                  <h2 className="text-2xl md:text-3xl text-black mb-2">
                     Tanatología
                   </h2>
-                  <p className="text-charcoal/70 leading-relaxed mb-3">
-                    Acompañamiento en procesos de pérdida, cambio y duelo con un enfoque humano.
+                  <p className="text-black/70 leading-relaxed mb-3">
+                    Acompañamiento en procesos de pérdida y duelo.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-teal font-medium">
-                    Saber más
-                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                  <span className="inline-flex items-center gap-2 text-black font-medium text-sm">
+                    Ver más
+                    <ArrowRight size={16} />
                   </span>
                 </div>
               </article>
@@ -151,59 +138,50 @@ export default function HomePage() {
       </section>
 
       {/* Worksheet CTA Section */}
-      <section className="py-16 md:py-20 relative overflow-hidden bg-gradient-to-br from-primary/5 via-mist to-canvas">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-20 w-64 h-64 bg-primary-light rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-20 w-96 h-96 bg-accent-sage rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary-glow/40 rounded-full">
-            <span className="text-primary-dark font-medium text-sm uppercase tracking-wider">Nuevo</span>
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <div className="inline-block mb-4 px-4 py-2 bg-[#B2F7EF] rounded-full">
+            <span className="text-black font-medium text-xs uppercase tracking-wider">Nuevo</span>
           </div>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-ink mb-6">
-            Crea Tus Ejercicios Personalizados
+          <h2 className="text-3xl md:text-4xl text-black mb-6">
+            Ejercicios personalizados de arteterapia
           </h2>
-          <p className="text-lg md:text-xl text-charcoal max-w-2xl mx-auto mb-8 leading-relaxed">
-            Responde unas preguntas breves y recibe ejercicios de arteterapia
-            diseñados específicamente para la emoción que quieres trabajar.
+          <p className="text-base text-black/70 max-w-2xl mx-auto mb-8">
+            Recibe un ejercicio adaptado a tu emoción actual. Gratis y descargable.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/hoja-de-trabajo" className="btn-gradient text-lg">
-              Crear Mis Ejercicios Personalizados
+          <div className="flex justify-center">
+            <Link href="/hoja-de-trabajo" className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black/90 transition-all">
+              Crear ejercicio
             </Link>
-            <p className="text-sm text-slate">
-              Gratis • PDF descargable • Personalizado
-            </p>
           </div>
 
           {/* Preview features */}
           <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">
-            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-primary-glow/30">
-              <div className="w-12 h-12 bg-primary-glow rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">✨</span>
+            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
+              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
+                <span className="text-xl">✨</span>
               </div>
-              <h3 className="font-display text-lg text-ink mb-2">Personalizado</h3>
-              <p className="text-sm text-charcoal/70">
-                Ejercicios seleccionados según tus necesidades emocionales específicas
+              <h3 className="text-base font-semibold text-black mb-2">Personalizado</h3>
+              <p className="text-sm text-black/70">
+                Ejercicio adaptado a tu emoción y momento
               </p>
             </div>
-            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-primary-glow/30">
-              <div className="w-12 h-12 bg-primary-glow rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">🎨</span>
+            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
+              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
+                <span className="text-xl">🎨</span>
               </div>
-              <h3 className="font-display text-lg text-ink mb-2">Práctico</h3>
-              <p className="text-sm text-charcoal/70">
-                Instrucciones paso a paso con materiales accesibles que ya tienes en casa
+              <h3 className="text-base font-semibold text-black mb-2">Práctico</h3>
+              <p className="text-sm text-black/70">
+                Instrucciones paso a paso y materiales accesibles
               </p>
             </div>
-            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-primary-glow/30">
-              <div className="w-12 h-12 bg-primary-glow rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">📄</span>
+            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
+              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
+                <span className="text-xl">📄</span>
               </div>
-              <h3 className="font-display text-lg text-ink mb-2">Profesional</h3>
-              <p className="text-sm text-charcoal/70">
-                PDF elegante listo para imprimir con ejercicios basados en evidencia
+              <h3 className="text-base font-semibold text-black mb-2">Profesional</h3>
+              <p className="text-sm text-black/70">
+                PDF profesional listo para descargar
               </p>
             </div>
           </div>
@@ -211,49 +189,49 @@ export default function HomePage() {
       </section>
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center group">
+            <div className="text-center">
               <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
                 <Image
                   src="/columpio.png"
                   alt="Terapias individuales"
                   fill
-                  className="object-contain group-hover:scale-110 transition-transform duration-300"
+                  className="object-contain"
                 />
               </div>
-              <h3 className="font-display text-2xl md:text-3xl text-ink mb-3">Terapias individuales</h3>
-              <p className="text-charcoal/70 text-base md:text-lg">
-                Presenciales u online. Sesiones adaptadas a tu ritmo y proceso personal.
+              <h3 className="text-2xl md:text-3xl text-black mb-3">Terapias individuales</h3>
+              <p className="text-black/70 text-base">
+                Presenciales u online adaptadas a tu proceso.
               </p>
             </div>
-            <div className="text-center group">
+            <div className="text-center">
               <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
                 <Image
                   src="/corazon.png"
                   alt="Talleres grupales"
                   fill
-                  className="object-contain group-hover:scale-110 transition-transform duration-300"
+                  className="object-contain"
                 />
               </div>
-              <h3 className="font-display text-2xl md:text-3xl text-ink mb-3">Talleres grupales</h3>
-              <p className="text-charcoal/70 text-base md:text-lg">
-                Presenciales u online. Encuentros seguros para crear y sanar en comunidad.
+              <h3 className="text-2xl md:text-3xl text-black mb-3">Talleres grupales</h3>
+              <p className="text-black/70 text-base">
+                Encuentros seguros para crear y explorar en comunidad.
               </p>
             </div>
-            <div className="text-center group">
+            <div className="text-center">
               <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
                 <Image
                   src="/adolecente hombre.png"
                   alt="Empresas y colectivos"
                   fill
-                  className="object-contain group-hover:scale-110 transition-transform duration-300"
+                  className="object-contain"
                 />
               </div>
-              <h3 className="font-display text-2xl md:text-3xl text-ink mb-3">Empresas y colectivos</h3>
-              <p className="text-charcoal/70 text-base md:text-lg">
-                Presenciales u online. Espacios diseñados a medida para grupos.
+              <h3 className="text-2xl md:text-3xl text-black mb-3">Empresas y colectivos</h3>
+              <p className="text-black/70 text-base">
+                Espacios diseñados a medida para grupos.
               </p>
             </div>
           </div>
@@ -262,72 +240,59 @@ export default function HomePage() {
               href={siteConfig.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2"
+              className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-flex items-center gap-2"
             >
-              <Calendar size={18} />
-              Agenda tu sesión
+              <Calendar size={16} />
+              Agendar sesión
             </a>
           </div>
         </div>
       </section>
 
       {/* Quote Section */}
-      <section className="py-12 md:py-16 relative">
-        <div className="max-w-3xl mx-auto px-6 text-center relative">
-          <span className="quote-mark absolute -top-8 left-0 md:left-10">"</span>
-          <blockquote className="font-display text-2xl md:text-4xl text-ink leading-relaxed relative z-10">
-            Sanar no es seguir las líneas.
-            <br />
-            <span className="text-teal">Es dibujar las tuyas propias.</span>
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
+            "Habitar lo que sientes no es seguir las líneas, es dibujar las tuyas propias."
           </blockquote>
-          <span className="quote-mark absolute -bottom-16 right-0 md:right-10 rotate-180">"</span>
-          <p className="mt-10 text-charcoal/60 relative z-10 italic">— Lou</p>
+          <p className="mt-6 text-gray-500 text-sm italic">— Lou</p>
         </div>
       </section>
 
       {/* Book Section */}
-      <section className="py-12 md:py-16 bg-white" id="indeleble">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1 relative">
-              <div className="relative z-10">
+            <div className="order-2 lg:order-1">
+              <div>
                 <Image
                   src="/indeleble.png"
                   alt="Indeleble - Libro por Lou"
                   width={600}
                   height={450}
-                  className="w-full h-auto rounded-2xl shadow-2xl shadow-ink/10"
+                  className="w-full h-auto rounded-2xl shadow-lg"
                 />
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-6 -left-6 w-32 h-32 bg-teal-glow/20 rounded-full blur-2xl" />
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-cyan/20 rounded-full blur-xl" />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="font-display text-4xl md:text-5xl text-ink mb-2">Indeleble</h2>
-              <p className="text-lg text-teal font-medium mb-6">
-                Mi libro: Un testimonio real de transformación y resiliencia.
+              <h2 className="text-4xl md:text-5xl text-black mb-2">Indeleble</h2>
+              <p className="text-base text-black font-medium mb-6">
+                Testimonio sobre transformación y resiliencia.
               </p>
-              <div className="space-y-4 text-charcoal/80 leading-relaxed mb-8">
+              <div className="space-y-4 text-black/70 leading-relaxed mb-8">
                 <p>
-                  Crees que eres invencible, hasta que la vida cambia en un instante.
-                  Cuando el cáncer llega sin avisar, los sueños se detienen y la
-                  incertidumbre lo envuelve todo. Pero también surge algo más: la
-                  fuerza para enfrentar lo impensable y la capacidad de sanar, no
-                  solo el cuerpo, sino el alma.
+                  Un relato honesto sobre enfrentar el cáncer, procesar la pérdida y encontrar la fuerza para continuar.
                 </p>
                 <p>
-                  Más que un testimonio sobre la enfermedad, es un relato sobre la vida,
-                  la resiliencia y la belleza que persiste en el caos. Una historia
-                  honesta y esperanzadora que te hará replantearte lo que realmente importa.
+                  Una historia sobre la vida, la resiliencia y lo que realmente importa.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3">
                 <a
                   href={siteConfig.book.amazonEs}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary"
+                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
                 >
                   Versión español
                 </a>
@@ -335,7 +300,7 @@ export default function HomePage() {
                   href={siteConfig.book.amazonEn}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-secondary"
+                  className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
                 >
                   Versión inglés
                 </a>
@@ -352,76 +317,70 @@ export default function HomePage() {
       <section className="py-12 md:py-16 bg-white" id="blog">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="font-display text-4xl md:text-5xl text-ink mb-4">Blog</h2>
-            <p className="text-charcoal/70 max-w-2xl mx-auto">
-              Reflexiones, herramientas y acompañamiento para tu proceso de sanación.
+            <h2 className="text-4xl md:text-5xl text-black mb-4">Blog</h2>
+            <p className="text-black/70 max-w-2xl mx-auto">
+              Herramientas y reflexiones sobre arteterapia, duelo y emociones.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Article 1 - ¿Qué es la Arteterapia? */}
+            {/* Article 1 */}
             <Link href="/blog/que-es-arteterapia" className="group">
-              <article className="bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-teal-glow/30 to-cyan/20">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-teal/40 text-6xl font-display">01</span>
-                  </div>
+              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/20 flex items-center justify-center">
+                  <span className="text-[#B2F7EF] text-6xl font-bold">01</span>
                 </div>
                 <div className="p-6">
-                  <span className="text-xs text-teal font-medium uppercase tracking-wider">Arteterapia</span>
-                  <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
-                    ¿Qué es la Arteterapia? Guía Completa
+                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
+                  <h3 className="text-xl text-black mt-2 mb-3">
+                    ¿Qué es la arteterapia?
                   </h3>
-                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
-                    Descubre cómo la expresión artística puede ayudarte a conectar con lo que sientes sin necesidad de palabras.
+                  <p className="text-black/70 text-sm leading-relaxed mb-4">
+                    Descubre cómo el arte ayuda a explorar y procesar emociones.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
                     Leer más
-                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight size={16} />
                   </span>
                 </div>
               </article>
             </Link>
 
-            {/* Article 2 - Arteterapia para Pacientes con Cáncer */}
+            {/* Article 2 */}
             <Link href="/blog/arteterapia-cancer" className="group">
-              <article className="bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-cyan/20 to-teal-glow/30">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-teal/40 text-6xl font-display">02</span>
-                  </div>
+              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/20 flex items-center justify-center">
+                  <span className="text-[#B2F7EF] text-6xl font-bold">02</span>
                 </div>
                 <div className="p-6">
-                  <span className="text-xs text-teal font-medium uppercase tracking-wider">Arteterapia</span>
-                  <h3 className="font-display text-xl text-ink mt-2 mb-3 group-hover:text-teal transition-colors">
-                    Arteterapia para Pacientes con Cáncer
+                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
+                  <h3 className="text-xl text-black mt-2 mb-3">
+                    Arteterapia para pacientes con cáncer
                   </h3>
-                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
-                    Cómo el arte puede acompañarte durante el tratamiento oncológico, desde mi experiencia como sobreviviente.
+                  <p className="text-black/70 text-sm leading-relaxed mb-4">
+                    El arte como acompañamiento durante el tratamiento oncológico.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-teal text-sm font-medium">
+                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
                     Leer más
-                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight size={16} />
                   </span>
                 </div>
               </article>
             </Link>
 
-            {/* Article 3 - Placeholder */}
-            <article className="group bg-frost/50 rounded-2xl overflow-hidden border border-teal-glow/30 card-lift">
-              <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-teal/20 to-cyan/30">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-teal/40 text-6xl font-display">03</span>
-                </div>
+            {/* Article 3 */}
+            <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF]/50">
+              <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/10 flex items-center justify-center">
+                <span className="text-[#B2F7EF]/50 text-6xl font-bold">03</span>
               </div>
               <div className="p-6">
-                <span className="text-xs text-teal font-medium uppercase tracking-wider">Próximamente</span>
-                <h3 className="font-display text-xl text-ink mt-2 mb-3">
-                  Pequeños rituales para el día a día
+                <span className="text-xs text-gray-500 uppercase tracking-wider">Próximamente</span>
+                <h3 className="text-xl text-black mt-2 mb-3">
+                  Rituales para el día a día
                 </h3>
-                <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
-                  Prácticas sencillas que puedes incorporar en tu rutina para cultivar la calma y la conexión contigo.
+                <p className="text-black/70 text-sm leading-relaxed mb-4">
+                  Prácticas sencillas para cultivar la calma.
                 </p>
-                <span className="inline-flex items-center gap-2 text-charcoal/40 text-sm font-medium">
+                <span className="inline-flex items-center gap-2 text-gray-400 text-sm font-medium">
                   Próximamente
                 </span>
               </div>
