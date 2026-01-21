@@ -8,7 +8,7 @@ import { siteConfig, generateServiceSchema, generateBreadcrumbSchema } from '@/l
 export const metadata: Metadata = {
   title: 'Arteterapia en México - Terapia a través del Arte',
   description:
-    'Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones. Sesiones de arteterapia individuales y grupales, presenciales y online en México. No necesitas experiencia artística.',
+    'Acompañamiento emocional a través del arte para explorar y procesar emociones. Sesiones de arteterapia individuales y grupales, presenciales y online en México.',
   keywords: [
     'arteterapia',
     'arte terapia México',
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     'arteterapia online',
     'arteterapia presencial',
     'expresión artística terapéutica',
-    'sanación a través del arte',
     'terapia creativa',
     'arteterapia para duelo',
     'arteterapia para ansiedad',
@@ -25,9 +24,9 @@ export const metadata: Metadata = {
     canonical: '/arteterapia',
   },
   openGraph: {
-    title: 'Arteterapia en México - Sanación a través del Arte',
+    title: 'Arteterapia en México - Exploración a través del Arte',
     description:
-      'Descubre el poder sanador del arte. Sesiones de arteterapia para expresar y transformar emociones. No necesitas saber dibujar.',
+      'Explora y procesa emociones a través del arte. Sesiones de arteterapia individuales y grupales.',
     url: `${siteConfig.url}/arteterapia`,
   },
 }
@@ -114,52 +113,36 @@ export default function ArteterapiaPage() {
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-mist/30 relative overflow-hidden">
-        <div className="absolute top-20 right-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl" />
-        <div className="absolute bottom-10 left-20 w-24 h-24 rounded-full bg-cyan/10 blur-xl" />
-
-        <div className="max-w-4xl mx-auto px-6 relative z-10">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-charcoal/60 hover:text-teal transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-black/60 hover:text-black transition-colors mb-8"
           >
             <ArrowLeft size={18} />
             Volver al inicio
           </Link>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-ink mb-6">
+          <h1 className="text-5xl md:text-6xl text-black mb-6">
             Arteterapia
           </h1>
-          <p className="text-xl text-charcoal/80 leading-relaxed max-w-2xl">
-            Acompañamiento emocional a través del arte para expresar, comprender
-            y transformar emociones. No necesitas saber dibujar ni tener experiencia artística.
+          <p className="text-lg text-black/70 leading-relaxed max-w-2xl">
+            Explora y procesa emociones a través del arte. No necesitas experiencia artística.
           </p>
         </div>
       </section>
 
       {/* What is it */}
-      <section className="section">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-6">
+          <h2 className="text-3xl md:text-4xl text-black mb-6">
             ¿Qué es la arteterapia?
           </h2>
-          <div className="space-y-4 text-charcoal/80 leading-relaxed">
+          <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              La arteterapia es una forma de acompañamiento terapéutico que utiliza
-              el proceso creativo como herramienta para la expresión emocional y el
-              autoconocimiento. A través del dibujo, la pintura, el collage, el modelado
-              y otras técnicas artísticas, puedes explorar y comunicar lo que a veces
-              es difícil expresar con palabras.
+              Acompañamiento terapéutico que utiliza el proceso creativo para explorar emociones. A través del dibujo, pintura, collage y otras técnicas, puedes comunicar lo que es difícil expresar con palabras.
             </p>
             <p>
-              En las sesiones de arteterapia, <strong className="text-teal">no importa el resultado estético</strong>.
-              No se trata de crear algo "bonito" o de tener habilidades artísticas.
-              El foco está en el proceso: en lo que surge mientras creas, en las emociones
-              que emergen, en los descubrimientos que haces sobre ti mismo/a.
-            </p>
-            <p>
-              Como arteterapeuta, te acompaño en este proceso de exploración, creando
-              un espacio seguro donde puedas expresarte libremente y trabajar con lo
-              que aparece, sin juicios ni expectativas.
+              <strong className="text-black">No importa el resultado estético</strong>. El foco está en el proceso y en lo que descubres mientras creas.
             </p>
           </div>
         </div>
