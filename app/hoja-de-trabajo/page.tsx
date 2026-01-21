@@ -51,9 +51,9 @@ export default function WorksheetPage() {
   };
 
   return (
-    <div className="min-h-screen bg-canvas">
+    <div className="min-h-screen bg-canvas pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-mist to-canvas-warm py-12 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary/10 via-mist to-canvas-warm py-8 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-64 h-64 bg-primary-light rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-sage rounded-full blur-3xl"></div>
@@ -70,7 +70,7 @@ export default function WorksheetPage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-8">
+      <section className="py-6">
         <div className="max-w-3xl mx-auto px-6">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 animate-fade-up stagger-2">
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -209,17 +209,17 @@ export default function WorksheetPage() {
           </div>
 
           {/* Disclaimers */}
-          <div className="mt-8 space-y-4 text-sm text-slate text-center max-w-2xl mx-auto">
+          <div className="mt-6 space-y-3 text-sm text-slate text-center max-w-2xl mx-auto">
             <p>
               Tus respuestas son privadas y se usan únicamente para generar tus ejercicios personalizados.
             </p>
             <p>
-              Los ejercicios propuestos son únicamente una sugerencia de trabajo personal, basada en la información proporcionada por el usuario. Bajo ninguna circunstancia sustituyen una consulta, diagnóstico, tratamiento, atención profesional o intervención clínica, psicológica, psiquiátrica o médica.
+              Los ejercicios son una herramienta de exploración personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atención profesional psicológica o médica.
             </p>
           </div>
 
           {/* Contact CTA */}
-          <div className="mt-8 text-center">
+          <div className="mt-6 text-center">
             <p className="text-base text-charcoal mb-4">
               ¿Necesitas apoyo adicional? Contáctame para sesiones personalizadas.
             </p>

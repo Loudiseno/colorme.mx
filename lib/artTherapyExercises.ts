@@ -20,8 +20,8 @@ export const artTherapyExercises: ArtTherapyExercise[] = [
   // GRIEF & LOSS EXERCISES
   {
     id: 'memory-box',
-    title: 'Caja de Recuerdos (Memory Box)',
-    description: 'Crea un espacio sagrado para honrar y preservar recuerdos preciosos de lo que has perdido o dejado ir.',
+    title: 'Caja de Recuerdos',
+    description: 'Crea un espacio sagrado para honrar y preservar los recuerdos de lo que has perdido o dejado ir. Este ejercicio te ayuda a materializar tu duelo y crear un ritual de conexión.',
     instructions: [
       'Decora una caja con colores, imágenes y símbolos que representen a la persona o experiencia que estás honrando',
       'Llena la caja con objetos significativos: fotos, cartas, objetos pequeños que te recuerden momentos especiales',
@@ -39,7 +39,7 @@ export const artTherapyExercises: ArtTherapyExercise[] = [
   {
     id: 'grief-mandala',
     title: 'Mandala del Duelo',
-    description: 'Usa la forma circular del mandala para explorar las diferentes capas y emociones de tu proceso de duelo.',
+    description: 'El duelo tiene muchas capas. Este mandala te permite explorar cada emoción dentro de una estructura contenedora y segura.',
     instructions: [
       'Dibuja un círculo grande en tu papel (puedes usar un plato como guía)',
       'Divide el círculo en secciones - cada sección representa una emoción o aspecto de tu duelo',
@@ -79,7 +79,7 @@ export const artTherapyExercises: ArtTherapyExercise[] = [
   {
     id: 'worry-stones',
     title: 'Piedras de Preocupación',
-    description: 'Transforma tus preocupaciones en objetos físicos que puedes sostener, observar y eventualmente soltar.',
+    description: 'Cuando la ansiedad se siente abstracta y abrumadora, este ejercicio la convierte en algo tangible. Dale forma a tus preocupaciones para poder sostenerlas y, cuando estés listo, soltarlas.',
     instructions: [
       'Recolecta 5-10 piedras pequeñas y suaves',
       'En cada piedra, pinta o escribe una preocupación o miedo específico',
@@ -236,7 +236,7 @@ export const artTherapyExercises: ArtTherapyExercise[] = [
     emotions: ['curiosidad', 'confusión', 'autoconocimiento', 'identidad'],
     contexts: ['self-discovery', 'identity', 'growth', 'integration', 'awareness'],
     ageGroups: ['teen', 'adult'],
-    benefits: 'Fomenta la autocompasión al reconocer que somos multifacéticos. Ayuda a integrar diferentes aspectos del self.'
+    benefits: 'Fomenta la autocompasión al reconocer que somos multifacéticos. Ayuda a integrar diferentes aspectos de tu identidad.'
   },
   {
     id: 'growth-tree',
@@ -283,7 +283,7 @@ export const artTherapyExercises: ArtTherapyExercise[] = [
   {
     id: 'body-map',
     title: 'Mapa Corporal de Emociones',
-    description: 'Crea un mapa de tu cuerpo que muestre dónde sientes diferentes emociones.',
+    description: 'Tu cuerpo habla cuando las palabras no alcanzan. Este ejercicio te ayuda a reconectar con las señales físicas de tus emociones y a entender dónde las guardas.',
     instructions: [
       'Dibuja el contorno de tu cuerpo (acostado sobre papel grande, o dibujado)',
       'Piensa en cómo diferentes emociones se sienten en tu cuerpo',
