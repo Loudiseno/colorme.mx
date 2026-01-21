@@ -70,7 +70,7 @@ export default function WorksheetPage() {
       </section>
 
       {/* Form Section */}
-      <section className="section">
+      <section className="py-8">
         <div className="max-w-3xl mx-auto px-6">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 animate-fade-up stagger-2">
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -167,11 +167,11 @@ export default function WorksheetPage() {
               </div>
 
               {/* Submit Button */}
-              <div className="pt-4">
+              <div className="pt-4 flex justify-center">
                 <button
                   type="submit"
                   disabled={isGenerating}
-                  className="w-full btn-gradient text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="btn-gradient px-8 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isGenerating ? (
                     <span className="flex items-center justify-center gap-3">
@@ -179,10 +179,10 @@ export default function WorksheetPage() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                       </svg>
-                      Generando tus ejercicios personalizados...
+                      Generando tu ejercicio...
                     </span>
                   ) : (
-                    'Generar Mis Ejercicios Personalizados'
+                    'Genera mi ejercicio'
                   )}
                 </button>
               </div>
