@@ -526,7 +526,9 @@ export function matchExercises(
       }
     });
 
-    return { exercise, score };
+    // Add small random value to score to ensure variety across different sessions
+    const randomBoost = Math.random() * 5;
+    return { exercise, score: score + randomBoost };
   });
 
   // Sort by score and return top matches

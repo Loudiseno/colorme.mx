@@ -53,7 +53,7 @@ export default function WorksheetPage() {
   return (
     <div className="min-h-screen bg-canvas">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-mist to-canvas-warm py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary/10 via-mist to-canvas-warm py-12 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-64 h-64 bg-primary-light rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-sage rounded-full blur-3xl"></div>
@@ -64,19 +64,19 @@ export default function WorksheetPage() {
             Ejercicios Personalizados
           </h1>
           <p className="text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed animate-fade-up stagger-1">
-            Crea tus propios ejercicios personalizados de arteterapia. Responde unas preguntas breves y recibe ejercicios diseñados específicamente para ti.
+            Cada momento pide algo diferente. Cuéntame qué estás viviendo hoy para crear un ejercicio pensado para ti. No necesitas experiencia ni técnica. Busca un lugar tranquilo y disfruta tu proceso.
           </p>
         </div>
       </section>
 
       {/* Form Section */}
-      <section className="section">
+      <section className="py-8">
         <div className="max-w-3xl mx-auto px-6">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 animate-fade-up stagger-2">
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-2">
+                <label htmlFor="name" className="block text-base font-semibold text-charcoal mb-2">
                   Tu nombre <span className="text-coral">*</span>
                 </label>
                 <input
@@ -93,7 +93,7 @@ export default function WorksheetPage() {
 
               {/* Age Field */}
               <div>
-                <label htmlFor="age" className="block text-sm font-medium text-charcoal mb-2">
+                <label htmlFor="age" className="block text-base font-semibold text-charcoal mb-2">
                   Tu edad <span className="text-coral">*</span>
                 </label>
                 <input
@@ -112,7 +112,7 @@ export default function WorksheetPage() {
 
               {/* Gender Field */}
               <div>
-                <label htmlFor="gender" className="block text-sm font-medium text-charcoal mb-2">
+                <label htmlFor="gender" className="block text-base font-semibold text-charcoal mb-2">
                   Género <span className="text-coral">*</span>
                 </label>
                 <select
@@ -134,8 +134,8 @@ export default function WorksheetPage() {
 
               {/* Grief/Goal Field */}
               <div>
-                <label htmlFor="griefOrGoal" className="block text-sm font-medium text-charcoal mb-2">
-                  ¿Qué estás procesando o qué te gustaría lograr? <span className="text-coral">*</span>
+                <label htmlFor="griefOrGoal" className="block text-base font-semibold text-charcoal mb-2">
+                  Compárteme un poco sobre tu momento actual <span className="text-slate font-normal">(Por ejemplo: una pérdida, un cambio importante, una transición…)</span> <span className="text-coral">*</span>
                 </label>
                 <textarea
                   id="griefOrGoal"
@@ -145,16 +145,13 @@ export default function WorksheetPage() {
                   onChange={handleChange}
                   rows={4}
                   className="form-input-full resize-none"
-                  placeholder="Ej: Estoy procesando la pérdida de un ser querido, una transición de carrera, o quiero trabajar en mi autoestima..."
+                  placeholder="Escribe sobre lo que estás viviendo..."
                 />
-                <p className="mt-2 text-sm text-slate">
-                  Comparte lo que sientes cómodo expresando. Esto nos ayudará a personalizar tus ejercicios.
-                </p>
               </div>
 
               {/* Emotion Field */}
               <div>
-                <label htmlFor="emotion" className="block text-sm font-medium text-charcoal mb-2">
+                <label htmlFor="emotion" className="block text-base font-semibold text-charcoal mb-2">
                   ¿Con qué emoción te gustaría trabajar? <span className="text-coral">*</span>
                 </label>
                 <input
@@ -167,17 +164,14 @@ export default function WorksheetPage() {
                   className="form-input-full"
                   placeholder="Ej: tristeza, ansiedad, enojo, miedo, alegría, confusión..."
                 />
-                <p className="mt-2 text-sm text-slate">
-                  Puedes escribir una o varias emociones que estés experimentando.
-                </p>
               </div>
 
               {/* Submit Button */}
-              <div className="pt-4">
+              <div className="pt-4 flex justify-center">
                 <button
                   type="submit"
                   disabled={isGenerating}
-                  className="w-full btn-gradient text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="btn-gradient px-8 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isGenerating ? (
                     <span className="flex items-center justify-center gap-3">
@@ -185,10 +179,10 @@ export default function WorksheetPage() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                       </svg>
-                      Generando tus ejercicios personalizados...
+                      Generando tu ejercicio...
                     </span>
                   ) : (
-                    'Generar Mis Ejercicios Personalizados'
+                    'Genera mi ejercicio'
                   )}
                 </button>
               </div>
@@ -196,44 +190,42 @@ export default function WorksheetPage() {
 
             {/* Info Box */}
             <div className="mt-8 p-6 bg-mist rounded-xl border-l-4 border-primary">
-              <h3 className="font-display text-lg text-ink mb-2">¿Qué incluyen tus ejercicios personalizados?</h3>
-              <ul className="space-y-2 text-charcoal">
+              <h3 className="font-display text-lg text-ink mb-3">¿Qué incluyen tus ejercicios personalizados?</h3>
+              <ul className="space-y-2 text-base text-charcoal">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
-                  <span>Un ejercicio de arteterapia personalizado basado en tu emoción y situación específica</span>
+                  <span>Instrucciones paso a paso.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
-                  <span>Instrucciones detalladas paso a paso en español</span>
+                  <span>Lista de materiales sugeridos.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
-                  <span>Lista de materiales necesarios para cada ejercicio</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>Beneficios terapéuticos de cada actividad</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>Formato PDF elegante y profesional listo para imprimir</span>
+                  <span>PDF listo para descargar e imprimir cuando quieras usar.</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Additional Info */}
-          <div className="mt-12 text-center">
-            <p className="text-slate mb-4">
+          {/* Disclaimers */}
+          <div className="mt-8 space-y-4 text-sm text-slate text-center max-w-2xl mx-auto">
+            <p>
               Tus respuestas son privadas y se usan únicamente para generar tus ejercicios personalizados.
             </p>
-            <p className="text-sm text-slate">
-              ¿Necesitas apoyo adicional?{' '}
-              <a href="/#contacto" className="text-primary hover:text-primary-dark underline transition-colors">
-                Contáctame
-              </a>{' '}
-              para sesiones personalizadas de arteterapia.
+            <p>
+              Los ejercicios propuestos son únicamente una sugerencia de trabajo personal, basada en la información proporcionada por el usuario. Bajo ninguna circunstancia sustituyen una consulta, diagnóstico, tratamiento, atención profesional o intervención clínica, psicológica, psiquiátrica o médica.
             </p>
+          </div>
+
+          {/* Contact CTA */}
+          <div className="mt-8 text-center">
+            <p className="text-base text-charcoal mb-4">
+              ¿Necesitas apoyo adicional? Contáctame para sesiones personalizadas.
+            </p>
+            <a href="/#contacto" className="btn-primary inline-block">
+              Ir al cuestionario de contacto
+            </a>
           </div>
         </div>
       </section>

@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logo: {
-    width: 100,
+    width: 140,
     height: 'auto',
-    marginBottom: 8,
+    marginBottom: 10,
   },
   title: {
     fontSize: 18,
@@ -64,46 +64,46 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 9,
     color: '#333333',
-    marginBottom: 10,
-    lineHeight: 1.4,
+    marginBottom: 12,
+    lineHeight: 1.5,
   },
   subsectionTitle: {
     fontSize: 10,
     color: '#000000',
     fontWeight: 'bold',
-    marginTop: 8,
-    marginBottom: 4,
+    marginTop: 10,
+    marginBottom: 5,
   },
   materialsBox: {
     backgroundColor: '#F8F8F8',
-    padding: 8,
+    padding: 9,
     borderRadius: 4,
-    marginBottom: 10,
+    marginBottom: 12,
   },
   materialItem: {
-    fontSize: 8,
+    fontSize: 9,
     color: '#333333',
-    marginBottom: 2,
+    marginBottom: 3,
     marginLeft: 5,
   },
   instructionItem: {
-    fontSize: 8,
+    fontSize: 9,
     color: '#333333',
-    marginBottom: 4,
-    lineHeight: 1.3,
+    marginBottom: 5,
+    lineHeight: 1.4,
     paddingLeft: 10,
   },
   benefitsBox: {
     backgroundColor: '#F8F8F8',
-    padding: 8,
+    padding: 9,
     borderRadius: 4,
-    marginTop: 8,
-    marginBottom: 10,
+    marginTop: 10,
+    marginBottom: 12,
   },
   benefitsText: {
-    fontSize: 8,
+    fontSize: 9,
     color: '#333333',
-    lineHeight: 1.3,
+    lineHeight: 1.4,
   },
   disclaimer: {
     marginTop: 15,
@@ -212,7 +212,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
 
             {/* Benefits */}
             <View style={styles.benefitsBox}>
-              <Text style={{ fontSize: 8, fontWeight: 'bold', color: '#000000', marginBottom: 3 }}>
+              <Text style={{ fontSize: 9, fontWeight: 'bold', color: '#000000', marginBottom: 4 }}>
                 Beneficios:
               </Text>
               <Text style={styles.benefitsText}>{exercise.benefits}</Text>
