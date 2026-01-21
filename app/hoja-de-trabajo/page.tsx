@@ -53,7 +53,7 @@ export default function WorksheetPage() {
   return (
     <div className="min-h-screen bg-canvas">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-mist to-canvas-warm py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary/10 via-mist to-canvas-warm py-12 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-64 h-64 bg-primary-light rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-sage rounded-full blur-3xl"></div>
@@ -64,7 +64,7 @@ export default function WorksheetPage() {
             Ejercicios Personalizados
           </h1>
           <p className="text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed animate-fade-up stagger-1">
-            Cada momento pide algo diferente. Cuéntame qué estás viviendo hoy para crear un ejercicio pensado para ti. No necesitas experiencia ni técnica. Busca un lugar tranquilo y regálate disfrutar tu proceso.
+            Cada momento pide algo diferente. Cuéntame qué estás viviendo hoy para crear un ejercicio pensado para ti. No necesitas experiencia ni técnica. Busca un lugar tranquilo y disfruta tu proceso.
           </p>
         </div>
       </section>
@@ -194,10 +194,6 @@ export default function WorksheetPage() {
               <ul className="space-y-2 text-base text-charcoal">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">✓</span>
-                  <span>Un ejercicio personalizado basado en tu emoción y situación específica.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
                   <span>Instrucciones paso a paso.</span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -212,18 +208,24 @@ export default function WorksheetPage() {
             </div>
           </div>
 
-          {/* Additional Info */}
-          <div className="mt-8 text-center">
-            <p className="text-base text-slate mb-3">
+          {/* Disclaimers */}
+          <div className="mt-8 space-y-4 text-sm text-slate text-center max-w-2xl mx-auto">
+            <p>
               Tus respuestas son privadas y se usan únicamente para generar tus ejercicios personalizados.
             </p>
-            <p className="text-sm text-slate">
-              ¿Necesitas apoyo adicional?{' '}
-              <a href="/#contacto" className="text-primary hover:text-primary-dark underline transition-colors">
-                Contáctame
-              </a>{' '}
-              para sesiones personalizadas de arteterapia.
+            <p>
+              Los ejercicios propuestos son únicamente una sugerencia de trabajo personal, basada en la información proporcionada por el usuario. Bajo ninguna circunstancia sustituyen una consulta, diagnóstico, tratamiento, atención profesional o intervención clínica, psicológica, psiquiátrica o médica.
             </p>
+          </div>
+
+          {/* Contact CTA */}
+          <div className="mt-8 text-center">
+            <p className="text-base text-charcoal mb-4">
+              ¿Necesitas apoyo adicional? Contáctame para sesiones personalizadas.
+            </p>
+            <a href="/#contacto" className="btn-primary inline-block">
+              Ir al cuestionario de contacto
+            </a>
           </div>
         </div>
       </section>
