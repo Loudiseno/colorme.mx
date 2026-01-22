@@ -129,24 +129,21 @@ export default function TanatologiaPage() {
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-frost/30 relative overflow-hidden">
-        <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-teal-glow/20 blur-2xl" />
-        <div className="absolute bottom-10 right-20 w-24 h-24 rounded-full bg-cyan/10 blur-xl" />
-
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 text-charcoal/60 hover:text-teal transition-colors mb-8"
+                className="inline-flex items-center gap-2 text-black/60 hover:text-black transition-colors mb-8"
               >
                 <ArrowLeft size={18} />
                 Volver al inicio
               </Link>
-              <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-ink mb-6">
+              <h1 className="text-5xl md:text-6xl text-black mb-6">
                 Tanatología
               </h1>
-              <p className="text-xl text-charcoal/80 leading-relaxed">
+              <p className="text-lg text-black/70 leading-relaxed">
                 Acompañamiento en procesos de pérdida, cambio y duelo. Te ayudo a
                 resignificar lo vivido para seguir adelante con sentido, desde un
                 enfoque humano y compasivo.
@@ -166,19 +163,19 @@ export default function TanatologiaPage() {
       </section>
 
       {/* What is it */}
-      <section className="section">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl text-ink mb-6">
+              <h2 className="text-3xl md:text-4xl text-black mb-6">
                 ¿Qué es la tanatología?
               </h2>
-              <div className="space-y-4 text-charcoal/80 leading-relaxed">
+              <div className="space-y-4 text-black/70 leading-relaxed">
                 <p>
                   La tanatología es una disciplina que se enfoca en acompañar a las personas
                   en sus procesos de pérdida, duelo y muerte. Aunque su nombre proviene del
                   griego <em>thanatos</em> (muerte), la tanatología es en realidad una
-                  disciplina sobre la <strong className="text-teal">vida</strong>: sobre cómo seguir viviendo
+                  disciplina sobre la <strong className="text-black">vida</strong>: sobre cómo seguir viviendo
                   después de una pérdida significativa.
                 </p>
                 <p>
@@ -195,35 +192,27 @@ export default function TanatologiaPage() {
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div>
               <Image
                 src="/2-2.jpg"
                 alt="Las etapas del duelo: negación, enojo, negociación, depresión, aceptación"
                 width={600}
                 height={450}
-                className="w-full h-auto rounded-2xl shadow-lg shadow-teal/10"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Types of Loss - Infographic */}
-      <section className="section bg-frost/40 relative overflow-hidden">
-        {/* Decorative teal accents */}
-        <div className="absolute top-10 right-10 w-32 h-32 rounded-full bg-teal-glow/30 blur-3xl" />
-        <div className="absolute bottom-10 left-10 w-40 h-40 rounded-full bg-cyan/20 blur-3xl" />
-        <div className="absolute top-1/3 right-1/4 w-24 h-24 rounded-full bg-teal/10 blur-2xl" />
-
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
+      {/* Types of Loss */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
-            <span className="inline-block px-4 py-1 bg-teal/10 text-teal text-sm font-medium rounded-full mb-4">
-              Acompañamiento
-            </span>
-            <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
+            <h2 className="text-3xl md:text-4xl text-black mb-4">
               Tipos de pérdidas que acompañamos
             </h2>
-            <p className="text-charcoal/70 max-w-2xl mx-auto">
+            <p className="text-black/70 max-w-2xl mx-auto">
               El duelo no solo surge ante la muerte. Hay muchos tipos de pérdidas que merecen ser nombradas y acompañadas.
             </p>
           </div>
@@ -231,18 +220,18 @@ export default function TanatologiaPage() {
             {typesOfLoss.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-5 text-center shadow-sm border-2 border-teal-glow/30 hover:shadow-lg hover:border-teal/40 hover:-translate-y-1 transition-all duration-300 group"
+                className="bg-white rounded-2xl p-5 text-center border border-[#B2F7EF] hover:border-black transition-all"
               >
                 <div className="w-16 h-16 mx-auto mb-4 relative">
                   <Image
                     src={item.icon}
                     alt={item.title}
                     fill
-                    className="object-contain group-hover:scale-110 transition-transform duration-300"
+                    className="object-contain"
                   />
                 </div>
-                <h3 className="font-display text-lg text-teal mb-2">{item.title}</h3>
-                <p className="text-sm text-charcoal/70 leading-relaxed">{item.description}</p>
+                <h3 className="text-lg text-black mb-2">{item.title}</h3>
+                <p className="text-sm text-black/70 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -250,21 +239,21 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Situations */}
-      <section className="section bg-mist/30">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-8">
+          <h2 className="text-3xl md:text-4xl text-black mb-8">
             ¿Cuándo buscar acompañamiento tanatológico?
           </h2>
-          <p className="text-charcoal/70 mb-6">
+          <p className="text-black/70 mb-6">
             El acompañamiento tanatológico puede ayudarte en diversas situaciones de pérdida:
           </p>
           <div className="space-y-3">
             {situations.map((situation, index) => (
               <div key={index} className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-teal-glow/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="text-teal" size={14} />
+                <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Check className="text-black" size={14} />
                 </div>
-                <span className="text-charcoal/80">{situation}</span>
+                <span className="text-black/80">{situation}</span>
               </div>
             ))}
           </div>
@@ -272,14 +261,14 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Process */}
-      <section className="section">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
             ¿Cómo es el proceso de acompañamiento?
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {process.map((item, index) => (
-              <div key={index} className="bg-frost/50 rounded-3xl p-8 border border-teal-glow/20">
+              <div key={index} className="bg-white rounded-3xl p-8 border border-[#B2F7EF]">
                 {item.image && (
                   <div className="relative w-24 h-24 mb-4">
                     <Image
@@ -290,8 +279,8 @@ export default function TanatologiaPage() {
                     />
                   </div>
                 )}
-                <h3 className="font-display text-xl text-ink mb-2">{item.title}</h3>
-                <p className="text-charcoal/70">{item.description}</p>
+                <h3 className="text-xl text-black mb-2">{item.title}</h3>
+                <p className="text-black/70">{item.description}</p>
               </div>
             ))}
           </div>
@@ -299,24 +288,24 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Session Types */}
-      <section className="section bg-canvas-soft">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-10 text-center">
+          <h2 className="text-3xl md:text-4xl text-black mb-10 text-center">
             Tipos de sesiones
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {sessionTypes.map((type, index) => (
-              <div key={index} className="text-center group">
+              <div key={index} className="text-center">
                 <div className="w-24 h-24 mx-auto mb-4 relative">
                   <Image
                     src={type.icon}
                     alt={type.title}
                     fill
-                    className="object-contain group-hover:scale-110 transition-transform duration-300"
+                    className="object-contain"
                   />
                 </div>
-                <h3 className="font-display text-xl text-ink mb-2">{type.title}</h3>
-                <p className="text-charcoal/70">{type.description}</p>
+                <h3 className="text-xl text-black mb-2">{type.title}</h3>
+                <p className="text-black/70">{type.description}</p>
               </div>
             ))}
           </div>
@@ -324,12 +313,12 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Combined approach */}
-      <section className="section bg-frost/30">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-6">
+          <h2 className="text-3xl md:text-4xl text-black mb-6">
             Tanatología y arteterapia: un enfoque integrador
           </h2>
-          <div className="space-y-4 text-charcoal/80 leading-relaxed">
+          <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
               En muchos casos, combino la tanatología con la arteterapia para ofrecer
               un acompañamiento más completo. El arte puede ser una herramienta poderosa
@@ -344,22 +333,22 @@ export default function TanatologiaPage() {
           <div className="mt-6">
             <Link
               href="/arteterapia"
-              className="text-teal hover:text-teal-dark transition-colors font-medium inline-flex items-center gap-2"
+              className="text-black hover:text-black/70 transition-colors font-medium inline-flex items-center gap-2"
             >
               Conoce más sobre arteterapia
-              <span className="transition-transform group-hover:translate-x-1">→</span>
+              <span>→</span>
             </Link>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
+          <h2 className="text-3xl md:text-4xl text-black mb-4">
             No tienes que atravesar esto solo/a
           </h2>
-          <p className="text-charcoal/70 mb-8">
+          <p className="text-black/70 mb-8">
             El primer paso es el más difícil. Agenda una primera consulta gratuita
             y conversemos sobre cómo puedo acompañarte.
           </p>
@@ -367,7 +356,7 @@ export default function TanatologiaPage() {
             href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-gradient inline-flex items-center gap-2"
+            className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-flex items-center gap-2"
           >
             <Calendar size={18} />
             Agenda tu sesión gratuita

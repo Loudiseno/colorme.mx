@@ -149,24 +149,24 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* Who is it for */}
-      <section className="section bg-frost/30">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
             ¿Para quién es la arteterapia?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {audiences.map((audience, index) => (
-              <div key={index} className="text-center group">
+              <div key={index} className="text-center">
                 <div className="relative w-48 h-48 mx-auto mb-6">
                   <Image
                     src={audience.image}
                     alt={audience.title}
                     fill
-                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                    className="object-contain"
                   />
                 </div>
-                <h3 className="font-display text-2xl text-ink mb-2">{audience.title}</h3>
-                <p className="text-charcoal/70">{audience.description}</p>
+                <h3 className="text-2xl text-black mb-2">{audience.title}</h3>
+                <p className="text-black/70">{audience.description}</p>
               </div>
             ))}
           </div>
@@ -174,54 +174,45 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* Benefits */}
-      <section className="section">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl text-ink mb-8">
+              <h2 className="text-3xl md:text-4xl text-black mb-8">
                 Beneficios de la arteterapia
               </h2>
               <div className="grid gap-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-teal-glow/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="text-teal" size={14} />
+                    <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Check className="text-black" size={14} />
                     </div>
-                    <span className="text-charcoal/80">{benefit}</span>
+                    <span className="text-black/80">{benefit}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="relative">
+            <div>
               <Image
                 src="/AdobeStock_210373409-1024x683.jpeg"
                 alt="Arteterapia - Expresión a través del arte"
                 width={600}
                 height={400}
-                className="rounded-3xl shadow-2xl shadow-teal/10"
+                className="rounded-3xl"
               />
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-glow/30 rounded-full blur-xl -z-10" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* What it helps with - Infographic */}
-      <section className="section bg-frost/40 relative overflow-hidden">
-        {/* Decorative teal accents */}
-        <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-teal-glow/30 blur-3xl" />
-        <div className="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-cyan/20 blur-3xl" />
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-teal/10 blur-2xl" />
-
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
+      {/* What it helps with */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
-            <span className="inline-block px-4 py-1 bg-teal/10 text-teal text-sm font-medium rounded-full mb-4">
-              Acompañamiento
-            </span>
-            <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
+            <h2 className="text-3xl md:text-4xl text-black mb-4">
               ¿En qué puede ayudarte?
             </h2>
-            <p className="text-charcoal/70 max-w-2xl mx-auto">
+            <p className="text-black/70 max-w-2xl mx-auto">
               La arteterapia te acompaña en diferentes momentos y procesos de vida.
             </p>
           </div>
@@ -229,18 +220,18 @@ export default function ArteterapiaPage() {
             {helpsWith.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-5 text-center shadow-sm border-2 border-teal-glow/30 hover:shadow-lg hover:border-teal/40 hover:-translate-y-1 transition-all duration-300 group"
+                className="bg-white rounded-2xl p-5 text-center border border-[#B2F7EF] hover:border-black transition-all"
               >
                 <div className="w-16 h-16 mx-auto mb-4 relative">
                   <Image
                     src={item.icon}
                     alt={item.title}
                     fill
-                    className="object-contain group-hover:scale-110 transition-transform duration-300"
+                    className="object-contain"
                   />
                 </div>
-                <h3 className="font-display text-lg text-teal mb-2">{item.title}</h3>
-                <p className="text-sm text-charcoal/70 leading-relaxed">{item.description}</p>
+                <h3 className="text-lg text-black mb-2">{item.title}</h3>
+                <p className="text-sm text-black/70 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -248,33 +239,33 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* How it works */}
-      <section className="section bg-mist/30">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-8">
+          <h2 className="text-3xl md:text-4xl text-black mb-8">
             ¿Cómo funcionan las sesiones?
           </h2>
           <div className="space-y-6">
-            <div className="bg-white rounded-2xl p-6 shadow-lg shadow-teal/5">
-              <h3 className="font-display text-xl text-ink mb-2">Primera consulta gratuita</h3>
-              <p className="text-charcoal/70">
+            <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
+              <h3 className="text-xl text-black mb-2">Primera consulta gratuita</h3>
+              <p className="text-black/70">
                 Comenzamos con una breve conversación de 15 minutos donde me cuentas
                 qué te trae aquí y juntos/as exploramos si la arteterapia es el camino
                 adecuado para ti.
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow-lg shadow-teal/5">
-              <h3 className="font-display text-xl text-ink mb-2">Sesiones individuales</h3>
-              <p className="text-charcoal/70">
+            <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
+              <h3 className="text-xl text-black mb-2">Sesiones individuales</h3>
+              <p className="text-black/70">
                 Sesiones de 50 minutos donde trabajamos a tu ritmo, usando diferentes
                 materiales y técnicas según lo que necesites explorar. Disponibles
                 presenciales u online.
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow-lg shadow-teal/5">
-              <h3 className="font-display text-xl text-ink mb-2">Talleres grupales</h3>
-              <p className="text-charcoal/70">
+            <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
+              <h3 className="text-xl text-black mb-2">Talleres grupales</h3>
+              <p className="text-black/70">
                 Encuentros seguros para crear en comunidad, compartir experiencias
-                y sanar desde lo colectivo. La duración varía según el objetivo del taller.
+                y procesar desde lo colectivo. La duración varía según el objetivo del taller.
               </p>
             </div>
           </div>
@@ -282,27 +273,24 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* Worksheet CTA */}
-      <section className="section bg-gradient-to-br from-primary/5 via-mist to-canvas">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 border-2 border-primary-glow/40 shadow-xl">
+          <div className="bg-[#B2F7EF]/10 rounded-2xl p-8 md:p-12 border border-[#B2F7EF]">
             <div className="text-center mb-8">
-              <div className="inline-block mb-4 px-4 py-2 bg-primary-glow/40 rounded-full">
-                <span className="text-primary-dark font-medium text-sm uppercase tracking-wider">Nuevo Recurso</span>
-              </div>
-              <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
+              <h2 className="text-3xl md:text-4xl text-black mb-4">
                 Empieza desde casa con tus ejercicios personalizados
               </h2>
-              <p className="text-charcoal/80 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-black/70 max-w-2xl mx-auto leading-relaxed">
                 ¿No estás seguro/a si la arteterapia es para ti? Crea tus ejercicios personalizados
                 que puedes hacer por tu cuenta. Es gratis y te ayudará
-                a experimentar el poder sanador del arte.
+                a explorar el proceso creativo.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/hoja-de-trabajo" className="btn-primary">
-                Crear Mis Ejercicios Personalizados Gratis
+              <Link href="/hoja-de-trabajo" className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all">
+                Crear mis ejercicios gratis
               </Link>
-              <span className="text-sm text-slate">
+              <span className="text-sm text-gray-500">
                 PDF descargable • Ejercicios personalizados
               </span>
             </div>
@@ -311,12 +299,12 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* CTA */}
-      <section className="section">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl md:text-4xl text-ink mb-4">
+          <h2 className="text-3xl md:text-4xl text-black mb-4">
             ¿Listo/a para comenzar?
           </h2>
-          <p className="text-charcoal/70 mb-8">
+          <p className="text-black/70 mb-8">
             Agenda tu primera consulta gratuita y descubre cómo el arte puede
             ayudarte en tu proceso.
           </p>
@@ -324,7 +312,7 @@ export default function ArteterapiaPage() {
             href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-gradient inline-flex items-center gap-2"
+            className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-flex items-center gap-2"
           >
             <Calendar size={18} />
             Agenda tu sesión gratuita

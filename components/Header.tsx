@@ -35,7 +35,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-canvas/95 backdrop-blur-lg shadow-sm py-3'
+          ? 'bg-white shadow-sm py-3'
           : 'bg-transparent py-5'
       }`}
     >
@@ -72,7 +72,7 @@ export default function Header() {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-charcoal hover:text-teal transition-colors duration-300"
+              className="text-black/70 hover:text-black transition-colors duration-300"
               aria-label={social.name}
             >
               <social.icon size={18} strokeWidth={1.5} />
@@ -83,20 +83,17 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-ink p-2 hover:text-teal transition-colors"
+          className="md:hidden text-black p-2 hover:text-black/70 transition-colors"
           aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Mobile Menu - Full Screen with Refined Gradient */}
+        {/* Mobile Menu */}
         <div
-          className={`fixed inset-0 md:hidden transition-all duration-500 ${
+          className={`fixed inset-0 md:hidden transition-all duration-500 bg-white ${
             isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
           }`}
-          style={{
-            background: 'linear-gradient(135deg, #FDFCFA 0%, #F0F7F6 50%, #E8F4F3 100%)'
-          }}
         >
           <div className="flex flex-col items-center justify-center h-full gap-10">
             {navigation.map((item, index) => (
@@ -104,12 +101,10 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`text-2xl text-ink hover:text-teal transition-all duration-300 tracking-widest uppercase ${
+                className={`text-2xl text-black hover:text-black/70 transition-all duration-300 ${
                   isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
                 style={{
-                  fontFamily: 'var(--font-cormorant)',
-                  fontWeight: 500,
                   transitionDelay: `${index * 100}ms`
                 }}
               >
@@ -123,7 +118,7 @@ export default function Header() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`text-charcoal hover:text-teal transition-all duration-300 ${
+                  className={`text-black/70 hover:text-black transition-all duration-300 ${
                     isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                   }`}
                   style={{ transitionDelay: `${(navigation.length + index) * 100}ms` }}
