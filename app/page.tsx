@@ -25,16 +25,15 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-6">
-                Explora tus emociones
-                <span className="text-black"> a través del arte</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
+                Arteterapia y Tanatología
               </h1>
-              <div className="space-y-4 text-black/70 leading-relaxed">
+              <p className="text-lg md:text-xl text-black/60 tracking-widest mb-6">
+                CREA.SIENTE.TRANSFORMA
+              </p>
+              <div className="space-y-4 text-black/70 leading-relaxed mb-8">
                 <p>
-                  Acompañamiento en duelo, pérdida y cambio a través de arteterapia y tanatología.
-                </p>
-                <p>
-                  Un espacio profesional para explorar emociones, procesar experiencias y reconectar contigo.
+                  ColorMe es un espacio de acompañamiento profesional para procesos de duelo, pérdida, reconexión y transformación personal a través de arteterapia y/o tanatología con enfoque somático.
                 </p>
               </div>
               <div>
@@ -42,9 +41,9 @@ export default function HomePage() {
                   href={siteConfig.calendly}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block mt-8"
+                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
                 >
-                  Agendar sesión gratuita
+                  Agenda tu primera sesión gratuita
                 </a>
               </div>
             </div>
@@ -64,11 +63,11 @@ export default function HomePage() {
                   </div>
                   <div className="flex-1">
                     <h2 className="text-2xl md:text-3xl text-black mb-2">Hola, soy Lou</h2>
-                    <p className="text-black font-medium mb-4">
-                      Diseñadora, artista, fotógrafa y tanatóloga
+                    <p className="text-black font-semibold mb-4">
+                      Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
                     </p>
                     <p className="text-black/70 leading-relaxed">
-                      El arte y la tanatología fueron mi refugio. Hoy acompaño a personas en procesos de duelo, cambio o cierre, creando espacios seguros para explorar emociones.
+                      Desde pequeña, la creatividad fue mi forma de conectar con el mundo. Tras atravesar mis propias pérdidas y procesos de reinvención, comprendí que mi propósito era acompañar a otros en sus momentos de cambio, cierre y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación multicultural integra técnicas de México, Bali, Tailandia, Malasia e India.
                     </p>
                   </div>
                 </div>

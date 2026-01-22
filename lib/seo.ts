@@ -21,7 +21,7 @@ export const siteConfig = {
     amazonEs: 'https://www.amazon.com.mx/dp/B0F2MYQHHZ',
     amazonEn: 'https://www.amazon.com/dp/B0F4KNJZ6B',
   },
-  calendly: 'https://calendly.com/lou-diseno/primera-consulta-color-me',
+  calendly: 'https://calendly.com/colormelab/primera-consulta-color-me',
 }
 
 // Generate LocalBusiness/ProfessionalService structured data
