@@ -77,160 +77,77 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="servicios">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Arteterapia Card */}
-            <Link href="/arteterapia" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden h-full border border-[#B2F7EF] hover:border-black transition-all">
-                <div className="aspect-[4/3] relative overflow-hidden bg-white">
-                  <Image
-                    src="/COLORME_logo-12-scaled.jpg"
-                    alt="Arteterapia"
-                    fill
-                    className="object-contain p-4"
-                  />
-                </div>
-                <div className="p-5">
-                  <h2 className="text-2xl md:text-3xl text-black mb-2">
-                    Arteterapia
-                  </h2>
-                  <p className="text-black/70 leading-relaxed mb-3">
-                    Explora y procesa emociones a través del arte.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black font-medium text-sm">
-                    Ver más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
-
-            {/* Tanatología Card */}
-            <Link href="/tanatologia" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden h-full border border-[#B2F7EF] hover:border-black transition-all">
-                <div className="aspect-[4/3] relative overflow-hidden bg-white">
-                  <Image
-                    src="/ojo-11-scaled.jpg"
-                    alt="Tanatología"
-                    fill
-                    className="object-contain p-4"
-                  />
-                </div>
-                <div className="p-5">
-                  <h2 className="text-2xl md:text-3xl text-black mb-2">
-                    Tanatología
-                  </h2>
-                  <p className="text-black/70 leading-relaxed mb-3">
-                    Acompañamiento en procesos de pérdida y duelo.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black font-medium text-sm">
-                    Ver más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
-          </div>
+      {/* Quote Section */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed mb-4">
+            "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
+          </blockquote>
+          <p className="text-base text-black/70 leading-relaxed">
+            No hay reglas ni caminos fijos. No se trata de vivir sin sentir, sino de dar espacio a las emociones, permitirnos habitarlas y transformarlas.
+          </p>
         </div>
       </section>
 
-      {/* Worksheet CTA Section */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="inline-block mb-4 px-4 py-2 bg-[#B2F7EF] rounded-full">
-            <span className="text-black font-medium text-xs uppercase tracking-wider">Nuevo</span>
-          </div>
-          <h2 className="text-3xl md:text-4xl text-black mb-6">
-            Ejercicios personalizados de arteterapia
-          </h2>
-          <p className="text-base text-black/70 max-w-2xl mx-auto mb-8">
-            Recibe un ejercicio adaptado a tu emoción actual. Gratis y descargable.
-          </p>
-          <div className="flex justify-center">
-            <Link href="/hoja-de-trabajo" className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black/90 transition-all">
-              Crear ejercicio
-            </Link>
-          </div>
+      {/* Services Section */}
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="servicios">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Arteterapia */}
+            <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
+              <h2 className="text-3xl md:text-4xl text-black mb-4">
+                Arteterapia
+              </h2>
+              <p className="text-black/70 leading-relaxed mb-6">
+                Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones, sin buscar resultados estéticos ni requerir experiencia artística.
+              </p>
+              <Link
+                href="/arteterapia"
+                className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+              >
+                Ver más
+              </Link>
+            </div>
 
-          {/* Preview features */}
-          <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">
-            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
-              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
-                <span className="text-xl">✨</span>
-              </div>
-              <h3 className="text-base font-semibold text-black mb-2">Personalizado</h3>
-              <p className="text-sm text-black/70">
-                Ejercicio adaptado a tu emoción y momento
+            {/* Tanatología */}
+            <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
+              <h2 className="text-3xl md:text-4xl text-black mb-4">
+                Tanatología
+              </h2>
+              <p className="text-black/70 leading-relaxed mb-6">
+                Acompañamiento profesional en procesos de duelo, pérdida y despedida. Ofrece un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido para seguir adelante con sentido.
               </p>
-            </div>
-            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
-              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
-                <span className="text-xl">🎨</span>
-              </div>
-              <h3 className="text-base font-semibold text-black mb-2">Práctico</h3>
-              <p className="text-sm text-black/70">
-                Instrucciones paso a paso y materiales accesibles
-              </p>
-            </div>
-            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
-              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
-                <span className="text-xl">📄</span>
-              </div>
-              <h3 className="text-base font-semibold text-black mb-2">Profesional</h3>
-              <p className="text-sm text-black/70">
-                PDF profesional listo para descargar
-              </p>
+              <Link
+                href="/tanatologia"
+                className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+              >
+                Ver más
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
-                <Image
-                  src="/columpio.png"
-                  alt="Terapias individuales"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h3 className="text-2xl md:text-3xl text-black mb-3">Terapias individuales</h3>
-              <p className="text-black/70 text-base">
-                Presenciales u online adaptadas a tu proceso.
+              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Terapias individuales</h3>
+              <p className="text-black/70 leading-relaxed">
+                Sesiones adaptadas a tu ritmo y proceso personal, con un acompañamiento cercano para gestionar emociones y acompañarte en tus procesos.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
-                <Image
-                  src="/corazon.png"
-                  alt="Talleres grupales"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h3 className="text-2xl md:text-3xl text-black mb-3">Talleres grupales</h3>
-              <p className="text-black/70 text-base">
-                Encuentros seguros para crear y explorar en comunidad.
+              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Sesiones grupales</h3>
+              <p className="text-black/70 leading-relaxed">
+                Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
-                <Image
-                  src="/adolecente hombre.png"
-                  alt="Empresas y colectivos"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h3 className="text-2xl md:text-3xl text-black mb-3">Empresas y colectivos</h3>
-              <p className="text-black/70 text-base">
-                Espacios diseñados a medida para grupos.
+              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Talleres para organizaciones</h3>
+              <p className="text-black/70 leading-relaxed">
+                Programas de bienestar emocional diseñados a medida según los objetivos del grupo.
               </p>
             </div>
           </div>
@@ -239,22 +156,11 @@ export default function HomePage() {
               href={siteConfig.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-flex items-center gap-2"
+              className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
             >
-              <Calendar size={16} />
-              Agendar sesión
+              Agenda tu sesión
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
-            "Habitar lo que sientes no es seguir las líneas, es dibujar las tuyas propias."
-          </blockquote>
-          <p className="mt-6 text-gray-500 text-sm italic">— Lou</p>
         </div>
       </section>
 

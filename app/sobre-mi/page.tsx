@@ -178,9 +178,8 @@ export default function SobreMi() {
           </p>
           <Link
             href="/#contacto"
-            className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-flex items-center gap-2"
+            className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
           >
-            <Calendar size={18} />
             Agenda tu primera sesión gratis
           </Link>
         </section>
