@@ -25,16 +25,15 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-6">
-                Explora tus emociones
-                <span className="text-black"> a través del arte</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
+                Arteterapia y Tanatología
               </h1>
-              <div className="space-y-4 text-black/70 leading-relaxed">
+              <p className="text-lg md:text-xl text-black/60 tracking-widest mb-6">
+                CREA.SIENTE.TRANSFORMA
+              </p>
+              <div className="space-y-4 text-black/70 leading-relaxed mb-8">
                 <p>
-                  Acompañamiento en duelo, pérdida y cambio a través de arteterapia y tanatología.
-                </p>
-                <p>
-                  Un espacio profesional para explorar emociones, procesar experiencias y reconectar contigo.
+                  ColorMe es un espacio de acompañamiento profesional para procesos de duelo, pérdida, reconexión y transformación personal a través de arteterapia y/o tanatología con enfoque somático.
                 </p>
               </div>
               <div>
@@ -42,9 +41,9 @@ export default function HomePage() {
                   href={siteConfig.calendly}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block mt-8"
+                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
                 >
-                  Agendar sesión gratuita
+                  Agenda tu primera sesión gratuita
                 </a>
               </div>
             </div>
@@ -64,11 +63,11 @@ export default function HomePage() {
                   </div>
                   <div className="flex-1">
                     <h2 className="text-2xl md:text-3xl text-black mb-2">Hola, soy Lou</h2>
-                    <p className="text-black font-medium mb-4">
-                      Diseñadora, artista, fotógrafa y tanatóloga
+                    <p className="text-black font-semibold mb-4">
+                      Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
                     </p>
                     <p className="text-black/70 leading-relaxed">
-                      El arte y la tanatología fueron mi refugio. Hoy acompaño a personas en procesos de duelo, cambio o cierre, creando espacios seguros para explorar emociones.
+                      La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia e India.
                     </p>
                   </div>
                 </div>
@@ -78,160 +77,119 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="servicios">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Arteterapia Card */}
-            <Link href="/arteterapia" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden h-full border border-[#B2F7EF] hover:border-black transition-all">
-                <div className="aspect-[4/3] relative overflow-hidden bg-white">
-                  <Image
-                    src="/COLORME_logo-12-scaled.jpg"
-                    alt="Arteterapia"
-                    fill
-                    className="object-contain p-4"
-                  />
-                </div>
-                <div className="p-5">
-                  <h2 className="text-2xl md:text-3xl text-black mb-2">
-                    Arteterapia
-                  </h2>
-                  <p className="text-black/70 leading-relaxed mb-3">
-                    Explora y procesa emociones a través del arte.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black font-medium text-sm">
-                    Ver más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
-
-            {/* Tanatología Card */}
-            <Link href="/tanatologia" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden h-full border border-[#B2F7EF] hover:border-black transition-all">
-                <div className="aspect-[4/3] relative overflow-hidden bg-white">
-                  <Image
-                    src="/ojo-11-scaled.jpg"
-                    alt="Tanatología"
-                    fill
-                    className="object-contain p-4"
-                  />
-                </div>
-                <div className="p-5">
-                  <h2 className="text-2xl md:text-3xl text-black mb-2">
-                    Tanatología
-                  </h2>
-                  <p className="text-black/70 leading-relaxed mb-3">
-                    Acompañamiento en procesos de pérdida y duelo.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black font-medium text-sm">
-                    Ver más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
-          </div>
+      {/* Quote Section */}
+      <section className="py-8 md:py-10 bg-white">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
+            "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
+          </blockquote>
         </div>
       </section>
 
-      {/* Worksheet CTA Section */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="inline-block mb-4 px-4 py-2 bg-[#B2F7EF] rounded-full">
-            <span className="text-black font-medium text-xs uppercase tracking-wider">Nuevo</span>
-          </div>
-          <h2 className="text-3xl md:text-4xl text-black mb-6">
-            Ejercicios personalizados de arteterapia
-          </h2>
-          <p className="text-base text-black/70 max-w-2xl mx-auto mb-8">
-            Recibe un ejercicio adaptado a tu emoción actual. Gratis y descargable.
-          </p>
-          <div className="flex justify-center">
-            <Link href="/hoja-de-trabajo" className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black/90 transition-all">
-              Crear ejercicio
-            </Link>
-          </div>
+      {/* Services Section */}
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="servicios">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Arteterapia */}
+            <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
+              <div className="relative w-32 h-32 mb-4">
+                <Image
+                  src="/COLORME_logo-12-scaled.jpg"
+                  alt="Arteterapia"
+                  width={128}
+                  height={128}
+                  className="object-contain"
+                />
+              </div>
+              <h2 className="text-3xl md:text-4xl text-black mb-4">
+                Arteterapia
+              </h2>
+              <p className="text-black/70 leading-relaxed mb-6">
+                Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones, sin buscar resultados estéticos ni requerir experiencia artística.
+              </p>
+              <Link
+                href="/arteterapia"
+                className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+              >
+                Ver más
+              </Link>
+            </div>
 
-          {/* Preview features */}
-          <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">
-            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
-              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
-                <span className="text-xl">✨</span>
+            {/* Tanatología */}
+            <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
+              <div className="relative w-32 h-32 mb-4">
+                <Image
+                  src="/ojo-11-scaled.jpg"
+                  alt="Tanatología"
+                  width={128}
+                  height={128}
+                  className="object-contain"
+                />
               </div>
-              <h3 className="text-base font-semibold text-black mb-2">Personalizado</h3>
-              <p className="text-sm text-black/70">
-                Ejercicio adaptado a tu emoción y momento
+              <h2 className="text-3xl md:text-4xl text-black mb-4">
+                Tanatología
+              </h2>
+              <p className="text-black/70 leading-relaxed mb-6">
+                Acompañamiento en procesos de duelo, pérdida y despedida en un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido.
               </p>
-            </div>
-            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
-              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
-                <span className="text-xl">🎨</span>
-              </div>
-              <h3 className="text-base font-semibold text-black mb-2">Práctico</h3>
-              <p className="text-sm text-black/70">
-                Instrucciones paso a paso y materiales accesibles
-              </p>
-            </div>
-            <div className="bg-[#B2F7EF]/10 rounded-xl p-5 border border-[#B2F7EF]">
-              <div className="w-10 h-10 bg-[#B2F7EF] rounded-lg flex items-center justify-center mb-3">
-                <span className="text-xl">📄</span>
-              </div>
-              <h3 className="text-base font-semibold text-black mb-2">Profesional</h3>
-              <p className="text-sm text-black/70">
-                PDF profesional listo para descargar
-              </p>
+              <Link
+                href="/tanatologia"
+                className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+              >
+                Ver más
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
+              <div className="w-24 h-24 mx-auto mb-4 relative">
                 <Image
                   src="/columpio.png"
-                  alt="Terapias individuales"
-                  fill
+                  alt="Terapia individual"
+                  width={96}
+                  height={96}
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-2xl md:text-3xl text-black mb-3">Terapias individuales</h3>
-              <p className="text-black/70 text-base">
-                Presenciales u online adaptadas a tu proceso.
+              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Terapia individual</h3>
+              <p className="text-black/70 leading-relaxed">
+                Sesiones personalizadas a tu ritmo y necesidades, con apoyo emocional cercano.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
+              <div className="w-24 h-24 mx-auto mb-4 relative">
                 <Image
                   src="/corazon.png"
-                  alt="Talleres grupales"
-                  fill
+                  alt="Sesión grupal"
+                  width={96}
+                  height={96}
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-2xl md:text-3xl text-black mb-3">Talleres grupales</h3>
-              <p className="text-black/70 text-base">
-                Encuentros seguros para crear y explorar en comunidad.
+              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Sesión grupal</h3>
+              <p className="text-black/70 leading-relaxed">
+                Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 relative">
+              <div className="w-24 h-24 mx-auto mb-4 relative">
                 <Image
                   src="/adolecente hombre.png"
-                  alt="Empresas y colectivos"
-                  fill
+                  alt="Talleres para organizaciones"
+                  width={96}
+                  height={96}
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-2xl md:text-3xl text-black mb-3">Empresas y colectivos</h3>
-              <p className="text-black/70 text-base">
-                Espacios diseñados a medida para grupos.
+              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Talleres para organizaciones</h3>
+              <p className="text-black/70 leading-relaxed">
+                Programas de bienestar emocional diseñados a medida según los objetivos del grupo.
               </p>
             </div>
           </div>
@@ -240,22 +198,11 @@ export default function HomePage() {
               href={siteConfig.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-flex items-center gap-2"
+              className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
             >
-              <Calendar size={16} />
-              Agendar sesión
+              Agenda tu sesión
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
-            "Habitar lo que sientes no es seguir las líneas, es dibujar las tuyas propias."
-          </blockquote>
-          <p className="mt-6 text-gray-500 text-sm italic">— Lou</p>
         </div>
       </section>
 
@@ -270,7 +217,7 @@ export default function HomePage() {
                   alt="Indeleble - Libro por Lou"
                   width={600}
                   height={450}
-                  className="w-full h-auto rounded-2xl shadow-lg"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
@@ -326,8 +273,13 @@ export default function HomePage() {
             {/* Article 1 */}
             <Link href="/blog/que-es-arteterapia" className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/20 flex items-center justify-center">
-                  <span className="text-[#B2F7EF] text-6xl font-bold">01</span>
+                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                  <Image
+                    src="/corazon.png"
+                    alt="¿Qué es la arteterapia?"
+                    fill
+                    className="object-cover grayscale"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
@@ -348,8 +300,13 @@ export default function HomePage() {
             {/* Article 2 */}
             <Link href="/blog/arteterapia-cancer" className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/20 flex items-center justify-center">
-                  <span className="text-[#B2F7EF] text-6xl font-bold">02</span>
+                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                  <Image
+                    src="/columpio.png"
+                    alt="Arteterapia para pacientes con cáncer"
+                    fill
+                    className="object-cover grayscale"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
@@ -369,8 +326,13 @@ export default function HomePage() {
 
             {/* Article 3 */}
             <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF]/50">
-              <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/10 flex items-center justify-center">
-                <span className="text-[#B2F7EF]/50 text-6xl font-bold">03</span>
+              <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                <Image
+                  src="/cafe.png"
+                  alt="Rituales para el día a día"
+                  fill
+                  className="object-cover grayscale opacity-50"
+                />
               </div>
               <div className="p-6">
                 <span className="text-xs text-gray-500 uppercase tracking-wider">Próximamente</span>
@@ -393,8 +355,8 @@ export default function HomePage() {
       <section className="py-12 md:py-16" id="contacto">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="font-display text-4xl md:text-5xl text-ink mb-4">Contáctame</h2>
-            <p className="text-charcoal/70">
+            <h2 className="text-4xl md:text-5xl text-black mb-4">Contacto</h2>
+            <p className="text-black/70">
               ¡La primera sesión no tiene costo! Cuéntame un poco sobre ti y lo que buscas.
             </p>
           </div>

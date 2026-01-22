@@ -133,12 +133,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Elegant navigation links */
 .nav-link {
-  font-family: var(--font-cormorant);
-  font-size: 1.125rem;
+  font-family: var(--font-montserrat);
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-charcoal);
+  letter-spacing: 0.02em;
+  color: #000000;
   position: relative;
   padding-bottom: 2px;
   transition: color 0.3s ease;
@@ -151,13 +150,13 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   width: 0;
   height: 1px;
-  background: var(--color-teal);
+  background: #000000;
   transition: all 0.4s var(--ease-out-expo);
   transform: translateX(-50%);
 }
 
 .nav-link:hover {
-  color: var(--color-teal);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .nav-link:hover::after {

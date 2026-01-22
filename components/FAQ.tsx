@@ -54,11 +54,11 @@ export default function FAQ() {
 
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-display text-4xl md:text-5xl text-ink mb-4">
+          <h2 className="text-4xl md:text-5xl text-black mb-4">
             Preguntas frecuentes
           </h2>
-          <p className="text-charcoal/70">
-            Cada proceso es único. Aquí respondo algunas dudas comunes sobre las sesiones.
+          <p className="text-black/70">
+            Aquí respondo algunas dudas comunes sobre las sesiones.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function FAQ() {
               key={index}
               className={`rounded-2xl transition-all duration-300 ${
                 openIndex === index
-                  ? 'bg-white shadow-lg shadow-teal/5'
+                  ? 'bg-white border border-[#B2F7EF]'
                   : 'bg-transparent hover:bg-white/50'
               }`}
             >
@@ -77,14 +77,14 @@ export default function FAQ() {
                 className="w-full px-6 py-5 flex items-start justify-between gap-4 text-left"
                 aria-expanded={openIndex === index}
               >
-                <span className="font-display text-lg md:text-xl text-ink pr-4">
+                <span className="text-lg md:text-xl text-black pr-4">
                   {faq.question}
                 </span>
                 <span
                   className={`flex-shrink-0 mt-1 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
                     openIndex === index
-                      ? 'bg-teal text-white rotate-0'
-                      : 'bg-teal-glow/30 text-teal rotate-0'
+                      ? 'bg-black text-white'
+                      : 'bg-[#B2F7EF] text-black'
                   }`}
                 >
                   {openIndex === index ? <Minus size={18} /> : <Plus size={18} />}
@@ -96,8 +96,8 @@ export default function FAQ() {
                 }`}
               >
                 <div className="px-6 pb-5">
-                  <div className="w-12 h-0.5 bg-teal/30 mb-4" />
-                  <p className="text-charcoal/70 leading-relaxed">{faq.answer}</p>
+                  <div className="w-12 h-0.5 bg-[#B2F7EF] mb-4" />
+                  <p className="text-black/70 leading-relaxed">{faq.answer}</p>
                 </div>
               </div>
             </div>

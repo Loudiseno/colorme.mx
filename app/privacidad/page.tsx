@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Política de Privacidad',
-  description: 'Política de privacidad de Color Me. Información sobre cómo recopilamos, usamos y protegemos tus datos personales.',
+  description: 'Política de privacidad de ColorMe. Información sobre cómo recopilamos, usamos y protegemos tus datos personales.',
   robots: {
     index: false,
     follow: false,
@@ -30,7 +30,7 @@ export default function PrivacidadPage() {
 
         <div className="prose prose-lg max-w-none text-charcoal/80">
           <p className="lead">
-            En Color Me, respetamos tu privacidad y nos comprometemos a proteger 
+            En ColorMe, respetamos tu privacidad y nos comprometemos a proteger 
             tus datos personales. Esta política explica cómo recopilamos, usamos 
             y protegemos tu información.
           </p>

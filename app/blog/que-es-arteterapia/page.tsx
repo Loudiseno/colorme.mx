@@ -237,9 +237,8 @@ export default function ArticuloArteterapia() {
             href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-teal text-white rounded-full font-medium shadow-lg shadow-teal/20 hover:shadow-xl hover:shadow-teal/30 hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-block px-8 py-4 bg-teal text-white rounded-full font-medium shadow-lg shadow-teal/20 hover:shadow-xl hover:shadow-teal/30 hover:-translate-y-0.5 transition-all duration-300"
           >
-            <Calendar size={20} />
             Agenda tu primera consulta gratuita
           </a>
         </div>

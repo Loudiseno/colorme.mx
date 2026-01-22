@@ -27,7 +27,7 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <Image
                 src="/COLORME_logo-19-768x141.png"
-                alt="Color Me"
+                alt="ColorMe"
                 width={140}
                 height={26}
                 className="h-8 w-auto"
@@ -85,7 +85,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-black/10 pt-4 flex justify-end">
           <p className="text-gray-500 text-xs">
-            © {new Date().getFullYear()} Color Me
+            © {new Date().getFullYear()} ColorMe
           </p>
         </div>
       </div>
