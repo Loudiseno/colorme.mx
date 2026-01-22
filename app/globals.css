@@ -87,57 +87,48 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-/* Button styles - refined and organic */
+/* Button styles - brand colors only */
 .btn-primary {
-  @apply inline-block px-7 py-3.5 text-ink
-         transition-all duration-300
-         hover:shadow-md hover:-translate-y-0.5;
-  background: #b2f7ef;
-  font-family: var(--font-cormorant);
-  font-size: 1.0625rem;
+  @apply inline-block px-5 py-2 text-black
+         transition-all duration-300;
+  background: #B2F7EF;
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.06em;
-  border-radius: 16px;
+  border-radius: 9999px;
 }
 
 .btn-primary:hover {
-  background: #5EEAD4;
+  background: #B2F7EF;
+  opacity: 0.9;
 }
 
 .btn-secondary {
-  @apply inline-block px-7 py-3.5 text-ink
+  @apply inline-block px-5 py-2 text-white
          transition-all duration-300;
-  background: #b2f7ef;
-  border: 2px solid #b2f7ef;
-  font-family: var(--font-cormorant);
-  font-size: 1.0625rem;
+  background: #000000;
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.06em;
-  border-radius: 16px;
+  border-radius: 9999px;
 }
 
 .btn-secondary:hover {
-  background: #5EEAD4;
-  border-color: #5EEAD4;
+  background: #000000;
+  opacity: 0.9;
 }
 
-/* Primary CTA button - elegant solid style */
+/* Primary CTA button */
 .btn-gradient {
-  @apply inline-block px-8 py-4 text-ink
-         transition-all duration-500
-         hover:-translate-y-0.5;
-  background: #b2f7ef;
-  font-family: var(--font-cormorant);
-  font-size: 1.125rem;
+  @apply inline-block px-6 py-2.5 text-black
+         transition-all duration-300;
+  background: #B2F7EF;
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(178, 247, 239, 0.4);
+  border-radius: 9999px;
 }
 
 .btn-gradient:hover {
-  box-shadow: 0 4px 16px rgba(178, 247, 239, 0.6);
-  background: #5EEAD4;
+  background: #B2F7EF;
+  opacity: 0.9;
 }
 
 /* Elegant navigation links */

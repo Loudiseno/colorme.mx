@@ -51,33 +51,28 @@ export default function WorksheetPage() {
   };
 
   return (
-    <div className="min-h-screen bg-canvas">
+    <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-mist to-canvas-warm py-12 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-primary-light rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-sage rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-ink mb-6 animate-fade-up">
+      <section className="bg-[#B2F7EF]/10 py-10">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl text-black mb-4">
             Ejercicios Personalizados
           </h1>
-          <p className="text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed animate-fade-up stagger-1">
-            Cada momento pide algo diferente. Cuéntame qué estás viviendo hoy para crear un ejercicio pensado para ti. No necesitas experiencia ni técnica. Busca un lugar tranquilo y disfruta tu proceso.
+          <p className="text-lg text-black/80 max-w-2xl mx-auto">
+            Explora tus emociones a través del arte. Recibe un ejercicio adaptado a tu momento actual.
           </p>
         </div>
       </section>
 
       {/* Form Section */}
-      <section className="py-8">
+      <section className="py-10">
         <div className="max-w-3xl mx-auto px-6">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 animate-fade-up stagger-2">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
               <div>
-                <label htmlFor="name" className="block text-base font-semibold text-charcoal mb-2">
-                  Tu nombre <span className="text-coral">*</span>
+                <label htmlFor="name" className="block text-base font-semibold text-black mb-2">
+                  Tu nombre <span className="text-black">*</span>
                 </label>
                 <input
                   type="text"
@@ -93,7 +88,7 @@ export default function WorksheetPage() {
 
               {/* Age Field */}
               <div>
-                <label htmlFor="age" className="block text-base font-semibold text-charcoal mb-2">
+                <label htmlFor="age" className="block text-base font-semibold text-black mb-2">
                   Tu edad <span className="text-coral">*</span>
                 </label>
                 <input
@@ -112,7 +107,7 @@ export default function WorksheetPage() {
 
               {/* Gender Field */}
               <div>
-                <label htmlFor="gender" className="block text-base font-semibold text-charcoal mb-2">
+                <label htmlFor="gender" className="block text-base font-semibold text-black mb-2">
                   Género <span className="text-coral">*</span>
                 </label>
                 <select
@@ -134,7 +129,7 @@ export default function WorksheetPage() {
 
               {/* Grief/Goal Field */}
               <div>
-                <label htmlFor="griefOrGoal" className="block text-base font-semibold text-charcoal mb-2">
+                <label htmlFor="griefOrGoal" className="block text-base font-semibold text-black mb-2">
                   Compárteme un poco sobre tu momento actual <span className="text-slate font-normal">(Por ejemplo: una pérdida, un cambio importante, una transición…)</span> <span className="text-coral">*</span>
                 </label>
                 <textarea
@@ -151,7 +146,7 @@ export default function WorksheetPage() {
 
               {/* Emotion Field */}
               <div>
-                <label htmlFor="emotion" className="block text-base font-semibold text-charcoal mb-2">
+                <label htmlFor="emotion" className="block text-base font-semibold text-black mb-2">
                   ¿Con qué emoción te gustaría trabajar? <span className="text-coral">*</span>
                 </label>
                 <input
@@ -171,60 +166,50 @@ export default function WorksheetPage() {
                 <button
                   type="submit"
                   disabled={isGenerating}
-                  className="btn-gradient px-8 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isGenerating ? (
-                    <span className="flex items-center justify-center gap-3">
-                      <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                      </svg>
-                      Generando tu ejercicio...
-                    </span>
-                  ) : (
-                    'Genera mi ejercicio'
-                  )}
+                  {isGenerating ? 'Generando...' : 'Generar ejercicio'}
                 </button>
               </div>
             </form>
 
             {/* Info Box */}
-            <div className="mt-8 p-6 bg-mist rounded-xl border-l-4 border-primary">
-              <h3 className="font-display text-lg text-ink mb-3">¿Qué incluyen tus ejercicios personalizados?</h3>
-              <ul className="space-y-2 text-base text-charcoal">
+            <div className="mt-6 p-5 bg-[#B2F7EF]/10 rounded-xl border-l-4 border-[#B2F7EF]">
+              <h3 className="text-base font-semibold text-black mb-3">¿Qué incluye tu ejercicio?</h3>
+              <ul className="space-y-1.5 text-sm text-black/80">
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>Instrucciones paso a paso.</span>
+                  <span className="text-[#B2F7EF] mt-0.5">✓</span>
+                  <span>Instrucciones paso a paso</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>Lista de materiales sugeridos.</span>
+                  <span className="text-[#B2F7EF] mt-0.5">✓</span>
+                  <span>Lista de materiales</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
-                  <span>PDF listo para descargar e imprimir cuando quieras usar.</span>
+                  <span className="text-[#B2F7EF] mt-0.5">✓</span>
+                  <span>PDF descargable</span>
                 </li>
               </ul>
             </div>
           </div>
 
           {/* Disclaimers */}
-          <div className="mt-8 space-y-4 text-sm text-slate text-center max-w-2xl mx-auto">
+          <div className="mt-6 space-y-2 text-xs text-gray-500 text-center max-w-2xl mx-auto">
             <p>
-              Tus respuestas son privadas y se usan únicamente para generar tus ejercicios personalizados.
+              Tus respuestas son privadas.
             </p>
             <p>
-              Los ejercicios propuestos son únicamente una sugerencia de trabajo personal, basada en la información proporcionada por el usuario. Bajo ninguna circunstancia sustituyen una consulta, diagnóstico, tratamiento, atención profesional o intervención clínica, psicológica, psiquiátrica o médica.
+              Los ejercicios son una herramienta de exploración personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atención profesional psicológica o médica.
             </p>
           </div>
 
           {/* Contact CTA */}
-          <div className="mt-8 text-center">
-            <p className="text-base text-charcoal mb-4">
-              ¿Necesitas apoyo adicional? Contáctame para sesiones personalizadas.
+          <div className="mt-6 text-center">
+            <p className="text-sm text-black mb-3">
+              ¿Necesitas apoyo profesional?
             </p>
-            <a href="/#contacto" className="btn-primary inline-block">
-              Ir al cuestionario de contacto
+            <a href="/#contacto" className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block">
+              Contactar
             </a>
           </div>
         </div>
