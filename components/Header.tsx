@@ -11,7 +11,6 @@ const navigation = [
   { name: 'Tanatología', href: '/tanatologia' },
   { name: 'Sobre mí', href: '/sobre-mi' },
   { name: 'Ejercicios Personalizados', href: '/hoja-de-trabajo' },
-  { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Blog', href: '/#blog' },
 ]
 
@@ -43,7 +42,7 @@ export default function Header() {
         <Link href="/" className="hover:opacity-80 transition-opacity">
           <Image
             src="/COLORME_logo-19-768x141.png"
-            alt="Color Me"
+            alt="ColorMe"
             width={150}
             height={28}
             priority

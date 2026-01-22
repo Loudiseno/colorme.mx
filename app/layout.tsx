@@ -8,8 +8,8 @@ import { siteConfig, generateBusinessSchema, generatePersonSchema } from '@/lib/
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Color Me | Arteterapia y Tanatología en México - Acompañamiento en Duelo',
-    template: '%s | Color Me - Arteterapia y Tanatología',
+    default: 'ColorMe | Arteterapia y Tanatología en México - Acompañamiento en Duelo',
+    template: '%s | ColorMe - Arteterapia y Tanatología',
   },
   description: siteConfig.description,
   keywords: [
@@ -47,20 +47,20 @@ export const metadata: Metadata = {
     locale: 'es_MX',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: 'Color Me | Arteterapia y Tanatología en México',
+    title: 'ColorMe | Arteterapia y Tanatología en México',
     description: siteConfig.description,
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Color Me - Arteterapia y Tanatología - Acompañamiento para sanar el duelo',
+        alt: 'ColorMe - Arteterapia y Tanatología - Acompañamiento para sanar el duelo',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Color Me | Arteterapia y Tanatología en México',
+    title: 'ColorMe | Arteterapia y Tanatología en México',
     description: siteConfig.description,
     images: ['/og-image.jpg'],
   },

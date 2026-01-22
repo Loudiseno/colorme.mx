@@ -1,6 +1,6 @@
 // Site-wide SEO configuration
 export const siteConfig = {
-  name: 'Color Me',
+  name: 'ColorMe',
   description: 'Acompañamiento para sanar el duelo y transformar tus emociones a través de la arteterapia y la tanatología. Sesiones individuales, grupales y talleres en México.',
   url: 'https://colorme.mx',
   author: 'Lourdes',
@@ -43,7 +43,7 @@ export function generateBusinessSchema() {
     serviceType: ['Arteterapia', 'Tanatología', 'Terapia de duelo', 'Acompañamiento emocional'],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Servicios de Color Me',
+      name: 'Servicios de ColorMe',
       itemListElement: [
         {
           '@type': 'Offer',
