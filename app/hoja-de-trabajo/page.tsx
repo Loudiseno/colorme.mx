@@ -59,7 +59,7 @@ export default function WorksheetPage() {
             Ejercicios Personalizados
           </h1>
           <p className="text-lg text-black/80 max-w-2xl mx-auto">
-            Explora tus emociones a través del arte. Recibe un ejercicio adaptado a tu momento actual.
+            Responde unas breves preguntas y recibe un ejercicio diseñado exclusivamente para lo que sientes hoy.
           </p>
         </div>
       </section>

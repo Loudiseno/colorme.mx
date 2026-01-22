@@ -248,26 +248,16 @@ export default function ContactForm() {
                      peer-focus:-top-2 peer-focus:left-3 peer-focus:text-xs peer-focus:text-teal peer-focus:bg-canvas peer-focus:px-1
                      peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:left-3 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:bg-canvas peer-[:not(:placeholder-shown)]:px-1"
         >
-          ¿Hay algo que te gustaría compartir?
+          Mensaje
         </label>
       </div>
 
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="btn-primary inline-flex items-center justify-center gap-2 w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
+        className="btn-primary inline-block w-full md:w-auto disabled:opacity-50 disabled:cursor-not-allowed text-center"
       >
-        {status === 'submitting' ? (
-          <>
-            <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full" />
-            Enviando...
-          </>
-        ) : (
-          <>
-            <Send size={16} />
-            Enviar mensaje
-          </>
-        )}
+        {status === 'submitting' ? 'Enviando...' : 'Enviar mensaje'}
       </button>
     </form>
   )

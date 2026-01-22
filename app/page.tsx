@@ -67,7 +67,7 @@ export default function HomePage() {
                       Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
                     </p>
                     <p className="text-black/70 leading-relaxed">
-                      Desde pequeña, la creatividad fue mi forma de conectar con el mundo. Tras atravesar mis propias pérdidas y procesos de reinvención, comprendí que mi propósito era acompañar a otros en sus momentos de cambio, cierre y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación multicultural integra técnicas de México, Bali, Tailandia, Malasia e India.
+                      La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia e India.
                     </p>
                   </div>
                 </div>
@@ -78,14 +78,11 @@ export default function HomePage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed mb-4">
+          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
             "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
           </blockquote>
-          <p className="text-base text-black/70 leading-relaxed">
-            No hay reglas ni caminos fijos. No se trata de vivir sin sentir, sino de dar espacio a las emociones, permitirnos habitarlas y transformarlas.
-          </p>
         </div>
       </section>
 
@@ -95,6 +92,15 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Arteterapia */}
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
+              <div className="relative w-32 h-32 mb-4">
+                <Image
+                  src="/COLORME_logo-12-scaled.jpg"
+                  alt="Arteterapia"
+                  width={128}
+                  height={128}
+                  className="object-contain"
+                />
+              </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
                 Arteterapia
               </h2>
@@ -111,11 +117,20 @@ export default function HomePage() {
 
             {/* Tanatología */}
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
+              <div className="relative w-32 h-32 mb-4">
+                <Image
+                  src="/ojo-11-scaled.jpg"
+                  alt="Tanatología"
+                  width={128}
+                  height={128}
+                  className="object-contain"
+                />
+              </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
                 Tanatología
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
-                Acompañamiento profesional en procesos de duelo, pérdida y despedida. Ofrece un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido para seguir adelante con sentido.
+                Acompañamiento en procesos de duelo, pérdida y despedida en un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido.
               </p>
               <Link
                 href="/tanatologia"
@@ -133,18 +148,45 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Terapias individuales</h3>
+              <div className="w-24 h-24 mx-auto mb-4 relative">
+                <Image
+                  src="/columpio.png"
+                  alt="Terapia individual"
+                  width={96}
+                  height={96}
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Terapia individual</h3>
               <p className="text-black/70 leading-relaxed">
-                Sesiones adaptadas a tu ritmo y proceso personal, con un acompañamiento cercano para gestionar emociones y acompañarte en tus procesos.
+                Sesiones personalizadas a tu ritmo y necesidades, con apoyo emocional cercano.
               </p>
             </div>
             <div className="text-center">
-              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Sesiones grupales</h3>
+              <div className="w-24 h-24 mx-auto mb-4 relative">
+                <Image
+                  src="/corazon.png"
+                  alt="Sesión grupal"
+                  width={96}
+                  height={96}
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Sesión grupal</h3>
               <p className="text-black/70 leading-relaxed">
                 Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.
               </p>
             </div>
             <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-4 relative">
+                <Image
+                  src="/adolecente hombre.png"
+                  alt="Talleres para organizaciones"
+                  width={96}
+                  height={96}
+                  className="object-contain"
+                />
+              </div>
               <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">Talleres para organizaciones</h3>
               <p className="text-black/70 leading-relaxed">
                 Programas de bienestar emocional diseñados a medida según los objetivos del grupo.
@@ -175,7 +217,7 @@ export default function HomePage() {
                   alt="Indeleble - Libro por Lou"
                   width={600}
                   height={450}
-                  className="w-full h-auto rounded-2xl shadow-lg"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
@@ -231,8 +273,13 @@ export default function HomePage() {
             {/* Article 1 */}
             <Link href="/blog/que-es-arteterapia" className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/20 flex items-center justify-center">
-                  <span className="text-[#B2F7EF] text-6xl font-bold">01</span>
+                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                  <Image
+                    src="/corazon.png"
+                    alt="¿Qué es la arteterapia?"
+                    fill
+                    className="object-cover grayscale"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
@@ -253,8 +300,13 @@ export default function HomePage() {
             {/* Article 2 */}
             <Link href="/blog/arteterapia-cancer" className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/20 flex items-center justify-center">
-                  <span className="text-[#B2F7EF] text-6xl font-bold">02</span>
+                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                  <Image
+                    src="/columpio.png"
+                    alt="Arteterapia para pacientes con cáncer"
+                    fill
+                    className="object-cover grayscale"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
@@ -274,8 +326,13 @@ export default function HomePage() {
 
             {/* Article 3 */}
             <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF]/50">
-              <div className="aspect-[16/10] relative overflow-hidden bg-[#B2F7EF]/10 flex items-center justify-center">
-                <span className="text-[#B2F7EF]/50 text-6xl font-bold">03</span>
+              <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                <Image
+                  src="/cafe.png"
+                  alt="Rituales para el día a día"
+                  fill
+                  className="object-cover grayscale opacity-50"
+                />
               </div>
               <div className="p-6">
                 <span className="text-xs text-gray-500 uppercase tracking-wider">Próximamente</span>
@@ -298,8 +355,8 @@ export default function HomePage() {
       <section className="py-12 md:py-16" id="contacto">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="font-display text-4xl md:text-5xl text-ink mb-4">Contáctame</h2>
-            <p className="text-charcoal/70">
+            <h2 className="text-4xl md:text-5xl text-black mb-4">Contacto</h2>
+            <p className="text-black/70">
               ¡La primera sesión no tiene costo! Cuéntame un poco sobre ti y lo que buscas.
             </p>
           </div>
