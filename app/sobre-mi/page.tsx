@@ -16,10 +16,11 @@ export default function SobreMi() {
               <h1 className="text-4xl md:text-5xl text-black mb-6">
                 Hola, soy Lou
               </h1>
+              <p className="text-lg text-black/70 leading-relaxed mb-4">
+                Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
+              </p>
               <p className="text-lg text-black/70 leading-relaxed">
-                Arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer.
-                Mi camino personal me llevó a dedicar mi vida a acompañar a otros
-                en sus propios procesos de transformación.
+                La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia e India.
               </p>
             </div>
             <div className="order-1 md:order-2">
@@ -38,99 +39,67 @@ export default function SobreMi() {
 
         {/* Story Section */}
         <section className="mb-16">
-          <h2 className="text-3xl text-black mb-6">Mi historia</h2>
+          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Mi historia</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Hace algunos años, mi vida cambió de un momento a otro cuando recibí un diagnóstico
-              de cáncer. En ese instante, todo lo que creía saber sobre mí misma, sobre mi futuro
-              y sobre la vida se detuvo. Me encontré frente a la incertidumbre más profunda que
-              había experimentado.
+              Hace algunos años, mi vida cambió cuando recibí un diagnóstico de cáncer. Me encontré frente a la incertidumbre más profunda que había experimentado.
             </p>
             <p>
-              Durante el tratamiento, descubrí que el arte —que siempre había sido parte de mi
-              vida como diseñadora y fotógrafa— se convertía en algo diferente: un refugio, un
-              lenguaje para lo que no podía expresar con palabras, una forma de atravesar el
-              miedo y reconectarme conmigo misma.
+              Durante el tratamiento, descubrí que el arte —que siempre había sido parte de mi vida como diseñadora y artista— se convertía en un refugio y lenguaje para lo que no podía expresar con palabras, una forma de atravesar mis emociones y reconectarme conmigo misma.
             </p>
             <p>
-              Esa experiencia me transformó. Cuando terminé el tratamiento y comencé el camino
-              de la recuperación, supe que quería dedicarme a acompañar a otras personas que
-              estaban atravesando momentos difíciles. Quería ofrecerles ese espacio seguro que
-              a mí me había sostenido.
-            </p>
-            <p>
-              Hoy, como sobreviviente de cáncer, cada vez que me siento frente a alguien que
-              está atravesando un proceso de pérdida, duelo o transformación, lo hago desde
-              un lugar de profunda comprensión. Porque yo estuve ahí. Sé lo que se siente.
+              Al comenzar el camino de la recuperación, supe que quería dedicarme a acompañar a otras personas en sus diferentes procesos mediante la escucha y el arte. Soy autora de Indeleble (actualmente disponible en Amazon en inglés y español), una obra que narra mi proceso oncológico y la transformación personal que surgió a partir de él.
             </p>
           </div>
         </section>
 
         {/* Formation Section */}
         <section className="mb-16">
-          <h2 className="text-3xl text-black mb-6">Mi formación</h2>
+          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Mi formación</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <h3 className="text-black">Tanatología</h3>
             <p>
-              Me formé como tanatóloga en la <strong>Universidad Iberoamericana</strong>, una de
-              las instituciones más reconocidas en México para esta especialización. La tanatología
-              me permite acompañar a personas en procesos de pérdida, duelo y confrontación con
-              la muerte desde un enfoque profesional y humano.
+              Me certifiqué como tanatóloga en la Universidad Iberoamericana, una de las instituciones más reconocidas en México. La tanatología me permite acompañar a personas en procesos de pérdida, duelo y confrontación con la muerte desde un enfoque profesional y humano.
             </p>
 
             <h3 className="text-black">Arteterapia</h3>
             <p>
-              Cuento con <strong>certificación en arteterapia para niños</strong>, lo que me permite
-              adaptar mis técnicas para trabajar con los más pequeños de manera sensible y apropiada
-              para su desarrollo.
-            </p>
-            <p>
-              Mi formación en arteterapia incluye estudios en <strong>Bali</strong>, donde profundicé
-              en la conexión entre el arte, la naturaleza y el proceso emocional en un entorno
-              que honra las tradiciones ancestrales de bienestar.
+              Cuento con diferentes cursos y enfoques internacionales: realicé un curso de Terapeuta de Arteterapia, tengo una especialización en Artes Expresivas para el Acompañamiento a Infancias, así como estudios en Bali donde profundicé en prácticas como las Criaturas Míticas de Steiner, el wet-on-wet, la línea expresiva y el retrato familiar abstracto, en un entorno que honra las tradiciones ancestrales de bienestar.
             </p>
 
-            <h3 className="text-black">Técnicas artísticas internacionales</h3>
+            <h3 className="text-black">Reiki</h3>
             <p>
-              He tenido el privilegio de estudiar y practicar diversas técnicas artísticas en
-              diferentes partes del mundo, enriqueciendo mi práctica con perspectivas multiculturales:
+              Me certifiqué en India, en Rishikesh, la capital mundial del yoga y la meditación. Esta práctica de sanación energética me permite ofrecer un acompañamiento más integral.
             </p>
-            <ul>
-              <li><strong>India</strong> — Técnicas tradicionales y su conexión con la espiritualidad</li>
-              <li><strong>Tailandia</strong> — Arte meditativo y prácticas contemplativas</li>
-              <li><strong>Malasia</strong> — Fusión de tradiciones artísticas asiáticas</li>
-              <li><strong>Bali</strong> — Tradiciones artísticas balinesas y su conexión con el bienestar</li>
-            </ul>
 
-            <h3 className="text-black">Prácticas espirituales y de bienestar</h3>
+            <h3 className="text-black">Diseño gráfico, pintura y fotografía</h3>
             <p>
-              Complemento mi práctica terapéutica con técnicas de bienestar holístico:
+              Soy licenciada en Diseño Gráfico por la Universidad Iberoamericana. Posteriormente realicé un diplomado en Pintura Fotográfica en el CAC (Escuela de Arte Contemporáneo). Cuento con exposiciones individuales y colectivas de arte, fotografía y fotografía intervenida.
+            </p>
+
+            <h3 className="text-black">Otros estudios y prácticas</h3>
+            <p>
+              He tenido el privilegio de estudiar y practicar diversas técnicas en diferentes partes del mundo, enriqueciendo mi práctica con perspectivas multiculturales:
             </p>
             <ul>
-              <li><strong>Reiki</strong> — Certificada en India, esta práctica energética
-              me permite ofrecer un acompañamiento más integral</li>
-              <li><strong>Breathwork</strong> — Técnicas de respiración consciente para la regulación
-              emocional y la liberación de tensiones</li>
+              <li><strong>India</strong> — Técnicas tradicionales y su conexión con la espiritualidad. Creación de mandalas.</li>
+              <li><strong>Tailandia</strong> — Arte meditativo y prácticas contemplativas.</li>
+              <li><strong>Malasia</strong> — Fusión de tradiciones artísticas asiáticas como el batik.</li>
+              <li><strong>Bali</strong> — Tradiciones artísticas balinesas y su conexión con las emociones, así como breathwork (técnicas de respiración consciente para la regulación emocional y liberación de tensiones).</li>
+              <li><strong>México</strong> — Cuidados paliativos (Universidad Anáhuac) y Cómo afrontar el desgaste emocional desde el uso de la compasión (Fundación Elisabeth Kübler-Ross).</li>
             </ul>
           </div>
         </section>
 
         {/* Previous Career Section */}
         <section className="mb-16">
-          <h2 className="text-3xl text-black mb-6">Mi trayectoria profesional</h2>
+          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Trayectoria profesional</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Antes de dedicarme a la arteterapia y la tanatología, tuve una exitosa carrera en
-              el mundo creativo y empresarial. Trabajé como <strong>diseñadora gráfica</strong>,
-              <strong>fotógrafa profesional</strong> y <strong>ejecutiva de marca</strong>,
-              desarrollando proyectos para diversas empresas y construyendo identidades visuales
-              que conectaban con las personas.
+              Antes de dedicarme a la arteterapia y la tanatología, tuve una exitosa carrera en el mundo creativo y empresarial. Trabajé como diseñadora gráfica, fotógrafa profesional, directora de marca y especialista en branding y comunicación.
             </p>
             <p>
-              Esta experiencia me dio una comprensión profunda del poder de las imágenes y la
-              expresión visual para comunicar lo que las palabras no pueden. Hoy, esa sensibilidad
-              artística y profesional se integra en mi práctica terapéutica, permitiéndome guiar
-              a otros en su propio proceso creativo de exploración.
+              He colaborado con corporativos como Grupo Carso, agencias de medios y startups como Rappi y E1, así como con marcas y agencias reconocidas internacionalmente: Saks Fifth Avenue, WPP, Havas, IPG, Publicis, Kellogg's, Jose Cuervo, Unilever, Nestlé, Heineken, PepsiCo, Adidas, Oscar de la Renta, Lanvin, Cushnie et Ochs y Fashion's Night Out, entre otros.
             </p>
           </div>
         </section>
