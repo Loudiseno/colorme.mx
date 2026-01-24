@@ -137,7 +137,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-charcoal mb-3">
+        <label className="block text-sm font-bold text-charcoal mb-3">
           ¿Qué tipo de acompañamiento buscas? *
         </label>
         <div className="flex flex-wrap gap-3">
@@ -166,7 +166,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="tipoSesion" className="block text-sm font-medium text-charcoal mb-3">
+        <label htmlFor="tipoSesion" className="block text-sm font-bold text-charcoal mb-3">
           ¿Qué tipo de sesión te gustaría? *
         </label>
         <select
@@ -184,7 +184,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-charcoal mb-3">
+        <label className="block text-sm font-bold text-charcoal mb-3">
           ¿Cómo preferirías realizar tu sesión?
         </label>
         <div className="flex flex-wrap gap-3">
@@ -248,7 +248,7 @@ export default function ContactForm() {
                      peer-focus:-top-2 peer-focus:left-3 peer-focus:text-xs peer-focus:text-teal peer-focus:bg-canvas peer-focus:px-1
                      peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:left-3 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:bg-canvas peer-[:not(:placeholder-shown)]:px-1"
         >
-          Mensaje
+          Mensaje (opcional)
         </label>
       </div>
 
