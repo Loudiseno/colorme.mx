@@ -146,8 +146,8 @@ export default function ContactForm() {
               key={option}
               className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 ${
                 formData.tipoAcompanamiento === option
-                  ? 'bg-teal text-white'
-                  : 'bg-mist/50 text-charcoal hover:bg-teal-glow/30'
+                  ? 'bg-[#B2F7EF] text-black'
+                  : 'bg-mist/50 text-charcoal hover:bg-[#B2F7EF]/30'
               }`}
             >
               <input
@@ -188,20 +188,20 @@ export default function ContactForm() {
           ¿Cómo preferirías realizar tu sesión?
         </label>
         <div className="flex flex-wrap gap-3">
-          {['Online', 'Presencial'].map((option) => (
+          {['Online', 'Presencial*'].map((option) => (
             <label
               key={option}
               className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 ${
-                formData.modalidad === option
-                  ? 'bg-teal text-white'
-                  : 'bg-mist/50 text-charcoal hover:bg-teal-glow/30'
+                formData.modalidad === option || (option === 'Presencial*' && formData.modalidad === 'Presencial')
+                  ? 'bg-[#B2F7EF] text-black'
+                  : 'bg-mist/50 text-charcoal hover:bg-[#B2F7EF]/30'
               }`}
             >
               <input
                 type="radio"
                 name="modalidad"
-                value={option}
-                checked={formData.modalidad === option}
+                value={option === 'Presencial*' ? 'Presencial' : option}
+                checked={formData.modalidad === option || (option === 'Presencial*' && formData.modalidad === 'Presencial')}
                 onChange={(e) => setFormData({ ...formData, modalidad: e.target.value })}
                 className="sr-only"
               />
@@ -210,7 +210,7 @@ export default function ContactForm() {
           ))}
         </div>
         <p className="text-xs text-slate mt-2">
-          Las sesiones presenciales se agendan según disponibilidad.
+          *Las sesiones presenciales se agendan según disponibilidad y localización.
         </p>
       </div>
 

@@ -2,14 +2,14 @@ const testimonials = [
   {
     quote:
       'Llegué en un momento de mucho dolor tras una pérdida inesperada. En cada sesión sentí espacio, escucha y contención. El arte me permitió expresar lo que no podía decir con palabras.',
-    name: 'Laura T.',
+    name: 'Laura Sánchez',
     role: 'Finanzas',
   },
   {
     quote:
       'Lourdes es una guerrera que aprendió del dolor y cómo enfrentarlo. Ha sido mi compañera y guía en el camino de mi proceso de cáncer. Todo ha sido más llevadero y agradezco profundamente tenerla en mi vida.',
-    name: 'Isabel R.',
-    role: 'Madre y maestra',
+    name: 'Rodriguez',
+    role: 'Maestra y terapeuta familiar',
   },
   {
     quote:
