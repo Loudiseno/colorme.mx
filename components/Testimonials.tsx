@@ -8,7 +8,7 @@ const testimonials = [
   {
     quote:
       'Lourdes es una guerrera que aprendió del dolor y cómo enfrentarlo. Ha sido mi compañera y guía en el camino de mi proceso de cáncer. Todo ha sido más llevadero y agradezco profundamente tenerla en mi vida.',
-    name: 'Rodriguez',
+    name: 'Isabel Rodriguez',
     role: 'Maestra y terapeuta familiar',
   },
   {
