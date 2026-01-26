@@ -32,57 +32,49 @@ export const metadata: Metadata = {
 }
 
 const benefits = [
-  'Expresar emociones que no puedes poner en palabras',
-  'Procesar experiencias difíciles de manera no invasiva',
-  'Conectar con tu mundo interior de forma segura',
-  'Descubrir nuevas formas de entenderte',
-  'Desarrollar herramientas para el autocuidado',
-  'Transformar el dolor en creación',
-]
-
-const audiences = [
-  {
-    title: 'Niños',
-    description: 'El arte les permite expresar lo que aún no saben nombrar.',
-    image: '/helado.png',
-  },
-  {
-    title: 'Adolescentes',
-    description: 'Un espacio seguro para explorar su identidad y emociones.',
-    image: '/adolecente.png',
-  },
-  {
-    title: 'Adultos',
-    description: 'Reconectar con la creatividad y procesar experiencias de vida.',
-    image: '/cafe.png',
-  },
+  'Expresar emociones difíciles de verbalizar.',
+  'Procesar traumas y vivencias dolorosas de forma no invasiva.',
+  'Explorar tu mundo interior en un espacio seguro.',
+  'Potenciar el autoconocimiento y la introspección.',
+  'Desarrollar herramientas de autocuidado y regulación emocional.',
+  'Transformar el dolor en sanación y crecimiento personal.',
+  'Reducción del estrés y la ansiedad (disminuye los niveles de cortisol).',
+  'Mejora de la concentración y la memoria.',
+  'Mayor conexión mente-cuerpo.',
+  'Fortalecimiento de la autoestima y confianza personal.',
+  'Flexibilidad mental y apertura a nuevas perspectivas.',
 ]
 
 const helpsWith = [
   {
     icon: '/Frame-21.png',
     title: 'Duelo',
-    description: 'Creamos un espacio seguro para procesar la ausencia y el dolor.'
+    description: 'Creamos un espacio seguro para procesar la ausencia, expresar el dolor y transitar las emociones de la pérdida.'
   },
   {
     icon: '/Frame-23-1.png',
     title: 'Autoconocimiento',
-    description: 'Exploramos tus emociones y patrones con compasión.'
+    description: 'Exploramos tus emociones, patrones y creencias para reconectar contigo mismo y fortalecer tu bienestar interior.'
   },
   {
     icon: '/Frame-20-1.png',
-    title: 'Cambios de vida',
-    description: 'Transiciones como separaciones, mudanzas, nuevos comienzos.'
+    title: 'Cambios y transiciones de vida',
+    description: 'Te acompaño a adaptarte al cambio y encontrar nuevas formas de avanzar.'
   },
   {
     icon: '/Frame-24-1.png',
-    title: 'Enfermedades',
-    description: 'Canalizamos el miedo y acompañamos emocionalmente.'
+    title: 'Enfermedades y diagnósticos',
+    description: 'Abordamos el impacto del diagnóstico, los tratamientos y la incertidumbre validando cada emoción para procesar el dolor y recuperar tu sentido de control.'
   },
   {
     icon: '/Frame-22.png',
     title: 'Ansiedad y estrés',
-    description: 'Liberamos la tensión a través de la reconexión creativa.'
+    description: 'Liberamos la tensión acumulada y recuperamos la calma a través de la reconexión creativa y la regulación emocional.'
+  },
+  {
+    icon: '/Frame-29.png',
+    title: 'Autoestima',
+    description: 'Un proceso para volver a ti: recupera tu centro, reconoce tu valor y reconecta con la confianza para habitar tu propia vida.'
   },
 ]
 
@@ -113,65 +105,50 @@ export default function ArteterapiaPage() {
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-black/60 hover:text-black transition-colors mb-8"
-          >
-            <ArrowLeft size={18} />
-            Volver al inicio
-          </Link>
-          <h1 className="text-5xl md:text-6xl text-black mb-6">
-            Arteterapia
-          </h1>
-          <p className="text-lg text-black/70 leading-relaxed max-w-2xl">
-            Explora y procesa emociones a través del arte. No necesitas experiencia artística.
+      <section className="pt-32 pb-12 md:pt-40 md:pb-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
+                <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
+                <h1 className="text-5xl md:text-6xl text-black relative z-10">
+                  Arteterapia
+                </h1>
+              </div>
+              <div className="space-y-4 text-lg text-black/70 leading-relaxed">
+                <p>
+                  Acompañamiento emocional que utiliza el proceso creativo para explorar, expresar y transformar aquello que las palabras no alcanzan.
+                </p>
+                <p>
+                  A través del color, las texturas y el movimiento, descubres un espacio seguro para liberar tensiones, procesar emociones y conectar con tu interior.
+                </p>
+                <p>
+                  No se requiere experiencia artística ni se busca un resultado estético; el valor está en la libertad de crear y lo que surge del proceso.
+                </p>
+              </div>
+            </div>
+            <div className="relative flex justify-center">
+              <Image
+                src="/COLORME_logo-12-scaled.jpg"
+                alt="Arteterapia - Exploración a través del arte"
+                width={400}
+                height={400}
+                className="w-full h-auto max-w-md"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote Section */}
+      <section className="py-8 md:py-10 bg-white">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <p className="text-2xl md:text-3xl text-black leading-relaxed">
+            "Explorar lo que sentimos, desde lo que creamos."
           </p>
         </div>
       </section>
 
-      {/* What is it */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl text-black mb-6">
-            ¿Qué es la arteterapia?
-          </h2>
-          <div className="space-y-4 text-black/70 leading-relaxed">
-            <p>
-              Acompañamiento terapéutico que utiliza el proceso creativo para explorar emociones. A través del dibujo, pintura, collage y otras técnicas, puedes comunicar lo que es difícil expresar con palabras.
-            </p>
-            <p>
-              <strong className="text-black">No importa el resultado estético</strong>. El foco está en el proceso y en lo que descubres mientras creas.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Who is it for */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
-            ¿Para quién es la arteterapia?
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {audiences.map((audience, index) => (
-              <div key={index} className="text-center">
-                <div className="relative w-48 h-48 mx-auto mb-6">
-                  <Image
-                    src={audience.image}
-                    alt={audience.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <h3 className="text-2xl text-black mb-2">{audience.title}</h3>
-                <p className="text-black/70">{audience.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Benefits */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
@@ -198,7 +175,7 @@ export default function ArteterapiaPage() {
                 alt="Arteterapia - Expresión a través del arte"
                 width={600}
                 height={400}
-                className="rounded-3xl"
+                className="rounded-3xl grayscale"
               />
             </div>
           </div>
@@ -207,22 +184,19 @@ export default function ArteterapiaPage() {
 
       {/* What it helps with */}
       <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
               ¿En qué puede ayudarte?
             </h2>
-            <p className="text-black/70 max-w-2xl mx-auto">
-              La arteterapia te acompaña en diferentes momentos y procesos de vida.
-            </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {helpsWith.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-5 text-center border border-[#B2F7EF] hover:border-black transition-all"
+                className="bg-white rounded-2xl p-6 text-center border border-[#B2F7EF] hover:border-black transition-all"
               >
-                <div className="w-16 h-16 mx-auto mb-4 relative">
+                <div className="w-20 h-20 mx-auto mb-4 relative">
                   <Image
                     src={item.icon}
                     alt={item.title}
@@ -230,7 +204,7 @@ export default function ArteterapiaPage() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-lg text-black mb-2">{item.title}</h3>
+                <h3 className="text-lg text-black mb-2 font-semibold">{item.title}</h3>
                 <p className="text-sm text-black/70 leading-relaxed">{item.description}</p>
               </div>
             ))}
@@ -246,59 +220,29 @@ export default function ArteterapiaPage() {
           </h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
-              <h3 className="text-xl text-black mb-2">Primera consulta gratuita</h3>
+              <h3 className="text-xl text-black mb-2">1. Conocernos e identificar tu situación</h3>
               <p className="text-black/70">
-                Comenzamos con una breve conversación de 15 minutos donde me cuentas
-                qué te trae aquí y juntos/as exploramos si la arteterapia es el camino
-                adecuado para ti.
+                Conversación en línea gratuita de 30 minutos para escucharte y entender qué necesitas.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
-              <h3 className="text-xl text-black mb-2">Sesiones individuales</h3>
+              <h3 className="text-xl text-black mb-2">2. Explicarte mi forma de trabajo</h3>
               <p className="text-black/70">
-                Sesiones de 50 minutos donde trabajamos a tu ritmo, usando diferentes
-                materiales y técnicas según lo que necesites explorar. Disponibles
-                presenciales u online.
+                Te cuento cómo funciona el proceso y resolvemos tus dudas juntos.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
-              <h3 className="text-xl text-black mb-2">Talleres grupales</h3>
+              <h3 className="text-xl text-black mb-2">3. Crear tu plan de acción</h3>
               <p className="text-black/70">
-                Encuentros seguros para crear en comunidad, compartir experiencias
-                y procesar desde lo colectivo. La duración varía según el objetivo del taller.
+                Sesiones diseñadas especialmente para ti, tus necesidades y momento en un espacio seguro para expresarte y transformar.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Worksheet CTA */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="bg-[#B2F7EF]/10 rounded-2xl p-8 md:p-12 border border-[#B2F7EF]">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl text-black mb-4">
-                Empieza desde casa con tus ejercicios personalizados
-              </h2>
-              <p className="text-black/70 max-w-2xl mx-auto leading-relaxed">
-                ¿No estás seguro/a si la arteterapia es para ti? Crea tus ejercicios personalizados
-                que puedes hacer por tu cuenta. Es gratis y te ayudará
-                a explorar el proceso creativo.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/hoja-de-trabajo" className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all">
-                Crear mis ejercicios gratis
-              </Link>
-              <span className="text-sm text-gray-500">
-                PDF descargable • Ejercicios personalizados
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* CTA */}
+{/* CTA */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl text-black mb-4">

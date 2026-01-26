@@ -36,6 +36,11 @@ export const faqs = [
     answer:
       'Puedes agendar tu primera consulta gratuita directamente desde esta página usando el botón de agenda, que te llevará a un calendario donde podrás elegir el horario que mejor te convenga. También puedes escribirme por correo electrónico o a través del formulario de contacto.',
   },
+  {
+    question: '¿Este acompañamiento es un tratamiento clínico o de diagnóstico?',
+    answer:
+      'No. El acompañamiento que ofrezco no es un tratamiento clínico, médico ni psiquiátrico. Mi práctica no realiza diagnósticos, evaluaciones de trastornos mentales, mediciones psicológicas estandarizadas ni prescripción de medicamentos.',
+  },
 ]
 
 export default function FAQ() {

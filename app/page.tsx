@@ -63,7 +63,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex-1">
                     <h2 className="text-2xl md:text-3xl text-black mb-2">Hola, soy Lou</h2>
-                    <p className="text-black font-semibold mb-4">
+                    <p className="text-black font-bold mb-4">
                       Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
                     </p>
                     <p className="text-black/70 leading-relaxed">
@@ -92,12 +92,12 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Arteterapia */}
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
-              <div className="relative w-32 h-32 mb-4">
+              <div className="relative w-40 h-40 mb-4">
                 <Image
                   src="/COLORME_logo-12-scaled.jpg"
                   alt="Arteterapia"
-                  width={128}
-                  height={128}
+                  width={160}
+                  height={160}
                   className="object-contain"
                 />
               </div>
@@ -117,12 +117,12 @@ export default function HomePage() {
 
             {/* Tanatología */}
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
-              <div className="relative w-32 h-32 mb-4">
+              <div className="relative w-40 h-40 mb-4">
                 <Image
                   src="/ojo-11-scaled.jpg"
                   alt="Tanatología"
-                  width={128}
-                  height={128}
+                  width={160}
+                  height={160}
                   className="object-contain"
                 />
               </div>
@@ -148,12 +148,12 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 relative">
+              <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
                   src="/columpio.png"
                   alt="Terapia individual"
-                  width={96}
-                  height={96}
+                  width={128}
+                  height={128}
                   className="object-contain"
                 />
               </div>
@@ -163,12 +163,12 @@ export default function HomePage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 relative">
+              <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
                   src="/corazon.png"
                   alt="Sesión grupal"
-                  width={96}
-                  height={96}
+                  width={128}
+                  height={128}
                   className="object-contain"
                 />
               </div>
@@ -178,12 +178,12 @@ export default function HomePage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 relative">
+              <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
                   src="/adolecente hombre.png"
                   alt="Talleres para organizaciones"
-                  width={96}
-                  height={96}
+                  width={128}
+                  height={128}
                   className="object-contain"
                 />
               </div>
@@ -211,12 +211,12 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div>
+              <div className="max-w-sm mx-auto">
                 <Image
                   src="/indeleble.png"
                   alt="Indeleble - Libro por Lou"
-                  width={600}
-                  height={450}
+                  width={400}
+                  height={300}
                   className="w-full h-auto"
                 />
               </div>
@@ -278,8 +278,9 @@ export default function HomePage() {
                     src="/corazon.png"
                     alt="¿Qué es la arteterapia?"
                     fill
-                    className="object-cover grayscale"
+                    className="object-cover grayscale mix-blend-luminosity"
                   />
+                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
@@ -305,8 +306,9 @@ export default function HomePage() {
                     src="/columpio.png"
                     alt="Arteterapia para pacientes con cáncer"
                     fill
-                    className="object-cover grayscale"
+                    className="object-cover grayscale mix-blend-luminosity"
                   />
+                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
@@ -331,8 +333,9 @@ export default function HomePage() {
                   src="/cafe.png"
                   alt="Rituales para el día a día"
                   fill
-                  className="object-cover grayscale opacity-50"
+                  className="object-cover grayscale mix-blend-luminosity opacity-50"
                 />
+                <div className="absolute inset-0 bg-[#B2F7EF]/5 mix-blend-overlay"></div>
               </div>
               <div className="p-6">
                 <span className="text-xs text-gray-500 uppercase tracking-wider">Próximamente</span>

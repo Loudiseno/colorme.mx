@@ -137,7 +137,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-charcoal mb-3">
+        <label className="block text-sm font-bold text-charcoal mb-3">
           ¿Qué tipo de acompañamiento buscas? *
         </label>
         <div className="flex flex-wrap gap-3">
@@ -146,8 +146,8 @@ export default function ContactForm() {
               key={option}
               className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 ${
                 formData.tipoAcompanamiento === option
-                  ? 'bg-teal text-white'
-                  : 'bg-mist/50 text-charcoal hover:bg-teal-glow/30'
+                  ? 'bg-[#B2F7EF] text-black'
+                  : 'bg-mist/50 text-charcoal hover:bg-[#B2F7EF]/30'
               }`}
             >
               <input
@@ -166,7 +166,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="tipoSesion" className="block text-sm font-medium text-charcoal mb-3">
+        <label htmlFor="tipoSesion" className="block text-sm font-bold text-charcoal mb-3">
           ¿Qué tipo de sesión te gustaría? *
         </label>
         <select
@@ -184,24 +184,24 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-charcoal mb-3">
+        <label className="block text-sm font-bold text-charcoal mb-3">
           ¿Cómo preferirías realizar tu sesión?
         </label>
         <div className="flex flex-wrap gap-3">
-          {['Online', 'Presencial'].map((option) => (
+          {['Online', 'Presencial*'].map((option) => (
             <label
               key={option}
               className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 ${
-                formData.modalidad === option
-                  ? 'bg-teal text-white'
-                  : 'bg-mist/50 text-charcoal hover:bg-teal-glow/30'
+                formData.modalidad === option || (option === 'Presencial*' && formData.modalidad === 'Presencial')
+                  ? 'bg-[#B2F7EF] text-black'
+                  : 'bg-mist/50 text-charcoal hover:bg-[#B2F7EF]/30'
               }`}
             >
               <input
                 type="radio"
                 name="modalidad"
-                value={option}
-                checked={formData.modalidad === option}
+                value={option === 'Presencial*' ? 'Presencial' : option}
+                checked={formData.modalidad === option || (option === 'Presencial*' && formData.modalidad === 'Presencial')}
                 onChange={(e) => setFormData({ ...formData, modalidad: e.target.value })}
                 className="sr-only"
               />
@@ -210,7 +210,7 @@ export default function ContactForm() {
           ))}
         </div>
         <p className="text-xs text-slate mt-2">
-          Las sesiones presenciales se agendan según disponibilidad.
+          *Las sesiones presenciales se agendan según disponibilidad y localización.
         </p>
       </div>
 
@@ -248,7 +248,7 @@ export default function ContactForm() {
                      peer-focus:-top-2 peer-focus:left-3 peer-focus:text-xs peer-focus:text-teal peer-focus:bg-canvas peer-focus:px-1
                      peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:left-3 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:bg-canvas peer-[:not(:placeholder-shown)]:px-1"
         >
-          Mensaje
+          Mensaje (opcional)
         </label>
       </div>
 
