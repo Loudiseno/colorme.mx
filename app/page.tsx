@@ -62,7 +62,12 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="flex-1">
-                    <h2 className="text-2xl md:text-3xl text-black mb-2">Hola, soy Lou</h2>
+                    <h2 className="text-2xl md:text-3xl text-black mb-2">
+                      Hola, soy <span className="inline-block relative">
+                        Lou
+                        <span className="absolute bottom-0 left-0 w-full h-1 bg-[#B2F7EF]"></span>
+                      </span>
+                    </h2>
                     <p className="text-black font-bold mb-4">
                       Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
                     </p>
@@ -81,7 +86,10 @@ export default function HomePage() {
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
-            "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
+            <span className="inline-block relative">
+              "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-[#B2F7EF]"></span>
+            </span>
           </blockquote>
         </div>
       </section>
@@ -207,10 +215,10 @@ export default function HomePage() {
       </section>
 
       {/* Book Section */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="indeleble">
+      <section className="py-12 md:py-16 bg-white" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1">
+          <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF]">
+            <div className="order-2 lg:order-1 bg-white p-8 md:p-12 flex items-center justify-center">
               <div className="max-w-sm mx-auto">
                 <Image
                   src="/indeleble.png"
@@ -221,36 +229,38 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-4xl md:text-5xl text-black mb-2">Indeleble</h2>
-              <p className="text-base text-black font-medium mb-6">
-                Testimonio sobre transformación y resiliencia.
-              </p>
-              <div className="space-y-4 text-black/70 leading-relaxed mb-8">
-                <p>
-                  Un relato honesto sobre enfrentar el cáncer, procesar la pérdida y encontrar la fuerza para continuar.
+            <div className="order-1 lg:order-2 bg-[#B2F7EF]/10 p-8 md:p-12 flex items-center">
+              <div>
+                <h2 className="text-4xl md:text-5xl text-black mb-2"><strong>Indeleble</strong></h2>
+                <p className="text-base text-black font-medium mb-6">
+                  Un testimonio real de resiliencia y transformación ante el cáncer
                 </p>
-                <p>
-                  Una historia sobre la vida, la resiliencia y lo que realmente importa.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href={siteConfig.book.amazonEs}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
-                >
-                  Versión español
-                </a>
-                <a
-                  href={siteConfig.book.amazonEn}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
-                >
-                  Versión inglés
-                </a>
+                <div className="space-y-4 text-black/70 leading-relaxed mb-8">
+                  <p>
+                    Crees que eres invencible, hasta que la vida cambia en un instante. Cuando el cáncer llega sin avisar, los sueños se detienen y la incertidumbre lo envuelve todo. Pero también surge algo más: la fuerza para enfrentar lo impensable y la capacidad de sanar, no solo el cuerpo, sino el alma.
+                  </p>
+                  <p>
+                    Más que un testimonio sobre la enfermedad, este es un relato sobre la vida, la resiliencia y la belleza que persiste en el caos. Una historia honesta y esperanzadora que te hará replantearte lo que realmente importa.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={siteConfig.book.amazonEs}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+                  >
+                    Versión español
+                  </a>
+                  <a
+                    href={siteConfig.book.amazonEn}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+                  >
+                    Versión inglés
+                  </a>
+                </div>
               </div>
             </div>
           </div>
