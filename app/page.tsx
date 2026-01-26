@@ -62,12 +62,12 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="flex-1">
-                    <h2 className="text-2xl md:text-3xl text-black mb-2">
-                      Hola, soy <span className="inline-block relative">
-                        Lou
-                        <span className="absolute bottom-0 left-0 w-full h-1 bg-[#B2F7EF]"></span>
-                      </span>
-                    </h2>
+                    <div className="inline-block bg-[#B2F7EF] px-6 py-2 rounded-xl mb-4 relative">
+                      <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
+                      <h2 className="text-2xl md:text-3xl text-black relative z-10">
+                        Hola, soy Lou
+                      </h2>
+                    </div>
                     <p className="text-black font-bold mb-4">
                       Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
                     </p>
@@ -85,12 +85,12 @@ export default function HomePage() {
       {/* Quote Section */}
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
-            <span className="inline-block relative">
+          <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl relative">
+            <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
+            <blockquote className="text-2xl md:text-3xl text-black leading-relaxed relative z-10">
               "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
-              <span className="absolute bottom-0 left-0 w-full h-1 bg-[#B2F7EF]"></span>
-            </span>
-          </blockquote>
+            </blockquote>
+          </div>
         </div>
       </section>
 
@@ -233,14 +233,17 @@ export default function HomePage() {
               <div>
                 <h2 className="text-4xl md:text-5xl text-black mb-2"><strong>Indeleble</strong></h2>
                 <p className="text-base text-black font-medium mb-6">
-                  Un testimonio real de resiliencia y transformación ante el cáncer
+                  Una historia real de resiliencia y superación ante el cáncer
                 </p>
                 <div className="space-y-4 text-black/70 leading-relaxed mb-8">
                   <p>
-                    Crees que eres invencible, hasta que la vida cambia en un instante. Cuando el cáncer llega sin avisar, los sueños se detienen y la incertidumbre lo envuelve todo. Pero también surge algo más: la fuerza para enfrentar lo impensable y la capacidad de sanar, no solo el cuerpo, sino el alma.
+                    Crees que eres invencible, hasta que un diagnóstico lo cambia todo. Cuando el cáncer llega sin avisar, los sueños se detienen y la incertidumbre se apodera de ti.
                   </p>
                   <p>
-                    Más que un testimonio sobre la enfermedad, este es un relato sobre la vida, la resiliencia y la belleza que persiste en el caos. Una historia honesta y esperanzadora que te hará replantearte lo que realmente importa.
+                    Pero en medio del miedo, también surge algo más: la fuerza para afrontar lo impensable y la capacidad de sanar —no solo el cuerpo, sino el alma.
+                  </p>
+                  <p>
+                    Una historia honesta sobre la vida, la transformación personal y la belleza que persiste en el caos.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">

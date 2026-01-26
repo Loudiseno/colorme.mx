@@ -128,7 +128,7 @@ export default function TanatologiaPage() {
                   Tanatología
                 </h1>
               </div>
-              <div className="space-y-4 text-lg text-black/70 leading-relaxed">
+              <div className="space-y-4 text-lg text-black/70 leading-relaxed mb-6">
                 <p>
                   Acompañamiento emocional en procesos de pérdida, duelo y final de vida.
                 </p>
@@ -138,6 +138,16 @@ export default function TanatologiaPage() {
                 <p>
                   Este espacio te ofrece un lugar donde puedas expresar, resignificar y encontrar formas de vivir con lo que ha pasado.
                 </p>
+              </div>
+              <div>
+                <a
+                  href="https://wa.me/529992472678"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
+                >
+                  Quiero saber más
+                </a>
               </div>
             </div>
             <div className="relative flex justify-center">
@@ -153,34 +163,27 @@ export default function TanatologiaPage() {
         </div>
       </section>
 
-      {/* WhatsApp Button Section */}
+      {/* Quote Section */}
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <a
-            href="https://wa.me/529992472678"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
-          >
-            Quiero saber más
-          </a>
+          <p className="text-2xl md:text-3xl text-black leading-relaxed">
+            <span className="inline-block relative pb-3">
+              «El duelo no solo es despedir, es soltar, transformar y seguir adelante con amor.» Lou
+              <svg className="absolute bottom-0 left-0 w-full h-2" viewBox="0 0 300 8" preserveAspectRatio="none">
+                <path d="M0,4 Q75,2 150,4 T300,4" stroke="#B2F7EF" strokeWidth="2" fill="none" strokeLinecap="round"/>
+                <path d="M0,6 Q75,5 150,6 T300,6" stroke="#B2F7EF" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+              </svg>
+            </span>
+          </p>
         </div>
       </section>
 
       {/* Sanar tras una pérdida */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
             Sanar tras una pérdida
           </h2>
-          <div className="max-w-3xl mx-auto text-center mb-8">
-            <p className="text-2xl md:text-3xl text-black leading-relaxed">
-              <span className="inline-block relative">
-                «El duelo no solo es despedir, es soltar, transformar y seguir adelante con amor.» Lou
-                <span className="absolute bottom-0 left-0 w-full h-1 bg-[#B2F7EF]"></span>
-              </span>
-            </p>
-          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-4 text-lg text-black/70 leading-relaxed">
               <p>
