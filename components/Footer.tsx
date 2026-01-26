@@ -36,7 +36,7 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-4 text-black/70 text-sm leading-relaxed">
-              Acompañamiento para procesar el duelo y explorar emociones a través de arteterapia y tanatología.
+              Acompañamiento emocional a través de arteterapia y tanatología.
             </p>
           </div>
 

@@ -144,8 +144,21 @@ export default function ArteterapiaPage() {
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <p className="text-2xl md:text-3xl text-black leading-relaxed">
-            "Explorar lo que sentimos, desde lo que creamos."
+            <span className="inline-block relative">
+              "Explorar lo que sentimos, desde lo que creamos."
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-[#B2F7EF]"></span>
+            </span>
           </p>
+        </div>
+        <div className="max-w-3xl mx-auto px-6 text-center mt-8">
+          <a
+            href="https://wa.me/529992472678"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
+          >
+            Quiero saber más
+          </a>
         </div>
       </section>
 
@@ -169,12 +182,12 @@ export default function ArteterapiaPage() {
                 ))}
               </div>
             </div>
-            <div>
+            <div className="flex justify-center">
               <Image
                 src="/AdobeStock_210373409-1024x683.jpeg"
                 alt="Arteterapia - Expresión a través del arte"
-                width={600}
-                height={400}
+                width={450}
+                height={300}
                 className="rounded-3xl grayscale"
               />
             </div>
