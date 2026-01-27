@@ -83,11 +83,10 @@ export default function HomePage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-8 md:py-10 bg-white">
+      <section className="py-6 md:py-8 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl relative">
-            <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-            <blockquote className="text-2xl md:text-3xl text-black leading-relaxed relative z-10">
+          <div className="inline-block border-2 border-[#B2F7EF] px-8 py-4 rounded-xl">
+            <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
               "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
             </blockquote>
           </div>
