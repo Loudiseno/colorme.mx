@@ -113,7 +113,7 @@ export default function SobreMi() {
             <div className="bg-[#B2F7EF]/10 p-8 md:p-10 flex items-center">
               <div>
                 <h2 className="text-3xl text-black mb-2"><strong>Indeleble</strong></h2>
-                <p className="text-base text-black font-medium mb-6">
+                <p className="text-base text-black font-bold mb-6">
                   Una historia real de resiliencia y superación ante el cáncer
                 </p>
                 <div className="space-y-4 leading-relaxed mb-8">
@@ -123,7 +123,7 @@ export default function SobreMi() {
                   <p className="text-black/70">
                     Pero en medio del miedo, también surge algo más: la fuerza para afrontar lo impensable y la capacidad de sanar —no solo el cuerpo, sino el alma.
                   </p>
-                  <p className="text-black/70 font-bold">
+                  <p className="text-black/70">
                     Una historia honesta sobre la vida, la transformación personal y la belleza que persiste en el caos.
                   </p>
                 </div>
