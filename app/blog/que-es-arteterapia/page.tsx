@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeft, Calendar } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloArteterapia() {
@@ -11,7 +11,7 @@ export default function ArticuloArteterapia() {
         {/* Back link */}
         <Link
           href="/#blog"
-          className="inline-flex items-center gap-2 text-teal hover:text-teal/80 transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-black hover:text-black/70 transition-colors mb-8"
         >
           <ArrowLeft size={18} />
           Volver al blog
@@ -19,16 +19,16 @@ export default function ArticuloArteterapia() {
 
         {/* Header */}
         <header className="mb-12">
-          <span className="text-xs text-teal font-medium uppercase tracking-wider">Arteterapia</span>
-          <h1 className="font-display text-3xl md:text-5xl text-ink mt-3 mb-6 leading-tight">
-            ¿Qué es la Arteterapia? Guía Completa para Entender la Terapia a Través del Arte
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
+          <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
+            ¿Qué es la Arteterapia? Guía para Entender la Terapia a Través del Arte
           </h1>
-          <p className="text-charcoal/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         {/* Content */}
-        <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-charcoal/80 leading-relaxed">
+        <div className="prose prose-lg max-w-none text-black/80">
+          <p className="text-xl leading-relaxed">
             Hay momentos en la vida en los que las palabras simplemente no alcanzan.
           </p>
 
@@ -44,14 +44,14 @@ export default function ArticuloArteterapia() {
             No, no necesitas saber dibujar. No necesitas ser artista. Solo necesitas estar dispuesto a explorar.
           </p>
 
-          <h2>¿Qué es exactamente la arteterapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué es exactamente la arteterapia?</h2>
 
           <p>
             La arteterapia es una forma de acompañamiento terapéutico que utiliza el proceso creativo como vehículo para la expresión emocional, el autoconocimiento y la sanación. A través del dibujo, la pintura, el collage, el modelado con arcilla y otras técnicas artísticas, puedes explorar y comunicar experiencias que a veces resultan difíciles —o incluso imposibles— de poner en palabras.
           </p>
 
           <p>
-            Pero aquí viene lo importante: <strong>en arteterapia, no importa cómo se ve lo que creas</strong>. No estamos buscando hacer una obra de arte bonita ni técnicamente perfecta. El foco está en el proceso, no en el resultado. Lo que importa es lo que surge mientras creas: las emociones que emergen, los pensamientos que aparecen, los descubrimientos que haces sobre ti mismo.
+            En arteterapia, <strong>no importa cómo se ve lo que creas</strong>. No estamos buscando hacer una obra de arte bonita ni técnicamente perfecta. El foco está en el proceso, no en el resultado. Lo que importa es lo que surge mientras creas: las emociones que emergen, los pensamientos que aparecen, los descubrimientos que haces sobre ti mismo.
           </p>
 
           <p>
@@ -62,7 +62,7 @@ export default function ArticuloArteterapia() {
             Desde entonces, la arteterapia se ha desarrollado como una disciplina profesional con fundamentos en la psicología, el arte y la neurociencia. Hoy sabemos que la expresión creativa activa áreas del cerebro relacionadas con la regulación emocional, la memoria y la resiliencia.
           </p>
 
-          <h2>¿Para quién es la arteterapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Para quién es la arteterapia?</h2>
 
           <p>
             Una de las preguntas que más escucho es: "¿La arteterapia es para mí?" La respuesta corta es: probablemente sí. La arteterapia puede beneficiar a prácticamente cualquier persona que esté buscando una forma diferente de conectar consigo misma.
@@ -100,7 +100,7 @@ export default function ArticuloArteterapia() {
             Y quiero repetirlo porque es importante: <strong>no necesitas saber dibujar, pintar ni tener ninguna habilidad artística</strong>. En mis sesiones he acompañado a personas que no habían tocado un pincel desde la primaria, y han tenido experiencias profundamente significativas. El arte en arteterapia no se juzga por su estética, sino por lo que te permite explorar y expresar.
           </p>
 
-          <h2>Los beneficios de la arteterapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los beneficios de la arteterapia</h2>
 
           <p>
             A lo largo de mis años de práctica, he sido testigo de transformaciones que me siguen conmoviendo. Pero más allá de mi experiencia personal, la investigación científica respalda los beneficios de la arteterapia:
@@ -134,18 +134,18 @@ export default function ArticuloArteterapia() {
             <strong>Conecta mente y cuerpo.</strong> La arteterapia es una práctica encarnada: involucra tus manos, tu vista, tu postura, tu respiración. Esta conexión mente-cuerpo puede ser especialmente sanadora para quienes tienden a vivir "de la cabeza para arriba".
           </p>
 
-          <h2>¿Cómo es una sesión de arteterapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cómo es una sesión de arteterapia?</h2>
 
           <p>
             Entiendo que dar el primer paso puede generar nervios. No saber qué esperar hace todo más difícil. Por eso quiero describir cómo son las sesiones conmigo, para que puedas imaginarte en ese espacio.
           </p>
 
           <p>
-            <strong>La primera consulta es gratuita y dura unos 15 minutos.</strong> Es una conversación breve donde me cuentas qué te trae, qué estás buscando, y juntos exploramos si la arteterapia es el camino adecuado para ti. No hay presión ni compromiso. Es simplemente un espacio para conocernos.
+            <strong>La primera consulta es gratuita y dura 30 minutos.</strong> Es una conversación breve donde me cuentas qué te trae, qué estás buscando, y juntos exploramos si la arteterapia es el camino adecuado para ti. No hay presión ni compromiso. Es simplemente un espacio para conocernos.
           </p>
 
           <p>
-            <strong>Las sesiones regulares duran 50 minutos.</strong> Pueden ser presenciales u online, según lo que funcione mejor para ti. El espacio está preparado con diversos materiales: papel, pinturas, crayones, revistas para collage, arcilla, telas... No tienes que saber usarlos "correctamente". Yo te guío.
+            <strong>Las sesiones regulares duran 50 minutos.</strong> Pueden ser presenciales u online, según lo que funcione mejor para ti. El espacio está preparado con diversos materiales: papel, pinturas, crayones, revistas para collage, arcilla, telas...
           </p>
 
           <p>
@@ -153,7 +153,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>El proceso creativo es tuyo.</strong> Yo estoy ahí para acompañarte, no para dirigirte. Puedo sugerirte ejercicios o invitaciones creativas, pero tú siempre tienes la libertad de seguir tu intuición. Si algo no resuena contigo, lo dejamos de lado.
+            <strong>El material lo iremos definiendo de acuerdo a los ejercicios que necesites y tambien puedo ajustar las sesiones a lo que puedas conseguir en caso de que sean en línea.</strong>
           </p>
 
           <p>
@@ -164,7 +164,7 @@ export default function ArticuloArteterapia() {
             <strong>Lo que sucede en la sesión es confidencial.</strong> Este es un espacio seguro donde puedes expresarte sin miedo al juicio. Todo lo que compartas queda entre nosotros.
           </p>
 
-          <h2>Arteterapia vs otras terapias: ¿cuál elegir?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia vs otras terapias: ¿cuál elegir?</h2>
 
           <p>
             Esta es otra pregunta frecuente, y la respuesta es: depende de ti y de lo que necesites.
@@ -178,7 +178,7 @@ export default function ArticuloArteterapia() {
             La arteterapia, en cambio, trabaja con imágenes, colores, texturas y formas. Es especialmente útil cuando:
           </p>
 
-          <ul>
+          <ul className="list-disc ml-6 space-y-2">
             <li>Las palabras se sienten insuficientes o inaccesibles</li>
             <li>Necesitas una forma diferente de procesar experiencias</li>
             <li>Te sientes "atorado" en terapia verbal</li>
@@ -194,7 +194,7 @@ export default function ArticuloArteterapia() {
             En mi práctica, también integro la arteterapia con la tanatología cuando es apropiado. Si estás atravesando un proceso de duelo o pérdida, podemos trabajar tanto con la palabra como con el arte, según lo que necesites en cada momento.
           </p>
 
-          <h2>Preguntas frecuentes sobre la arteterapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes sobre la arteterapia</h2>
 
           <p>
             <strong>¿De verdad no necesito saber dibujar?</strong><br />
@@ -218,7 +218,7 @@ export default function ArticuloArteterapia() {
 
           <p>
             <strong>¿Puedo hacer arteterapia si ya estoy en otro tipo de terapia?</strong><br />
-            Por supuesto. La arteterapia complementa otros procesos terapéuticos. Muchos de mis consultantes también ven a un psicólogo o psiquiatra, y los diferentes espacios se nutren entre sí.
+            Por supuesto. La arteterapia complementa otros procesos terapéuticos. El acompañamiento que ofrezco no es un tratamiento clínico, médico ni psiquiátrico. Mi práctica no realiza diagnósticos, evaluaciones de trastornos mentales, mediciones psicológicas estandarizadas ni prescripción de medicamentos.
           </p>
 
           <p>
@@ -228,24 +228,24 @@ export default function ArticuloArteterapia() {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 p-8 bg-frost/50 rounded-2xl border border-teal-glow/30 text-center">
-          <h3 className="font-display text-2xl text-ink mb-4">¿Te gustaría explorar la arteterapia?</h3>
-          <p className="text-charcoal/70 mb-6 max-w-xl mx-auto">
-            Si algo de lo que leíste resonó contigo, te invito a dar el primer paso. Agenda una consulta gratuita de 15 minutos donde podemos conversar sobre lo que estás buscando.
+        <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
+          <h3 className="text-2xl text-black mb-4 font-semibold">¿Te gustaría explorar la arteterapia?</h3>
+          <p className="text-black/70 mb-6 max-w-xl mx-auto">
+            Si algo de lo que leíste resonó contigo, te invito a dar el primer paso. Agenda una consulta gratuita de 30 minutos donde podemos conversar sobre lo que estás buscando.
           </p>
           <a
             href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-teal text-white rounded-full font-medium shadow-lg shadow-teal/20 hover:shadow-xl hover:shadow-teal/30 hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-block px-8 py-4 bg-[#B2F7EF] text-black rounded-full font-medium hover:bg-[#B2F7EF]/80 transition-all"
           >
             Agenda tu primera consulta gratuita
           </a>
         </div>
 
         {/* Author */}
-        <div className="mt-12 pt-8 border-t border-charcoal/10">
-          <p className="text-charcoal/60 text-sm italic">
+        <div className="mt-12 pt-8 border-t border-black/10">
+          <p className="text-black/60 text-sm italic">
             Lourdes es arteterapeuta, tanatóloga, diseñadora y fotógrafa. Después de atravesar su propio proceso de sanación a través del arte, se dedica a acompañar a otras personas en sus caminos de transformación. Es autora del libro "Indeleble", donde comparte su historia de resiliencia.
           </p>
         </div>
