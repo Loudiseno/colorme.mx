@@ -120,11 +120,21 @@ export default function ArteterapiaPage() {
                   Acompañamiento emocional que utiliza el proceso creativo para explorar, expresar y transformar aquello que las palabras no alcanzan.
                 </p>
                 <p>
-                  A través del color, las texturas y el movimiento, descubres un espacio seguro para liberar tensiones, procesar emociones y conectar con tu interior.
+                  A través del color, las texturas y el movimiento, se crea un espacio seguro para liberar tensiones, procesar emociones y conectar con tu interior.
                 </p>
                 <p>
                   No se requiere experiencia artística ni se busca un resultado estético; el valor está en la libertad de crear y lo que surge del proceso.
                 </p>
+              </div>
+              <div className="mt-6">
+                <a
+                  href="https://wa.me/529992472678"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
+                >
+                  Quiero saber más
+                </a>
               </div>
             </div>
             <div className="relative flex justify-center">
@@ -144,14 +154,50 @@ export default function ArteterapiaPage() {
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <p className="text-2xl md:text-3xl text-black leading-relaxed">
-            "Explorar lo que sentimos, desde lo que creamos."
+            <span className="inline-block relative pb-3">
+              "Explorar lo que sentimos, desde lo que creamos."
+              <svg className="absolute bottom-0 left-0 w-full h-2" viewBox="0 0 300 8" preserveAspectRatio="none">
+                <path d="M0,4 Q75,2 150,4 T300,4" stroke="#B2F7EF" strokeWidth="2" fill="none" strokeLinecap="round"/>
+                <path d="M0,6 Q75,5 150,6 T300,6" stroke="#B2F7EF" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+              </svg>
+            </span>
           </p>
         </div>
       </section>
 
 
-      {/* Benefits */}
+      {/* What is arteterapia */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl text-black mb-6">
+            ¿Qué es la arteterapia?
+          </h2>
+          <div className="space-y-4 text-black/70 leading-relaxed mb-8">
+            <p>
+              La arteterapia es una forma de acompañamiento emocional que utiliza el proceso creativo para explorar, expresar y transformar emociones difíciles de poner en palabras.
+            </p>
+            <p>
+              No se trata de crear arte "bonito" ni de tener habilidades artísticas previas. Aquí, lo que importa es el proceso: lo que surge mientras creas, lo que descubres sobre ti y lo que logras soltar a través del color, las texturas, las formas y el movimiento.
+            </p>
+            <p>
+              Es un espacio seguro donde puedes conectar con tu interior, procesar experiencias dolorosas y encontrar nuevas formas de relacionarte con lo que sientes.
+            </p>
+          </div>
+          <div className="text-center">
+            <a
+              href="https://wa.me/529992472678"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
+            >
+              Quiero saber más
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -169,12 +215,12 @@ export default function ArteterapiaPage() {
                 ))}
               </div>
             </div>
-            <div>
+            <div className="flex justify-center">
               <Image
                 src="/AdobeStock_210373409-1024x683.jpeg"
                 alt="Arteterapia - Expresión a través del arte"
-                width={600}
-                height={400}
+                width={350}
+                height={233}
                 className="rounded-3xl grayscale"
               />
             </div>
@@ -183,7 +229,7 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* What it helps with */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
@@ -196,7 +242,7 @@ export default function ArteterapiaPage() {
                 key={index}
                 className="bg-white rounded-2xl p-6 text-center border border-[#B2F7EF] hover:border-black transition-all"
               >
-                <div className="w-20 h-20 mx-auto mb-4 relative">
+                <div className="w-24 h-24 mx-auto mb-4 relative">
                   <Image
                     src={item.icon}
                     alt={item.title}

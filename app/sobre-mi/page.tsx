@@ -13,11 +13,14 @@ export default function SobreMi() {
         <header className="mb-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h1 className="text-4xl md:text-5xl text-black mb-6">
-                Hola, soy Lou
-              </h1>
-              <p className="text-lg text-black/70 leading-relaxed mb-4">
-                Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
+              <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
+                <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
+                <h1 className="text-4xl md:text-5xl text-black relative z-10">
+                  Hola, soy Lou
+                </h1>
+              </div>
+              <p className="text-lg text-black leading-relaxed mb-4">
+                <strong>Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.</strong>
               </p>
               <p className="text-lg text-black/70 leading-relaxed">
                 La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia e India.
@@ -105,33 +108,55 @@ export default function SobreMi() {
         </section>
 
         {/* Book Section */}
-        <section className="mb-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF]">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h2 className="text-3xl text-black mb-4">Indeleble</h2>
-              <p className="text-black/70 leading-relaxed mb-6">
-                Escribí <em>Indeleble</em> para compartir mi historia de transformación y
-                resiliencia. Es un testimonio honesto sobre atravesar el cáncer, sobre el
-                miedo y la esperanza, sobre perder y reconstruirse. Si estás pasando por
-                un momento difícil, espero que mi historia pueda acompañarte.
-              </p>
-              <a
-                href={siteConfig.book.amazonEs}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all inline-block"
-              >
-                Conocer el libro
-              </a>
+        <section className="mb-16">
+          <div className="grid md:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF]">
+            <div className="bg-[#B2F7EF]/10 p-8 md:p-10 flex items-center">
+              <div>
+                <h2 className="text-3xl text-black mb-2"><strong>Indeleble</strong></h2>
+                <p className="text-base text-black font-medium mb-6">
+                  Una historia real de resiliencia y superación ante el cáncer
+                </p>
+                <div className="space-y-4 text-black/70 leading-relaxed mb-8">
+                  <p>
+                    Crees que eres invencible, hasta que un diagnóstico lo cambia todo. Cuando el cáncer llega sin avisar, los sueños se detienen y la incertidumbre se apodera de ti.
+                  </p>
+                  <p>
+                    Pero en medio del miedo, también surge algo más: la fuerza para afrontar lo impensable y la capacidad de sanar —no solo el cuerpo, sino el alma.
+                  </p>
+                  <p>
+                    Una historia honesta sobre la vida, la transformación personal y la belleza que persiste en el caos.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={siteConfig.book.amazonEs}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+                  >
+                    Versión español
+                  </a>
+                  <a
+                    href={siteConfig.book.amazonEn}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+                  >
+                    Versión inglés
+                  </a>
+                </div>
+              </div>
             </div>
-            <div>
-              <Image
-                src="/indeleble.png"
-                alt="Indeleble - Libro por Lou"
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-xl"
-              />
+            <div className="bg-white p-8 md:p-10 flex items-center justify-center">
+              <div className="max-w-sm mx-auto">
+                <Image
+                  src="/indeleble.png"
+                  alt="Indeleble - Libro por Lou"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </section>
