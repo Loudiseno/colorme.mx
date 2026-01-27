@@ -14,7 +14,6 @@ export default function WorksheetPage() {
     innerWorldDescription: ''
   });
   const [isGenerating, setIsGenerating] = useState(false);
-  const [showDrawing, setShowDrawing] = useState(false);
   const [selectedColor, setSelectedColor] = useState('#000000');
   const [lineWidth, setLineWidth] = useState(3);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -38,14 +37,14 @@ export default function WorksheetPage() {
   // Initialize canvas
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (canvas && showDrawing) {
+    if (canvas) {
       const ctx = canvas.getContext('2d');
       if (ctx) {
         ctx.fillStyle = 'white';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
     }
-  }, [showDrawing]);
+  }, []);
 
   // Drawing functions
   const startDrawing = (e: React.MouseEvent<HTMLCanvasElement>) => {
@@ -108,26 +107,53 @@ export default function WorksheetPage() {
       const { jsPDF } = await import('jspdf');
       const pdf = new jsPDF();
 
-      // Add ColorMe logo (if available)
-      const logoText = 'ColorMe';
-      pdf.setFontSize(16);
-      pdf.setTextColor(0, 0, 0);
-      pdf.text(logoText, 10, 15);
+      // Add ColorMe logo at top
+      pdf.setFontSize(18);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('ColorMe', 105, 15, { align: 'center' });
 
-      // Add date and time in upper right
+      // Add date
       const now = new Date();
-      const dateStr = now.toLocaleDateString('es-MX');
-      const timeStr = now.toLocaleTimeString('es-MX');
+      const dateStr = now.toLocaleDateString('es-MX', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
       pdf.setFontSize(10);
-      pdf.text(`${dateStr}`, 160, 10);
-      pdf.text(`${timeStr}`, 160, 15);
+      pdf.setFont('helvetica', 'normal');
+      pdf.text(dateStr, 105, 25, { align: 'center' });
 
-      // Add canvas image
+      // Add question header
+      pdf.setFontSize(12);
+      pdf.setFont('helvetica', 'bold');
+      const questionText = '¿Si pudieras darle un color o una forma a lo que sientes,';
+      const questionText2 = 'cómo se vería tu mundo interior?';
+      pdf.text(questionText, 105, 35, { align: 'center' });
+      pdf.text(questionText2, 105, 42, { align: 'center' });
+
+      // Add canvas image (centered and with good proportions)
       const imgData = canvas.toDataURL('image/png');
-      pdf.addImage(imgData, 'PNG', 10, 25, 190, 140);
+      const imgWidth = 180;
+      const imgHeight = 135;
+      const imgX = (210 - imgWidth) / 2; // Center horizontally on A4 width (210mm)
+      pdf.addImage(imgData, 'PNG', imgX, 50, imgWidth, imgHeight);
+
+      // Add reflection space at bottom left
+      const bottomY = 200;
+      pdf.setFontSize(11);
+      pdf.setFont('helvetica', 'italic');
+      pdf.text('¿Algo llamó tu atención?', 15, bottomY);
+
+      // Add lines for writing
+      pdf.setDrawColor(200, 200, 200);
+      pdf.setLineWidth(0.3);
+      for (let i = 0; i < 4; i++) {
+        const lineY = bottomY + 8 + (i * 6);
+        pdf.line(15, lineY, 195, lineY);
+      }
 
       // Download
-      pdf.save(`mundo-interior-${formData.name || 'anonimo'}.pdf`);
+      pdf.save(`mapa-interior-${new Date().toISOString().split('T')[0]}.pdf`);
     } catch (error) {
       console.error('Error generating drawing PDF:', error);
       alert('Hubo un error al generar el PDF. Por favor intenta de nuevo.');
@@ -162,11 +188,10 @@ export default function WorksheetPage() {
       // Generate and download PDF
       await generateWorksheetPDF(formData, exercises);
 
-      // Show drawing section after successful submission
-      setShowDrawing(true);
+      // Success message
+      alert('¡Tu ejercicio personalizado ha sido generado! Revisa tu carpeta de descargas.');
     } catch (error) {
       console.error('Error generating PDF:', error);
-      // Show more detailed error in development
       const errorMessage = error instanceof Error ? error.message : 'Error desconocido';
       console.error('Detalles del error:', errorMessage);
       alert(`Hubo un error al generar tus ejercicios personalizados. Por favor intenta de nuevo.\n\n${process.env.NODE_ENV === 'development' ? `Error: ${errorMessage}` : ''}`);
@@ -191,14 +216,22 @@ export default function WorksheetPage() {
             Ejercicios Personalizados
           </h1>
           <p className="text-lg text-black/80 max-w-2xl mx-auto">
-            Responde unas breves preguntas y recibe un ejercicio diseñado exclusivamente para lo que sientes hoy.
+            Dos ejercicios diseñados para ayudarte a explorar y expresar lo que sientes.
           </p>
         </div>
       </section>
 
-      {/* Form Section */}
+      {/* Exercise 1: Form-based personalized exercise */}
       <section className="py-10">
         <div className="max-w-3xl mx-auto px-6">
+          {/* Exercise Header with Badge */}
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0">
+              <span className="text-black text-xl font-bold">1</span>
+            </div>
+            <h2 className="text-3xl text-black font-semibold">Ejercicio personalizado</h2>
+          </div>
+
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 animate-fade-up stagger-2">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
@@ -314,7 +347,7 @@ export default function WorksheetPage() {
                 <button
                   type="submit"
                   disabled={isGenerating}
-                  className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isGenerating ? 'Generando...' : 'Generar ejercicio'}
                 </button>
@@ -340,96 +373,110 @@ export default function WorksheetPage() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Drawing Canvas Section */}
-          {showDrawing && (
-            <div className="mt-8 bg-white rounded-2xl shadow-lg p-8 md:p-12">
-              <h2 className="text-2xl font-semibold text-black mb-4 text-center">
-                Dibuja tu mundo interior
-              </h2>
-              <p className="text-black/70 mb-6 text-center">
-                Usa los colores y el lienzo para expresar visualmente cómo se ve tu mundo interior.
-              </p>
+      {/* Exercise 2: Drawing Canvas */}
+      <section className="py-10 bg-[#B2F7EF]/5">
+        <div className="max-w-3xl mx-auto px-6">
+          {/* Exercise Header with Badge */}
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0">
+              <span className="text-black text-xl font-bold">2</span>
+            </div>
+            <h2 className="text-3xl text-black font-semibold">Mapa Interior</h2>
+          </div>
 
-              {/* Color Palette */}
-              <div className="mb-4">
-                <label className="block text-sm font-semibold text-black mb-2">
-                  Selecciona un color:
-                </label>
-                <div className="flex flex-wrap gap-2">
-                  {colors.map((color) => (
-                    <button
-                      key={color}
-                      type="button"
-                      onClick={() => setSelectedColor(color)}
-                      className={`w-10 h-10 rounded-full border-2 transition-all ${
-                        selectedColor === color
-                          ? 'border-black scale-110'
-                          : 'border-gray-300 hover:border-gray-400'
-                      }`}
-                      style={{
-                        backgroundColor: color,
-                        boxShadow: color === '#FFFFFF' ? 'inset 0 0 0 1px #e5e7eb' : 'none'
-                      }}
-                      title={color}
-                    />
-                  ))}
-                </div>
-              </div>
+          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <p className="text-lg text-black mb-2 font-semibold">
+              ¿Si pudieras darle un color o una forma a lo que sientes, cómo se vería tu mundo interior?
+            </p>
+            <p className="text-black/70 mb-8">
+              Usa el lienzo digital para expresar visualmente tu mundo interior. No hay respuestas correctas o incorrectas, solo tu expresión libre.
+            </p>
 
-              {/* Line Width Selector */}
-              <div className="mb-4">
-                <label className="block text-sm font-semibold text-black mb-2">
-                  Grosor de línea: {lineWidth}px
-                </label>
-                <input
-                  type="range"
-                  min="1"
-                  max="20"
-                  value={lineWidth}
-                  onChange={(e) => setLineWidth(parseInt(e.target.value))}
-                  className="w-full"
-                />
-              </div>
-
-              {/* Canvas */}
-              <div className="mb-4 border-2 border-gray-300 rounded-lg overflow-hidden">
-                <canvas
-                  ref={canvasRef}
-                  width={800}
-                  height={600}
-                  className="w-full cursor-crosshair touch-none"
-                  onMouseDown={startDrawing}
-                  onMouseMove={draw}
-                  onMouseUp={stopDrawing}
-                  onMouseLeave={stopDrawing}
-                />
-              </div>
-
-              {/* Canvas Controls */}
-              <div className="flex flex-wrap gap-3 justify-center">
-                <button
-                  type="button"
-                  onClick={clearCanvas}
-                  className="bg-gray-200 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition-all"
-                >
-                  Limpiar lienzo
-                </button>
-                <button
-                  type="button"
-                  onClick={downloadDrawing}
-                  className="bg-[#B2F7EF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
-                >
-                  Descargar como PDF
-                </button>
+            {/* Color Palette */}
+            <div className="mb-4">
+              <label className="block text-sm font-semibold text-black mb-2">
+                Selector de colores:
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {colors.map((color) => (
+                  <button
+                    key={color}
+                    type="button"
+                    onClick={() => setSelectedColor(color)}
+                    className={`w-10 h-10 rounded-full border-2 transition-all ${
+                      selectedColor === color
+                        ? 'border-black scale-110'
+                        : 'border-gray-300 hover:border-gray-400'
+                    }`}
+                    style={{
+                      backgroundColor: color,
+                      boxShadow: color === '#FFFFFF' ? 'inset 0 0 0 1px #e5e7eb' : 'none'
+                    }}
+                    title={color}
+                  />
+                ))}
               </div>
             </div>
-          )}
 
-          {/* Disclaimers */}
-          <div className="mt-6 space-y-2 text-xs text-gray-500 text-center max-w-2xl mx-auto">
+            {/* Line Width Selector */}
+            <div className="mb-4">
+              <label className="block text-sm font-semibold text-black mb-2">
+                Selector de grosor de trazo: {lineWidth}px
+              </label>
+              <input
+                type="range"
+                min="1"
+                max="20"
+                value={lineWidth}
+                onChange={(e) => setLineWidth(parseInt(e.target.value))}
+                className="w-full"
+              />
+            </div>
+
+            {/* Canvas */}
+            <div className="mb-4 border-2 border-gray-300 rounded-lg overflow-hidden">
+              <canvas
+                ref={canvasRef}
+                width={800}
+                height={600}
+                className="w-full cursor-crosshair touch-none bg-white"
+                onMouseDown={startDrawing}
+                onMouseMove={draw}
+                onMouseUp={stopDrawing}
+                onMouseLeave={stopDrawing}
+              />
+            </div>
+
+            {/* Canvas Controls */}
+            <div className="flex flex-wrap gap-3 justify-center">
+              <button
+                type="button"
+                onClick={clearCanvas}
+                className="bg-gray-200 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition-all"
+              >
+                Reiniciar lienzo
+              </button>
+              <button
+                type="button"
+                onClick={downloadDrawing}
+                className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+              >
+                Descargar como PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Disclaimers */}
+      <section className="py-6">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="space-y-2 text-xs text-gray-500 text-center max-w-2xl mx-auto">
             <p>
-              Tus respuestas son privadas.
+              Tus respuestas son privadas. Se enviarán por correo a hola@colorme.mx únicamente para el ejercicio personalizado.
             </p>
             <p>
               Los ejercicios son una herramienta de exploración personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atención profesional psicológica o médica.

@@ -85,11 +85,9 @@ export default function HomePage() {
       {/* Quote Section */}
       <section className="py-6 md:py-8 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <div className="inline-block border-2 border-[#B2F7EF] px-8 py-4 rounded-xl">
-            <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
-              "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
-            </blockquote>
-          </div>
+          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
+            "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
+          </blockquote>
         </div>
       </section>
 
@@ -116,7 +114,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/arteterapia"
-                className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+                className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
               >
                 Ver más
               </Link>
@@ -137,11 +135,11 @@ export default function HomePage() {
                 Tanatología
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
-                Acompañamiento en procesos de duelo, pérdida y despedida en un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido.
+                Acompañamiento en procesos de duelo y pérdida en un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido.
               </p>
               <Link
                 href="/tanatologia"
-                className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+                className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
               >
                 Ver más
               </Link>
