@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { matchExercises } from '@/lib/artTherapyExercises';
 import Image from 'next/image';
 
@@ -10,15 +10,144 @@ export default function WorksheetPage() {
     age: '',
     gender: '',
     griefOrGoal: '',
-    emotion: ''
+    emotion: '',
+    innerWorldDescription: ''
   });
   const [isGenerating, setIsGenerating] = useState(false);
+  const [showDrawing, setShowDrawing] = useState(false);
+  const [selectedColor, setSelectedColor] = useState('#000000');
+  const [lineWidth, setLineWidth] = useState(3);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [isDrawing, setIsDrawing] = useState(false);
+
+  const colors = [
+    '#000000', // Black
+    '#FF0000', // Red
+    '#FF6B00', // Orange
+    '#FFD700', // Gold
+    '#00FF00', // Green
+    '#B2F7EF', // Cyan (brand color)
+    '#0000FF', // Blue
+    '#800080', // Purple
+    '#FF1493', // Pink
+    '#8B4513', // Brown
+    '#808080', // Gray
+    '#FFFFFF', // White
+  ];
+
+  // Initialize canvas
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (canvas && showDrawing) {
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+  }, [showDrawing]);
+
+  // Drawing functions
+  const startDrawing = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const ctx = canvas.getContext('2d');
+    if (ctx) {
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      setIsDrawing(true);
+    }
+  };
+
+  const draw = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    if (!isDrawing) return;
+
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const ctx = canvas.getContext('2d');
+    if (ctx) {
+      ctx.strokeStyle = selectedColor;
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      ctx.lineTo(x, y);
+      ctx.stroke();
+    }
+  };
+
+  const stopDrawing = () => {
+    setIsDrawing(false);
+  };
+
+  const clearCanvas = () => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (ctx) {
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+  };
+
+  const downloadDrawing = async () => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    try {
+      // Import jsPDF dynamically
+      const { jsPDF } = await import('jspdf');
+      const pdf = new jsPDF();
+
+      // Add ColorMe logo (if available)
+      const logoText = 'ColorMe';
+      pdf.setFontSize(16);
+      pdf.setTextColor(0, 0, 0);
+      pdf.text(logoText, 10, 15);
+
+      // Add date and time in upper right
+      const now = new Date();
+      const dateStr = now.toLocaleDateString('es-MX');
+      const timeStr = now.toLocaleTimeString('es-MX');
+      pdf.setFontSize(10);
+      pdf.text(`${dateStr}`, 160, 10);
+      pdf.text(`${timeStr}`, 160, 15);
+
+      // Add canvas image
+      const imgData = canvas.toDataURL('image/png');
+      pdf.addImage(imgData, 'PNG', 10, 25, 190, 140);
+
+      // Download
+      pdf.save(`mundo-interior-${formData.name || 'anonimo'}.pdf`);
+    } catch (error) {
+      console.error('Error generating drawing PDF:', error);
+      alert('Hubo un error al generar el PDF. Por favor intenta de nuevo.');
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsGenerating(true);
 
     try {
+      // Send email notification
+      await fetch('/api/worksheet', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
       // Import PDF generation dynamically (client-side only)
       const { generateWorksheetPDF } = await import('@/lib/generatePDF');
 
@@ -32,6 +161,9 @@ export default function WorksheetPage() {
 
       // Generate and download PDF
       await generateWorksheetPDF(formData, exercises);
+
+      // Show drawing section after successful submission
+      setShowDrawing(true);
     } catch (error) {
       console.error('Error generating PDF:', error);
       // Show more detailed error in development
@@ -161,6 +293,22 @@ export default function WorksheetPage() {
                 />
               </div>
 
+              {/* Inner World Description Field */}
+              <div>
+                <label htmlFor="innerWorldDescription" className="block text-base font-semibold text-black mb-2">
+                  ¿Si pudieras darle un color o una forma a lo que sientes, cómo se vería tu mundo interior?
+                </label>
+                <textarea
+                  id="innerWorldDescription"
+                  name="innerWorldDescription"
+                  value={formData.innerWorldDescription}
+                  onChange={handleChange}
+                  rows={3}
+                  className="form-input-full resize-none"
+                  placeholder="Describe con palabras cómo se vería tu mundo interior..."
+                />
+              </div>
+
               {/* Submit Button */}
               <div className="pt-4 flex justify-center">
                 <button
@@ -192,6 +340,91 @@ export default function WorksheetPage() {
               </ul>
             </div>
           </div>
+
+          {/* Drawing Canvas Section */}
+          {showDrawing && (
+            <div className="mt-8 bg-white rounded-2xl shadow-lg p-8 md:p-12">
+              <h2 className="text-2xl font-semibold text-black mb-4 text-center">
+                Dibuja tu mundo interior
+              </h2>
+              <p className="text-black/70 mb-6 text-center">
+                Usa los colores y el lienzo para expresar visualmente cómo se ve tu mundo interior.
+              </p>
+
+              {/* Color Palette */}
+              <div className="mb-4">
+                <label className="block text-sm font-semibold text-black mb-2">
+                  Selecciona un color:
+                </label>
+                <div className="flex flex-wrap gap-2">
+                  {colors.map((color) => (
+                    <button
+                      key={color}
+                      type="button"
+                      onClick={() => setSelectedColor(color)}
+                      className={`w-10 h-10 rounded-full border-2 transition-all ${
+                        selectedColor === color
+                          ? 'border-black scale-110'
+                          : 'border-gray-300 hover:border-gray-400'
+                      }`}
+                      style={{
+                        backgroundColor: color,
+                        boxShadow: color === '#FFFFFF' ? 'inset 0 0 0 1px #e5e7eb' : 'none'
+                      }}
+                      title={color}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Line Width Selector */}
+              <div className="mb-4">
+                <label className="block text-sm font-semibold text-black mb-2">
+                  Grosor de línea: {lineWidth}px
+                </label>
+                <input
+                  type="range"
+                  min="1"
+                  max="20"
+                  value={lineWidth}
+                  onChange={(e) => setLineWidth(parseInt(e.target.value))}
+                  className="w-full"
+                />
+              </div>
+
+              {/* Canvas */}
+              <div className="mb-4 border-2 border-gray-300 rounded-lg overflow-hidden">
+                <canvas
+                  ref={canvasRef}
+                  width={800}
+                  height={600}
+                  className="w-full cursor-crosshair touch-none"
+                  onMouseDown={startDrawing}
+                  onMouseMove={draw}
+                  onMouseUp={stopDrawing}
+                  onMouseLeave={stopDrawing}
+                />
+              </div>
+
+              {/* Canvas Controls */}
+              <div className="flex flex-wrap gap-3 justify-center">
+                <button
+                  type="button"
+                  onClick={clearCanvas}
+                  className="bg-gray-200 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition-all"
+                >
+                  Limpiar lienzo
+                </button>
+                <button
+                  type="button"
+                  onClick={downloadDrawing}
+                  className="bg-[#B2F7EF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+                >
+                  Descargar como PDF
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Disclaimers */}
           <div className="mt-6 space-y-2 text-xs text-gray-500 text-center max-w-2xl mx-auto">

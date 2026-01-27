@@ -83,11 +83,10 @@ export default function HomePage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-8 md:py-10 bg-white">
+      <section className="py-6 md:py-8 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl relative">
-            <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-            <blockquote className="text-2xl md:text-3xl text-black leading-relaxed relative z-10">
+          <div className="inline-block border-2 border-[#B2F7EF] px-8 py-4 rounded-xl">
+            <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
               "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
             </blockquote>
           </div>
@@ -232,17 +231,17 @@ export default function HomePage() {
             <div className="order-1 lg:order-2 bg-[#B2F7EF]/10 p-8 md:p-12 flex items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl text-black mb-2"><strong>Indeleble</strong></h2>
-                <p className="text-base text-black font-medium mb-6">
+                <p className="text-base text-black font-bold mb-6">
                   Una historia real de resiliencia y superación ante el cáncer
                 </p>
-                <div className="space-y-4 text-black/70 leading-relaxed mb-8">
-                  <p>
+                <div className="space-y-4 leading-relaxed mb-8">
+                  <p className="text-black/70">
                     Crees que eres invencible, hasta que un diagnóstico lo cambia todo. Cuando el cáncer llega sin avisar, los sueños se detienen y la incertidumbre se apodera de ti.
                   </p>
-                  <p>
+                  <p className="text-black/70">
                     Pero en medio del miedo, también surge algo más: la fuerza para afrontar lo impensable y la capacidad de sanar —no solo el cuerpo, sino el alma.
                   </p>
-                  <p>
+                  <p className="text-black/70">
                     Una historia honesta sobre la vida, la transformación personal y la belleza que persiste en el caos.
                   </p>
                 </div>
