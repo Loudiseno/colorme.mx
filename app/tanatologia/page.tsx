@@ -37,58 +37,58 @@ const typesOfLoss = [
   {
     icon: '/Frame-21-2.png',
     title: 'Relacionales',
-    description: 'Muerte, separación, rupturas, distanciamiento afectivo, rechazo familiar. También pérdidas gestacionales, de mascotas o relaciones no validadas socialmente (aborto, amantes, relaciones ocultas).',
+    description: 'Pérdida de vínculos significativos: muerte de un ser querido, muerte de una mascota, ruptura de pareja, divorcio o distanciamiento familiar.',
   },
   {
     icon: '/Frame-23-1.png',
     title: 'Intrapersonales',
-    description: 'Crisis de identidad, cambios de carrera, envejecimiento, cambios de rol, pérdida de sueños, sentimientos de fracaso, pérdida de sentido o propósito de vida.',
+    description: 'Pérdida de identidad, sentido o propósito: crisis existencial, cambio de carrera o rol, sensación de fracaso, pérdida de proyectos o sueños.',
   },
   {
     icon: '/Frame-29.png',
     title: 'Materiales',
-    description: 'Desempleo, estabilidad económica, patrimonio, hogar, estatus social, independencia.',
+    description: 'Pérdida de bienes o estabilidad: dificultades económicas, pérdida de empleo, pérdida del hogar u objetos con valor emocional.',
   },
   {
     icon: '/Frame-22.png',
     title: 'Salud',
-    description: 'Diagnósticos crónicos, discapacidad adquirida, infertilidad, cambios físicos irreversibles, pérdida de autonomía, deterioro cognitivo.',
+    description: 'Cambios físicos, mentales o emocionales: diagnóstico médico, enfermedad crónica, discapacidad, infertilidad, pérdidas gestacionales o perinatales o deterioro cognitivo.',
   },
   {
     icon: '/Frame-30.png',
     title: 'Evolutivas',
-    description: 'Jubilación, nido vacío, divorcio, migración, cambios de ciudad, etapas vitales, transiciones forzadas o inesperadas.',
+    description: 'Transiciones propias del ciclo de vida: envejecimiento, jubilación, nido vacío, cierre de etapas, mudanzas significativas o cambio de país.',
   },
   {
     icon: '/Frame-28.png',
     title: 'Ambiguas',
-    description: 'Desapariciones, relaciones no resueltas, demencias, distanciamiento emocional, pérdidas no reconocidas, duelos sin cuerpo o sin ritual.',
+    description: 'Pérdidas sin cierre claro o con reconocimiento social limitado: desapariciones, duelo migratorio, aborto, relaciones no visibles.',
   },
 ]
 
 const process = [
   {
-    title: '1. Escucha activa',
-    description: 'Te brindo un espacio donde puedas hablar, llorar, guardar silencio o expresar lo que necesites, sin juicio.',
+    title: 'Escucha activa',
+    description: 'Te ofrezco un espacio seguro y de contención donde puedes expresar libremente lo que sientes, sin juicios ni presiones externas.',
   },
   {
-    title: '2. Acompañamiento emocional',
-    description: 'Validamos cada emoción que aparezca: tristeza, enojo, culpa, miedo, alivio. Todo es válido.',
+    title: 'Acompañamiento emocional',
+    description: 'Te acompaño a transitar las diferentes emociones que surgen en tu proceso: tristeza, enojo, culpa, miedo o confusión.',
   },
   {
-    title: '3. Resignificación',
-    description: 'Trabajamos juntos/as para encontrar formas de integrar la pérdida en tu historia sin que defina toda tu identidad.',
+    title: 'Resignificación',
+    description: 'Juntos/as trabajamos para encontrar nuevos significados y formas de integrar la pérdida en tu historia.',
   },
   {
-    title: '4. Herramientas',
-    description: 'Te acompaño a desarrollar recursos personales que te ayuden a cuidarte, regularte y sostenerte en este proceso.',
+    title: 'Herramientas',
+    description: 'Te brindo recursos prácticos para afrontar el día a día y cuidar de ti mismo/a durante el proceso.',
   },
 ]
 
 const sessionTypes = [
-  { icon: '/columpio.png', title: 'Sesiones individuales', description: 'Adaptadas a tu ritmo, tu historia y tu necesidad actual.' },
-  { icon: '/corazon.png', title: 'Talleres grupales', description: 'Espacios de contención compartida para nombrar, soltar y reconstruir desde la escucha colectiva.' },
-  { icon: '/adolecente hombre.png', title: 'Colectivos o empresas', description: 'Acompañamiento en procesos organizacionales con pérdidas, cierres, despidos o transiciones internas.' },
+  { icon: '/columpio.png', title: 'Terapia individual', description: 'Sesiones personalizadas a tu ritmo y necesidades, con apoyo emocional cercano.' },
+  { icon: '/corazon.png', title: 'Sesión grupal', description: 'Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.' },
+  { icon: '/adolecente hombre.png', title: 'Talleres para organizaciones', description: 'Programas de bienestar emocional diseñados a medida según los objetivos del grupo.' },
 ]
 
 export default function TanatologiaPage() {
@@ -133,10 +133,10 @@ export default function TanatologiaPage() {
                   Acompañamiento emocional en procesos de pérdida, duelo y final de vida.
                 </p>
                 <p>
-                  Te acompaño a nombrar y procesar emociones como tristeza, enojo, culpa o vacío, honrando tu historia y tu ritmo.
+                  Un espacio seguro para expresar el dolor, dar lugar a las emociones y resignificar lo vivido.
                 </p>
                 <p>
-                  Este espacio te ofrece un lugar donde puedas expresar, resignificar y encontrar formas de vivir con lo que ha pasado.
+                  Más allá de la muerte física, también acompaña duelos visibles e invisibles: vínculos que terminan, diagnósticos, la pérdida de una mascota, un empleo o una etapa de vida.
                 </p>
               </div>
               <div>
@@ -167,13 +167,7 @@ export default function TanatologiaPage() {
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <p className="text-2xl md:text-3xl text-black leading-relaxed">
-            <span className="inline-block relative pb-3">
-              «El duelo no solo es despedir, es soltar, transformar y seguir adelante con amor.» Lou
-              <svg className="absolute bottom-0 left-0 w-full h-2" viewBox="0 0 300 8" preserveAspectRatio="none">
-                <path d="M0,4 Q75,2 150,4 T300,4" stroke="#B2F7EF" strokeWidth="2" fill="none" strokeLinecap="round"/>
-                <path d="M0,6 Q75,5 150,6 T300,6" stroke="#B2F7EF" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-              </svg>
-            </span>
+            «El duelo no solo es despedir, es soltar, transformar y seguir adelante con amor.» Lou
           </p>
         </div>
       </section>
@@ -187,22 +181,22 @@ export default function TanatologiaPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-4 text-lg text-black/70 leading-relaxed">
               <p>
-                El duelo no se supera, se aprende a vivir con él. Es un proceso único, individual y no lineal que abarca toda forma de pérdida significativa.
+                El duelo es una respuesta natural ante la pérdida. Es un proceso emocional, físico y psicológico que nos permite afrontar, procesar y adaptarnos a una nueva realidad.
               </p>
               <p>
-                No existe una forma correcta de transitarlo ni un tiempo establecido. Cada persona lo vive a su ritmo, y ese ritmo debe respetarse.
+                No sigue un camino lineal ni tiene un tiempo definido: cada persona lo vive de manera única. Puede estar acompañado de muchas emociones como tristeza, enojo, confusión, culpa o incluso alivio —todas válidas.
               </p>
               <p>
-                El acompañamiento tanatológico no busca acelerar el proceso ni evitar el dolor, sino sostener un espacio donde puedas habitarlo, comprenderlo y darle un lugar en tu historia sin que te paralice.
+                Reconocer lo que sentimos es el primer paso para transformar el dolor en sanación y bienestar emocional.
               </p>
             </div>
-            <div>
+            <div className="flex justify-center">
               <Image
                 src="/2-2.jpg"
                 alt="Sanar tras una pérdida"
                 width={600}
                 height={450}
-                className="w-full h-auto rounded-3xl grayscale"
+                className="w-full h-auto rounded-3xl"
               />
             </div>
           </div>
@@ -217,7 +211,7 @@ export default function TanatologiaPage() {
               Tipos de pérdidas que acompaño
             </h2>
             <p className="text-black/70 max-w-2xl mx-auto">
-              El duelo no solo surge ante la muerte. Hay muchos tipos de pérdidas que merecen ser nombradas y acompañadas.
+              El duelo no surge únicamente ante la muerte. Existen múltiples formas de pérdida que impactan la vida emocional y que merecen ser reconocidas y acompañadas.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -226,7 +220,7 @@ export default function TanatologiaPage() {
                 key={index}
                 className="bg-white rounded-2xl p-5 text-center border border-[#B2F7EF] hover:border-black transition-all"
               >
-                <div className="w-20 h-20 mx-auto mb-4 relative">
+                <div className="w-24 h-24 mx-auto mb-4 relative">
                   <Image
                     src={item.icon}
                     alt={item.title}
@@ -253,37 +247,37 @@ export default function TanatologiaPage() {
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Sentir que el dolor es demasiado y necesitas un espacio seguro donde procesarlo.</span>
+              <span className="text-black/80">Proporciona un espacio seguro y de contención donde puedes expresar lo que sientes, sin juicios y respetando tus propios tiempos.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Cuando sientes que no puedes hablar de tu pérdida con las personas cercanas por miedo al juicio o por no sentirte comprendido/a.</span>
+              <span className="text-black/80">Canaliza emociones complejas o bloqueadas, facilitando una gestión emocional saludable.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Si tu duelo interfiere con tu vida diaria: trabajo, relaciones, salud mental o física.</span>
+              <span className="text-black/80">Favorece la reflexión profunda y el autoconocimiento en momentos de crisis o transición.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Cuando han pasado meses (o años) y la pérdida sigue sintiéndose reciente o no procesada.</span>
+              <span className="text-black/80">Valida tus emociones, ayudándote a entender y normalizar incluso los sentimientos más contradictorios.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Si sientes culpa, enojo, confusión o emociones que no sabes cómo manejar.</span>
+              <span className="text-black/80">Resignifica lo vivido para acompañarte en un proceso de reconstrucción personal basado en la aceptación y la honestidad.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Necesitas herramientas para avanzar sin sentir que estás traicionando o dejando atrás a quien perdiste.</span>
+              <span className="text-black/80">Honra lo perdido, permitiéndote integrar la ausencia en tu historia de vida sin quedar atrapado en el dolor.</span>
             </div>
           </div>
           <div className="text-center">
@@ -300,7 +294,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Process */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
             ¿Cómo es el proceso de acompañamiento?
@@ -308,7 +302,7 @@ export default function TanatologiaPage() {
           <div className="space-y-6">
             {process.map((item, index) => (
               <div key={index} className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
-                <h3 className="text-xl text-black mb-2">{item.title}</h3>
+                <h3 className="text-xl text-black mb-2 font-semibold">{item.title}</h3>
                 <p className="text-black/70">{item.description}</p>
               </div>
             ))}
@@ -317,15 +311,15 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+        <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-10 text-center">
             Tipos de sesiones
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {sessionTypes.map((type, index) => (
               <div key={index} className="text-center">
-                <div className="w-28 h-28 mx-auto mb-4 relative">
+                <div className="w-32 h-32 mx-auto mb-4 relative">
                   <Image
                     src={type.icon}
                     alt={type.title}
@@ -333,8 +327,8 @@ export default function TanatologiaPage() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-xl text-black mb-2">{type.title}</h3>
-                <p className="text-black/70">{type.description}</p>
+                <h3 className="text-xl md:text-2xl text-black mb-3 font-semibold">{type.title}</h3>
+                <p className="text-black/70 leading-relaxed">{type.description}</p>
               </div>
             ))}
           </div>

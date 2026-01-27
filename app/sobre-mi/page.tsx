@@ -116,14 +116,14 @@ export default function SobreMi() {
                 <p className="text-base text-black font-medium mb-6">
                   Una historia real de resiliencia y superación ante el cáncer
                 </p>
-                <div className="space-y-4 text-black/70 leading-relaxed mb-8">
-                  <p>
+                <div className="space-y-4 leading-relaxed mb-8">
+                  <p className="text-black/70">
                     Crees que eres invencible, hasta que un diagnóstico lo cambia todo. Cuando el cáncer llega sin avisar, los sueños se detienen y la incertidumbre se apodera de ti.
                   </p>
-                  <p>
+                  <p className="text-black/70">
                     Pero en medio del miedo, también surge algo más: la fuerza para afrontar lo impensable y la capacidad de sanar —no solo el cuerpo, sino el alma.
                   </p>
-                  <p>
+                  <p className="text-black/70 font-bold">
                     Una historia honesta sobre la vida, la transformación personal y la belleza que persiste en el caos.
                   </p>
                 </div>
