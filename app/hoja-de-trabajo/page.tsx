@@ -10,8 +10,7 @@ export default function WorksheetPage() {
     age: '',
     gender: '',
     griefOrGoal: '',
-    emotion: '',
-    innerWorldDescription: ''
+    emotion: ''
   });
   const [isGenerating, setIsGenerating] = useState(false);
   const [selectedColor, setSelectedColor] = useState('#000000');
@@ -106,11 +105,14 @@ export default function WorksheetPage() {
       // Import jsPDF dynamically
       const { jsPDF } = await import('jspdf');
       const pdf = new jsPDF();
+      const pageWidth = 210; // A4 width in mm
+      const pageHeight = 297; // A4 height in mm
+      const margin = 20;
 
-      // Add ColorMe logo at top
-      pdf.setFontSize(18);
+      // Add ColorMe logo at top center
+      pdf.setFontSize(20);
       pdf.setFont('helvetica', 'bold');
-      pdf.text('ColorMe', 105, 15, { align: 'center' });
+      pdf.text('ColorMe', pageWidth / 2, 20, { align: 'center' });
 
       // Add date
       const now = new Date();
@@ -121,36 +123,56 @@ export default function WorksheetPage() {
       });
       pdf.setFontSize(10);
       pdf.setFont('helvetica', 'normal');
-      pdf.text(dateStr, 105, 25, { align: 'center' });
+      pdf.text(dateStr, pageWidth / 2, 28, { align: 'center' });
 
-      // Add question header
-      pdf.setFontSize(12);
+      // Add title
+      pdf.setFontSize(16);
       pdf.setFont('helvetica', 'bold');
-      const questionText = '¿Si pudieras darle un color o una forma a lo que sientes,';
-      const questionText2 = 'cómo se vería tu mundo interior?';
-      pdf.text(questionText, 105, 35, { align: 'center' });
-      pdf.text(questionText2, 105, 42, { align: 'center' });
+      pdf.text('Mapa Interior', pageWidth / 2, 40, { align: 'center' });
 
-      // Add canvas image (centered and with good proportions)
-      const imgData = canvas.toDataURL('image/png');
-      const imgWidth = 180;
-      const imgHeight = 135;
-      const imgX = (210 - imgWidth) / 2; // Center horizontally on A4 width (210mm)
-      pdf.addImage(imgData, 'PNG', imgX, 50, imgWidth, imgHeight);
-
-      // Add reflection space at bottom left
-      const bottomY = 200;
+      // Add question
       pdf.setFontSize(11);
       pdf.setFont('helvetica', 'italic');
-      pdf.text('¿Algo llamó tu atención?', 15, bottomY);
+      const questionText = '¿Si pudieras darle un color o una forma a lo que sientes,';
+      const questionText2 = 'cómo se vería tu mundo interior?';
+      pdf.text(questionText, pageWidth / 2, 50, { align: 'center' });
+      pdf.text(questionText2, pageWidth / 2, 56, { align: 'center' });
+
+      // Add canvas image (optimized for single page)
+      const imgData = canvas.toDataURL('image/png');
+      const imgWidth = 170; // Width in mm
+      const imgHeight = 127.5; // Maintain 4:3 aspect ratio
+      const imgX = (pageWidth - imgWidth) / 2; // Center horizontally
+      const imgY = 65; // Position after question
+      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight);
+
+      // Add reflection space
+      const reflectionY = imgY + imgHeight + 10;
+      pdf.setFontSize(11);
+      pdf.setFont('helvetica', 'italic');
+      pdf.text('¿Algo llamó tu atención?', margin, reflectionY);
 
       // Add lines for writing
       pdf.setDrawColor(200, 200, 200);
       pdf.setLineWidth(0.3);
-      for (let i = 0; i < 4; i++) {
-        const lineY = bottomY + 8 + (i * 6);
-        pdf.line(15, lineY, 195, lineY);
+      for (let i = 0; i < 3; i++) {
+        const lineY = reflectionY + 8 + (i * 6);
+        pdf.line(margin, lineY, pageWidth - margin, lineY);
       }
+
+      // Add disclaimer at bottom
+      const disclaimerY = pageHeight - 25;
+      pdf.setFontSize(8);
+      pdf.setFont('helvetica', 'italic');
+      pdf.setTextColor(100, 100, 100);
+      const disclaimer = 'Los ejercicios son una herramienta de exploración personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atención profesional psicológica o médica.';
+      const disclaimerLines = pdf.splitTextToSize(disclaimer, pageWidth - (margin * 2));
+      pdf.text(disclaimerLines, pageWidth / 2, disclaimerY, { align: 'center' });
+
+      // Add copyright
+      pdf.setFontSize(7);
+      pdf.setFont('helvetica', 'normal');
+      pdf.text('Copyright 2026 ColorMe - Todos los derechos reservados', pageWidth / 2, pageHeight - 10, { align: 'center' });
 
       // Download
       pdf.save(`mapa-interior-${new Date().toISOString().split('T')[0]}.pdf`);
@@ -213,7 +235,7 @@ export default function WorksheetPage() {
       <section className="bg-[#B2F7EF]/10 py-10">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl text-black mb-4">
-            Ejercicios Personalizados
+            Exploraciones creativas
           </h1>
           <p className="text-lg text-black/80 max-w-2xl mx-auto">
             Dos ejercicios diseñados para ayudarte a explorar y expresar lo que sientes.
@@ -229,7 +251,7 @@ export default function WorksheetPage() {
             <div className="w-12 h-12 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0">
               <span className="text-black text-xl font-bold">1</span>
             </div>
-            <h2 className="text-3xl text-black font-semibold">Ejercicio personalizado</h2>
+            <h2 className="text-3xl text-black font-semibold">Ejercicio creativo personalizado</h2>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 animate-fade-up stagger-2">
@@ -326,22 +348,6 @@ export default function WorksheetPage() {
                 />
               </div>
 
-              {/* Inner World Description Field */}
-              <div>
-                <label htmlFor="innerWorldDescription" className="block text-base font-semibold text-black mb-2">
-                  ¿Si pudieras darle un color o una forma a lo que sientes, cómo se vería tu mundo interior?
-                </label>
-                <textarea
-                  id="innerWorldDescription"
-                  name="innerWorldDescription"
-                  value={formData.innerWorldDescription}
-                  onChange={handleChange}
-                  rows={3}
-                  className="form-input-full resize-none"
-                  placeholder="Describe con palabras cómo se vería tu mundo interior..."
-                />
-              </div>
-
               {/* Submit Button */}
               <div className="pt-4 flex justify-center">
                 <button
@@ -392,7 +398,7 @@ export default function WorksheetPage() {
               ¿Si pudieras darle un color o una forma a lo que sientes, cómo se vería tu mundo interior?
             </p>
             <p className="text-black/70 mb-8">
-              Usa el lienzo digital para expresar visualmente tu mundo interior. No hay respuestas correctas o incorrectas, solo tu expresión libre.
+              Usa este espacio para expresar lo que esté presente hoy, sin pensar si está bien o mal.
             </p>
 
             {/* Color Palette */}
