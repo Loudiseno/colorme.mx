@@ -165,33 +165,32 @@ export default function ArteterapiaPage() {
         </div>
       </section>
 
-
-      {/* What is arteterapia */}
+      {/* What it helps with */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl text-black mb-6">
-            ¿Qué es la arteterapia?
-          </h2>
-          <div className="space-y-4 text-black/70 leading-relaxed mb-8">
-            <p>
-              La arteterapia es una forma de acompañamiento emocional que utiliza el proceso creativo para explorar, expresar y transformar emociones difíciles de poner en palabras.
-            </p>
-            <p>
-              No se trata de crear arte "bonito" ni de tener habilidades artísticas previas. Aquí, lo que importa es el proceso: lo que surge mientras creas, lo que descubres sobre ti y lo que logras soltar a través del color, las texturas, las formas y el movimiento.
-            </p>
-            <p>
-              Es un espacio seguro donde puedes conectar con tu interior, procesar experiencias dolorosas y encontrar nuevas formas de relacionarte con lo que sientes.
-            </p>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl text-black mb-4">
+              ¿En qué puede ayudarte?
+            </h2>
           </div>
-          <div className="text-center">
-            <a
-              href="https://wa.me/529992472678"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
-            >
-              Quiero saber más
-            </a>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+            {helpsWith.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-6 text-center border border-[#B2F7EF] hover:border-black transition-all"
+              >
+                <div className="w-28 h-28 mx-auto mb-4 relative">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="text-lg text-black mb-2 font-semibold">{item.title}</h3>
+                <p className="text-sm text-black/70 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -224,36 +223,6 @@ export default function ArteterapiaPage() {
                 className="rounded-3xl grayscale"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What it helps with */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl text-black mb-4">
-              ¿En qué puede ayudarte?
-            </h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-            {helpsWith.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-6 text-center border border-[#B2F7EF] hover:border-black transition-all"
-              >
-                <div className="w-24 h-24 mx-auto mb-4 relative">
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <h3 className="text-lg text-black mb-2 font-semibold">{item.title}</h3>
-                <p className="text-sm text-black/70 leading-relaxed">{item.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
