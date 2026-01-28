@@ -11,8 +11,8 @@ interface FormData {
 interface Exercise {
   title: string;
   materials: string[];
-  steps: string[];
-  timeEstimate: string;
+  instructions: string[];
+  duration: string;
 }
 
 export async function generateWorksheetPDF(formData: FormData, exercises: Exercise[]) {
@@ -83,7 +83,7 @@ export async function generateWorksheetPDF(formData: FormData, exercises: Exerci
     // Time estimate
     pdf.setFontSize(10);
     pdf.setFont('helvetica', 'italic');
-    pdf.text(`Tiempo estimado: ${exercise.timeEstimate}`, margin, yPos);
+    pdf.text(`Tiempo estimado: ${exercise.duration}`, margin, yPos);
     yPos += 10;
 
     // Materials
@@ -97,13 +97,13 @@ export async function generateWorksheetPDF(formData: FormData, exercises: Exerci
     });
     yPos += 5;
 
-    // Steps
+    // Instructions
     pdf.setFont('helvetica', 'bold');
     pdf.text('Pasos:', margin, yPos);
     yPos += 6;
     pdf.setFont('helvetica', 'normal');
-    exercise.steps.forEach((step, index) => {
-      const stepLines = pdf.splitTextToSize(`${index + 1}. ${step}`, contentWidth - 10);
+    exercise.instructions.forEach((instruction, index) => {
+      const stepLines = pdf.splitTextToSize(`${index + 1}. ${instruction}`, contentWidth - 10);
       pdf.text(stepLines, margin + 5, yPos);
       yPos += (stepLines.length * 5) + 3;
     });
