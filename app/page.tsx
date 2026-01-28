@@ -274,7 +274,7 @@ export default function HomePage() {
       <section className="py-12 md:py-16 bg-white" id="blog">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl text-black mb-4">Espacio de transformación</h2>
+            <h2 className="text-4xl md:text-5xl text-black mb-4">Entre líneas</h2>
             <p className="text-black/70 max-w-2xl mx-auto">
               Reflexiones, información y herramientas sobre arteterapia, tanatología y el universo de las emociones. Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad.
             </p>
