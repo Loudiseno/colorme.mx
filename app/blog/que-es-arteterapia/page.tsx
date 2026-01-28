@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 
@@ -18,13 +19,24 @@ export default function ArticuloArteterapia() {
         </Link>
 
         {/* Header */}
-        <header className="mb-12">
+        <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             ¿Qué es la Arteterapia? Guía para Entender la Terapia a Través del Arte
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
+
+        {/* Featured Image */}
+        <div className="mb-12 rounded-2xl overflow-hidden">
+          <Image
+            src="/blog-arttherapy-hands.jpg"
+            alt="Manos de niño con pintura de colores - Arteterapia"
+            width={1200}
+            height={675}
+            className="w-full h-auto"
+          />
+        </div>
 
         {/* Content */}
         <div className="prose prose-lg max-w-none text-black/80">
