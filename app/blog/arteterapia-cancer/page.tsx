@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeft, Calendar } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloArteterapiaCancer() {
@@ -11,7 +11,7 @@ export default function ArticuloArteterapiaCancer() {
         {/* Back link */}
         <Link
           href="/#blog"
-          className="inline-flex items-center gap-2 text-teal hover:text-teal/80 transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-black hover:text-black/70 transition-colors mb-8"
         >
           <ArrowLeft size={18} />
           Volver al blog
@@ -19,16 +19,16 @@ export default function ArticuloArteterapiaCancer() {
 
         {/* Header */}
         <header className="mb-12">
-          <span className="text-xs text-teal font-medium uppercase tracking-wider">Arteterapia</span>
-          <h1 className="font-display text-3xl md:text-5xl text-ink mt-3 mb-6 leading-tight">
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
+          <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Arteterapia para Pacientes con Cáncer: Cómo el Arte Puede Acompañarte Durante el Tratamiento
           </h1>
-          <p className="text-charcoal/60 italic">Por Lourdes | Arteterapeuta, Tanatóloga y Sobreviviente de Cáncer</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta, Tanatóloga y Sobreviviente de Cáncer</p>
         </header>
 
         {/* Content */}
-        <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-charcoal/80 leading-relaxed">
+        <div className="prose prose-lg max-w-none text-black/80">
+          <p className="text-xl leading-relaxed">
             Recuerdo el momento exacto en que las palabras dejaron de alcanzarme.
           </p>
 
@@ -45,18 +45,18 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Fue entonces cuando encontré —o más bien, reencontré— el arte. No como algo que hacer para "distraerme" del cáncer, sino como un lenguaje diferente. Un lugar donde podía depositar todo lo que no cabía en las conversaciones, todo lo que era demasiado grande o demasiado confuso para explicar.
+            Fue entonces cuando encontré en el arte un lenguaje diferente. Un lugar donde podía depositar todo lo que no cabía en las conversaciones, todo lo que era demasiado grande o demasiado confuso para explicar.
           </p>
 
           <p>
-            El arte no curó mi cáncer. Los médicos, los tratamientos, la ciencia hicieron eso. Pero el arte me ayudó a atravesarlo sin perderme a mí misma en el proceso. Me ayudó a encontrar un hilo de sentido en medio del caos. Y eventualmente, me ayudó a reconstruirme.
+            El arte no curó mi cáncer. Los médicos, los tratamientos, la ciencia hicieron eso. Pero el arte me ayudó a atravesarlo. Me ayudó a encontrar un hilo de sentido en medio del caos. Y eventualmente, me ayudó a reconstruirme.
           </p>
 
           <p>
-            Hoy, como sobreviviente y como arteterapeuta, acompaño a otras personas que están transitando ese mismo camino. Y quiero compartir contigo lo que he aprendido —desde adentro y desde afuera— sobre cómo el arte puede ser un aliado en el proceso oncológico.
+            Hoy, como sobreviviente, tanatóloga y como arteterapeuta, acompaño a otras personas que están transitando ese mismo camino. Y quiero compartir contigo lo que he aprendido —desde adentro y desde afuera— sobre cómo el arte puede ser un aliado en el proceso oncológico.
           </p>
 
-          <h2>Por qué el arte importa cuando tienes cáncer</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por qué el arte importa cuando tienes cáncer</h2>
 
           <p>
             Cuando recibes un diagnóstico de cáncer, tu vida cambia en un instante. De pronto te encuentras en un mundo de términos médicos, decisiones complejas, tratamientos agresivos y una incertidumbre que se instala como una sombra permanente.
@@ -82,26 +82,26 @@ export default function ArticuloArteterapiaCancer() {
             No es magia. No es una cura milagrosa. Pero la evidencia científica muestra que la arteterapia puede tener efectos reales y medibles en pacientes oncológicos:
           </p>
 
-          <ul>
-            <li>Reducción de la ansiedad y la depresión</li>
-            <li>Disminución de la fatiga relacionada con el tratamiento</li>
-            <li>Mejora en la calidad de vida general</li>
-            <li>Mayor sensación de control sobre la propia experiencia</li>
-            <li>Alivio del estrés asociado a los tratamientos</li>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>Reducción de la ansiedad y la depresión.</li>
+            <li>Disminución de la fatiga relacionada con el tratamiento.</li>
+            <li>Mejora en la calidad de vida general.</li>
+            <li>Mayor sensación de control sobre la propia experiencia.</li>
+            <li>Alivio del estrés asociado a los tratamientos.</li>
           </ul>
 
           <p>
             Un metanálisis publicado en la revista <em>Support Care Cancer</em> revisó múltiples estudios y concluyó que la arteterapia puede tener efectos beneficiosos significativos en el bienestar psicológico de los pacientes con cáncer. No reemplaza el tratamiento médico, pero lo complementa de una manera profunda.
           </p>
 
-          <h2>Mi historia: del diagnóstico al arte, del arte a la sanación</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Mi historia: del diagnóstico al arte, del arte a la sanación</h2>
 
           <p>
             Permíteme contarte un poco más de mi camino, porque creo que puede ayudarte a entender desde dónde te hablo.
           </p>
 
           <p>
-            Cuando me diagnosticaron cáncer, yo ya era artista. Había estudiado diseño, trabajaba en fotografía, el arte siempre había sido parte de mi vida. Pero nunca lo había usado de esta manera —como una herramienta de supervivencia emocional.
+            Cuando me diagnosticaron cáncer, yo ya era artista. Había estudiado diseño, trabajaba en fotografía, tenía exposiciones de pintura, el arte siempre había sido parte de mi vida. Pero nunca lo había usado de esta manera —como una herramienta de supervivencia emocional.
           </p>
 
           <p>
@@ -117,7 +117,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Esa fue la primera de muchas sesiones conmigo misma. A lo largo del tratamiento —la quimioterapia, los días malos, los días un poco menos malos, los miedos que aparecían de madrugada— el arte se convirtió en mi refugio. A veces pintaba. A veces hacía collages con recortes de revistas. A veces solo garabateaba mientras esperaba en el hospital.
+            Esa fue la primera de muchas sesiones conmigo misma. A lo largo del tratamiento —las radiaciones, la cirugía, los días malos, los días un poco menos malos, los miedos que aparecían de madrugada— el arte se convirtió en mi refugio. A veces pintaba. A veces hacía collages con recortes de revistas. A veces solo garabateaba mientras esperaba en el hospital.
           </p>
 
           <p>
@@ -129,16 +129,16 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Me formé como arteterapeuta y como tanatóloga. Escribí un libro, <em>Indeleble</em>, donde cuento mi historia con la esperanza de que pueda resonar con otros. Y hoy, cada vez que me siento frente a alguien que está atravesando un diagnóstico oncológico, lo hago desde un lugar de profunda comprensión. Porque yo estuve ahí. Sé lo que se siente.
+            Me formé como arteterapeuta y como tanatóloga, complementando mi práctica con estudios en diversos países: México, donde me certifiqué en la Universidad Iberoamericana; Bali, donde profundicé en prácticas artísticas ancestrales y técnicas de respiración consciente; India, donde me certifiqué en Reiki en Rishikesh; Tailandia, donde exploré el arte meditativo; y Malasia, donde aprendí sobre fusiones artísticas asiáticas. Escribí un libro, <em>Indeleble</em>, donde cuento mi historia con la esperanza de que pueda resonar con otros. Y hoy, cada vez que me siento frente a alguien que está atravesando un diagnóstico oncológico, lo hago desde un lugar de profunda comprensión. Porque yo estuve ahí. Sé lo que se siente.
           </p>
 
-          <h2>¿En qué momento del proceso oncológico puede ayudar la arteterapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿En qué momento del proceso oncológico puede ayudar la arteterapia?</h2>
 
           <p>
             Una de las cosas hermosas de la arteterapia es que puede adaptarse a cualquier etapa del camino. No hay un momento "correcto" para empezar.
           </p>
 
-          <h3>Durante el diagnóstico</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Durante el diagnóstico</h3>
 
           <p>
             Los primeros días y semanas después de recibir un diagnóstico de cáncer son abrumadores. Hay shock, incredulidad, miedo. Hay una avalancha de información médica que procesar. Hay decisiones que tomar cuando apenas puedes pensar con claridad.
@@ -148,32 +148,32 @@ export default function ArticuloArteterapiaCancer() {
             En esta etapa, la arteterapia puede ayudarte a:
           </p>
 
-          <ul>
-            <li>Procesar el shock inicial de manera gradual</li>
-            <li>Expresar el miedo y la incertidumbre sin tener que "explicarlos"</li>
-            <li>Encontrar pequeños momentos de calma en medio del caos</li>
-            <li>Comenzar a recuperar un sentido de agencia sobre tu propia experiencia</li>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>Procesar el shock inicial de manera gradual.</li>
+            <li>Expresar el miedo y la incertidumbre sin tener que "explicarlos".</li>
+            <li>Encontrar pequeños momentos de calma en medio del caos.</li>
+            <li>Comenzar a recuperar un sentido de agencia sobre tu propia experiencia.</li>
           </ul>
 
-          <h3>Durante el tratamiento</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Durante el tratamiento</h3>
 
           <p>
-            La quimioterapia, la radioterapia, las cirugías... Los tratamientos oncológicos son agotadores, física y emocionalmente. Hay días en que apenas tienes energía para levantarte. Hay efectos secundarios que afectan tu imagen corporal. Hay esperas interminables en hospitales.
+            Las radiaciones, la cirugía, los tratamientos oncológicos son agotadores, física y emocionalmente. Hay días en que apenas tienes energía para levantarte. Hay efectos secundarios que afectan tu imagen corporal. Hay esperas interminables en hospitales.
           </p>
 
           <p>
             En esta etapa, la arteterapia puede:
           </p>
 
-          <ul>
-            <li>Ofrecer una actividad que no depende de tu nivel de energía (podemos adaptar todo)</li>
-            <li>Ayudarte a procesar los cambios en tu cuerpo</li>
-            <li>Darte algo que esperar que no sea médico</li>
-            <li>Crear un espacio donde eres más que tu enfermedad</li>
-            <li>Reducir la ansiedad antes y después de los tratamientos</li>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>Ofrecer una actividad que no depende de tu nivel de energía (podemos adaptar todo).</li>
+            <li>Ayudarte a procesar los cambios en tu cuerpo.</li>
+            <li>Darte algo que esperar que no sea médico.</li>
+            <li>Crear un espacio donde eres más que tu enfermedad.</li>
+            <li>Reducir la ansiedad antes y después de los tratamientos.</li>
           </ul>
 
-          <h3>Después del tratamiento</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Después del tratamiento</h3>
 
           <p>
             Muchas personas piensan que cuando termina el tratamiento, todo vuelve a la normalidad. Pero quienes hemos pasado por esto sabemos que no es así. Hay un duelo por la vida de antes. Hay miedo a la recurrencia. Hay una identidad que reconstruir. Hay un cuerpo que ya no se siente igual.
@@ -183,15 +183,15 @@ export default function ArticuloArteterapiaCancer() {
             En esta etapa, la arteterapia puede ayudarte a:
           </p>
 
-          <ul>
-            <li>Procesar la experiencia vivida, ahora que hay más distancia</li>
-            <li>Trabajar con el miedo a que el cáncer regrese</li>
-            <li>Reconstruir tu sentido de identidad</li>
-            <li>Encontrar significado en lo que atravesaste</li>
-            <li>Celebrar tu resiliencia</li>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>Procesar la experiencia vivida, ahora que hay más distancia.</li>
+            <li>Trabajar con el miedo a que el cáncer regrese.</li>
+            <li>Reconstruir tu sentido de identidad.</li>
+            <li>Encontrar significado en lo que atravesaste.</li>
+            <li>Celebrar tu resiliencia.</li>
           </ul>
 
-          <h3>Para familiares y cuidadores</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Para familiares y cuidadores</h3>
 
           <p>
             El cáncer no afecta solo a quien lo tiene. Las familias, las parejas, los amigos cercanos también cargan un peso enorme. Ven sufrir a alguien que aman, sienten impotencia, tienen sus propios miedos y a menudo no tienen espacio para expresarlos porque "el enfermo es otro".
@@ -201,7 +201,7 @@ export default function ArticuloArteterapiaCancer() {
             La arteterapia también puede ser un recurso valioso para los cuidadores, un lugar donde pueden atender sus propias emociones sin sentir que le están quitando espacio al paciente.
           </p>
 
-          <h2>¿Cómo son las sesiones de arteterapia oncológica?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cómo son las sesiones de arteterapia oncológica?</h2>
 
           <p>
             Quiero que sepas exactamente qué esperar, porque entiendo que cuando estás lidiando con un tratamiento de cáncer, la incertidumbre es lo último que necesitas.
@@ -228,10 +228,10 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            <strong>La primera consulta es gratuita.</strong> Dura unos 15 minutos y es simplemente para conocernos, para que me cuentes qué estás atravesando y para explorar juntos si la arteterapia puede ser útil para ti. Sin presión, sin compromiso.
+            <strong>La primera consulta es gratuita.</strong> Dura 30 minutos y es simplemente para conocernos, para que me cuentes qué estás atravesando y para explorar juntos si la arteterapia puede ser útil para ti. Sin presión, sin compromiso.
           </p>
 
-          <h2>Arteterapia y tanatología: un enfoque integral</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia y tanatología: un enfoque integral</h2>
 
           <p>
             Hay algo de lo que no se habla mucho, pero que está presente en la experiencia de casi todos los pacientes con cáncer: la confrontación con la propia mortalidad.
@@ -253,10 +253,10 @@ export default function ArticuloArteterapiaCancer() {
             No todos mis consultantes necesitan este nivel de trabajo. Pero si tú sientes que hay miedos profundos que no te atreves a expresar, quiero que sepas que aquí hay espacio para ellos.
           </p>
 
-          <h2>Preguntas que quizás te estás haciendo</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas que quizás te estás haciendo</h2>
 
           <p>
-            <strong>Estoy muy cansado/a por la quimioterapia. ¿Puedo hacer arteterapia así?</strong><br />
+            <strong>Estoy muy cansado/a por el tratamiento. ¿Puedo hacer arteterapia así?</strong><br />
             Absolutamente. La arteterapia no requiere energía física. Podemos trabajar desde tu cama, con materiales mínimos, en sesiones más cortas si es necesario. He acompañado a personas en sus días más difíciles de tratamiento, y siempre encontramos una forma de crear que respete tu estado.
           </p>
 
@@ -287,25 +287,25 @@ export default function ArticuloArteterapiaCancer() {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 p-8 bg-frost/50 rounded-2xl border border-teal-glow/30 text-center">
-          <h3 className="font-display text-2xl text-ink mb-4">No tienes que atravesar esto solo/a</h3>
-          <p className="text-charcoal/70 mb-6 max-w-xl mx-auto">
+        <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
+          <h3 className="text-2xl text-black mb-4 font-semibold">No tienes que atravesar esto solo/a</h3>
+          <p className="text-black/70 mb-6 max-w-xl mx-auto">
             Sé lo aislante que puede sentirse un diagnóstico de cáncer. La arteterapia puede darte un lugar donde depositar todo lo que sientes, un lenguaje para lo que no tiene palabras.
           </p>
           <a
             href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-teal text-white rounded-full font-medium shadow-lg shadow-teal/20 hover:shadow-xl hover:shadow-teal/30 hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-block px-8 py-4 bg-[#B2F7EF] text-black rounded-full font-medium hover:bg-[#B2F7EF]/80 transition-all"
           >
             Agenda tu primera consulta gratuita
           </a>
         </div>
 
         {/* Author */}
-        <div className="mt-12 pt-8 border-t border-charcoal/10">
-          <p className="text-charcoal/60 text-sm italic">
-            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su experiencia personal con la enfermedad la llevó a dedicarse a acompañar a otras personas en sus procesos de sanación. Es autora de "Indeleble", un testimonio de transformación y resiliencia donde comparte su historia de atravesar el cáncer y reconstruirse a través del arte.
+        <div className="mt-12 pt-8 border-t border-black/10">
+          <p className="text-black/60 text-sm italic">
+            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su experiencia personal con la enfermedad la llevó a dedicarse a acompañar a otras personas en sus procesos de sanación. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble", un testimonio de transformación y resiliencia donde comparte su historia de atravesar el cáncer y reconstruirse a través del arte.
           </p>
         </div>
       </div>

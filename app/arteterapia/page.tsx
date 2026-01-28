@@ -153,15 +153,9 @@ export default function ArteterapiaPage() {
       {/* Quote Section */}
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="text-2xl md:text-3xl text-black leading-relaxed">
-            <span className="inline-block relative pb-3">
-              "Explorar lo que sentimos, desde lo que creamos."
-              <svg className="absolute bottom-0 left-0 w-full h-2" viewBox="0 0 300 8" preserveAspectRatio="none">
-                <path d="M0,4 Q75,2 150,4 T300,4" stroke="#B2F7EF" strokeWidth="2" fill="none" strokeLinecap="round"/>
-                <path d="M0,6 Q75,5 150,6 T300,6" stroke="#B2F7EF" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-              </svg>
-            </span>
-          </p>
+          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
+            "Explorar lo que sentimos, desde lo que creamos."
+          </blockquote>
         </div>
       </section>
 
@@ -197,32 +191,19 @@ export default function ArteterapiaPage() {
 
       {/* Benefits */}
       <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl text-black mb-8">
-                Beneficios de la arteterapia
-              </h2>
-              <div className="grid gap-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="text-black" size={14} />
-                    </div>
-                    <span className="text-black/80">{benefit}</span>
-                  </div>
-                ))}
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
+            Beneficios de la arteterapia
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Check className="text-black" size={14} />
+                </div>
+                <span className="text-black/80">{benefit}</span>
               </div>
-            </div>
-            <div className="flex justify-center">
-              <Image
-                src="/AdobeStock_210373409-1024x683.jpeg"
-                alt="Arteterapia - Expresión a través del arte"
-                width={350}
-                height={233}
-                className="rounded-3xl grayscale"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -235,21 +216,21 @@ export default function ArteterapiaPage() {
           </h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
-              <h3 className="text-xl text-black mb-2">1. Conocernos e identificar tu situación</h3>
+              <h3 className="text-xl text-black mb-2">1. Llamada inicial</h3>
               <p className="text-black/70">
-                Conversación en línea gratuita de 30 minutos para escucharte y entender qué necesitas.
+                Conversación en línea gratuita de 30 minutos para conocernos, escucharte y comprender tu momento y explorar si la arteterapia es el camino adecuado para tu proceso.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
-              <h3 className="text-xl text-black mb-2">2. Explicarte mi forma de trabajo</h3>
+              <h3 className="text-xl text-black mb-2">2. Plan de acompañamiento personalizado</h3>
               <p className="text-black/70">
-                Te cuento cómo funciona el proceso y resolvemos tus dudas juntos.
+                Diseño de un plan de acompañamiento basado en tu momento de vida, objetivos personales y necesidades específicas.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
-              <h3 className="text-xl text-black mb-2">3. Crear tu plan de acción</h3>
+              <h3 className="text-xl text-black mb-2">3. Sesiones personalizadas</h3>
               <p className="text-black/70">
-                Sesiones diseñadas especialmente para ti, tus necesidades y momento en un espacio seguro para expresarte y transformar.
+                Espacios de 50 minutos creados para ti, donde mediante dinámicas de arteterapia podrás expresar, explorar y trabajar tu proceso de manera acompañada.
               </p>
             </div>
           </div>
