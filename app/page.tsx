@@ -54,11 +54,11 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
-                      src="/Photography-Portfolio-Website-in-Grey-Black-Light-Experimental-Style_page-0001-2-1536x1502.jpg"
+                      src="/lou-profile.jpg"
                       alt="Lou - Arteterapeuta y Tanatóloga"
                       width={600}
                       height={450}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="flex-1">
@@ -260,6 +260,34 @@ export default function HomePage() {
                   >
                     Versión inglés
                   </a>
+                </div>
+
+                {/* Amazon Reviews */}
+                <div className="mt-8 space-y-4">
+                  <h3 className="text-lg font-semibold text-black mb-4">Reseñas de lectores</h3>
+                  <div className="flex flex-col md:flex-row gap-3">
+                    <Image
+                      src="/testimonio Sergio Morales.png"
+                      alt="Reseña de Sergio Morales - 5 estrellas"
+                      width={600}
+                      height={150}
+                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
+                    />
+                    <Image
+                      src="/testimonio dan.png"
+                      alt="Reseña de Dan - 5 estrellas"
+                      width={600}
+                      height={150}
+                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
+                    />
+                    <Image
+                      src="/testimonio monica aristi.png"
+                      alt="Reseña de Monica Aristi - 5 estrellas"
+                      width={600}
+                      height={150}
+                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
