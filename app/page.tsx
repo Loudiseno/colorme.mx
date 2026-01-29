@@ -265,27 +265,27 @@ export default function HomePage() {
                 {/* Amazon Reviews */}
                 <div className="mt-8 space-y-4">
                   <h3 className="text-lg font-semibold text-black mb-4">Reseñas de lectores</h3>
-                  <div className="space-y-3">
+                  <div className="flex flex-col md:flex-row gap-3">
                     <Image
-                      src="/review-1.jpg"
+                      src="/testimonio Sergio Morales.png"
                       alt="Reseña de Sergio Morales - 5 estrellas"
                       width={600}
                       height={150}
-                      className="w-full h-auto rounded-lg border border-black/10"
+                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
                     />
                     <Image
-                      src="/review-2.jpg"
-                      alt="Reseña de Amazon Customer - 5 estrellas"
+                      src="/testimonio dan.png"
+                      alt="Reseña de Dan - 5 estrellas"
                       width={600}
                       height={150}
-                      className="w-full h-auto rounded-lg border border-black/10"
+                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
                     />
                     <Image
-                      src="/review-3.jpg"
+                      src="/testimonio monica aristi.png"
                       alt="Reseña de Monica Aristi - 5 estrellas"
                       width={600}
                       height={150}
-                      className="w-full h-auto rounded-lg border border-black/10"
+                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
                     />
                   </div>
                 </div>

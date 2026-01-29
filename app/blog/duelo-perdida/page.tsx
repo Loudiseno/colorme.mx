@@ -30,7 +30,7 @@ export default function ArticuloDueloPerdida() {
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/blog-grief-alone.jpg"
+            src="/el duelo.jpeg"
             alt="Persona procesando el duelo en soledad"
             width={1200}
             height={675}
