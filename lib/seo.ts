@@ -2,7 +2,7 @@
 export const siteConfig = {
   name: 'ColorMe',
   description: 'Acompañamiento para sanar el duelo y transformar tus emociones a través de la arteterapia y la tanatología. Sesiones individuales, grupales y talleres en México.',
-  url: 'https://colorme.mx',
+  url: 'https://www.colorme.mx',
   author: 'Lourdes',
   locale: 'es_MX',
   email: 'hola@colorme.mx',
