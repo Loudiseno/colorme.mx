@@ -86,6 +86,52 @@ export default function WorksheetPage() {
     setIsDrawing(false);
   };
 
+  // Touch drawing functions for mobile
+  const startTouchDrawing = (e: React.TouchEvent<HTMLCanvasElement>) => {
+    e.preventDefault();
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const rect = canvas.getBoundingClientRect();
+    const touch = e.touches[0];
+    const x = touch.clientX - rect.left;
+    const y = touch.clientY - rect.top;
+
+    const ctx = canvas.getContext('2d');
+    if (ctx) {
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      setIsDrawing(true);
+    }
+  };
+
+  const touchDraw = (e: React.TouchEvent<HTMLCanvasElement>) => {
+    e.preventDefault();
+    if (!isDrawing) return;
+
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const rect = canvas.getBoundingClientRect();
+    const touch = e.touches[0];
+    const x = touch.clientX - rect.left;
+    const y = touch.clientY - rect.top;
+
+    const ctx = canvas.getContext('2d');
+    if (ctx) {
+      ctx.strokeStyle = selectedColor;
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      ctx.lineTo(x, y);
+      ctx.stroke();
+    }
+  };
+
+  const stopTouchDrawing = (e: React.TouchEvent<HTMLCanvasElement>) => {
+    e.preventDefault();
+    setIsDrawing(false);
+  };
+
   const clearCanvas = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -109,39 +155,17 @@ export default function WorksheetPage() {
       const pageHeight = 297; // A4 height in mm
       const margin = 20;
 
-      // Add ColorMe logo at top center
-      pdf.setFontSize(20);
+      // Add ColorMe logo text at top center
+      pdf.setFontSize(22);
       pdf.setFont('helvetica', 'bold');
-      pdf.text('ColorMe', pageWidth / 2, 20, { align: 'center' });
+      pdf.text('ColorMe', pageWidth / 2, 25, { align: 'center' });
 
-      // Add title in bold
+      // Add title "Mapa Interior" on another line
       pdf.setFontSize(16);
       pdf.setFont('helvetica', 'bold');
-      pdf.text('Mapa Interior', pageWidth / 2, 32, { align: 'center' });
+      pdf.text('Mapa Interior', pageWidth / 2, 38, { align: 'center' });
 
-      // Add cyan line below title
-      pdf.setDrawColor(178, 247, 239); // #B2F7EF in RGB
-      pdf.setLineWidth(0.8);
-      pdf.line(margin, 38, pageWidth - margin, 38);
-
-      // Add question
-      pdf.setFontSize(11);
-      pdf.setFont('helvetica', 'normal');
-      pdf.setTextColor(0, 0, 0);
-      const questionText = '¿Si pudieras darle un color o una forma a lo que sientes,';
-      const questionText2 = 'cómo se vería tu mundo interior?';
-      pdf.text(questionText, pageWidth / 2, 48, { align: 'center' });
-      pdf.text(questionText2, pageWidth / 2, 54, { align: 'center' });
-
-      // Add canvas image centered in the page
-      const imgData = canvas.toDataURL('image/png');
-      const imgWidth = 160; // Width in mm
-      const imgHeight = 120; // Maintain 4:3 aspect ratio
-      const imgX = (pageWidth - imgWidth) / 2; // Center horizontally
-      const imgY = 65; // Position after question
-      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight);
-
-      // Add date below the image
+      // Add date with much less weight
       const now = new Date();
       const dateStr = now.toLocaleDateString('es-MX', {
         year: 'numeric',
@@ -150,25 +174,23 @@ export default function WorksheetPage() {
       });
       pdf.setFontSize(9);
       pdf.setFont('helvetica', 'normal');
-      pdf.setTextColor(100, 100, 100);
-      pdf.text(dateStr, pageWidth / 2, imgY + imgHeight + 8, { align: 'center' });
+      pdf.setTextColor(120, 120, 120);
+      pdf.text(dateStr, pageWidth / 2, 46, { align: 'center' });
 
-      // Add reflection space at the bottom (aprovecha toda la hoja)
-      const reflectionY = pageHeight - 45;
-      pdf.setFontSize(10);
-      pdf.setFont('helvetica', 'italic');
-      pdf.setTextColor(0, 0, 0);
-      pdf.text('¿Algo llamó tu atención?', margin, reflectionY);
+      // Add cyan line below date
+      pdf.setDrawColor(178, 247, 239); // #B2F7EF in RGB
+      pdf.setLineWidth(0.8);
+      pdf.line(margin, 50, pageWidth - margin, 50);
 
-      // Add lines for writing
-      pdf.setDrawColor(200, 200, 200);
-      pdf.setLineWidth(0.3);
-      for (let i = 0; i < 3; i++) {
-        const lineY = reflectionY + 6 + (i * 6);
-        pdf.line(margin, lineY, pageWidth - margin, lineY);
-      }
+      // Add canvas image centered on the page
+      const imgData = canvas.toDataURL('image/png');
+      const imgWidth = 160; // Width in mm
+      const imgHeight = 120; // Maintain 4:3 aspect ratio
+      const imgX = (pageWidth - imgWidth) / 2; // Center horizontally
+      const imgY = 58; // Position after cyan line
+      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight);
 
-      // Add disclaimer at bottom
+      // Add footer disclaimer at bottom
       const disclaimerY = pageHeight - 18;
       pdf.setFontSize(7);
       pdf.setFont('helvetica', 'italic');
@@ -180,6 +202,7 @@ export default function WorksheetPage() {
       // Add copyright
       pdf.setFontSize(7);
       pdf.setFont('helvetica', 'normal');
+      pdf.setTextColor(100, 100, 100);
       pdf.text('Copyright 2026 ColorMe - Todos los derechos reservados', pageWidth / 2, pageHeight - 8, { align: 'center' });
 
       // Download
@@ -456,11 +479,14 @@ export default function WorksheetPage() {
                 ref={canvasRef}
                 width={800}
                 height={600}
-                className="w-full cursor-crosshair touch-none bg-white"
+                className="w-full cursor-crosshair bg-white"
                 onMouseDown={startDrawing}
                 onMouseMove={draw}
                 onMouseUp={stopDrawing}
                 onMouseLeave={stopDrawing}
+                onTouchStart={startTouchDrawing}
+                onTouchMove={touchDraw}
+                onTouchEnd={stopTouchDrawing}
               />
             </div>
 
@@ -489,9 +515,6 @@ export default function WorksheetPage() {
       <section className="py-6">
         <div className="max-w-3xl mx-auto px-6">
           <div className="space-y-2 text-xs text-gray-500 text-center max-w-2xl mx-auto">
-            <p>
-              Tus respuestas son privadas. Se enviarán por correo a hola@colorme.mx únicamente para el ejercicio personalizado.
-            </p>
             <p>
               Los ejercicios son una herramienta de exploración personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atención profesional psicológica o médica.
             </p>

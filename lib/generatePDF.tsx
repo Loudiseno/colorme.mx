@@ -7,6 +7,8 @@ const styles = StyleSheet.create({
     padding: 35,
     fontFamily: 'Helvetica',
     backgroundColor: '#FFFFFF',
+    display: 'flex',
+    flexDirection: 'column',
   },
   header: {
     marginBottom: 15,
@@ -29,9 +31,9 @@ const styles = StyleSheet.create({
   },
   infoBox: {
     backgroundColor: '#F8F8F8',
-    padding: 10,
+    padding: 12,
     borderRadius: 6,
-    marginBottom: 15,
+    marginBottom: 18,
   },
   infoRow: {
     flexDirection: 'row',
@@ -106,8 +108,10 @@ const styles = StyleSheet.create({
     lineHeight: 1.4,
   },
   disclaimer: {
-    marginTop: 15,
-    paddingTop: 10,
+    marginTop: 'auto',
+    paddingTop: 12,
+    borderTopWidth: 1,
+    borderTopColor: '#E0E0E0',
   },
   disclaimerText: {
     fontSize: 7,
@@ -116,10 +120,8 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
   },
   footer: {
-    marginTop: 10,
-    paddingTop: 6,
-    borderTopWidth: 1,
-    borderTopColor: '#E0E0E0',
+    marginTop: 8,
+    paddingTop: 8,
     textAlign: 'center',
   },
   copyright: {
@@ -192,7 +194,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
             <Text style={styles.exerciseTitle}>{exercise.title}</Text>
             <Text style={styles.description}>{exercise.description}</Text>
 
-            <Text style={styles.subsectionTitle}>⏱ Duración: {exercise.duration}</Text>
+            <Text style={styles.subsectionTitle}>Duración: {exercise.duration}</Text>
 
             {/* Materials */}
             <Text style={styles.subsectionTitle}>Materiales necesarios:</Text>
