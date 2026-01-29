@@ -29,7 +29,7 @@ export default function SobreMi() {
             <div className="order-1 md:order-2">
               <div className="bg-white rounded-3xl p-6 border border-[#B2F7EF]">
                 <Image
-                  src="/lou-facets.jpg"
+                  src="/Lou_hobbies.jpg"
                   alt="Lou - Arteterapeuta, Tanatóloga, Artista, Fotógrafa, Diseñadora, Viajera y más"
                   width={500}
                   height={488}

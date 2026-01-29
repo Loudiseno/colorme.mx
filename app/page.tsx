@@ -20,7 +20,7 @@ export default function HomePage() {
       />
 
       {/* Hero: Intro + About Lou */}
-      <section className="pt-28 pb-12 md:pt-36 md:pb-16 bg-white" id="sobremi">
+      <section className="pt-28 pb-8 md:pt-36 md:pb-10 bg-white" id="sobremi">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
@@ -54,7 +54,7 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
-                      src="/lou-profile.jpg"
+                      src="/Lou foto.jpg"
                       alt="Lou - Arteterapeuta y Tanatóloga"
                       width={600}
                       height={450}
@@ -83,7 +83,7 @@ export default function HomePage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-6 md:py-8 bg-white">
+      <section className="py-4 md:py-6 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
             "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
@@ -92,7 +92,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="servicios">
+      <section className="pt-6 pb-10 md:pt-8 md:pb-12 bg-[#B2F7EF]/5" id="servicios">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Arteterapia */}
@@ -149,7 +149,7 @@ export default function HomePage() {
       </section>
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-10 md:py-12 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -212,7 +212,7 @@ export default function HomePage() {
       </section>
 
       {/* Book Section */}
-      <section className="py-12 md:py-16 bg-white" id="indeleble">
+      <section className="py-10 md:py-12 bg-white" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF]">
             <div className="order-2 lg:order-1 bg-white p-8 md:p-12 flex items-center justify-center">
@@ -262,34 +262,34 @@ export default function HomePage() {
                   </a>
                 </div>
 
-                {/* Amazon Reviews */}
-                <div className="mt-8 space-y-4">
-                  <h3 className="text-lg font-semibold text-black mb-4">Reseñas de lectores</h3>
-                  <div className="flex flex-col md:flex-row gap-3">
-                    <Image
-                      src="/testimonio Sergio Morales.png"
-                      alt="Reseña de Sergio Morales - 5 estrellas"
-                      width={600}
-                      height={150}
-                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
-                    />
-                    <Image
-                      src="/testimonio dan.png"
-                      alt="Reseña de Dan - 5 estrellas"
-                      width={600}
-                      height={150}
-                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
-                    />
-                    <Image
-                      src="/testimonio monica aristi.png"
-                      alt="Reseña de Monica Aristi - 5 estrellas"
-                      width={600}
-                      height={150}
-                      className="w-full md:w-1/3 h-auto rounded-lg border border-black/10"
-                    />
-                  </div>
-                </div>
               </div>
+            </div>
+          </div>
+
+          {/* Book Testimonials - Right below the book section */}
+          <div className="max-w-7xl mx-auto mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Image
+                src="/testimonio Sergio Morales.png"
+                alt="Reseña de Sergio Morales - 5 estrellas"
+                width={600}
+                height={150}
+                className="w-full h-auto rounded-lg border border-black/10"
+              />
+              <Image
+                src="/testimonio dan.png"
+                alt="Reseña de Dan - 5 estrellas"
+                width={600}
+                height={150}
+                className="w-full h-auto rounded-lg border border-black/10"
+              />
+              <Image
+                src="/testimonio monica aristi.png"
+                alt="Reseña de Monica Aristi - 5 estrellas"
+                width={600}
+                height={150}
+                className="w-full h-auto rounded-lg border border-black/10"
+              />
             </div>
           </div>
         </div>
@@ -299,7 +299,7 @@ export default function HomePage() {
       <Testimonials />
 
       {/* Blog Section */}
-      <section className="py-12 md:py-16 bg-white" id="blog">
+      <section className="py-10 md:py-12 bg-white" id="blog">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl text-black mb-4">Entre líneas</h2>
@@ -313,7 +313,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/corazon.png"
+                    src="/arteterapia.jpeg"
                     alt="¿Qué es la arteterapia?"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"
@@ -341,7 +341,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/columpio.png"
+                    src="/cancer y arteterapia.jpeg"
                     alt="Arteterapia para pacientes con cáncer"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"
@@ -349,7 +349,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                 </div>
                 <div className="p-6">
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
+                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia y Tanatología</span>
                   <h3 className="text-xl text-black mt-2 mb-3">
                     Arteterapia para pacientes con cáncer
                   </h3>
@@ -365,35 +365,38 @@ export default function HomePage() {
             </Link>
 
             {/* Article 3 */}
-            <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF]/50">
-              <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                <Image
-                  src="/cafe.png"
-                  alt="Rituales para el día a día"
-                  fill
-                  className="object-cover grayscale mix-blend-luminosity opacity-50"
-                />
-                <div className="absolute inset-0 bg-[#B2F7EF]/5 mix-blend-overlay"></div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs text-gray-500 uppercase tracking-wider">Próximamente</span>
-                <h3 className="text-xl text-black mt-2 mb-3">
-                  Rituales para el día a día
-                </h3>
-                <p className="text-black/70 text-sm leading-relaxed mb-4">
-                  Prácticas sencillas para cultivar la calma.
-                </p>
-                <span className="inline-flex items-center gap-2 text-gray-400 text-sm font-medium">
-                  Próximamente
-                </span>
-              </div>
-            </article>
+            <Link href="/blog/duelo-perdida" className="group">
+              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                  <Image
+                    src="/el duelo.jpeg"
+                    alt="¿Qué es el duelo?"
+                    fill
+                    className="object-cover grayscale mix-blend-luminosity"
+                  />
+                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                </div>
+                <div className="p-6">
+                  <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
+                  <h3 className="text-xl text-black mt-2 mb-3">
+                    ¿Qué es el duelo?
+                  </h3>
+                  <p className="text-black/70 text-sm leading-relaxed mb-4">
+                    Guía para entender y atravesar el proceso de pérdida.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
+                    Leer más
+                    <ArrowRight size={16} />
+                  </span>
+                </div>
+              </article>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 md:py-16" id="contacto">
+      <section className="py-10 md:py-12" id="contacto">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl text-black mb-4">Contacto</h2>
