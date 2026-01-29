@@ -265,35 +265,32 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Book Reviews Section */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
-        <div className="max-w-7xl mx-auto px-6">
-          <h3 className="text-3xl md:text-4xl text-black text-center mb-8 font-semibold">Reseñas de lectores</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Image
-              src="/testimonio Sergio Morales.png"
-              alt="Reseña de Sergio Morales - 5 estrellas"
-              width={600}
-              height={150}
-              className="w-full h-auto rounded-lg border border-black/10"
-            />
-            <Image
-              src="/testimonio dan.png"
-              alt="Reseña de Dan - 5 estrellas"
-              width={600}
-              height={150}
-              className="w-full h-auto rounded-lg border border-black/10"
-            />
-            <Image
-              src="/testimonio monica aristi.png"
-              alt="Reseña de Monica Aristi - 5 estrellas"
-              width={600}
-              height={150}
-              className="w-full h-auto rounded-lg border border-black/10"
-            />
+          {/* Book Testimonials - Right below the book section */}
+          <div className="max-w-7xl mx-auto mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Image
+                src="/testimonio Sergio Morales.png"
+                alt="Reseña de Sergio Morales - 5 estrellas"
+                width={600}
+                height={150}
+                className="w-full h-auto rounded-lg border border-black/10"
+              />
+              <Image
+                src="/testimonio dan.png"
+                alt="Reseña de Dan - 5 estrellas"
+                width={600}
+                height={150}
+                className="w-full h-auto rounded-lg border border-black/10"
+              />
+              <Image
+                src="/testimonio monica aristi.png"
+                alt="Reseña de Monica Aristi - 5 estrellas"
+                width={600}
+                height={150}
+                className="w-full h-auto rounded-lg border border-black/10"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -352,7 +349,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                 </div>
                 <div className="p-6">
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
+                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia y Tanatología</span>
                   <h3 className="text-xl text-black mt-2 mb-3">
                     Arteterapia para pacientes con cáncer
                   </h3>

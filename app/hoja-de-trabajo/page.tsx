@@ -114,55 +114,63 @@ export default function WorksheetPage() {
       pdf.setFont('helvetica', 'bold');
       pdf.text('ColorMe', pageWidth / 2, 20, { align: 'center' });
 
-      // Add date
+      // Add title in bold
+      pdf.setFontSize(16);
+      pdf.setFont('helvetica', 'bold');
+      pdf.text('Mapa Interior', pageWidth / 2, 32, { align: 'center' });
+
+      // Add cyan line below title
+      pdf.setDrawColor(178, 247, 239); // #B2F7EF in RGB
+      pdf.setLineWidth(0.8);
+      pdf.line(margin, 38, pageWidth - margin, 38);
+
+      // Add question
+      pdf.setFontSize(11);
+      pdf.setFont('helvetica', 'normal');
+      pdf.setTextColor(0, 0, 0);
+      const questionText = '¿Si pudieras darle un color o una forma a lo que sientes,';
+      const questionText2 = 'cómo se vería tu mundo interior?';
+      pdf.text(questionText, pageWidth / 2, 48, { align: 'center' });
+      pdf.text(questionText2, pageWidth / 2, 54, { align: 'center' });
+
+      // Add canvas image centered in the page
+      const imgData = canvas.toDataURL('image/png');
+      const imgWidth = 160; // Width in mm
+      const imgHeight = 120; // Maintain 4:3 aspect ratio
+      const imgX = (pageWidth - imgWidth) / 2; // Center horizontally
+      const imgY = 65; // Position after question
+      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight);
+
+      // Add date below the image
       const now = new Date();
       const dateStr = now.toLocaleDateString('es-MX', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
       });
-      pdf.setFontSize(10);
+      pdf.setFontSize(9);
       pdf.setFont('helvetica', 'normal');
-      pdf.text(dateStr, pageWidth / 2, 28, { align: 'center' });
+      pdf.setTextColor(100, 100, 100);
+      pdf.text(dateStr, pageWidth / 2, imgY + imgHeight + 8, { align: 'center' });
 
-      // Add title
-      pdf.setFontSize(16);
-      pdf.setFont('helvetica', 'bold');
-      pdf.text('Mapa Interior', pageWidth / 2, 40, { align: 'center' });
-
-      // Add question
-      pdf.setFontSize(11);
+      // Add reflection space at the bottom (aprovecha toda la hoja)
+      const reflectionY = pageHeight - 45;
+      pdf.setFontSize(10);
       pdf.setFont('helvetica', 'italic');
-      const questionText = '¿Si pudieras darle un color o una forma a lo que sientes,';
-      const questionText2 = 'cómo se vería tu mundo interior?';
-      pdf.text(questionText, pageWidth / 2, 50, { align: 'center' });
-      pdf.text(questionText2, pageWidth / 2, 56, { align: 'center' });
-
-      // Add canvas image (optimized for single page)
-      const imgData = canvas.toDataURL('image/png');
-      const imgWidth = 170; // Width in mm
-      const imgHeight = 127.5; // Maintain 4:3 aspect ratio
-      const imgX = (pageWidth - imgWidth) / 2; // Center horizontally
-      const imgY = 65; // Position after question
-      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight);
-
-      // Add reflection space
-      const reflectionY = imgY + imgHeight + 10;
-      pdf.setFontSize(11);
-      pdf.setFont('helvetica', 'italic');
+      pdf.setTextColor(0, 0, 0);
       pdf.text('¿Algo llamó tu atención?', margin, reflectionY);
 
       // Add lines for writing
       pdf.setDrawColor(200, 200, 200);
       pdf.setLineWidth(0.3);
       for (let i = 0; i < 3; i++) {
-        const lineY = reflectionY + 8 + (i * 6);
+        const lineY = reflectionY + 6 + (i * 6);
         pdf.line(margin, lineY, pageWidth - margin, lineY);
       }
 
       // Add disclaimer at bottom
-      const disclaimerY = pageHeight - 25;
-      pdf.setFontSize(8);
+      const disclaimerY = pageHeight - 18;
+      pdf.setFontSize(7);
       pdf.setFont('helvetica', 'italic');
       pdf.setTextColor(100, 100, 100);
       const disclaimer = 'Los ejercicios son una herramienta de exploración personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atención profesional psicológica o médica.';
@@ -172,7 +180,7 @@ export default function WorksheetPage() {
       // Add copyright
       pdf.setFontSize(7);
       pdf.setFont('helvetica', 'normal');
-      pdf.text('Copyright 2026 ColorMe - Todos los derechos reservados', pageWidth / 2, pageHeight - 10, { align: 'center' });
+      pdf.text('Copyright 2026 ColorMe - Todos los derechos reservados', pageWidth / 2, pageHeight - 8, { align: 'center' });
 
       // Download
       pdf.save(`mapa-interior-${new Date().toISOString().split('T')[0]}.pdf`);
