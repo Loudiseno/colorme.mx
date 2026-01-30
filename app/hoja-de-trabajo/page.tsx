@@ -46,14 +46,22 @@ export default function WorksheetPage() {
   }, []);
 
   // Drawing functions
+  // Helper to get scaled canvas coordinates (canvas is 800x600 but displayed responsive)
+  const getCanvasCoords = (canvas: HTMLCanvasElement, clientX: number, clientY: number) => {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    return {
+      x: (clientX - rect.left) * scaleX,
+      y: (clientY - rect.top) * scaleY,
+    };
+  };
+
   const startDrawing = (e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
+    const { x, y } = getCanvasCoords(canvas, e.clientX, e.clientY);
     const ctx = canvas.getContext('2d');
     if (ctx) {
       ctx.beginPath();
@@ -68,10 +76,7 @@ export default function WorksheetPage() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
+    const { x, y } = getCanvasCoords(canvas, e.clientX, e.clientY);
     const ctx = canvas.getContext('2d');
     if (ctx) {
       ctx.strokeStyle = selectedColor;
@@ -92,11 +97,8 @@ export default function WorksheetPage() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const rect = canvas.getBoundingClientRect();
     const touch = e.touches[0];
-    const x = touch.clientX - rect.left;
-    const y = touch.clientY - rect.top;
-
+    const { x, y } = getCanvasCoords(canvas, touch.clientX, touch.clientY);
     const ctx = canvas.getContext('2d');
     if (ctx) {
       ctx.beginPath();
@@ -112,11 +114,8 @@ export default function WorksheetPage() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const rect = canvas.getBoundingClientRect();
     const touch = e.touches[0];
-    const x = touch.clientX - rect.left;
-    const y = touch.clientY - rect.top;
-
+    const { x, y } = getCanvasCoords(canvas, touch.clientX, touch.clientY);
     const ctx = canvas.getContext('2d');
     if (ctx) {
       ctx.strokeStyle = selectedColor;
@@ -155,52 +154,79 @@ export default function WorksheetPage() {
       const pageHeight = 297; // A4 height in mm
       const margin = 20;
 
-      // Add ColorMe logo text at top center
-      pdf.setFontSize(22);
-      pdf.setFont('helvetica', 'bold');
-      pdf.text('ColorMe', pageWidth / 2, 25, { align: 'center' });
+      // Load and add COLORME_logonegro.png logo at top center
+      let logoY = 15;
+      try {
+        const logoResponse = await fetch('/COLORME_logonegro.png');
+        const logoBlob = await logoResponse.blob();
+        const logoDataUrl = await new Promise<string>((resolve) => {
+          const reader = new FileReader();
+          reader.onloadend = () => resolve(reader.result as string);
+          reader.readAsDataURL(logoBlob);
+        });
+        const logoWidth = 50;
+        const logoHeight = 9;
+        const logoX = (pageWidth - logoWidth) / 2;
+        pdf.addImage(logoDataUrl, 'PNG', logoX, logoY, logoWidth, logoHeight);
+        logoY += logoHeight + 4;
+      } catch {
+        // Fallback to text if image fails
+        pdf.setFontSize(20);
+        pdf.setFont('helvetica', 'bold');
+        pdf.setTextColor(0, 0, 0);
+        pdf.text('ColorMe', pageWidth / 2, logoY + 6, { align: 'center' });
+        logoY += 12;
+      }
 
-      // Add title "Mapa Interior" on another line
+      // Title "Mapa Interior" on its own line
       pdf.setFontSize(16);
       pdf.setFont('helvetica', 'bold');
-      pdf.text('Mapa Interior', pageWidth / 2, 38, { align: 'center' });
+      pdf.setTextColor(0, 0, 0);
+      pdf.text('Mapa Interior', pageWidth / 2, logoY + 6, { align: 'center' });
 
-      // Add date with much less weight
+      // Date with much smaller weight on next line
       const now = new Date();
       const dateStr = now.toLocaleDateString('es-MX', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
       });
-      pdf.setFontSize(9);
+      pdf.setFontSize(8);
       pdf.setFont('helvetica', 'normal');
-      pdf.setTextColor(120, 120, 120);
-      pdf.text(dateStr, pageWidth / 2, 46, { align: 'center' });
+      pdf.setTextColor(140, 140, 140);
+      pdf.text(dateStr, pageWidth / 2, logoY + 14, { align: 'center' });
 
-      // Add cyan line below date
-      pdf.setDrawColor(178, 247, 239); // #B2F7EF in RGB
+      // Cyan line below
+      const cyanLineY = logoY + 18;
+      pdf.setDrawColor(178, 247, 239); // #B2F7EF
       pdf.setLineWidth(0.8);
-      pdf.line(margin, 50, pageWidth - margin, 50);
+      pdf.line(margin, cyanLineY, pageWidth - margin, cyanLineY);
 
-      // Add canvas image centered on the page
+      // Centered drawing
       const imgData = canvas.toDataURL('image/png');
-      const imgWidth = 160; // Width in mm
-      const imgHeight = 120; // Maintain 4:3 aspect ratio
-      const imgX = (pageWidth - imgWidth) / 2; // Center horizontally
-      const imgY = 58; // Position after cyan line
+      const maxImgWidth = pageWidth - (margin * 2);
+      const maxImgHeight = pageHeight - cyanLineY - 45; // Leave space for footer
+      const canvasRatio = canvas.width / canvas.height;
+      let imgWidth = maxImgWidth;
+      let imgHeight = imgWidth / canvasRatio;
+      if (imgHeight > maxImgHeight) {
+        imgHeight = maxImgHeight;
+        imgWidth = imgHeight * canvasRatio;
+      }
+      const imgX = (pageWidth - imgWidth) / 2;
+      const imgY = cyanLineY + 6;
       pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight);
 
-      // Add footer disclaimer at bottom
-      const disclaimerY = pageHeight - 18;
-      pdf.setFontSize(7);
+      // Footer disclaimer at bottom
+      pdf.setFontSize(6.5);
       pdf.setFont('helvetica', 'italic');
       pdf.setTextColor(100, 100, 100);
-      const disclaimer = 'Los ejercicios son una herramienta de exploración personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atención profesional psicológica o médica.';
+      const disclaimer = 'Los ejercicios son una herramienta de exploracion personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atencion profesional psicologica o medica.';
       const disclaimerLines = pdf.splitTextToSize(disclaimer, pageWidth - (margin * 2));
-      pdf.text(disclaimerLines, pageWidth / 2, disclaimerY, { align: 'center' });
+      pdf.text(disclaimerLines, pageWidth / 2, pageHeight - 16, { align: 'center' });
 
-      // Add copyright
-      pdf.setFontSize(7);
+      // Copyright
+      pdf.setFontSize(6.5);
       pdf.setFont('helvetica', 'normal');
       pdf.setTextColor(100, 100, 100);
       pdf.text('Copyright 2026 ColorMe - Todos los derechos reservados', pageWidth / 2, pageHeight - 8, { align: 'center' });
@@ -480,6 +506,7 @@ export default function WorksheetPage() {
                 width={800}
                 height={600}
                 className="w-full cursor-crosshair bg-white"
+                style={{ touchAction: 'none' }}
                 onMouseDown={startDrawing}
                 onMouseMove={draw}
                 onMouseUp={stopDrawing}
