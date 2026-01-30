@@ -20,7 +20,7 @@ export default function HomePage() {
       />
 
       {/* Hero: Intro + About Lou */}
-      <section className="pt-28 pb-8 md:pt-36 md:pb-10 bg-white" id="sobremi">
+      <section className="pt-28 pb-4 md:pt-36 md:pb-6 bg-white" id="sobremi">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
@@ -54,7 +54,7 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
-                      src="/Lou foto.jpg"
+                      src="/Lou_circulo.jpg"
                       alt="Lou - Arteterapeuta y Tanatóloga"
                       width={600}
                       height={450}
@@ -83,7 +83,7 @@ export default function HomePage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-4 md:py-6 bg-white">
+      <section className="pt-2 pb-1 md:pt-3 md:pb-2 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
             "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
@@ -92,7 +92,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="pt-6 pb-10 md:pt-8 md:pb-12 bg-[#B2F7EF]/5" id="servicios">
+      <section className="pt-2 pb-10 md:pt-3 md:pb-12 bg-[#B2F7EF]/5" id="servicios">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Arteterapia */}
