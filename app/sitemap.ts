@@ -25,7 +25,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/privacidad`,
+      url: `${baseUrl}/sobre-mi`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/hoja-de-trabajo`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/que-es-arteterapia`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/arteterapia-cancer`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/duelo-perdida`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/politica-de-privacidad`,
       lastModified: new Date(),
       changeFrequency: 'yearly' as const,
       priority: 0.3,
