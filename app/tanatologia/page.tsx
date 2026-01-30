@@ -118,7 +118,7 @@ export default function TanatologiaPage() {
       />
 
       {/* Hero */}
-      <section className="pt-28 pb-10 md:pt-36 md:pb-12 bg-white">
+      <section className="pt-24 pb-12 md:pt-32 md:pb-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -164,7 +164,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-6 md:py-8 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <p className="text-2xl md:text-3xl text-black leading-relaxed">
             «El duelo no solo es despedir, es soltar, transformar y seguir adelante con amor.» Lou
@@ -173,7 +173,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Sanar tras una pérdida */}
-      <section className="py-10 md:py-12 bg-[#B2F7EF]/5">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
             Sanar tras una pérdida
@@ -204,7 +204,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Types of Loss */}
-      <section className="py-10 md:py-12 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
@@ -228,7 +228,7 @@ export default function TanatologiaPage() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-lg text-black mb-2">{item.title}</h3>
+                <h3 className="text-xl md:text-2xl text-black mb-2 font-semibold">{item.title}</h3>
                 <p className="text-sm text-black/70 leading-relaxed">{item.description}</p>
               </div>
             ))}
@@ -237,7 +237,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* How can tanatología help */}
-      <section className="py-10 md:py-12 bg-[#B2F7EF]/5">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
             ¿Cómo te puede ayudar la Tanatología?
@@ -294,7 +294,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Process */}
-      <section className="py-10 md:py-12 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
             ¿Cómo es el proceso de acompañamiento?
@@ -302,7 +302,7 @@ export default function TanatologiaPage() {
           <div className="space-y-6">
             {process.map((item, index) => (
               <div key={index} className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
-                <h3 className="text-xl text-black mb-2 font-semibold">{item.title}</h3>
+                <h3 className="text-xl md:text-2xl text-black mb-2 font-semibold">{item.title}</h3>
                 <p className="text-black/70">{item.description}</p>
               </div>
             ))}
@@ -311,7 +311,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Session Types */}
-      <section className="py-10 md:py-12 bg-[#B2F7EF]/5">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-10 text-center">
             Tipos de sesiones
@@ -336,7 +336,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Combined approach */}
-      <section className="py-10 md:py-12 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-6">
             Tanatología y arteterapia: un enfoque integrador
@@ -366,7 +366,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-10 md:py-12 bg-[#B2F7EF]/5">
+      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl text-black mb-4">
             No tienes que atravesar esto solo/a

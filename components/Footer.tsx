@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Instagram, Facebook, BookOpen, Mail, MessageCircle } from 'lucide-react'
+import { Instagram, Facebook, BookOpen, Mail } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import ScrollToTop from './ScrollToTop'
+import WhatsAppIcon from './WhatsAppIcon'
 
 const navigation = [
   { name: 'Arteterapia', href: '/arteterapia' },
@@ -15,7 +16,7 @@ const navigation = [
 const socials = [
   { name: 'Instagram', href: siteConfig.social.instagram, icon: Instagram },
   { name: 'Facebook', href: siteConfig.social.facebook, icon: Facebook },
-  { name: 'WhatsApp', href: 'https://wa.me/529992472678', icon: MessageCircle },
+  { name: 'WhatsApp', href: 'https://wa.me/529992472678', icon: WhatsAppIcon },
   { name: 'Amazon', href: siteConfig.book.amazonEs, icon: BookOpen },
 ]
 
