@@ -51,8 +51,10 @@ export default function WorksheetPage() {
     if (!canvas) return;
 
     const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
 
     const ctx = canvas.getContext('2d');
     if (ctx) {
@@ -69,8 +71,10 @@ export default function WorksheetPage() {
     if (!canvas) return;
 
     const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
 
     const ctx = canvas.getContext('2d');
     if (ctx) {
@@ -94,8 +98,10 @@ export default function WorksheetPage() {
 
     const rect = canvas.getBoundingClientRect();
     const touch = e.touches[0];
-    const x = touch.clientX - rect.left;
-    const y = touch.clientY - rect.top;
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (touch.clientX - rect.left) * scaleX;
+    const y = (touch.clientY - rect.top) * scaleY;
 
     const ctx = canvas.getContext('2d');
     if (ctx) {
@@ -114,8 +120,10 @@ export default function WorksheetPage() {
 
     const rect = canvas.getBoundingClientRect();
     const touch = e.touches[0];
-    const x = touch.clientX - rect.left;
-    const y = touch.clientY - rect.top;
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (touch.clientX - rect.left) * scaleX;
+    const y = (touch.clientY - rect.top) * scaleY;
 
     const ctx = canvas.getContext('2d');
     if (ctx) {
@@ -155,15 +163,26 @@ export default function WorksheetPage() {
       const pageHeight = 297; // A4 height in mm
       const margin = 20;
 
-      // Add ColorMe logo text at top center
-      pdf.setFontSize(22);
-      pdf.setFont('helvetica', 'bold');
-      pdf.text('ColorMe', pageWidth / 2, 25, { align: 'center' });
+      // Add ColorMe logo image at top center
+      const logoImg = new window.Image();
+      logoImg.src = '/COLORME_logo-19-768x141.png';
+      await new Promise((resolve) => {
+        logoImg.onload = resolve;
+        logoImg.onerror = resolve; // Continue even if logo fails to load
+      });
+
+      if (logoImg.complete && logoImg.naturalHeight !== 0) {
+        const logoWidth = 50;
+        const logoHeight = (logoImg.naturalHeight / logoImg.naturalWidth) * logoWidth;
+        const logoX = (pageWidth - logoWidth) / 2;
+        pdf.addImage(logoImg, 'PNG', logoX, 15, logoWidth, logoHeight);
+      }
 
       // Add title "Mapa Interior" on another line
-      pdf.setFontSize(16);
+      pdf.setFontSize(18);
       pdf.setFont('helvetica', 'bold');
-      pdf.text('Mapa Interior', pageWidth / 2, 38, { align: 'center' });
+      pdf.setTextColor(0, 0, 0);
+      pdf.text('Mapa Interior', pageWidth / 2, 35, { align: 'center' });
 
       // Add date with much less weight
       const now = new Date();
@@ -175,23 +194,23 @@ export default function WorksheetPage() {
       pdf.setFontSize(9);
       pdf.setFont('helvetica', 'normal');
       pdf.setTextColor(120, 120, 120);
-      pdf.text(dateStr, pageWidth / 2, 46, { align: 'center' });
+      pdf.text(dateStr, pageWidth / 2, 42, { align: 'center' });
 
       // Add cyan line below date
       pdf.setDrawColor(178, 247, 239); // #B2F7EF in RGB
-      pdf.setLineWidth(0.8);
-      pdf.line(margin, 50, pageWidth - margin, 50);
+      pdf.setLineWidth(0.5);
+      pdf.line(margin, 46, pageWidth - margin, 46);
 
       // Add canvas image centered on the page
       const imgData = canvas.toDataURL('image/png');
-      const imgWidth = 160; // Width in mm
-      const imgHeight = 120; // Maintain 4:3 aspect ratio
+      const imgWidth = 170; // Width in mm
+      const imgHeight = 127.5; // Maintain 4:3 aspect ratio
       const imgX = (pageWidth - imgWidth) / 2; // Center horizontally
-      const imgY = 58; // Position after cyan line
+      const imgY = 52; // Position after cyan line
       pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth, imgHeight);
 
       // Add footer disclaimer at bottom
-      const disclaimerY = pageHeight - 18;
+      const disclaimerY = pageHeight - 20;
       pdf.setFontSize(7);
       pdf.setFont('helvetica', 'italic');
       pdf.setTextColor(100, 100, 100);
@@ -203,7 +222,7 @@ export default function WorksheetPage() {
       pdf.setFontSize(7);
       pdf.setFont('helvetica', 'normal');
       pdf.setTextColor(100, 100, 100);
-      pdf.text('Copyright 2026 ColorMe - Todos los derechos reservados', pageWidth / 2, pageHeight - 8, { align: 'center' });
+      pdf.text('Copyright 2026 ColorMe - Todos los derechos reservados', pageWidth / 2, pageHeight - 10, { align: 'center' });
 
       // Download
       pdf.save(`mapa-interior-${new Date().toISOString().split('T')[0]}.pdf`);
@@ -263,7 +282,7 @@ export default function WorksheetPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
-      <section className="bg-[#B2F7EF]/10 py-10">
+      <section className="bg-[#B2F7EF]/10 py-8">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl text-black mb-4">
             Exploraciones creativas
@@ -275,7 +294,7 @@ export default function WorksheetPage() {
       </section>
 
       {/* Exercise 1: Form-based personalized exercise */}
-      <section className="py-10">
+      <section className="py-8">
         <div className="max-w-3xl mx-auto px-6">
           {/* Exercise Header with Badge */}
           <div className="flex items-center gap-4 mb-6">
@@ -414,7 +433,7 @@ export default function WorksheetPage() {
       </section>
 
       {/* Exercise 2: Drawing Canvas */}
-      <section className="py-10 bg-[#B2F7EF]/5">
+      <section className="py-8 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6">
           {/* Exercise Header with Badge */}
           <div className="flex items-center gap-4 mb-6">

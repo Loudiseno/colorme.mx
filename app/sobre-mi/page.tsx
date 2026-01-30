@@ -7,7 +7,7 @@ import { siteConfig } from '@/lib/seo'
 
 export default function SobreMi() {
   return (
-    <article className="pt-28 pb-16 md:pt-36 md:pb-20">
+    <article className="pt-24 pb-12 md:pt-32 md:pb-16">
       <div className="max-w-4xl mx-auto px-6">
         {/* Hero Section */}
         <header className="mb-16">
