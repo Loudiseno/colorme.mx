@@ -1,3 +1,14 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Política de Privacidad',
+  description: 'Política de privacidad de ColorMe. Información sobre cómo recopilamos, usamos y protegemos tus datos personales.',
+  robots: { index: false, follow: false },
+  alternates: {
+    canonical: '/politica-de-privacidad',
+  },
+}
+
 export default function PoliticaDePrivacidad() {
   return (
     <article className="pt-28 pb-16 md:pt-36 md:pb-20">
