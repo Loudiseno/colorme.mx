@@ -124,10 +124,13 @@ export default function TanatologiaPage() {
             <div>
               <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
                 <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-                <h1 className="text-5xl md:text-6xl text-black relative z-10">
-                  Tanatología: Acompañamiento Profesional en Procesos de Duelo y Pérdida
-                </h1>
+                <span className="text-5xl md:text-6xl text-black relative z-10">
+                  Tanatología
+                </span>
               </div>
+              <h1 className="text-lg text-black leading-relaxed mb-6">
+                <strong>Acompañamiento Profesional en Procesos de Duelo y Pérdida</strong>
+              </h1>
               <div className="space-y-4 text-lg text-black/70 leading-relaxed mb-6">
                 <p>
                   Acompañamiento emocional en procesos de pérdida, duelo y final de vida.
@@ -209,7 +212,7 @@ export default function TanatologiaPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              Tipos de duelo que atendemos
+              Tipos de duelo en los que puedo acompañarte
             </h2>
             <p className="text-black/70 max-w-2xl mx-auto">
               El duelo no surge únicamente ante la muerte. Existen múltiples formas de pérdida que impactan la vida emocional y que merecen ser reconocidas y acompañadas.
@@ -298,7 +301,7 @@ export default function TanatologiaPage() {
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
-            El proceso de acompañamiento
+            ¿Cómo es mi proceso de acompañamiento en sesión?
           </h2>
           <div className="space-y-6">
             {process.map((item, index) => (

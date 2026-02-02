@@ -111,10 +111,13 @@ export default function ArteterapiaPage() {
             <div>
               <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
                 <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-                <h1 className="text-5xl md:text-6xl text-black relative z-10">
-                  Arteterapia en México: Expresa y Transforma tus Emociones a través del Arte
-                </h1>
+                <span className="text-5xl md:text-6xl text-black relative z-10">
+                  Arteterapia
+                </span>
               </div>
+              <h1 className="text-lg text-black leading-relaxed mb-6">
+                <strong>Expresa y Transforma tus Emociones a través del Arte</strong>
+              </h1>
               <div className="space-y-4 text-lg text-black/70 leading-relaxed">
                 <p>
                   Acompañamiento emocional que utiliza el proceso creativo para explorar, expresar y transformar aquello que las palabras no alcanzan.
@@ -165,7 +168,7 @@ export default function ArteterapiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              ¿Para quién es?
+              ¿En qué situaciones puede ayudarte la Arteterapia?
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -213,7 +216,7 @@ export default function ArteterapiaPage() {
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
-            Proceso de una sesión
+            ¿Qué sucede durante una sesión de Arteterapia?
           </h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
