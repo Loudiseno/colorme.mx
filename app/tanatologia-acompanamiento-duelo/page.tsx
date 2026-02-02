@@ -35,32 +35,32 @@ export const metadata: Metadata = {
 
 const typesOfLoss = [
   {
-    icon: '/Frame-21-2.png',
+    icon: '/Frame-21-2.webp',
     title: 'Relacionales',
     description: 'Pérdida de vínculos significativos: muerte de un ser querido, muerte de una mascota, ruptura de pareja, divorcio o distanciamiento familiar.',
   },
   {
-    icon: '/Frame-23-1.png',
+    icon: '/Frame-23-1.webp',
     title: 'Intrapersonales',
     description: 'Pérdida de identidad, sentido o propósito: crisis existencial, cambio de carrera o rol, sensación de fracaso, pérdida de proyectos o sueños.',
   },
   {
-    icon: '/Frame-29.png',
+    icon: '/Frame-29.webp',
     title: 'Materiales',
     description: 'Pérdida de bienes o estabilidad: dificultades económicas, pérdida de empleo, pérdida del hogar u objetos con valor emocional.',
   },
   {
-    icon: '/Frame-22.png',
+    icon: '/Frame-22.webp',
     title: 'Salud',
     description: 'Cambios físicos, mentales o emocionales: diagnóstico médico, enfermedad crónica, discapacidad, infertilidad, pérdidas gestacionales o perinatales o deterioro cognitivo.',
   },
   {
-    icon: '/Frame-30.png',
+    icon: '/Frame-30.webp',
     title: 'Evolutivas',
     description: 'Transiciones propias del ciclo de vida: envejecimiento, jubilación, nido vacío, cierre de etapas, mudanzas significativas o cambio de país.',
   },
   {
-    icon: '/Frame-28.png',
+    icon: '/Frame-28.webp',
     title: 'Ambiguas',
     description: 'Pérdidas sin cierre claro o con reconocimiento social limitado: desapariciones, duelo migratorio, aborto, relaciones no visibles.',
   },
@@ -86,9 +86,9 @@ const process = [
 ]
 
 const sessionTypes = [
-  { icon: '/columpio.png', title: 'Terapia individual', description: 'Sesiones personalizadas a tu ritmo y necesidades, con apoyo emocional cercano.' },
-  { icon: '/corazon.png', title: 'Sesión grupal', description: 'Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.' },
-  { icon: '/adolecente hombre.png', title: 'Talleres para organizaciones', description: 'Programas de bienestar emocional diseñados a medida según los objetivos del grupo.' },
+  { icon: '/columpio.webp', title: 'Terapia individual', description: 'Sesiones personalizadas a tu ritmo y necesidades, con apoyo emocional cercano.' },
+  { icon: '/corazon.webp', title: 'Sesión grupal', description: 'Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.' },
+  { icon: '/adolecente hombre.webp', title: 'Talleres para organizaciones', description: 'Programas de bienestar emocional diseñados a medida según los objetivos del grupo.' },
 ]
 
 export default function TanatologiaPage() {
@@ -152,10 +152,11 @@ export default function TanatologiaPage() {
             </div>
             <div className="relative flex justify-center">
               <Image
-                src="/columpio.png"
+                src="/columpio.webp"
                 alt="Tanatología - Acompañamiento en duelo"
                 width={400}
                 height={400}
+                priority
                 className="w-full h-auto max-w-md"
               />
             </div>
@@ -192,7 +193,7 @@ export default function TanatologiaPage() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/2-2.jpg"
+                src="/2-2.webp"
                 alt="Sanar tras una pérdida"
                 width={600}
                 height={450}

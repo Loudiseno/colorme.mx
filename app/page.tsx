@@ -63,10 +63,11 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
-                      src="/lou-arteterapeuta-tanatologa-mexico.jpg"
+                      src="/lou-arteterapeuta-tanatologa-mexico.webp"
                       alt="Lou - Arteterapeuta y Tanatóloga certificada en México"
                       width={600}
                       height={450}
+                      priority
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -108,7 +109,7 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
-                  src="/arteterapia-sesion-creativa.jpg"
+                  src="/arteterapia-sesion-creativa.webp"
                   alt="Sesión de arteterapia - expresión creativa"
                   width={160}
                   height={160}
@@ -133,7 +134,7 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
-                  src="/tanatologia-acompanamiento-duelo.jpg"
+                  src="/tanatologia-acompanamiento-duelo.webp"
                   alt="Acompañamiento tanatológico en procesos de duelo"
                   width={160}
                   height={160}
@@ -165,7 +166,7 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/columpio.png"
+                  src="/columpio.webp"
                   alt="Terapia individual"
                   width={128}
                   height={128}
@@ -180,7 +181,7 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/corazon.png"
+                  src="/corazon.webp"
                   alt="Sesión grupal"
                   width={128}
                   height={128}
@@ -195,7 +196,7 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/adolecente hombre.png"
+                  src="/adolecente hombre.webp"
                   alt="Talleres para organizaciones"
                   width={128}
                   height={128}
@@ -228,7 +229,7 @@ export default function HomePage() {
             <div className="order-2 lg:order-1 bg-white p-8 md:p-12 flex items-center justify-center">
               <div className="max-w-sm mx-auto">
                 <Image
-                  src="/libro-indeleble-cancer-resiliencia.png"
+                  src="/libro-indeleble-cancer-resiliencia.webp"
                   alt="Indeleble - Libro sobre resiliencia y superación del cáncer por Lou"
                   width={400}
                   height={300}
@@ -280,21 +281,21 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto mt-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Image
-                src="/testimonio Sergio Morales.png"
+                src="/testimonio Sergio Morales.webp"
                 alt="Reseña de Sergio Morales - 5 estrellas"
                 width={600}
                 height={150}
                 className="w-full h-auto rounded-lg border border-black/10"
               />
               <Image
-                src="/testimonio dan.png"
+                src="/testimonio dan.webp"
                 alt="Reseña de Dan - 5 estrellas"
                 width={600}
                 height={150}
                 className="w-full h-auto rounded-lg border border-black/10"
               />
               <Image
-                src="/testimonio monica aristi.png"
+                src="/testimonio monica aristi.webp"
                 alt="Reseña de Monica Aristi - 5 estrellas"
                 width={600}
                 height={150}
@@ -323,7 +324,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/arteterapia.jpeg"
+                    src="/arteterapia.webp"
                     alt="¿Qué es la arteterapia?"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"
@@ -351,7 +352,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/cancer y arteterapia.jpeg"
+                    src="/cancer y arteterapia.webp"
                     alt="Arteterapia para pacientes con cáncer"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"
@@ -379,7 +380,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/el duelo.jpeg"
+                    src="/el duelo.webp"
                     alt="¿Qué es el duelo?"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"
