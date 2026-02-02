@@ -63,8 +63,8 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
-                      src="/Lou_circulo.jpg"
-                      alt="Lou - Arteterapeuta y Tanatóloga"
+                      src="/lou-arteterapeuta-tanatologa-mexico.jpg"
+                      alt="Lou - Arteterapeuta y Tanatóloga certificada en México"
                       width={600}
                       height={450}
                       className="w-full h-full object-cover"
@@ -108,8 +108,8 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
-                  src="/COLORME_logo-12-scaled.jpg"
-                  alt="Arteterapia"
+                  src="/arteterapia-sesion-creativa.jpg"
+                  alt="Sesión de arteterapia - expresión creativa"
                   width={160}
                   height={160}
                   className="object-contain"
@@ -133,8 +133,8 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
-                  src="/ojo-11-scaled.jpg"
-                  alt="Tanatología"
+                  src="/tanatologia-acompanamiento-duelo.jpg"
+                  alt="Acompañamiento tanatológico en procesos de duelo"
                   width={160}
                   height={160}
                   className="object-contain"
@@ -228,8 +228,8 @@ export default function HomePage() {
             <div className="order-2 lg:order-1 bg-white p-8 md:p-12 flex items-center justify-center">
               <div className="max-w-sm mx-auto">
                 <Image
-                  src="/indeleble.png"
-                  alt="Indeleble - Libro por Lou"
+                  src="/libro-indeleble-cancer-resiliencia.png"
+                  alt="Indeleble - Libro sobre resiliencia y superación del cáncer por Lou"
                   width={400}
                   height={300}
                   className="w-full h-auto"

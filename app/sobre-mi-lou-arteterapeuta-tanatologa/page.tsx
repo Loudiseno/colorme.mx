@@ -150,8 +150,8 @@ export default function SobreMi() {
             <div className="bg-white p-8 md:p-10 flex items-center justify-center">
               <div className="max-w-sm mx-auto">
                 <Image
-                  src="/indeleble.png"
-                  alt="Indeleble - Libro por Lou"
+                  src="/libro-indeleble-cancer-resiliencia.png"
+                  alt="Indeleble - Libro sobre resiliencia y superación del cáncer por Lou"
                   width={400}
                   height={300}
                   className="w-full h-auto"

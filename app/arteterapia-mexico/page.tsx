@@ -139,8 +139,8 @@ export default function ArteterapiaPage() {
             </div>
             <div className="relative flex justify-center">
               <Image
-                src="/COLORME_logo-12-scaled.jpg"
-                alt="Arteterapia - Exploración a través del arte"
+                src="/arteterapia-sesion-creativa.jpg"
+                alt="Sesión de arteterapia - expresión creativa"
                 width={400}
                 height={400}
                 className="w-full h-auto max-w-md"
