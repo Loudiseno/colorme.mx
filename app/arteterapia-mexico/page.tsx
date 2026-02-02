@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     'arteterapia para ansiedad',
   ],
   alternates: {
-    canonical: '/arteterapia',
+    canonical: '/arteterapia-mexico',
   },
   openGraph: {
     title: 'Arteterapia en México - Exploración a través del Arte',
     description:
       'Explora y procesa emociones a través del arte. Sesiones de arteterapia individuales y grupales.',
-    url: `${siteConfig.url}/arteterapia`,
+    url: `${siteConfig.url}/arteterapia-mexico`,
   },
 }
 
@@ -47,32 +47,32 @@ const benefits = [
 
 const helpsWith = [
   {
-    icon: '/Frame-21.png',
+    icon: '/Frame-21.webp',
     title: 'Duelo',
     description: 'Creamos un espacio seguro para procesar la ausencia, expresar el dolor y transitar las emociones de la pérdida.'
   },
   {
-    icon: '/Frame-23-1.png',
+    icon: '/Frame-23-1.webp',
     title: 'Autoconocimiento',
     description: 'Exploramos tus emociones, patrones y creencias para reconectar contigo mismo y fortalecer tu bienestar interior.'
   },
   {
-    icon: '/Frame-20-1.png',
+    icon: '/Frame-20-1.webp',
     title: 'Cambios y transiciones de vida',
     description: 'Te acompaño a adaptarte al cambio y encontrar nuevas formas de avanzar.'
   },
   {
-    icon: '/Frame-24-1.png',
+    icon: '/Frame-24-1.webp',
     title: 'Enfermedades y diagnósticos',
     description: 'Abordamos el impacto del diagnóstico, los tratamientos y la incertidumbre validando cada emoción para procesar el dolor y recuperar tu sentido de control.'
   },
   {
-    icon: '/Frame-22.png',
+    icon: '/Frame-22.webp',
     title: 'Ansiedad y estrés',
     description: 'Liberamos la tensión acumulada y recuperamos la calma a través de la reconexión creativa y la regulación emocional.'
   },
   {
-    icon: '/Frame-29.png',
+    icon: '/Frame-29.webp',
     title: 'Autoestima',
     description: 'Un proceso para volver a ti: recupera tu centro, reconoce tu valor y reconecta con la confianza para habitar tu propia vida.'
   },
@@ -83,12 +83,12 @@ export default function ArteterapiaPage() {
     name: 'Arteterapia',
     description:
       'Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones. Sesiones individuales y grupales.',
-    url: `${siteConfig.url}/arteterapia`,
+    url: `${siteConfig.url}/arteterapia-mexico`,
   })
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Inicio', url: siteConfig.url },
-    { name: 'Arteterapia', url: `${siteConfig.url}/arteterapia` },
+    { name: 'Arteterapia', url: `${siteConfig.url}/arteterapia-mexico` },
   ])
 
   return (
@@ -111,10 +111,13 @@ export default function ArteterapiaPage() {
             <div>
               <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
                 <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-                <h1 className="text-5xl md:text-6xl text-black relative z-10">
+                <span className="text-5xl md:text-6xl text-black relative z-10">
                   Arteterapia
-                </h1>
+                </span>
               </div>
+              <h1 className="text-lg text-black leading-relaxed mb-6">
+                <strong>Expresa y Transforma tus Emociones a través del Arte</strong>
+              </h1>
               <div className="space-y-4 text-lg text-black/70 leading-relaxed">
                 <p>
                   Acompañamiento emocional que utiliza el proceso creativo para explorar, expresar y transformar aquello que las palabras no alcanzan.
@@ -139,10 +142,11 @@ export default function ArteterapiaPage() {
             </div>
             <div className="relative flex justify-center">
               <Image
-                src="/COLORME_logo-12-scaled.jpg"
-                alt="Arteterapia - Exploración a través del arte"
+                src="/arteterapia-sesion-creativa.webp"
+                alt="Sesión de arteterapia - expresión creativa"
                 width={400}
                 height={400}
+                priority
                 className="w-full h-auto max-w-md"
               />
             </div>
@@ -164,7 +168,7 @@ export default function ArteterapiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              ¿En qué puede ayudarte?
+              ¿En qué situaciones puede ayudarte la Arteterapia?
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -193,7 +197,7 @@ export default function ArteterapiaPage() {
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
-            Beneficios de la arteterapia
+            Beneficios de la Arteterapia
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {benefits.map((benefit, index) => (
@@ -212,7 +216,7 @@ export default function ArteterapiaPage() {
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
-            ¿Cómo funcionan las sesiones?
+            ¿Qué sucede durante una sesión de Arteterapia?
           </h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">

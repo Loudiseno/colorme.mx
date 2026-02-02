@@ -30,10 +30,11 @@ export default function ArticuloArteterapia() {
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/arteterapia.jpeg"
+            src="/arteterapia.webp"
             alt="Manos de niño con pintura de colores - Arteterapia"
             width={1200}
             height={675}
+            priority
             className="w-full h-auto"
           />
         </div>

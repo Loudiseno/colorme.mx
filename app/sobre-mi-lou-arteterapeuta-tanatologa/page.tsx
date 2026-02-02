@@ -29,10 +29,11 @@ export default function SobreMi() {
             <div className="order-1 md:order-2">
               <div className="bg-white rounded-3xl p-6 border border-[#B2F7EF]">
                 <Image
-                  src="/Lou_hobbies.jpg"
+                  src="/Lou_hobbies.webp"
                   alt="Lou - Arteterapeuta, Tanatóloga, Artista, Fotógrafa, Diseñadora, Viajera y más"
                   width={500}
                   height={488}
+                  priority
                   className="w-full h-auto rounded-2xl"
                 />
               </div>
@@ -150,8 +151,8 @@ export default function SobreMi() {
             <div className="bg-white p-8 md:p-10 flex items-center justify-center">
               <div className="max-w-sm mx-auto">
                 <Image
-                  src="/indeleble.png"
-                  alt="Indeleble - Libro por Lou"
+                  src="/libro-indeleble-cancer-resiliencia.webp"
+                  alt="Indeleble - Libro sobre resiliencia y superación del cáncer por Lou"
                   width={400}
                   height={300}
                   className="w-full h-auto"

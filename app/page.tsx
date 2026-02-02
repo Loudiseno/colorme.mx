@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
 import Image from 'next/image'
@@ -6,6 +7,14 @@ import { siteConfig, generateBookSchema } from '@/lib/seo'
 import FAQ from '@/components/FAQ'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
+
+export const metadata: Metadata = {
+  title: 'Arteterapia y Tanatología | Acompañamiento Emocional | ColorMe',
+  description: 'Acompañamiento emocional con arteterapia y tanatología para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
+  alternates: {
+    canonical: '/',
+  },
+}
 
 export default function HomePage() {
   return (
@@ -26,7 +35,7 @@ export default function HomePage() {
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
-                Arteterapia y Tanatología
+                Arteterapia y Tanatología: Acompañamiento Profesional en Duelo y Transformación Personal
               </h1>
               <p className="text-lg md:text-xl text-black/60 tracking-widest mb-6">
                 CREA.SIENTE.TRANSFORMA
@@ -54,10 +63,11 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
-                      src="/Lou_circulo.jpg"
-                      alt="Lou - Arteterapeuta y Tanatóloga"
+                      src="/lou-arteterapeuta-tanatologa-mexico.webp"
+                      alt="Lou - Arteterapeuta y Tanatóloga certificada en México"
                       width={600}
                       height={450}
+                      priority
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -99,21 +109,21 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
-                  src="/COLORME_logo-12-scaled.jpg"
-                  alt="Arteterapia"
+                  src="/arteterapia-sesion-creativa.webp"
+                  alt="Sesión de arteterapia - expresión creativa"
                   width={160}
                   height={160}
                   className="object-contain"
                 />
               </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
-                Arteterapia
+                ¿Qué es la Arteterapia?
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
                 Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones, sin buscar resultados estéticos ni requerir experiencia artística.
               </p>
               <Link
-                href="/arteterapia"
+                href="/arteterapia-mexico"
                 className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
               >
                 Ver más
@@ -124,21 +134,21 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
-                  src="/ojo-11-scaled.jpg"
-                  alt="Tanatología"
+                  src="/tanatologia-acompanamiento-duelo.webp"
+                  alt="Acompañamiento tanatológico en procesos de duelo"
                   width={160}
                   height={160}
                   className="object-contain"
                 />
               </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
-                Tanatología
+                Acompañamiento Tanatológico
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
                 Acompañamiento en procesos de duelo y pérdida en un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido.
               </p>
               <Link
-                href="/tanatologia"
+                href="/tanatologia-acompanamiento-duelo"
                 className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
               >
                 Ver más
@@ -151,11 +161,12 @@ export default function HomePage() {
       {/* Session Types */}
       <section className="py-10 md:py-12 bg-white">
         <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl text-black mb-10 text-center">Servicios</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/columpio.png"
+                  src="/columpio.webp"
                   alt="Terapia individual"
                   width={128}
                   height={128}
@@ -170,7 +181,7 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/corazon.png"
+                  src="/corazon.webp"
                   alt="Sesión grupal"
                   width={128}
                   height={128}
@@ -185,7 +196,7 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/adolecente hombre.png"
+                  src="/adolecente hombre.webp"
                   alt="Talleres para organizaciones"
                   width={128}
                   height={128}
@@ -218,8 +229,8 @@ export default function HomePage() {
             <div className="order-2 lg:order-1 bg-white p-8 md:p-12 flex items-center justify-center">
               <div className="max-w-sm mx-auto">
                 <Image
-                  src="/indeleble.png"
-                  alt="Indeleble - Libro por Lou"
+                  src="/libro-indeleble-cancer-resiliencia.webp"
+                  alt="Indeleble - Libro sobre resiliencia y superación del cáncer por Lou"
                   width={400}
                   height={300}
                   className="w-full h-auto"
@@ -270,21 +281,21 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto mt-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Image
-                src="/testimonio Sergio Morales.png"
+                src="/testimonio Sergio Morales.webp"
                 alt="Reseña de Sergio Morales - 5 estrellas"
                 width={600}
                 height={150}
                 className="w-full h-auto rounded-lg border border-black/10"
               />
               <Image
-                src="/testimonio dan.png"
+                src="/testimonio dan.webp"
                 alt="Reseña de Dan - 5 estrellas"
                 width={600}
                 height={150}
                 className="w-full h-auto rounded-lg border border-black/10"
               />
               <Image
-                src="/testimonio monica aristi.png"
+                src="/testimonio monica aristi.webp"
                 alt="Reseña de Monica Aristi - 5 estrellas"
                 width={600}
                 height={150}
@@ -309,11 +320,11 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Article 1 */}
-            <Link href="/blog/que-es-arteterapia" className="group">
+            <Link href="/blog/que-es-la-arteterapia-beneficios" className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/arteterapia.jpeg"
+                    src="/arteterapia.webp"
                     alt="¿Qué es la arteterapia?"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"
@@ -341,7 +352,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/cancer y arteterapia.jpeg"
+                    src="/cancer y arteterapia.webp"
                     alt="Arteterapia para pacientes con cáncer"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"
@@ -369,7 +380,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/el duelo.jpeg"
+                    src="/el duelo.webp"
                     alt="¿Qué es el duelo?"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"

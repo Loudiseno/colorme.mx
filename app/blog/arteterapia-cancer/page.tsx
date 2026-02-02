@@ -30,10 +30,11 @@ export default function ArticuloArteterapiaCancer() {
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/cancer y arteterapia.jpeg"
+            src="/cancer y arteterapia.webp"
             alt="Grupo de arteterapia trabajando juntos"
             width={1200}
             height={675}
+            priority
             className="w-full h-auto"
           />
         </div>

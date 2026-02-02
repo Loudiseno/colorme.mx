@@ -23,44 +23,44 @@ export const metadata: Metadata = {
     'acompañamiento tanatológico',
   ],
   alternates: {
-    canonical: '/tanatologia',
+    canonical: '/tanatologia-acompanamiento-duelo',
   },
   openGraph: {
     title: 'Tanatología en México - Acompañamiento en Duelo',
     description:
       'Acompañamiento profesional y compasivo para procesos de duelo y pérdida. Sesiones presenciales y online.',
-    url: `${siteConfig.url}/tanatologia`,
+    url: `${siteConfig.url}/tanatologia-acompanamiento-duelo`,
   },
 }
 
 const typesOfLoss = [
   {
-    icon: '/Frame-21-2.png',
+    icon: '/Frame-21-2.webp',
     title: 'Relacionales',
     description: 'Pérdida de vínculos significativos: muerte de un ser querido, muerte de una mascota, ruptura de pareja, divorcio o distanciamiento familiar.',
   },
   {
-    icon: '/Frame-23-1.png',
+    icon: '/Frame-23-1.webp',
     title: 'Intrapersonales',
     description: 'Pérdida de identidad, sentido o propósito: crisis existencial, cambio de carrera o rol, sensación de fracaso, pérdida de proyectos o sueños.',
   },
   {
-    icon: '/Frame-29.png',
+    icon: '/Frame-29.webp',
     title: 'Materiales',
     description: 'Pérdida de bienes o estabilidad: dificultades económicas, pérdida de empleo, pérdida del hogar u objetos con valor emocional.',
   },
   {
-    icon: '/Frame-22.png',
+    icon: '/Frame-22.webp',
     title: 'Salud',
     description: 'Cambios físicos, mentales o emocionales: diagnóstico médico, enfermedad crónica, discapacidad, infertilidad, pérdidas gestacionales o perinatales o deterioro cognitivo.',
   },
   {
-    icon: '/Frame-30.png',
+    icon: '/Frame-30.webp',
     title: 'Evolutivas',
     description: 'Transiciones propias del ciclo de vida: envejecimiento, jubilación, nido vacío, cierre de etapas, mudanzas significativas o cambio de país.',
   },
   {
-    icon: '/Frame-28.png',
+    icon: '/Frame-28.webp',
     title: 'Ambiguas',
     description: 'Pérdidas sin cierre claro o con reconocimiento social limitado: desapariciones, duelo migratorio, aborto, relaciones no visibles.',
   },
@@ -86,9 +86,9 @@ const process = [
 ]
 
 const sessionTypes = [
-  { icon: '/columpio.png', title: 'Terapia individual', description: 'Sesiones personalizadas a tu ritmo y necesidades, con apoyo emocional cercano.' },
-  { icon: '/corazon.png', title: 'Sesión grupal', description: 'Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.' },
-  { icon: '/adolecente hombre.png', title: 'Talleres para organizaciones', description: 'Programas de bienestar emocional diseñados a medida según los objetivos del grupo.' },
+  { icon: '/columpio.webp', title: 'Terapia individual', description: 'Sesiones personalizadas a tu ritmo y necesidades, con apoyo emocional cercano.' },
+  { icon: '/corazon.webp', title: 'Sesión grupal', description: 'Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.' },
+  { icon: '/adolecente hombre.webp', title: 'Talleres para organizaciones', description: 'Programas de bienestar emocional diseñados a medida según los objetivos del grupo.' },
 ]
 
 export default function TanatologiaPage() {
@@ -96,12 +96,12 @@ export default function TanatologiaPage() {
     name: 'Tanatología',
     description:
       'Acompañamiento profesional para procesos de pérdida, cambio y duelo, ayudando a resignificar lo vivido desde un enfoque humano y compasivo.',
-    url: `${siteConfig.url}/tanatologia`,
+    url: `${siteConfig.url}/tanatologia-acompanamiento-duelo`,
   })
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Inicio', url: siteConfig.url },
-    { name: 'Tanatología', url: `${siteConfig.url}/tanatologia` },
+    { name: 'Tanatología', url: `${siteConfig.url}/tanatologia-acompanamiento-duelo` },
   ])
 
   return (
@@ -124,10 +124,13 @@ export default function TanatologiaPage() {
             <div>
               <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
                 <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-                <h1 className="text-5xl md:text-6xl text-black relative z-10">
+                <span className="text-5xl md:text-6xl text-black relative z-10">
                   Tanatología
-                </h1>
+                </span>
               </div>
+              <h1 className="text-lg text-black leading-relaxed mb-6">
+                <strong>Acompañamiento Profesional en Procesos de Duelo y Pérdida</strong>
+              </h1>
               <div className="space-y-4 text-lg text-black/70 leading-relaxed mb-6">
                 <p>
                   Acompañamiento emocional en procesos de pérdida, duelo y final de vida.
@@ -152,10 +155,11 @@ export default function TanatologiaPage() {
             </div>
             <div className="relative flex justify-center">
               <Image
-                src="/columpio.png"
+                src="/columpio.webp"
                 alt="Tanatología - Acompañamiento en duelo"
                 width={400}
                 height={400}
+                priority
                 className="w-full h-auto max-w-md"
               />
             </div>
@@ -176,7 +180,7 @@ export default function TanatologiaPage() {
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
-            Sanar tras una pérdida
+            ¿Qué es la Tanatología?
           </h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-4 text-lg text-black/70 leading-relaxed">
@@ -192,7 +196,7 @@ export default function TanatologiaPage() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/2-2.jpg"
+                src="/2-2.webp"
                 alt="Sanar tras una pérdida"
                 width={600}
                 height={450}
@@ -208,7 +212,7 @@ export default function TanatologiaPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              Tipos de pérdidas que acompaño
+              Tipos de duelo en los que puedo acompañarte
             </h2>
             <p className="text-black/70 max-w-2xl mx-auto">
               El duelo no surge únicamente ante la muerte. Existen múltiples formas de pérdida que impactan la vida emocional y que merecen ser reconocidas y acompañadas.
@@ -297,7 +301,7 @@ export default function TanatologiaPage() {
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
-            ¿Cómo es el proceso de acompañamiento?
+            ¿Cómo es mi proceso de acompañamiento en sesión?
           </h2>
           <div className="space-y-6">
             {process.map((item, index) => (
@@ -355,7 +359,7 @@ export default function TanatologiaPage() {
           </div>
           <div className="mt-6">
             <Link
-              href="/arteterapia"
+              href="/arteterapia-mexico"
               className="text-black hover:text-black/70 transition-colors font-medium inline-flex items-center gap-2"
             >
               Conoce más sobre arteterapia
