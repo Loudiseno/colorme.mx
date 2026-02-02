@@ -23,13 +23,13 @@ export const metadata: Metadata = {
     'acompañamiento tanatológico',
   ],
   alternates: {
-    canonical: '/tanatologia',
+    canonical: '/tanatologia-acompanamiento-duelo',
   },
   openGraph: {
     title: 'Tanatología en México - Acompañamiento en Duelo',
     description:
       'Acompañamiento profesional y compasivo para procesos de duelo y pérdida. Sesiones presenciales y online.',
-    url: `${siteConfig.url}/tanatologia`,
+    url: `${siteConfig.url}/tanatologia-acompanamiento-duelo`,
   },
 }
 
@@ -96,12 +96,12 @@ export default function TanatologiaPage() {
     name: 'Tanatología',
     description:
       'Acompañamiento profesional para procesos de pérdida, cambio y duelo, ayudando a resignificar lo vivido desde un enfoque humano y compasivo.',
-    url: `${siteConfig.url}/tanatologia`,
+    url: `${siteConfig.url}/tanatologia-acompanamiento-duelo`,
   })
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Inicio', url: siteConfig.url },
-    { name: 'Tanatología', url: `${siteConfig.url}/tanatologia` },
+    { name: 'Tanatología', url: `${siteConfig.url}/tanatologia-acompanamiento-duelo` },
   ])
 
   return (
@@ -125,7 +125,7 @@ export default function TanatologiaPage() {
               <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
                 <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
                 <h1 className="text-5xl md:text-6xl text-black relative z-10">
-                  Tanatología
+                  Tanatología: Acompañamiento Profesional en Procesos de Duelo y Pérdida
                 </h1>
               </div>
               <div className="space-y-4 text-lg text-black/70 leading-relaxed mb-6">
@@ -176,7 +176,7 @@ export default function TanatologiaPage() {
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
-            Sanar tras una pérdida
+            ¿Qué es la Tanatología?
           </h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-4 text-lg text-black/70 leading-relaxed">
@@ -208,7 +208,7 @@ export default function TanatologiaPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              Tipos de pérdidas que acompaño
+              Tipos de duelo que atendemos
             </h2>
             <p className="text-black/70 max-w-2xl mx-auto">
               El duelo no surge únicamente ante la muerte. Existen múltiples formas de pérdida que impactan la vida emocional y que merecen ser reconocidas y acompañadas.
@@ -297,7 +297,7 @@ export default function TanatologiaPage() {
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
-            ¿Cómo es el proceso de acompañamiento?
+            El proceso de acompañamiento
           </h2>
           <div className="space-y-6">
             {process.map((item, index) => (
@@ -355,7 +355,7 @@ export default function TanatologiaPage() {
           </div>
           <div className="mt-6">
             <Link
-              href="/arteterapia"
+              href="/arteterapia-mexico"
               className="text-black hover:text-black/70 transition-colors font-medium inline-flex items-center gap-2"
             >
               Conoce más sobre arteterapia

@@ -35,7 +35,7 @@ export default function HomePage() {
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
-                Arteterapia y Tanatología
+                Arteterapia y Tanatología: Acompañamiento Profesional en Duelo y Transformación Personal
               </h1>
               <p className="text-lg md:text-xl text-black/60 tracking-widest mb-6">
                 CREA.SIENTE.TRANSFORMA
@@ -116,13 +116,13 @@ export default function HomePage() {
                 />
               </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
-                Arteterapia
+                ¿Qué es la Arteterapia?
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
                 Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones, sin buscar resultados estéticos ni requerir experiencia artística.
               </p>
               <Link
-                href="/arteterapia"
+                href="/arteterapia-mexico"
                 className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
               >
                 Ver más
@@ -141,13 +141,13 @@ export default function HomePage() {
                 />
               </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
-                Tanatología
+                Acompañamiento Tanatológico
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
                 Acompañamiento en procesos de duelo y pérdida en un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido.
               </p>
               <Link
-                href="/tanatologia"
+                href="/tanatologia-acompanamiento-duelo"
                 className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
               >
                 Ver más
@@ -160,6 +160,7 @@ export default function HomePage() {
       {/* Session Types */}
       <section className="py-10 md:py-12 bg-white">
         <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl text-black mb-10 text-center">Servicios</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
@@ -318,7 +319,7 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Article 1 */}
-            <Link href="/blog/que-es-arteterapia" className="group">
+            <Link href="/blog/que-es-la-arteterapia-beneficios" className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image

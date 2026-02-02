@@ -11,9 +11,9 @@ import { siteConfig } from '@/lib/seo'
 import ScrollToTop from './ScrollToTop'
 
 const navigation = [
-  { name: 'Arteterapia', href: '/arteterapia' },
-  { name: 'Tanatología', href: '/tanatologia' },
-  { name: 'Sobre mí', href: '/sobre-mi' },
+  { name: 'Arteterapia', href: '/arteterapia-mexico' },
+  { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
+  { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Política de privacidad', href: '/politica-de-privacidad' },
 ]

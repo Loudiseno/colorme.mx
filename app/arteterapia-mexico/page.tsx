@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     'arteterapia para ansiedad',
   ],
   alternates: {
-    canonical: '/arteterapia',
+    canonical: '/arteterapia-mexico',
   },
   openGraph: {
     title: 'Arteterapia en México - Exploración a través del Arte',
     description:
       'Explora y procesa emociones a través del arte. Sesiones de arteterapia individuales y grupales.',
-    url: `${siteConfig.url}/arteterapia`,
+    url: `${siteConfig.url}/arteterapia-mexico`,
   },
 }
 
@@ -83,12 +83,12 @@ export default function ArteterapiaPage() {
     name: 'Arteterapia',
     description:
       'Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones. Sesiones individuales y grupales.',
-    url: `${siteConfig.url}/arteterapia`,
+    url: `${siteConfig.url}/arteterapia-mexico`,
   })
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Inicio', url: siteConfig.url },
-    { name: 'Arteterapia', url: `${siteConfig.url}/arteterapia` },
+    { name: 'Arteterapia', url: `${siteConfig.url}/arteterapia-mexico` },
   ])
 
   return (
@@ -112,7 +112,7 @@ export default function ArteterapiaPage() {
               <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
                 <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
                 <h1 className="text-5xl md:text-6xl text-black relative z-10">
-                  Arteterapia
+                  Arteterapia en México: Expresa y Transforma tus Emociones a través del Arte
                 </h1>
               </div>
               <div className="space-y-4 text-lg text-black/70 leading-relaxed">
@@ -164,7 +164,7 @@ export default function ArteterapiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              ¿En qué puede ayudarte?
+              ¿Para quién es?
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -193,7 +193,7 @@ export default function ArteterapiaPage() {
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
-            Beneficios de la arteterapia
+            Beneficios de la Arteterapia
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {benefits.map((benefit, index) => (
@@ -212,7 +212,7 @@ export default function ArteterapiaPage() {
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
-            ¿Cómo funcionan las sesiones?
+            Proceso de una sesión
           </h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">

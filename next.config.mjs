@@ -15,6 +15,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      { source: '/arteterapia', destination: '/arteterapia-mexico', permanent: true },
+      { source: '/tanatologia', destination: '/tanatologia-acompanamiento-duelo', permanent: true },
+      { source: '/blog/que-es-arteterapia', destination: '/blog/que-es-la-arteterapia-beneficios', permanent: true },
+      { source: '/sobre-mi', destination: '/sobre-mi-lou-arteterapeuta-tanatologa', permanent: true },
+      { source: '/privacidad', destination: '/politica-de-privacidad', permanent: true },
+    ]
+  },
 }
 
 export default nextConfig

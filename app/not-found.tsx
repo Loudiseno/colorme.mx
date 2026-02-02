@@ -20,7 +20,7 @@ export default function NotFound() {
             Volver al inicio
           </Link>
           <Link
-            href="/arteterapia"
+            href="/arteterapia-mexico"
             className="inline-block border border-black/20 text-black px-8 py-3 rounded-full font-medium hover:bg-black/5 transition-colors"
           >
             Conocer Arteterapia

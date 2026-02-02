@@ -12,19 +12,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/arteterapia`,
+      url: `${baseUrl}/arteterapia-mexico`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/tanatologia`,
+      url: `${baseUrl}/tanatologia-acompanamiento-duelo`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/sobre-mi`,
+      url: `${baseUrl}/sobre-mi-lou-arteterapeuta-tanatologa`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
@@ -36,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/que-es-arteterapia`,
+      url: `${baseUrl}/blog/que-es-la-arteterapia-beneficios`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
