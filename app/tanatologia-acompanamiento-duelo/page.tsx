@@ -215,7 +215,7 @@ export default function TanatologiaPage() {
               Tipos de duelo en los que puedo acompañarte
             </h2>
             <p className="text-black/70 max-w-2xl mx-auto">
-              El duelo no surge únicamente ante la muerte. Existen múltiples formas de pérdida que impactan la vida emocional y que merecen ser reconocidas y acompañadas.
+              El duelo no ocurre únicamente ante la muerte. Existen múltiples formas de pérdida que impactan la vida emocional, las cuales requieren reconocimiento y acompañamiento.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
