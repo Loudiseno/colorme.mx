@@ -403,6 +403,14 @@ export default function HomePage() {
               </article>
             </Link>
           </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/blog"
+              className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
+            >
+              Ver todos los artículos
+            </Link>
+          </div>
         </div>
       </section>
 
