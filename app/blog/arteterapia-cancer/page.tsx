@@ -11,7 +11,7 @@ export default function ArticuloArteterapiaCancer() {
       <div className="max-w-3xl mx-auto px-6">
         {/* Back link */}
         <Link
-          href="/#blog"
+          href="/blog"
           className="inline-flex items-center gap-2 text-black hover:text-black/70 transition-colors mb-8"
         >
           <ArrowLeft size={18} />

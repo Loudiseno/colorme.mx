@@ -35,7 +35,7 @@ export default function HomePage() {
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
-                Arteterapia y Tanatología: Acompañamiento Profesional en Duelo y Transformación Personal
+                Arteterapia y Tanatología
               </h1>
               <p className="text-lg md:text-xl text-black/60 tracking-widest mb-6">
                 CREA.SIENTE.TRANSFORMA
@@ -401,6 +401,14 @@ export default function HomePage() {
                   </span>
                 </div>
               </article>
+            </Link>
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/blog"
+              className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
+            >
+              Ver todos los artículos
             </Link>
           </div>
         </div>

@@ -111,13 +111,13 @@ export default function ArteterapiaPage() {
             <div>
               <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
                 <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-                <span className="text-5xl md:text-6xl text-black relative z-10">
+                <h1 className="text-4xl md:text-5xl text-black relative z-10">
                   Arteterapia
-                </span>
+                </h1>
               </div>
-              <h1 className="text-lg text-black leading-relaxed mb-6">
-                <strong>Expresa y Transforma tus Emociones a través del Arte</strong>
-              </h1>
+              <p className="text-lg text-black leading-relaxed mb-4">
+                <strong>Expresa y transforma tus emociones a través del arte</strong>
+              </p>
               <div className="space-y-4 text-lg text-black/70 leading-relaxed">
                 <p>
                   Acompañamiento emocional que utiliza el proceso creativo para explorar, expresar y transformar aquello que las palabras no alcanzan.
