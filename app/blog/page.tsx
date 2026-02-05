@@ -27,6 +27,14 @@ const articles = [
     description: 'Guía para entender y atravesar el proceso de pérdida.',
     alt: '¿Qué es el duelo?',
   },
+  {
+    slug: '/blog/duelo-por-enfermedad-o-diagnostico',
+    image: '/hombre en duelo.webp',
+    category: 'Tanatología',
+    title: 'Duelo por enfermedad o diagnóstico',
+    description: 'Cuando el cuerpo cambia las reglas: cómo navegar el duelo por un diagnóstico médico.',
+    alt: 'Hombre atravesando un proceso de duelo por enfermedad',
+  },
 ]
 
 export default function BlogPage() {
