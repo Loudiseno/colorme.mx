@@ -35,6 +35,14 @@ const articles = [
     description: 'Cuando el cuerpo cambia las reglas: cómo navegar el duelo por un diagnóstico médico.',
     alt: 'Hombre atravesando un proceso de duelo por enfermedad',
   },
+  {
+    slug: '/blog/que-es-un-tanatologo',
+    image: '/que-es-un-tanatologo.webp',
+    category: 'Tanatología',
+    title: '¿Qué es un Tanatólogo?',
+    description: 'Descubre qué es un tanatólogo, sus funciones, beneficios y cuándo consultar a este profesional especializado en duelo.',
+    alt: 'Qué es un tanatólogo - Acompañamiento profesional en el duelo',
+  },
 ]
 
 export default function BlogPage() {
