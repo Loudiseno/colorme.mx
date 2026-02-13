@@ -43,6 +43,38 @@ const articles = [
     description: 'Descubre qué es un tanatólogo, sus funciones, beneficios y cuándo consultar a este profesional especializado en duelo.',
     alt: 'Qué es un tanatólogo - Acompañamiento profesional en el duelo',
   },
+  {
+    slug: '/blog/arteterapia-para-ninos',
+    image: '/arteterapia-ninos.webp',
+    category: 'Arteterapia',
+    title: 'Arteterapia para Niños: Guía por Edades',
+    description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad, de 3 a 12 años.',
+    alt: 'Arteterapia para niños - Expresión emocional a través del arte',
+  },
+  {
+    slug: '/blog/como-superar-la-perdida-de-un-ser-querido',
+    image: '/superar-perdida-ser-querido.webp',
+    category: 'Tanatología',
+    title: 'Cómo Superar la Pérdida de un Ser Querido',
+    description: '12 claves prácticas para atravesar el duelo y encontrar momentos de paz.',
+    alt: 'Cómo superar la pérdida de un ser querido - Acompañamiento en el duelo',
+  },
+  {
+    slug: '/blog/duelo-por-mascota',
+    image: '/duelo-por-mascota.webp',
+    category: 'Tanatología',
+    title: 'Duelo por Mascota: Tu Dolor es Válido',
+    description: 'El duelo por mascota es real y merece ser honrado. Descubre cómo atravesar esta pérdida.',
+    alt: 'Duelo por mascota - Tu dolor es válido',
+  },
+  {
+    slug: '/blog/arteterapia-para-la-ansiedad',
+    image: '/arteterapia-ansiedad.webp',
+    category: 'Arteterapia',
+    title: 'Arteterapia para la Ansiedad',
+    description: 'Cómo el arte puede ayudarte a manejar la ansiedad cuando las palabras no alcanzan.',
+    alt: 'Arteterapia para la ansiedad - Expresión a través del arte',
+  },
 ]
 
 export default function BlogPage() {
