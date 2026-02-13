@@ -22,7 +22,7 @@ export default function ArticuloArteterapia() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            ¿Qué es la Arteterapia? Guía para Entender la Terapia a Través del Arte
+            ¿Qué es la arteterapia? Guía para entender la terapia a través del arte
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>

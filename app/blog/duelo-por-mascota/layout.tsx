@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Duelo por Mascota: Por Qué Tu Dolor es Real y Cómo Atravesarlo | ColorMe',
+  title: 'Duelo por mascota: por qué tu dolor es real y cómo atravesarlo | ColorMe',
   description: 'El duelo por mascota es válido y real. Descubre cómo atravesar la pérdida de tu compañero animal, manejar la culpa y honrar su memoria.',
   keywords: ['duelo por mascota', 'muerte mascota', 'perder mascota', 'duelo perro', 'duelo gato', 'eutanasia mascota', 'superar pérdida mascota'],
   alternates: {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'article',
-    title: 'Duelo por Mascota: Por Qué Tu Dolor es Real y Cómo Atravesarlo | ColorMe',
+    title: 'Duelo por mascota: por qué tu dolor es real y cómo atravesarlo | ColorMe',
     description: 'El duelo por mascota es válido y real. Descubre cómo atravesar esta pérdida.',
     url: '/blog/duelo-por-mascota',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Duelo por Mascota: Por Qué Tu Dolor es Real y Cómo Atravesarlo',
+  headline: 'Duelo por mascota: por qué tu dolor es real y cómo atravesarlo',
   description: 'El duelo por mascota es válido y real. Descubre cómo atravesar la pérdida de tu compañero animal, manejar la culpa y honrar su memoria.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },

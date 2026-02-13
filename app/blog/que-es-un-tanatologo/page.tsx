@@ -22,7 +22,7 @@ export default function ArticuloQueEsUnTanatologo() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            ¿Qué es un Tanatólogo? Funciones, Beneficios y Cuándo Consultar
+            ¿Qué es un tanatólogo? Funciones, beneficios y cuándo consultar
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>

@@ -22,7 +22,7 @@ export default function ArticuloSuperarPerdida() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Cómo Superar la Pérdida de un Ser Querido: 12 Claves Prácticas
+            Cómo superar la pérdida de un ser querido: 12 claves prácticas
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>

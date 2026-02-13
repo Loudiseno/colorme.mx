@@ -22,7 +22,7 @@ export default function ArticuloDueloMascota() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Duelo por Mascota: Por Qué Tu Dolor es Real y Cómo Atravesarlo
+            Duelo por mascota: por qué tu dolor es real y cómo atravesarlo
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>

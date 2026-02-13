@@ -22,7 +22,7 @@ export default function ArticuloArteterapiaNinos() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">ARTETERAPIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Arteterapia para Niños: Guía por Edades de 3 a 12 Años
+            Arteterapia para niños: guía por edades de 3 a 12 años
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>

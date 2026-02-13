@@ -22,7 +22,7 @@ export default function ArticuloArteterapiaCancer() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Arteterapia para Pacientes con Cáncer: Cómo el Arte Puede Acompañarte Durante el Tratamiento
+            Arteterapia para pacientes con cáncer: cómo el arte puede acompañarte durante el tratamiento
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta, Tanatóloga y Sobreviviente de Cáncer</p>
         </header>

@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Cómo Superar la Pérdida de un Ser Querido: 12 Claves Prácticas | ColorMe',
+  title: 'Cómo superar la pérdida de un ser querido: 12 claves prácticas | ColorMe',
   description: 'Guía práctica para atravesar el duelo por la muerte de un ser querido. 12 claves que te ayudarán a transitar el dolor y encontrar momentos de paz.',
   keywords: ['superar pérdida', 'duelo ser querido', 'muerte familiar', 'proceso de duelo', 'cómo superar la muerte', 'etapas del duelo', 'acompañamiento duelo'],
   alternates: {
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'article',
-    title: 'Cómo Superar la Pérdida de un Ser Querido: 12 Claves Prácticas | ColorMe',
+    title: 'Cómo superar la pérdida de un ser querido: 12 claves prácticas | ColorMe',
     description: 'Guía práctica para atravesar el duelo por la muerte de un ser querido.',
     url: '/blog/como-superar-la-perdida-de-un-ser-querido',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Cómo Superar la Pérdida de un Ser Querido: 12 Claves Prácticas',
+  headline: 'Cómo superar la pérdida de un ser querido: 12 claves prácticas',
   description: 'Guía práctica para atravesar el duelo por la muerte de un ser querido. 12 claves que te ayudarán a transitar el dolor y encontrar momentos de paz.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
