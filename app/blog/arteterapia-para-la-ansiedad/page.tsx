@@ -41,7 +41,6 @@ export default function ArticuloArteterapiaAnsiedad() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none text-black/80">
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Introducción</h2>
 
           <p>
             Si vives con ansiedad, sabes que a veces las palabras no alcanzan para explicar lo que sientes. Esa opresión en el pecho, los pensamientos que no paran, la sensación de que algo malo va a pasar aunque no sepas qué. La <strong>arteterapia para la ansiedad</strong> ofrece algo diferente: un camino donde no necesitas encontrar las palabras correctas, porque el color, la forma y el movimiento se convierten en tu lenguaje.
@@ -237,25 +236,6 @@ export default function ArticuloArteterapiaAnsiedad() {
           <p>
             Es posible que durante el proceso surjan emociones intensas. Para eso está el acompañamiento: el arteterapeuta está ahí para ayudarte a sostener lo que aparece y procesarlo de manera segura. No estás solo con lo que surge.
           </p>
-
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Conclusión</h2>
-
-          <p>
-            La arteterapia ofrece un camino diferente para trabajar con la ansiedad. Un camino donde no dependes solo de las palabras, donde tu cuerpo y tu creatividad se involucran, donde puedes expresar lo que sientes aunque no sepas cómo nombrarlo.
-          </p>
-
-          <p>
-            No es para todos, y no es la única opción. Pero para muchas personas, especialmente aquellas que sienten que hablar no es suficiente, puede abrir puertas que otras formas de terapia no alcanzan.
-          </p>
-
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que puedes recordar:</h3>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>La arteterapia te permite expresar lo que las palabras no capturan.</li>
-            <li>El proceso de crear importa más que el resultado final.</li>
-            <li>No necesitas ninguna habilidad artística para beneficiarte.</li>
-            <li>Es un espacio acompañado, no simplemente pintar solo en casa.</li>
-            <li>Puede combinarse con otras formas de tratamiento.</li>
-          </ul>
 
           <p className="italic text-black/60 mt-8">
             En ColorMe creo que hay muchas formas de expresar lo que sentimos. A veces, la más poderosa no tiene palabras.

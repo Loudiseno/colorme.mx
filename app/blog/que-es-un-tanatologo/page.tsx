@@ -41,7 +41,6 @@ export default function ArticuloQueEsUnTanatologo() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none text-black/80">
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Introducción</h2>
 
           <p>
             ¿Alguna vez te has preguntado <strong>qué es un tanatólogo</strong> y cómo puede ayudarte durante uno de los momentos más difíciles de tu vida? Cuando enfrentamos cualquier tipo de pérdida significativa —ya sea la muerte de un ser querido, una mascota que nos acompañó por años, un trabajo que definía parte de nuestra identidad, un diagnóstico que cambia todo, o incluso un cambio de ciudad que nos aleja de lo conocido— este profesional especializado puede convertirse en un aliado fundamental para nuestra recuperación emocional.
@@ -358,27 +357,12 @@ export default function ArticuloQueEsUnTanatologo() {
             <strong>No necesariamente.</strong> Aunque la tanatología puede integrar aspectos espirituales, no está vinculada a ninguna religión específica. El profesional respetará tus creencias (o ausencia de ellas) y adaptará el trabajo a tu marco de referencia personal.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Conclusión</h2>
-
-          <p>
-            El <strong>tanatólogo</strong> es un profesional especializado que puede convertirse en un aliado invaluable cuando enfrentamos pérdidas significativas. Su labor va más allá de la muerte: abarca todo tipo de duelos que afectan nuestra vida y bienestar emocional.
-          </p>
-
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Puntos clave para recordar:</h3>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>La tanatología es una disciplina científica que estudia la muerte y los procesos de pérdida.</li>
-            <li>El tanatólogo acompaña en duelos por muerte, pero también por divorcios, enfermedades, pérdidas laborales y más.</li>
-            <li>Las etapas del duelo no son lineales: cada persona vive su proceso de manera única.</li>
-            <li>No necesitas estar en crisis para consultar; buscar apoyo es un acto de autocuidado.</li>
-            <li>El acompañamiento tanatológico ofrece beneficios emocionales, prácticos y a largo plazo.</li>
-          </ul>
-
           <p>
             Si estás atravesando un proceso de pérdida y sientes que podrías beneficiarte de apoyo profesional, <strong>no tienes que hacerlo solo/a</strong>. El primer paso puede ser simplemente conversar sobre tu situación.
           </p>
 
           <p className="italic text-black/60 mt-8">
-            En colorMe creemos que nadie debería atravesar el dolor en soledad. Estamos aquí para acompañarte.
+            En ColorMe creo que nadie debería atravesar el dolor en soledad. Estoy aquí para acompañarte.
           </p>
         </div>
 
@@ -386,7 +370,7 @@ export default function ArticuloQueEsUnTanatologo() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            En ColorMe entendemos lo difícil que puede ser dar el primer paso. Por eso ofrecemos una sesión de orientación gratuita donde podrás compartir tu situación en un espacio seguro y confidencial.
+            En ColorMe entiendo lo difícil que puede ser dar el primer paso. Por eso ofrezco una sesión de orientación gratuita donde podrás compartir tu situación en un espacio seguro y confidencial.
           </p>
           <a
             href={siteConfig.calendly}

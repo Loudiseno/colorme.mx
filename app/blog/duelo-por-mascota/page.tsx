@@ -41,7 +41,6 @@ export default function ArticuloDueloMascota() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none text-black/80">
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Introducción</h2>
 
           <p>
             Perdiste a tu mascota y el dolor que sientes es inmenso. Quizás te han dicho que &quot;era solo un animal&quot; o que &quot;ya conseguirás otro&quot;, y esas palabras, lejos de ayudar, te hacen sentir incomprendido. Quiero que sepas algo: el <strong>duelo por mascota</strong> es real, legítimo y merece el mismo respeto que cualquier otra pérdida significativa.
@@ -234,21 +233,6 @@ export default function ArticuloDueloMascota() {
           <p>
             No. Mientras sea tu decisión y no una forma de evitar el duelo, adoptar cuando sientas que estás listo es completamente válido. Lo importante es no esperar que la nueva mascota &quot;reemplace&quot; a la anterior.
           </p>
-
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Conclusión</h2>
-
-          <p>
-            Tu duelo por tu mascota es real y merece ser honrado. No tienes que justificarte ante nadie ni comparar tu dolor con el de otros. Lo que sientes refleja lo que esa relación significaba para ti, y eso es todo lo que importa.
-          </p>
-
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que puedes recordar:</h3>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Tu dolor es válido, sin importar lo que otros digan.</li>
-            <li>El vacío en la rutina es real y toma tiempo acostumbrarse.</li>
-            <li>Los pequeños momentos de calma son necesarios y permitidos.</li>
-            <li>Honrar su memoria a tu manera es parte del proceso.</li>
-            <li>Buscar apoyo no es exagerar; es cuidarte.</li>
-          </ul>
 
           <p className="italic text-black/60 mt-8">
             En ColorMe creo que todo vínculo significativo merece ser honrado. Estoy aquí si me necesitas.

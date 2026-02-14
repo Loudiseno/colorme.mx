@@ -41,7 +41,6 @@ export default function ArticuloSuperarPerdida() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none text-black/80">
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Introducción</h2>
 
           <p>
             <strong>Superar la pérdida de un ser querido</strong> no significa dejar de extrañarlo. Significa aprender a vivir con su ausencia mientras recuperas, poco a poco, la capacidad de encontrar momentos de paz. Si llegaste aquí buscando respuestas, probablemente estés en ese punto donde el dolor parece ocuparlo todo y te preguntas si algún día volverás a sentirte tú mismo.
@@ -235,21 +234,6 @@ export default function ArticuloSuperarPerdida() {
           <p>
             Sí. Es más común de lo que se habla. Puedes sentir enojo porque &quot;te dejó&quot;, porque no se cuidó, porque hay cosas que quedaron sin resolver. Ese enojo es parte del proceso.
           </p>
-
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Conclusión</h2>
-
-          <p>
-            Superar la pérdida de un ser querido es un camino largo que no tiene atajos, pero tampoco tiene que recorrerse en soledad. Los pequeños momentos de paz, las cosas que disfrutas, los rituales que creas, las personas que te acompañan: todo eso va construyendo, poco a poco, una nueva forma de vivir que incluye la ausencia sin que el dolor lo ocupe todo.
-          </p>
-
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que puedes recordar:</h3>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>No necesitas una crisis para buscar apoyo.</li>
-            <li>Los pequeños momentos de paz son valiosos y permitidos.</li>
-            <li>Hacer cosas que disfrutes no es traicionar tu dolor.</li>
-            <li>Hablar de tu ser querido es parte de mantener su memoria viva.</li>
-            <li>Tu proceso es único y no tiene que parecerse al de nadie.</li>
-          </ul>
 
           <p className="italic text-black/60 mt-8">
             En ColorMe creo que el dolor compartido pesa menos. Estoy aquí si me necesitas.

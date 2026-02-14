@@ -41,7 +41,6 @@ export default function ArticuloArteterapiaNinos() {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none text-black/80">
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Introducción</h2>
 
           <p>
             La <strong>arteterapia para niños</strong> es una herramienta poderosa que les permite expresar lo que sienten cuando las palabras no alcanzan. Pintar, modelar, dibujar o crear collages se convierte en un lenguaje propio donde pueden mostrar su mundo interno de manera natural. A diferencia de los adultos, los niños no necesitan &quot;aprender&quot; a crear: ya lo hacen de forma instintiva. Lo que necesitan es un espacio seguro donde esa creatividad sea respetada y acompañada.
@@ -264,21 +263,6 @@ export default function ArticuloArteterapiaNinos() {
           <p>
             Puedes ofrecer actividades artísticas en casa que favorezcan la expresión emocional, pero la arteterapia como tal requiere de un profesional formado que sepa acompañar el proceso. Las actividades en casa son un complemento, no un sustituto.
           </p>
-
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Conclusión</h2>
-
-          <p>
-            La arteterapia ofrece a los niños un espacio donde pueden expresar lo que sienten de manera natural, sin la presión de encontrar las palabras correctas. Cada edad tiene sus propias características y necesidades, y las actividades se adaptan para que sean significativas y accesibles.
-          </p>
-
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que puedes recordar:</h3>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Los niños se expresan mejor a través del juego y la creación que a través de las palabras.</li>
-            <li>No necesitan habilidades artísticas para beneficiarse de la arteterapia.</li>
-            <li>Las actividades varían según la edad, pero el objetivo siempre es el bienestar emocional.</li>
-            <li>Tu rol como padre es facilitar y respetar el proceso sin juzgar las creaciones.</li>
-            <li>Cualquier niño puede beneficiarse, no solo aquellos con diagnósticos específicos.</li>
-          </ul>
 
           <p className="italic text-black/60 mt-8">
             En ColorMe creo que todos los niños merecen un espacio donde su voz —aunque no sea verbal— sea escuchada.
