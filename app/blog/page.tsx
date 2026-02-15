@@ -75,6 +75,30 @@ const articles = [
     description: 'Cómo el arte puede ayudarte a manejar la ansiedad cuando las palabras no alcanzan.',
     alt: 'Arteterapia para la ansiedad - Expresión a través del arte.',
   },
+  {
+    slug: '/blog/por-que-no-puedo-llorar',
+    image: '/porque-no-puedo-llorar.webp',
+    category: 'Tanatología',
+    title: '¿Por qué no puedo llorar?',
+    description: 'El duelo sin lágrimas es real. Descubre por qué no puedes llorar y cómo procesar tu dolor.',
+    alt: '¿Por qué no puedo llorar? - El duelo seco y sin lágrimas.',
+  },
+  {
+    slug: '/blog/duelo-anticipado',
+    image: '/duelo-anticipado.webp',
+    category: 'Tanatología',
+    title: 'Duelo anticipado: qué es y cómo manejarlo',
+    description: 'Cuando sabes que vas a perder a alguien pero todavía está aquí. Cómo atravesar este proceso.',
+    alt: 'Duelo anticipado - Acompañamiento antes de la pérdida.',
+  },
+  {
+    slug: '/blog/duelo-sucio-alivio',
+    image: '/duelo-sucio-alivio.webp',
+    category: 'Tanatología',
+    title: 'El duelo sucio: cuando sientes alivio',
+    description: 'Sentir alivio después de una muerte no te hace mala persona. Te hace humano.',
+    alt: 'El duelo sucio - Cuando sientes alivio después de una pérdida.',
+  },
 ]
 
 export default function BlogPage() {
