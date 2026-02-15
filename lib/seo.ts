@@ -14,7 +14,7 @@ export const siteConfig = {
   },
   social: {
     instagram: 'https://www.instagram.com/color.me.lab',
-    facebook: 'https://www.facebook.com/profile.php?id=61577247024225',
+    facebook: 'https://www.facebook.com/profile.php?id=61580661293394',
   },
   book: {
     title: 'Indeleble',

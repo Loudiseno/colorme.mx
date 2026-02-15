@@ -11,7 +11,7 @@ export default function ArticuloDueloPerdida() {
       <div className="max-w-3xl mx-auto px-6">
         {/* Back link */}
         <Link
-          href="/#blog"
+          href="/blog"
           className="inline-flex items-center gap-2 text-black hover:text-black/70 transition-colors mb-8"
         >
           <ArrowLeft size={18} />
@@ -22,7 +22,7 @@ export default function ArticuloDueloPerdida() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            ¿Qué es el Duelo? Guía para Entender y Atravesar el Proceso de Pérdida
+            ¿Qué es el duelo? Guía para entender y atravesar el proceso de pérdida
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
