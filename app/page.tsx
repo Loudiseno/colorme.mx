@@ -117,7 +117,7 @@ export default function HomePage() {
                 />
               </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
-                ¿Qué es la Arteterapia?
+                Arteterapia
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
                 Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones, sin buscar resultados estéticos ni requerir experiencia artística.
@@ -142,7 +142,7 @@ export default function HomePage() {
                 />
               </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
-                Acompañamiento Tanatológico
+                Tanatología
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
                 Acompañamiento en procesos de duelo y pérdida en un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido.

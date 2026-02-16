@@ -3,6 +3,7 @@ import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import WhatsAppPopup from '@/components/WhatsAppPopup'
 import { siteConfig, generateBusinessSchema, generatePersonSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
@@ -111,7 +112,8 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        
+        <WhatsAppPopup />
+
         {/* Google Analytics - Replace with actual ID */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JK0WQBHTQ3"
