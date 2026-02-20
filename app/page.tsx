@@ -196,7 +196,7 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/adolecente hombre.webp"
+                  src="/adolecente-hombre.webp"
                   alt="Talleres para organizaciones"
                   width={128}
                   height={128}
@@ -281,21 +281,21 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto mt-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Image
-                src="/testimonio Sergio Morales.webp"
+                src="/testimonio-sergio-morales.webp"
                 alt="Reseña de Sergio Morales - 5 estrellas"
                 width={600}
                 height={150}
                 className="w-full h-auto rounded-lg border border-black/10"
               />
               <Image
-                src="/testimonio dan.webp"
+                src="/testimonio-dan.webp"
                 alt="Reseña de Dan - 5 estrellas"
                 width={600}
                 height={150}
                 className="w-full h-auto rounded-lg border border-black/10"
               />
               <Image
-                src="/testimonio monica aristi.webp"
+                src="/testimonio-monica-aristi.webp"
                 alt="Reseña de Monica Aristi - 5 estrellas"
                 width={600}
                 height={150}
@@ -352,7 +352,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/cancer y arteterapia.webp"
+                    src="/cancer-y-arteterapia.webp"
                     alt="Arteterapia para pacientes con cáncer"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"
@@ -380,7 +380,7 @@ export default function HomePage() {
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
                   <Image
-                    src="/el duelo.webp"
+                    src="/el-duelo.webp"
                     alt="¿Qué es el duelo?"
                     fill
                     className="object-cover grayscale mix-blend-luminosity"

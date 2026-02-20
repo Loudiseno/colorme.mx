@@ -30,7 +30,7 @@ export default function ArticuloDueloEnfermedad() {
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/hombre en duelo.webp"
+            src="/hombre-en-duelo.webp"
             alt="Hombre atravesando un proceso de duelo por enfermedad"
             width={1200}
             height={675}

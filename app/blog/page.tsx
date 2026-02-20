@@ -13,7 +13,7 @@ const articles = [
   },
   {
     slug: '/blog/arteterapia-cancer',
-    image: '/cancer y arteterapia.webp',
+    image: '/cancer-y-arteterapia.webp',
     category: 'Arteterapia y Tanatología',
     title: 'Arteterapia para pacientes con cáncer',
     description: 'El arte como acompañamiento durante el tratamiento oncológico.',
@@ -21,7 +21,7 @@ const articles = [
   },
   {
     slug: '/blog/duelo-perdida',
-    image: '/el duelo.webp',
+    image: '/el-duelo.webp',
     category: 'Tanatología',
     title: '¿Qué es el duelo?',
     description: 'Guía para entender y atravesar el proceso de pérdida.',
@@ -29,7 +29,7 @@ const articles = [
   },
   {
     slug: '/blog/duelo-por-enfermedad-o-diagnostico',
-    image: '/hombre en duelo.webp',
+    image: '/hombre-en-duelo.webp',
     category: 'Tanatología',
     title: 'Duelo por enfermedad o diagnóstico',
     description: 'Cuando el cuerpo cambia las reglas: cómo navegar el duelo por un diagnóstico médico.',
