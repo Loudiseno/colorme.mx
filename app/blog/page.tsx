@@ -187,6 +187,14 @@ const articles = [
     description: 'Tu bebé existió y tu dolor es real. Guía para madres y padres que perdieron un bebé.',
     alt: 'Duelo perinatal - Acompañamiento en la pérdida.',
   },
+  {
+    slug: '/blog/que-decir-duelo',
+    image: '/como-acompanar-duelo.webp',
+    category: 'Tanatología',
+    title: 'Qué decir (y qué NO decir) a alguien en duelo',
+    description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto.',
+    alt: 'Cómo acompañar a alguien en duelo.',
+  },
 ]
 
 export default function BlogPage() {
