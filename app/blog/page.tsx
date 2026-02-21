@@ -171,6 +171,30 @@ const articles = [
     description: 'Cómo identificar cuando el duelo necesita atención profesional.',
     alt: 'Duelo complicado - Cuándo buscar ayuda profesional.',
   },
+  {
+    slug: '/blog/explicar-muerte-nino',
+    image: '/explicar-muerte-nino.webp',
+    category: 'Tanatología',
+    title: 'Cómo explicar la muerte a un niño',
+    description: 'Guía para tener la conversación más difícil con amor y claridad.',
+    alt: 'Cómo explicar la muerte a un niño.',
+  },
+  {
+    slug: '/blog/duelo-perinatal',
+    image: '/duelo-perinatal.webp',
+    category: 'Tanatología',
+    title: 'Duelo perinatal: el dolor que la sociedad no ve',
+    description: 'Tu bebé existió y tu dolor es real. Guía para madres y padres que perdieron un bebé.',
+    alt: 'Duelo perinatal - Acompañamiento en la pérdida.',
+  },
+  {
+    slug: '/blog/que-decir-duelo',
+    image: '/como-acompanar-duelo.webp',
+    category: 'Tanatología',
+    title: 'Qué decir (y qué NO decir) a alguien en duelo',
+    description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto.',
+    alt: 'Cómo acompañar a alguien en duelo.',
+  },
 ]
 
 export default function BlogPage() {
