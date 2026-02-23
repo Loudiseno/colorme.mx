@@ -195,6 +195,46 @@ const articles = [
     description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto.',
     alt: 'Cómo acompañar a alguien en duelo.',
   },
+  {
+    slug: '/blog/perder-la-fe',
+    image: '/perder-la-fe.webp',
+    category: 'Tanatología',
+    title: 'Cuando pierdes la fe: el duelo espiritual',
+    description: 'Dejar de creer también es una pérdida. Guía para atravesar el duelo espiritual.',
+    alt: 'Duelo espiritual, pérdida de fe, crisis existencial, duelo religioso.',
+  },
+  {
+    slug: '/blog/hablar-de-la-muerte',
+    image: '/hablar-de-la-muerte.webp',
+    category: 'Tanatología',
+    title: '¿Por qué nos incomoda hablar de la muerte?',
+    description: 'La muerte es el único destino que compartimos todos, y sin embargo evitamos nombrarla.',
+    alt: 'Hablar de la muerte, tabú de la muerte, miedo a morir.',
+  },
+  {
+    slug: '/blog/sindrome-cuidador',
+    image: '/sindrome-cuidador.webp',
+    category: 'Tanatología',
+    title: 'El síndrome del cuidador primario',
+    description: 'Cuando cuidar a otros te consume. Guía para quienes dan tanto que se olvidan de sí mismos.',
+    alt: 'Síndrome del cuidador, burnout cuidador, agotamiento emocional.',
+  },
+  {
+    slug: '/blog/tristeza-como-maestra',
+    image: '/tristeza.webp',
+    category: 'Tanatología',
+    title: 'La tristeza no vino a destruirte',
+    description: 'Aprender a estar triste sin huir. La tristeza como maestra emocional.',
+    alt: 'Tristeza emocional, procesar emociones, inteligencia emocional.',
+  },
+  {
+    slug: '/blog/verguenza-duelo',
+    image: '/verguenza-duelo.webp',
+    category: 'Tanatología',
+    title: 'La vergüenza: la emoción que te hace esconderte',
+    description: 'Lo que callamos por miedo a ser juzgados. Cómo la vergüenza silencia el duelo.',
+    alt: 'Vergüenza emocional, duelo silenciado, emociones ocultas.',
+  },
 ]
 
 export default function BlogPage() {
