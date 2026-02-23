@@ -235,6 +235,46 @@ const articles = [
     description: 'Lo que callamos por miedo a ser juzgados. Cómo la vergüenza silencia el duelo.',
     alt: 'Vergüenza emocional, duelo silenciado, emociones ocultas.',
   },
+  {
+    slug: '/blog/culpa-que-cargamos',
+    image: '/culpa-que-cargamos.webp',
+    category: 'Tanatología',
+    title: 'La culpa que llevas a todas partes',
+    description: 'Y cómo soltar lo que no te corresponde. Guía para entender y procesar la culpa.',
+    alt: 'Culpa emocional, duelo y culpa, perdonarse a si mismo, culpa excesiva.',
+  },
+  {
+    slug: '/blog/duelo-infertilidad',
+    image: '/infertilidad.webp',
+    category: 'Tanatología',
+    title: 'El duelo invisible: cuando la maternidad o paternidad no llega',
+    description: 'Para quienes cargan el dolor de un hijo que nunca tuvieron.',
+    alt: 'Duelo por infertilidad, no poder tener hijos, maternidad frustrada, duelo reproductivo.',
+  },
+  {
+    slug: '/blog/jubilacion-nido-vacio',
+    image: '/jubilacion-nido-vacio.webp',
+    category: 'Tanatología',
+    title: 'Cuando la casa se vacía y el trabajo termina',
+    description: 'Lo que nadie te preparó para sentir después de los 50. Duelo por jubilación y nido vacío.',
+    alt: 'Síndrome del nido vacío, duelo por jubilación, hijos se van de casa, retiro laboral.',
+  },
+  {
+    slug: '/blog/enojo-emocion-valida',
+    image: '/enojo-emocion-valida.webp',
+    category: 'Tanatología',
+    title: 'El enojo que no expresas se convierte en otra cosa',
+    description: 'Por qué necesitas darle espacio a tu rabia. Guía para expresar el enojo de forma saludable.',
+    alt: 'Enojo reprimido, rabia contenida, expresar emociones, enojo en el duelo.',
+  },
+  {
+    slug: '/blog/miedo-soledad',
+    image: '/miedo-soledad.webp',
+    category: 'Tanatología',
+    title: 'El miedo a quedarte solo',
+    description: 'Y por qué huir de él empeora todo. Guía para entender y superar el miedo a la soledad.',
+    alt: 'Miedo a la soledad, miedo a estar solo, soledad emocional, dependencia emocional.',
+  },
 ]
 
 export default function BlogPage() {
