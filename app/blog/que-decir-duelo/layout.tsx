@@ -47,7 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             image: `${siteConfig.url}/como-acompanar-duelo.webp`,
             author: {
               '@type': 'Person',
-              name: siteConfig.author.name,
+              name: siteConfig.author,
               url: siteConfig.url,
             },
             publisher: {

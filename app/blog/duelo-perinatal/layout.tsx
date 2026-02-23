@@ -48,7 +48,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             image: `${siteConfig.url}/duelo-perinatal.webp`,
             author: {
               '@type': 'Person',
-              name: siteConfig.author.name,
+              name: siteConfig.author,
               url: siteConfig.url,
             },
             publisher: {

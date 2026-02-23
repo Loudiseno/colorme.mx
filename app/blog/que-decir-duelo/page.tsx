@@ -80,8 +80,6 @@ export default function QueDecirDueloPage() {
 
           <p><strong>"No tengo palabras, pero aquí estoy."</strong> — La honestidad de admitir que no sabes qué decir puede ser más reconfortante que una frase hecha.</p>
 
-          <p><strong>"Siento mucho tu pérdida."</strong> — Simple, directa, sin intentar explicar o minimizar.</p>
-
           <p><strong>"No tienes que hablar si no quieres, pero puedo acompañarte."</strong> — Ofreces presencia sin presión.</p>
 
           <p><strong>"¿Te gustaría contarme algo sobre él/ella?"</strong> — Esta pregunta es un regalo. Le das permiso para hablar de su ser querido.</p>
