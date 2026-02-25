@@ -31,7 +31,7 @@ export default function ExplicarMuerteNinoPage() {
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/explicar-muerte-nino.webp"
-            alt="Cómo explicar la muerte a un niño - Guía para padres"
+            alt="Cómo explicar la muerte a un niño - Apoyo para padres"
             width={1200}
             height={675}
             priority
@@ -41,7 +41,7 @@ export default function ExplicarMuerteNinoPage() {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-black/80 italic mb-8">
-            Guía para tener esta conversación difícil con amor y claridad.
+            Apoyo para tener esta conversación difícil con amor y claridad.
           </p>
 
           <p>Nadie nos prepara para esto.</p>

@@ -3,7 +3,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Duelo perinatal: el dolor que la sociedad no ve | ColorMe',
-  description: 'Tu bebé existió y tu dolor es real. Guía para madres y padres que perdieron un bebé durante el embarazo o poco después.',
+  description: 'Tu bebé existió y tu dolor es real. Apoyo para madres y padres que perdieron un bebé durante el embarazo o poco después.',
   keywords: [
     'duelo perinatal',
     'pérdida de bebé',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Duelo perinatal: el dolor que la sociedad no ve | ColorMe',
-    description: 'Tu bebé existió y tu dolor es real. Guía para madres y padres que perdieron un bebé.',
+    description: 'Tu bebé existió y tu dolor es real. Apoyo para madres y padres que perdieron un bebé.',
     url: `${siteConfig.url}/blog/duelo-perinatal`,
     siteName: siteConfig.name,
     locale: 'es_MX',
@@ -44,7 +44,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             '@context': 'https://schema.org',
             '@type': 'Article',
             headline: 'Duelo perinatal: el dolor que la sociedad no ve',
-            description: 'Tu bebé existió y tu dolor es real. Guía para madres y padres que perdieron un bebé.',
+            description: 'Tu bebé existió y tu dolor es real. Apoyo para madres y padres que perdieron un bebé.',
             image: `${siteConfig.url}/duelo-perinatal.webp`,
             author: {
               '@type': 'Person',

@@ -24,7 +24,7 @@ const articles = [
     image: '/el-duelo.webp',
     category: 'Tanatología',
     title: '¿Qué es el duelo?',
-    description: 'Guía para entender y atravesar el proceso de pérdida.',
+    description: 'Cómo entender y atravesar el proceso de pérdida.',
     alt: '¿Qué es el duelo?',
   },
   {
@@ -47,7 +47,7 @@ const articles = [
     slug: '/blog/arteterapia-para-ninos',
     image: '/arteterapia-ninos.webp',
     category: 'Arteterapia',
-    title: 'Arteterapia para niños: guía por edades',
+    title: 'Arteterapia para niños por edades',
     description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad, de 3 a 12 años.',
     alt: 'Arteterapia para niños - Expresión emocional a través del arte.',
   },
@@ -120,7 +120,7 @@ const articles = [
     image: '/aniversarios-dificiles.webp',
     category: 'Tanatología',
     title: 'Aniversarios difíciles: cómo atravesar las fechas dolorosas',
-    description: 'Guía para los días que el calendario convierte en momentos de dolor.',
+    description: 'Cómo atravesar los días que el calendario convierte en momentos de dolor.',
     alt: 'Aniversarios difíciles - Cómo atravesar las fechas dolorosas.',
   },
   {
@@ -128,7 +128,7 @@ const articles = [
     image: '/duelo-muerte-mama.webp',
     category: 'Tanatología',
     title: 'Cómo atravesar la muerte de tu mamá',
-    description: 'Una guía honesta para quienes perdieron a la primera persona que los amó.',
+    description: 'Apoyo honesto para quienes perdieron a la primera persona que los amó.',
     alt: 'Cómo atravesar la muerte de tu mamá.',
   },
   {
@@ -152,7 +152,7 @@ const articles = [
     image: '/mandalas-terapeuticos.webp',
     category: 'Arteterapia',
     title: 'Mandalas terapéuticos: qué son y cómo crearlos',
-    description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
+    description: 'Cómo crear mandalas y sus beneficios para la salud mental.',
     alt: 'Mandalas terapéuticos - Qué son y cómo crearlos.',
   },
   {
@@ -176,7 +176,7 @@ const articles = [
     image: '/explicar-muerte-nino.webp',
     category: 'Tanatología',
     title: 'Cómo explicar la muerte a un niño',
-    description: 'Guía para tener la conversación más difícil con amor y claridad.',
+    description: 'Cómo tener la conversación más difícil con amor y claridad.',
     alt: 'Cómo explicar la muerte a un niño.',
   },
   {
@@ -184,7 +184,7 @@ const articles = [
     image: '/duelo-perinatal.webp',
     category: 'Tanatología',
     title: 'Duelo perinatal: el dolor que la sociedad no ve',
-    description: 'Tu bebé existió y tu dolor es real. Guía para madres y padres que perdieron un bebé.',
+    description: 'Tu bebé existió y tu dolor es real. Apoyo para madres y padres que perdieron un bebé.',
     alt: 'Duelo perinatal - Acompañamiento en la pérdida.',
   },
   {
@@ -192,7 +192,7 @@ const articles = [
     image: '/como-acompanar-duelo.webp',
     category: 'Tanatología',
     title: 'Qué decir (y qué NO decir) a alguien en duelo',
-    description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto.',
+    description: 'Cómo acompañar a alguien que perdió un ser querido con empatía y respeto.',
     alt: 'Cómo acompañar a alguien en duelo.',
   },
   {
@@ -200,7 +200,7 @@ const articles = [
     image: '/perder-la-fe.webp',
     category: 'Tanatología',
     title: 'Cuando pierdes la fe: el duelo espiritual',
-    description: 'Dejar de creer también es una pérdida. Guía para atravesar el duelo espiritual.',
+    description: 'Dejar de creer también es una pérdida. Cómo atravesar el duelo espiritual.',
     alt: 'Duelo espiritual, pérdida de fe, crisis existencial, duelo religioso.',
   },
   {
@@ -216,7 +216,7 @@ const articles = [
     image: '/sindrome-cuidador.webp',
     category: 'Tanatología',
     title: 'El síndrome del cuidador primario',
-    description: 'Cuando cuidar a otros te consume. Guía para quienes dan tanto que se olvidan de sí mismos.',
+    description: 'Cuando cuidar a otros te consume. Apoyo para quienes dan tanto que se olvidan de sí mismos.',
     alt: 'Síndrome del cuidador, burnout cuidador, agotamiento emocional.',
   },
   {
@@ -240,7 +240,7 @@ const articles = [
     image: '/culpa-que-cargamos.webp',
     category: 'Tanatología',
     title: 'La culpa que llevas a todas partes',
-    description: 'Y cómo soltar lo que no te corresponde. Guía para entender y procesar la culpa.',
+    description: 'Y cómo soltar lo que no te corresponde. Cómo entender y procesar la culpa.',
     alt: 'Culpa emocional, duelo y culpa, perdonarse a si mismo, culpa excesiva.',
   },
   {
@@ -264,7 +264,7 @@ const articles = [
     image: '/enojo-emocion-valida.webp',
     category: 'Tanatología',
     title: 'El enojo que no expresas se convierte en otra cosa',
-    description: 'Por qué necesitas darle espacio a tu rabia. Guía para expresar el enojo de forma saludable.',
+    description: 'Por qué necesitas darle espacio a tu rabia. Cómo expresar el enojo de forma saludable.',
     alt: 'Enojo reprimido, rabia contenida, expresar emociones, enojo en el duelo.',
   },
   {
@@ -272,7 +272,7 @@ const articles = [
     image: '/miedo-soledad.webp',
     category: 'Tanatología',
     title: 'El miedo a quedarte solo',
-    description: 'Y por qué huir de él empeora todo. Guía para entender y superar el miedo a la soledad.',
+    description: 'Y por qué huir de él empeora todo. Cómo entender y superar el miedo a la soledad.',
     alt: 'Miedo a la soledad, miedo a estar solo, soledad emocional, dependencia emocional.',
   },
 ]

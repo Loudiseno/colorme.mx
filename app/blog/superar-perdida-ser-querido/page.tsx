@@ -42,7 +42,7 @@ export default function ArticuloSuperarPerdida() {
           </p>
 
           <p>
-            Estas 12 claves no van a &quot;quitarte&quot; el dolor. Pero pueden darte herramientas concretas para los días difíciles, momentos de calma en medio de la tormenta, y una guía para cuando no sepas qué hacer con lo que sientes.
+            Estas 12 claves no van a &quot;quitarte&quot; el dolor. Pero pueden darte herramientas concretas para los días difíciles, momentos de calma en medio de la tormenta, y una Apoyo para cuando no sepas qué hacer con lo que sientes.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">1. Permítete sentir lo que sientes</h2>

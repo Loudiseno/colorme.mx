@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'El duelo invisible: cuando la maternidad o paternidad no llega | ColorMe',
-  description: 'Para quienes cargan el dolor de un hijo que nunca tuvieron. Guia sobre el duelo por infertilidad.',
+  description: 'Para quienes cargan el dolor de un hijo que nunca tuvieron. Apoyo sobre el duelo por infertilidad.',
   keywords: ['duelo infertilidad', 'no poder tener hijos', 'duelo por maternidad', 'infertilidad emocional', 'duelo reproductivo'],
   alternates: {
     canonical: '/blog/duelo-infertilidad',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'El duelo invisible: cuando la maternidad o paternidad no llega | ColorMe',
-    description: 'Para quienes cargan el dolor de un hijo que nunca tuvieron. Guia sobre el duelo por infertilidad.',
+    description: 'Para quienes cargan el dolor de un hijo que nunca tuvieron. Apoyo sobre el duelo por infertilidad.',
     url: '/blog/duelo-infertilidad',
   },
 }
@@ -21,7 +21,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'El duelo invisible: cuando la maternidad o paternidad no llega',
-  description: 'Para quienes cargan el dolor de un hijo que nunca tuvieron. Guia sobre el duelo por infertilidad.',
+  description: 'Para quienes cargan el dolor de un hijo que nunca tuvieron. Apoyo sobre el duelo por infertilidad.',
   author: { '@type': 'Person', name: siteConfig.author, url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-infertilidad`,
