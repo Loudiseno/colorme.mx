@@ -110,7 +110,7 @@ export default function ArticuloMandalasTerapeuticos() {
           </p>
 
           <p>
-            <strong>3. Divide el espacio.</strong> Puedes dividir el círculo en 4, 6, 8 o más secciones. Esto crea una guía para tus patrones, pero no es obligatorio.
+            <strong>3. Divide el espacio.</strong> Puedes dividir el círculo en 4, 6, 8 o más secciones. Esto crea una Apoyo para tus patrones, pero no es obligatorio.
           </p>
 
           <p>
@@ -161,7 +161,7 @@ export default function ArticuloMandalasTerapeuticos() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si quieres descubrir el poder terapéutico de los mandalas, estoy aquí para guiarte en el proceso.
+            Si quieres descubrir el poder terapéutico de los mandalas, estoy aquí para Apoyorte en el proceso.
           </p>
           <a
             href={siteConfig.calendly}

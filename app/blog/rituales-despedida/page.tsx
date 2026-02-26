@@ -82,7 +82,7 @@ export default function ArticuloRitualesDespedida() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo diseñar tu ritual</h2>
 
           <p>
-            <strong>Pregúntate qué necesitas:</strong> ¿Decir adiós? ¿Pedir perdón? ¿Dar gracias? ¿Expresar tu amor? La respuesta te guiará.
+            <strong>Pregúntate qué necesitas:</strong> ¿Decir adiós? ¿Pedir perdón? ¿Dar gracias? ¿Expresar tu amor? La respuesta te Apoyorá.
           </p>
 
           <p>

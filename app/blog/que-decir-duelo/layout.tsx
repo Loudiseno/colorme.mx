@@ -3,7 +3,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Qué decir (y qué NO decir) a alguien en duelo | ColorMe',
-  description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto. Frases que ayudan y frases que es mejor evitar.',
+  description: 'Apoyo para acompañar a alguien que perdió un ser querido con empatía y respeto. Frases que ayudan y frases que es mejor evitar.',
   keywords: [
     'qué decir duelo',
     'cómo acompañar duelo',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Qué decir (y qué NO decir) a alguien en duelo | ColorMe',
-    description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto.',
+    description: 'Apoyo para acompañar a alguien que perdió un ser querido con empatía y respeto.',
     url: `${siteConfig.url}/blog/que-decir-duelo`,
     siteName: siteConfig.name,
     locale: 'es_MX',
@@ -43,7 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             '@context': 'https://schema.org',
             '@type': 'Article',
             headline: 'Qué decir (y qué NO decir) a alguien en duelo',
-            description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto.',
+            description: 'Apoyo para acompañar a alguien que perdió un ser querido con empatía y respeto.',
             image: `${siteConfig.url}/como-acompanar-duelo.webp`,
             author: {
               '@type': 'Person',

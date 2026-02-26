@@ -21,7 +21,7 @@ export default function DueloPerinatallPage() {
             Tanatología
           </span>
           <h1 className="text-4xl md:text-5xl text-black mt-2 mb-4">
-            Duelo perinatal: el dolor que la sociedad no ve
+            Duelo perinatal: el dolor que nadie ve
           </h1>
           <p className="text-black/60">
             Por Lourdes Carrillo · Tanatóloga y Arteterapeuta

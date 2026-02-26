@@ -47,7 +47,7 @@ export default function ArticuloQueEsUnTanatologo() {
           </p>
 
           <p>
-            El <strong>tanatólogo</strong> es mucho más que un experto en temas relacionados con la muerte. Es un acompañante capacitado que nos guía a través del proceso de duelo, brindándonos herramientas para transformar el dolor en un camino hacia la sanación.
+            El <strong>tanatólogo</strong> es mucho más que un experto en temas relacionados con la muerte. Es un acompañante capacitado que nos Apoyo a través del proceso de duelo, brindándonos herramientas para transformar el dolor en un camino hacia la sanación.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué es la tanatología?</h2>

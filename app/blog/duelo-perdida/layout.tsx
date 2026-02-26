@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Duelo y Pérdida | Cómo Transitar el Proceso de Duelo',
-  description: 'Guía sobre el proceso de duelo y pérdida. Aprende a transitar el dolor, identificar las etapas del duelo y cuándo buscar acompañamiento profesional.',
+  description: 'Apoyo sobre el proceso de duelo y pérdida. Aprende a transitar el dolor, identificar las etapas del duelo y cuándo buscar acompañamiento profesional.',
   keywords: ['duelo', 'pérdida', 'proceso de duelo', 'etapas del duelo', 'superar pérdida', 'duelo por muerte', 'acompañamiento duelo', 'tanatología'],
   alternates: {
     canonical: '/blog/duelo-perdida',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'Duelo y Pérdida | Cómo Transitar el Proceso de Duelo | ColorMe',
-    description: 'Guía sobre el proceso de duelo y pérdida. Aprende a transitar el dolor y cuándo buscar acompañamiento profesional.',
+    description: 'Apoyo sobre el proceso de duelo y pérdida. Aprende a transitar el dolor y cuándo buscar acompañamiento profesional.',
     url: '/blog/duelo-perdida',
   },
 }
@@ -21,7 +21,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Duelo y Pérdida: Cómo Transitar el Proceso de Duelo',
-  description: 'Guía sobre el proceso de duelo y pérdida. Aprende a transitar el dolor y cuándo buscar acompañamiento profesional.',
+  description: 'Apoyo sobre el proceso de duelo y pérdida. Aprende a transitar el dolor y cuándo buscar acompañamiento profesional.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-perdida`,

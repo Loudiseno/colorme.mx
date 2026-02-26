@@ -3,7 +3,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Cómo explicar la muerte a un niño | ColorMe',
-  description: 'Guía para tener la conversación más difícil con amor y claridad. Cómo hablar de la muerte según la edad del niño.',
+  description: 'Apoyo para tener la conversación más difícil con amor y claridad. Cómo hablar de la muerte según la edad del niño.',
   keywords: [
     'explicar muerte a niños',
     'cómo hablar de la muerte con niños',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Cómo explicar la muerte a un niño | ColorMe',
-    description: 'Guía para tener la conversación más difícil con amor y claridad.',
+    description: 'Apoyo para tener la conversación más difícil con amor y claridad.',
     url: `${siteConfig.url}/blog/explicar-muerte-nino`,
     siteName: siteConfig.name,
     locale: 'es_MX',
@@ -44,7 +44,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             '@context': 'https://schema.org',
             '@type': 'Article',
             headline: 'Cómo explicar la muerte a un niño',
-            description: 'Guía para tener la conversación más difícil con amor y claridad.',
+            description: 'Apoyo para tener la conversación más difícil con amor y claridad.',
             image: `${siteConfig.url}/explicar-muerte-nino.webp`,
             author: {
               '@type': 'Person',

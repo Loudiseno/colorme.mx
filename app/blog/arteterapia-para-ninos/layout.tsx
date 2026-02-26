@@ -3,15 +3,15 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Arteterapia para niños: guía por edades de 3 a 12 años | ColorMe',
-  description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones. Guía completa por edades con actividades, beneficios y señales de que tu hijo podría beneficiarse.',
+  title: 'Arteterapia para niños: Apoyo por edades de 3 a 12 años | ColorMe',
+  description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones. Apoyo completa por edades con actividades, beneficios y señales de que tu hijo podría beneficiarse.',
   keywords: ['arteterapia para niños', 'arteterapia infantil', 'terapia arte niños', 'expresión emocional niños', 'actividades arteterapia', 'psicología infantil', 'desarrollo emocional'],
   alternates: {
     canonical: '/blog/arteterapia-para-ninos',
   },
   openGraph: {
     type: 'article',
-    title: 'Arteterapia para niños: guía por edades de 3 a 12 años | ColorMe',
+    title: 'Arteterapia para niños: Apoyo por edades de 3 a 12 años | ColorMe',
     description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad.',
     url: '/blog/arteterapia-para-ninos',
   },
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Arteterapia para niños: guía por edades de 3 a 12 años',
-  description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones. Guía completa por edades con actividades, beneficios y señales de que tu hijo podría beneficiarse.',
+  headline: 'Arteterapia para niños: Apoyo por edades de 3 a 12 años',
+  description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones. Apoyo completa por edades con actividades, beneficios y señales de que tu hijo podría beneficiarse.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/arteterapia-para-ninos`,

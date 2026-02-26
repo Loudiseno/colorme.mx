@@ -46,7 +46,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Estaba sentada en la sala de espera del hospital, días después de recibir mi diagnóstico de cáncer. La gente a mi alrededor seguía con sus vidas normales —revisando el celular, hojeando revistas, conversando sobre el clima— y yo me sentía como si estuviera detrás de un vidrio grueso, separada del mundo por algo que no podía nombrar.
+            Estaba sentada en la sala de espera del hospital, días después de recibir mi diagnóstico de cáncer. La gente a mi alrededor seApoyo con sus vidas normales —revisando el celular, hojeando revistas, conversando sobre el clima— y yo me sentía como si estuviera detrás de un vidrio grueso, separada del mundo por algo que no podía nombrar.
           </p>
 
           <p>
@@ -290,7 +290,7 @@ export default function ArticuloArteterapiaCancer() {
 
           <p>
             <strong>¿Es lo mismo que los talleres de manualidades que hacen en algunos hospitales?</strong><br />
-            No exactamente. Los talleres de manualidades pueden ser relajantes y valiosos, pero la arteterapia es un proceso terapéutico guiado por un profesional capacitado. Vamos más allá de la actividad: exploramos lo que surge, hacemos conexiones, profundizamos. Es la diferencia entre pintar para distraerte y pintar para sanar.
+            No exactamente. Los talleres de manualidades pueden ser relajantes y valiosos, pero la arteterapia es un proceso terapéutico Apoyodo por un profesional capacitado. Vamos más allá de la actividad: exploramos lo que surge, hacemos conexiones, profundizamos. Es la diferencia entre pintar para distraerte y pintar para sanar.
           </p>
 
           <p>

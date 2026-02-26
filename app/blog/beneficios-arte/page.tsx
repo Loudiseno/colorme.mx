@@ -151,7 +151,7 @@ export default function ArticuloBeneficiosArte() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si quieres descubrir cómo el arte puede ayudarte a sanar, estoy aquí para guiarte en el proceso.
+            Si quieres descubrir cómo el arte puede ayudarte a sanar, estoy aquí para Apoyorte en el proceso.
           </p>
           <a
             href={siteConfig.calendly}
