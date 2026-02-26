@@ -183,7 +183,7 @@ const articles = [
     slug: '/blog/duelo-perinatal',
     image: '/duelo-perinatal.webp',
     category: 'Tanatología',
-    title: 'Duelo perinatal: el dolor que la sociedad no ve',
+    title: 'Duelo perinatal: el dolor que nadie ve',
     description: 'Tu bebé existió y tu dolor es real. Apoyo para madres y padres que perdieron un bebé.',
     alt: 'Duelo perinatal - Acompañamiento en la pérdida.',
   },
