@@ -18,7 +18,7 @@ export default function ArticuloMuerteMama() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Cómo atravesar la muerte de tu mamá
           </h1>
@@ -28,7 +28,7 @@ export default function ArticuloMuerteMama() {
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/duelo-muerte-mama.webp"
-            alt="Cómo atravesar la muerte de tu mamá - Una Apoyo honesta."
+            alt="Cómo atravesar la muerte de tu mamá - Una guía honesta."
             width={1200}
             height={675}
             priority
@@ -50,8 +50,14 @@ export default function ArticuloMuerteMama() {
           </p>
 
           <p>
-            Esta Apoyo no te va a decir cómo &quot;superar&quot; su muerte, porque eso implica dejarla atrás. Lo que voy a ofrecerte es algo más realista: cómo aprender a vivir con su ausencia. Cómo cargar ese amor que ahora no tiene el mismo destino. Cómo seguir adelante sin olvidarla.
+            Esta guía no te va a decir cómo "superar" su muerte, porque eso implica dejarla atrás. Lo que voy a ofrecerte es algo más realista:
           </p>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Cómo aprender a vivir con su ausencia.</li>
+            <li>Cómo cargar ese amor que ahora no tiene el mismo destino.</li>
+            <li>Cómo seguir adelante sin olvidarla.</li>
+          </ul>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo por una madre es particular</h2>
 
@@ -62,12 +68,15 @@ export default function ArticuloMuerteMama() {
           </p>
 
           <p>Puedes experimentar sensaciones que no esperabas:</p>
-          <p>Sentirte huérfano sin importar tu edad.</p>
-          <p>Querer llamarla cada vez que pasa algo importante.</p>
-          <p>Buscar su aprobación aunque ya no esté.</p>
-          <p>Escuchar su voz en tu mente.</p>
-          <p>Percibir su presencia en lugares inesperados.</p>
-          <p>Sentir que una parte de ti cambió con ella.</p>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Sentirte huérfano sin importar tu edad.</li>
+            <li>Querer llamarla cada vez que pasa algo importante.</li>
+            <li>Buscar su aprobación aunque ya no esté.</li>
+            <li>Escuchar su voz en tu mente.</li>
+            <li>Percibir su presencia en lugares inesperados.</li>
+            <li>Sentir que una parte de ti cambió con ella.</li>
+          </ul>
 
           <p>Todo esto es parte del proceso.</p>
 
@@ -195,10 +204,12 @@ export default function ArticuloMuerteMama() {
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Frases que no necesitas aceptar</h2>
 
-          <p>&quot;Ya deberías estar mejor.&quot;</p>
-          <p>&quot;Ella no querría verte así.&quot;</p>
-          <p>&quot;Al menos vivió muchos años.&quot;</p>
-          <p>&quot;Tienes que ser fuerte por tu familia.&quot;</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>"Ya deberías estar mejor."</li>
+            <li>"Ella no querría verte así."</li>
+            <li>"Al menos vivió muchos años."</li>
+            <li>"Tienes que ser fuerte por tu familia."</li>
+          </ul>
 
           <p>
             Todas estas frases, aunque bien intencionadas, no reconocen tu proceso. No tienes que aceptarlas ni sentirte mal por necesitar tu tiempo.
@@ -208,12 +219,14 @@ export default function ArticuloMuerteMama() {
 
           <p>Considera buscar apoyo de un profesional si:</p>
 
-          <p>Sientes que no puedes funcionar después de varios meses.</p>
-          <p>Tienes pensamientos de hacerte daño.</p>
-          <p>Estás usando sustancias para aliviar el dolor.</p>
-          <p>Tu salud física se está deteriorando.</p>
-          <p>No ves ninguna mejoría en la intensidad del dolor.</p>
-          <p>Sientes que no puedes seguir.</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Sientes que no puedes funcionar después de varios meses.</li>
+            <li>Tienes pensamientos de hacerte daño.</li>
+            <li>Estás usando sustancias para aliviar el dolor.</li>
+            <li>Tu salud física se está deteriorando.</li>
+            <li>No ves ninguna mejoría en la intensidad del dolor.</li>
+            <li>Sientes que no puedes seguir.</li>
+          </ul>
 
           <p>El duelo complicado existe y es tratable. No tienes que sufrir indefinidamente.</p>
 
