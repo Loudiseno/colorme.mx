@@ -18,17 +18,17 @@ export default function ArticuloCulpaQueCargamos() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             La culpa que llevas a todas partes
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/culpa-que-cargamos.webp"
-            alt="Culpa emocional, duelo y culpa, perdonarse a si mismo, culpa excesiva, liberarse de la culpa."
+            alt="Culpa emocional, duelo y culpa, perdonarse a sí mismo, culpa excesiva, liberarse de la culpa."
             width={1200}
             height={675}
             priority
@@ -38,37 +38,37 @@ export default function ArticuloCulpaQueCargamos() {
 
         <div className="prose prose-lg max-w-none text-black/80">
           <p className="italic">
-            Y como soltar lo que no te corresponde.
+            Y cómo soltar lo que no te corresponde.
           </p>
 
           <p>
-            La culpa es una companera persistente.
+            La culpa es una compañera persistente.
           </p>
 
           <p>
-            Te sigue cuando descansas en lugar de trabajar. Aparece cuando dices que no a algo. Te visita en la madrugada recordandote todo lo que pudiste hacer diferente.
+            Te sigue cuando descansas en lugar de trabajar. Aparece cuando dices que no a algo. Te visita en la madrugada recordándote todo lo que pudiste hacer diferente.
           </p>
 
           <p>
             Pero no toda culpa es igual. Y no toda culpa te corresponde.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una emocion util que puede volverse danina</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una emoción útil que puede volverse dañina</h2>
 
           <p>
-            La culpa tiene una funcion original: senalar cuando hemos actuado en contra de nuestros valores o hemos causado dano.
+            La culpa tiene una función original: señalar cuando hemos actuado en contra de nuestros valores o hemos causado daño.
           </p>
 
           <p>
-            Es un mecanismo de regulacion social. Nos ayuda a vivir en comunidad, a considerar el impacto de nuestras acciones en otros, a reparar cuando hemos fallado.
+            Es un mecanismo de regulación social. Nos ayuda a vivir en comunidad, a considerar el impacto de nuestras acciones en otros, a reparar cuando hemos fallado.
           </p>
 
           <p>
-            El problema surge cuando la culpa se desconecta de sus causas reales. Cuando aparece sin motivo proporcional. Cuando se convierte en un estado permanente mas que en una senal ocasional.
+            El problema surge cuando la culpa se desconecta de sus causas reales. Cuando aparece sin motivo proporcional. Cuando se convierte en un estado permanente más que en una señal ocasional.
           </p>
 
           <p>
-            En ese punto, la culpa deja de ser util y se convierte en una carga que arrastramos sin saber como soltar.
+            En ese punto, la culpa deja de ser útil y se convierte en una carga que arrastramos sin saber cómo soltar.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Tipos de culpa</h2>
@@ -78,7 +78,7 @@ export default function ArticuloCulpaQueCargamos() {
           </p>
 
           <p>
-            <strong>Culpa real o proporcional.</strong> Hiciste algo que genuinamente causo dano o violo tus valores. La emocion es proporcional a la accion. Esta culpa tiene informacion valiosa: te indica que necesitas reparar, disculparte o cambiar tu comportamiento.
+            <strong>Culpa real o proporcional.</strong> Hiciste algo que genuinamente causó daño o violó tus valores. La emoción es proporcional a la acción. Esta culpa tiene información valiosa: te indica que necesitas reparar, disculparte o cambiar tu comportamiento.
           </p>
 
           <p>
@@ -86,43 +86,43 @@ export default function ArticuloCulpaQueCargamos() {
           </p>
 
           <p>
-            <strong>Culpa irracional.</strong> La emocion no corresponde con ninguna accion real. Te sientes culpable por descansar, por decir que no, por cuidarte, por existir. Esta culpa esta desconectada de la realidad y generalmente tiene raices profundas en mensajes de la infancia.
+            <strong>Culpa irracional.</strong> La emoción no corresponde con ninguna acción real. Te sientes culpable por descansar, por decir que no, por cuidarte, por existir. Esta culpa está desconectada de la realidad y generalmente tiene raíces profundas en mensajes de la infancia.
           </p>
 
           <p>
-            <strong>Culpa sobreviviente.</strong> Aparece cuando algo malo le sucede a otros y a ti no. Sobrevivir a un accidente, a una enfermedad, a una perdida que toco a otros pero no a ti. &quot;Por que yo me salve y ellos no?&quot;
+            <strong>Culpa sobreviviente.</strong> Aparece cuando algo malo le sucede a otros y a ti no. Sobrevivir a un accidente, a una enfermedad, a una pérdida que tocó a otros pero no a ti. &quot;¿Por qué yo me salvé y ellos no?&quot;
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">De donde viene la culpa excesiva</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">De dónde viene la culpa excesiva</h2>
 
           <p>
             La culpa desproporcionada generalmente tiene historia.
           </p>
 
           <p>
-            <strong>Mensajes de la infancia.</strong> Si creciste escuchando que eras demasiado, que nunca hacias suficiente, que tus necesidades eran una carga, es probable que internalizaras la idea de que tu existencia misma es problematica.
+            <strong>Mensajes de la infancia.</strong> Si creciste escuchando que eras demasiado, que nunca hacías suficiente, que tus necesidades eran una carga, es probable que internalizaras la idea de que tu existencia misma es problemática.
           </p>
 
           <p>
-            <strong>Familias con dinamicas disfuncionales.</strong> En algunas familias, los ninos asumen responsabilidades emocionales que no les corresponden. Aprenden que deben mantener la paz, cuidar a los adultos, no causar problemas. Esa carga se convierte en culpa cronica.
+            <strong>Familias con dinámicas disfuncionales.</strong> En algunas familias, los niños asumen responsabilidades emocionales que no les corresponden. Aprenden que deben mantener la paz, cuidar a los adultos, no causar problemas. Esa carga se convierte en culpa crónica.
           </p>
 
           <p>
-            <strong>Tradiciones religiosas punitivas.</strong> Algunas formas de educacion religiosa enfatizan el pecado, la indignidad y el castigo de maneras que generan culpa constante. La sensacion de nunca ser suficientemente bueno puede persistir incluso despues de abandonar esas creencias.
+            <strong>Tradiciones religiosas punitivas.</strong> Algunas formas de educación religiosa enfatizan el pecado, la indignidad y el castigo de maneras que generan culpa constante. La sensación de nunca ser suficientemente bueno puede persistir incluso después de abandonar esas creencias.
           </p>
 
           <p>
-            <strong>Trauma.</strong> Las personas que han vivido eventos traumaticos frecuentemente experimentan culpa irracional. &quot;Debi haber hecho algo diferente.&quot; &quot;Si yo no hubiera estado ahi...&quot; Esta culpa es un intento de la mente de encontrar control en situaciones que fueron incontrolables.
+            <strong>Trauma.</strong> Las personas que han vivido eventos traumáticos frecuentemente experimentan culpa irracional. &quot;Debí haber hecho algo diferente.&quot; &quot;Si yo no hubiera estado ahí...&quot; Esta culpa es un intento de la mente de encontrar control en situaciones que fueron incontrolables.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Culpa y duelo</h2>
 
           <p>
-            La culpa es una de las emociones mas comunes en el proceso de duelo.
+            La culpa es una de las emociones más comunes en el proceso de duelo.
           </p>
 
           <p>
-            &quot;Debi haber pasado mas tiempo con el.&quot; &quot;Si lo hubiera llevado al medico antes.&quot; &quot;Nuestras ultimas palabras fueron una discusion.&quot; &quot;No estuve ahi cuando murio.&quot;
+            &quot;Debí haber pasado más tiempo con él.&quot; &quot;Si lo hubiera llevado al médico antes.&quot; &quot;Nuestras últimas palabras fueron una discusión.&quot; &quot;No estuve ahí cuando murió.&quot;
           </p>
 
           <p>
@@ -130,37 +130,37 @@ export default function ArticuloCulpaQueCargamos() {
           </p>
 
           <p>
-            Sin embargo, la mayoria de las veces esta culpa es desproporcionada. Magnificamos nuestras fallas y minimizamos todo lo que si hicimos. Nos juzgamos con informacion que no teniamos en el momento. Asumimos un control sobre la vida y la muerte que ningun ser humano tiene.
+            Sin embargo, la mayoría de las veces esta culpa es desproporcionada. Magnificamos nuestras fallas y minimizamos todo lo que sí hicimos. Nos juzgamos con información que no teníamos en el momento. Asumimos un control sobre la vida y la muerte que ningún ser humano tiene.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como saber si tu culpa es proporcional</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo saber si tu culpa es proporcional</h2>
 
           <p>
             Hacerte algunas preguntas puede ayudar a evaluar si la culpa que sientes corresponde con la realidad.
           </p>
 
           <p>
-            Hubo realmente una accion danina de tu parte, o te sientes culpable por algo que estaba fuera de tu control?
+            ¿Hubo realmente una acción dañina de tu parte, o te sientes culpable por algo que estaba fuera de tu control?
           </p>
 
           <p>
-            Otras personas razonables considerarian que hiciste algo malo, o solo tu te juzgas tan duramente?
+            ¿Otras personas razonables considerarían que hiciste algo malo, o sólo tú te juzgas tan duramente?
           </p>
 
           <p>
-            La intensidad de tu culpa corresponde con la gravedad de lo sucedido?
+            ¿La intensidad de tu culpa corresponde con la gravedad de lo sucedido?
           </p>
 
           <p>
-            Estas asumiendo responsabilidad por las decisiones o emociones de otras personas adultas?
+            ¿Estás asumiendo responsabilidad por las decisiones o emociones de otras personas adultas?
           </p>
 
           <p>
-            Te sientes culpable por cuidarte, por tener necesidades, por existir?
+            ¿Te sientes culpable por cuidarte, por tener necesidades, por existir?
           </p>
 
           <p>
-            Si la culpa persiste sin proporcion con los hechos, probablemente estas cargando algo que no te corresponde.
+            Si la culpa persiste sin proporción con los hechos, probablemente estás cargando algo que no te corresponde.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Pasos para procesar la culpa</h2>
@@ -170,7 +170,7 @@ export default function ArticuloCulpaQueCargamos() {
           </p>
 
           <p>
-            <strong>Evalua la proporcionalidad.</strong> Con honestidad, preguntate si tu culpa corresponde con una accion real y con la gravedad de esa accion.
+            <strong>Evalúa la proporcionalidad.</strong> Con honestidad, pregúntate si tu culpa corresponde con una acción real y con la gravedad de esa acción.
           </p>
 
           <p>
@@ -178,17 +178,17 @@ export default function ArticuloCulpaQueCargamos() {
           </p>
 
           <p>
-            <strong>Repara si es posible.</strong> Si hiciste algo que genuinamente causo dano, busca formas de reparar: disculparte, cambiar tu comportamiento, hacer algo que compense. La accion puede aliviar la culpa de maneras que la rumiacion no puede.
+            <strong>Repara si es posible.</strong> Si hiciste algo que genuinamente causó daño, busca formas de reparar: disculparte, cambiar tu comportamiento, hacer algo que compense. La acción puede aliviar la culpa de maneras que la rumiación no puede.
           </p>
 
           <p>
-            <strong>Cuestiona los mensajes heredados.</strong> Si tu culpa tiene raices en mensajes de la infancia o creencias que internalizaste, puedes trabajar conscientemente en desmontar esas creencias. Esto generalmente requiere tiempo y puede beneficiarse de apoyo terapeutico.
+            <strong>Cuestiona los mensajes heredados.</strong> Si tu culpa tiene raíces en mensajes de la infancia o creencias que internalizaste, puedes trabajar conscientemente en desmontar esas creencias. Esto generalmente requiere tiempo y puede beneficiarse de apoyo terapéutico.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Perdonarte a ti mismo</h2>
 
           <p>
-            El perdon propio es uno de los trabajos mas dificiles de la vida emocional.
+            El perdón propio es uno de los trabajos más difíciles de la vida emocional.
           </p>
 
           <p>
@@ -196,7 +196,7 @@ export default function ArticuloCulpaQueCargamos() {
           </p>
 
           <p>
-            El perdon propio es un proceso, no un evento. Puede requerir tiempo, trabajo interno, a veces apoyo profesional. No sucede de un dia para otro porque decidiste que ya era suficiente.
+            El perdón propio es un proceso, no un evento. Puede requerir tiempo, trabajo interno, a veces apoyo profesional. No sucede de un día para otro porque decidiste que ya era suficiente.
           </p>
 
           <p>
@@ -206,11 +206,11 @@ export default function ArticuloCulpaQueCargamos() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El arte como canal para la culpa</h2>
 
           <p>
-            Expresar la culpa creativamente puede ser parte del proceso de liberacion.
+            Expresar la culpa creativamente puede ser parte del proceso de liberación.
           </p>
 
           <p>
-            Escribir cartas que nunca enviaras: a ti mismo, a la persona a quien sientes que fallaste, a quien te hizo sentir que nunca eras suficiente.
+            Escribir cartas que nunca enviarás: a ti mismo, a la persona a quien sientes que fallaste, a quien te hizo sentir que nunca eras suficiente.
           </p>
 
           <p>
@@ -218,17 +218,17 @@ export default function ArticuloCulpaQueCargamos() {
           </p>
 
           <p>
-            Crear rituales simbolicos de liberacion: escribir la culpa en papel y quemarlo, enterrar algo que represente lo que sueltas, cualquier acto que marque la intencion de dejar ir.
+            Crear rituales simbólicos de liberación: escribir la culpa en papel y quemarlo, enterrar algo que represente lo que sueltas, cualquier acto que marque la intención de dejar ir.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una reflexion</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una reflexión</h2>
 
           <p>
             La culpa tiene su lugar. Nos ayuda a ser personas responsables y consideradas.
           </p>
 
           <p>
-            Pero la culpa excesiva, la culpa heredada, la culpa por existir, esa no tiene lugar. Solo pesa sin servir.
+            Pero la culpa excesiva, la culpa heredada, la culpa por existir, esa no tiene lugar. Sólo pesa sin servir.
           </p>
 
           <p>
@@ -236,7 +236,7 @@ export default function ArticuloCulpaQueCargamos() {
           </p>
 
           <p>
-            Aprender a distinguir que culpa es informacion util y que culpa es una carga innecesaria puede cambiar significativamente la calidad de tu vida.
+            Aprender a distinguir qué culpa es información útil y qué culpa es una carga innecesaria puede cambiar significativamente la calidad de tu vida.
           </p>
 
           <p className="italic text-black/60 mt-8">
@@ -245,9 +245,9 @@ export default function ArticuloCulpaQueCargamos() {
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesion de orientacion gratuita</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si la culpa te esta pesando y necesitas acompanamiento, estoy aqui para ti.
+            Si la culpa te está pesando y necesitas acompañamiento, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}

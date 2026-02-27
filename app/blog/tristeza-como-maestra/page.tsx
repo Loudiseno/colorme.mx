@@ -18,17 +18,17 @@ export default function ArticuloTristezaComoMaestra() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             La tristeza no vino a destruirte
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/tristeza.webp"
-            alt="Tristeza emocional, procesar tristeza, emociones dificiles, inteligencia emocional."
+            alt="Tristeza emocional, procesar tristeza, emociones difíciles, inteligencia emocional."
             width={1200}
             height={675}
             priority
@@ -46,79 +46,79 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            Apenas aparece, buscamos como deshacernos de ella. Distracciones, consejos para animarse, frases motivacionales, cualquier cosa que nos saque de ese estado incomodo lo mas rapido posible.
+            Apenas aparece, buscamos cómo deshacernos de ella. Distracciones, consejos para animarse, frases motivacionales, cualquier cosa que nos saque de ese estado incómodo lo más rápido posible.
           </p>
 
           <p>
             Pero la tristeza no es el enemigo que nos han hecho creer.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La emocion que nadie quiere sentir</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La emoción que nadie quiere sentir</h2>
 
           <p>
-            Desde pequenos recibimos mensajes claros sobre la tristeza. &quot;No llores.&quot; &quot;No te pongas asi.&quot; &quot;Animate.&quot; &quot;Mira el lado positivo.&quot;
+            Desde pequeños recibimos mensajes claros sobre la tristeza. &quot;No llores.&quot; &quot;No te pongas así.&quot; &quot;Anímate.&quot; &quot;Mira el lado positivo.&quot;
           </p>
 
           <p>
-            Estos mensajes, aunque bienintencionados, transmiten una idea problematica: que la tristeza es algo malo que hay que evitar o superar rapidamente.
+            Estos mensajes, aunque bienintencionados, transmiten una idea problemática: que la tristeza es algo malo que hay que evitar o superar rápidamente.
           </p>
 
           <p>
-            Y asi aprendemos a desconfiar de una de las emociones mas naturales y necesarias que tenemos.
+            Y así aprendemos a desconfiar de una de las emociones más naturales y necesarias que tenemos.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Para que sirve la tristeza</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Para qué sirve la tristeza</h2>
 
           <p>
-            La tristeza, como todas las emociones basicas, cumple funciones importantes.
-          </p>
-
-          <p>
-            <strong>Procesa las perdidas.</strong> La tristeza es la respuesta natural ante lo que perdemos: personas, relaciones, etapas, expectativas, versiones de nosotros mismos. Sin ella, no podriamos integrar las perdidas y seguir adelante.
+            La tristeza, como todas las emociones básicas, cumple funciones importantes.
           </p>
 
           <p>
-            <strong>Nos conecta con otros.</strong> La expresion de tristeza comunica que necesitamos apoyo. Es una senal social que invita al consuelo y la cercania. Llorar frente a alguien crea intimidad.
+            <strong>Procesa las pérdidas.</strong> La tristeza es la respuesta natural ante lo que perdemos: personas, relaciones, etapas, expectativas, versiones de nosotros mismos. Sin ella, no podríamos integrar las pérdidas y seguir adelante.
           </p>
 
           <p>
-            <strong>Nos humaniza.</strong> La capacidad de sentir tristeza esta conectada con la capacidad de amar, de valorar, de darle importancia a las cosas. Una persona que nunca se entristece probablemente tampoco puede conectar profundamente.
+            <strong>Nos conecta con otros.</strong> La expresión de tristeza comunica que necesitamos apoyo. Es una señal social que invita al consuelo y la cercanía. Llorar frente a alguien crea intimidad.
           </p>
 
           <p>
-            <strong>Precede transformaciones.</strong> Muchos momentos de crecimiento personal estan precedidos por periodos de tristeza. El dolor puede ser el terreno donde germinan cambios importantes.
-          </p>
-
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Tristeza versus depresion</h2>
-
-          <p>
-            Es importante distinguir entre tristeza y depresion. No son lo mismo.
+            <strong>Nos humaniza.</strong> La capacidad de sentir tristeza está conectada con la capacidad de amar, de valorar, de darle importancia a las cosas. Una persona que nunca se entristece probablemente tampoco puede conectar profundamente.
           </p>
 
           <p>
-            La tristeza es una emocion temporal que responde a circunstancias especificas. Viene, se siente, y eventualmente pasa. Puedes estar triste y aun asi funcionar en tu vida diaria, encontrar momentos de alivio, conectar con otros.
+            <strong>Precede transformaciones.</strong> Muchos momentos de crecimiento personal están precedidos por períodos de tristeza. El dolor puede ser el terreno donde germinan cambios importantes.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Tristeza versus depresión</h2>
+
+          <p>
+            Es importante distinguir entre tristeza y depresión. No son lo mismo.
           </p>
 
           <p>
-            La depresion es una condicion clinica que persiste mas alla de las circunstancias. Afecta el funcionamiento diario de manera significativa. Incluye sintomas como perdida de interes en actividades que antes disfrutabas, cambios importantes en sueno y apetito, fatiga constante, dificultad para concentrarte, sentimientos de inutilidad, y en casos graves, pensamientos de hacerte dano.
+            La tristeza es una emoción temporal que responde a circunstancias específicas. Viene, se siente, y eventualmente pasa. Puedes estar triste y aún así funcionar en tu vida diaria, encontrar momentos de alivio, conectar con otros.
           </p>
 
           <p>
-            Si lo que sientes se parece mas a la segunda descripcion, especialmente si persiste por mas de dos semanas, considera buscar evaluacion profesional. La depresion es tratable.
+            La depresión es una condición clínica que persiste más allá de las circunstancias. Afecta el funcionamiento diario de manera significativa. Incluye síntomas como pérdida de interés en actividades que antes disfrutabas, cambios importantes en sueño y apetito, fatiga constante, dificultad para concentrarte, sentimientos de inutilidad, y en casos graves, pensamientos de hacerte daño.
+          </p>
+
+          <p>
+            Si lo que sientes se parece más a la segunda descripción, especialmente si persiste por más de dos semanas, considera buscar evaluación profesional. La depresión es tratable.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que hacemos para evitar sentir</h2>
 
           <p>
-            Hemos desarrollado multiples estrategias para huir de la tristeza.
+            Hemos desarrollado múltiples estrategias para huir de la tristeza.
           </p>
 
           <p>
-            <strong>Distraccion constante.</strong> Llenar cada momento de estimulos: redes sociales, series, trabajo excesivo. Cualquier cosa que mantenga la mente ocupada para no sentir.
+            <strong>Distracción constante.</strong> Llenar cada momento de estímulos: redes sociales, series, trabajo excesivo. Cualquier cosa que mantenga la mente ocupada para no sentir.
           </p>
 
           <p>
-            <strong>Positividad forzada.</strong> Obligarnos a ver el lado bueno antes de haber procesado el lado dificil. Sonreir cuando por dentro estamos rotos.
+            <strong>Positividad forzada.</strong> Obligarnos a ver el lado bueno antes de haber procesado el lado difícil. Sonreír cuando por dentro estamos rotos.
           </p>
 
           <p>
@@ -126,65 +126,65 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            <strong>Racionalizacion.</strong> Explicar intelectualmente por que no deberiamos sentirnos asi. &quot;Otros estan peor.&quot; &quot;No es para tanto.&quot; &quot;Deberia ser mas fuerte.&quot;
+            <strong>Racionalización.</strong> Explicar intelectualmente por qué no deberíamos sentirnos así. &quot;Otros están peor.&quot; &quot;No es para tanto.&quot; &quot;Debería ser más fuerte.&quot;
           </p>
 
           <p>
             Ninguna de estas estrategias funciona a largo plazo. El dolor evitado no desaparece. Se acumula, se transforma, emerge de otras formas.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como acompanar tu propia tristeza</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo acompañar tu propia tristeza</h2>
 
           <p>
             En lugar de huir, puedes aprender a estar con la tristeza.
           </p>
 
           <p>
-            <strong>Reconocela.</strong> El primer paso es admitir que estas triste. Sin juzgarte, sin buscar inmediatamente la solucion. Solo reconocer: &quot;Esto que siento es tristeza.&quot;
+            <strong>Reconócela.</strong> El primer paso es admitir que estás triste. Sin juzgarte, sin buscar inmediatamente la solución. Solo reconocer: &quot;Esto que siento es tristeza.&quot;
           </p>
 
           <p>
-            <strong>Dale espacio.</strong> La tristeza necesita tiempo y lugar. Permitete momentos donde no tengas que estar bien, donde puedas simplemente sentir lo que sientes.
+            <strong>Dale espacio.</strong> La tristeza necesita tiempo y lugar. Permítete momentos donde no tengas que estar bien, donde puedas simplemente sentir lo que sientes.
           </p>
 
           <p>
-            <strong>Expresala de alguna forma.</strong> Llorar, escribir, hablar con alguien de confianza, crear arte. La tristeza que encuentra expresion se procesa mejor que la que se guarda.
+            <strong>Exprésala de alguna forma.</strong> Llorar, escribir, hablar con alguien de confianza, crear arte. La tristeza que encuentra expresión se procesa mejor que la que se guarda.
           </p>
 
           <p>
-            <strong>No la apresures.</strong> La tristeza tiene su propio ritmo. Intentar acelerarla generalmente la prolonga. Confia en que pasara cuando haya hecho su trabajo.
+            <strong>No la apresures.</strong> La tristeza tiene su propio ritmo. Intentar acelerarla generalmente la prolonga. Confía en que pasará cuando haya hecho su trabajo.
           </p>
 
           <p>
-            <strong>Cuida tu cuerpo.</strong> Cuando estas triste, las necesidades basicas importan mas que nunca. Duerme. Come aunque no tengas hambre. Sal a caminar. El cuerpo sostiene a la mente.
+            <strong>Cuida tu cuerpo.</strong> Cuando estás triste, las necesidades básicas importan más que nunca. Duerme. Come aunque no tengas hambre. Sal a caminar. El cuerpo sostiene a la mente.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El llanto como liberacion</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El llanto como liberación</h2>
 
           <p>
-            Llorar tiene beneficios fisiologicos documentados. Investigaciones de la Universidad de Minnesota encontraron que las lagrimas emocionales contienen hormonas de estres que se liberan del cuerpo al llorar. Literalmente, lloramos para sacar algo.
-          </p>
-
-          <p>
-            Despues de llorar, muchas personas reportan sentirse mas aliviadas, mas claras, menos tensas. No es imaginacion. Es biologia.
+            Llorar tiene beneficios fisiológicos documentados. Investigaciones de la Universidad de Minnesota encontraron que las lágrimas emocionales contienen hormonas de estrés que se liberan del cuerpo al llorar. Literalmente, lloramos para sacar algo.
           </p>
 
           <p>
-            Sin embargo, muchos adultos han olvidado como llorar. Les da verguenza, lo consideran debilidad, lo reprimen automaticamente.
+            Después de llorar, muchas personas reportan sentirse más aliviadas, más claras, menos tensas. No es imaginación. Es biología.
           </p>
 
           <p>
-            Si esto te pasa, no te fuerces. Pero tampoco te juzgues si las lagrimas aparecen. Estan haciendo su trabajo.
+            Sin embargo, muchos adultos han olvidado cómo llorar. Les da vergüenza, lo consideran debilidad, lo reprimen automáticamente.
+          </p>
+
+          <p>
+            Si esto te pasa, no te fuerces. Pero tampoco te juzgues si las lágrimas aparecen. Están haciendo su trabajo.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La tristeza y el arte</h2>
 
           <p>
-            El arte ha sido historicamente un canal para la tristeza.
+            El arte ha sido históricamente un canal para la tristeza.
           </p>
 
           <p>
-            La musica en tonos menores, la poesia del dolor, las pinturas de melancolia. Los artistas siempre han sabido que la tristeza necesita expresion y que esa expresion puede transformarse en algo significativo.
+            La música en tonos menores, la poesía del dolor, las pinturas de melancolía. Los artistas siempre han sabido que la tristeza necesita expresión y que esa expresión puede transformarse en algo significativo.
           </p>
 
           <p>
@@ -198,7 +198,7 @@ export default function ArticuloTristezaComoMaestra() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cuando la tristeza necesita ayuda profesional</h2>
 
           <p>
-            La tristeza normal es parte de la vida. Pero hay senales de que algo mas esta pasando:
+            La tristeza normal es parte de la vida. Pero hay señales de que algo más está pasando:
           </p>
 
           <p>
@@ -210,7 +210,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            Viene acompanada de pensamientos de hacerte dano o de que las cosas serian mejor sin ti.
+            Viene acompañada de pensamientos de hacerte daño o de que las cosas serían mejor sin ti.
           </p>
 
           <p>
@@ -218,25 +218,25 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            No puedes encontrar ningun momento de alivio, por breve que sea.
+            No puedes encontrar ningún momento de alivio, por breve que sea.
           </p>
 
           <p>
             Si algo de esto resuena, buscar ayuda no es debilidad. Es cuidado propio.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una reflexion</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una reflexión</h2>
 
           <p>
-            La tristeza es una de las emociones mas malinterpretadas. Le tememos porque duele. La evitamos porque nos hace sentir vulnerables.
+            La tristeza es una de las emociones más malinterpretadas. Le tememos porque duele. La evitamos porque nos hace sentir vulnerables.
           </p>
 
           <p>
-            Pero la tristeza tambien es prueba de que algo importo. No puedes entristecerte por lo que no valoras. El dolor es proporcional al amor.
+            Pero la tristeza también es prueba de que algo importó. No puedes entristecerte por lo que no valoras. El dolor es proporcional al amor.
           </p>
 
           <p>
-            Aprender a estar triste, sin huir y sin ahogarte, es una habilidad que se desarrolla. Y esa habilidad te hace mas capaz de vivir una vida plena, no menos.
+            Aprender a estar triste, sin huir y sin ahogarte, es una habilidad que se desarrolla. Y esa habilidad te hace más capaz de vivir una vida plena, no menos.
           </p>
 
           <p>
@@ -249,9 +249,9 @@ export default function ArticuloTristezaComoMaestra() {
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesion de orientacion gratuita</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si necesitas acompanamiento para procesar tus emociones, estoy aqui para ti.
+            Si necesitas acompañamiento para procesar tus emociones, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}

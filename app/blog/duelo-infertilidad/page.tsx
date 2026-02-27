@@ -18,17 +18,17 @@ export default function ArticuloDueloInfertilidad() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             El duelo invisible: cuando la maternidad o paternidad no llega
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/infertilidad.webp"
-            alt="Duelo por infertilidad, no poder tener hijos, maternidad frustrada, duelo reproductivo, perdida gestacional."
+            alt="Duelo por infertilidad, no poder tener hijos, maternidad frustrada, duelo reproductivo, pérdida gestacional."
             width={1200}
             height={675}
             priority
@@ -50,7 +50,7 @@ export default function ArticuloDueloInfertilidad() {
           </p>
 
           <p>
-            El duelo por no poder tener hijos es una de las perdidas mas invisibles que existen. Y sin embargo, para quienes lo viven, es absolutamente real.
+            El duelo por no poder tener hijos es una de las pérdidas más invisibles que existen. Y sin embargo, para quienes lo viven, es absolutamente real.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Un duelo sin nombre</h2>
@@ -60,51 +60,51 @@ export default function ArticuloDueloInfertilidad() {
           </p>
 
           <p>
-            No existe una palabra en espanol para nombrar a la persona que quiso ser madre o padre y no pudo. No hay ceremonias. No hay tarjetas de condolencia. Lo que hay, muchas veces, es silencio, incomprension o comentarios que duelen mas de lo que ayudan.
+            No existe una palabra en español para nombrar a la persona que quiso ser madre o padre y no pudo. No hay ceremonias. No hay tarjetas de condolencia. Lo que hay, muchas veces, es silencio, incomprensión o comentarios que duelen más de lo que ayudan.
           </p>
 
           <p>
-            Segun la Organizacion Mundial de la Salud, la infertilidad afecta aproximadamente al 17.5% de la poblacion adulta mundial. Esto significa que millones de personas atraviesan este proceso, muchas de ellas en soledad.
+            Según la Organización Mundial de la Salud, la infertilidad afecta aproximadamente al 17.5% de la población adulta mundial. Esto significa que millones de personas atraviesan este proceso, muchas de ellas en soledad.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por que duele tanto?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Por qué duele tanto?</h2>
 
           <p>
-            La dificultad para tener hijos cuando se desean activa multiples perdidas simultaneas.
-          </p>
-
-          <p>
-            <strong>La perdida de un proyecto de vida.</strong> Muchas personas imaginaron su futuro con hijos desde la infancia. Nombres elegidos, tradiciones familiares que querian transmitir, momentos que visualizaron durante anos. Cuando eso no sucede, no solo se pierde un bebe que no llego, se pierde toda una vida imaginada.
+            La dificultad para tener hijos cuando se desean activa múltiples pérdidas simultáneas.
           </p>
 
           <p>
-            <strong>La perdida de una identidad esperada.</strong> En muchas culturas, la maternidad y la paternidad estan profundamente ligadas a la identidad adulta. No convertirse en madre o padre puede generar preguntas dolorosas sobre quien eres y cual es tu lugar en el mundo.
+            <strong>La pérdida de un proyecto de vida.</strong> Muchas personas imaginaron su futuro con hijos desde la infancia. Nombres elegidos, tradiciones familiares que querían transmitir, momentos que visualizaron durante años. Cuando eso no sucede, no solo se pierde un bebé que no llegó, se pierde toda una vida imaginada.
           </p>
 
           <p>
-            <strong>La perdida del control sobre tu propio cuerpo.</strong> Especialmente para las mujeres, descubrir que el cuerpo no puede hacer algo que se supone que deberia poder hacer genera una sensacion de traicion interna dificil de procesar.
+            <strong>La pérdida de una identidad esperada.</strong> En muchas culturas, la maternidad y la paternidad están profundamente ligadas a la identidad adulta. No convertirse en madre o padre puede generar preguntas dolorosas sobre quién eres y cuál es tu lugar en el mundo.
           </p>
 
           <p>
-            <strong>La perdida de la conexion con tu linaje.</strong> Para algunas personas, no tener hijos significa que algo termina con ellos: un apellido, una historia familiar, una continuidad biologica.
+            <strong>La pérdida del control sobre tu propio cuerpo.</strong> Especialmente para las mujeres, descubrir que el cuerpo no puede hacer algo que se supone que debería poder hacer genera una sensación de traición interna difícil de procesar.
+          </p>
+
+          <p>
+            <strong>La pérdida de la conexión con tu linaje.</strong> Para algunas personas, no tener hijos significa que algo termina con ellos: un apellido, una historia familiar, una continuidad biológica.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que la sociedad no entiende</h2>
 
           <p>
-            Hay frases que las personas dicen con buena intencion pero que causan un dano profundo.
+            Hay frases que las personas dicen con buena intención pero que causan un daño profundo.
           </p>
 
           <p>
-            &quot;Relajate y ya vendra.&quot; Como si el estres fuera la causa de la infertilidad y relajarse la solucion. Esta frase minimiza un problema medico real y pone la responsabilidad en quien ya esta sufriendo.
+            &quot;Relájate y ya vendrá.&quot; Como si el estrés fuera la causa de la infertilidad y relajarse la solución. Esta frase minimiza un problema médico real y pone la responsabilidad en quien ya está sufriendo.
           </p>
 
           <p>
-            &quot;Siempre puedes adoptar.&quot; La adopcion es una opcion valiosa para quienes la eligen conscientemente. Pero no es un reemplazo del duelo por la maternidad o paternidad biologica. Son procesos diferentes que no se cancelan entre si.
+            &quot;Siempre puedes adoptar.&quot; La adopción es una opción valiosa para quienes la eligen conscientemente. Pero no es un reemplazo del duelo por la maternidad o paternidad biológica. Son procesos diferentes que no se cancelan entre sí.
           </p>
 
           <p>
-            &quot;Todo pasa por algo.&quot; Buscar un significado espiritual a un dolor que no tiene sentido no ayuda a quien lo esta viviendo. A veces las cosas simplemente duelen y no hay un proposito oculto.
+            &quot;Todo pasa por algo.&quot; Buscar un significado espiritual a un dolor que no tiene sentido no ayuda a quien lo está viviendo. A veces las cosas simplemente duelen y no hay un propósito oculto.
           </p>
 
           <p>
@@ -112,57 +112,57 @@ export default function ArticuloDueloInfertilidad() {
           </p>
 
           <p>
-            &quot;Y para cuando el bebe?&quot; Esta pregunta casual, tan comun en reuniones familiares, puede ser devastadora para quien lleva anos intentando o ya sabe que no podra.
+            &quot;¿Y para cuándo el bebé?&quot; Esta pregunta casual, tan común en reuniones familiares, puede ser devastadora para quien lleva años intentando o ya sabe que no podrá.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Las multiples perdidas del proceso</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Las múltiples pérdidas del proceso</h2>
 
           <p>
-            Quienes atraviesan la infertilidad no enfrentan una sola perdida. Enfrentan muchas.
-          </p>
-
-          <p>
-            <strong>Cada ciclo menstrual.</strong> Para quien esta intentando concebir, cada menstruacion puede sentirse como una pequena muerte, la confirmacion de otro mes que no funciono.
+            Quienes atraviesan la infertilidad no enfrentan una sola pérdida. Enfrentan muchas.
           </p>
 
           <p>
-            <strong>Cada tratamiento fallido.</strong> La reproduccion asistida implica esperanza, inversion emocional, economica y fisica. Cuando no funciona, el golpe es multiple.
+            <strong>Cada ciclo menstrual.</strong> Para quien está intentando concebir, cada menstruación puede sentirse como una pequeña muerte, la confirmación de otro mes que no funcionó.
           </p>
 
           <p>
-            <strong>Cada embarazo perdido.</strong> Las perdidas gestacionales tempranas muchas veces no se reconocen socialmente como perdidas reales. Pero lo son.
+            <strong>Cada tratamiento fallido.</strong> La reproducción asistida implica esperanza, inversión emocional, económica y física. Cuando no funciona, el golpe es múltiple.
           </p>
 
           <p>
-            <strong>La relacion con tu cuerpo.</strong> Muchas personas desarrollan una relacion dificil con su cuerpo durante este proceso. Lo sienten como fallido, defectuoso, traidor.
+            <strong>Cada embarazo perdido.</strong> Las pérdidas gestacionales tempranas muchas veces no se reconocen socialmente como pérdidas reales. Pero lo son.
           </p>
 
           <p>
-            <strong>La espontaneidad en la intimidad.</strong> Cuando el sexo se convierte en un medio para concebir, con fechas calculadas y expectativas, la conexion intima con la pareja puede deteriorarse.
+            <strong>La relación con tu cuerpo.</strong> Muchas personas desarrollan una relación difícil con su cuerpo durante este proceso. Lo sienten como fallido, defectuoso, traidor.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo anticipado de &quot;quiza nunca&quot;</h2>
+          <p>
+            <strong>La espontaneidad en la intimidad.</strong> Cuando el sexo se convierte en un medio para concebir, con fechas calculadas y expectativas, la conexión íntima con la pareja puede deteriorarse.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo anticipado de &quot;quizá nunca&quot;</h2>
 
           <p>
             Hay un momento particularmente doloroso en este proceso: cuando empiezas a aceptar que tal vez no va a suceder.
           </p>
 
           <p>
-            Este duelo anticipado es complejo porque no hay certeza absoluta. Mientras haya posibilidad, hay esperanza. Pero esa misma esperanza puede convertirse en un peso cuando se sostiene durante anos.
+            Este duelo anticipado es complejo porque no hay certeza absoluta. Mientras haya posibilidad, hay esperanza. Pero esa misma esperanza puede convertirse en un peso cuando se sostiene durante años.
           </p>
 
           <p>
-            Soltar el sueno de la maternidad o paternidad biologica no sucede de un dia para otro. Es un proceso que puede tomar meses o anos, con avances y retrocesos.
+            Soltar el sueño de la maternidad o paternidad biológica no sucede de un día para otro. Es un proceso que puede tomar meses o años, con avances y retrocesos.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como atravesar este dolor</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo atravesar este dolor</h2>
 
           <p>
-            No hay recetas magicas, pero hay formas de acompanarte en el proceso.
+            No hay recetas mágicas, pero hay formas de acompañarte en el proceso.
           </p>
 
           <p>
-            <strong>Valida tu dolor.</strong> Lo que sientes es real y legitimo. No necesitas la aprobacion de nadie para saber que estas viviendo una perdida significativa.
+            <strong>Valida tu dolor.</strong> Lo que sientes es real y legítimo. No necesitas la aprobación de nadie para saber que estás viviendo una pérdida significativa.
           </p>
 
           <p>
@@ -170,61 +170,61 @@ export default function ArticuloDueloInfertilidad() {
           </p>
 
           <p>
-            <strong>Permite todas las emociones.</strong> Tristeza, enojo, envidia hacia quienes tienen hijos facilmente, culpa, desesperanza. Todas estas emociones son normales y necesitan espacio para ser procesadas.
+            <strong>Permite todas las emociones.</strong> Tristeza, enojo, envidia hacia quienes tienen hijos fácilmente, culpa, desesperanza. Todas estas emociones son normales y necesitan espacio para ser procesadas.
           </p>
 
           <p>
-            <strong>Considera apoyo profesional.</strong> Un psicologo especializado en infertilidad o en duelo puede ayudarte a navegar este proceso. No tienes que hacerlo solo.
+            <strong>Considera apoyo profesional.</strong> Un psicólogo especializado en infertilidad o en duelo puede ayudarte a navegar este proceso. No tienes que hacerlo solo.
           </p>
 
           <p>
-            <strong>Protegete cuando lo necesites.</strong> Esta bien declinar invitaciones a baby showers si te resultan dolorosas. Esta bien silenciar redes sociales cuando los anuncios de embarazo te lastiman. Cuidarte no es ser egoista.
+            <strong>Protégete cuando lo necesites.</strong> Está bien declinar invitaciones a baby showers si te resultan dolorosas. Está bien silenciar redes sociales cuando los anuncios de embarazo te lastiman. Cuidarte no es ser egoísta.
           </p>
 
           <p>
-            <strong>Encuentra formas de expresion.</strong> El arte, la escritura, el movimiento pueden ser canales para procesar emociones que no caben en palabras. Crear algo puede ayudar a darle forma al dolor.
+            <strong>Encuentra formas de expresión.</strong> El arte, la escritura, el movimiento pueden ser canales para procesar emociones que no caben en palabras. Crear algo puede ayudar a darle forma al dolor.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Si decides cerrar el capitulo</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Si decides cerrar el capítulo</h2>
 
           <p>
-            Llega un momento en que algunas personas deciden dejar de intentar. Esta decision es profundamente personal y merece respeto.
-          </p>
-
-          <p>
-            Cerrar el capitulo de la busqueda no significa dejar de desear. Significa elegir tu bienestar presente sobre una esperanza que se ha vuelto demasiado costosa.
+            Llega un momento en que algunas personas deciden dejar de intentar. Esta decisión es profundamente personal y merece respeto.
           </p>
 
           <p>
-            Este cierre tambien requiere un duelo. Soltar la imagen de la vida que esperabas tener para poder construir la vida que si puedes vivir.
+            Cerrar el capítulo de la búsqueda no significa dejar de desear. Significa elegir tu bienestar presente sobre una esperanza que se ha vuelto demasiado costosa.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Reconstruir una identidad mas alla de la maternidad o paternidad</h2>
+          <p>
+            Este cierre también requiere un duelo. Soltar la imagen de la vida que esperabas tener para poder construir la vida que sí puedes vivir.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Reconstruir una identidad más allá de la maternidad o paternidad</h2>
 
           <p>
             No eres menos valioso, menos completo o menos digno de amor porque no tengas hijos.
           </p>
 
           <p>
-            Tu vida puede tener proposito, conexion y significado de muchas formas. Puedes nutrir, cuidar y dejar huella en el mundo sin ser madre o padre biologico.
+            Tu vida puede tener propósito, conexión y significado de muchas formas. Puedes nutrir, cuidar y dejar huella en el mundo sin ser madre o padre biológico.
           </p>
 
           <p>
-            Esto no significa que el dolor desaparezca. Significa que puedes aprender a vivir con el mientras construyes algo nuevo.
+            Esto no significa que el dolor desaparezca. Significa que puedes aprender a vivir con él mientras construyes algo nuevo.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una reflexion</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una reflexión</h2>
 
           <p>
-            El duelo por la maternidad o paternidad que no llego es uno de los mas solitarios que existen. La sociedad no sabe como acompanarlo. A veces ni siquiera sabe que existe.
-          </p>
-
-          <p>
-            Pero tu sabes. Y tu dolor merece ser reconocido, acompanado y respetado.
+            El duelo por la maternidad o paternidad que no llegó es uno de los más solitarios que existen. La sociedad no sabe cómo acompañarlo. A veces ni siquiera sabe que existe.
           </p>
 
           <p>
-            No hay nada que tengas que demostrar. No hay nada que tengas que superar en un tiempo determinado. Lo que sientes es humano, valido y comprensible.
+            Pero tú sabes. Y tu dolor merece ser reconocido, acompañado y respetado.
+          </p>
+
+          <p>
+            No hay nada que tengas que demostrar. No hay nada que tengas que superar en un tiempo determinado. Lo que sientes es humano, válido y comprensible.
           </p>
 
           <p className="italic text-black/60 mt-8">
@@ -233,9 +233,9 @@ export default function ArticuloDueloInfertilidad() {
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesion de orientacion gratuita</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si estas atravesando el duelo por infertilidad y necesitas acompanamiento, estoy aqui para ti.
+            Si estás atravesando el duelo por infertilidad y necesitas acompañamiento, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}
