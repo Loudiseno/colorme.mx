@@ -173,13 +173,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/blog/duelo-perinatal`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
+        {
       url: `${baseUrl}/blog/que-decir-duelo`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,

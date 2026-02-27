@@ -179,15 +179,7 @@ const articles = [
     description: 'Cómo tener la conversación más difícil con amor y claridad.',
     alt: 'Cómo explicar la muerte a un niño.',
   },
-  {
-    slug: '/blog/duelo-perinatal',
-    image: '/duelo-perinatal.webp',
-    category: 'Tanatología',
-    title: 'Duelo perinatal: el dolor que nadie ve',
-    description: 'Tu bebé existió y tu dolor es real. Apoyo para madres y padres que perdieron un bebé.',
-    alt: 'Duelo perinatal - Acompañamiento en la pérdida.',
-  },
-  {
+    {
     slug: '/blog/que-decir-duelo',
     image: '/como-acompanar-duelo.webp',
     category: 'Tanatología',
