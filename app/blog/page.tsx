@@ -1,6 +1,9 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Search } from 'lucide-react'
 
 const articles = [
   {
@@ -342,6 +345,14 @@ const articles = [
 ]
 
 export default function BlogPage() {
+  const [search, setSearch] = useState('')
+
+  const filteredArticles = articles.filter((article) =>
+    article.title.toLowerCase().includes(search.toLowerCase()) ||
+    article.description.toLowerCase().includes(search.toLowerCase()) ||
+    article.category.toLowerCase().includes(search.toLowerCase())
+  )
+
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
@@ -359,11 +370,25 @@ export default function BlogPage() {
           <p className="text-black/70 max-w-2xl mx-auto">
             Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad.
           </p>
+
+          {/* Search */}
+          <div className="mt-8 flex justify-center">
+            <div className="relative w-full max-w-xs">
+              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-black/40" />
+              <input
+                type="text"
+                placeholder="Buscar..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 text-sm border border-[#B2F7EF] rounded-full focus:outline-none focus:border-black transition-colors bg-white"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Articles grid */}
         <div className="grid md:grid-cols-3 gap-8">
-          {articles.map((article) => (
+          {filteredArticles.map((article) => (
             <Link key={article.slug} href={article.slug} className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
