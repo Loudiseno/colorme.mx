@@ -1,37 +1,34 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import { siteConfig } from '@/lib/seo'
 
-export default function DueloPerinatallPage() {
+export default function ArticuloDueloPerinatal() {
   return (
-    <article className="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
+    <article className="pt-28 pb-16 md:pt-36 md:pb-20">
       <div className="max-w-3xl mx-auto px-6">
         <Link
           href="/blog"
-          className="inline-flex items-center gap-2 text-black/60 hover:text-black mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-black hover:text-black/70 transition-colors mb-8"
         >
-          <ArrowLeft size={16} />
+          <ArrowLeft size={18} />
           Volver al blog
         </Link>
 
-        <header className="mb-12">
-          <span className="text-sm text-gray-500 uppercase tracking-wider">
-            Tanatología
-          </span>
-          <h1 className="text-4xl md:text-5xl text-black mt-2 mb-4">
+        <header className="mb-8">
+          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Duelo perinatal: el dolor que la sociedad no ve
           </h1>
-          <p className="text-black/60">
-            Por Lourdes Carrillo · Tanatóloga y Arteterapeuta
-          </p>
+          <p className="text-black/60 italic">Por Lourdes Perez | Arteterapeuta y Tanatologa</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/duelo-perinatal.webp"
-            alt="Duelo perinatal - Acompañamiento en la pérdida de un bebé"
+            alt="Duelo perinatal - El dolor que la sociedad no ve"
             width={1200}
             height={675}
             priority
@@ -39,130 +36,259 @@ export default function DueloPerinatallPage() {
           />
         </div>
 
-        <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-black/80 italic mb-8">
-            Para las madres y padres que perdieron a un bebé.
+        <div className="prose prose-lg max-w-none text-black/80">
+          <p className="text-xl italic">
+            Para las madres y padres que perdieron a un bebe.
           </p>
 
-          <p>Tu bebé existió.</p>
+          <p>
+            Tu bebe existio.
+          </p>
 
-          <p>No importa si fueron semanas o meses de embarazo. No importa si nunca lo viste respirar fuera de tu cuerpo. No importa que otros no lo hayan conocido.</p>
+          <p>
+            No importa si fueron semanas o meses de embarazo. No importa si nunca lo viste respirar fuera de tu cuerpo. No importa que otros no lo hayan conocido.
+          </p>
 
-          <p>Tu bebé existió. Y tu dolor es real.</p>
+          <p>
+            Tu bebe existio. Y tu dolor es real.
+          </p>
 
-          <p>El duelo perinatal es uno de los más silenciados y minimizados. Porque la sociedad no siempre sabe cómo hablar de bebés que mueren antes de vivir. Porque la gente no sabe qué decir, entonces a veces no dice nada.</p>
+          <p>
+            Porque la sociedad no siempre sabe como hablar de bebes que mueren antes de vivir. Porque la gente no sabe que decir, entonces a veces no dice nada. Porque te dicen frases que intentan consolar pero terminan lastimando.
+          </p>
 
-          <h2>¿Qué es el duelo perinatal?</h2>
+          <p>
+            Este articulo es para ti. Para validar tu experiencia, reconocer tu dolor, y ofrecerte algunas herramientas para atravesar este proceso.
+          </p>
 
-          <p>El duelo perinatal es el proceso de duelo que ocurre por la pérdida de un bebé durante el embarazo, el parto, o los primeros días de vida.</p>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Que es el duelo perinatal?</h2>
+
+          <p>
+            El duelo perinatal es el proceso de duelo que ocurre por la perdida de un bebe durante el embarazo, el parto, o los primeros dias de vida.
+          </p>
 
           <p>Incluye:</p>
           <ul>
-            <li><strong>Aborto espontáneo</strong> (pérdida temprana del embarazo)</li>
-            <li><strong>Muerte fetal intrauterina</strong> (pérdida más avanzada en el embarazo)</li>
-            <li><strong>Muerte durante el parto</strong></li>
-            <li><strong>Muerte neonatal</strong> (en los primeros días de vida)</li>
-            <li><strong>Interrupción del embarazo por razones médicas</strong></li>
+            <li><strong>Aborto espontaneo</strong> (perdida temprana del embarazo).</li>
+            <li><strong>Muerte fetal intrauterina</strong> (perdida mas avanzada en el embarazo).</li>
+            <li><strong>Muerte durante el parto.</strong></li>
+            <li><strong>Muerte neonatal</strong> (en los primeros dias de vida).</li>
+            <li><strong>Interrupcion del embarazo por razones medicas.</strong></li>
           </ul>
 
-          <p>Todas estas pérdidas son duelos legítimos. Todas duelen. Todas merecen ser reconocidas.</p>
+          <p>
+            Todas estas perdidas son duelos legitimos. Todas duelen. Todas merecen ser reconocidas.
+          </p>
 
-          <h2>Por qué este duelo es tan difícil</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por que este duelo es tan dificil</h2>
 
-          <h3>Perdiste un futuro completo</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Perdiste un futuro completo</h3>
+          <p>
+            No solo perdiste a tu bebe. Perdiste todo lo que imaginabas: la primera sonrisa, los primeros pasos, los cumpleanos, la persona que hubiera sido.
+          </p>
+          <p>
+            Estas en duelo por alguien que nunca conociste de la manera tradicional y al mismo tiempo conocias intimamente. Vivia dentro de ti.
+          </p>
 
-          <p>No solo perdiste a tu bebé. Perdiste todo lo que imaginabas: la primera sonrisa, los primeros pasos, los cumpleaños, la persona que hubiera sido.</p>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">La sociedad puede minimizar tu dolor</h3>
+          <p>
+            Frases bien intencionadas pero dolorosas son comunes en este tipo de perdida. Te hacen sentir que no tienes &quot;derecho&quot; a tu duelo.
+          </p>
+          <p>Pero si lo tienes.</p>
 
-          <p>Estás en duelo por alguien que nunca conociste de la manera tradicional y al mismo tiempo conocías íntimamente. Vivía dentro de ti.</p>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Puede faltar reconocimiento social</h3>
+          <p>
+            A veces no hay funeral. No hay licencia de duelo. No hay las mismas muestras de apoyo que con otras perdidas. El mundo puede seguir como si nada hubiera pasado.
+          </p>
+          <p>
+            Mientras tanto, tu cuerpo sigue procesando el embarazo, y tu tienes que funcionar en medio del dolor.
+          </p>
 
-          <h3>La sociedad puede minimizar tu dolor</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">El trauma fisico se suma al emocional</h3>
+          <p>
+            Si pasaste por procedimientos medicos, tu cuerpo tambien esta en recuperacion. El dolor fisico y el emocional se entrelazan.
+          </p>
 
-          <p>Frases bien intencionadas pero dolorosas son comunes en este tipo de pérdida. Te hacen sentir que no tienes "derecho" a tu duelo.</p>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que puedes estar sintiendo</h2>
 
-          <p>Pero sí lo tienes.</p>
+          <ul>
+            <li><strong>Tristeza profunda.</strong> Un vacio que es dificil de explicar.</li>
+            <li><strong>Culpa.</strong> &quot;Hice algo mal? Mi cuerpo fallo?&quot;</li>
+            <li><strong>Enojo.</strong> Con la situacion, con tu cuerpo, con la injusticia de todo esto.</li>
+            <li><strong>Envidia.</strong> Ver a otras madres con sus bebes puede ser dificil.</li>
+            <li><strong>Aislamiento.</strong> No querer ver a nadie, no querer explicar.</li>
+            <li><strong>Ansiedad.</strong> Miedo a que vuelva a pasar. Miedo a intentarlo de nuevo.</li>
+            <li><strong>Sensacion de vacio fisico.</strong> Tu cuerpo que estaba preparandose para otra cosa.</li>
+          </ul>
 
-          <h3>El trauma físico se suma al emocional</h3>
+          <p>
+            Todas estas emociones pueden coexistir. Puedes sentir varias en el mismo dia. El duelo perinatal es complejo.
+          </p>
 
-          <p>Si pasaste por procedimientos médicos, tu cuerpo también está en recuperación. El dolor físico y el emocional se entrelazan.</p>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que tu pareja puede estar sintiendo</h2>
 
-          <h2>Lo que puedes estar sintiendo</h2>
+          <p>
+            Si tienes pareja, es importante entender que ambos estan en duelo, pero probablemente de maneras diferentes.
+          </p>
 
-          <p><strong>Tristeza profunda.</strong> Un vacío que es difícil de explicar.</p>
+          <p>
+            La persona que estaba embarazada tiene el componente fisico anadido. Tenia una conexion corporal con el bebe que la otra persona no tuvo de la misma manera.
+          </p>
 
-          <p><strong>Culpa.</strong> "¿Hice algo mal? ¿Mi cuerpo falló?"</p>
+          <p>
+            La pareja puede sentir impotencia, presion de &quot;ser fuerte&quot;, y su propio duelo que no siempre sabe como expresar.
+          </p>
 
-          <p><strong>Enojo.</strong> Con la situación, con tu cuerpo, con la injusticia de todo esto.</p>
+          <p>
+            Las parejas procesan el duelo a ritmos diferentes. Esto puede crear tension si no se habla abiertamente. Si sienten que no pueden comunicarse, buscar apoyo profesional juntos puede ayudar.
+          </p>
 
-          <p><strong>Envidia.</strong> Ver a otras madres con sus bebés puede ser difícil.</p>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Frases que es mejor evitar</h2>
 
-          <p><strong>Aislamiento.</strong> No querer ver a nadie, no querer explicar.</p>
+          <p>Estas son frases que, aunque se dicen con buena intencion, pueden lastimar:</p>
 
-          <p>Todas estas emociones pueden coexistir. El duelo perinatal es complejo.</p>
+          <ul>
+            <li>&quot;Eres joven, puedes tener mas hijos.&quot; (Un hijo no reemplaza a otro.)</li>
+            <li>&quot;Al menos no lo conociste.&quot; (Lo conoci. Vivio dentro de mi.)</li>
+            <li>&quot;Algo habra estado mal, es lo mejor.&quot; (No me digas que perder a mi bebe es &quot;lo mejor&quot;.)</li>
+            <li>&quot;Por algo pasan las cosas.&quot; (No hay razon que haga esto menos doloroso.)</li>
+            <li>&quot;Ya deberias estar mejor.&quot; (El duelo no tiene fecha limite.)</li>
+          </ul>
 
-          <h2>Frases que es mejor evitar</h2>
+          <p>Si alguien te dice estas cosas, puedes establecer un limite gentil si lo necesitas.</p>
 
-          <p>Estas son frases que, aunque se dicen con buena intención, pueden lastimar:</p>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que si puede ayudar</h2>
 
-          <p><em>"Eres joven, puedes tener más hijos."</em> — Un hijo no reemplaza a otro.</p>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Nombrar a tu bebe</h3>
+          <p>
+            Si quieres darle un nombre, hazlo. Tener un nombre hace que la perdida sea mas concreta. Ese nombre te da algo a que aferrarte.
+          </p>
 
-          <p><em>"Al menos no lo conociste."</em> — Lo conocí. Vivió dentro de mí.</p>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Crear memorias tangibles</h3>
+          <p>
+            Aunque haya poco tiempo fisico compartido, puedes crear objetos de recuerdo: una caja con pruebas de embarazo, ultrasonidos, cartas. Una pieza de joyeria. Un arbol o planta en su honor.
+          </p>
 
-          <p><em>"Por algo pasan las cosas."</em> — No hay razón que haga esto menos doloroso.</p>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Permitir el ritual</h3>
+          <p>
+            Aunque no haya funeral tradicional, puedes crear tu propia forma de despedida: una ceremonia intima, encender una vela en fechas significativas, visitar un lugar especial.
+          </p>
 
-          <h2>Lo que sí puede ayudar</h2>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Buscar comunidad</h3>
+          <p>
+            Hay grupos de apoyo especificos para duelo perinatal. Conectar con otras madres y padres que han vivido lo mismo puede ser muy sanador.
+          </p>
+          <p>Saber que no estas sola, que otros entienden de verdad, marca una diferencia.</p>
 
-          <h3>Nombrar a tu bebé</h3>
-          <p>Si quieres darle un nombre, hazlo. Tener un nombre hace que la pérdida sea más concreta.</p>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Expresion creativa</h3>
+          <p>
+            El arte puede ayudarte a procesar lo que las palabras no alcanzan: pintar, hacer collages, crear algo en honor a tu bebe.
+          </p>
 
-          <h3>Crear memorias tangibles</h3>
-          <p>Aunque haya poco tiempo físico compartido, puedes crear objetos de recuerdo: una caja con pruebas de embarazo, ultrasonidos, cartas. Una pieza de joyería. Un árbol o planta en su honor.</p>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Apoyo profesional</h3>
+          <p>
+            Busca un profesional con experiencia en duelo perinatal. No cualquier terapeuta entiende la especificidad de esta perdida.
+          </p>
 
-          <h3>Permitir el ritual</h3>
-          <p>Aunque no haya funeral tradicional, puedes crear tu propia forma de despedida: una ceremonia íntima, encender una vela en fechas significativas.</p>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El cuerpo tambien hace duelo</h2>
 
-          <h3>Buscar comunidad</h3>
-          <p>Hay grupos de apoyo específicos para duelo perinatal. Conectar con otras madres y padres que han vivido lo mismo puede ser muy sanador.</p>
+          <p>
+            Tu cuerpo estaba preparandose para nutrir una vida. Ahora tiene que readaptarse.
+          </p>
 
-          <h3>Expresión creativa</h3>
-          <p>El arte puede ayudarte a procesar lo que las palabras no alcanzan: pintar, hacer collages, crear algo en honor a tu bebé.</p>
+          <p>
+            Puedes experimentar cambios hormonales, fatiga, alteraciones del sueno, y otras manifestaciones fisicas.
+          </p>
 
-          <h2>El cuerpo también hace duelo</h2>
+          <p>
+            Date tiempo para recuperarte fisicamente. No te exijas volver a la normalidad rapidamente. Tu cuerpo tambien necesita procesar.
+          </p>
 
-          <p>Tu cuerpo estaba preparándose para nutrir una vida. Ahora tiene que readaptarse.</p>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Y si tienes otros hijos?</h2>
 
-          <p>Puedes experimentar cambios hormonales, fatiga, alteraciones del sueño, y otras manifestaciones físicas.</p>
+          <p>Si tienes otros hijos, puedes sentir:</p>
+          <ul>
+            <li>Dificultad para estar presente para ellos.</li>
+            <li>Presion de &quot;seguir adelante&quot; por ellos.</li>
+          </ul>
 
-          <p>Date tiempo para recuperarte físicamente. No te exijas volver a la normalidad rápidamente.</p>
+          <p>
+            Los ninos pueden participar en el duelo de maneras apropiadas para su edad si tu lo decides. Puedes explicarles lo que paso en terminos que puedan entender e incluirlos en rituales de recuerdo si lo deseas.
+          </p>
 
-          <h2>Un mensaje para ti</h2>
+          <p>Cuidarte a ti no significa descuidarlos. Pero no tienes que fingir que estas bien cuando no lo estas.</p>
 
-          <p>Tu bebé existió. Aunque el mundo no lo conoció, tú sí. Aunque no hay fotos de cumpleaños, hay latidos que escuchaste. Aunque no hay una tumba tradicional que visitar, hay un espacio en tu corazón que siempre será suyo.</p>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Intentarlo de nuevo?</h2>
 
-          <p>No tienes que "superarlo". No tienes que minimizar tu dolor porque otros no lo entienden.</p>
+          <p>Esta pregunta puede generar emociones complejas:</p>
+          <ul>
+            <li>Miedo a que vuelva a pasar.</li>
+            <li>Sensaciones dificiles sobre &quot;reemplazar&quot; al bebe perdido.</li>
+            <li>Presion externa.</li>
+            <li>Ansiedad ante la posibilidad de un nuevo embarazo.</li>
+          </ul>
 
-          <p>Puedes llorar. Puedes nombrarlo. Puedes honrarlo. Puedes recordarlo siempre.</p>
+          <p>
+            No hay respuesta correcta. Algunas personas quieren intentarlo pronto. Otras necesitan tiempo. Otras deciden no intentarlo mas.
+          </p>
 
-          <p>Porque fuiste madre o padre. Aunque sea por poco tiempo. Aunque el mundo no lo reconozca de la misma manera.</p>
+          <p>Todas las opciones son validas.</p>
+
+          <p>
+            Si decides intentar un nuevo embarazo, es normal que venga acompanado de ansiedad. Un embarazo despues de perdida tiene sus propios desafios emocionales.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cuando buscar ayuda profesional</h2>
+
+          <p>Considera buscar apoyo especializado si:</p>
+          <ul>
+            <li>Sientes que no puedes funcionar despues de varias semanas.</li>
+            <li>Tienes pensamientos de hacerte dano.</li>
+            <li>No puedes dejar de culparte.</li>
+            <li>El dolor no muestra ninguna mejoria.</li>
+            <li>Estas usando sustancias para aliviar el dolor.</li>
+            <li>Tu relacion de pareja esta en crisis.</li>
+          </ul>
+
+          <p>El duelo perinatal complicado es real y es tratable.</p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Un mensaje para ti</h2>
+
+          <p>
+            Tu bebe existio. Aunque el mundo no lo conocio, tu si. Aunque no hay fotos de cumpleanos, hay latidos que escuchaste. Aunque no hay una tumba tradicional que visitar, hay un espacio en tu corazon que siempre sera suyo.
+          </p>
+
+          <p>
+            No tienes que &quot;superarlo&quot;. No tienes que minimizar tu dolor porque otros no lo entienden.
+          </p>
+
+          <p>
+            Puedes llorar. Puedes nombrarlo. Puedes honrarlo. Puedes recordarlo siempre.
+          </p>
+
+          <p>
+            Porque fuiste madre o padre. Aunque sea por poco tiempo. Aunque el mundo no lo reconozca de la misma manera.
+          </p>
 
           <p>Lo fuiste.</p>
 
-          <p className="text-xl italic mt-12">
-            Tu bebé no está aquí de la manera que esperabas, pero estuvo aquí. Y eso cuenta. Eso siempre contará.
+          <p className="italic text-black/60 mt-8">
+            Tu bebe no esta aqui de la manera que esperabas, pero estuvo aqui. Y eso cuenta. Eso siempre contara.
           </p>
         </div>
 
-        <div className="mt-16 p-8 bg-[#B2F7EF]/20 rounded-2xl">
-          <h3 className="text-2xl text-black mb-4">¿Necesitas acompañamiento?</h3>
-          <p className="text-black/70 mb-6">
-            El duelo perinatal merece un espacio seguro. Puedo acompañarte en este proceso.
+        <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
+          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesion de orientacion gratuita</h3>
+          <p className="text-black/70 mb-6 max-w-xl mx-auto">
+            Si estas atravesando un duelo perinatal y necesitas acompanamiento, estoy aqui para ti.
           </p>
           <a
-            href="https://calendly.com/colormemx/30min"
+            href={siteConfig.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-black/80 transition-colors"
+            className="inline-block px-8 py-4 bg-[#B2F7EF] text-black rounded-full font-medium hover:bg-[#B2F7EF]/80 transition-all"
           >
-            Agenda una sesión de orientación
+            Agenda tu primera consulta gratuita
           </a>
         </div>
       </div>

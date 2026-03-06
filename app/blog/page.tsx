@@ -1,8 +1,35 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Search } from 'lucide-react'
 
 const articles = [
+  {
+    slug: '/blog/duelo-perinatal',
+    image: '/duelo-perinatal.webp',
+    category: 'Tanatología',
+    title: 'Duelo perinatal: el dolor que la sociedad no ve',
+    description: 'Para las madres y padres que perdieron a un bebé. Tu dolor es real y merece ser reconocido.',
+    alt: 'Duelo perinatal - El dolor que la sociedad no ve',
+  },
+  {
+    slug: '/blog/dia-de-muertos',
+    image: '/dia-de-muertos.jpeg',
+    category: 'Tanatología',
+    title: 'Día de Muertos en México: la fiesta donde la muerte se celebra con vida',
+    description: 'Descubre la tradición mexicana que transforma el duelo en celebración y memoria.',
+    alt: 'Día de Muertos en México - Tradición y celebración',
+  },
+  {
+    slug: '/blog/duelo-por-suicidio',
+    image: '/duelo-por-suicidio.jpeg',
+    category: 'Tanatología',
+    title: 'Duelo por suicidio: el dolor de los que se quedan',
+    description: 'Para quienes perdieron a alguien por suicidio. Lo que sientes es válido y no estás solo.',
+    alt: 'Duelo por suicidio - El dolor de los que se quedan',
+  },
   {
     slug: '/blog/que-es-la-arteterapia-beneficios',
     image: '/arteterapia.webp',
@@ -24,7 +51,7 @@ const articles = [
     image: '/el-duelo.webp',
     category: 'Tanatología',
     title: '¿Qué es el duelo?',
-    description: 'Guía para entender y atravesar el proceso de pérdida.',
+    description: 'Cómo entender y atravesar el proceso de pérdida.',
     alt: '¿Qué es el duelo?',
   },
   {
@@ -47,7 +74,7 @@ const articles = [
     slug: '/blog/arteterapia-para-ninos',
     image: '/arteterapia-ninos.webp',
     category: 'Arteterapia',
-    title: 'Arteterapia para niños: guía por edades',
+    title: 'Arteterapia para niños por edades',
     description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad, de 3 a 12 años.',
     alt: 'Arteterapia para niños - Expresión emocional a través del arte.',
   },
@@ -120,7 +147,7 @@ const articles = [
     image: '/aniversarios-dificiles.webp',
     category: 'Tanatología',
     title: 'Aniversarios difíciles: cómo atravesar las fechas dolorosas',
-    description: 'Guía para los días que el calendario convierte en momentos de dolor.',
+    description: 'Cómo atravesar los días que el calendario convierte en momentos de dolor.',
     alt: 'Aniversarios difíciles - Cómo atravesar las fechas dolorosas.',
   },
   {
@@ -128,7 +155,7 @@ const articles = [
     image: '/duelo-muerte-mama.webp',
     category: 'Tanatología',
     title: 'Cómo atravesar la muerte de tu mamá',
-    description: 'Una guía honesta para quienes perdieron a la primera persona que los amó.',
+    description: 'Apoyo honesto para quienes perdieron a la primera persona que los amó.',
     alt: 'Cómo atravesar la muerte de tu mamá.',
   },
   {
@@ -152,7 +179,7 @@ const articles = [
     image: '/mandalas-terapeuticos.webp',
     category: 'Arteterapia',
     title: 'Mandalas terapéuticos: qué son y cómo crearlos',
-    description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
+    description: 'Cómo crear mandalas y sus beneficios para la salud mental.',
     alt: 'Mandalas terapéuticos - Qué son y cómo crearlos.',
   },
   {
@@ -176,23 +203,15 @@ const articles = [
     image: '/explicar-muerte-nino.webp',
     category: 'Tanatología',
     title: 'Cómo explicar la muerte a un niño',
-    description: 'Guía para tener la conversación más difícil con amor y claridad.',
+    description: 'Cómo tener la conversación más difícil con amor y claridad.',
     alt: 'Cómo explicar la muerte a un niño.',
   },
-  {
-    slug: '/blog/duelo-perinatal',
-    image: '/duelo-perinatal.webp',
-    category: 'Tanatología',
-    title: 'Duelo perinatal: el dolor que la sociedad no ve',
-    description: 'Tu bebé existió y tu dolor es real. Guía para madres y padres que perdieron un bebé.',
-    alt: 'Duelo perinatal - Acompañamiento en la pérdida.',
-  },
-  {
+    {
     slug: '/blog/que-decir-duelo',
     image: '/como-acompanar-duelo.webp',
     category: 'Tanatología',
     title: 'Qué decir (y qué NO decir) a alguien en duelo',
-    description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto.',
+    description: 'Cómo acompañar a alguien que perdió un ser querido con empatía y respeto.',
     alt: 'Cómo acompañar a alguien en duelo.',
   },
   {
@@ -200,7 +219,7 @@ const articles = [
     image: '/perder-la-fe.webp',
     category: 'Tanatología',
     title: 'Cuando pierdes la fe: el duelo espiritual',
-    description: 'Dejar de creer también es una pérdida. Guía para atravesar el duelo espiritual.',
+    description: 'Dejar de creer también es una pérdida. Cómo atravesar el duelo espiritual.',
     alt: 'Duelo espiritual, pérdida de fe, crisis existencial, duelo religioso.',
   },
   {
@@ -216,7 +235,7 @@ const articles = [
     image: '/sindrome-cuidador.webp',
     category: 'Tanatología',
     title: 'El síndrome del cuidador primario',
-    description: 'Cuando cuidar a otros te consume. Guía para quienes dan tanto que se olvidan de sí mismos.',
+    description: 'Cuando cuidar a otros te consume. Apoyo para quienes dan tanto que se olvidan de sí mismos.',
     alt: 'Síndrome del cuidador, burnout cuidador, agotamiento emocional.',
   },
   {
@@ -235,9 +254,129 @@ const articles = [
     description: 'Lo que callamos por miedo a ser juzgados. Cómo la vergüenza silencia el duelo.',
     alt: 'Vergüenza emocional, duelo silenciado, emociones ocultas.',
   },
+  {
+    slug: '/blog/culpa-que-cargamos',
+    image: '/culpa-que-cargamos.webp',
+    category: 'Tanatología',
+    title: 'La culpa que llevas a todas partes',
+    description: 'Y cómo soltar lo que no te corresponde. Cómo entender y procesar la culpa.',
+    alt: 'Culpa emocional, duelo y culpa, perdonarse a si mismo, culpa excesiva.',
+  },
+  {
+    slug: '/blog/duelo-infertilidad',
+    image: '/infertilidad.webp',
+    category: 'Tanatología',
+    title: 'El duelo invisible: cuando la maternidad o paternidad no llega',
+    description: 'Para quienes cargan el dolor de un hijo que nunca tuvieron.',
+    alt: 'Duelo por infertilidad, no poder tener hijos, maternidad frustrada, duelo reproductivo.',
+  },
+  {
+    slug: '/blog/jubilacion-nido-vacio',
+    image: '/jubilacion-nido-vacio.webp',
+    category: 'Tanatología',
+    title: 'Cuando la casa se vacía y el trabajo termina',
+    description: 'Lo que nadie te preparó para sentir después de los 50. Duelo por jubilación y nido vacío.',
+    alt: 'Síndrome del nido vacío, duelo por jubilación, hijos se van de casa, retiro laboral.',
+  },
+  {
+    slug: '/blog/enojo-emocion-valida',
+    image: '/enojo-emocion-valida.webp',
+    category: 'Tanatología',
+    title: 'El enojo que no expresas se convierte en otra cosa',
+    description: 'Por qué necesitas darle espacio a tu rabia. Cómo expresar el enojo de forma saludable.',
+    alt: 'Enojo reprimido, rabia contenida, expresar emociones, enojo en el duelo.',
+  },
+  {
+    slug: '/blog/miedo-soledad',
+    image: '/miedo-soledad.webp',
+    category: 'Tanatología',
+    title: 'El miedo a quedarte solo',
+    description: 'Y por qué huir de él empeora todo. Cómo entender y superar el miedo a la soledad.',
+    alt: 'Miedo a la soledad, miedo a estar solo, soledad emocional, dependencia emocional.',
+  },
+  {
+    slug: '/blog/bloqueo-emocional',
+    image: '/bloqueo-emocional-no-siento-nada.webp',
+    category: 'Tanatología',
+    title: 'No siento nada: cuando las emociones se apagan',
+    description: 'Para quienes buscan desesperadamente sentir algo. Qué es el bloqueo emocional y cómo reconectarte.',
+    alt: 'Bloqueo emocional, anestesia emocional, no sentir nada, embotamiento afectivo.',
+  },
+  {
+    slug: '/blog/crisis-existencial',
+    image: '/crisis-existencial.webp',
+    category: 'Tanatología',
+    title: 'Crisis de identidad: cuando ya no sabes quién eres',
+    description: 'Qué hacer cuando la vida te obliga a reconstruirte desde cero.',
+    alt: 'Crisis existencial, crisis de identidad, reinventarse, pérdida de sentido.',
+  },
+  {
+    slug: '/blog/duelo-desaparicion',
+    image: '/duelo-por-desaparicion.webp',
+    category: 'Tanatología',
+    title: 'Duelo por desaparición: la pérdida sin respuestas',
+    description: 'Para quienes viven con la incertidumbre de no saber qué pasó con su ser querido.',
+    alt: 'Duelo por desaparición, pérdida ambigua, incertidumbre, personas desaparecidas.',
+  },
+  {
+    slug: '/blog/duelo-distorsionado',
+    image: '/duelo-distorsionado.webp',
+    category: 'Tanatología',
+    title: 'Duelo distorsionado: cuando el dolor se disfraza',
+    description: 'Las formas en que el duelo se manifiesta sin parecer duelo.',
+    alt: 'Duelo distorsionado, duelo enmascarado, síntomas de duelo, duelo somatizado.',
+  },
+  {
+    slug: '/blog/expectativas-no-cumplidas',
+    image: '/expectativas-no-cumplidas.webp',
+    category: 'Tanatología',
+    title: 'El duelo por la vida que imaginaste',
+    description: 'Cuando la realidad no se parece al plan. Cómo hacer las paces con las expectativas no cumplidas.',
+    alt: 'Expectativas no cumplidas, desilusión, duelo por sueños, aceptación.',
+  },
+  {
+    slug: '/blog/duelo-perdida-hermano',
+    image: '/duelo-perdida-hermano.webp',
+    category: 'Tanatología',
+    title: 'La pérdida de un hermano: el duelo olvidado',
+    description: 'Para quienes perdieron a su compañero de historia. Un duelo que pocas veces se nombra.',
+    alt: 'Duelo por hermano, pérdida de hermano, muerte de un hermano, duelo fraterno.',
+  },
+  {
+    slug: '/blog/duelo-perdida-trabajo',
+    image: '/duelo-por-perdida-empleo.webp',
+    category: 'Tanatología',
+    title: 'Perder el trabajo: un duelo que nadie reconoce',
+    description: 'Por qué el desempleo duele tanto y cómo atravesar esta pérdida.',
+    alt: 'Pérdida de trabajo, desempleo, duelo laboral, identidad profesional.',
+  },
+  {
+    slug: '/blog/primeros-dias-muerte',
+    image: '/primeros-dias-despues-muerte.webp',
+    category: 'Tanatología',
+    title: 'Los primeros días después de una muerte',
+    description: 'Qué esperar y cómo sobrevivir los momentos más difíciles del duelo.',
+    alt: 'Primeros días de duelo, shock por muerte, qué hacer cuando alguien muere.',
+  },
+  {
+    slug: '/blog/duelo-secuestro',
+    image: '/duelo-por-secuestro.webp',
+    category: 'Tanatología',
+    title: 'Duelo por secuestro: la herida que no cierra',
+    description: 'Para familias que viven con la incertidumbre y el dolor de un ser querido secuestrado.',
+    alt: 'Duelo por secuestro, trauma familiar, incertidumbre, pérdida traumática.',
+  },
 ]
 
 export default function BlogPage() {
+  const [search, setSearch] = useState('')
+
+  const filteredArticles = articles.filter((article) =>
+    article.title.toLowerCase().includes(search.toLowerCase()) ||
+    article.description.toLowerCase().includes(search.toLowerCase()) ||
+    article.category.toLowerCase().includes(search.toLowerCase())
+  )
+
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
@@ -255,11 +394,25 @@ export default function BlogPage() {
           <p className="text-black/70 max-w-2xl mx-auto">
             Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad.
           </p>
+
+          {/* Search */}
+          <div className="mt-8 flex justify-center">
+            <div className="relative w-full max-w-xs">
+              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-black/40" />
+              <input
+                type="text"
+                placeholder="Buscar..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 text-sm border border-[#B2F7EF] rounded-full focus:outline-none focus:border-black transition-colors bg-white"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Articles grid */}
         <div className="grid md:grid-cols-3 gap-8">
-          {articles.map((article) => (
+          {filteredArticles.map((article) => (
             <Link key={article.slug} href={article.slug} className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">

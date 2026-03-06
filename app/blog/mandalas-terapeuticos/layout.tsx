@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Mandalas terapéuticos: qué son y cómo crearlos | ColorMe',
-  description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
+  description: 'Apoyo para crear mandalas y sus beneficios para la salud mental.',
   keywords: ['mandalas terapéuticos', 'cómo hacer mandalas', 'mandalas para la ansiedad', 'beneficios de colorear mandalas', 'arteterapia mandalas'],
   alternates: {
     canonical: '/blog/mandalas-terapeuticos',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'Mandalas terapéuticos: qué son y cómo crearlos | ColorMe',
-    description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
+    description: 'Apoyo para crear mandalas y sus beneficios para la salud mental.',
     url: '/blog/mandalas-terapeuticos',
   },
 }
@@ -21,7 +21,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Mandalas terapéuticos: qué son y cómo crearlos',
-  description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
+  description: 'Apoyo para crear mandalas y sus beneficios para la salud mental.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/mandalas-terapeuticos`,

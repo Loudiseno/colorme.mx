@@ -24,7 +24,7 @@ export default function QueDecirDueloPage() {
             Qué decir (y qué NO decir) a alguien en duelo
           </h1>
           <p className="text-black/60">
-            Por Lourdes Carrillo · Tanatóloga y Arteterapeuta
+            Por Lourdes Pérez · Tanatóloga y Arteterapeuta
           </p>
         </header>
 
@@ -41,7 +41,7 @@ export default function QueDecirDueloPage() {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-black/80 italic mb-8">
-            Guía para acompañar con empatía y respeto.
+            Apoyo para acompañar con empatía y respeto.
           </p>
 
           <p>Tu amigo perdió a su papá. Tu compañera de trabajo perdió un embarazo. Tu vecina enviudó.</p>
