@@ -7,6 +7,30 @@ import { ArrowRight, Search } from 'lucide-react'
 
 const articles = [
   {
+    slug: '/blog/duelo-perinatal',
+    image: '/duelo-perinatal.webp',
+    category: 'Tanatología',
+    title: 'Duelo perinatal: el dolor que la sociedad no ve',
+    description: 'Para las madres y padres que perdieron a un bebé. Tu dolor es real y merece ser reconocido.',
+    alt: 'Duelo perinatal - El dolor que la sociedad no ve',
+  },
+  {
+    slug: '/blog/dia-de-muertos',
+    image: '/dia-de-muertos.jpeg',
+    category: 'Tanatología',
+    title: 'Día de Muertos en México: la fiesta donde la muerte se celebra con vida',
+    description: 'Descubre la tradición mexicana que transforma el duelo en celebración y memoria.',
+    alt: 'Día de Muertos en México - Tradición y celebración',
+  },
+  {
+    slug: '/blog/duelo-por-suicidio',
+    image: '/duelo-por-suicidio.jpeg',
+    category: 'Tanatología',
+    title: 'Duelo por suicidio: el dolor de los que se quedan',
+    description: 'Para quienes perdieron a alguien por suicidio. Lo que sientes es válido y no estás solo.',
+    alt: 'Duelo por suicidio - El dolor de los que se quedan',
+  },
+  {
     slug: '/blog/que-es-la-arteterapia-beneficios',
     image: '/arteterapia.webp',
     category: 'Arteterapia',
