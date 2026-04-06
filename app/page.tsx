@@ -307,91 +307,196 @@ export default function HomePage() {
               Reflexiones, información y herramientas sobre arteterapia, tanatología y el universo de las emociones. Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Article 1 */}
-            <Link href="/blog/que-es-arteterapia" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                  <Image
-                    src="/arteterapia.jpeg"
-                    alt="¿Qué es la arteterapia?"
-                    fill
-                    className="object-cover grayscale mix-blend-luminosity"
-                  />
-                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
-                </div>
-                <div className="p-6">
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
-                  <h3 className="text-xl text-black mt-2 mb-3">
-                    ¿Qué es la arteterapia?
-                  </h3>
-                  <p className="text-black/70 text-sm leading-relaxed mb-4">
-                    Descubre cómo el arte ayuda a explorar y procesar emociones.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
-                    Leer más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
 
-            {/* Article 2 */}
-            <Link href="/blog/arteterapia-cancer" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                  <Image
-                    src="/cancer y arteterapia.jpeg"
-                    alt="Arteterapia para pacientes con cáncer"
-                    fill
-                    className="object-cover grayscale mix-blend-luminosity"
-                  />
-                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
-                </div>
-                <div className="p-6">
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia y Tanatología</span>
-                  <h3 className="text-xl text-black mt-2 mb-3">
-                    Arteterapia para pacientes con cáncer
-                  </h3>
-                  <p className="text-black/70 text-sm leading-relaxed mb-4">
-                    El arte como acompañamiento durante el tratamiento oncológico.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
-                    Leer más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
-
-            {/* Article 3 */}
-            <Link href="/blog/duelo-perdida" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                  <Image
-                    src="/el duelo.jpeg"
-                    alt="¿Qué es el duelo?"
-                    fill
-                    className="object-cover grayscale mix-blend-luminosity"
-                  />
-                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
-                </div>
-                <div className="p-6">
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
-                  <h3 className="text-xl text-black mt-2 mb-3">
-                    ¿Qué es el duelo?
-                  </h3>
-                  <p className="text-black/70 text-sm leading-relaxed mb-4">
-                    Guía para entender y atravesar el proceso de pérdida.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
-                    Leer más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
+          {/* Session: Tanatología */}
+          <div className="mb-14">
+            <h3 className="text-2xl text-black font-semibold mb-6 pb-3 border-b border-[#B2F7EF]">Tanatología</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Link href="/blog/duelo-perdida" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/el duelo.jpeg" alt="¿Qué es el duelo?" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">¿Qué es el duelo?</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Guía para entender y atravesar el proceso de pérdida.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/duelo-por-divorcio" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/duelo por divorcio.jpeg" alt="Duelo por divorcio" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">Duelo por divorcio</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Por qué el divorcio también es un duelo y cómo atravesarlo.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/duelo-del-cuidador" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/duelo del cuidador.jpeg" alt="Duelo del cuidador" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">El duelo del cuidador</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">El duelo silencioso de quienes cuidan a un ser querido enfermo.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/duelo-y-culpa" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/duelo-y-culpa.jpeg" alt="Duelo y culpa" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">Duelo y culpa</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Cómo la culpa complica el duelo y cómo liberarte de ella.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/menopausia-y-duelo" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/menopausia-yduelo.jpeg" alt="Menopausia y duelo" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">Menopausia y duelo</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">La menopausia como proceso de duelo y transformación.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/duelo-y-redes-sociales" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/duelo en redes.jpeg" alt="Duelo y redes sociales" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">Duelo y redes sociales</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Cómo las redes sociales complican y transforman el duelo digital.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+            </div>
           </div>
+
+          {/* Session: Arteterapia */}
+          <div className="mb-14">
+            <h3 className="text-2xl text-black font-semibold mb-6 pb-3 border-b border-[#B2F7EF]">Arteterapia</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Link href="/blog/que-es-arteterapia" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/arteterapia.jpeg" alt="¿Qué es la arteterapia?" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">¿Qué es la arteterapia?</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Descubre cómo el arte ayuda a explorar y procesar emociones.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/arteterapia-cancer" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/cancer y arteterapia.jpeg" alt="Arteterapia para pacientes con cáncer" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia y Tanatología</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">Arteterapia para pacientes con cáncer</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">El arte como acompañamiento durante el tratamiento oncológico.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/diferencia-psicologia-arteterapia" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/diferencia psicologia y arteterapia.jpeg" alt="Diferencia entre psicología y arteterapia" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">¿Psicología o arteterapia?</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Diferencias, similitudes y cómo elegir el acompañamiento adecuado.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+            </div>
+          </div>
+
+          {/* Session: Emociones Rituales en el mundo */}
+          <div className="mb-4">
+            <h3 className="text-2xl text-black font-semibold mb-6 pb-3 border-b border-[#B2F7EF]">Emociones Rituales en el mundo</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Link href="/blog/aniversario-de-muerte" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/aniversario muerte.jpeg" alt="Aniversario de muerte" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Emociones Rituales en el mundo</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">Aniversario de muerte</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Cómo vivir y honrar la fecha que marca una ausencia.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/cumpleanos-persona-fallecida" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/cumpleanos persona fallecida.jpeg" alt="Cumpleaños de persona fallecida" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Emociones Rituales en el mundo</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">El cumpleaños de quien ya no está</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Cómo atravesar y honrar el cumpleaños de una persona fallecida.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+              <Link href="/blog/navidad-en-duelo" className="group">
+                <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                  <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                    <Image src="/navidad en duelo.jpeg" alt="Navidad en duelo" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">Emociones Rituales en el mundo</span>
+                    <h4 className="text-xl text-black mt-2 mb-3">Navidad en duelo</h4>
+                    <p className="text-black/70 text-sm leading-relaxed mb-4">Cómo sobrevivir las fiestas cuando el corazón está de luto.</p>
+                    <span className="inline-flex items-center gap-2 text-black text-sm font-medium">Leer más <ArrowRight size={16} /></span>
+                  </div>
+                </article>
+              </Link>
+            </div>
+          </div>
+
         </div>
       </section>
 
