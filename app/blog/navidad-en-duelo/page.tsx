@@ -26,7 +26,7 @@ export default function ArticuloNavidadEnDuelo() {
 
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/navidad en duelo.jpeg" alt="Mesa navideña con una vela encendida en memoria de alguien ausente" width={1200} height={675} className="w-full h-auto" />
+          <Image src="/el duelo.jpeg" alt="Mesa navideña con una vela encendida en memoria de alguien ausente" width={1200} height={675} className="w-full h-auto" />
         </div>
 
         {/* Content */}
