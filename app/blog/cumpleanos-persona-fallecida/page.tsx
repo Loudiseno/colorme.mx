@@ -141,7 +141,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
             </div>
 
             <div>
-              <p className="font-semibold text="text-black">¿Qué hago si siento culpa por no pensar en esa persona ese día?</p>
+              <p className="font-semibold text-black">¿Qué hago si siento culpa por no pensar en esa persona ese día?</p>
               <p>
                 La culpa es una emoción muy común en el duelo, pero en este caso no tiene base real. Olvidar momentáneamente no significa amar menos. La vida cotidiana nos absorbe, y eso es completamente humano. Si recordaste después, eso también cuenta.
               </p>
