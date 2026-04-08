@@ -3,8 +3,23 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, Instagram, Facebook, BookOpen, MessageCircle } from 'lucide-react'
+import { Menu, X, Instagram, Facebook, BookOpen, Youtube } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
+
+// Custom TikTok icon (not available in lucide)
+const TikTokIcon = ({ size = 18, strokeWidth = 1.5 }: { size?: number; strokeWidth?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+)
+
+// Custom WhatsApp icon
+const WhatsAppIcon = ({ size = 18, strokeWidth = 1.5 }: { size?: number; strokeWidth?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+  </svg>
+)
 
 const navigation = [
   { name: 'Arteterapia', href: '/arteterapia' },
@@ -17,7 +32,9 @@ const navigation = [
 const socials = [
   { name: 'Instagram', href: siteConfig.social.instagram, icon: Instagram },
   { name: 'Facebook', href: siteConfig.social.facebook, icon: Facebook },
-  { name: 'WhatsApp', href: 'https://wa.me/529992472678', icon: MessageCircle },
+  { name: 'TikTok', href: 'https://www.tiktok.com/@colorme_lab', icon: TikTokIcon },
+  { name: 'YouTube', href: 'https://www.youtube.com/channel/UCrrqPOjutqfK3G_t0f2lbjA', icon: Youtube },
+  { name: 'WhatsApp', href: 'https://wa.me/529992472678', icon: WhatsAppIcon },
   { name: 'Amazon', href: siteConfig.book.amazonEs, icon: BookOpen },
 ]
 
@@ -65,7 +82,7 @@ export default function Header() {
         </div>
 
         {/* Social Icons - Desktop */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-3">
           {socials.map((social) => (
             <a
               key={social.name}
