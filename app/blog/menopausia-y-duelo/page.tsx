@@ -23,7 +23,7 @@ export default function ArticuloMenopausiaYDuelo() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/el duelo.jpeg" alt="Mujer en un momento de introspección durante la transición de la menopausia" width={1200} height={675} className="w-full h-auto" />
+          <Image src="/menopausia-yduelo.jpeg" alt="Menopausia y duelo" width={1200} height={675} className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">

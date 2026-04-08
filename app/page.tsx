@@ -329,7 +329,7 @@ export default function HomePage() {
               <Link href="/blog/duelo-por-divorcio" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/el duelo.jpeg" alt="Duelo por divorcio" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/duelo por divorcio.jpeg" alt="Duelo por divorcio" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">
@@ -343,7 +343,7 @@ export default function HomePage() {
               <Link href="/blog/duelo-del-cuidador" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/el duelo.jpeg" alt="Duelo del cuidador" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/duelo del cuidador.jpeg" alt="Duelo del cuidador" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">
@@ -357,7 +357,7 @@ export default function HomePage() {
               <Link href="/blog/duelo-y-culpa" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/el duelo.jpeg" alt="Duelo y culpa" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/duelo-y-culpa.jpeg" alt="Duelo y culpa" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">
@@ -371,7 +371,7 @@ export default function HomePage() {
               <Link href="/blog/menopausia-y-duelo" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/el duelo.jpeg" alt="Menopausia y duelo" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/menopausia-yduelo.jpeg" alt="Menopausia y duelo" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">
@@ -385,7 +385,7 @@ export default function HomePage() {
               <Link href="/blog/duelo-y-redes-sociales" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/el duelo.jpeg" alt="Duelo y redes sociales" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/duelo en redes.jpeg" alt="Duelo y redes sociales" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">
@@ -434,7 +434,7 @@ export default function HomePage() {
               <Link href="/blog/diferencia-psicologia-arteterapia" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/arteterapia.jpeg" alt="Diferencia entre psicología y arteterapia" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/diferencia psicologia y arteterapia.jpeg" alt="Diferencia entre psicología y arteterapia" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">
@@ -455,7 +455,7 @@ export default function HomePage() {
               <Link href="/blog/aniversario-de-muerte" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/el duelo.jpeg" alt="Aniversario de muerte" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/aniversario muerte.jpeg" alt="Aniversario de muerte" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">
@@ -469,7 +469,7 @@ export default function HomePage() {
               <Link href="/blog/cumpleanos-persona-fallecida" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/el duelo.jpeg" alt="Cumpleaños de persona fallecida" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/cumpleanos persona fallecida.jpeg" alt="Cumpleaños de persona fallecida" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">
@@ -483,7 +483,7 @@ export default function HomePage() {
               <Link href="/blog/navidad-en-duelo" className="group">
                 <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                   <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                    <Image src="/el duelo.jpeg" alt="Navidad en duelo" fill className="object-cover grayscale mix-blend-luminosity" />
+                    <Image src="/navidad en duelo.jpeg" alt="Navidad en duelo" fill className="object-cover grayscale mix-blend-luminosity" />
                     <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                   </div>
                   <div className="p-6">

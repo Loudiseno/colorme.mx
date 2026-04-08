@@ -23,7 +23,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/arteterapia.jpeg" alt="Pinceles y materiales de arte sobre una mesa de terapia" width={1200} height={675} className="w-full h-auto" />
+          <Image src="/diferencia psicologia y arteterapia.jpeg" alt="Diferencia entre psicología y arteterapia" width={1200} height={675} className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">
