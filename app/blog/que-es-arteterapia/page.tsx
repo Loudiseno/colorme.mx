@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloArteterapia() {
@@ -49,7 +50,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            Si alguna vez te has sentido así —atrapado entre lo que sientes y lo que puedes expresar— quiero que sepas que no estás solo. Y quiero contarte sobre una herramienta que puede ayudarte a tender un puente entre esas dos orillas: la arteterapia.
+            Si alguna vez te has sentido así -atrapado entre lo que sientes y lo que puedes expresar- quiero que sepas que no estás solo. Y quiero contarte sobre una herramienta que puede ayudarte a tender un puente entre esas dos orillas: la arteterapia.
           </p>
 
           <p>
@@ -59,7 +60,7 @@ export default function ArticuloArteterapia() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué es exactamente la arteterapia?</h2>
 
           <p>
-            La arteterapia es una forma de acompañamiento terapéutico que utiliza el proceso creativo como vehículo para la expresión emocional, el autoconocimiento y la sanación. A través del dibujo, la pintura, el collage, el modelado con arcilla y otras técnicas artísticas, puedes explorar y comunicar experiencias que a veces resultan difíciles —o incluso imposibles— de poner en palabras.
+            La arteterapia es una forma de acompañamiento terapéutico que utiliza el proceso creativo como vehículo para la expresión emocional, el autoconocimiento y la sanación. A través del dibujo, la pintura, el collage, el modelado con arcilla y otras técnicas artísticas, puedes explorar y comunicar experiencias que a veces resultan difíciles -o incluso imposibles- de poner en palabras.
           </p>
 
           <p>
@@ -67,7 +68,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            La historia de la arteterapia es fascinante. Aunque el arte siempre ha tenido un papel sanador en las culturas humanas, fue Adrian Hill, un artista británico, quien formalizó el concepto durante la Segunda Guerra Mundial. Mientras se recuperaba de tuberculosis en un hospital, Hill descubrió que pintar le ayudaba a procesar sus emociones y sobrellevar la enfermedad. Comenzó a compartir esta práctica con otros pacientes —muchos de ellos soldados traumatizados por la guerra— y observó cómo el arte les permitía expresar lo que las palabras no podían.
+            La historia de la arteterapia es fascinante. Aunque el arte siempre ha tenido un papel sanador en las culturas humanas, fue Adrian Hill, un artista británico, quien formalizó el concepto durante la Segunda Guerra Mundial. Mientras se recuperaba de tuberculosis en un hospital, Hill descubrió que pintar le ayudaba a procesar sus emociones y sobrellevar la enfermedad. Comenzó a compartir esta práctica con otros pacientes -muchos de ellos soldados traumatizados por la guerra- y observó cómo el arte les permitía expresar lo que las palabras no podían.
           </p>
 
           <p>
@@ -127,7 +128,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>Mejora la autoestima y la confianza.</strong> Crear algo con tus propias manos —sin importar cómo se vea— genera una sensación de logro. Con el tiempo, esto se traduce en mayor confianza en tu capacidad de enfrentar desafíos.
+            <strong>Mejora la autoestima y la confianza.</strong> Crear algo con tus propias manos -sin importar cómo se vea- genera una sensación de logro. Con el tiempo, esto se traduce en mayor confianza en tu capacidad de enfrentar desafíos.
           </p>
 
           <p>
@@ -169,7 +170,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>Al final, reflexionamos juntos.</strong> Miramos lo que creaste —no para juzgarlo estéticamente, sino para explorar qué surgió. ¿Qué colores elegiste? ¿Qué formas aparecieron? ¿Cómo te sentiste mientras lo hacías? A veces las respuestas vienen; a veces quedan preguntas. Ambas son valiosas.
+            <strong>Al final, reflexionamos juntos.</strong> Miramos lo que creaste -no para juzgarlo estéticamente, sino para explorar qué surgió. ¿Qué colores elegiste? ¿Qué formas aparecieron? ¿Cómo te sentiste mientras lo hacías? A veces las respuestas vienen; a veces quedan preguntas. Ambas son valiosas.
           </p>
 
           <p>
@@ -261,6 +262,9 @@ export default function ArticuloArteterapia() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora y fotógrafa. Después de atravesar su propio proceso de sanación a través del arte, se dedica a acompañar a otras personas en sus caminos de transformación. Es autora del libro "Indeleble", donde comparte su historia de resiliencia.
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="que-es-arteterapia" category="arteterapia" />
       </div>
     </article>
   )

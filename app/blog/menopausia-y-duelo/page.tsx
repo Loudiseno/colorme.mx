@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloMenopausiaYDuelo() {
@@ -36,7 +37,7 @@ export default function ArticuloMenopausiaYDuelo() {
           </p>
 
           <p>
-            Como tanatóloga, he acompañado a muchas mujeres a través de este proceso. Y como mujer que ha atravesado sus propias transiciones de vida —incluyendo la experiencia de enfrentar el cáncer y preguntarme qué quedaba de mí del otro lado— puedo decirte que lo que sientes en la menopausia tiene nombre: es duelo. Y merece ser tratado como tal.
+            Como tanatóloga, he acompañado a muchas mujeres a través de este proceso. Y como mujer que ha atravesado sus propias transiciones de vida -incluyendo la experiencia de enfrentar el cáncer y preguntarme qué quedaba de mí del otro lado- puedo decirte que lo que sientes en la menopausia tiene nombre: es duelo. Y merece ser tratado como tal.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La menopausia como proceso de pérdida</h2>
@@ -46,7 +47,7 @@ export default function ArticuloMenopausiaYDuelo() {
           </p>
 
           <p>
-            Está la pérdida de la fertilidad, claro. Pero no solo como capacidad reproductiva —sino como símbolo. Para muchas mujeres, independientemente de si quisieron tener hijos o no, la fertilidad está conectada a una sensación de posibilidad, de apertura hacia el futuro, de juventud. Cuando esa etapa cierra, algo se mueve en un lugar muy profundo.
+            Está la pérdida de la fertilidad, claro. Pero no solo como capacidad reproductiva -sino como símbolo. Para muchas mujeres, independientemente de si quisieron tener hijos o no, la fertilidad está conectada a una sensación de posibilidad, de apertura hacia el futuro, de juventud. Cuando esa etapa cierra, algo se mueve en un lugar muy profundo.
           </p>
 
           <p>
@@ -60,7 +61,7 @@ export default function ArticuloMenopausiaYDuelo() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">El duelo que nadie valida</h3>
 
           <p>
-            Una de las cosas más difíciles del duelo de la menopausia es que suele ser invisible para el entorno. "Es natural", dicen. "Todas las mujeres pasan por esto." Y sí —pero que algo sea natural no significa que no duela. Que sea universal no significa que sea fácil.
+            Una de las cosas más difíciles del duelo de la menopausia es que suele ser invisible para el entorno. "Es natural", dicen. "Todas las mujeres pasan por esto." Y sí -pero que algo sea natural no significa que no duela. Que sea universal no significa que sea fácil.
           </p>
 
           <p>
@@ -80,13 +81,13 @@ export default function ArticuloMenopausiaYDuelo() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Tristeza y nostalgia</h3>
 
           <p>
-            Una tristeza difusa que no siempre tiene un objeto claro. Momentos de nostalgia por una versión de ti misma, por una etapa que se va, por la sensación de que el tiempo avanza más rápido de lo que quisieras. Esta tristeza es válida. No tienes que combatirla —puedes acompañarla.
+            Una tristeza difusa que no siempre tiene un objeto claro. Momentos de nostalgia por una versión de ti misma, por una etapa que se va, por la sensación de que el tiempo avanza más rápido de lo que quisieras. Esta tristeza es válida. No tienes que combatirla -puedes acompañarla.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Enojo e irritabilidad</h3>
 
           <p>
-            El enojo es parte del duelo, y en la menopausia a veces llega con fuerza. Puede ser enojo con tu cuerpo que "ya no te obedece", con una cultura que no valora el envejecimiento femenino, con la sensación de haber llegado a un punto de no retorno. Ese enojo merece ser escuchado —no reprimido ni medicalizado sin más.
+            El enojo es parte del duelo, y en la menopausia a veces llega con fuerza. Puede ser enojo con tu cuerpo que "ya no te obedece", con una cultura que no valora el envejecimiento femenino, con la sensación de haber llegado a un punto de no retorno. Ese enojo merece ser escuchado -no reprimido ni medicalizado sin más.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Miedo e incertidumbre</h3>
@@ -98,13 +99,13 @@ export default function ArticuloMenopausiaYDuelo() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Alivio y libertad</h3>
 
           <p>
-            No todo es pérdida. Muchas mujeres también experimentan —a veces con culpa— una sensación de alivio: el fin de los ciclos menstruales, la liberación de ciertos miedos reproductivos, la sensación de que llegan a una etapa más libre. Ese alivio también tiene lugar. No lo traiciones.
+            No todo es pérdida. Muchas mujeres también experimentan -a veces con culpa- una sensación de alivio: el fin de los ciclos menstruales, la liberación de ciertos miedos reproductivos, la sensación de que llegan a una etapa más libre. Ese alivio también tiene lugar. No lo traiciones.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La arteterapia como herramienta para este tránsito</h2>
 
           <p>
-            Cuando el lenguaje no alcanza para describir lo que estamos viviendo —y en la menopausia muchas veces no alcanza— el arte puede ser un puente extraordinario hacia nuestro mundo interior.
+            Cuando el lenguaje no alcanza para describir lo que estamos viviendo -y en la menopausia muchas veces no alcanza- el arte puede ser un puente extraordinario hacia nuestro mundo interior.
           </p>
 
           <p>
@@ -135,11 +136,11 @@ export default function ArticuloMenopausiaYDuelo() {
           </p>
 
           <p>
-            La menopausia merece ser recibida con compasión, no con guerra. No como un enemigo al que hay que vencer, sino como un umbral que hay que atravesar. Y cruzar un umbral requiere que te detengas un momento, que mires lo que dejas atrás, que te permitas el duelo —y que también empieces a ver lo que está al otro lado.
+            La menopausia merece ser recibida con compasión, no con guerra. No como un enemigo al que hay que vencer, sino como un umbral que hay que atravesar. Y cruzar un umbral requiere que te detengas un momento, que mires lo que dejas atrás, que te permitas el duelo -y que también empieces a ver lo que está al otro lado.
           </p>
 
           <p>
-            En muchas culturas del mundo, la etapa que sigue a la menopausia es reconocida como un tiempo de sabiduría, de autoridad femenina, de libertad. No todas las narrativas de esta transición son de pérdida. Algunas —las más antiguas— la celebran como un paso hacia una versión más plena de la mujer.
+            En muchas culturas del mundo, la etapa que sigue a la menopausia es reconocida como un tiempo de sabiduría, de autoridad femenina, de libertad. No todas las narrativas de esta transición son de pérdida. Algunas -las más antiguas- la celebran como un paso hacia una versión más plena de la mujer.
           </p>
 
           <p>
@@ -152,7 +153,7 @@ export default function ArticuloMenopausiaYDuelo() {
             <div>
               <p className="font-semibold text-black">¿Es normal sentir duelo durante la menopausia?</p>
               <p>
-                Completamente. La menopausia implica pérdidas reales —de fertilidad, de cierta identidad, del cuerpo conocido— y el duelo es la respuesta natural a esas pérdidas. No estás exagerando. Lo que sientes es una respuesta humana válida ante un cambio profundo.
+                Completamente. La menopausia implica pérdidas reales -de fertilidad, de cierta identidad, del cuerpo conocido- y el duelo es la respuesta natural a esas pérdidas. No estás exagerando. Lo que sientes es una respuesta humana válida ante un cambio profundo.
               </p>
             </div>
 
@@ -180,7 +181,7 @@ export default function ArticuloMenopausiaYDuelo() {
             <div>
               <p className="font-semibold text-black">¿Hay algo al otro lado de este duelo?</p>
               <p>
-                Sí. Muchas mujeres describen la etapa post-menopausia como un tiempo de mayor claridad, menos necesidad de aprobación externa y una conexión más honesta con sus propios deseos. El duelo no es el final del camino. Es el umbral hacia una versión diferente —y con frecuencia más libre— de ti misma.
+                Sí. Muchas mujeres describen la etapa post-menopausia como un tiempo de mayor claridad, menos necesidad de aprobación externa y una conexión más honesta con sus propios deseos. El duelo no es el final del camino. Es el umbral hacia una versión diferente -y con frecuencia más libre- de ti misma.
               </p>
             </div>
           </div>
@@ -201,6 +202,9 @@ export default function ArticuloMenopausiaYDuelo() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="menopausia-y-duelo" category="tanatologia" />
       </div>
     </article>
   )

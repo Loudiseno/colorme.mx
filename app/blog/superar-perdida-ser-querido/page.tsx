@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloSuperarPerdida() {
@@ -82,7 +83,7 @@ export default function ArticuloSuperarPerdida() {
           </p>
 
           <p>
-            Hablar de tu ser querido —de quién era, de lo que significaba para ti, de cómo te sientes ahora— es una forma de procesar la pérdida. No te guardes todo adentro.
+            Hablar de tu ser querido -de quién era, de lo que significaba para ti, de cómo te sientes ahora- es una forma de procesar la pérdida. No te guardes todo adentro.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">5. Está bien no estar bien</h2>
@@ -209,6 +210,9 @@ export default function ArticuloSuperarPerdida() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="superar-perdida-ser-querido" category="tanatologia" />
       </div>
     </article>
   )

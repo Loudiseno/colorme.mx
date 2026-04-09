@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloQueEsUnTanatologo() {
@@ -43,7 +44,7 @@ export default function ArticuloQueEsUnTanatologo() {
         <div className="prose prose-lg max-w-none text-black/80">
 
           <p>
-            ¿Alguna vez te has preguntado <strong>qué es un tanatólogo</strong> y cómo puede ayudarte durante uno de los momentos más difíciles de tu vida? Cuando enfrentamos cualquier tipo de pérdida significativa —ya sea la muerte de un ser querido, una mascota que nos acompañó por años, un trabajo que definía parte de nuestra identidad, un diagnóstico que cambia todo, o incluso un cambio de ciudad que nos aleja de lo conocido— este profesional especializado puede convertirse en un aliado fundamental para nuestra recuperación emocional.
+            ¿Alguna vez te has preguntado <strong>qué es un tanatólogo</strong> y cómo puede ayudarte durante uno de los momentos más difíciles de tu vida? Cuando enfrentamos cualquier tipo de pérdida significativa -ya sea la muerte de un ser querido, una mascota que nos acompañó por años, un trabajo que definía parte de nuestra identidad, un diagnóstico que cambia todo, o incluso un cambio de ciudad que nos aleja de lo conocido- este profesional especializado puede convertirse en un aliado fundamental para nuestra recuperación emocional.
           </p>
 
           <p>
@@ -381,6 +382,9 @@ export default function ArticuloQueEsUnTanatologo() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="que-es-un-tanatologo" category="tanatologia" />
       </div>
     </article>
   )

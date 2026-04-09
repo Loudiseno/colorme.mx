@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloSucio() {
@@ -44,7 +45,7 @@ export default function ArticuloDueloSucio() {
           <p>Es el alivio. El alivio que a veces llega cuando alguien muere.</p>
 
           <p>
-            Si estás leyendo esto porque sentiste —o estás sintiendo— alivio después de la muerte de alguien, quiero decirte algo importante: <strong>No eres un monstruo. Eres humano.</strong>
+            Si estás leyendo esto porque sentiste -o estás sintiendo- alivio después de la muerte de alguien, quiero decirte algo importante: <strong>No eres un monstruo. Eres humano.</strong>
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El tabú más grande del duelo</h2>
@@ -54,7 +55,7 @@ export default function ArticuloDueloSucio() {
           </p>
 
           <p>
-            Pero otras veces... no. Otras veces, junto con la tristeza —o incluso en lugar de ella— aparece el alivio. Y con el alivio, casi siempre, viene la culpa.
+            Pero otras veces... no. Otras veces, junto con la tristeza -o incluso en lugar de ella- aparece el alivio. Y con el alivio, casi siempre, viene la culpa.
           </p>
 
           <p>
@@ -75,7 +76,7 @@ export default function ArticuloDueloSucio() {
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">1. La persona estaba sufriendo</h3>
           <p>
-            Si cuidaste a alguien con una enfermedad larga —cáncer, Alzheimer, una condición terminal— probablemente viste ese sufrimiento de cerca. Día tras día. Los dolores. El deterioro. La pérdida de dignidad.
+            Si cuidaste a alguien con una enfermedad larga -cáncer, Alzheimer, una condición terminal- probablemente viste ese sufrimiento de cerca. Día tras día. Los dolores. El deterioro. La pérdida de dignidad.
           </p>
           <p>
             Desear que ese sufrimiento termine no es egoísmo. Es compasión. El alivio que sientes no es porque esa persona murió. Es porque esa persona ya no sufre. Y eso es amor, no crueldad.
@@ -133,7 +134,7 @@ export default function ArticuloDueloSucio() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">No estás solo</h2>
 
           <p>
-            El &quot;duelo sucio&quot; —como lo llamo yo— es el duelo que no es limpio ni presentable. El que no cabe en una tarjeta de condolencias. El que te hace sentir que algo está mal contigo.
+            El &quot;duelo sucio&quot; -como lo llamo yo- es el duelo que no es limpio ni presentable. El que no cabe en una tarjeta de condolencias. El que te hace sentir que algo está mal contigo.
           </p>
 
           <p>Pero no hay nada mal contigo.</p>
@@ -163,6 +164,9 @@ export default function ArticuloDueloSucio() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-sucio-alivio" category="tanatologia" />
       </div>
     </article>
   )

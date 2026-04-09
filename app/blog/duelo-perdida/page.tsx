@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloPerdida() {
@@ -92,7 +93,7 @@ export default function ArticuloDueloPerdida() {
           <h3 className="text-xl text-black font-semibold mt-6 mb-3">Pérdidas relacionales</h3>
 
           <p>
-            La muerte de un familiar, sí. Pero también la muerte de tu mascota —ese compañero que estuvo contigo cada día durante años. La ruptura de una pareja con quien construiste una vida. El divorcio que partió tu mundo en dos. El distanciamiento de un hijo, un padre, un amigo que ya no responde tus mensajes.
+            La muerte de un familiar, sí. Pero también la muerte de tu mascota -ese compañero que estuvo contigo cada día durante años. La ruptura de una pareja con quien construiste una vida. El divorcio que partió tu mundo en dos. El distanciamiento de un hijo, un padre, un amigo que ya no responde tus mensajes.
           </p>
 
           <h3 className="text-xl text-black font-semibold mt-6 mb-3">Pérdidas de identidad</h3>
@@ -144,7 +145,7 @@ export default function ArticuloDueloPerdida() {
           </p>
 
           <p>
-            Puedes sentir aceptación por la mañana y rabia por la noche. Puedes tener una semana entera de paz y de pronto derrumbarte por una canción, un olor, una fecha. Puedes experimentar alivio y culpa al mismo tiempo —especialmente si quien partió estaba sufriendo.
+            Puedes sentir aceptación por la mañana y rabia por la noche. Puedes tener una semana entera de paz y de pronto derrumbarte por una canción, un olor, una fecha. Puedes experimentar alivio y culpa al mismo tiempo -especialmente si quien partió estaba sufriendo.
           </p>
 
           <p>
@@ -158,7 +159,7 @@ export default function ArticuloDueloPerdida() {
           </p>
 
           <p>
-            Es común experimentar alteraciones del sueño —dormir demasiado o no poder conciliar el sueño. Cambios en el apetito, ya sea comer en exceso o perder todo interés por la comida. Fatiga extrema aunque no hayas hecho nada físicamente demandante. Dolor en el pecho, opresión en la garganta, sensación de vacío en el estómago.
+            Es común experimentar alteraciones del sueño -dormir demasiado o no poder conciliar el sueño. Cambios en el apetito, ya sea comer en exceso o perder todo interés por la comida. Fatiga extrema aunque no hayas hecho nada físicamente demandante. Dolor en el pecho, opresión en la garganta, sensación de vacío en el estómago.
           </p>
 
           <p>
@@ -166,7 +167,7 @@ export default function ArticuloDueloPerdida() {
           </p>
 
           <p>
-            Cuidar tu cuerpo durante este proceso no es un lujo —es una necesidad. Descansar aunque el sueño sea difícil. Comer aunque no tengas hambre. Moverte aunque solo sea caminar unos minutos. Tu cuerpo necesita recursos para atravesar esta tormenta.
+            Cuidar tu cuerpo durante este proceso no es un lujo -es una necesidad. Descansar aunque el sueño sea difícil. Comer aunque no tengas hambre. Moverte aunque solo sea caminar unos minutos. Tu cuerpo necesita recursos para atravesar esta tormenta.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cuándo el duelo necesita ayuda profesional?</h2>
@@ -222,7 +223,7 @@ export default function ArticuloDueloPerdida() {
           </p>
 
           <p>
-            Con el tiempo, el dolor no desaparece —se transforma. Deja de ocupar cada rincón de tu mente y empieza a convivir con otras emociones. Aprendes a cargar esa ausencia de una forma diferente.
+            Con el tiempo, el dolor no desaparece -se transforma. Deja de ocupar cada rincón de tu mente y empieza a convivir con otras emociones. Aprendes a cargar esa ausencia de una forma diferente.
           </p>
 
           <p>
@@ -246,7 +247,7 @@ export default function ArticuloDueloPerdida() {
                 ¿Es normal sentir alivio cuando alguien muere?
               </p>
               <p>
-                Completamente. Especialmente cuando esa persona sufría por una enfermedad. El alivio no contradice el amor —conviven.
+                Completamente. Especialmente cuando esa persona sufría por una enfermedad. El alivio no contradice el amor -conviven.
               </p>
             </div>
 
@@ -294,6 +295,9 @@ export default function ArticuloDueloPerdida() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-perdida" category="tanatologia" />
       </div>
     </article>
   )

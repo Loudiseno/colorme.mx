@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloYCulpa() {
@@ -32,7 +33,7 @@ export default function ArticuloDueloYCulpa() {
           </p>
 
           <p>
-            Si alguna vez te has dicho algo parecido después de una pérdida, quiero que sepas que no estás solo. La culpa es una de las emociones más comunes —y también más silenciosas— del duelo. Se instala en los rincones del pensamiento, a veces en susurros, a veces con una claridad brutal que no te deja descansar.
+            Si alguna vez te has dicho algo parecido después de una pérdida, quiero que sepas que no estás solo. La culpa es una de las emociones más comunes -y también más silenciosas- del duelo. Se instala en los rincones del pensamiento, a veces en susurros, a veces con una claridad brutal que no te deja descansar.
           </p>
 
           <p>
@@ -42,11 +43,11 @@ export default function ArticuloDueloYCulpa() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Por qué sentimos culpa después de una pérdida?</h2>
 
           <p>
-            La culpa en el duelo nace de una ilusión muy humana: la de que teníamos el control. Nuestra mente, al no poder aceptar la impotencia que viene con la pérdida, busca explicaciones. Y muchas veces, la explicación más accesible —aunque dolorosa— es encontrar qué hicimos o dejamos de hacer.
+            La culpa en el duelo nace de una ilusión muy humana: la de que teníamos el control. Nuestra mente, al no poder aceptar la impotencia que viene con la pérdida, busca explicaciones. Y muchas veces, la explicación más accesible -aunque dolorosa- es encontrar qué hicimos o dejamos de hacer.
           </p>
 
           <p>
-            Desde la perspectiva psicológica, la culpa es en parte un mecanismo de defensa ante el caos. Si yo fui responsable, entonces el mundo sigue teniendo sentido, sigue siendo predecible. La alternativa —aceptar que la vida puede romperse sin razón, sin aviso— es mucho más aterradora.
+            Desde la perspectiva psicológica, la culpa es en parte un mecanismo de defensa ante el caos. Si yo fui responsable, entonces el mundo sigue teniendo sentido, sigue siendo predecible. La alternativa -aceptar que la vida puede romperse sin razón, sin aviso- es mucho más aterradora.
           </p>
 
           <p>
@@ -72,7 +73,7 @@ export default function ArticuloDueloYCulpa() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Culpa del sobreviviente</h3>
 
           <p>
-            "¿Por qué yo sigo aquí y ellos no?" Esta culpa aparece con mucha frecuencia en personas que han sobrevivido una enfermedad grave —como el cáncer—, un accidente, una tragedia colectiva, o simplemente en quienes han vivido más que sus padres, hermanos o amigos.
+            "¿Por qué yo sigo aquí y ellos no?" Esta culpa aparece con mucha frecuencia en personas que han sobrevivido una enfermedad grave -como el cáncer-, un accidente, una tragedia colectiva, o simplemente en quienes han vivido más que sus padres, hermanos o amigos.
           </p>
 
           <p>
@@ -92,7 +93,7 @@ export default function ArticuloDueloYCulpa() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Culpa por sentir alivio</h3>
 
           <p>
-            Cuando alguien ha sufrido mucho —por una enfermedad larga, una relación difícil, años de dolor— es muy común que después de su muerte sintamos alivio. Y ese alivio nos genera una culpa enorme. "¿Cómo puedo sentirme aliviado si supuestamente los amaba?"
+            Cuando alguien ha sufrido mucho -por una enfermedad larga, una relación difícil, años de dolor- es muy común que después de su muerte sintamos alivio. Y ese alivio nos genera una culpa enorme. "¿Cómo puedo sentirme aliviado si supuestamente los amaba?"
           </p>
 
           <p>
@@ -106,7 +107,7 @@ export default function ArticuloDueloYCulpa() {
           </p>
 
           <p>
-            Continuar viviendo —y hacerlo con plenitud— no es una falta de respeto hacia quienes perdiste. Es lo que ellos, en su amor por ti, probablemente más habrían deseado.
+            Continuar viviendo -y hacerlo con plenitud- no es una falta de respeto hacia quienes perdiste. Es lo que ellos, en su amor por ti, probablemente más habrían deseado.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo la culpa complica el proceso de duelo</h2>
@@ -119,8 +120,8 @@ export default function ArticuloDueloYCulpa() {
             <li><strong>Obstaculiza la aceptación.</strong> Si seguimos creyendo que podríamos haber cambiado lo que pasó, nos quedamos atascados en la etapa de negociación del duelo, dando vueltas en círculos sin avanzar.</li>
             <li><strong>Genera autocastigo.</strong> La culpa sin procesar a veces se convierte en conductas de autopunición: descuidarse, aislarse, sabotear la propia felicidad como forma inconsciente de "pagar" por lo que creemos haber hecho mal.</li>
             <li><strong>Alimenta la depresión.</strong> La culpa crónica es uno de los elementos que pueden profundizar un episodio depresivo en el contexto del duelo.</li>
-            <li><strong>Rompe relaciones.</strong> A veces la culpa se proyecta hacia afuera y buscamos "culpables" externos —médicos, familiares, amigos— lo cual daña vínculos importantes en un momento en que más los necesitamos.</li>
-            <li><strong>Bloquea el recuerdo amoroso.</strong> Si cada vez que pensamos en quien perdimos lo primero que aparece es la culpa, acabamos evitando el recuerdo —y con eso, perdemos también los momentos hermosos que compartimos.</li>
+            <li><strong>Rompe relaciones.</strong> A veces la culpa se proyecta hacia afuera y buscamos "culpables" externos -médicos, familiares, amigos- lo cual daña vínculos importantes en un momento en que más los necesitamos.</li>
+            <li><strong>Bloquea el recuerdo amoroso.</strong> Si cada vez que pensamos en quien perdimos lo primero que aparece es la culpa, acabamos evitando el recuerdo -y con eso, perdemos también los momentos hermosos que compartimos.</li>
           </ul>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Herramientas para trabajar la culpa en el duelo</h2>
@@ -132,13 +133,13 @@ export default function ArticuloDueloYCulpa() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">La carta que no se envía</h3>
 
           <p>
-            Escribirle a quien perdiste. Decirle todo lo que quedó pendiente: lo que lamentas, lo que no pudiste decir, las disculpas que nunca llegaron. No para recibir una respuesta —sino para dar salida a lo que llevas dentro. Esta carta es tuya; nadie más necesita leerla.
+            Escribirle a quien perdiste. Decirle todo lo que quedó pendiente: lo que lamentas, lo que no pudiste decir, las disculpas que nunca llegaron. No para recibir una respuesta -sino para dar salida a lo que llevas dentro. Esta carta es tuya; nadie más necesita leerla.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">La arteterapia como lenguaje para lo que no tiene palabras</h3>
 
           <p>
-            A veces la culpa vive en capas tan profundas que las palabras no alcanzan. El trabajo expresivo —pintar, modelar, collage— permite que esas emociones encuentren una salida sin necesidad de verbalizarlas primero. En arteterapia, la imagen puede decir lo que la voz todavía no puede.
+            A veces la culpa vive en capas tan profundas que las palabras no alcanzan. El trabajo expresivo -pintar, modelar, collage- permite que esas emociones encuentren una salida sin necesidad de verbalizarlas primero. En arteterapia, la imagen puede decir lo que la voz todavía no puede.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Cuestionar la narrativa de la culpa</h3>
@@ -150,7 +151,7 @@ export default function ArticuloDueloYCulpa() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">El ritual de despedida</h3>
 
           <p>
-            Crear un ritual intencional —encender una vela, plantar algo, crear una pieza de arte en honor a quien se fue— puede ser una forma poderosa de cerrar ciclos que quedaron abiertos. No necesita ser elaborado; necesita ser auténtico.
+            Crear un ritual intencional -encender una vela, plantar algo, crear una pieza de arte en honor a quien se fue- puede ser una forma poderosa de cerrar ciclos que quedaron abiertos. No necesita ser elaborado; necesita ser auténtico.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes sobre la culpa en el duelo</h2>
@@ -159,7 +160,7 @@ export default function ArticuloDueloYCulpa() {
             <div>
               <p className="font-semibold text-black">¿Es normal sentir culpa después de la muerte de alguien?</p>
               <p>
-                Sí, es una de las emociones más comunes del duelo. Prácticamente todas las personas que han perdido a alguien experimentan algún grado de culpa. No significa que hayas actuado mal —significa que eras humano en una relación humana, imperfecta y real.
+                Sí, es una de las emociones más comunes del duelo. Prácticamente todas las personas que han perdido a alguien experimentan algún grado de culpa. No significa que hayas actuado mal -significa que eras humano en una relación humana, imperfecta y real.
               </p>
             </div>
 
@@ -173,7 +174,7 @@ export default function ArticuloDueloYCulpa() {
             <div>
               <p className="font-semibold text-black">¿Puedo perdonarme a mí mismo por cosas que hice o dejé de hacer?</p>
               <p>
-                Sí, y ese es precisamente uno de los objetivos del trabajo tanatológico. El autoperdón no significa que lo que pasó estuvo bien —significa reconocer que eras humano, con límites, con miedo, con lo que sabías en ese momento. Y que mereces seguir viviendo sin esa carga.
+                Sí, y ese es precisamente uno de los objetivos del trabajo tanatológico. El autoperdón no significa que lo que pasó estuvo bien -significa reconocer que eras humano, con límites, con miedo, con lo que sabías en ese momento. Y que mereces seguir viviendo sin esa carga.
               </p>
             </div>
 
@@ -208,6 +209,9 @@ export default function ArticuloDueloYCulpa() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-y-culpa" category="emociones" />
       </div>
     </article>
   )

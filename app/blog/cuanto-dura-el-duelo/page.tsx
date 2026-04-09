@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloCuantoDuraElDuelo() {
@@ -218,6 +219,9 @@ export default function ArticuloCuantoDuraElDuelo() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="cuanto-dura-el-duelo" category="tanatologia" />
       </div>
     </article>
   )

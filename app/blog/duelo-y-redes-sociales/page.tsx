@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloYRedesSociales() {
@@ -42,7 +43,7 @@ export default function ArticuloDueloYRedesSociales() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo digital: una experiencia nueva sin manuales</h2>
 
           <p>
-            Durante miles de años, la humanidad desarrolló rituales para enfrentar la muerte: velorios, entierros, ceremonias, períodos de luto reconocidos socialmente. Estos rituales existían —y existen— porque cumplían una función psicológica esencial: ayudar a la mente a registrar que algo ha terminado.
+            Durante miles de años, la humanidad desarrolló rituales para enfrentar la muerte: velorios, entierros, ceremonias, períodos de luto reconocidos socialmente. Estos rituales existían -y existen- porque cumplían una función psicológica esencial: ayudar a la mente a registrar que algo ha terminado.
           </p>
 
           <p>
@@ -56,7 +57,7 @@ export default function ArticuloDueloYRedesSociales() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Cuando la despedida no tiene cierre</h3>
 
           <p>
-            Uno de los elementos fundamentales del proceso de duelo es la confirmación de la pérdida —la aceptación, a nivel profundo, de que esa persona ya no está. Las redes sociales complican esto de maneras que no siempre reconocemos.
+            Uno de los elementos fundamentales del proceso de duelo es la confirmación de la pérdida -la aceptación, a nivel profundo, de que esa persona ya no está. Las redes sociales complican esto de maneras que no siempre reconocemos.
           </p>
 
           <p>
@@ -70,13 +71,13 @@ export default function ArticuloDueloYRedesSociales() {
           </p>
 
           <p>
-            Cada una de estas notificaciones puede convertirse en un golpe inesperado. Un recordatorio súbito en un día en que quizás estabas bien, que te regresa de golpe al dolor más agudo. El duelo, que de por sí viene en olas, se vuelve todavía más impredecible cuando el mundo digital no ha procesado —porque no puede procesar— lo que ocurrió.
+            Cada una de estas notificaciones puede convertirse en un golpe inesperado. Un recordatorio súbito en un día en que quizás estabas bien, que te regresa de golpe al dolor más agudo. El duelo, que de por sí viene en olas, se vuelve todavía más impredecible cuando el mundo digital no ha procesado -porque no puede procesar- lo que ocurrió.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo en red: compartir el dolor públicamente</h2>
 
           <p>
-            Las redes sociales también han transformado la forma en que expresamos el duelo colectivamente. Publicar una foto del difunto, escribir un mensaje en su muro, compartir recuerdos con quienes lo conocieron —todo esto puede tener un valor genuino de comunidad y de memoria compartida.
+            Las redes sociales también han transformado la forma en que expresamos el duelo colectivamente. Publicar una foto del difunto, escribir un mensaje en su muro, compartir recuerdos con quienes lo conocieron -todo esto puede tener un valor genuino de comunidad y de memoria compartida.
           </p>
 
           <p>
@@ -86,7 +87,7 @@ export default function ArticuloDueloYRedesSociales() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">La performance del duelo</h3>
 
           <p>
-            Vivimos en una cultura donde lo que no se publica a veces no parece real. Algunos deudos sienten —consciente o inconscientemente— una presión para demostrar públicamente cuánto sufren, para rendir homenaje de formas visibles, para que el mundo digital confirme que su pérdida fue grande.
+            Vivimos en una cultura donde lo que no se publica a veces no parece real. Algunos deudos sienten -consciente o inconscientemente- una presión para demostrar públicamente cuánto sufren, para rendir homenaje de formas visibles, para que el mundo digital confirme que su pérdida fue grande.
           </p>
 
           <p>
@@ -100,7 +101,7 @@ export default function ArticuloDueloYRedesSociales() {
           </p>
 
           <p>
-            Y exponerse a ellos repetidamente —volviendo al perfil del difunto, leyendo los mensajes de condolencia— puede interrumpir el proceso interno que necesita su propio ritmo y silencio.
+            Y exponerse a ellos repetidamente -volviendo al perfil del difunto, leyendo los mensajes de condolencia- puede interrumpir el proceso interno que necesita su propio ritmo y silencio.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los perfiles de personas fallecidas: ¿qué hacemos con ellos?</h2>
@@ -139,11 +140,11 @@ export default function ArticuloDueloYRedesSociales() {
 
           <ul className="list-disc ml-6 space-y-2">
             <li><strong>Silencia o desactiva notificaciones.</strong> Puedes silenciar temporalmente las cuentas que te envían recordatorios automáticos, o activar filtros para ciertos tipos de contenido. No tienes que estar disponible para los golpes del algoritmo.</li>
-            <li><strong>Define tus propios tiempos de visita digital.</strong> Si sientes que necesitas visitar el perfil de quien falleció, hazlo de manera intencional —no impulsiva. Elige un momento, un límite de tiempo, y sé consciente de cómo te sientes antes y después.</li>
+            <li><strong>Define tus propios tiempos de visita digital.</strong> Si sientes que necesitas visitar el perfil de quien falleció, hazlo de manera intencional -no impulsiva. Elige un momento, un límite de tiempo, y sé consciente de cómo te sientes antes y después.</li>
             <li><strong>Habla con tu familia sobre el perfil.</strong> Tomar decisiones colectivas sobre qué hacer con la presencia digital del difunto puede convertirse en un ritual de despedida en sí mismo.</li>
-            <li><strong>Cuida tu consumo general de redes durante el duelo.</strong> El scroll infinito no nutre el dolor —lo anestesia momentáneamente y luego lo intensifica. Reducir el tiempo en redes en general puede ser un acto de cuidado propio.</li>
+            <li><strong>Cuida tu consumo general de redes durante el duelo.</strong> El scroll infinito no nutre el dolor -lo anestesia momentáneamente y luego lo intensifica. Reducir el tiempo en redes en general puede ser un acto de cuidado propio.</li>
             <li><strong>Guarda lo que quieres guardar, conscientemente.</strong> Si hay fotos, audios o conversaciones que quieres conservar, hazlo de forma intencional: descárgalos, guárdalos en un lugar propio. No dejes que el algoritmo sea el custodio de tus recuerdos.</li>
-            <li><strong>Busca apoyo en espacios presenciales.</strong> El duelo necesita cuerpo, presencia, contacto. Las redes pueden ser un complemento, pero no pueden reemplazar el acompañamiento real —de personas cercanas o de un profesional.</li>
+            <li><strong>Busca apoyo en espacios presenciales.</strong> El duelo necesita cuerpo, presencia, contacto. Las redes pueden ser un complemento, pero no pueden reemplazar el acompañamiento real -de personas cercanas o de un profesional.</li>
           </ul>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes sobre duelo y redes sociales</h2>
@@ -180,7 +181,7 @@ export default function ArticuloDueloYRedesSociales() {
             <div>
               <p className="font-semibold text-black">¿Las redes sociales pueden retrasar el duelo?</p>
               <p>
-                Pueden complicarlo. Si el uso de redes se convierte en una forma de evitar el dolor —revisando compulsivamente el perfil del difunto, buscando recuerdos digitales en lugar de procesar la ausencia— puede dificultar el trabajo de aceptación que es central en el duelo. No es que las redes sean malas: es que la evasión, en cualquier forma, prolonga el sufrimiento.
+                Pueden complicarlo. Si el uso de redes se convierte en una forma de evitar el dolor -revisando compulsivamente el perfil del difunto, buscando recuerdos digitales en lugar de procesar la ausencia- puede dificultar el trabajo de aceptación que es central en el duelo. No es que las redes sean malas: es que la evasión, en cualquier forma, prolonga el sufrimiento.
               </p>
             </div>
           </div>
@@ -201,6 +202,9 @@ export default function ArticuloDueloYRedesSociales() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-y-redes-sociales" category="tanatologia" />
       </div>
     </article>
   )

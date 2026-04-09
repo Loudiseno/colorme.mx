@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloNavidadEnDuelo() {
@@ -36,7 +37,7 @@ export default function ArticuloNavidadEnDuelo() {
           </p>
 
           <p>
-            Las luces, las canciones, los anuncios de familias sonrientes reunidas alrededor de la mesa —todo eso que en otros años era festivo— de pronto se convierte en un recordatorio constante de todo lo que falta. De la silla vacía. De la llamada que ya no llegará. De la tradición que era su tradición y que ahora no sabes si mantener o dejar ir.
+            Las luces, las canciones, los anuncios de familias sonrientes reunidas alrededor de la mesa -todo eso que en otros años era festivo- de pronto se convierte en un recordatorio constante de todo lo que falta. De la silla vacía. De la llamada que ya no llegará. De la tradición que era su tradición y que ahora no sabes si mantener o dejar ir.
           </p>
 
           <p>
@@ -44,13 +45,13 @@ export default function ArticuloNavidadEnDuelo() {
           </p>
 
           <p>
-            Desde mi experiencia como tanatóloga y como sobreviviente de cáncer —que también ha tenido que aprender a encontrar su camino en fiestas que se sienten imposibles— sé que transitar la Navidad en duelo es posible. No sin dolor, pero sí con más compasión, más consciencia, y más espacio para lo que realmente estás sintiendo.
+            Desde mi experiencia como tanatóloga y como sobreviviente de cáncer -que también ha tenido que aprender a encontrar su camino en fiestas que se sienten imposibles- sé que transitar la Navidad en duelo es posible. No sin dolor, pero sí con más compasión, más consciencia, y más espacio para lo que realmente estás sintiendo.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por qué la Navidad puede intensificar el duelo</h2>
 
           <p>
-            Las fiestas navideñas están diseñadas alrededor de la reunión, la familia y la continuidad de las tradiciones. Cada elemento de la época —los adornos, los villancicos, los platillos especiales— está cargado de memoria y de presencia. Cuando hay una pérdida, esas memorias se convierten en disparadores de dolor.
+            Las fiestas navideñas están diseñadas alrededor de la reunión, la familia y la continuidad de las tradiciones. Cada elemento de la época -los adornos, los villancicos, los platillos especiales- está cargado de memoria y de presencia. Cuando hay una pérdida, esas memorias se convierten en disparadores de dolor.
           </p>
 
           <p>
@@ -58,7 +59,7 @@ export default function ArticuloNavidadEnDuelo() {
           </p>
 
           <p>
-            Además, existe una presión social invisible pero muy poderosa: la expectativa de "estar bien en Navidad". Las fiestas son culturalmente obligatorias para la alegría. Y si tú estás de duelo —si el año pasado fue devastador y las fiestas lo hacen más evidente— puede sentirse como una doble carga: cargas el dolor y cargas la expectativa de ocultarlo para no arruinar el ambiente.
+            Además, existe una presión social invisible pero muy poderosa: la expectativa de "estar bien en Navidad". Las fiestas son culturalmente obligatorias para la alegría. Y si tú estás de duelo -si el año pasado fue devastador y las fiestas lo hacen más evidente- puede sentirse como una doble carga: cargas el dolor y cargas la expectativa de ocultarlo para no arruinar el ambiente.
           </p>
 
           <p>
@@ -80,7 +81,7 @@ export default function ArticuloNavidadEnDuelo() {
           </p>
 
           <p>
-            También quiero decirte algo sobre la culpa, porque aparece mucho en estas fechas. Muchas personas sienten culpa por reírse en un momento de la reunión y luego "acordarse" de que deberían estar tristes. Otras sienten culpa por estar tristes cuando "deberían" aprovechar la celebración. El duelo y la alegría pueden coexistir en el mismo espacio, incluso en la misma tarde. Eso no es incoherencia —es ser humano.
+            También quiero decirte algo sobre la culpa, porque aparece mucho en estas fechas. Muchas personas sienten culpa por reírse en un momento de la reunión y luego "acordarse" de que deberían estar tristes. Otras sienten culpa por estar tristes cuando "deberían" aprovechar la celebración. El duelo y la alegría pueden coexistir en el mismo espacio, incluso en la misma tarde. Eso no es incoherencia -es ser humano.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Estrategias concretas para atravesar las fiestas con más compasión</h2>
@@ -94,31 +95,31 @@ export default function ArticuloNavidadEnDuelo() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Comunica tus necesidades al entorno</h3>
 
           <p>
-            Las personas que te rodean probablemente quieren ayudarte pero no saben cómo. Puedes decirles algo tan sencillo como: "Sé que estas fiestas van a ser difíciles para mí. No necesito que me animen —necesito que me permitan estar triste si llego a ese punto, y que no hagan como si todo estuviera bien." Darles instrucciones concretas les quita la presión de adivinar qué hacer, y a ti te protege de respuestas bienintencionadas que igual duelen.
+            Las personas que te rodean probablemente quieren ayudarte pero no saben cómo. Puedes decirles algo tan sencillo como: "Sé que estas fiestas van a ser difíciles para mí. No necesito que me animen -necesito que me permitan estar triste si llego a ese punto, y que no hagan como si todo estuviera bien." Darles instrucciones concretas les quita la presión de adivinar qué hacer, y a ti te protege de respuestas bienintencionadas que igual duelen.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Crea un espacio para honrar la ausencia</h3>
 
           <p>
-            Algunas familias encuentran mucho consuelo en incluir a quien falleció dentro de las tradiciones de manera simbólica: encender una vela en su memoria antes de cenar, dejar una flor en el lugar donde solía sentarse, compartir un recuerdo favorito de esa persona como parte de la reunión. Honrar la ausencia explícitamente —en lugar de ignorarla— puede hacer que el dolor sea más integrable para todos.
+            Algunas familias encuentran mucho consuelo en incluir a quien falleció dentro de las tradiciones de manera simbólica: encender una vela en su memoria antes de cenar, dejar una flor en el lugar donde solía sentarse, compartir un recuerdo favorito de esa persona como parte de la reunión. Honrar la ausencia explícitamente -en lugar de ignorarla- puede hacer que el dolor sea más integrable para todos.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Ten un plan de salida si lo necesitas</h3>
 
           <p>
-            Si vas a una reunión familiar o social, saber que puedes irte cuando lo necesites reduce enormemente la ansiedad anticipatoria. No tienes que quedarte hasta el final. Puedes llegar, honrar el compromiso, y retirarte cuando sientas que ya fue suficiente. Tener esa opción disponible —aunque no la uses— cambia cómo vives el momento.
+            Si vas a una reunión familiar o social, saber que puedes irte cuando lo necesites reduce enormemente la ansiedad anticipatoria. No tienes que quedarte hasta el final. Puedes llegar, honrar el compromiso, y retirarte cuando sientas que ya fue suficiente. Tener esa opción disponible -aunque no la uses- cambia cómo vives el momento.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Cuida tu cuerpo especialmente durante esta época</h3>
 
           <p>
-            El duelo es agotador a nivel físico, y las fiestas navideñas tienden a alterar los horarios de sueño, la alimentación y el movimiento. Pequeños esfuerzos por mantener rutinas básicas —dormir suficiente, comer de manera regular, salir a caminar aunque sea quince minutos— pueden marcar una diferencia real en cómo te sientes emocional y cognitivamente durante esta temporada.
+            El duelo es agotador a nivel físico, y las fiestas navideñas tienden a alterar los horarios de sueño, la alimentación y el movimiento. Pequeños esfuerzos por mantener rutinas básicas -dormir suficiente, comer de manera regular, salir a caminar aunque sea quince minutos- pueden marcar una diferencia real en cómo te sientes emocional y cognitivamente durante esta temporada.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Crear nuevas tradiciones: ni olvidar ni congelarse</h2>
 
           <p>
-            Una de las preguntas más frecuentes que recibo en esta época es: "¿Tengo que seguir con las tradiciones de siempre o puedo cambiarlas?" La respuesta es que puedes hacer cualquiera de las dos —o una mezcla de ambas. No existe una respuesta universal.
+            Una de las preguntas más frecuentes que recibo en esta época es: "¿Tengo que seguir con las tradiciones de siempre o puedo cambiarlas?" La respuesta es que puedes hacer cualquiera de las dos -o una mezcla de ambas. No existe una respuesta universal.
           </p>
 
           <p>
@@ -136,7 +137,7 @@ export default function ArticuloNavidadEnDuelo() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Si la Navidad era la temporada favorita de quien perdiste</h2>
 
           <p>
-            Hay algo particularmente doloroso cuando la persona que falleció amaba la Navidad con intensidad. Su energía al decorar, su entusiasmo al comprar regalos, sus canciones favoritas de la época —todo eso ahora es una ausencia que tiene forma y textura específicas.
+            Hay algo particularmente doloroso cuando la persona que falleció amaba la Navidad con intensidad. Su energía al decorar, su entusiasmo al comprar regalos, sus canciones favoritas de la época -todo eso ahora es una ausencia que tiene forma y textura específicas.
           </p>
 
           <p>
@@ -153,7 +154,7 @@ export default function ArticuloNavidadEnDuelo() {
             <div>
               <p className="font-semibold text-black">¿Es normal que la segunda Navidad sea igual o más difícil que la primera?</p>
               <p>
-                Sí, y es más común de lo que se piensa. Muchas personas reportan que el segundo año puede ser más intenso en ciertas fechas porque el shock inicial se ha disipado y el dolor se siente más "real" y permanente. No significa que estés retrocediendo en tu proceso —significa que estás procesando a un nivel más profundo.
+                Sí, y es más común de lo que se piensa. Muchas personas reportan que el segundo año puede ser más intenso en ciertas fechas porque el shock inicial se ha disipado y el dolor se siente más "real" y permanente. No significa que estés retrocediendo en tu proceso -significa que estás procesando a un nivel más profundo.
               </p>
             </div>
 
@@ -181,7 +182,7 @@ export default function ArticuloNavidadEnDuelo() {
             <div>
               <p className="font-semibold text-black">¿Cómo ayudo a mis hijos a vivir la Navidad cuando estoy en duelo?</p>
               <p>
-                Con honestidad y desde tu propio nivel de capacidad. Los niños necesitan más que protección de la tristeza: necesitan modelar que los adultos pueden sentir dolor y seguir funcionando. Puedes decirles que extrañas a quien perdiste y que eso es normal, mientras también les ofreces momentos de calidez y conexión. No tienes que ser perfecta —tienes que ser honesta y estar presente.
+                Con honestidad y desde tu propio nivel de capacidad. Los niños necesitan más que protección de la tristeza: necesitan modelar que los adultos pueden sentir dolor y seguir funcionando. Puedes decirles que extrañas a quien perdiste y que eso es normal, mientras también les ofreces momentos de calidez y conexión. No tienes que ser perfecta -tienes que ser honesta y estar presente.
               </p>
             </div>
           </div>
@@ -204,6 +205,9 @@ export default function ArticuloNavidadEnDuelo() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="navidad-en-duelo" category="tanatologia" />
       </div>
     </article>
   )

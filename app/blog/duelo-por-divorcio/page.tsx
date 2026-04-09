@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloPorDivorcio() {
@@ -32,7 +33,7 @@ export default function ArticuloDueloPorDivorcio() {
           </p>
 
           <p>
-            En la tanatología —la disciplina que estudia los procesos de pérdida y muerte— hablamos de que el duelo no es exclusivo de la muerte de una persona. Cada vez que perdemos algo significativo: una relación, un futuro imaginado, una identidad, un hogar, una familia tal como la conocíamos... el dolor que sentimos es duelo. Y merece ser tratado con la misma seriedad y compasión.
+            En la tanatología -la disciplina que estudia los procesos de pérdida y muerte- hablamos de que el duelo no es exclusivo de la muerte de una persona. Cada vez que perdemos algo significativo: una relación, un futuro imaginado, una identidad, un hogar, una familia tal como la conocíamos... el dolor que sentimos es duelo. Y merece ser tratado con la misma seriedad y compasión.
           </p>
 
           <p>
@@ -85,7 +86,7 @@ export default function ArticuloDueloPorDivorcio() {
           </ul>
 
           <p>
-            Estas frases, aunque a veces se dicen con buena intención, tienen el efecto de minimizar el dolor y de hacer que la persona sienta que no tiene "derecho" a estar mal. Eso es profundamente dañino. Cuando no nos permiten —o no nos permitimos— hacer el duelo, este no desaparece. Se congela. Y el dolor congelado siempre aparece después, con más fuerza, en el peor momento.
+            Estas frases, aunque a veces se dicen con buena intención, tienen el efecto de minimizar el dolor y de hacer que la persona sienta que no tiene "derecho" a estar mal. Eso es profundamente dañino. Cuando no nos permiten -o no nos permitimos- hacer el duelo, este no desaparece. Se congela. Y el dolor congelado siempre aparece después, con más fuerza, en el peor momento.
           </p>
 
           <p>
@@ -95,7 +96,7 @@ export default function ArticuloDueloPorDivorcio() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Las etapas del duelo por divorcio</h2>
 
           <p>
-            Si bien cada proceso de duelo es único, la psicología y la tanatología han identificado patrones emocionales que muchas personas atraviesan. No son etapas lineales ni obligatorias —puedes saltarte algunas, repetir otras, o vivirlas en orden diferente— pero reconocerlas puede ayudarte a entender lo que estás viviendo.
+            Si bien cada proceso de duelo es único, la psicología y la tanatología han identificado patrones emocionales que muchas personas atraviesan. No son etapas lineales ni obligatorias -puedes saltarte algunas, repetir otras, o vivirlas en orden diferente- pero reconocerlas puede ayudarte a entender lo que estás viviendo.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Negación y shock</h3>
@@ -134,7 +135,7 @@ export default function ArticuloDueloPorDivorcio() {
           </p>
 
           <p>
-            En la arteterapia, este proceso de redescubrimiento de la identidad puede tener un acompañamiento muy poderoso. A través del arte, podemos explorar quiénes éramos antes, qué dejamos ir en la relación, y qué queremos recuperar o construir de nuevo. No desde las palabras —que a veces se quedan cortas frente a estas preguntas— sino desde la imagen, el color, la forma.
+            En la arteterapia, este proceso de redescubrimiento de la identidad puede tener un acompañamiento muy poderoso. A través del arte, podemos explorar quiénes éramos antes, qué dejamos ir en la relación, y qué queremos recuperar o construir de nuevo. No desde las palabras -que a veces se quedan cortas frente a estas preguntas- sino desde la imagen, el color, la forma.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo procesar el duelo por divorcio</h2>
@@ -156,7 +157,7 @@ export default function ArticuloDueloPorDivorcio() {
           </p>
 
           <p>
-            <strong>Redefine tus rituales.</strong> Muchas tradiciones y rutinas estaban construidas alrededor de la pareja. Crear nuevos rituales —para ti sola, para ti con tus hijos si los tienes— puede ayudar a anclar una nueva identidad y un nuevo sentido de hogar.
+            <strong>Redefine tus rituales.</strong> Muchas tradiciones y rutinas estaban construidas alrededor de la pareja. Crear nuevos rituales -para ti sola, para ti con tus hijos si los tienes- puede ayudar a anclar una nueva identidad y un nuevo sentido de hogar.
           </p>
 
           <p>
@@ -225,6 +226,9 @@ export default function ArticuloDueloPorDivorcio() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-por-divorcio" category="tanatologia" />
       </div>
     </article>
   )

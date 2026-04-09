@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloAniversarioDeMuerte() {
@@ -36,7 +37,7 @@ export default function ArticuloAniversarioDeMuerte() {
           </p>
 
           <p>
-            Quizás llevas días sintiéndote extrañamente irritable, o con un cansancio que no tiene explicación lógica. Tal vez dormiste mal sin saber por qué, o de pronto te sorprendiste pensando en esa persona con una intensidad que creías haber dejado atrás. Y entonces miras el calendario y lo entiendes todo: se acerca —o ya llegó— el aniversario.
+            Quizás llevas días sintiéndote extrañamente irritable, o con un cansancio que no tiene explicación lógica. Tal vez dormiste mal sin saber por qué, o de pronto te sorprendiste pensando en esa persona con una intensidad que creías haber dejado atrás. Y entonces miras el calendario y lo entiendes todo: se acerca -o ya llegó- el aniversario.
           </p>
 
           <p>
@@ -50,7 +51,7 @@ export default function ArticuloAniversarioDeMuerte() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por qué el aniversario reactiva el duelo</h2>
 
           <p>
-            El cerebro humano tiene una memoria emocional extraordinariamente precisa. No solo recuerda los hechos —recuerda cómo te sentiste, los olores del momento, la temperatura del aire, las palabras que se dijeron o las que nunca pudiste decir. Y cuando se acerca una fecha que está profundamente marcada en esa memoria, el cuerpo comienza a prepararse.
+            El cerebro humano tiene una memoria emocional extraordinariamente precisa. No solo recuerda los hechos -recuerda cómo te sentiste, los olores del momento, la temperatura del aire, las palabras que se dijeron o las que nunca pudiste decir. Y cuando se acerca una fecha que está profundamente marcada en esa memoria, el cuerpo comienza a prepararse.
           </p>
 
           <p>
@@ -68,7 +69,7 @@ export default function ArticuloAniversarioDeMuerte() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que nadie te dice sobre los primeros aniversarios</h2>
 
           <p>
-            Existe una creencia muy extendida —y muy dañina— de que con el paso del tiempo los aniversarios se vuelven más fáciles de forma lineal y progresiva. La realidad es más compleja y más humana que eso.
+            Existe una creencia muy extendida -y muy dañina- de que con el paso del tiempo los aniversarios se vuelven más fáciles de forma lineal y progresiva. La realidad es más compleja y más humana que eso.
           </p>
 
           <p>
@@ -84,13 +85,13 @@ export default function ArticuloAniversarioDeMuerte() {
           </p>
 
           <p>
-            Con los años, muchas personas describen que el aniversario se transforma. El dolor agudo de los primeros tiempos da paso a algo más suave —no menos profundo, sino diferente. Una melancolía que convive con la gratitud por haber tenido esa persona en la vida. Una tristeza que ya no paraliza sino que simplemente pide ser sentida.
+            Con los años, muchas personas describen que el aniversario se transforma. El dolor agudo de los primeros tiempos da paso a algo más suave -no menos profundo, sino diferente. Una melancolía que convive con la gratitud por haber tenido esa persona en la vida. Una tristeza que ya no paraliza sino que simplemente pide ser sentida.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Rituales para honrar la memoria en el aniversario</h2>
 
           <p>
-            Una de las cosas que más me ha enseñado mi camino como tanatóloga —y también como sobreviviente de cáncer— es el poder de los rituales. No los rituales vacíos o impuestos, sino los que nacen de un lugar genuino de amor y necesidad.
+            Una de las cosas que más me ha enseñado mi camino como tanatóloga -y también como sobreviviente de cáncer- es el poder de los rituales. No los rituales vacíos o impuestos, sino los que nacen de un lugar genuino de amor y necesidad.
           </p>
 
           <p>
@@ -113,7 +114,7 @@ export default function ArticuloAniversarioDeMuerte() {
           </ul>
 
           <p>
-            No todos los rituales tienen que ser solemnes. Puedes reír mientras recuerdas. Puedes bailar su canción favorita. El duelo y la alegría no son opuestos —pueden coexistir en el mismo momento.
+            No todos los rituales tienen que ser solemnes. Puedes reír mientras recuerdas. Puedes bailar su canción favorita. El duelo y la alegría no son opuestos -pueden coexistir en el mismo momento.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cuidado personal antes, durante y después del aniversario</h2>
@@ -149,7 +150,7 @@ export default function ArticuloAniversarioDeMuerte() {
           </p>
 
           <p>
-            Si hay personas en tu vida que no comprenden la importancia del aniversario —que te dicen frases como "ya deberías haberlo superado" o "no te pongas así"— recuerda que esas palabras nacen de su propia incomodidad con el dolor, no de una verdad sobre lo que estás sintiendo. Tu duelo no tiene fecha de vencimiento.
+            Si hay personas en tu vida que no comprenden la importancia del aniversario -que te dicen frases como "ya deberías haberlo superado" o "no te pongas así"- recuerda que esas palabras nacen de su propia incomodidad con el dolor, no de una verdad sobre lo que estás sintiendo. Tu duelo no tiene fecha de vencimiento.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes sobre el aniversario de una muerte</h2>
@@ -158,7 +159,7 @@ export default function ArticuloAniversarioDeMuerte() {
             <div>
               <p className="font-semibold text-black">¿Es normal sentir el aniversario con más intensidad que otros días?</p>
               <p>
-                Completamente normal. Las fechas activadoras —aniversarios, cumpleaños, días festivos— tienen el poder de reactivar el duelo con intensidad. El cuerpo y la mente asocian esa fecha con la pérdida, y esa asociación genera una respuesta emocional más fuerte que en días ordinarios.
+                Completamente normal. Las fechas activadoras -aniversarios, cumpleaños, días festivos- tienen el poder de reactivar el duelo con intensidad. El cuerpo y la mente asocian esa fecha con la pérdida, y esa asociación genera una respuesta emocional más fuerte que en días ordinarios.
               </p>
             </div>
 
@@ -179,7 +180,7 @@ export default function ArticuloAniversarioDeMuerte() {
             <div>
               <p className="font-semibold text-black">¿Qué pasa si ese día no siento nada?</p>
               <p>
-                También es posible y válido. El duelo no siempre se expresa como llanto o tristeza visible. A veces el cuerpo se protege con entumecimiento. No significa que no extrañes a esa persona —significa que estás procesando de una forma diferente.
+                También es posible y válido. El duelo no siempre se expresa como llanto o tristeza visible. A veces el cuerpo se protege con entumecimiento. No significa que no extrañes a esa persona -significa que estás procesando de una forma diferente.
               </p>
             </div>
 
@@ -196,7 +197,7 @@ export default function ArticuloAniversarioDeMuerte() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">No tienes que atravesar estas fechas en soledad</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si el aniversario —u otra fecha difícil— te está pesando demasiado, estoy aquí para acompañarte. Juntas podemos crear un espacio seguro para sentir, honrar y seguir caminando.
+            Si el aniversario -u otra fecha difícil- te está pesando demasiado, estoy aquí para acompañarte. Juntas podemos crear un espacio seguro para sentir, honrar y seguir caminando.
           </p>
           <a href={siteConfig.calendly} target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-[#B2F7EF] text-black rounded-full font-medium hover:bg-[#B2F7EF]/80 transition-all">
             Agenda tu primera consulta gratuita
@@ -209,6 +210,9 @@ export default function ArticuloAniversarioDeMuerte() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="aniversario-de-muerte" category="tanatologia" />
       </div>
     </article>
   )

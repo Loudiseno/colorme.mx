@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloPorQueNoPuedoLlorar() {
@@ -60,7 +61,7 @@ export default function ArticuloPorQueNoPuedoLlorar() {
           </p>
 
           <p>
-            Algunas personas experimentan lo que llamamos un <strong>bloqueo emocional</strong>. Esto sucede cuando el cerebro, ante una pérdida tan grande, activa una especie de mecanismo de protección. Ante una pérdida significativa, el cerebro puede entrar en un estado de &quot;entumecimiento emocional&quot; —una forma de shock que permite a la persona seguir funcionando mientras procesa lo que ha sucedido. Es como si tu mente dijera: <em>&quot;Esto es demasiado. Voy a dosificarlo.&quot;</em>
+            Algunas personas experimentan lo que llamamos un <strong>bloqueo emocional</strong>. Esto sucede cuando el cerebro, ante una pérdida tan grande, activa una especie de mecanismo de protección. Ante una pérdida significativa, el cerebro puede entrar en un estado de &quot;entumecimiento emocional&quot; -una forma de shock que permite a la persona seguir funcionando mientras procesa lo que ha sucedido. Es como si tu mente dijera: <em>&quot;Esto es demasiado. Voy a dosificarlo.&quot;</em>
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué puede estar pasando contigo?</h2>
@@ -74,7 +75,7 @@ export default function ArticuloPorQueNoPuedoLlorar() {
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">2. Tu cuerpo aprendió a protegerte</h3>
           <p>
-            Muchas personas que crecieron en ambientes donde expresar emociones no era seguro —o donde frases como &quot;no llores&quot; o &quot;tienes que ser fuerte&quot; eran constantes— desarrollaron una forma de desconectarse de sus emociones. Esto no es algo que hayas elegido conscientemente. Tu sistema nervioso aprendió que era más seguro contener que soltar.
+            Muchas personas que crecieron en ambientes donde expresar emociones no era seguro -o donde frases como &quot;no llores&quot; o &quot;tienes que ser fuerte&quot; eran constantes- desarrollaron una forma de desconectarse de sus emociones. Esto no es algo que hayas elegido conscientemente. Tu sistema nervioso aprendió que era más seguro contener que soltar.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">3. Las lágrimas vendrán después</h3>
@@ -107,7 +108,7 @@ export default function ArticuloPorQueNoPuedoLlorar() {
 
           <ul className="list-disc pl-6 space-y-2">
             <li>Si llevas mucho tiempo sintiéndote completamente desconectado de tus emociones (no solo la tristeza, sino todas).</li>
-            <li>Si además de no llorar, sientes que &quot;no sientes nada&quot; —como si vivieras en automático.</li>
+            <li>Si además de no llorar, sientes que &quot;no sientes nada&quot; -como si vivieras en automático.</li>
             <li>Si esto está afectando tu vida diaria: tu trabajo, tus relaciones, tu capacidad de funcionar.</li>
             <li>Si aparecen pensamientos de hacerte daño o de que la vida no tiene sentido.</li>
           </ul>
@@ -131,7 +132,7 @@ export default function ArticuloPorQueNoPuedoLlorar() {
           </p>
 
           <p>
-            Y si un día las lágrimas llegan —o si nunca llegan— está bien. Estás haciendo lo mejor que puedes. Y eso es suficiente.
+            Y si un día las lágrimas llegan -o si nunca llegan- está bien. Estás haciendo lo mejor que puedes. Y eso es suficiente.
           </p>
 
           <p className="italic text-black/60 mt-8">
@@ -153,6 +154,9 @@ export default function ArticuloPorQueNoPuedoLlorar() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="por-que-no-puedo-llorar" category="emociones" />
       </div>
     </article>
   )

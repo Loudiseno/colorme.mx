@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloSuperarPerdida() {
@@ -82,7 +83,7 @@ export default function ArticuloSuperarPerdida() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">3. Haz cosas que disfrutes, sin forzar nada</h2>
 
           <p>
-            Quizás ahora mismo no tengas ganas de nada. Quizás las cosas que antes te gustaban ya no te generan lo mismo. Eso es normal. Pero cuando sientas un pequeño impulso de hacer algo —aunque sea mínimo— permítetelo.
+            Quizás ahora mismo no tengas ganas de nada. Quizás las cosas que antes te gustaban ya no te generan lo mismo. Eso es normal. Pero cuando sientas un pequeño impulso de hacer algo -aunque sea mínimo- permítetelo.
           </p>
 
           <p>Algunas ideas:</p>
@@ -255,6 +256,9 @@ export default function ArticuloSuperarPerdida() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="como-superar-la-perdida-de-un-ser-querido" category="tanatologia" />
       </div>
     </article>
   )

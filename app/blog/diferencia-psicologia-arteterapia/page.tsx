@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDiferenciaPsicologiaArteterapia() {
@@ -36,7 +37,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           </p>
 
           <p>
-            En este artículo quiero aclarar estas diferencias de manera honesta y sin tecnicismos. No porque una disciplina sea mejor que la otra —no lo es— sino porque entender qué ofrece cada una te ayuda a elegir el acompañamiento que realmente necesitas.
+            En este artículo quiero aclarar estas diferencias de manera honesta y sin tecnicismos. No porque una disciplina sea mejor que la otra -no lo es- sino porque entender qué ofrece cada una te ayuda a elegir el acompañamiento que realmente necesitas.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué hace un psicólogo o psicoterapeuta?</h2>
@@ -56,7 +57,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué hace un arteterapeuta y en qué se diferencia?</h2>
 
           <p>
-            La arteterapia es una disciplina de acompañamiento que utiliza el proceso creativo —pintura, dibujo, collage, arcilla, escritura creativa, entre otros— como lenguaje principal para explorar el mundo emocional y promover el bienestar.
+            La arteterapia es una disciplina de acompañamiento que utiliza el proceso creativo -pintura, dibujo, collage, arcilla, escritura creativa, entre otros- como lenguaje principal para explorar el mundo emocional y promover el bienestar.
           </p>
 
           <p>
@@ -107,7 +108,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cuándo elegir psicología y cuándo arteterapia?</h2>
 
           <p>
-            Esta orientación no es absoluta —cada persona es única— pero puede ayudarte a decidir:
+            Esta orientación no es absoluta -cada persona es única- pero puede ayudarte a decidir:
           </p>
 
           <p>
@@ -195,6 +196,9 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="diferencia-psicologia-arteterapia" category="arteterapia" />
       </div>
     </article>
   )

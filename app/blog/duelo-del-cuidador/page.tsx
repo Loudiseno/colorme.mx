@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloDelCuidador() {
@@ -32,7 +33,7 @@ export default function ArticuloDueloDelCuidador() {
           </p>
 
           <p>
-            Estas personas a menudo llegan a mi consulta —si es que llegan— con la misma frase: "Yo no tengo derecho a quejarme. Yo no soy el que está enfermo."
+            Estas personas a menudo llegan a mi consulta -si es que llegan- con la misma frase: "Yo no tengo derecho a quejarme. Yo no soy el que está enfermo."
           </p>
 
           <p>
@@ -46,7 +47,7 @@ export default function ArticuloDueloDelCuidador() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Qué es el duelo del cuidador</h2>
 
           <p>
-            El duelo del cuidador es el conjunto de pérdidas que experimenta una persona que está al cuidado de alguien con una enfermedad grave, crónica o terminal. Es un duelo que ocurre mientras la persona querida todavía está viva, y que muchas veces continúa —y se profundiza— después de su muerte.
+            El duelo del cuidador es el conjunto de pérdidas que experimenta una persona que está al cuidado de alguien con una enfermedad grave, crónica o terminal. Es un duelo que ocurre mientras la persona querida todavía está viva, y que muchas veces continúa -y se profundiza- después de su muerte.
           </p>
 
           <p>
@@ -69,7 +70,7 @@ export default function ArticuloDueloDelCuidador() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo anticipatorio: llorar a alguien que todavía está</h2>
 
           <p>
-            Cuando alguien recibe un diagnóstico terminal —o cuando una enfermedad crónica avanza de manera irreversible— las personas que lo rodean comienzan a perder a esa persona antes de que muera. Esto se llama <strong>duelo anticipatorio</strong>, y es uno de los tipos de duelo más complejos y menos reconocidos.
+            Cuando alguien recibe un diagnóstico terminal -o cuando una enfermedad crónica avanza de manera irreversible- las personas que lo rodean comienzan a perder a esa persona antes de que muera. Esto se llama <strong>duelo anticipatorio</strong>, y es uno de los tipos de duelo más complejos y menos reconocidos.
           </p>
 
           <p>
@@ -86,7 +87,7 @@ export default function ArticuloDueloDelCuidador() {
           </ul>
 
           <p>
-            Una cosa que me ha tocado acompañar —y que yo misma experimenté desde el otro lado, como la enferma— es la paradoja del cuidador que ya está de duelo pero que tiene que seguir estando presente, funcional y fuerte. Es agotador. Es una de las experiencias más solitarias que existen.
+            Una cosa que me ha tocado acompañar -y que yo misma experimenté desde el otro lado, como la enferma- es la paradoja del cuidador que ya está de duelo pero que tiene que seguir estando presente, funcional y fuerte. Es agotador. Es una de las experiencias más solitarias que existen.
           </p>
 
           <p>
@@ -96,7 +97,7 @@ export default function ArticuloDueloDelCuidador() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Burnout del cuidador: cuando el cuerpo dice basta</h2>
 
           <p>
-            El burnout del cuidador —también llamado síndrome del cuidador quemado— es el agotamiento físico, emocional y mental que resulta de cuidar a otra persona de manera prolongada e intensa, generalmente sin suficiente apoyo ni descanso.
+            El burnout del cuidador -también llamado síndrome del cuidador quemado- es el agotamiento físico, emocional y mental que resulta de cuidar a otra persona de manera prolongada e intensa, generalmente sin suficiente apoyo ni descanso.
           </p>
 
           <p>
@@ -114,7 +115,7 @@ export default function ArticuloDueloDelCuidador() {
           </ul>
 
           <p>
-            Ese último punto merece un espacio especial. Muchos cuidadores sienten en algún momento —especialmente cuando el proceso es muy largo o muy doloroso— que desearían que terminara. Y eso los llena de vergüenza y culpa.
+            Ese último punto merece un espacio especial. Muchos cuidadores sienten en algún momento -especialmente cuando el proceso es muy largo o muy doloroso- que desearían que terminara. Y eso los llena de vergüenza y culpa.
           </p>
 
           <p>
@@ -184,7 +185,7 @@ export default function ArticuloDueloDelCuidador() {
           </p>
 
           <p>
-            También hay algo muy particular en la arteterapia para el duelo anticipatorio: crear algo —una imagen, un collage, un mandala— puede ser una forma de honrar la relación y a la persona amada mientras todavía está presente. Es una manera de estar con ellas de forma diferente, de dejar una huella del amor en algo tangible.
+            También hay algo muy particular en la arteterapia para el duelo anticipatorio: crear algo -una imagen, un collage, un mandala- puede ser una forma de honrar la relación y a la persona amada mientras todavía está presente. Es una manera de estar con ellas de forma diferente, de dejar una huella del amor en algo tangible.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes del cuidador</h2>
@@ -206,12 +207,12 @@ export default function ArticuloDueloDelCuidador() {
 
           <p>
             <strong>¿El duelo del cuidador termina cuando muere la persona que cuidaba?</strong><br />
-            No necesariamente. Después de la muerte puede comenzar una nueva fase del duelo —la pérdida directa de la persona— pero también puede emerger el duelo secundario por la identidad del cuidador y por los años de vida pospuestos. Este proceso puede necesitar su propio espacio y tiempo.
+            No necesariamente. Después de la muerte puede comenzar una nueva fase del duelo -la pérdida directa de la persona- pero también puede emerger el duelo secundario por la identidad del cuidador y por los años de vida pospuestos. Este proceso puede necesitar su propio espacio y tiempo.
           </p>
 
           <p>
             <strong>¿Dónde puedo encontrar apoyo como cuidador?</strong><br />
-            Existen grupos de apoyo para cuidadores —presenciales y en línea— que pueden ser muy valiosos porque conectan con personas que entienden desde adentro lo que estás viviendo. La terapia individual (ya sea verbal o arteterapia) también puede ofrecer un espacio personalizado para tu proceso. Y si la enfermedad de tu ser querido está siendo acompañada por un equipo de cuidados paliativos, ese equipo generalmente también tiene recursos de apoyo para la familia.
+            Existen grupos de apoyo para cuidadores -presenciales y en línea- que pueden ser muy valiosos porque conectan con personas que entienden desde adentro lo que estás viviendo. La terapia individual (ya sea verbal o arteterapia) también puede ofrecer un espacio personalizado para tu proceso. Y si la enfermedad de tu ser querido está siendo acompañada por un equipo de cuidados paliativos, ese equipo generalmente también tiene recursos de apoyo para la familia.
           </p>
 
           <p>
@@ -235,6 +236,9 @@ export default function ArticuloDueloDelCuidador() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-del-cuidador" category="tanatologia" />
       </div>
     </article>
   )

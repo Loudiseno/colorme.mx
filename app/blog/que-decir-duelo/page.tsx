@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export default function QueDecirDueloPage() {
   return (
@@ -62,31 +63,31 @@ export default function QueDecirDueloPage() {
 
           <p>Aunque se digan con buena intención, estas frases pueden lastimar:</p>
 
-          <p><strong>"Está en un lugar mejor."</strong> — Esta frase puede minimizar el dolor de quien se quedó. La persona no quiere que su ser querido esté "en otro lugar", lo quiere aquí.</p>
+          <p><strong>"Está en un lugar mejor."</strong> - Esta frase puede minimizar el dolor de quien se quedó. La persona no quiere que su ser querido esté "en otro lugar", lo quiere aquí.</p>
 
-          <p><strong>"Al menos ya no sufre."</strong> — Puede que sea cierto, pero el doliente no siempre está listo para buscar consuelos.</p>
+          <p><strong>"Al menos ya no sufre."</strong> - Puede que sea cierto, pero el doliente no siempre está listo para buscar consuelos.</p>
 
-          <p><strong>"Dios tiene un plan" / "Todo pasa por algo."</strong> — Buscar significado es algo que cada persona hará a su tiempo, si lo desea. No es algo que debamos imponer.</p>
+          <p><strong>"Dios tiene un plan" / "Todo pasa por algo."</strong> - Buscar significado es algo que cada persona hará a su tiempo, si lo desea. No es algo que debamos imponer.</p>
 
-          <p><strong>"Tienes que ser fuerte."</strong> — Esta frase presiona a la persona a reprimir sus emociones. No necesita ser fuerte. Necesita poder ser vulnerable.</p>
+          <p><strong>"Tienes que ser fuerte."</strong> - Esta frase presiona a la persona a reprimir sus emociones. No necesita ser fuerte. Necesita poder ser vulnerable.</p>
 
-          <p><strong>"Ya deberías estar mejor."</strong> — El duelo no tiene fecha de caducidad.</p>
+          <p><strong>"Ya deberías estar mejor."</strong> - El duelo no tiene fecha de caducidad.</p>
 
-          <p><strong>"Sé cómo te sientes, a mí también..."</strong> — Aunque hayas pasado por una pérdida similar, cada duelo es único.</p>
+          <p><strong>"Sé cómo te sientes, a mí también..."</strong> - Aunque hayas pasado por una pérdida similar, cada duelo es único.</p>
 
-          <p><strong>"Llámame si necesitas algo."</strong> — El problema es que pone la responsabilidad en la persona que está sufriendo.</p>
+          <p><strong>"Llámame si necesitas algo."</strong> - El problema es que pone la responsabilidad en la persona que está sufriendo.</p>
 
           <h2>Frases que sí pueden ayudar</h2>
 
-          <p><strong>"No tengo palabras, pero aquí estoy."</strong> — La honestidad de admitir que no sabes qué decir puede ser más reconfortante que una frase hecha.</p>
+          <p><strong>"No tengo palabras, pero aquí estoy."</strong> - La honestidad de admitir que no sabes qué decir puede ser más reconfortante que una frase hecha.</p>
 
-          <p><strong>"No tienes que hablar si no quieres, pero puedo acompañarte."</strong> — Ofreces presencia sin presión.</p>
+          <p><strong>"No tienes que hablar si no quieres, pero puedo acompañarte."</strong> - Ofreces presencia sin presión.</p>
 
-          <p><strong>"¿Te gustaría contarme algo sobre él/ella?"</strong> — Esta pregunta es un regalo. Le das permiso para hablar de su ser querido.</p>
+          <p><strong>"¿Te gustaría contarme algo sobre él/ella?"</strong> - Esta pregunta es un regalo. Le das permiso para hablar de su ser querido.</p>
 
-          <p><strong>"Tu dolor tiene sentido."</strong> — Validar. Solo reconocer que lo que siente es real y comprensible.</p>
+          <p><strong>"Tu dolor tiene sentido."</strong> - Validar. Solo reconocer que lo que siente es real y comprensible.</p>
 
-          <p><strong>"Estoy aquí, hoy y en las semanas que vienen."</strong> — Comunicar que estarás presente a largo plazo es valioso.</p>
+          <p><strong>"Estoy aquí, hoy y en las semanas que vienen."</strong> - Comunicar que estarás presente a largo plazo es valioso.</p>
 
           <h2>Acciones que acompañan</h2>
 
@@ -171,6 +172,9 @@ export default function QueDecirDueloPage() {
             Agenda una sesión de orientación
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="que-decir-duelo" category="tanatologia" />
       </div>
     </article>
   )

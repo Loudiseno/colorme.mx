@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloArteterapiaNinos() {
@@ -265,7 +266,7 @@ export default function ArticuloArteterapiaNinos() {
           </p>
 
           <p className="italic text-black/60 mt-8">
-            En ColorMe creo que todos los niños merecen un espacio donde su voz —aunque no sea verbal— sea escuchada.
+            En ColorMe creo que todos los niños merecen un espacio donde su voz -aunque no sea verbal- sea escuchada.
           </p>
         </div>
 
@@ -284,6 +285,9 @@ export default function ArticuloArteterapiaNinos() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="arteterapia-para-ninos" category="arteterapia" />
       </div>
     </article>
   )

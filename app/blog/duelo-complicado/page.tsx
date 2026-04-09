@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloComplicado() {
@@ -38,7 +39,7 @@ export default function ArticuloDueloComplicado() {
 
         <div className="prose prose-lg max-w-none text-black/80">
           <p>
-            El duelo duele. Eso es normal, esperado, y hasta necesario. Pero hay veces en que el duelo se estanca, se complica, y lo que debería ser un proceso —aunque doloroso— de sanación, se convierte en un lugar donde quedamos atrapados.
+            El duelo duele. Eso es normal, esperado, y hasta necesario. Pero hay veces en que el duelo se estanca, se complica, y lo que debería ser un proceso -aunque doloroso- de sanación, se convierte en un lugar donde quedamos atrapados.
           </p>
 
           <p>
@@ -48,7 +49,7 @@ export default function ArticuloDueloComplicado() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué es el duelo complicado?</h2>
 
           <p>
-            El duelo complicado —también llamado duelo prolongado o trastorno de duelo persistente— ocurre cuando el proceso de duelo no avanza de la manera esperada. La persona queda atrapada en un estado de dolor intenso que no disminuye con el tiempo.
+            El duelo complicado -también llamado duelo prolongado o trastorno de duelo persistente- ocurre cuando el proceso de duelo no avanza de la manera esperada. La persona queda atrapada en un estado de dolor intenso que no disminuye con el tiempo.
           </p>
 
           <p>
@@ -67,7 +68,7 @@ export default function ArticuloDueloComplicado() {
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">El dolor no disminuye con el tiempo</h3>
           <p>
-            Han pasado meses —o años— y el dolor sigue siendo tan intenso como al principio. No hay días mejores. No hay momentos de respiro. El dolor es constante y abrumador.
+            Han pasado meses -o años- y el dolor sigue siendo tan intenso como al principio. No hay días mejores. No hay momentos de respiro. El dolor es constante y abrumador.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">No puedes aceptar la muerte</h3>
@@ -87,7 +88,7 @@ export default function ArticuloDueloComplicado() {
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Te has aislado completamente</h3>
           <p>
-            Te has desconectado de amigos, familia, actividades. No puedes —o no quieres— relacionarte con otros. El mundo se siente ajeno y lejano.
+            Te has desconectado de amigos, familia, actividades. No puedes -o no quieres- relacionarte con otros. El mundo se siente ajeno y lejano.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Tienes pensamientos de hacerte daño</h3>
@@ -227,6 +228,9 @@ export default function ArticuloDueloComplicado() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-complicado" category="tanatologia" />
       </div>
     </article>
   )

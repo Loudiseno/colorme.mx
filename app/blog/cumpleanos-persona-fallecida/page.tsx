@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloCumpleanosPersonaFallecida() {
@@ -40,7 +41,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
           </p>
 
           <p>
-            Quizás revolviste los contactos de tu teléfono y por un segundo buscaste su número para escribirle "feliz cumpleaños" —como hacías cada año. O te encontraste pensando qué regalo le hubieras dado. O simplemente la tristeza llegó sin avisar, pesada y silenciosa, acompañada de memorias que duelen porque son demasiado hermosas para soportarlas.
+            Quizás revolviste los contactos de tu teléfono y por un segundo buscaste su número para escribirle "feliz cumpleaños" -como hacías cada año. O te encontraste pensando qué regalo le hubieras dado. O simplemente la tristeza llegó sin avisar, pesada y silenciosa, acompañada de memorias que duelen porque son demasiado hermosas para soportarlas.
           </p>
 
           <p>
@@ -54,7 +55,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
           </p>
 
           <p>
-            A diferencia del aniversario de la muerte —que marca el día de la pérdida—, el cumpleaños estaba asociado a la vida, a la alegría, a las ganas de celebrar. Era un día de llamadas, de reuniones, de pasteles, de canciones. Y ahora ese mismo día llega vacío de todo eso, y el contraste es devastador.
+            A diferencia del aniversario de la muerte -que marca el día de la pérdida-, el cumpleaños estaba asociado a la vida, a la alegría, a las ganas de celebrar. Era un día de llamadas, de reuniones, de pasteles, de canciones. Y ahora ese mismo día llega vacío de todo eso, y el contraste es devastador.
           </p>
 
           <p>
@@ -66,7 +67,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
           </p>
 
           <p>
-            Quiero decirte algo muy claramente: no hay forma correcta ni incorrecta de vivir ese día. Lo que sientes —tristeza, nostalgia, amor, enojo, alivio, incluso alegría— es tuyo y es válido.
+            Quiero decirte algo muy claramente: no hay forma correcta ni incorrecta de vivir ese día. Lo que sientes -tristeza, nostalgia, amor, enojo, alivio, incluso alegría- es tuyo y es válido.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Honrar su memoria: crear rituales de cumpleaños llenos de significado</h2>
@@ -89,7 +90,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
             <li><strong>Hacer un álbum o collage de fotos</strong>. Reúne imágenes de diferentes épocas de su vida y permítete recordar con todos los sentidos.</li>
             <li><strong>Encender una vela y escribirle</strong>. Cuéntale cómo va tu vida, qué ha cambiado, qué extrañas, qué aprendiste de ella. Las cartas son un recurso poderoso en arteterapia para mantener el vínculo.</li>
             <li><strong>Hacer algo que ella hubiera querido hacer</strong>: ese viaje pendiente, esa actividad que siempre mencionaba, ese lugar que nunca visitaron juntos.</li>
-            <li><strong>Reunirte con quienes también la querían</strong> —hijos, amigos, hermanos— no para llorar obligatoriamente, sino para compartir recuerdos y mantener viva su historia.</li>
+            <li><strong>Reunirte con quienes también la querían</strong> -hijos, amigos, hermanos- no para llorar obligatoriamente, sino para compartir recuerdos y mantener viva su historia.</li>
             <li><strong>Donar o hacer una buena acción en su nombre</strong>. Ayudar a alguien como un acto de amor dedicado a quien ya no está puede ser profundamente sanador.</li>
             <li><strong>Visitar su lugar favorito</strong>: ese parque, esa ciudad, esa playa donde era más ella que en cualquier otro lado.</li>
           </ul>
@@ -109,7 +110,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
           </p>
 
           <p>
-            Lo que sí te recomiendo —con toda la delicadeza y la firmeza que tengo— es que no estés completamente sola si puedes evitarlo. No porque necesites que te rescaten del dolor, sino porque el dolor compartido es más ligero. Busca a alguien que también la haya querido, o a alguien que te quiera a ti. La presencia humana, aunque sea silenciosa, hace diferencia.
+            Lo que sí te recomiendo -con toda la delicadeza y la firmeza que tengo- es que no estés completamente sola si puedes evitarlo. No porque necesites que te rescaten del dolor, sino porque el dolor compartido es más ligero. Busca a alguien que también la haya querido, o a alguien que te quiera a ti. La presencia humana, aunque sea silenciosa, hace diferencia.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Construir nuevas tradiciones: el cumpleaños como celebración de su vida</h2>
@@ -127,7 +128,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
           </p>
 
           <p>
-            Algunas familias crean tradiciones anuales muy específicas: plantar una flor el día de su cumpleaños, soltar un globo, preparar una mesa con sus cosas favoritas, o simplemente reunirse a cenar. Estas tradiciones crean un contenedor —un tiempo y un espacio— donde el recuerdo tiene lugar legítimo, lo cual puede ser enormemente liberador.
+            Algunas familias crean tradiciones anuales muy específicas: plantar una flor el día de su cumpleaños, soltar un globo, preparar una mesa con sus cosas favoritas, o simplemente reunirse a cenar. Estas tradiciones crean un contenedor -un tiempo y un espacio- donde el recuerdo tiene lugar legítimo, lo cual puede ser enormemente liberador.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes</h2>
@@ -150,14 +151,14 @@ export default function ArticuloCumpleanosPersonaFallecida() {
             <div>
               <p className="font-semibold text-black">¿Cómo le explico a mis hijos que es el cumpleaños de su abuela que falleció?</p>
               <p>
-                Con honestidad y calidez. Puedes decirles que es un día especial para recordar a la abuela, ver sus fotos, contar historias sobre ella. Los niños necesitan que los adultos les den permiso de hablar de quienes perdieron —no protegerlos del recuerdo, sino acompañarlos en él.
+                Con honestidad y calidez. Puedes decirles que es un día especial para recordar a la abuela, ver sus fotos, contar historias sobre ella. Los niños necesitan que los adultos les den permiso de hablar de quienes perdieron -no protegerlos del recuerdo, sino acompañarlos en él.
               </p>
             </div>
 
             <div>
               <p className="font-semibold text-black">¿Qué hago si ese día me siento bien y no triste?</p>
               <p>
-                Permítete estar bien. El duelo no obliga a sufrir en fechas específicas. Sentirte en paz o incluso alegre ese día no significa que no quisieras a esa persona —puede significar que tu proceso de duelo está avanzando de forma saludable.
+                Permítete estar bien. El duelo no obliga a sufrir en fechas específicas. Sentirte en paz o incluso alegre ese día no significa que no quisieras a esa persona -puede significar que tu proceso de duelo está avanzando de forma saludable.
               </p>
             </div>
 
@@ -187,6 +188,9 @@ export default function ArticuloCumpleanosPersonaFallecida() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="cumpleanos-persona-fallecida" category="tanatologia" />
       </div>
     </article>
   )
