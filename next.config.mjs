@@ -6,13 +6,35 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   outputFileTracingRoot: __dirname,
+  // Enforce consistent URLs without trailing slash
+  trailingSlash: false,
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'colorme.mx',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.colorme.mx',
+      },
     ],
+  },
+  // Redirect non-www to www for canonical consistency
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'colorme.mx',
+          },
+        ],
+        destination: 'https://www.colorme.mx/:path*',
+        permanent: true,
+      },
+    ]
   },
 }
 
