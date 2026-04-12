@@ -1,6 +1,9 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Search } from 'lucide-react'
 
 const articles = [
   {
@@ -78,7 +81,7 @@ const articles = [
   {
     slug: '/blog/por-que-no-puedo-llorar',
     image: '/porque-no-puedo-llorar.webp',
-    category: 'Tanatología',
+    category: 'Emociones',
     title: '¿Por qué no puedo llorar?',
     description: 'El duelo sin lágrimas es real. Descubre por qué no puedes llorar y cómo procesar tu dolor.',
     alt: '¿Por qué no puedo llorar? - El duelo seco y sin lágrimas.',
@@ -198,7 +201,7 @@ const articles = [
   {
     slug: '/blog/perder-la-fe',
     image: '/perder-la-fe.webp',
-    category: 'Tanatología',
+    category: 'Emociones',
     title: 'Cuando pierdes la fe: el duelo espiritual',
     description: 'Dejar de creer también es una pérdida. Guía para atravesar el duelo espiritual.',
     alt: 'Duelo espiritual, pérdida de fe, crisis existencial, duelo religioso.',
@@ -222,7 +225,7 @@ const articles = [
   {
     slug: '/blog/tristeza-como-maestra',
     image: '/tristeza.webp',
-    category: 'Tanatología',
+    category: 'Emociones',
     title: 'La tristeza no vino a destruirte',
     description: 'Aprender a estar triste sin huir. La tristeza como maestra emocional.',
     alt: 'Tristeza emocional, procesar emociones, inteligencia emocional.',
@@ -230,19 +233,118 @@ const articles = [
   {
     slug: '/blog/verguenza-duelo',
     image: '/verguenza-duelo.webp',
-    category: 'Tanatología',
+    category: 'Emociones',
     title: 'La vergüenza: la emoción que te hace esconderte',
     description: 'Lo que callamos por miedo a ser juzgados. Cómo la vergüenza silencia el duelo.',
     alt: 'Vergüenza emocional, duelo silenciado, emociones ocultas.',
   },
+  {
+    slug: '/blog/duelo-y-culpa',
+    image: '/duelo-y-culpa.jpeg',
+    category: 'Emociones',
+    title: 'Culpa y duelo: la carga que no te deja avanzar',
+    description: 'Por qué nos sentimos culpables después de una pérdida y cómo liberarte de ese peso.',
+    alt: 'Culpa y duelo - Cómo soltar la carga emocional.',
+  },
+  {
+    slug: '/blog/aniversario-de-muerte',
+    image: '/aniversario muerte.jpeg',
+    category: 'Tanatología',
+    title: 'El aniversario de una muerte',
+    description: 'Cómo vivir y honrar la fecha que marca una ausencia.',
+    alt: 'Aniversario de muerte - Cómo honrar ese día.',
+  },
+  {
+    slug: '/blog/cumpleanos-persona-fallecida',
+    image: '/cumpleanos persona fallecida.jpeg',
+    category: 'Tanatología',
+    title: 'El cumpleaños de quien ya no está',
+    description: 'Cómo atravesar y honrar el cumpleaños de una persona fallecida.',
+    alt: 'Cumpleaños de persona fallecida.',
+  },
+  {
+    slug: '/blog/duelo-del-cuidador',
+    image: '/duelo del cuidador.jpeg',
+    category: 'Tanatología',
+    title: 'El duelo del cuidador',
+    description: 'El duelo silencioso de quienes cuidan a otros.',
+    alt: 'Duelo del cuidador.',
+  },
+  {
+    slug: '/blog/duelo-por-divorcio',
+    image: '/duelo por divorcio.jpeg',
+    category: 'Tanatología',
+    title: 'Duelo por divorcio',
+    description: 'Cuando una relación termina, también hay duelo.',
+    alt: 'Duelo por divorcio.',
+  },
+  {
+    slug: '/blog/duelo-y-redes-sociales',
+    image: '/duelo en redes.jpeg',
+    category: 'Tanatología',
+    title: 'Duelo y redes sociales',
+    description: 'Cómo las redes afectan nuestro proceso de duelo.',
+    alt: 'Duelo y redes sociales.',
+  },
+  {
+    slug: '/blog/menopausia-y-duelo',
+    image: '/menopausia-yduelo.jpeg',
+    category: 'Tanatología',
+    title: 'Menopausia y duelo',
+    description: 'Los duelos invisibles de la menopausia.',
+    alt: 'Menopausia y duelo.',
+  },
+  {
+    slug: '/blog/navidad-en-duelo',
+    image: '/navidad en duelo.jpeg',
+    category: 'Tanatología',
+    title: 'Navidad en duelo',
+    description: 'Cómo atravesar las fiestas cuando alguien falta.',
+    alt: 'Navidad en duelo.',
+  },
+  {
+    slug: '/blog/que-es-arteterapia',
+    image: '/arteterapia-sesion-creativa.webp',
+    category: 'Arteterapia',
+    title: 'Arteterapia: el arte de sanar',
+    description: 'Todo lo que necesitas saber sobre arteterapia.',
+    alt: 'Qué es arteterapia.',
+  },
+  {
+    slug: '/blog/diferencia-psicologia-arteterapia',
+    image: '/diferencia psicologia y arteterapia.jpeg',
+    category: 'Arteterapia',
+    title: 'Diferencia entre psicología y arteterapia',
+    description: '¿Cuál es la diferencia y cuál necesitas?',
+    alt: 'Diferencia psicología y arteterapia.',
+  },
+  {
+    slug: '/blog/superar-perdida-ser-querido',
+    image: '/superar-perdida-ser-querido.webp',
+    category: 'Tanatología',
+    title: 'Superar la pérdida de un ser querido',
+    description: 'El camino hacia la sanación después de una pérdida.',
+    alt: 'Superar pérdida de un ser querido.',
+  },
 ]
 
 export default function BlogPage() {
+  const [searchQuery, setSearchQuery] = useState('')
+
+  const filteredArticles = articles.filter((article) => {
+    const query = searchQuery.toLowerCase()
+    return (
+      article.title.toLowerCase().includes(query) ||
+      article.description.toLowerCase().includes(query) ||
+      article.category.toLowerCase().includes(query)
+    )
+  })
+
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
             <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
             <h1 className="text-4xl md:text-5xl text-black relative z-10">
@@ -252,14 +354,33 @@ export default function BlogPage() {
           <p className="text-lg text-black leading-relaxed mb-4">
             <strong>Reflexiones sobre arteterapia, tanatología y el universo de las emociones</strong>
           </p>
-          <p className="text-black/70 max-w-2xl mx-auto">
+          <p className="text-black/70 max-w-2xl mx-auto mb-8">
             Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad.
           </p>
+
+          {/* Search Bar */}
+          <div className="max-w-md mx-auto relative">
+            <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-black/40" />
+            <input
+              type="text"
+              placeholder="Buscar artículos..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-11 pr-4 py-3 rounded-full border border-[#B2F7EF] focus:border-black focus:outline-none transition-colors text-black placeholder:text-black/40 bg-white"
+            />
+          </div>
         </div>
+
+        {/* Results count when searching */}
+        {searchQuery && (
+          <p className="text-center text-black/60 mb-8">
+            {filteredArticles.length} {filteredArticles.length === 1 ? 'artículo encontrado' : 'artículos encontrados'}
+          </p>
+        )}
 
         {/* Articles grid */}
         <div className="grid md:grid-cols-3 gap-8">
-          {articles.map((article) => (
+          {filteredArticles.map((article) => (
             <Link key={article.slug} href={article.slug} className="group">
               <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
                 <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
@@ -288,6 +409,14 @@ export default function BlogPage() {
             </Link>
           ))}
         </div>
+
+        {/* No results message */}
+        {filteredArticles.length === 0 && (
+          <div className="text-center py-16">
+            <p className="text-black/60 text-lg mb-2">No se encontraron artículos</p>
+            <p className="text-black/40">Intenta con otras palabras clave</p>
+          </div>
+        )}
       </div>
     </section>
   )
