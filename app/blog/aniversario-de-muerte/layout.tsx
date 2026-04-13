@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Aprende a transitar el aniversario de muerte de un ser querido y cómo honrar ese día.',
     url: '/blog/aniversario-de-muerte',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

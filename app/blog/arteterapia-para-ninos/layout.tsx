@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad.',
     url: '/blog/arteterapia-para-ninos',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

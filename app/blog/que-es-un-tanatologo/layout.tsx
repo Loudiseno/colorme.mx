@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Descubre qué es un tanatólogo, cuáles son sus funciones y beneficios del acompañamiento tanatológico durante el proceso de duelo.',
     url: '/blog/que-es-un-tanatologo',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

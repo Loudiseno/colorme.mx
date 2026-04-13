@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Herramientas concretas para transitar el duelo y encontrar momentos de paz.',
     url: '/blog/superar-perdida-ser-querido',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

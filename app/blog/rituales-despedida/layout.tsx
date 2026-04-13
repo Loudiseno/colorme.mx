@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Cómo crear rituales significativos para honrar a quien ya no está.',
     url: '/blog/rituales-despedida',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

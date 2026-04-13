@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Guía práctica para atravesar el duelo por la muerte de un ser querido.',
     url: '/blog/como-superar-la-perdida-de-un-ser-querido',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

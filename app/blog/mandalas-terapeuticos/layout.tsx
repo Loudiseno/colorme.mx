@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
     url: '/blog/mandalas-terapeuticos',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

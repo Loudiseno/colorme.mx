@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Cuando cuidar a otros te consume. Guía para quienes dan tanto que se olvidan de sí mismos.',
     url: '/blog/sindrome-cuidador',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

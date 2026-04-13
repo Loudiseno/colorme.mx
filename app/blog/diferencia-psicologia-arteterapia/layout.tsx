@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Conoce las diferencias entre psicología y arteterapia.',
     url: '/blog/diferencia-psicologia-arteterapia',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

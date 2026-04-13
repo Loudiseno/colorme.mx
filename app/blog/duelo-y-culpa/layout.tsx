@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Descubre por qué nos sentimos culpables después de una pérdida.',
     url: '/blog/duelo-y-culpa',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

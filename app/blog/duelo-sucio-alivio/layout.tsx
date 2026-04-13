@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Sentir alivio después de una muerte no te hace mala persona.',
     url: '/blog/duelo-sucio-alivio',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

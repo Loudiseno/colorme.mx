@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Cómo enfrentar el cumpleaños de una persona fallecida y honrar su memoria.',
     url: '/blog/cumpleanos-persona-fallecida',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

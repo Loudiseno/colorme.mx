@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Ejercicios creativos para procesar emociones sin necesidad de saber dibujar.',
     url: '/blog/ejercicios-arteterapia',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

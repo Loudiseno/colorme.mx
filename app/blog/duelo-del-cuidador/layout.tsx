@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'El duelo del cuidador es real. Descubre cómo sanar ese dolor silencioso.',
     url: '/blog/duelo-del-cuidador',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

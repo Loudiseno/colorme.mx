@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Cuando recibes un diagnóstico médico, algo cambia para siempre. Descubre cómo transitar el duelo por enfermedad y herramientas para el camino.',
     url: '/blog/duelo-por-enfermedad-o-diagnostico',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

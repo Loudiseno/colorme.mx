@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Cómo las redes sociales afectan el proceso de duelo.',
     url: '/blog/duelo-y-redes-sociales',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

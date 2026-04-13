@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'El duelo por divorcio es un dolor real que merece ser reconocido.',
     url: '/blog/duelo-por-divorcio',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Descubre qué es la arteterapia, cómo funciona, sus beneficios y para quién es.',
     url: '/blog/que-es-la-arteterapia-beneficios',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

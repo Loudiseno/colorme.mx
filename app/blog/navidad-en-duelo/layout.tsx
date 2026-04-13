@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Cómo sobrevivir la Navidad cuando estás en duelo.',
     url: '/blog/navidad-en-duelo',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

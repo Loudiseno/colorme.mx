@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'La muerte es el único destino que compartimos todos, y sin embargo evitamos nombrarla.',
     url: '/blog/hablar-de-la-muerte',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

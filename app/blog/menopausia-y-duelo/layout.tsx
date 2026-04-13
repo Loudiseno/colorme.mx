@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'La menopausia también es un duelo. Aprende a transitar esta etapa.',
     url: '/blog/menopausia-y-duelo',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {
