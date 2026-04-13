@@ -32,7 +32,6 @@ const tanatologiaArticles = [
 
 const arteterapiaArticles = [
   { href: '/blog/que-es-la-arteterapia-beneficios', image: '/arteterapia.webp', alt: '¿Qué es la arteterapia?', title: '¿Qué es la arteterapia?', description: 'Descubre cómo el arte ayuda a explorar y procesar emociones.' },
-  { href: '/blog/que-es-arteterapia', image: '/arteterapia-sesion-creativa.webp', alt: 'Arteterapia', title: 'Arteterapia: el arte de sanar', description: 'Todo lo que necesitas saber sobre arteterapia.' },
   { href: '/blog/arteterapia-cancer', image: '/cancer-y-arteterapia.webp', alt: 'Arteterapia para pacientes con cáncer', title: 'Arteterapia para pacientes con cáncer', description: 'El arte como acompañamiento durante el tratamiento oncológico.' },
   { href: '/blog/ejercicios-arteterapia', image: '/ejercicios-arteterapia.webp', alt: 'Ejercicios de arteterapia', title: 'Ejercicios de arteterapia', description: 'Técnicas creativas que puedes hacer en casa.' },
   { href: '/blog/beneficios-arte', image: '/beneficios-del-arte.webp', alt: 'Beneficios del arte', title: 'Beneficios del arte', description: 'Cómo el arte mejora tu bienestar emocional.' },

@@ -32,7 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'rituales-despedida',
     'superar-perdida-ser-querido',
     'que-es-la-arteterapia-beneficios',
-    'que-es-arteterapia',
     'arteterapia-cancer',
     'ejercicios-arteterapia',
     'beneficios-arte',

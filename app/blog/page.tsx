@@ -303,14 +303,6 @@ const articles = [
     alt: 'Navidad en duelo.',
   },
   {
-    slug: '/blog/que-es-arteterapia',
-    image: '/arteterapia-sesion-creativa.webp',
-    category: 'Arteterapia',
-    title: 'Arteterapia: el arte de sanar',
-    description: 'Todo lo que necesitas saber sobre arteterapia.',
-    alt: 'Qué es arteterapia.',
-  },
-  {
     slug: '/blog/diferencia-psicologia-arteterapia',
     image: '/diferencia psicologia y arteterapia.jpeg',
     category: 'Arteterapia',
