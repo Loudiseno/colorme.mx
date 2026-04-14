@@ -45,6 +45,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'por-que-no-puedo-llorar',
     'duelo-y-culpa',
     'perder-la-fe',
+    'india-rituales-colores-bandera-espiritualidad-duelo',
+    'malasia-rituales-colores-bandera-tradiciones-duelo',
+    'mehndi-india-significado-henna-ritual-espiritual',
+    'melukat-ceremonia-purificacion-bali-agua-sagrada',
+    'tailandia-rituales-colores-bandera-duelo-tradiciones',
+    'vietnam-culto-ancestros-altar-familiar-duelo',
+    'arteterapia-y-autismo',
   ]
 
   // Core pages
