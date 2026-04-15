@@ -1,6 +1,36 @@
 'use client'
 
+import Link from 'next/link'
+import Image from 'next/image'
+import { ArrowRight } from 'lucide-react'
 import BlogCarousel from './BlogCarousel'
+
+const featuredArticles = [
+  {
+    href: '/blog/arteterapia-cancer',
+    image: '/cancer-y-arteterapia.webp',
+    alt: 'Arteterapia para pacientes con cáncer',
+    title: 'Arteterapia para pacientes con cáncer',
+    description: 'El arte como acompañamiento durante el tratamiento oncológico.',
+    category: 'Arteterapia'
+  },
+  {
+    href: '/blog/duelo-perdida',
+    image: '/el-duelo.webp',
+    alt: '¿Qué es el duelo?',
+    title: '¿Qué es el duelo?',
+    description: 'Guía para entender y atravesar el proceso de pérdida.',
+    category: 'Tanatología'
+  },
+  {
+    href: '/blog/india-rituales-colores-bandera-espiritualidad-duelo',
+    image: '/rituales de india.jpeg',
+    alt: 'Rituales de India',
+    title: 'India: rituales, colores y espiritualidad',
+    description: 'Descubre los rituales sagrados de la India y el significado de sus colores.',
+    category: 'Rituales y colores del mundo'
+  },
+]
 
 const tanatologiaArticles = [
   { href: '/blog/duelo-perdida', image: '/el-duelo.webp', alt: '¿Qué es el duelo?', title: '¿Qué es el duelo?', description: 'Guía para entender y atravesar el proceso de pérdida.' },
@@ -50,6 +80,15 @@ const emocionesArticles = [
   { href: '/blog/perder-la-fe', image: '/perder-la-fe.webp', alt: 'Perder la fe', title: 'Perder la fe', description: 'Cuando el duelo sacude nuestras creencias.' },
 ]
 
+const ritualesArticles = [
+  { href: '/blog/india-rituales-colores-bandera-espiritualidad-duelo', image: '/rituales de india.jpeg', alt: 'Rituales de India', title: 'India: rituales, colores y espiritualidad', description: 'Descubre los rituales sagrados de la India y el significado de sus colores.' },
+  { href: '/blog/malasia-rituales-colores-bandera-tradiciones-duelo', image: '/malasia .jpeg', alt: 'Rituales de Malasia', title: 'Malasia: rituales y tradiciones', description: 'Tres culturas espirituales que conviven en armonía.' },
+  { href: '/blog/mehndi-india-significado-henna-ritual-espiritual', image: '/mehndi india.jpeg', alt: 'Mehndi India', title: 'Mehndi: el arte sagrado de la henna', description: 'El arte ancestral de la henna y su significado espiritual.' },
+  { href: '/blog/melukat-ceremonia-purificacion-bali-agua-sagrada', image: '/melukat bali.jpeg', alt: 'Melukat Bali', title: 'Melukat: ceremonia de purificación', description: 'El ritual balinés donde el agua limpia el dolor del alma.' },
+  { href: '/blog/tailandia-rituales-colores-bandera-duelo-tradiciones', image: '/thailand rituals.jpeg', alt: 'Rituales de Tailandia', title: 'Tailandia: rituales y gratitud', description: 'La sabiduría de soltar con gratitud en la tierra de la sonrisa.' },
+  { href: '/blog/vietnam-culto-ancestros-altar-familiar-duelo', image: '/vietnam olores.jpeg', alt: 'Vietnam ancestros', title: 'Vietnam: el culto a los ancestros', description: 'El altar familiar y el ritual de recordar.' },
+]
+
 export default function BlogSection() {
   return (
     <section className="py-10 md:py-12 bg-white" id="blog">
@@ -64,24 +103,42 @@ export default function BlogSection() {
           </p>
         </div>
 
+        {/* Featured Articles */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {featuredArticles.map((article) => (
+            <Link key={article.href} href={article.href} className="group">
+              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
+                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                  <Image
+                    src={article.image}
+                    alt={article.alt}
+                    fill
+                    className="object-cover grayscale mix-blend-luminosity group-hover:grayscale-0 transition-all"
+                  />
+                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                </div>
+                <div className="p-6">
+                  <span className="text-xs text-gray-500 uppercase tracking-wider">{article.category}</span>
+                  <h3 className="text-xl text-black mt-2 mb-3 font-semibold">
+                    {article.title}
+                  </h3>
+                  <p className="text-black/70 text-sm leading-relaxed mb-4">
+                    {article.description}
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
+                    Leer más
+                    <ArrowRight size={16} />
+                  </span>
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+
         <BlogCarousel title="Tanatología" articles={tanatologiaArticles} />
         <BlogCarousel title="Arteterapia" articles={arteterapiaArticles} />
         <BlogCarousel title="Emociones" articles={emocionesArticles} />
-
-        {/* Section: Rituales y colores del mundo - Próximamente */}
-        <div className="mb-4">
-          <div className="flex items-center justify-between mb-6">
-            <div className="inline-block bg-[#B2F7EF] px-6 py-2 rounded-xl relative">
-              <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-              <h3 className="text-2xl text-black font-semibold relative z-10">Rituales y colores del mundo</h3>
-            </div>
-          </div>
-          <div className="flex gap-6 overflow-x-auto pb-4">
-            <div className="flex-shrink-0 w-72 flex items-center justify-center h-56 bg-[#B2F7EF]/10 rounded-2xl border border-dashed border-[#B2F7EF]">
-              <p className="text-black/50 text-center px-6">Próximamente: artículos sobre rituales y colores del mundo</p>
-            </div>
-          </div>
-        </div>
+        <BlogCarousel title="Rituales y colores del mundo" articles={ritualesArticles} />
       </div>
     </section>
   )
