@@ -27,7 +27,7 @@ export default function ArteterapiaAutismoPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/Arteterapia niños.jpeg"
+            src="/Ana Gaby Figueroa. 9.04.2026.jpeg"
             alt="Arteterapia y autismo - Arte como comunicacion"
             width={1200}
             height={675}

@@ -214,15 +214,15 @@ export default function ArteterapiaPage() {
 
       {/* Artwork Gallery */}
       <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-2xl mx-auto px-6">
-          <div className="flex flex-col items-center gap-10">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-3 gap-6">
             <div className="text-center">
               <div className="rounded-2xl overflow-hidden mb-3">
                 <Image
                   src="/Ana Gaby Figueroa. 9.04.2026.jpeg"
                   alt="Obra de Ana Gaby"
-                  width={500}
-                  height={400}
+                  width={400}
+                  height={300}
                   className="w-full h-auto"
                 />
               </div>
@@ -233,8 +233,8 @@ export default function ArteterapiaPage() {
                 <Image
                   src="/Celeste. 09.04.2026.jpeg"
                   alt="Obra de Celeste"
-                  width={500}
-                  height={400}
+                  width={400}
+                  height={300}
                   className="w-full h-auto"
                 />
               </div>
@@ -245,8 +245,8 @@ export default function ArteterapiaPage() {
                 <Image
                   src="/Maria Jose Figueroa.9.04.2026.jpeg"
                   alt="Obra de Mari"
-                  width={500}
-                  height={400}
+                  width={400}
+                  height={300}
                   className="w-full h-auto"
                 />
               </div>
