@@ -2,79 +2,6 @@
 
 import BlogCarousel from '@/components/BlogCarousel'
 
-const arteterapiaArticles = [
-  {
-    href: '/blog/que-es-la-arteterapia-beneficios',
-    image: '/arteterapia.webp',
-    title: '¿Qué es la arteterapia?',
-    description: 'Descubre cómo el arte ayuda a explorar y procesar emociones.',
-    alt: '¿Qué es la arteterapia?',
-  },
-  {
-    href: '/blog/arteterapia-cancer',
-    image: '/cancer-y-arteterapia.webp',
-    title: 'Arteterapia para pacientes con cáncer',
-    description: 'El arte como acompañamiento durante el tratamiento oncológico.',
-    alt: 'Arteterapia para pacientes con cáncer',
-  },
-  {
-    href: '/blog/arteterapia-para-ninos',
-    image: '/arteterapia-ninos.webp',
-    title: 'Arteterapia para niños: guía por edades',
-    description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad.',
-    alt: 'Arteterapia para niños',
-  },
-  {
-    href: '/blog/arteterapia-para-la-ansiedad',
-    image: '/arteterapia-ansiedad.webp',
-    title: 'Arteterapia para la ansiedad',
-    description: 'Cómo el arte puede ayudarte a manejar la ansiedad cuando las palabras no alcanzan.',
-    alt: 'Arteterapia para la ansiedad',
-  },
-  {
-    href: '/blog/ejercicios-arteterapia',
-    image: '/ejercicios-arteterapia.webp',
-    title: '10 ejercicios de arteterapia que puedes hacer en casa',
-    description: 'Ejercicios creativos para procesar emociones sin necesidad de saber dibujar.',
-    alt: 'Ejercicios de arteterapia',
-  },
-  {
-    href: '/blog/beneficios-arte',
-    image: '/beneficios-del-arte.webp',
-    title: 'Cómo el arte sana: lo que sucede en tu cerebro cuando creas',
-    description: 'La neurociencia detrás de por qué crear arte reduce el estrés y mejora el bienestar.',
-    alt: 'Beneficios del arte',
-  },
-  {
-    href: '/blog/mandalas-terapeuticos',
-    image: '/mandalas-terapeuticos.webp',
-    title: 'Mandalas terapéuticos: qué son y cómo crearlos',
-    description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
-    alt: 'Mandalas terapéuticos',
-  },
-  {
-    href: '/blog/arte-trauma',
-    image: '/arte-y-trauma.webp',
-    title: 'Arte y trauma: cómo el proceso creativo ayuda a sanar',
-    description: 'Por qué el arte funciona para procesar experiencias traumáticas.',
-    alt: 'Arte y trauma',
-  },
-  {
-    href: '/blog/diferencia-psicologia-arteterapia',
-    image: '/diferencia psicologia y arteterapia.jpeg',
-    title: 'Diferencia entre psicología y arteterapia',
-    description: '¿Cuál es la diferencia y cuál necesitas?',
-    alt: 'Diferencia psicología y arteterapia',
-  },
-  {
-    href: '/blog/arteterapia-y-autismo',
-    image: '/Arteterapia niños.jpeg',
-    title: 'Arteterapia y autismo: cuando el arte abre caminos',
-    description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
-    alt: 'Arteterapia y autismo',
-  },
-]
-
 const tanatologiaArticles = [
   {
     href: '/blog/duelo-perdida',
@@ -251,6 +178,82 @@ const tanatologiaArticles = [
     description: 'El camino hacia la sanación después de una pérdida.',
     alt: 'Superar pérdida',
   },
+]
+
+const arteterapiaArticles = [
+  {
+    href: '/blog/que-es-la-arteterapia-beneficios',
+    image: '/arteterapia.webp',
+    title: '¿Qué es la arteterapia?',
+    description: 'Descubre cómo el arte ayuda a explorar y procesar emociones.',
+    alt: '¿Qué es la arteterapia?',
+  },
+  {
+    href: '/blog/arteterapia-cancer',
+    image: '/cancer-y-arteterapia.webp',
+    title: 'Arteterapia para pacientes con cáncer',
+    description: 'El arte como acompañamiento durante el tratamiento oncológico.',
+    alt: 'Arteterapia para pacientes con cáncer',
+  },
+  {
+    href: '/blog/arteterapia-para-ninos',
+    image: '/arteterapia-ninos.webp',
+    title: 'Arteterapia para niños: guía por edades',
+    description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad.',
+    alt: 'Arteterapia para niños',
+  },
+  {
+    href: '/blog/arteterapia-para-la-ansiedad',
+    image: '/arteterapia-ansiedad.webp',
+    title: 'Arteterapia para la ansiedad',
+    description: 'Cómo el arte puede ayudarte a manejar la ansiedad cuando las palabras no alcanzan.',
+    alt: 'Arteterapia para la ansiedad',
+  },
+  {
+    href: '/blog/ejercicios-arteterapia',
+    image: '/ejercicios-arteterapia.webp',
+    title: '10 ejercicios de arteterapia que puedes hacer en casa',
+    description: 'Ejercicios creativos para procesar emociones sin necesidad de saber dibujar.',
+    alt: 'Ejercicios de arteterapia',
+  },
+  {
+    href: '/blog/beneficios-arte',
+    image: '/beneficios-del-arte.webp',
+    title: 'Cómo el arte sana: lo que sucede en tu cerebro cuando creas',
+    description: 'La neurociencia detrás de por qué crear arte reduce el estrés y mejora el bienestar.',
+    alt: 'Beneficios del arte',
+  },
+  {
+    href: '/blog/mandalas-terapeuticos',
+    image: '/mandalas-terapeuticos.webp',
+    title: 'Mandalas terapéuticos: qué son y cómo crearlos',
+    description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
+    alt: 'Mandalas terapéuticos',
+  },
+  {
+    href: '/blog/arte-trauma',
+    image: '/arte-y-trauma.webp',
+    title: 'Arte y trauma: cómo el proceso creativo ayuda a sanar',
+    description: 'Por qué el arte funciona para procesar experiencias traumáticas.',
+    alt: 'Arte y trauma',
+  },
+  {
+    href: '/blog/diferencia-psicologia-arteterapia',
+    image: '/diferencia psicologia y arteterapia.jpeg',
+    title: 'Diferencia entre psicología y arteterapia',
+    description: '¿Cuál es la diferencia y cuál necesitas?',
+    alt: 'Diferencia psicología y arteterapia',
+  },
+  {
+    href: '/blog/arteterapia-y-autismo',
+    image: '/Arteterapia niños.jpeg',
+    title: 'Arteterapia y autismo: cuando el arte abre caminos',
+    description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
+    alt: 'Arteterapia y autismo',
+  },
+]
+
+const emocionesArticles = [
   {
     href: '/blog/tristeza-como-maestra',
     image: '/tristeza.webp',
@@ -343,17 +346,15 @@ export default function BlogPage() {
             <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
             <h1 className="text-4xl md:text-5xl text-black relative z-10">Entre líneas</h1>
           </div>
-          <p className="text-lg text-black leading-relaxed mb-4">
-            <strong>Reflexiones sobre arteterapia, tanatología y el universo de las emociones</strong>
-          </p>
-          <p className="text-black/70 max-w-2xl mx-auto">
-            Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad.
+          <p className="text-black/70 max-w-2xl mx-auto text-base leading-relaxed">
+            Reflexiones, información y herramientas sobre arteterapia, tanatología y el universo de las emociones. Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad a través del arte, los colores y rituales del mundo.
           </p>
         </div>
 
         {/* Carousels por categoría */}
         <BlogCarousel title="Tanatología" articles={tanatologiaArticles} />
         <BlogCarousel title="Arteterapia" articles={arteterapiaArticles} />
+        <BlogCarousel title="Emociones" articles={emocionesArticles} />
         <BlogCarousel title="Rituales y colores del mundo" articles={ritualesArticles} />
       </div>
     </section>
