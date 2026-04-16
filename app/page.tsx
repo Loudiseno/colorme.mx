@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
 import Image from 'next/image'
@@ -7,6 +8,14 @@ import FAQ from '@/components/FAQ'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
 import BlogSection from '@/components/BlogSection'
+
+export const metadata: Metadata = {
+  title: 'Arteterapia y Tanatología | Acompañamiento Emocional | ColorMe',
+  description: 'Acompañamiento emocional con arteterapia y tanatología para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
+  alternates: {
+    canonical: '/',
+  },
+}
 
 export default function HomePage() {
   return (
@@ -21,7 +30,7 @@ export default function HomePage() {
       />
 
       {/* Hero: Intro + About Lou */}
-      <section className="pt-28 pb-8 md:pt-36 md:pb-10 bg-white" id="sobremi">
+      <section className="pt-28 pb-4 md:pt-36 md:pb-6 bg-white" id="sobremi">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
@@ -55,10 +64,11 @@ export default function HomePage() {
                 <div className="flex flex-col h-full">
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
-                      src="/Lou foto.jpg"
-                      alt="Lou - Arteterapeuta y Tanatóloga"
+                      src="/lou-arteterapeuta-tanatologa-mexico.webp"
+                      alt="Lou - Arteterapeuta y Tanatóloga certificada en México"
                       width={600}
                       height={450}
+                      priority
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -84,7 +94,7 @@ export default function HomePage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-4 md:py-6 bg-white">
+      <section className="pt-2 pb-1 md:pt-3 md:pb-2 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
             "Sanar no es seguir las líneas. Es dibujar las tuyas propias."
@@ -93,15 +103,15 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="pt-6 pb-10 md:pt-8 md:pb-12 bg-[#B2F7EF]/5" id="servicios">
+      <section className="pt-2 pb-10 md:pt-3 md:pb-12 bg-[#B2F7EF]/5" id="servicios">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Arteterapia */}
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
-                  src="/COLORME_logo-12-scaled.jpg"
-                  alt="Arteterapia"
+                  src="/arteterapia-sesion-creativa.webp"
+                  alt="Sesión de arteterapia - expresión creativa"
                   width={160}
                   height={160}
                   className="object-contain"
@@ -114,7 +124,7 @@ export default function HomePage() {
                 Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones, sin buscar resultados estéticos ni requerir experiencia artística.
               </p>
               <Link
-                href="/arteterapia"
+                href="/arteterapia-mexico"
                 className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
               >
                 Ver más
@@ -125,8 +135,8 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
-                  src="/ojo-11-scaled.jpg"
-                  alt="Tanatología"
+                  src="/tanatologia-acompanamiento-duelo.webp"
+                  alt="Acompañamiento tanatológico en procesos de duelo"
                   width={160}
                   height={160}
                   className="object-contain"
@@ -139,7 +149,7 @@ export default function HomePage() {
                 Acompañamiento en procesos de duelo y pérdida en un espacio seguro para expresar emociones, transitar el dolor y resignificar lo vivido.
               </p>
               <Link
-                href="/tanatologia"
+                href="/tanatologia-acompanamiento-duelo"
                 className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
               >
                 Ver más
@@ -152,11 +162,12 @@ export default function HomePage() {
       {/* Session Types */}
       <section className="py-10 md:py-12 bg-white">
         <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl text-black mb-10 text-center">Servicios</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/columpio.png"
+                  src="/columpio.webp"
                   alt="Terapia individual"
                   width={128}
                   height={128}
@@ -171,7 +182,7 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/corazon.png"
+                  src="/corazon.webp"
                   alt="Sesión grupal"
                   width={128}
                   height={128}
@@ -186,7 +197,7 @@ export default function HomePage() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative">
                 <Image
-                  src="/adolecente hombre.png"
+                  src="/adolecente-hombre.webp"
                   alt="Talleres para organizaciones"
                   width={128}
                   height={128}
@@ -219,8 +230,8 @@ export default function HomePage() {
             <div className="order-2 lg:order-1 bg-white p-8 md:p-12 flex items-center justify-center">
               <div className="max-w-sm mx-auto">
                 <Image
-                  src="/indeleble.png"
-                  alt="Indeleble - Libro por Lou"
+                  src="/libro-indeleble-cancer-resiliencia.webp"
+                  alt="Indeleble - Libro sobre resiliencia y superación del cáncer por Lou"
                   width={400}
                   height={300}
                   className="w-full h-auto"
@@ -271,21 +282,21 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto mt-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Image
-                src="/testimonio Sergio Morales.png"
+                src="/testimonio-sergio-morales.webp"
                 alt="Reseña de Sergio Morales - 5 estrellas"
                 width={600}
                 height={150}
                 className="w-full h-auto rounded-lg border border-black/10"
               />
               <Image
-                src="/testimonio dan.png"
+                src="/testimonio-dan.webp"
                 alt="Reseña de Dan - 5 estrellas"
                 width={600}
                 height={150}
                 className="w-full h-auto rounded-lg border border-black/10"
               />
               <Image
-                src="/testimonio monica aristi.png"
+                src="/testimonio-monica-aristi.webp"
                 alt="Reseña de Monica Aristi - 5 estrellas"
                 width={600}
                 height={150}

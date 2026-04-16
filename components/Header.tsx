@@ -22,11 +22,11 @@ const WhatsAppIcon = ({ size = 18, strokeWidth = 1.5 }: { size?: number; strokeW
 )
 
 const navigation = [
-  { name: 'Arteterapia', href: '/arteterapia' },
-  { name: 'Tanatología', href: '/tanatologia' },
-  { name: 'Sobre mí', href: '/sobre-mi' },
+  { name: 'Arteterapia', href: '/arteterapia-mexico' },
+  { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
+  { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Exploraciones creativas', href: '/hoja-de-trabajo' },
-  { name: 'Blog', href: '/#blog' },
+  { name: 'Blog', href: '/blog' },
 ]
 
 const socials = [
@@ -59,7 +59,7 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="hover:opacity-80 transition-opacity">
           <Image
-            src="/COLORME_logo-19-768x141.png"
+            src="/COLORME_logo-19-768x141.webp"
             alt="ColorMe"
             width={150}
             height={28}

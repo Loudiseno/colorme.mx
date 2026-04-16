@@ -63,13 +63,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/arteterapia`,
+      url: `${baseUrl}/arteterapia-mexico`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/tanatologia`,
+      url: `${baseUrl}/tanatologia-acompanamiento-duelo`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,

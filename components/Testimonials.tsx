@@ -26,8 +26,9 @@ export default function Testimonials() {
         {/* Section header */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl text-black mb-3">
-            Lo que dicen quienes han vivido el proceso
+            Testimonios
           </h2>
+          <p className="text-black/70">Lo que dicen quienes han vivido el proceso</p>
         </div>
 
         {/* Testimonial cards grid */}

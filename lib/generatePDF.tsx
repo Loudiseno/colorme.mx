@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   header: {
-    marginBottom: 15,
-    paddingBottom: 12,
+    marginBottom: 10,
+    paddingBottom: 8,
     borderBottomWidth: 2,
     borderBottomColor: '#B2F7EF',
     alignItems: 'center',
@@ -31,9 +31,9 @@ const styles = StyleSheet.create({
   },
   infoBox: {
     backgroundColor: '#F8F8F8',
-    padding: 12,
+    padding: 10,
     borderRadius: 6,
-    marginBottom: 18,
+    marginBottom: 10,
   },
   infoRow: {
     flexDirection: 'row',
@@ -154,7 +154,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
         {/* Header with Logo */}
         <View style={styles.header}>
           <Image
-            src="/COLORME_logo-19-768x141.png"
+            src="/COLORME_logonegro.png"
             style={styles.logo}
           />
           <Text style={styles.title}>Ejercicios Personalizados</Text>
@@ -179,7 +179,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
             <Text style={styles.value}>{data.gender}</Text>
           </View>
           <View style={styles.infoRow}>
-            <Text style={styles.label}>Emoción a trabajar:</Text>
+            <Text style={styles.label}>Emocion a trabajar:</Text>
             <Text style={styles.value}>{data.emotion}</Text>
           </View>
           <View style={styles.infoRow}>
@@ -194,7 +194,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
             <Text style={styles.exerciseTitle}>{exercise.title}</Text>
             <Text style={styles.description}>{exercise.description}</Text>
 
-            <Text style={styles.subsectionTitle}>Duración: {exercise.duration}</Text>
+            <Text style={styles.subsectionTitle}>Tiempo estimado: {exercise.duration}</Text>
 
             {/* Materials */}
             <Text style={styles.subsectionTitle}>Materiales necesarios:</Text>
@@ -225,7 +225,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
         {/* Disclaimer */}
         <View style={styles.disclaimer}>
           <Text style={styles.disclaimerText}>
-            Los ejercicios son una herramienta de exploración personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atención profesional psicológica o médica.
+            Los ejercicios son una herramienta de exploracion personal, no un tratamiento. Bajo ninguna circunstancia reemplazan atencion profesional psicologica o medica.
           </Text>
         </View>
 

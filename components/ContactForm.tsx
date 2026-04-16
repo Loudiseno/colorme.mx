@@ -144,10 +144,10 @@ export default function ContactForm() {
           {['Arteterapia', 'Tanatología', 'Ambas'].map((option) => (
             <label
               key={option}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 border ${
                 formData.tipoAcompanamiento === option
-                  ? 'bg-[#B2F7EF] text-black'
-                  : 'bg-mist/50 text-charcoal hover:bg-[#B2F7EF]/30'
+                  ? 'bg-[#B2F7EF] text-black border-[#5ECFC0] font-semibold'
+                  : 'bg-mist/50 text-charcoal border-gray-300 hover:bg-[#5ECFC0]/30 hover:border-[#5ECFC0]'
               }`}
             >
               <input
@@ -191,10 +191,10 @@ export default function ContactForm() {
           {['Online', 'Presencial*'].map((option) => (
             <label
               key={option}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 border ${
                 formData.modalidad === option || (option === 'Presencial*' && formData.modalidad === 'Presencial')
-                  ? 'bg-[#B2F7EF] text-black'
-                  : 'bg-mist/50 text-charcoal hover:bg-[#B2F7EF]/30'
+                  ? 'bg-[#B2F7EF] text-black border-[#5ECFC0] font-semibold'
+                  : 'bg-mist/50 text-charcoal border-gray-300 hover:bg-[#5ECFC0]/30 hover:border-[#5ECFC0]'
               }`}
             >
               <input

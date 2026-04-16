@@ -20,9 +20,9 @@ const WhatsAppIcon = ({ size = 16, strokeWidth = 1.5 }: { size?: number; strokeW
 )
 
 const navigation = [
-  { name: 'Arteterapia', href: '/arteterapia' },
-  { name: 'Tanatología', href: '/tanatologia' },
-  { name: 'Sobre mí', href: '/sobre-mi' },
+  { name: 'Arteterapia', href: '/arteterapia-mexico' },
+  { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
+  { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Política de privacidad', href: '/politica-de-privacidad' },
 ]
@@ -45,7 +45,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block">
               <Image
-                src="/COLORME_logo-19-768x141.png"
+                src="/COLORME_logo-19-768x141.webp"
                 alt="ColorMe"
                 width={140}
                 height={26}

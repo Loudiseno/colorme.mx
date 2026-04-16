@@ -9,6 +9,8 @@ const nextConfig = {
   // Enforce consistent URLs without trailing slash
   trailingSlash: false,
   images: {
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 31536000,
     remotePatterns: [
       {
         protocol: 'https',
