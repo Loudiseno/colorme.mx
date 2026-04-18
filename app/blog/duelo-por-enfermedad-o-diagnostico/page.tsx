@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloEnfermedad() {
@@ -48,7 +49,7 @@ export default function ArticuloDueloEnfermedad() {
           </p>
 
           <p>
-            Cuando un médico pronuncia ciertas palabras —diabetes, esclerosis múltiple, cáncer, enfermedad de Crohn, lupus, fibromialgia, o cualquier otra condición crónica o grave— algo se quiebra silenciosamente en nuestro interior. En ese instante, la persona que creíamos ser comienza a desdibujarse, y nos encontramos frente a una versión de nosotros mismos que jamás imaginamos.
+            Cuando un médico pronuncia ciertas palabras -diabetes, esclerosis múltiple, cáncer, enfermedad de Crohn, lupus, fibromialgia, o cualquier otra condición crónica o grave- algo se quiebra silenciosamente en nuestro interior. En ese instante, la persona que creíamos ser comienza a desdibujarse, y nos encontramos frente a una versión de nosotros mismos que jamás imaginamos.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El diagnóstico como punto de inflexión</h2>
@@ -94,7 +95,7 @@ export default function ArticuloDueloEnfermedad() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo no sigue un calendario</h2>
 
           <p>
-            Una de las frustraciones más comunes en este proceso es la expectativa —propia y ajena— de que deberíamos &quot;superarlo&quot; en cierto tiempo. Pero el duelo por enfermedad no funciona así. Es un proceso ondulante que puede reactivarse en momentos inesperados.
+            Una de las frustraciones más comunes en este proceso es la expectativa -propia y ajena- de que deberíamos &quot;superarlo&quot; en cierto tiempo. Pero el duelo por enfermedad no funciona así. Es un proceso ondulante que puede reactivarse en momentos inesperados.
           </p>
 
           <p>
@@ -188,7 +189,7 @@ export default function ArticuloDueloEnfermedad() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Un duelo legítimo que merece reconocimiento</h2>
 
           <p>
-            Si estás atravesando un duelo por enfermedad —propia o de alguien querido— permítete reconocer la magnitud de lo que enfrentas. No estás exagerando. No deberías &quot;estar mejor&quot; a estas alturas. No tienes que comparar tu situación con la de otros ni minimizar tu dolor porque &quot;hay gente que está peor&quot;.
+            Si estás atravesando un duelo por enfermedad -propia o de alguien querido- permítete reconocer la magnitud de lo que enfrentas. No estás exagerando. No deberías &quot;estar mejor&quot; a estas alturas. No tienes que comparar tu situación con la de otros ni minimizar tu dolor porque &quot;hay gente que está peor&quot;.
           </p>
 
           <p>
@@ -223,6 +224,9 @@ export default function ArticuloDueloEnfermedad() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-por-enfermedad-o-diagnostico" category="tanatologia" />
       </div>
     </article>
   )

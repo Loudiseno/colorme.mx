@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloArteterapiaAnsiedad() {
@@ -75,7 +76,7 @@ export default function ArticuloArteterapiaAnsiedad() {
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Liberas tensión física</h3>
           <p>
-            El movimiento de crear —amasar, pintar, cortar, pegar— involucra tu cuerpo. Esa energía ansiosa que a veces no sabes dónde poner encuentra un canal. Tus manos están ocupadas, tu cuerpo está en movimiento, y eso tiene un efecto calmante que va más allá de lo mental.
+            El movimiento de crear -amasar, pintar, cortar, pegar- involucra tu cuerpo. Esa energía ansiosa que a veces no sabes dónde poner encuentra un canal. Tus manos están ocupadas, tu cuerpo está en movimiento, y eso tiene un efecto calmante que va más allá de lo mental.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo funciona: lo que pasa mientras creas</h2>
@@ -150,7 +151,7 @@ export default function ArticuloArteterapiaAnsiedad() {
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Herramientas que quedan contigo</h3>
           <p>
-            Lo que aprendes en arteterapia —la capacidad de expresarte creativamente, de tolerar la incertidumbre, de soltar el control— son habilidades que puedes llevar a tu vida cotidiana. No desaparecen cuando termina la sesión.
+            Lo que aprendes en arteterapia -la capacidad de expresarte creativamente, de tolerar la incertidumbre, de soltar el control- son habilidades que puedes llevar a tu vida cotidiana. No desaparecen cuando termina la sesión.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Un espacio que es solo tuyo</h3>
@@ -257,6 +258,9 @@ export default function ArticuloArteterapiaAnsiedad() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="arteterapia-para-la-ansiedad" category="arteterapia" />
       </div>
     </article>
   )

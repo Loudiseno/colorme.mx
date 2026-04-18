@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'El duelo por mascota es válido y real. Descubre cómo atravesar esta pérdida.',
     url: '/blog/duelo-por-mascota',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

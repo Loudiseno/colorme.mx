@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Una guía honesta para quienes perdieron a la primera persona que los amó.',
     url: '/blog/muerte-mama',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Lo que callamos por miedo a ser juzgados. Cómo la vergüenza silencia el duelo.',
     url: '/blog/verguenza-duelo',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

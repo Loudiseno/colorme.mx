@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloArteTrauma() {
@@ -48,7 +49,7 @@ export default function ArticuloArteTrauma() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por qué el trauma es difícil de procesar con palabras</h2>
 
           <p>
-            Cuando vivimos una experiencia traumática, nuestro cerebro procesa la información de manera diferente. La parte del cerebro responsable del lenguaje —el área de Broca— puede quedar temporalmente desactivada durante el trauma.
+            Cuando vivimos una experiencia traumática, nuestro cerebro procesa la información de manera diferente. La parte del cerebro responsable del lenguaje -el área de Broca- puede quedar temporalmente desactivada durante el trauma.
           </p>
 
           <p>
@@ -77,12 +78,12 @@ export default function ArticuloArteTrauma() {
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Externalización</h3>
           <p>
-            Cuando algo que está dentro de ti —una emoción, un recuerdo, una sensación— se convierte en algo externo que puedes ver y tocar, cambia tu relación con ello. Ya no estás atrapado dentro de la experiencia. Ahora puedes observarla desde afuera, a una distancia segura.
+            Cuando algo que está dentro de ti -una emoción, un recuerdo, una sensación- se convierte en algo externo que puedes ver y tocar, cambia tu relación con ello. Ya no estás atrapado dentro de la experiencia. Ahora puedes observarla desde afuera, a una distancia segura.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Regulación del sistema nervioso</h3>
           <p>
-            El acto físico de crear —mover las manos, mezclar colores, sentir la textura de los materiales— activa el sistema nervioso parasimpático, ayudando al cuerpo a salir del estado de alerta constante que el trauma produce.
+            El acto físico de crear -mover las manos, mezclar colores, sentir la textura de los materiales- activa el sistema nervioso parasimpático, ayudando al cuerpo a salir del estado de alerta constante que el trauma produce.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Integración</h3>
@@ -174,6 +175,9 @@ export default function ArticuloArteTrauma() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="arte-trauma" category="arteterapia" />
       </div>
     </article>
   )

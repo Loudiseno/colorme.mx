@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Dejar de creer también es una pérdida. Guía para atravesar el duelo espiritual.',
     url: '/blog/perder-la-fe',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

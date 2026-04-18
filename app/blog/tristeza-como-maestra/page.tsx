@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloTristezaComoMaestra() {
@@ -262,6 +263,9 @@ export default function ArticuloTristezaComoMaestra() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="tristeza-como-maestra" category="emociones" />
       </div>
     </article>
   )

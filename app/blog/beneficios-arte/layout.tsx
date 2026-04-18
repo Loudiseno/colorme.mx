@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'La neurociencia detrás de por qué crear arte reduce el estrés y mejora el bienestar.',
     url: '/blog/beneficios-arte',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

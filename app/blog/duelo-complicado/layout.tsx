@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Cómo identificar cuando el duelo necesita atención profesional.',
     url: '/blog/duelo-complicado',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

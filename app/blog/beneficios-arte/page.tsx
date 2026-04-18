@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloBeneficiosArte() {
@@ -48,7 +49,7 @@ export default function ArticuloBeneficiosArte() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El arte activa el sistema de recompensa</h2>
 
           <p>
-            Cuando creas algo —ya sea un dibujo, una pintura o simplemente garabatos en una hoja— tu cerebro libera <strong>dopamina</strong>, el neurotransmisor del placer y la motivación.
+            Cuando creas algo -ya sea un dibujo, una pintura o simplemente garabatos en una hoja- tu cerebro libera <strong>dopamina</strong>, el neurotransmisor del placer y la motivación.
           </p>
 
           <p>
@@ -80,7 +81,7 @@ export default function ArticuloBeneficiosArte() {
           </p>
 
           <p>
-            En el estado de flujo, la corteza prefrontal —la parte del cerebro responsable de la autocrítica, la preocupación y el análisis excesivo— se calma. Dejas de juzgarte. Dejas de pensar en el pasado o en el futuro. Solo estás presente.
+            En el estado de flujo, la corteza prefrontal -la parte del cerebro responsable de la autocrítica, la preocupación y el análisis excesivo- se calma. Dejas de juzgarte. Dejas de pensar en el pasado o en el futuro. Solo estás presente.
           </p>
 
           <p>
@@ -162,6 +163,9 @@ export default function ArticuloBeneficiosArte() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="beneficios-arte" category="arteterapia" />
       </div>
     </article>
   )

@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloAnticipado() {
@@ -82,7 +83,7 @@ export default function ArticuloDueloAnticipado() {
           </p>
 
           <p>
-            Pero tú <em>no puedes</em> no pensarlo. Porque lo vives todos los días. Ves el deterioro. Notas cómo la persona que amas va cambiando, va desapareciendo poco a poco. Y cada pequeña pérdida —una conversación que ya no pueden tener, un paseo que ya no es posible, un recuerdo que ya no comparten— es un pequeño duelo en sí mismo.
+            Pero tú <em>no puedes</em> no pensarlo. Porque lo vives todos los días. Ves el deterioro. Notas cómo la persona que amas va cambiando, va desapareciendo poco a poco. Y cada pequeña pérdida -una conversación que ya no pueden tener, un paseo que ya no es posible, un recuerdo que ya no comparten- es un pequeño duelo en sí mismo.
           </p>
 
           <p>El duelo anticipado es real. Y merece ser reconocido.</p>
@@ -170,6 +171,9 @@ export default function ArticuloDueloAnticipado() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-anticipado" category="tanatologia" />
       </div>
     </article>
   )

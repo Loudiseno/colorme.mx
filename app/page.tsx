@@ -7,6 +7,7 @@ import { siteConfig, generateBookSchema } from '@/lib/seo'
 import FAQ from '@/components/FAQ'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
+import BlogSection from '@/components/BlogSection'
 
 export const metadata: Metadata = {
   title: 'Arteterapia y Tanatología | Acompañamiento Emocional | ColorMe',
@@ -310,109 +311,7 @@ export default function HomePage() {
       <Testimonials />
 
       {/* Blog Section */}
-      <section className="py-10 md:py-12 bg-white" id="blog">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl text-black mb-4">Entre líneas</h2>
-            <p className="text-black/70 max-w-2xl mx-auto">
-              Reflexiones, información y herramientas sobre arteterapia, tanatología y el universo de las emociones. Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Article 1 */}
-            <Link href="/blog/que-es-la-arteterapia-beneficios" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                  <Image
-                    src="/arteterapia.webp"
-                    alt="¿Qué es la arteterapia?"
-                    fill
-                    className="object-cover grayscale mix-blend-luminosity"
-                  />
-                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
-                </div>
-                <div className="p-6">
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia</span>
-                  <h3 className="text-xl text-black mt-2 mb-3">
-                    ¿Qué es la arteterapia?
-                  </h3>
-                  <p className="text-black/70 text-sm leading-relaxed mb-4">
-                    Descubre cómo el arte ayuda a explorar y procesar emociones.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
-                    Leer más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
-
-            {/* Article 2 */}
-            <Link href="/blog/arteterapia-cancer" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                  <Image
-                    src="/cancer-y-arteterapia.webp"
-                    alt="Arteterapia para pacientes con cáncer"
-                    fill
-                    className="object-cover grayscale mix-blend-luminosity"
-                  />
-                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
-                </div>
-                <div className="p-6">
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Arteterapia y Tanatología</span>
-                  <h3 className="text-xl text-black mt-2 mb-3">
-                    Arteterapia para pacientes con cáncer
-                  </h3>
-                  <p className="text-black/70 text-sm leading-relaxed mb-4">
-                    El arte como acompañamiento durante el tratamiento oncológico.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
-                    Leer más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
-
-            {/* Article 3 */}
-            <Link href="/blog/duelo-perdida" className="group">
-              <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
-                <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                  <Image
-                    src="/el-duelo.webp"
-                    alt="¿Qué es el duelo?"
-                    fill
-                    className="object-cover grayscale mix-blend-luminosity"
-                  />
-                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
-                </div>
-                <div className="p-6">
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Tanatología</span>
-                  <h3 className="text-xl text-black mt-2 mb-3">
-                    ¿Qué es el duelo?
-                  </h3>
-                  <p className="text-black/70 text-sm leading-relaxed mb-4">
-                    Guía para entender y atravesar el proceso de pérdida.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
-                    Leer más
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </article>
-            </Link>
-          </div>
-          <div className="text-center mt-10">
-            <Link
-              href="/blog"
-              className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block"
-            >
-              Ver todos los artículos
-            </Link>
-          </div>
-        </div>
-      </section>
+      <BlogSection />
 
       {/* Contact Section */}
       <section className="py-10 md:py-12" id="contacto">

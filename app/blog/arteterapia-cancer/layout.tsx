@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Cómo la arteterapia ayuda a pacientes con cáncer a procesar emociones, reducir estrés y encontrar bienestar.',
     url: '/blog/arteterapia-cancer',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

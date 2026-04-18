@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloArteterapiaCancer() {
@@ -46,7 +47,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Estaba sentada en la sala de espera del hospital, días después de recibir mi diagnóstico de cáncer. La gente a mi alrededor seguía con sus vidas normales —revisando el celular, hojeando revistas, conversando sobre el clima— y yo me sentía como si estuviera detrás de un vidrio grueso, separada del mundo por algo que no podía nombrar.
+            Estaba sentada en la sala de espera del hospital, días después de recibir mi diagnóstico de cáncer. La gente a mi alrededor seguía con sus vidas normales -revisando el celular, hojeando revistas, conversando sobre el clima- y yo me sentía como si estuviera detrás de un vidrio grueso, separada del mundo por algo que no podía nombrar.
           </p>
 
           <p>
@@ -66,7 +67,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Hoy, como sobreviviente, tanatóloga y como arteterapeuta, acompaño a otras personas que están transitando ese mismo camino. Y quiero compartir contigo lo que he aprendido —desde adentro y desde afuera— sobre cómo el arte puede ser un aliado en el proceso oncológico.
+            Hoy, como sobreviviente, tanatóloga y como arteterapeuta, acompaño a otras personas que están transitando ese mismo camino. Y quiero compartir contigo lo que he aprendido -desde adentro y desde afuera- sobre cómo el arte puede ser un aliado en el proceso oncológico.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por qué el arte importa cuando tienes cáncer</h2>
@@ -114,7 +115,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Cuando me diagnosticaron cáncer, yo ya era artista. Había estudiado diseño, trabajaba en fotografía, tenía exposiciones de pintura, el arte siempre había sido parte de mi vida. Pero nunca lo había usado de esta manera —como una herramienta de supervivencia emocional.
+            Cuando me diagnosticaron cáncer, yo ya era artista. Había estudiado diseño, trabajaba en fotografía, tenía exposiciones de pintura, el arte siempre había sido parte de mi vida. Pero nunca lo había usado de esta manera -como una herramienta de supervivencia emocional.
           </p>
 
           <p>
@@ -130,7 +131,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Esa fue la primera de muchas sesiones conmigo misma. A lo largo del tratamiento —las radiaciones, la cirugía, los días malos, los días un poco menos malos, los miedos que aparecían de madrugada— el arte se convirtió en mi refugio. A veces pintaba. A veces hacía collages con recortes de revistas. A veces solo garabateaba mientras esperaba en el hospital.
+            Esa fue la primera de muchas sesiones conmigo misma. A lo largo del tratamiento -las radiaciones, la cirugía, los días malos, los días un poco menos malos, los miedos que aparecían de madrugada- el arte se convirtió en mi refugio. A veces pintaba. A veces hacía collages con recortes de revistas. A veces solo garabateaba mientras esperaba en el hospital.
           </p>
 
           <p>
@@ -259,7 +260,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            A veces, poder expresar el miedo a morir —en un dibujo, en un collage, en palabras— lo hace más manejable. A veces, poder despedirse de la vida que tenías antes del diagnóstico abre espacio para abrazar la vida que tienes ahora.
+            A veces, poder expresar el miedo a morir -en un dibujo, en un collage, en palabras- lo hace más manejable. A veces, poder despedirse de la vida que tenías antes del diagnóstico abre espacio para abrazar la vida que tienes ahora.
           </p>
 
           <p>
@@ -321,6 +322,9 @@ export default function ArticuloArteterapiaCancer() {
             Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su experiencia personal con la enfermedad la llevó a dedicarse a acompañar a otras personas en sus procesos de sanación. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble", un testimonio de transformación y resiliencia donde comparte su historia de atravesar el cáncer y reconstruirse a través del arte.
           </p>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="arteterapia-cancer" category="arteterapia" />
       </div>
     </article>
   )

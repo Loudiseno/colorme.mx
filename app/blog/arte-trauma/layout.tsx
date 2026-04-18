@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Por qué el arte funciona para procesar experiencias traumáticas.',
     url: '/blog/arte-trauma',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export default function ExplicarMuerteNinoPage() {
   return (
@@ -139,6 +140,9 @@ export default function ExplicarMuerteNinoPage() {
             Agenda una sesión de orientación
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="explicar-muerte-nino" category="tanatologia" />
       </div>
     </article>
   )

@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'No llorar no significa que no amas. Descubre por qué algunas personas no pueden llorar en el duelo.',
     url: '/blog/por-que-no-puedo-llorar',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

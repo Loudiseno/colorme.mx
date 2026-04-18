@@ -212,6 +212,50 @@ export default function ArteterapiaPage() {
         </div>
       </section>
 
+      {/* Artwork Gallery */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="rounded-2xl overflow-hidden mb-3">
+                <Image
+                  src="/Ana Gaby Figueroa. 9.04.2026.jpeg"
+                  alt="Obra de Ana Gaby"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-sm text-black/60">Ana Gaby, 11 años</p>
+            </div>
+            <div className="text-center">
+              <div className="rounded-2xl overflow-hidden mb-3">
+                <Image
+                  src="/Celeste. 09.04.2026.jpeg"
+                  alt="Obra de Celeste"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-sm text-black/60">Celeste, 8 años</p>
+            </div>
+            <div className="text-center">
+              <div className="rounded-2xl overflow-hidden mb-3">
+                <Image
+                  src="/Maria Jose Figueroa.9.04.2026.jpeg"
+                  alt="Obra de Mari"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-sm text-black/60">Mari, 9 años</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">

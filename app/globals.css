@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .prose p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
 }
 
 .prose h2 {
@@ -347,8 +347,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.75rem;
   font-weight: 500;
   color: var(--color-ink);
-  margin-top: 2.5em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
 }
 
 .prose h3 {
@@ -356,13 +356,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.375rem;
   font-weight: 500;
   color: var(--color-ink);
-  margin-top: 2em;
-  margin-bottom: 0.75em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .prose ul {
-  margin-top: 1em;
-  margin-bottom: 1.5em;
+  margin-top: 0.75em;
+  margin-bottom: 1.25em;
   padding-left: 1.5em;
   list-style-type: disc;
 }
@@ -394,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
 .prose blockquote {
   border-left: 3px solid var(--color-teal);
   padding-left: 1.5em;
-  margin: 2em 0;
+  margin: 1.5em 0;
   font-style: italic;
   color: var(--color-slate);
 }

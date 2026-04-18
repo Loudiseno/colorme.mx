@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Guía para los días que el calendario convierte en momentos de dolor.',
     url: '/blog/aniversarios-dificiles',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

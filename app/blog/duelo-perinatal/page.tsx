@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export default function DueloPerinatallPage() {
   return (
@@ -103,11 +104,11 @@ export default function DueloPerinatallPage() {
 
           <p>Estas son frases que, aunque se dicen con buena intención, pueden lastimar:</p>
 
-          <p><em>"Eres joven, puedes tener más hijos."</em> — Un hijo no reemplaza a otro.</p>
+          <p><em>"Eres joven, puedes tener más hijos."</em> - Un hijo no reemplaza a otro.</p>
 
-          <p><em>"Al menos no lo conociste."</em> — Lo conocí. Vivió dentro de mí.</p>
+          <p><em>"Al menos no lo conociste."</em> - Lo conocí. Vivió dentro de mí.</p>
 
-          <p><em>"Por algo pasan las cosas."</em> — No hay razón que haga esto menos doloroso.</p>
+          <p><em>"Por algo pasan las cosas."</em> - No hay razón que haga esto menos doloroso.</p>
 
           <h2>Lo que sí puede ayudar</h2>
 
@@ -165,6 +166,9 @@ export default function DueloPerinatallPage() {
             Agenda una sesión de orientación
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-perinatal" category="tanatologia" />
       </div>
     </article>
   )

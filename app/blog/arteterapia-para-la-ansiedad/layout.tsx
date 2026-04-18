@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Descubre cómo la arteterapia puede ayudarte a manejar la ansiedad.',
     url: '/blog/arteterapia-para-la-ansiedad',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

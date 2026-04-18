@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'No hay fecha de expiración para el duelo, pero el dolor no dura para siempre con la misma intensidad.',
     url: '/blog/cuanto-dura-el-duelo',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

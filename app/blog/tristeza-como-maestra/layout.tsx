@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Aprender a estar triste sin huir. La tristeza como maestra emocional.',
     url: '/blog/tristeza-como-maestra',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'El duelo anticipado es el dolor de perder a alguien que todavía está aquí.',
     url: '/blog/duelo-anticipado',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {

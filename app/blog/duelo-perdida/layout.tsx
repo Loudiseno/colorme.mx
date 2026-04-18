@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description: 'Guía sobre el proceso de duelo y pérdida. Aprende a transitar el dolor y cuándo buscar acompañamiento profesional.',
     url: '/blog/duelo-perdida',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 const articleSchema = {
