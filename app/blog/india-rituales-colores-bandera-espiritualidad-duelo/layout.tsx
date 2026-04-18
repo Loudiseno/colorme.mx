@@ -3,16 +3,16 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'India: Rituales, Colores y la Sabiduria de Soltar en Comunidad',
-  description: 'Descubre los rituales sagrados de la India, el significado de sus colores y como el duelo se vive en comunidad.',
-  keywords: ['rituales India', 'espiritualidad India', 'duelo en India', 'colores bandera India', 'Varanasi'],
+  title: 'India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós',
+  description: 'India es el corazón espiritual del planeta. Descubre sus rituales hindúes, los colores sagrados de su bandera y la forma profunda en que el pueblo indio honra la vida y la muerte.',
+  keywords: ['rituales India', 'espiritualidad hindú', 'duelo en India', 'colores bandera India', 'Varanasi Ganges', 'tradiciones hindúes', 'tanatología'],
   alternates: {
     canonical: '/blog/india-rituales-colores-bandera-espiritualidad-duelo',
   },
   openGraph: {
     type: 'article',
-    title: 'India: Rituales, Colores y Espiritualidad | ColorMe',
-    description: 'Descubre los rituales sagrados de la India y el significado de sus colores.',
+    title: 'India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós | ColorMe',
+    description: 'Descubre los rituales sagrados de la India, el significado de sus colores y cómo el duelo se vive en comunidad.',
     url: '/blog/india-rituales-colores-bandera-espiritualidad-duelo',
   },
   robots: {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'India, el pais de los mil colores: rituales, simbolos y la sabiduria de soltar en comunidad',
-  description: 'Descubre los rituales sagrados de la India y el significado de sus colores.',
+  headline: 'India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós',
+  description: 'Descubre los rituales sagrados de la India, el significado de sus colores y cómo el duelo se vive en comunidad.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/india-rituales-colores-bandera-espiritualidad-duelo`,

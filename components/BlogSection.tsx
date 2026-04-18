@@ -24,9 +24,9 @@ const featuredArticles = [
   {
     href: '/blog/india-rituales-colores-bandera-espiritualidad-duelo',
     image: '/ofrendas india.jpeg',
-    alt: 'India, el país de los mil colores',
-    title: 'India, el país de los mil colores: rituales, símbolos y la sabiduría de soltar en comunidad',
-    description: 'Descubre los rituales sagrados de la India y el significado espiritual de sus colores.',
+    alt: 'India, el país donde el alma camina descalza',
+    title: 'India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós',
+    description: 'India es el corazón espiritual del planeta. Descubre sus rituales hindúes y los colores sagrados.',
     category: 'Rituales y colores del mundo'
   },
 ]

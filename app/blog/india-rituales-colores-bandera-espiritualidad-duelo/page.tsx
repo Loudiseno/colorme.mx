@@ -20,15 +20,15 @@ export default function IndiaRitualesPage() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">RITUALES Y COLORES DEL MUNDO</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            India, el pais de los mil colores: rituales, simbolos y la sabiduria de soltar en comunidad
+            India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/rituales de india.jpeg"
-            alt="Rituales de India - Espiritualidad y colores sagrados"
+            src="/ofrendas india.jpeg"
+            alt="India - Rituales sagrados y colores espirituales"
             width={1200}
             height={675}
             priority
@@ -38,66 +38,90 @@ export default function IndiaRitualesPage() {
 
         <div className="prose prose-lg max-w-none text-black/80">
           <p className="text-xl leading-relaxed">
-            En la India, el color no es solo una experiencia visual. Es un lenguaje que vibra en cada rincon de la vida cotidiana, en los saris de las mujeres que caminan por mercados bulliciosos, en las guirnaldas de cempasuchil que adornan los altares, en el polvo rojo que marca la frente de quienes buscan lo sagrado.
+            Hay tierras que se visitan y tierras que te visitan a ti. India pertenece al segundo grupo. No importa cuánto creas conocerla antes de pisarla, una vez que sus aromas, sus colores y sus oraciones te tocan, ya nunca regresas igual. Algo se queda dentro, despierto, mirándolo todo desde un lugar más antiguo.
           </p>
 
           <p>
-            En este pais, cada color cuenta una historia. Y cada ritual es una forma de dialogar con lo invisible, de honrar lo que se fue y lo que vendr.
+            India es el corazón espiritual del planeta. La cuna del hinduismo, del budismo, del jainismo, del sijismo. Una tierra donde los dioses no están en el cielo, sino en cada gesto cotidiano. Una civilización que lleva más de cinco mil años respirando hacia adentro y enseñándole al mundo que la vida es mucho más vasta de lo que cabe en los ojos.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Rituales hindúes que sostienen cada amanecer</h2>
+
+          <p>
+            En India, lo sagrado no se separa de la rutina. Es la rutina misma. Cada hogar guarda un pequeño altar donde las familias realizan la puja al despertar. Encienden incienso, ofrecen flores frescas a las imágenes de las deidades y pronuncian oraciones en sánscrito. Es una conversación íntima entre lo humano y lo divino que ocurre en millones de casas a la misma hora, antes de que el sol haya terminado de salir.
+          </p>
+
+          <p>
+            Los hombres santos, llamados sadhus, eligen la renuncia total. Visten túnicas color azafrán, viajan sin pertenencias y dedican sus días a la búsqueda de la iluminación. Para los hindúes son recordatorios vivos de que nada en este mundo es realmente nuestro.
+          </p>
+
+          <p>
+            Y al caer la tarde, en la ciudad sagrada de Varanasi, sucede uno de los rituales más conmovedores del planeta. Se llama Ganga Aarti. Cinco brahmanes vestidos con túnicas color azafrán encienden grandes lámparas de bronce y las hacen girar en círculos lentos frente al río Ganges, mientras el aire se llena con el humo del sándalo, los cantos védicos y el sonido de las campanas. La palabra Aarti significa iluminar la oscuridad. Y eso es exactamente lo que ocurre cuando miles de personas dejan flotar pequeñas velas hechas con hojas y caléndulas sobre la corriente para honrar a Maa Ganga, la diosa madre que desciende del cielo para purificar la tierra.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La forma india de despedirse</h2>
+
+          <p>
+            Para el pueblo indio, la muerte no es un final. Es una pausa entre dos canciones. El alma vuelve a nacer una y otra vez hasta alcanzar el moksha, esa palabra hermosa que significa liberación final del ciclo de las reencarnaciones.
+          </p>
+
+          <p>
+            Cuando alguien fallece, su cuerpo se lava con agua perfumada, se unge con aceites sagrados y se envuelve en una tela. La familia lo lleva en procesión hasta los ghats, las escalinatas de piedra que descienden hasta el río Ganges. Allí, sobre una pira de madera, el cuerpo es entregado al fuego. Las llamas no destruyen. Liberan. Le devuelven al alma la libertad de continuar su viaje hacia la próxima existencia.
+          </p>
+
+          <p>
+            Después de la cremación, las cenizas se entregan al río sagrado. Para los hindúes, morir en Varanasi y ser ofrecido al Ganges es la mayor bendición que un ser humano puede recibir. Por eso muchas personas viajan hasta esta ciudad en sus últimos días, esperando que sus restos encuentren el descanso eterno entre las aguas que un día les enseñaron a vivir.
+          </p>
+
+          <p>
+            Durante los trece días siguientes, la familia guarda un período de luto en el que se realizan oraciones diarias y se ofrece comida en honor del difunto. Al treceavo día se celebra una ceremonia que cierra el duelo y devuelve a los vivos a su rutina, pero con la certeza tierna de que el alma del que partió ya está en camino.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los colores sagrados de la India</h2>
 
           <p>
-            La bandera de la India es un mapa de significados. El azafran representa el coraje y el sacrificio. El blanco simboliza la paz y la verdad. El verde encarna la fe y la fertilidad. Y en el centro, el chakra azul marino, la rueda del dharma, recuerda que todo esta en constante movimiento, que nada permanece igual para siempre.
+            La bandera de India se llama Tiranga, que significa tres colores. Cada franja guarda un mensaje sagrado.
           </p>
 
           <p>
-            Pero mas alla de la bandera, los colores en la India tienen un poder que trasciende lo decorativo. El rojo es el color del amor y del matrimonio, pero tambien de la fuerza vital. El amarillo invoca la sabiduria y el aprendizaje. El naranja es el color de los renunciantes, de quienes han decidido soltar las ataduras del mundo material.
-          </p>
-
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El Holi: el festival que celebra el color y la renovacion</h2>
-
-          <p>
-            Cada primavera, la India se cubre de polvos de colores durante el Holi, el festival que celebra el triunfo del bien sobre el mal, de la luz sobre la oscuridad. Durante dos dias, las calles se convierten en lienzos vivientes donde las personas se lanzan gulal, polvo de colores, mientras rien, bailan y se abrazan.
+            El azafrán, ese tono cálido que mezcla el naranja con el dorado, simboliza el coraje, el sacrificio y la búsqueda espiritual. Es el color que visten los sadhus y los monjes. El blanco que ocupa el centro representa la verdad, la paz y la pureza del corazón. El verde habla de la fe, la fertilidad y la prosperidad de la tierra que alimenta a su pueblo.
           </p>
 
           <p>
-            Pero el Holi es mucho mas que una fiesta. Es un ritual de renovacion donde las diferencias sociales se disuelven, donde los enemigos se reconcilian, donde el pasado se suelta para dar paso a un nuevo comienzo. Es una leccion de vida pintada en mil colores.
-          </p>
-
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo en la India: un proceso comunitario</h2>
-
-          <p>
-            En la tradicion hindu, la muerte no es un final sino una transicion. El alma, o atman, continua su viaje hacia una nueva forma de existencia. Por eso, los rituales funerarios estan disenados para facilitar ese transito, para liberar al alma de sus ataduras terrenales.
+            En medio del blanco gira el chakra de Ashoka, una rueda azul con veinticuatro radios que recuerda el dharma, la ley universal que sostiene el orden del mundo. Es el símbolo del movimiento eterno, del avance constante del alma a lo largo de muchas vidas.
           </p>
 
           <p>
-            La cremacion a orillas del Ganges es uno de los rituales mas conocidos. En Varanasi, la ciudad sagrada, las llamas consumen el cuerpo mientras la familia observa y reza. Las cenizas se esparcen en el rio, devolviendo a la naturaleza lo que de ella vino. No hay lapidas ni cementerios. El cuerpo se disuelve, pero el vinculo permanece en el corazon de quienes aman.
+            Pero los colores indios viven mucho más allá de los símbolos nacionales. El rojo aparece en los saris de las novias, en el polvo bermellón que las mujeres casadas llevan en la raya del cabello y en las flores que se ofrecen a los dioses. El amarillo de la cúrcuma cubre la piel de los novios antes del matrimonio como bendición de luz y fertilidad. El blanco se convierte en el color del duelo, vestido por las viudas como señal de renuncia y paz interior.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que India enseña sobre el duelo</h2>
+
+          <p>
+            Aprendí que la muerte deja de ser enemiga cuando se la mira con los ojos del alma. Es un paso, un umbral, una transformación dentro del río inmenso de la existencia.
           </p>
 
           <p>
-            Lo que mas me conmueve de esta tradicion es el papel de la comunidad. El duelo no se vive en soledad. Los vecinos traen comida, los familiares se turnan para acompanar, los rituales se repiten durante trece dias para dar tiempo al alma de completar su transicion. Nadie se queda solo con su dolor.
-          </p>
-
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que la India ensena sobre el duelo</h2>
-
-          <p>
-            Aprendi que soltar no significa olvidar. Significa confiar en que lo que amamos sigue existiendo en otra forma, en otro plano, en otro ritmo del universo.
+            Como tanatóloga, encuentro en la cultura hindú una verdad que acompaño todos los días. El duelo no se vive a solas. Necesita comunidad, ceremonia y tiempo. Necesita rituales que le digan al cuerpo cuándo soltar y al corazón cuándo descansar. India lo entiende profundamente. Por eso ofrece trece días de oración, fuego que transforma, agua que recibe y mantras que acompañan al alma en su tránsito.
           </p>
 
           <p>
-            Como tanatologa, encuentro en la India una sabiduria que a veces olvidamos en Occidente. El duelo necesita comunidad. Necesita rituales que le den forma al dolor. Necesita tiempo, no prisas. Necesita colores que expresen lo que las palabras no alcanzan a decir.
+            También aprendí que despedir no es perder. Es entregar a alguien al cuidado de algo más grande. Cuando una persona deposita una pequeña vela sobre la corriente del Ganges y la mira alejarse, no está diciendo adiós. Está diciendo: confío en que el río te lleve hasta donde tu alma necesita ir.
           </p>
 
           <p>
-            Hay verdades que no se explican. Solo se sienten en el aroma del incienso que sube hacia el cielo, en el sonido de los mantras que acompanan el amanecer, en los mil colores que recuerdan que la vida, incluso cuando duele, sigue siendo sagrada.
+            Hay culturas que te enseñan a vivir. India te enseña a soltar con devoción.
+          </p>
+
+          <p>
+            Hay verdades que no se explican. Solo se sienten en el reflejo de una llama sobre el río al anochecer y en la certeza silenciosa de que cada despedida también es un acto de amor.
           </p>
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">¿Estas atravesando un duelo?</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">¿Estás atravesando un duelo?</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si necesitas acompanamiento desde una mirada calida, cercana y respetuosa de tu propio ritmo, estoy aqui para ti.
+            Si necesitas acompañamiento desde una mirada cálida, cercana y respetuosa de tu propio ritmo, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}
