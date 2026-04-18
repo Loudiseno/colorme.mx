@@ -302,8 +302,8 @@ const ritualesArticles = [
   {
     href: '/blog/malasia-rituales-colores-bandera-tradiciones-duelo',
     image: '/malasia .jpeg',
-    title: 'Malasia: rituales, colores y la sabiduría de despedirse en comunidad',
-    description: 'Descubre los rituales de tres culturas espirituales que conviven en Malasia.',
+    title: 'Malasia, el cruce de tres almas: rituales, colores sagrados y la sabiduría de despedirse en comunidad',
+    description: 'Descubre los rituales de tres culturas espirituales que conviven en Malasia y la forma única en que honran a quienes parten.',
     alt: 'Rituales de Malasia',
   },
   {
@@ -323,15 +323,15 @@ const ritualesArticles = [
   {
     href: '/blog/tailandia-rituales-colores-bandera-duelo-tradiciones',
     image: '/thailand rituals.jpeg',
-    title: 'Tailandia: rituales, colores y la sabiduría de soltar con gratitud',
+    title: 'Tailandia, la tierra de la sonrisa eterna: rituales, colores y la sabiduría de soltar con gratitud',
     description: 'Descubre los rituales tailandeses y la forma serena en que honran la vida y la muerte.',
     alt: 'Rituales de Tailandia',
   },
   {
-    href: '/blog/vietnam-culto-ancestros-altar-familiar-duelo',
+    href: '/blog/vietnam-rituales-colores-bandera-duelo-ancestros',
     image: '/vietnam olores.jpeg',
-    title: 'Vietnam: el altar familiar y el culto a los ancestros',
-    description: 'En Vietnam, la muerte no rompe el vínculo, lo profundiza. Descubre el culto a los ancestros.',
+    title: 'Vietnam, la tierra donde los ancestros nunca se van: rituales, colores y la sabiduría de recordar',
+    description: 'En Vietnam, la muerte no rompe el vínculo, lo profundiza. Descubre el culto a los ancestros y sus rituales.',
     alt: 'Vietnam ancestros',
   },
 ]

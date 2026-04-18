@@ -3,15 +3,15 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Tailandia: Rituales, Colores y la Sabiduria de Soltar con Gratitud',
+  title: 'Tailandia, la tierra de la sonrisa eterna: rituales, colores y la sabiduría de soltar con gratitud',
   description: 'En Tailandia, la espiritualidad se respira en cada gesto. Descubre los rituales tailandeses, sus colores nacionales y la forma serena en que honran la vida y la muerte.',
-  keywords: ['rituales Tailandia', 'espiritualidad budista', 'duelo en Tailandia', 'colores bandera Tailandia', 'templos tailandeses'],
+  keywords: ['rituales Tailandia', 'espiritualidad budista', 'duelo en Tailandia', 'colores bandera Tailandia', 'templos tailandeses', 'tanatología'],
   alternates: {
     canonical: '/blog/tailandia-rituales-colores-bandera-duelo-tradiciones',
   },
   openGraph: {
     type: 'article',
-    title: 'Tailandia: Rituales, Colores y la Sabiduria de Soltar | ColorMe',
+    title: 'Tailandia, la tierra de la sonrisa eterna: rituales, colores y la sabiduría de soltar con gratitud | ColorMe',
     description: 'Descubre los rituales tailandeses y la forma serena en que honran la vida y la muerte.',
     url: '/blog/tailandia-rituales-colores-bandera-duelo-tradiciones',
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Tailandia, la tierra de la sonrisa eterna: rituales, colores y la sabiduria de soltar con gratitud',
+  headline: 'Tailandia, la tierra de la sonrisa eterna: rituales, colores y la sabiduría de soltar con gratitud',
   description: 'Descubre los rituales tailandeses y la forma serena en que honran la vida y la muerte.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
