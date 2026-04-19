@@ -212,15 +212,21 @@ export default function ArteterapiaPage() {
         </div>
       </section>
 
-      {/* Artwork Gallery */}
+      {/* Testimonios Gallery */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
+              <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
+              <h2 className="text-3xl md:text-4xl text-black relative z-10">Testimonios</h2>
+            </div>
+          </div>
           <div className="grid grid-cols-3 gap-6">
             <div className="text-center">
               <div className="rounded-2xl overflow-hidden mb-3">
                 <Image
-                  src="/Ana Gaby Figueroa. 9.04.2026.jpeg"
-                  alt="Obra de Ana Gaby"
+                  src="/anagaby final.jpeg"
+                  alt="Testimonio de Ana Gaby"
                   width={400}
                   height={300}
                   className="w-full h-auto"
@@ -231,8 +237,8 @@ export default function ArteterapiaPage() {
             <div className="text-center">
               <div className="rounded-2xl overflow-hidden mb-3">
                 <Image
-                  src="/Celeste. 09.04.2026.jpeg"
-                  alt="Obra de Celeste"
+                  src="/celeste final.jpeg"
+                  alt="Testimonio de Celeste"
                   width={400}
                   height={300}
                   className="w-full h-auto"
@@ -243,8 +249,8 @@ export default function ArteterapiaPage() {
             <div className="text-center">
               <div className="rounded-2xl overflow-hidden mb-3">
                 <Image
-                  src="/Maria Jose Figueroa.9.04.2026.jpeg"
-                  alt="Obra de Mari"
+                  src="/mari final.jpeg"
+                  alt="Testimonio de Mari"
                   width={400}
                   height={300}
                   className="w-full h-auto"
