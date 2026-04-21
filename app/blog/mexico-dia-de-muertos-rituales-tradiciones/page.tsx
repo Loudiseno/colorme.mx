@@ -27,7 +27,7 @@ export default function MexicoDiaDeMuertosPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/día de muerto.jpeg"
+            src="/dia de muerto.jpeg"
             alt="Día de Muertos en México - Ofrenda y cempasúchil"
             width={800}
             height={450}

@@ -225,7 +225,7 @@ export default function ArteterapiaPage() {
             <div className="text-center">
               <div className="rounded-2xl overflow-hidden mb-3">
                 <Image
-                  src="/Ana Gaby Figueroa. 9.04.2026.jpeg"
+                  src="/anagaby final.jpeg"
                   alt="Testimonio de Ana Gaby"
                   width={400}
                   height={300}
@@ -237,7 +237,7 @@ export default function ArteterapiaPage() {
             <div className="text-center">
               <div className="rounded-2xl overflow-hidden mb-3">
                 <Image
-                  src="/Celeste. 09.04.2026.jpeg"
+                  src="/celeste final.jpeg"
                   alt="Testimonio de Celeste"
                   width={400}
                   height={300}
@@ -249,7 +249,7 @@ export default function ArteterapiaPage() {
             <div className="text-center">
               <div className="rounded-2xl overflow-hidden mb-3">
                 <Image
-                  src="/Maria Jose Figueroa.9.04.2026.jpeg"
+                  src="/mari final.jpeg"
                   alt="Testimonio de Mari"
                   width={400}
                   height={300}
