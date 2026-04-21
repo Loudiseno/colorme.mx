@@ -27,7 +27,7 @@ export default function ArteterapiaAutismoPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/mari final.jpeg"
+            src="/mari-final.jpeg"
             alt="Arteterapia y autismo - Arte como comunicación"
             width={800}
             height={450}
