@@ -4,15 +4,15 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Arteterapia y Autismo: Cuando el Arte Abre Caminos',
-  description: 'La arteterapia ofrece a ninos con autismo un espacio donde pueden comunicarse, regularse y expresarse sin depender exclusivamente del lenguaje verbal.',
-  keywords: ['arteterapia autismo', 'TEA arteterapia', 'terapia arte ninos autismo', 'comunicacion no verbal autismo', 'regulacion emocional autismo'],
+  description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse, regularse y expresarse sin depender exclusivamente del lenguaje verbal.',
+  keywords: ['arteterapia autismo', 'TEA arteterapia', 'terapia arte niños autismo', 'comunicación no verbal autismo', 'regulación emocional autismo'],
   alternates: {
     canonical: '/blog/arteterapia-y-autismo',
   },
   openGraph: {
     type: 'article',
     title: 'Arteterapia y Autismo: Cuando el Arte Abre Caminos | ColorMe',
-    description: 'La arteterapia ofrece a ninos con autismo un espacio donde pueden comunicarse y expresarse.',
+    description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
     url: '/blog/arteterapia-y-autismo',
   },
   robots: {

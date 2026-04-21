@@ -293,6 +293,13 @@ const emocionesArticles = [
 
 const ritualesArticles = [
   {
+    href: '/blog/mexico-dia-de-muertos-rituales-tradiciones',
+    image: '/día de muerto.jpeg',
+    title: 'Día de Muertos en México: la fiesta donde la muerte se celebra con vida',
+    description: 'Descubre la tradición del Día de Muertos, la ofrenda y cómo México celebra la memoria de quienes ya no están.',
+    alt: 'Día de Muertos México',
+  },
+  {
     href: '/blog/india-rituales-colores-bandera-espiritualidad-duelo',
     image: '/ofrendas india.jpeg',
     title: 'India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós',
