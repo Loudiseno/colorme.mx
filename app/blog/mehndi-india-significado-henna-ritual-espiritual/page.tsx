@@ -27,7 +27,7 @@ export default function MehndiIndiaPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/mehndi india.jpeg"
+            src="/mehndi-india.jpeg"
             alt="Mehndi India - Arte sagrado de la henna"
             width={1200}
             height={675}

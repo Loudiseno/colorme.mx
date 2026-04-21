@@ -27,12 +27,12 @@ export default function BaliRitualesPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/melukat bali.jpeg"
+            src="/bali-girl.jpeg"
             alt="Bali - Ritual del Ngaben y espiritualidad balinesa"
-            width={1200}
-            height={675}
+            width={800}
+            height={450}
             priority
-            className="w-full h-auto"
+            className="w-full h-auto object-cover object-top"
           />
         </div>
 

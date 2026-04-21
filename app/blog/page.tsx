@@ -246,10 +246,17 @@ const arteterapiaArticles = [
   },
   {
     href: '/blog/arteterapia-y-autismo',
-    image: '/Arteterapia niños.jpeg',
+    image: '/mari-final.jpeg',
     title: 'Arteterapia y autismo: cuando el arte abre caminos',
     description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
     alt: 'Arteterapia y autismo',
+  },
+  {
+    href: '/blog/diferencia-arteterapia-clase-de-arte',
+    image: '/anagaby-final.jpeg',
+    title: 'Diferencia entre arteterapia y clase de arte',
+    description: 'No es lo mismo crear para aprender que crear para sanar. Descubre las diferencias clave.',
+    alt: 'Diferencia arteterapia y clase de arte',
   },
 ]
 
@@ -294,10 +301,38 @@ const emocionesArticles = [
 const ritualesArticles = [
   {
     href: '/blog/mexico-dia-de-muertos-rituales-tradiciones',
-    image: '/día de muerto.jpeg',
+    image: '/dia-de-muerto.jpeg',
     title: 'Día de Muertos en México: la fiesta donde la muerte se celebra con vida',
     description: 'Descubre la tradición del Día de Muertos, la ofrenda y cómo México celebra la memoria de quienes ya no están.',
     alt: 'Día de Muertos México',
+  },
+  {
+    href: '/blog/grecia-rituales-colores-bandera-duelo-islas-meteora',
+    image: '/grecia-athenas.jpeg',
+    title: 'Grecia, la cuna donde el mar guarda la memoria del alma',
+    description: 'Descubre los rituales griegos, los monasterios de Meteora y la forma griega de honrar la vida y la muerte.',
+    alt: 'Rituales de Grecia',
+  },
+  {
+    href: '/blog/cuba-rituales-colores-bandera-duelo-tradiciones',
+    image: '/cuban-flag.jpeg',
+    title: 'Cuba, la isla donde la muerte baila al son de la vida',
+    description: 'Descubre los rituales cubanos, la santería y la forma profunda en que su pueblo celebra la vida.',
+    alt: 'Rituales de Cuba',
+  },
+  {
+    href: '/blog/turquia-rituales-colores-bandera-duelo-tradiciones',
+    image: '/turquia.jpeg',
+    title: 'Turquía, la tierra donde oriente y occidente rezan juntos',
+    description: 'Descubre los rituales turcos, el ojo turco y la forma profunda en que el pueblo turco honra la vida.',
+    alt: 'Rituales de Turquía',
+  },
+  {
+    href: '/blog/italia-rituales-colores-bandera-duelo-tradiciones',
+    image: '/lucca.jpeg',
+    title: 'Italia, la tierra donde la belleza es una forma de rezar',
+    description: 'Descubre los rituales italianos y la forma profunda en que su pueblo vive la espiritualidad y la despedida.',
+    alt: 'Rituales de Italia',
   },
   {
     href: '/blog/india-rituales-colores-bandera-espiritualidad-duelo',
@@ -307,11 +342,25 @@ const ritualesArticles = [
     alt: 'Rituales de India',
   },
   {
+    href: '/blog/mehndi-india-significado-henna-ritual-espiritual',
+    image: '/mehndi-india.jpeg',
+    title: 'Mehndi, el arte sagrado de la India donde la piel se convierte en oración',
+    description: 'Descubre el arte ancestral de la henna en India, sus colores, sus aromas y su profundo significado espiritual.',
+    alt: 'Mehndi India',
+  },
+  {
     href: '/blog/bali-ritual-ngaben-colores-del-alma',
-    image: '/melukat bali.jpeg',
+    image: '/bali-girl.jpeg',
     title: 'Bali, la isla donde la muerte se celebra: el ritual del Ngaben y los colores del alma',
     description: 'Bali enseña que la muerte no se llora, se libera. Descubre el ritual del Ngaben y los colores sagrados.',
     alt: 'Rituales de Bali',
+  },
+  {
+    href: '/blog/melukat-ceremonia-purificacion-bali-agua-sagrada',
+    image: '/melukat-bali.jpeg',
+    title: 'Melukat, la ceremonia balinesa donde el agua limpia el dolor del alma',
+    description: 'Descubre cómo el ritual de purificación Melukat libera el dolor y devuelve al alma su claridad original.',
+    alt: 'Melukat Bali',
   },
   {
     href: '/blog/malasia-rituales-colores-bandera-tradiciones-duelo',

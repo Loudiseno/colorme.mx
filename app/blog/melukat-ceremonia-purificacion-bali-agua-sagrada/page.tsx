@@ -27,7 +27,7 @@ export default function MelukatBaliPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/melukat bali.jpeg"
+            src="/melukat-bali.jpeg"
             alt="Ceremonia Melukat en Bali - Purificacion con agua sagrada"
             width={1200}
             height={675}
