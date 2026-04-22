@@ -4,8 +4,9 @@ import { siteConfig } from '@/lib/seo'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
 
-  // All blog articles
+  // All blog articles - updated list
   const blogArticles = [
+    // Tanatología
     'duelo-perdida',
     'cuanto-dura-el-duelo',
     'duelo-complicado',
@@ -31,27 +32,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'que-decir-duelo',
     'rituales-despedida',
     'superar-perdida-ser-querido',
+    // Arteterapia
     'que-es-la-arteterapia-beneficios',
     'arteterapia-cancer',
+    'arteterapia-para-ninos',
+    'arteterapia-para-la-ansiedad',
     'ejercicios-arteterapia',
     'beneficios-arte',
     'mandalas-terapeuticos',
     'arte-trauma',
-    'arteterapia-para-ninos',
-    'arteterapia-para-la-ansiedad',
     'diferencia-psicologia-arteterapia',
+    'arteterapia-y-autismo',
+    'diferencia-arteterapia-clase-de-arte',
+    // Emociones
     'tristeza-como-maestra',
     'verguenza-duelo',
     'por-que-no-puedo-llorar',
     'duelo-y-culpa',
     'perder-la-fe',
+    // Rituales del mundo
+    'mexico-dia-de-muertos-rituales-tradiciones',
+    'grecia-rituales-colores-bandera-duelo-islas-meteora',
+    'cuba-rituales-colores-bandera-duelo-tradiciones',
+    'turquia-rituales-colores-bandera-duelo-tradiciones',
+    'italia-rituales-colores-bandera-duelo-tradiciones',
     'india-rituales-colores-bandera-espiritualidad-duelo',
-    'malasia-rituales-colores-bandera-tradiciones-duelo',
     'mehndi-india-significado-henna-ritual-espiritual',
+    'bali-ritual-ngaben-colores-del-alma',
     'melukat-ceremonia-purificacion-bali-agua-sagrada',
+    'malasia-rituales-colores-bandera-tradiciones-duelo',
     'tailandia-rituales-colores-bandera-duelo-tradiciones',
-    'vietnam-culto-ancestros-altar-familiar-duelo',
-    'arteterapia-y-autismo',
+    'vietnam-rituales-colores-bandera-duelo-ancestros',
   ]
 
   // Core pages
@@ -75,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/sobre-mi`,
+      url: `${baseUrl}/sobre-mi-lou-arteterapeuta-tanatologa`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -93,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/privacidad`,
+      url: `${baseUrl}/politica-de-privacidad`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
