@@ -60,9 +60,19 @@ const emocionesArticles: Article[] = [
   { href: '/blog/perder-la-fe', image: '/perder-la-fe.webp', alt: 'Perder la fe', title: 'Perder la fe', description: 'Cuando el duelo sacude nuestras creencias.' },
 ]
 
+const ritualesArticles: Article[] = [
+  { href: '/blog/mexico-dia-de-muertos-rituales-tradiciones', image: '/día de muerto.jpeg', alt: 'Día de Muertos México', title: 'Día de Muertos en México', description: 'La fiesta donde la muerte se celebra con vida.' },
+  { href: '/blog/india-rituales-colores-bandera-espiritualidad-duelo', image: '/ofrendas india.jpeg', alt: 'Rituales de India', title: 'India: rituales y colores sagrados', description: 'El país donde el alma camina descalza.' },
+  { href: '/blog/bali-ritual-ngaben-colores-del-alma', image: '/melukat bali.jpeg', alt: 'Rituales de Bali', title: 'Bali: el ritual del Ngaben', description: 'La isla donde la muerte se celebra.' },
+  { href: '/blog/grecia-rituales-colores-bandera-duelo-islas-meteora', image: '/grecia athenas.jpeg', alt: 'Rituales de Grecia', title: 'Grecia: rituales y colores sagrados', description: 'La cuna de la filosofía ante la muerte.' },
+  { href: '/blog/cuba-rituales-colores-bandera-duelo-tradiciones', image: '/cuban flag.jpeg', alt: 'Rituales de Cuba', title: 'Cuba: rituales y colores sagrados', description: 'Donde la muerte baila al son del tambor.' },
+  { href: '/blog/turquia-rituales-colores-bandera-duelo-tradiciones', image: '/turquia.jpeg', alt: 'Rituales de Turquía', title: 'Turquía: rituales y colores sagrados', description: 'Donde oriente y occidente rezan juntos.' },
+  { href: '/blog/italia-rituales-colores-bandera-duelo-tradiciones', image: '/lucca.jpeg', alt: 'Rituales de Italia', title: 'Italia: rituales y colores sagrados', description: 'Donde la belleza es una forma de rezar.' },
+]
+
 interface RelatedArticlesProps {
   currentSlug: string
-  category: 'tanatologia' | 'arteterapia' | 'emociones'
+  category: 'tanatologia' | 'arteterapia' | 'emociones' | 'rituales'
 }
 
 export default function RelatedArticles({ currentSlug, category }: RelatedArticlesProps) {
@@ -70,6 +80,7 @@ export default function RelatedArticles({ currentSlug, category }: RelatedArticl
     tanatologia: tanatologiaArticles,
     arteterapia: arteterapiaArticles,
     emociones: emocionesArticles,
+    rituales: ritualesArticles,
   }
 
   const categoryArticles = allArticles[category] || tanatologiaArticles
