@@ -251,6 +251,13 @@ const arteterapiaArticles = [
     description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
     alt: 'Arteterapia y autismo',
   },
+  {
+    href: '/blog/diferencia-arteterapia-clase-de-arte',
+    image: '/anagaby-final.jpeg',
+    title: 'Diferencia entre arteterapia y clase de arte',
+    description: 'No es lo mismo crear para aprender que crear para sanar. Conoce las diferencias clave.',
+    alt: 'Diferencia arteterapia y clase de arte',
+  },
 ]
 
 const emocionesArticles = [
@@ -333,6 +340,34 @@ const ritualesArticles = [
     title: 'Vietnam, la tierra donde los ancestros nunca se van: rituales, colores y la sabiduría de recordar',
     description: 'En Vietnam, la muerte no rompe el vínculo, lo profundiza. Descubre el culto a los ancestros.',
     alt: 'Vietnam ancestros',
+  },
+  {
+    href: '/blog/grecia-rituales-colores-bandera-duelo-islas-meteora',
+    image: '/grecia athenas.jpeg',
+    title: 'Grecia, la cuna de la filosofía ante la muerte: rituales, colores sagrados y la sabiduría del adiós',
+    description: 'Descubre los rituales griegos de duelo, el significado de los colores de su bandera y cómo Grecia honra a sus difuntos.',
+    alt: 'Rituales de Grecia',
+  },
+  {
+    href: '/blog/cuba-rituales-colores-bandera-duelo-tradiciones',
+    image: '/cuban flag.jpeg',
+    title: 'Cuba, la isla donde la muerte baila al son del tambor: rituales, colores y la sabiduría del adiós',
+    description: 'Descubre los rituales cubanos de duelo, la santería, los colores de su bandera y cómo Cuba honra a sus difuntos.',
+    alt: 'Rituales de Cuba',
+  },
+  {
+    href: '/blog/turquia-rituales-colores-bandera-duelo-tradiciones',
+    image: '/turquia.jpeg',
+    title: 'Turquía, la tierra donde oriente y occidente rezan juntos: rituales, colores y la sabiduría del adiós',
+    description: 'Descubre los rituales turcos de duelo, los derviches giróvagos y cómo Turquía honra a sus difuntos.',
+    alt: 'Rituales de Turquía',
+  },
+  {
+    href: '/blog/italia-rituales-colores-bandera-duelo-tradiciones',
+    image: '/lucca.jpeg',
+    title: 'Italia, la tierra donde la belleza es una forma de rezar: rituales, colores y la sabiduría del duelo',
+    description: 'Descubre los rituales italianos de duelo, el significado de los colores de su bandera y cómo Italia honra a sus difuntos.',
+    alt: 'Rituales de Italia',
   },
 ]
 
