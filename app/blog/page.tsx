@@ -246,7 +246,7 @@ const arteterapiaArticles = [
   },
   {
     href: '/blog/arteterapia-y-autismo',
-    image: '/Arteterapia niños.jpeg',
+    image: '/mari-final.jpeg',
     title: 'Arteterapia y autismo: cuando el arte abre caminos',
     description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
     alt: 'Arteterapia y autismo',
