@@ -14,7 +14,7 @@ export const faqs = [
   {
     question: '¿Qué duración tienen las sesiones?',
     answer:
-      'La primera sesión de orientación es gratuita y dura 15 minutos. Las sesiones individuales regulares tienen una duración de 50 minutos. Para sesiones grupales o talleres, la duración se define según los objetivos específicos del grupo.',
+      'La primera sesión de orientación es gratuita y dura 30 minutos. Las sesiones individuales regulares tienen una duración de 50 minutos. Para sesiones grupales o talleres, la duración se define según los objetivos específicos del grupo.',
   },
   {
     question: '¿Tengo que elegir entre arteterapia o tanatología?',
@@ -34,7 +34,7 @@ export const faqs = [
   {
     question: '¿Cómo puedo agendar una sesión?',
     answer:
-      'Puedes agendar tu primera consulta gratuita directamente desde esta página usando el botón de agenda, que te llevará a un calendario donde podrás elegir el horario que mejor te convenga. También puedes escribirme por correo electrónico o a través del formulario de contacto.',
+      'Puedes agendar tu primera consulta gratuita directamente desde esta página usando el botón de agenda, que te llevará a un calendario donde podrás elegir el horario que mejor te convenga. También puedes escribirme por correo electrónico, WhatsApp o a través del formulario de contacto.',
   },
   {
     question: '¿Este acompañamiento es un tratamiento clínico o de diagnóstico?',

@@ -33,8 +33,8 @@ export default function QueDecirDueloPage() {
           <Image
             src="/como-acompanar-duelo.webp"
             alt="Cómo acompañar a alguien en duelo"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

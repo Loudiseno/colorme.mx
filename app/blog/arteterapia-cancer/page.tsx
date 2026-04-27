@@ -33,8 +33,8 @@ export default function ArticuloArteterapiaCancer() {
           <Image
             src="/cancer-y-arteterapia.webp"
             alt="Grupo de arteterapia trabajando juntos"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

@@ -61,7 +61,7 @@ const emocionesArticles: Article[] = [
 ]
 
 const ritualesArticles: Article[] = [
-  { href: '/blog/mexico-dia-de-muertos-rituales-tradiciones', image: '/día de muerto.jpeg', alt: 'Día de Muertos México', title: 'Día de Muertos en México', description: 'La fiesta donde la muerte se celebra con vida.' },
+  { href: '/blog/mexico-dia-de-muertos-rituales-tradiciones', image: '/dia-de-muerto.jpeg', alt: 'Día de Muertos México', title: 'Día de Muertos en México', description: 'La fiesta donde la muerte se celebra con vida.' },
   { href: '/blog/india-rituales-colores-bandera-espiritualidad-duelo', image: '/ofrendas india.jpeg', alt: 'Rituales de India', title: 'India: rituales y colores sagrados', description: 'El país donde el alma camina descalza.' },
   { href: '/blog/bali-ritual-ngaben-colores-del-alma', image: '/melukat bali.jpeg', alt: 'Rituales de Bali', title: 'Bali: el ritual del Ngaben', description: 'La isla donde la muerte se celebra.' },
   { href: '/blog/grecia-rituales-colores-bandera-duelo-islas-meteora', image: '/grecia athenas.jpeg', alt: 'Rituales de Grecia', title: 'Grecia: rituales y colores sagrados', description: 'La cuna de la filosofía ante la muerte.' },

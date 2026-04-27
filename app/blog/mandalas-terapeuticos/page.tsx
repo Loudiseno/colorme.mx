@@ -30,8 +30,8 @@ export default function ArticuloMandalasTerapeuticos() {
           <Image
             src="/mandalas-terapeuticos.webp"
             alt="Mandalas terapéuticos para la salud mental y el bienestar."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

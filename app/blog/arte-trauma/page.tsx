@@ -30,8 +30,8 @@ export default function ArticuloArteTrauma() {
           <Image
             src="/arte-y-trauma.webp"
             alt="Arte y trauma - El proceso creativo como herramienta de sanación."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

@@ -33,8 +33,8 @@ export default function ArticuloDueloMascota() {
           <Image
             src="/duelo-por-mascota.webp"
             alt="Duelo por mascota - Tu dolor es válido"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

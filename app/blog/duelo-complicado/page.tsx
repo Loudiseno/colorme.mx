@@ -30,8 +30,8 @@ export default function ArticuloDueloComplicado() {
           <Image
             src="/duelo-complicado.webp"
             alt="Duelo complicado - Cuándo el duelo necesita atención profesional."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

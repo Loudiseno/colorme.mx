@@ -33,8 +33,8 @@ export default function ArticuloQueEsUnTanatologo() {
           <Image
             src="/que-es-un-tanatologo.webp"
             alt="Qué es un tanatólogo - Acompañamiento profesional en el duelo"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

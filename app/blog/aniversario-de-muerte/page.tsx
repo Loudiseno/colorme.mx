@@ -27,7 +27,7 @@ export default function ArticuloAniversarioDeMuerte() {
 
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/aniversario muerte.jpeg" alt="Vela encendida en memoria de un ser querido fallecido" width={1200} height={675} className="w-full h-auto" />
+          <Image src="/aniversario muerte.jpeg" alt="Vela encendida en memoria de un ser querido fallecido" width={600} height={400} className="w-full h-auto" />
         </div>
 
         {/* Content */}

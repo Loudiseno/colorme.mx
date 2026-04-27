@@ -33,8 +33,8 @@ export default function ExplicarMuerteNinoPage() {
           <Image
             src="/explicar-muerte-nino.webp"
             alt="Cómo explicar la muerte a un niño - Guía para padres"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

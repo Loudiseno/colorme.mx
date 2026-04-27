@@ -30,8 +30,8 @@ export default function ArticuloBeneficiosArte() {
           <Image
             src="/beneficios-del-arte.webp"
             alt="Beneficios del arte para la salud mental y el bienestar."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

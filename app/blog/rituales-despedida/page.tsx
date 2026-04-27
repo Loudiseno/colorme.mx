@@ -30,8 +30,8 @@ export default function ArticuloRitualesDespedida() {
           <Image
             src="/rituales-despedida.webp"
             alt="Rituales de despedida - Cómo crear el tuyo."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

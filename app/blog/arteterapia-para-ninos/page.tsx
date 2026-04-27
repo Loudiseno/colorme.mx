@@ -33,8 +33,8 @@ export default function ArticuloArteterapiaNinos() {
           <Image
             src="/arteterapia-ninos.webp"
             alt="Arteterapia para niños - Expresión emocional a través del arte"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />
