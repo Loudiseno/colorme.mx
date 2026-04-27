@@ -29,8 +29,8 @@ export default function MelukatBaliPage() {
           <Image
             src="/melukat bali.jpeg"
             alt="Ceremonia Melukat en Bali - Purificacion con agua sagrada"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

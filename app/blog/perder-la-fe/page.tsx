@@ -30,8 +30,8 @@ export default function ArticuloPerderLaFe() {
           <Image
             src="/perder-la-fe.webp"
             alt="Duelo espiritual, perdida de fe, crisis existencial, duelo religioso, dejar de creer."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

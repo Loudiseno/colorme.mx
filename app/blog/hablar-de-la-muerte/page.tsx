@@ -30,8 +30,8 @@ export default function ArticuloHablarDeLaMuerte() {
           <Image
             src="/hablar-de-la-muerte.webp"
             alt="Hablar de la muerte, tabu de la muerte, miedo a morir, conversaciones sobre muerte."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

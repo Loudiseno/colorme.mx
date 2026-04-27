@@ -30,8 +30,8 @@ export default function ArticuloDueloAnticipado() {
           <Image
             src="/duelo-anticipado.webp"
             alt="Duelo anticipado - Acompañamiento antes de la pérdida."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

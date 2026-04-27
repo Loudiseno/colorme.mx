@@ -33,8 +33,8 @@ export default function ArticuloArteterapiaAnsiedad() {
           <Image
             src="/arteterapia-ansiedad.webp"
             alt="Arteterapia para la ansiedad - Expresión a través del arte"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

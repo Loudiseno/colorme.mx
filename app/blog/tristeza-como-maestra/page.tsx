@@ -30,8 +30,8 @@ export default function ArticuloTristezaComoMaestra() {
           <Image
             src="/tristeza.webp"
             alt="Tristeza emocional, procesar tristeza, emociones dificiles, inteligencia emocional."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

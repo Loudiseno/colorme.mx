@@ -30,8 +30,8 @@ export default function ArticuloSindromeCuidador() {
           <Image
             src="/sindrome-cuidador.webp"
             alt="Sindrome del cuidador, burnout cuidador, agotamiento cuidador primario, autocuidado."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

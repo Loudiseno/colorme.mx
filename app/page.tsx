@@ -4,7 +4,6 @@ import Script from 'next/script'
 import Image from 'next/image'
 import { ArrowRight, Calendar } from 'lucide-react'
 import { siteConfig, generateBookSchema } from '@/lib/seo'
-import FAQ from '@/components/FAQ'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
 import BlogSection from '@/components/BlogSection'
@@ -326,8 +325,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <FAQ />
+      {/* FAQ Link */}
+      <section className="py-10 md:py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-4xl md:text-5xl text-black mb-4">
+            ¿Tienes dudas?
+          </h2>
+          <p className="text-black/70 mb-8">
+            Consulta las respuestas a las preguntas más comunes sobre las sesiones.
+          </p>
+          <Link
+            href="/preguntas-frecuentes"
+            className="bg-[#B2F7EF] text-black px-8 py-3 rounded-full text-base font-medium hover:bg-[#B2F7EF]/80 transition-all inline-flex items-center gap-2"
+          >
+            Preguntas frecuentes
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
     </>
   )
 }

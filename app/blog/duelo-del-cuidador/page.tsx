@@ -24,7 +24,7 @@ export default function ArticuloDueloDelCuidador() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/duelo del cuidador.jpeg" alt="Duelo del cuidador" width={1200} height={675} className="w-full h-auto" />
+          <Image src="/duelo del cuidador.jpeg" alt="Duelo del cuidador" width={600} height={400} className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">

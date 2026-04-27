@@ -29,8 +29,8 @@ export default function VietnamRitualesPage() {
           <Image
             src="/vietnam olores.jpeg"
             alt="Vietnam - Rituales y culto a los ancestros"
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />

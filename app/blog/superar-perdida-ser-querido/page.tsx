@@ -30,8 +30,8 @@ export default function ArticuloSuperarPerdida() {
           <Image
             src="/como-superar-perdida.webp"
             alt="Cómo superar la pérdida de un ser querido - Herramientas para el duelo."
-            width={1200}
-            height={675}
+            width={600}
+            height={400}
             priority
             className="w-full h-auto"
           />
