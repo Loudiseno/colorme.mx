@@ -24,7 +24,7 @@ export default function ArticuloDueloYCulpa() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/duelo-y-culpa.jpeg" alt="Duelo y culpa" width={600} height={400} className="w-full h-auto" />
+          <Image src="/duelo-y-culpa.jpeg" alt="Duelo y culpa" width={300} height={200} className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">

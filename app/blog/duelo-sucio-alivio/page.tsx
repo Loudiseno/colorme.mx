@@ -30,8 +30,8 @@ export default function ArticuloDueloSucio() {
           <Image
             src="/duelo-sucio-alivio.webp"
             alt="Duelo sucio - El alivio en el duelo es válido."
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

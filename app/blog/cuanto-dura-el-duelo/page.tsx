@@ -30,8 +30,8 @@ export default function ArticuloCuantoDuraElDuelo() {
           <Image
             src="/cuanto-dura-el-duelo.webp"
             alt="¿Cuánto dura el duelo? - La verdad sobre la duración del proceso de duelo."
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

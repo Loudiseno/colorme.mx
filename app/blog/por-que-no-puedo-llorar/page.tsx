@@ -30,8 +30,8 @@ export default function ArticuloPorQueNoPuedoLlorar() {
           <Image
             src="/porque-no-puedo-llorar.webp"
             alt="Por qué no puedo llorar en el duelo."
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

@@ -30,8 +30,8 @@ export default function DiferenciaArteterapiaPage() {
           <Image
             src="/anagaby-final.jpeg"
             alt="Diferencia entre arteterapia y clase de arte"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

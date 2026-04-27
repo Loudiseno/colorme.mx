@@ -30,8 +30,8 @@ export default function ItaliaRitualesPage() {
           <Image
             src="/lucca.jpeg"
             alt="Italia - Rituales y tradiciones italianas"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

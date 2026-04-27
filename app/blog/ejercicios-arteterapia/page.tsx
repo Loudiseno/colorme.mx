@@ -30,8 +30,8 @@ export default function ArticuloEjerciciosArteterapia() {
           <Image
             src="/ejercicios-arteterapia.webp"
             alt="Ejercicios de arteterapia para hacer en casa."
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

@@ -29,8 +29,8 @@ export default function ArteterapiaAutismoPage() {
           <Image
             src="/mari-final.jpeg"
             alt="Arteterapia y autismo - Arte como comunicación"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />
