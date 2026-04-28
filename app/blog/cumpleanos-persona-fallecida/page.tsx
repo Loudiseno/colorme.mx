@@ -27,7 +27,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
 
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/cumpleanos persona fallecida.jpeg" alt="Cumpleaños de persona fallecida" width={600} height={400} className="w-full h-auto" />
+          <Image src="/cumpleanos persona fallecida.jpeg" alt="Cumpleaños de persona fallecida" width={300} height={200} className="w-full h-auto" />
         </div>
 
         {/* Content */}

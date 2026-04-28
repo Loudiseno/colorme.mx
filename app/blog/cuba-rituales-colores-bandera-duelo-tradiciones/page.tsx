@@ -30,8 +30,8 @@ export default function CubaRitualesPage() {
           <Image
             src="/cuban flag.jpeg"
             alt="Cuba - Rituales y tradiciones cubanas"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

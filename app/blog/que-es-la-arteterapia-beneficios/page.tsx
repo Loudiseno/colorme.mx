@@ -33,8 +33,8 @@ export default function ArticuloArteterapia() {
           <Image
             src="/arteterapia.webp"
             alt="Manos de niño con pintura de colores - Arteterapia"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

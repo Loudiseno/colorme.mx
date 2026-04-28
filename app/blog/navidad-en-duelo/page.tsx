@@ -27,7 +27,7 @@ export default function ArticuloNavidadEnDuelo() {
 
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/navidad en duelo.jpeg" alt="Navidad en duelo" width={600} height={400} className="w-full h-auto" />
+          <Image src="/navidad en duelo.jpeg" alt="Navidad en duelo" width={300} height={200} className="w-full h-auto" />
         </div>
 
         {/* Content */}

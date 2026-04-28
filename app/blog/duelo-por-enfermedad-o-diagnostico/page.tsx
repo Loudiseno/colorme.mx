@@ -33,8 +33,8 @@ export default function ArticuloDueloEnfermedad() {
           <Image
             src="/hombre-en-duelo.webp"
             alt="Hombre atravesando un proceso de duelo por enfermedad"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

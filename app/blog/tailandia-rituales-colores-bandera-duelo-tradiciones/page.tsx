@@ -30,8 +30,8 @@ export default function TailandiaRitualesPage() {
           <Image
             src="/thailand rituals.jpeg"
             alt="Rituales de Tailandia - Templos y espiritualidad budista"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

@@ -33,8 +33,8 @@ export default function ArticuloDueloPerdida() {
           <Image
             src="/el-duelo.webp"
             alt="Persona procesando el duelo en soledad"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

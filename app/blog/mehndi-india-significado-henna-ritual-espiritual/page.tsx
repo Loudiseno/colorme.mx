@@ -29,8 +29,8 @@ export default function MehndiIndiaPage() {
           <Image
             src="/mehndi india.jpeg"
             alt="Mehndi India - Arte sagrado de la henna"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

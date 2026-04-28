@@ -30,8 +30,8 @@ export default function ArticuloVerguenzaDuelo() {
           <Image
             src="/verguenza-duelo.webp"
             alt="Verguenza emocional, duelo silenciado, emociones ocultas, miedo al juicio."
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

@@ -33,8 +33,8 @@ export default function DueloPerinatallPage() {
           <Image
             src="/duelo-perinatal.webp"
             alt="Duelo perinatal - Acompañamiento en la pérdida de un bebé"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

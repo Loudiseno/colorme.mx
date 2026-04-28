@@ -30,8 +30,8 @@ export default function ArticuloMuerteMama() {
           <Image
             src="/duelo-muerte-mama.webp"
             alt="Cómo atravesar la muerte de tu mamá - Una guía honesta."
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

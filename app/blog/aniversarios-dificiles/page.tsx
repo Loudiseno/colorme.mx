@@ -30,8 +30,8 @@ export default function ArticuloAniversariosDificiles() {
           <Image
             src="/aniversarios-dificiles.webp"
             alt="Aniversarios difíciles - Cómo atravesar las fechas dolorosas."
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />

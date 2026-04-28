@@ -30,8 +30,8 @@ export default function GreciaRitualesPage() {
           <Image
             src="/grecia athenas.jpeg"
             alt="Grecia - Rituales y espiritualidad griega"
-            width={600}
-            height={400}
+            width={300}
+            height={200}
             priority
             className="w-full h-auto"
           />
