@@ -182,6 +182,55 @@ const tanatologiaArticles = [
     description: 'El camino hacia la sanación después de una pérdida.',
     alt: 'Superar pérdida',
   },
+  {
+    href: '/blog/como-acompanar-cancer-terminal',
+    image: '/como-acompanar-cancer-terminal.jpeg',
+    title: 'Cómo acompañar a alguien con cáncer terminal',
+    description: 'Guía para acompañar a un ser querido con cáncer terminal.',
+    alt: 'Acompañar cáncer terminal',
+  },
+  {
+    href: '/blog/como-hablar-con-hijos-sobre-cancer',
+    image: '/como-hablar-con-hijos-sobre-cancer.jpeg',
+    title: 'Cómo hablar con tus hijos sobre el cáncer',
+    description: 'Guía para comunicar un diagnóstico de cáncer a los hijos.',
+    alt: 'Hablar con hijos sobre cáncer',
+  },
+  {
+    href: '/blog/duelo-amistad-perdida',
+    image: '/duelo amistad perdida.jpeg',
+    title: 'Duelo por la pérdida de una amistad',
+    description: 'El duelo por perder una amistad es real y merece ser honrado.',
+    alt: 'Duelo por amistad',
+  },
+  {
+    href: '/blog/duelo-migratorio',
+    image: '/duelo migratorio .jpeg',
+    title: 'Duelo migratorio: cuando dejas tu país',
+    description: 'El proceso de adaptación a una nueva vida mientras extrañas lo que dejaste.',
+    alt: 'Duelo migratorio',
+  },
+  {
+    href: '/blog/duelo-por-tu-cuerpo',
+    image: '/duelo por tu cuerpo.jpeg',
+    title: 'Duelo por tu cuerpo: cuando ya no es el mismo',
+    description: 'Guía para procesar los cambios en tu cuerpo.',
+    alt: 'Duelo por el cuerpo',
+  },
+  {
+    href: '/blog/hermanos-de-ninos-enfermos',
+    image: '/hermanos de ninos enfermos.jpeg',
+    title: 'Hermanos de niños enfermos: los olvidados',
+    description: 'Los hermanos de niños con enfermedades graves también sufren.',
+    alt: 'Hermanos de niños enfermos',
+  },
+  {
+    href: '/blog/siete-etapas-del-duelo',
+    image: '/siete etapas del duelo.jpeg',
+    title: 'Las 7 etapas del duelo: mito y realidad',
+    description: 'Todo lo que necesitas saber sobre las etapas del duelo.',
+    alt: 'Etapas del duelo',
+  },
 ]
 
 const arteterapiaArticles = [
@@ -299,6 +348,13 @@ const emocionesArticles = [
     title: 'Cuando pierdes la fe: el duelo espiritual',
     description: 'Dejar de creer también es una pérdida. Guía para atravesar el duelo espiritual.',
     alt: 'Perder la fe',
+  },
+  {
+    href: '/blog/miedo-a-cumplir-anos',
+    image: '/miedo a cumplir años.jpeg',
+    title: 'Miedo a cumplir años: cuando los cumpleaños duelen',
+    description: 'El miedo a envejecer y la angustia de los cumpleaños.',
+    alt: 'Miedo a cumplir años',
   },
 ]
 
