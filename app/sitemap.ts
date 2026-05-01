@@ -59,6 +59,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'italia-rituales-colores-bandera-duelo-tradiciones',
     'mehndi-india-significado-henna-ritual-espiritual',
     'melukat-ceremonia-purificacion-bali-agua-sagrada',
+    'como-acompanar-cancer-terminal',
+    'como-hablar-con-hijos-sobre-cancer',
+    'duelo-amistad-perdida',
+    'duelo-migratorio',
+    'duelo-por-tu-cuerpo',
+    'hermanos-de-ninos-enfermos',
+    'miedo-a-cumplir-anos',
+    'siete-etapas-del-duelo',
   ]
 
   // Core pages
