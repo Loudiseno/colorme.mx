@@ -164,7 +164,6 @@ export default function MiedoCumplirAnosPage() {
             Esto no significa que tengas que sentirte feliz por cumplir años. Pero quizás puedas encontrar una forma de estar con ese día que no sea puro sufrimiento.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cierre</h2>
 
           <p>
             El miedo a cumplir años es más común de lo que se habla. Detrás de él suelen esconderse duelos, miedos y presiones que merecen ser mirados con cuidado.

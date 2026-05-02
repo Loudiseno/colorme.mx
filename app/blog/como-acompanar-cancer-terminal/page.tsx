@@ -198,7 +198,6 @@ export default function ComoAcompanarCancerTerminalPage() {
             Mantén algo de tu vida. Sigue haciendo algunas cosas que te dan bienestar. No tienes que suspender tu vida por completo para ser un buen acompañante.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cierre</h2>
 
           <p>
             Acompañar a alguien con cáncer terminal es uno de los actos de amor más difíciles. No hay manual, no hay palabras perfectas, no hay forma de hacerlo sin dolor.

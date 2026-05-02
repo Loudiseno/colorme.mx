@@ -164,7 +164,6 @@ export default function HermanosDeNinosEnfermosPage() {
             Y si eres uno de esos adultos en la vida de una familia con un niño enfermo, considera acercarte a los hermanos. Preguntarles cómo están. Llevarlos a hacer algo divertido. Ser un espacio donde puedan hablar de lo que sienten. Ese apoyo puede marcar la diferencia.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cierre</h2>
 
           <p>
             Los hermanos de niños enfermos viven un duelo que pocas veces se nombra. Pierden la atención, la rutina, la normalidad, la relación con su hermano como la conocían. Y muchas veces lo viven en silencio, sintiéndose culpables por tener necesidades cuando "ellos no son los enfermos".

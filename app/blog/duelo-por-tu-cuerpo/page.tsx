@@ -182,7 +182,6 @@ export default function DueloPorTuCuerpoPage() {
             <strong>Integrar la pérdida en tu historia.</strong> El cuerpo que tenías antes fue parte de ti. El cuerpo que tienes ahora también es parte de ti. Tu historia incluye ambos.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cierre</h2>
 
           <p>
             Perder una versión de tu cuerpo es un duelo real. No importa si otros no lo entienden, no importa si se supone que deberías "adaptarte", no importa si el cambio era "esperado" o "por tu bien".

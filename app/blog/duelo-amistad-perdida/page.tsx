@@ -186,7 +186,6 @@ export default function DueloAmistadPerdidaPage() {
             Y también es posible que algunas amistades vuelvan. Que el tiempo y la vida los reencuentre. No hay garantía, pero tampoco es imposible. Lo que sí puedes hacer ahora es atravesar este duelo con la honestidad que merece.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cierre</h2>
 
           <p>
             El duelo por una amistad perdida es un duelo real. No importa que no haya muerto nadie, no importa que otros no lo entiendan, no importa que no haya rituales para marcarlo. Perdiste a alguien importante y eso duele.

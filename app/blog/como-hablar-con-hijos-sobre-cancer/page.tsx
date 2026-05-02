@@ -186,7 +186,6 @@ export default function ComoHablarConHijosSobreCancerPage() {
             Y busca apoyo para ti también. Acompañar a tus hijos en esto mientras tú mismo estás procesando la enfermedad de alguien que amas es agotador. Necesitas tu propio espacio para sentir y procesar.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cierre</h2>
 
           <p>
             Hablar con tus hijos sobre el cáncer es difícil. No hay palabras perfectas ni forma de evitarles el dolor de lo que está pasando.

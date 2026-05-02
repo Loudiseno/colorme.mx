@@ -190,7 +190,6 @@ export default function DueloMigratorioPage() {
             <strong>Buscar acompañamiento si lo necesitas.</strong> Si el duelo se siente demasiado pesado, si interfiere con tu vida, si sientes que no puedes solo, buscar ayuda profesional no es debilidad. Es cuidarte.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cierre</h2>
 
           <p>
             El duelo migratorio es real, es profundo, y muchas veces es invisible. Migrar implica pérdidas que van mucho más allá de dejar un lugar geográfico. Implica dejar personas, costumbres, certezas, una versión de ti mismo.

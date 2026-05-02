@@ -152,7 +152,6 @@ export default function SieteEtapasDueloPage() {
             <strong>Ayuda profesional si el duelo se complica.</strong> Si el dolor no disminuye con el tiempo, si no puedes funcionar, si piensas en hacerte daño, buscar ayuda es importante.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cierre</h2>
 
           <p>
             Los modelos de duelo son herramientas para entender, no reglas para seguir. Las siete etapas describen experiencias comunes, pero tu duelo es tuyo y no tiene que parecerse al de nadie más.
