@@ -86,7 +86,7 @@ export default function MexicoDiaDeMuertosPage() {
           </p>
 
           <p>
-            Cada elemento tiene su significado: <strong>La fotografía</strong> es el centro del altar. <strong>El agua</strong> sacia la sed del alma. <strong>La sal</strong> purifica. <strong>Las velas</strong> guían a las almas. <strong>El copal</strong> ahuyenta a los malos espíritus. <strong>El cempasúchil</strong> marca el camino con su aroma. <strong>El pan de muerto</strong> representa el cuerpo. <strong>Las calaveras de azúcar</strong> representan la muerte con humor.
+            Cada elemento tiene su significado: <strong>La fotografía</strong> es el centro del altar. <strong>El agua</strong> sacia la sed del alma. <strong>La sal</strong> purifica. <strong>Las velas</strong> acompañan a las almas. <strong>El copal</strong> ahuyenta a los malos espíritus. <strong>El cempasúchil</strong> marca el camino con su aroma. <strong>El pan de muerto</strong> representa el cuerpo. <strong>Las calaveras de azúcar</strong> representan la muerte con humor.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los cementerios se llenan de vida</h2>

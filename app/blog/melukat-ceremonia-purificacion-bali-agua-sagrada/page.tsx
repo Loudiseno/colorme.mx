@@ -62,7 +62,7 @@ export default function MelukatBaliPage() {
           </p>
 
           <p>
-            Despues llega la oracion. Un sacerdote balines guia el momento con mantras antiguos. Ahi, en ese espacio suspendido, cada persona nombra en su corazon lo que desea soltar. Una tristeza guardada. Un duelo que no termina de cerrar. Un miedo que se volvio pesado.
+            Despues llega la oracion. Un sacerdote balines acompaña el momento con mantras antiguos. Ahi, en ese espacio suspendido, cada persona nombra en su corazon lo que desea soltar. Una tristeza guardada. Un duelo que no termina de cerrar. Un miedo que se volvio pesado.
           </p>
 
           <p>

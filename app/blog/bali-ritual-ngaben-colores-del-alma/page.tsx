@@ -58,7 +58,7 @@ export default function BaliRitualesPage() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El Ngaben: cuando la muerte se celebra</h2>
 
           <p>
-            En Bali la muerte no se llora, se celebra. El Ngaben es la ceremonia de cremación del hinduismo balinés. Todo el pueblo se reúne con música, color y alegría para liberar el alma del cuerpo y guiarla hacia su próxima vida. No hay luto oscuro. Hay fuego que transforma, incienso que acompaña y una comunidad entera que dice: ve tranquilo, esto no es un final.
+            En Bali la muerte no se llora, se celebra. El Ngaben es la ceremonia de cremación del hinduismo balinés. Todo el pueblo se reúne con música, color y alegría para liberar el alma del cuerpo y acompañarla hacia su próxima vida. No hay luto oscuro. Hay fuego que transforma, incienso que acompaña y una comunidad entera que dice: ve tranquilo, esto no es un final.
           </p>
 
           <p>

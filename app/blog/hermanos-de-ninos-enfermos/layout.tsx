@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Hermanos de niños enfermos: los olvidados',
-  description: 'Los hermanos de niños con enfermedades graves también sufren. Guía para acompañar a los hermanos sanos durante la enfermedad.',
+  description: 'Los hermanos de niños con enfermedades graves también sufren. Para acompañar a los hermanos sanos durante la enfermedad.',
   keywords: ['hermanos', 'niños enfermos', 'familia', 'cáncer infantil', 'duelo', 'acompañamiento'],
   alternates: { canonical: '/blog/hermanos-de-ninos-enfermos' },
   openGraph: { type: 'article', title: 'Hermanos de niños enfermos | ColorMe', url: '/blog/hermanos-de-ninos-enfermos' },

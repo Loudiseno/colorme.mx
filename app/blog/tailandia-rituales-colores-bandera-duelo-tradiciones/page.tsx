@@ -105,7 +105,7 @@ export default function TailandiaRitualesPage() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los colores sagrados de Tailandia</h2>
 
           <p>
-            La bandera tailandesa se llama Trairanga, que significa tres colores. El rojo, presente en las dos franjas exteriores, simboliza la sangre y la vida del pueblo, la fuerza de quienes han defendido esta tierra a lo largo de los siglos. El blanco, en las franjas que lo abrazan por dentro, representa la pureza del budismo y la espiritualidad que guía la nación entera. Es el tono de la fe, de la mente clara y del corazón en paz. El azul, en la franja central más ancha, honra a la monarquía profundamente amada por su gente y simboliza la unidad de todos los tailandeses bajo un mismo cielo.
+            La bandera tailandesa se llama Trairanga, que significa tres colores. El rojo, presente en las dos franjas exteriores, simboliza la sangre y la vida del pueblo, la fuerza de quienes han defendido esta tierra a lo largo de los siglos. El blanco, en las franjas que lo abrazan por dentro, representa la pureza del budismo y la espiritualidad que orienta la nación entera. Es el tono de la fe, de la mente clara y del corazón en paz. El azul, en la franja central más ancha, honra a la monarquía profundamente amada por su gente y simboliza la unidad de todos los tailandeses bajo un mismo cielo.
           </p>
 
           <p>

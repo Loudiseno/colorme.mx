@@ -39,7 +39,7 @@ const tanatologiaArticles = [
     href: '/blog/duelo-perinatal',
     image: '/duelo-perinatal.webp',
     title: 'Duelo perinatal: el dolor que la sociedad no ve',
-    description: 'Tu bebé existió y tu dolor es real. Guía para madres y padres que perdieron un bebé.',
+    description: 'Tu bebé existió y tu dolor es real. Para madres y padres que perdieron un bebé.',
     alt: 'Duelo perinatal',
   },
   {
@@ -53,14 +53,14 @@ const tanatologiaArticles = [
     href: '/blog/muerte-mama',
     image: '/duelo-muerte-mama.webp',
     title: 'Cómo atravesar la muerte de tu mamá',
-    description: 'Una guía honesta para quienes perdieron a la primera persona que los amó.',
+    description: 'Acompañamiento honesto para quienes perdieron a la primera persona que los amó.',
     alt: 'Muerte de mamá',
   },
   {
     href: '/blog/sindrome-cuidador',
     image: '/sindrome-cuidador.webp',
     title: 'El síndrome del cuidador primario',
-    description: 'Cuando cuidar a otros te consume. Guía para quienes dan tanto que se olvidan de sí mismos.',
+    description: 'Cuando cuidar a otros te consume. Para quienes dan tanto que se olvidan de sí mismos.',
     alt: 'Síndrome del cuidador',
   },
   {
@@ -95,7 +95,7 @@ const tanatologiaArticles = [
     href: '/blog/aniversarios-dificiles',
     image: '/aniversarios-dificiles.webp',
     title: 'Aniversarios difíciles: cómo atravesar las fechas dolorosas',
-    description: 'Guía para los días que el calendario convierte en momentos de dolor.',
+    description: 'Para los días que el calendario convierte en momentos de dolor.',
     alt: 'Aniversarios difíciles',
   },
   {
@@ -137,7 +137,7 @@ const tanatologiaArticles = [
     href: '/blog/explicar-muerte-nino',
     image: '/explicar-muerte-nino.webp',
     title: 'Cómo explicar la muerte a un niño',
-    description: 'Guía para tener la conversación más difícil con amor y claridad.',
+    description: 'Para tener la conversación más difícil con amor y claridad.',
     alt: 'Explicar la muerte a un niño',
   },
   {
@@ -165,7 +165,7 @@ const tanatologiaArticles = [
     href: '/blog/que-decir-duelo',
     image: '/como-acompanar-duelo.webp',
     title: 'Qué decir (y qué NO decir) a alguien en duelo',
-    description: 'Guía para acompañar a alguien que perdió un ser querido con empatía y respeto.',
+    description: 'Para acompañar a alguien que perdió un ser querido con empatía y respeto.',
     alt: 'Qué decir en el duelo',
   },
   {
@@ -186,14 +186,14 @@ const tanatologiaArticles = [
     href: '/blog/como-acompanar-cancer-terminal',
     image: '/como-acompanar-cancer-terminal.jpeg',
     title: 'Cómo acompañar a alguien con cáncer terminal',
-    description: 'Guía para acompañar a un ser querido con cáncer terminal.',
+    description: 'Para acompañar a un ser querido con cáncer terminal.',
     alt: 'Acompañar cáncer terminal',
   },
   {
     href: '/blog/como-hablar-con-hijos-sobre-cancer',
     image: '/como-hablar-con-hijos-sobre-cancer.jpeg',
     title: 'Cómo hablar con tus hijos sobre el cáncer',
-    description: 'Guía para comunicar un diagnóstico de cáncer a los hijos.',
+    description: 'Para comunicar un diagnóstico de cáncer a los hijos.',
     alt: 'Hablar con hijos sobre cáncer',
   },
   {
@@ -214,7 +214,7 @@ const tanatologiaArticles = [
     href: '/blog/duelo-por-tu-cuerpo',
     image: '/duelo por tu cuerpo.jpeg',
     title: 'Duelo por tu cuerpo: cuando ya no es el mismo',
-    description: 'Guía para procesar los cambios en tu cuerpo.',
+    description: 'Para procesar los cambios en tu cuerpo.',
     alt: 'Duelo por el cuerpo',
   },
   {
@@ -251,7 +251,7 @@ const arteterapiaArticles = [
   {
     href: '/blog/arteterapia-para-ninos',
     image: '/arteterapia-ninos.webp',
-    title: 'Arteterapia para niños: guía por edades',
+    title: 'Arteterapia para niños: por edades',
     description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad.',
     alt: 'Arteterapia para niños',
   },
@@ -280,7 +280,7 @@ const arteterapiaArticles = [
     href: '/blog/mandalas-terapeuticos',
     image: '/mandalas-terapeuticos.webp',
     title: 'Mandalas terapéuticos: qué son y cómo crearlos',
-    description: 'Guía para crear mandalas y sus beneficios para la salud mental.',
+    description: 'Para crear mandalas y sus beneficios para la salud mental.',
     alt: 'Mandalas terapéuticos',
   },
   {
@@ -346,7 +346,7 @@ const emocionesArticles = [
     href: '/blog/perder-la-fe',
     image: '/perder-la-fe.webp',
     title: 'Cuando pierdes la fe: el duelo espiritual',
-    description: 'Dejar de creer también es una pérdida. Guía para atravesar el duelo espiritual.',
+    description: 'Dejar de creer también es una pérdida. Para atravesar el duelo espiritual.',
     alt: 'Perder la fe',
   },
   {

@@ -49,7 +49,7 @@ export default function CubaRitualesPage() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La santería: cuando los orishas acompañan el tránsito</h2>
 
           <p>
-            La santería cubana es una religión sincrética que fusiona las creencias yorubas traídas por los esclavos africanos con el catolicismo español. En ella, los orishas son deidades que guían, protegen y acompañan a los seres humanos en todos los momentos de la vida, incluida la muerte.
+            La santería cubana es una religión sincrética que fusiona las creencias yorubas traídas por los esclavos africanos con el catolicismo español. En ella, los orishas son deidades que acompañan, protegen y acompañan a los seres humanos en todos los momentos de la vida, incluida la muerte.
           </p>
 
           <p>

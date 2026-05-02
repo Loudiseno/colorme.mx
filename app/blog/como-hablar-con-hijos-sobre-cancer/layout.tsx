@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Cómo hablar con tus hijos sobre el cáncer',
-  description: 'Guía para padres sobre cómo comunicar un diagnóstico de cáncer a los hijos. Qué decir según la edad y cómo manejar sus emociones.',
+  description: 'Para padres sobre cómo comunicar un diagnóstico de cáncer a los hijos. Qué decir según la edad y cómo manejar sus emociones.',
   keywords: ['cáncer', 'hijos', 'comunicación', 'familia', 'niños', 'diagnóstico'],
   alternates: { canonical: '/blog/como-hablar-con-hijos-sobre-cancer' },
   openGraph: { type: 'article', title: 'Cómo hablar con tus hijos sobre el cáncer | ColorMe', url: '/blog/como-hablar-con-hijos-sobre-cancer' },

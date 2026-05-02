@@ -291,7 +291,7 @@ export default function ArticuloArteterapiaCancer() {
 
           <p>
             <strong>¿Es lo mismo que los talleres de manualidades que hacen en algunos hospitales?</strong><br />
-            No exactamente. Los talleres de manualidades pueden ser relajantes y valiosos, pero la arteterapia es un proceso terapéutico guiado por un profesional capacitado. Vamos más allá de la actividad: exploramos lo que surge, hacemos conexiones, profundizamos. Es la diferencia entre pintar para distraerte y pintar para sanar.
+            No exactamente. Los talleres de manualidades pueden ser relajantes y valiosos, pero la arteterapia es un proceso terapéutico acompañado por un profesional capacitado. Vamos más allá de la actividad: exploramos lo que surge, hacemos conexiones, profundizamos. Es la diferencia entre pintar para distraerte y pintar para sanar.
           </p>
 
           <p>
