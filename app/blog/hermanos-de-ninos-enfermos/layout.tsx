@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Hermanos de niños enfermos: los olvidados',
+  title: 'Hermanos de niños enfermos: el duelo invisible de los niños sanos',
   description: 'Los hermanos de niños con enfermedades graves también sufren. Para acompañar a los hermanos sanos durante la enfermedad.',
   keywords: ['hermanos', 'niños enfermos', 'familia', 'cáncer infantil', 'duelo', 'acompañamiento'],
   alternates: { canonical: '/blog/hermanos-de-ninos-enfermos' },
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Hermanos de niños enfermos: los olvidados',
+  headline: 'Hermanos de niños enfermos: el duelo invisible de los niños sanos',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/hermanos-de-ninos-enfermos`,
