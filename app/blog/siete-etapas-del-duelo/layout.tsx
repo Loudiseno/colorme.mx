@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   description: 'Todo lo que necesitas saber sobre las etapas del duelo. ¿Son reales? ¿Hay que pasarlas en orden? La verdad sobre el proceso de duelo.',
   keywords: ['etapas del duelo', '7 etapas', 'proceso de duelo', 'Kübler-Ross', 'duelo', 'tanatología'],
   alternates: { canonical: '/blog/siete-etapas-del-duelo' },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: { type: 'article', title: 'Las 7 etapas del duelo | ColorMe', url: '/blog/siete-etapas-del-duelo' },
 }
 

@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/grecia-rituales-colores-bandera-duelo-islas-meteora',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'article',
     title: 'Grecia: rituales, colores sagrados y la sabiduría de honrar a los que se fueron | ColorMe',

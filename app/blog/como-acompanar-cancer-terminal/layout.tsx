@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/como-acompanar-cancer-terminal',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'article',
     title: 'Cómo acompañar a alguien con cáncer terminal | ColorMe',

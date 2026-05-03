@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/cuba-rituales-colores-bandera-duelo-tradiciones',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'article',
     title: 'Cuba: rituales, colores y la sabiduría del adiós caribeño | ColorMe',

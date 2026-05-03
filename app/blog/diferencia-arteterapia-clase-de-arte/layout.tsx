@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/diferencia-arteterapia-clase-de-arte',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'article',
     title: 'Diferencia entre arteterapia y clase de arte | ColorMe',

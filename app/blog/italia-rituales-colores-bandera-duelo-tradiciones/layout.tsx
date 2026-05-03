@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/italia-rituales-colores-bandera-duelo-tradiciones',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'article',
     title: 'Italia: rituales, colores sagrados y la sabiduría del duelo | ColorMe',

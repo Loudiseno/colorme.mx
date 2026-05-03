@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/tailandia-rituales-colores-bandera-duelo-tradiciones',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'article',
     title: 'Tailandia, la tierra de la sonrisa eterna: rituales, colores sagrados y la sabiduría de soltar con gratitud | ColorMe',

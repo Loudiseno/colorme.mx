@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   description: 'Para procesar los cambios en tu cuerpo por enfermedad, accidente o el paso del tiempo. El duelo corporal es válido.',
   keywords: ['duelo corporal', 'cuerpo', 'enfermedad', 'cambios físicos', 'aceptación', 'duelo'],
   alternates: { canonical: '/blog/duelo-por-tu-cuerpo' },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: { type: 'article', title: 'Duelo por tu cuerpo | ColorMe', url: '/blog/duelo-por-tu-cuerpo' },
 }
 

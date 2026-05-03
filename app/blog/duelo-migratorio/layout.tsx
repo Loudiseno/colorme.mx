@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   description: 'El duelo migratorio es real. Para procesar la pérdida de tu tierra, tu cultura y tu gente al emigrar.',
   keywords: ['duelo migratorio', 'emigrar', 'migración', 'nostalgia', 'expatriados', 'duelo'],
   alternates: { canonical: '/blog/duelo-migratorio' },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: { type: 'article', title: 'Duelo migratorio | ColorMe', url: '/blog/duelo-migratorio' },
 }
 

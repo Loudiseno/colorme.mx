@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   description: 'El duelo por perder una amistad es real. Para procesar el fin de una relación de amistad importante.',
   keywords: ['duelo amistad', 'pérdida de amistad', 'fin de amistad', 'duelo', 'relaciones'],
   alternates: { canonical: '/blog/duelo-amistad-perdida' },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: { type: 'article', title: 'Duelo por la pérdida de una amistad | ColorMe', url: '/blog/duelo-amistad-perdida' },
 }
 

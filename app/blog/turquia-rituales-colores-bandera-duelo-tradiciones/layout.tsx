@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/blog/turquia-rituales-colores-bandera-duelo-tradiciones',
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'article',
     title: 'Turquía: rituales islámicos, colores sagrados y la sabiduría del adiós | ColorMe',

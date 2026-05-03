@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   description: 'Los hermanos de niños con enfermedades graves también sufren. Para acompañar a los hermanos sanos durante la enfermedad.',
   keywords: ['hermanos', 'niños enfermos', 'familia', 'cáncer infantil', 'duelo', 'acompañamiento'],
   alternates: { canonical: '/blog/hermanos-de-ninos-enfermos' },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: { type: 'article', title: 'Hermanos de niños enfermos | ColorMe', url: '/blog/hermanos-de-ninos-enfermos' },
 }
 
