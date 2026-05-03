@@ -24,7 +24,7 @@ export default function MiedoCumplirAnosPage() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/miedo a cumplir años.jpeg" alt="Miedo a cumplir años" width={300} height={200} priority className="w-full h-auto" />
+          <Image src="/miedo-a-cumplir-anos.jpeg" alt="Miedo a cumplir años" width={300} height={200} priority className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">
