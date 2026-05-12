@@ -67,6 +67,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'hermanos-de-ninos-enfermos',
     'miedo-a-cumplir-anos',
     'siete-etapas-del-duelo',
+    'duelo-perdida-trabajo',
+    'duelo-por-ser-mama',
   ]
 
   // Core pages

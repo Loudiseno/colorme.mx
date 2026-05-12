@@ -231,6 +231,20 @@ const tanatologiaArticles = [
     description: 'Todo lo que necesitas saber sobre las etapas del duelo.',
     alt: 'Etapas del duelo',
   },
+  {
+    href: '/blog/duelo-perdida-trabajo',
+    image: '/duelo por perdida empleo.jpeg',
+    title: 'El duelo por perder tu trabajo: más que un despido',
+    description: 'Perder el trabajo es perder identidad, estructura y propósito. Un duelo real que merece ser nombrado.',
+    alt: 'Duelo por pérdida de trabajo',
+  },
+  {
+    href: '/blog/duelo-por-ser-mama',
+    image: '/duelo maternidad.jpeg',
+    title: 'Duelo por ser mamá: las pérdidas que nadie nombra',
+    description: 'La maternidad trae alegría, pero también pérdidas silenciosas que pocas veces se nombran.',
+    alt: 'Duelo por ser mamá',
+  },
 ]
 
 const arteterapiaArticles = [
