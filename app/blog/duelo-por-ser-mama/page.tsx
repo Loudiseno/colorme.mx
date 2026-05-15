@@ -155,10 +155,6 @@ export default function DueloPorSerMamaPage() {
             Muchas parejas atraviesan crisis importantes en los primeros años de crianza. No porque el amor se haya acabado, sino porque la relación tiene que reinventarse y eso es difícil.
           </p>
 
-          <p>
-            También hay duelo aquí: duelo por la relación que tenían antes, por la complicidad que era más fácil, por el tiempo que era solo de ustedes.
-          </p>
-
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cuando crecen y empiezan a soltar tu mano</h2>
 
           <p>
