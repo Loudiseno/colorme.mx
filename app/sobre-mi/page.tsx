@@ -42,7 +42,7 @@ export default function SobreMi() {
 
         {/* Story Section */}
         <section className="mb-16">
-          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Mi historia</h2>
+          <h2 className="text-3xl md:text-4xl text-black mb-6 uppercase tracking-wide">Mi historia</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
               Hace algunos años, mi vida cambió cuando recibí un diagnóstico de cáncer. Me encontré frente a la incertidumbre más profunda que había experimentado.
@@ -58,7 +58,7 @@ export default function SobreMi() {
 
         {/* Formation Section */}
         <section className="mb-16">
-          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Mi formación</h2>
+          <h2 className="text-3xl md:text-4xl text-black mb-6 uppercase tracking-wide">Mi formación</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <h3 className="text-black">Tanatología</h3>
             <p>
@@ -96,7 +96,7 @@ export default function SobreMi() {
 
         {/* Previous Career Section */}
         <section className="mb-16">
-          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Trayectoria profesional</h2>
+          <h2 className="text-3xl md:text-4xl text-black mb-6 uppercase tracking-wide">Trayectoria profesional</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
               Antes de dedicarme a la arteterapia y la tanatología, tuve una exitosa carrera en el mundo creativo y empresarial. Trabajé como diseñadora gráfica, fotógrafa profesional, directora de marca y especialista en branding y comunicación.

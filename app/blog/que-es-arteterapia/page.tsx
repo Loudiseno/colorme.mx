@@ -21,7 +21,7 @@ export default function ArticuloArteterapia() {
         {/* Header */}
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
-          <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mt-3 mb-6 leading-tight font-semibold">
             ¿Qué es la Arteterapia?
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
@@ -56,7 +56,7 @@ export default function ArticuloArteterapia() {
             No, no necesitas saber dibujar. No necesitas ser artista. Solo necesitas estar dispuesto a explorar.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué es exactamente la arteterapia?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿Qué es exactamente la arteterapia?</h2>
 
           <p>
             La arteterapia es una forma de acompañamiento terapéutico que utiliza el proceso creativo como vehículo para la expresión emocional, el autoconocimiento y la sanación. A través del dibujo, la pintura, el collage, el modelado con arcilla y otras técnicas artísticas, puedes explorar y comunicar experiencias que a veces resultan difíciles —o incluso imposibles— de poner en palabras.
@@ -74,7 +74,7 @@ export default function ArticuloArteterapia() {
             Desde entonces, la arteterapia se ha desarrollado como una disciplina profesional con fundamentos en la psicología, el arte y la neurociencia. Hoy sabemos que la expresión creativa activa áreas del cerebro relacionadas con la regulación emocional, la memoria y la resiliencia.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Para quién es la arteterapia?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿Para quién es la arteterapia?</h2>
 
           <p>
             Una de las preguntas que más escucho es: "¿La arteterapia es para mí?" La respuesta corta es: probablemente sí. La arteterapia puede beneficiar a prácticamente cualquier persona que esté buscando una forma diferente de conectar consigo misma.
@@ -112,7 +112,7 @@ export default function ArticuloArteterapia() {
             Y quiero repetirlo porque es importante: <strong>no necesitas saber dibujar, pintar ni tener ninguna habilidad artística</strong>. En mis sesiones he acompañado a personas que no habían tocado un pincel desde la primaria, y han tenido experiencias profundamente significativas. El arte en arteterapia no se juzga por su estética, sino por lo que te permite explorar y expresar.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los beneficios de la arteterapia</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Los beneficios de la arteterapia</h2>
 
           <p>
             A lo largo de mis años de práctica, he sido testigo de transformaciones que me siguen conmoviendo. Pero más allá de mi experiencia personal, la investigación científica respalda los beneficios de la arteterapia:
@@ -146,7 +146,7 @@ export default function ArticuloArteterapia() {
             <strong>Conecta mente y cuerpo.</strong> La arteterapia es una práctica encarnada: involucra tus manos, tu vista, tu postura, tu respiración. Esta conexión mente-cuerpo puede ser especialmente sanadora para quienes tienden a vivir "de la cabeza para arriba".
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cómo es una sesión de arteterapia?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿Cómo es una sesión de arteterapia?</h2>
 
           <p>
             Entiendo que dar el primer paso puede generar nervios. No saber qué esperar hace todo más difícil. Por eso quiero describir cómo son las sesiones conmigo, para que puedas imaginarte en ese espacio.
@@ -176,7 +176,7 @@ export default function ArticuloArteterapia() {
             <strong>Lo que sucede en la sesión es confidencial.</strong> Este es un espacio seguro donde puedes expresarte sin miedo al juicio. Todo lo que compartas queda entre nosotros.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia vs otras terapias: ¿cuál elegir?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Arteterapia vs otras terapias: ¿cuál elegir?</h2>
 
           <p>
             Esta es otra pregunta frecuente, y la respuesta es: depende de ti y de lo que necesites.
@@ -206,7 +206,7 @@ export default function ArticuloArteterapia() {
             En mi práctica, también integro la arteterapia con la tanatología cuando es apropiado. Si estás atravesando un proceso de duelo o pérdida, podemos trabajar tanto con la palabra como con el arte, según lo que necesites en cada momento.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes sobre la arteterapia</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes sobre la arteterapia</h2>
 
           <p>
             <strong>¿De verdad no necesito saber dibujar?</strong><br />

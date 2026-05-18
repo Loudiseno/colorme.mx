@@ -64,7 +64,7 @@ export default function HomePage() {
                   <div className="flex-1">
                     <div className="inline-block bg-[#B2F7EF] px-6 py-2 rounded-xl mb-4 relative">
                       <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
-                      <h2 className="text-2xl md:text-3xl text-black relative z-10">
+                      <h2 className="text-3xl md:text-4xl text-black relative z-10">
                         Hola, soy Lou
                       </h2>
                     </div>

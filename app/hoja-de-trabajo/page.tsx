@@ -301,7 +301,7 @@ export default function WorksheetPage() {
             <div className="w-12 h-12 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0">
               <span className="text-black text-xl font-bold">1</span>
             </div>
-            <h2 className="text-3xl text-black font-semibold">Ejercicio creativo personalizado</h2>
+            <h2 className="text-3xl md:text-4xl text-black font-semibold">Ejercicio creativo personalizado</h2>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 animate-fade-up stagger-2">
@@ -440,7 +440,7 @@ export default function WorksheetPage() {
             <div className="w-12 h-12 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0">
               <span className="text-black text-xl font-bold">2</span>
             </div>
-            <h2 className="text-3xl text-black font-semibold">Mapa Interior</h2>
+            <h2 className="text-3xl md:text-4xl text-black font-semibold">Mapa Interior</h2>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">

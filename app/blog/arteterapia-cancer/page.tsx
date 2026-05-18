@@ -21,7 +21,7 @@ export default function ArticuloArteterapiaCancer() {
         {/* Header */}
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
-          <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mt-3 mb-6 leading-tight font-semibold">
             Arteterapia para Pacientes con Cáncer: Cómo el Arte Puede Acompañarte Durante el Tratamiento
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta, Tanatóloga y Sobreviviente de Cáncer</p>
@@ -68,7 +68,7 @@ export default function ArticuloArteterapiaCancer() {
             Hoy, como sobreviviente, tanatóloga y como arteterapeuta, acompaño a otras personas que están transitando ese mismo camino. Y quiero compartir contigo lo que he aprendido —desde adentro y desde afuera— sobre cómo el arte puede ser un aliado en el proceso oncológico.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por qué el arte importa cuando tienes cáncer</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Por qué el arte importa cuando tienes cáncer</h2>
 
           <p>
             Cuando recibes un diagnóstico de cáncer, tu vida cambia en un instante. De pronto te encuentras en un mundo de términos médicos, decisiones complejas, tratamientos agresivos y una incertidumbre que se instala como una sombra permanente.
@@ -106,7 +106,7 @@ export default function ArticuloArteterapiaCancer() {
             Un metanálisis publicado en la revista <em>Support Care Cancer</em> revisó múltiples estudios y concluyó que la arteterapia puede tener efectos beneficiosos significativos en el bienestar psicológico de los pacientes con cáncer. No reemplaza el tratamiento médico, pero lo complementa de una manera profunda.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Mi historia: del diagnóstico al arte, del arte a la sanación</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Mi historia: del diagnóstico al arte, del arte a la sanación</h2>
 
           <p>
             Permíteme contarte un poco más de mi camino, porque creo que puede ayudarte a entender desde dónde te hablo.
@@ -144,7 +144,7 @@ export default function ArticuloArteterapiaCancer() {
             Me formé como arteterapeuta y como tanatóloga, complementando mi práctica con estudios en diversos países: México, donde me certifiqué en la Universidad Iberoamericana; Bali, donde profundicé en prácticas artísticas ancestrales y técnicas de respiración consciente; India, donde me certifiqué en Reiki en Rishikesh; Tailandia, donde exploré el arte meditativo; y Malasia, donde aprendí sobre fusiones artísticas asiáticas. Escribí un libro, <em>Indeleble</em>, donde cuento mi historia con la esperanza de que pueda resonar con otros. Y hoy, cada vez que me siento frente a alguien que está atravesando un diagnóstico oncológico, lo hago desde un lugar de profunda comprensión. Porque yo estuve ahí. Sé lo que se siente.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿En qué momento del proceso oncológico puede ayudar la arteterapia?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿En qué momento del proceso oncológico puede ayudar la arteterapia?</h2>
 
           <p>
             Una de las cosas hermosas de la arteterapia es que puede adaptarse a cualquier etapa del camino. No hay un momento "correcto" para empezar.
@@ -213,7 +213,7 @@ export default function ArticuloArteterapiaCancer() {
             La arteterapia también puede ser un recurso valioso para los cuidadores, un lugar donde pueden atender sus propias emociones sin sentir que le están quitando espacio al paciente.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cómo son las sesiones de arteterapia oncológica?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿Cómo son las sesiones de arteterapia oncológica?</h2>
 
           <p>
             Quiero que sepas exactamente qué esperar, porque entiendo que cuando estás lidiando con un tratamiento de cáncer, la incertidumbre es lo último que necesitas.
@@ -243,7 +243,7 @@ export default function ArticuloArteterapiaCancer() {
             <strong>La primera consulta es gratuita.</strong> Dura 30 minutos y es simplemente para conocernos, para que me cuentes qué estás atravesando y para explorar juntos si la arteterapia puede ser útil para ti. Sin presión, sin compromiso.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia y tanatología: un enfoque integral</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Arteterapia y tanatología: un enfoque integral</h2>
 
           <p>
             Hay algo de lo que no se habla mucho, pero que está presente en la experiencia de casi todos los pacientes con cáncer: la confrontación con la propia mortalidad.
@@ -265,7 +265,7 @@ export default function ArticuloArteterapiaCancer() {
             No todos mis consultantes necesitan este nivel de trabajo. Pero si tú sientes que hay miedos profundos que no te atreves a expresar, quiero que sepas que aquí hay espacio para ellos.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas que quizás te estás haciendo</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Preguntas que quizás te estás haciendo</h2>
 
           <p>
             <strong>Estoy muy cansado/a por el tratamiento. ¿Puedo hacer arteterapia así?</strong><br />

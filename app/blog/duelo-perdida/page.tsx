@@ -21,7 +21,7 @@ export default function ArticuloDueloPerdida() {
         {/* Header */}
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
-          <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mt-3 mb-6 leading-tight font-semibold">
             ¿Qué es el Duelo?
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
@@ -60,7 +60,7 @@ export default function ArticuloDueloPerdida() {
             Hoy quiero acompañarte a entender qué es realmente el duelo, por qué duele tanto y cómo puedes transitarlo sin perderte en el camino.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué significa hacer duelo?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿Qué significa hacer duelo?</h2>
 
           <p>
             El duelo es la respuesta emocional, física y psicológica que experimentamos cuando perdemos algo significativo en nuestra vida. Es el proceso interno que nos permite procesar esa ausencia, reorganizar nuestra realidad y eventualmente encontrar una nueva forma de vivir.
@@ -78,7 +78,7 @@ export default function ArticuloDueloPerdida() {
             Y algo crucial: el duelo no tiene fecha de caducidad. No existe un momento en que "deberías" estar mejor. Cada organismo, cada historia, cada vínculo requiere su propio tiempo de procesamiento.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Más allá de la muerte: los duelos invisibles</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Más allá de la muerte: los duelos invisibles</h2>
 
           <p>
             Cuando escuchamos "duelo", pensamos automáticamente en la muerte de un ser querido. Y sí, perder a alguien que amas es devastador. Pero el duelo tiene muchas más caras de las que solemos reconocer.
@@ -128,7 +128,7 @@ export default function ArticuloDueloPerdida() {
             Todas estas pérdidas merecen ser nombradas. Todas merecen espacio para el dolor.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El camino del duelo: ¿realmente hay etapas?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">El camino del duelo: ¿realmente hay etapas?</h2>
 
           <p>
             Probablemente conoces el modelo de las cinco etapas del duelo de Elisabeth Kübler-Ross: negación, ira, negociación, depresión y aceptación. Este modelo ha ayudado a millones de personas a entender que el duelo tiene diferentes momentos emocionales.
@@ -150,7 +150,7 @@ export default function ArticuloDueloPerdida() {
             Todo eso es normal. No significa que estés retrocediendo ni que lo estés haciendo mal. Significa que eres humano procesando algo enorme.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Las señales del cuerpo: el duelo también es físico</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Las señales del cuerpo: el duelo también es físico</h2>
 
           <p>
             El duelo no vive solo en tu mente. Se instala en tu cuerpo con síntomas que pueden confundirte o asustarte.
@@ -168,7 +168,7 @@ export default function ArticuloDueloPerdida() {
             Cuidar tu cuerpo durante este proceso no es un lujo —es una necesidad. Descansar aunque el sueño sea difícil. Comer aunque no tengas hambre. Moverte aunque solo sea caminar unos minutos. Tu cuerpo necesita recursos para atravesar esta tormenta.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cuándo el duelo necesita ayuda profesional?</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿Cuándo el duelo necesita ayuda profesional?</h2>
 
           <p>
             El duelo es un proceso natural, pero hay momentos en que se complica y requiere acompañamiento especializado. Reconocer estas señales puede marcar una diferencia enorme en tu recuperación.
@@ -192,7 +192,7 @@ export default function ArticuloDueloPerdida() {
             Pedir ayuda no es rendirse. Es reconocer que algunas cargas son demasiado pesadas para llevarlas solo.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El acompañamiento tanatológico: un espacio para tu dolor</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">El acompañamiento tanatológico: un espacio para tu dolor</h2>
 
           <p>
             La tanatología es la disciplina que se especializa en acompañar a personas que atraviesan procesos de pérdida, duelo y final de la vida. Como tanatóloga, mi trabajo consiste en ofrecerte un espacio seguro donde tu dolor tenga lugar.
@@ -210,7 +210,7 @@ export default function ArticuloDueloPerdida() {
             No necesitas llegar con las ideas claras ni saber exactamente qué sientes. Parte del proceso es justamente ir descubriendo y nombrando eso que llevas dentro.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que nadie te dice sobre el duelo</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Lo que nadie te dice sobre el duelo</h2>
 
           <p>
             El duelo te cambia. No vas a volver a ser quien eras antes de la pérdida, y eso está bien. La meta no es regresar a tu vida anterior sino construir una vida nueva que integre lo que sucedió.
@@ -228,7 +228,7 @@ export default function ArticuloDueloPerdida() {
             Y un día, sin darte cuenta, descubrirás que puedes recordar sin derrumbarte. Que la tristeza sigue ahí pero ya no te ahoga. Que honrar a quien perdiste también puede incluir seguir viviendo tu propia vida.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes</h2>
+          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes</h2>
 
           <div className="space-y-6">
             <div>
