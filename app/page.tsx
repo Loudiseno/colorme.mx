@@ -92,7 +92,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5" id="servicios">
+      <section className="py-8 md:py-12 bg-[#B2F7EF]/5" id="servicios">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Arteterapia */}
@@ -149,7 +149,7 @@ export default function HomePage() {
       </section>
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-12 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -212,7 +212,7 @@ export default function HomePage() {
       </section>
 
       {/* Book Section */}
-      <section className="py-12 md:py-16 bg-white" id="indeleble">
+      <section className="py-8 md:py-12 bg-white" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF]">
             <div className="order-2 lg:order-1 bg-white p-8 md:p-12 flex items-center justify-center">
@@ -299,7 +299,7 @@ export default function HomePage() {
       <Testimonials />
 
       {/* Blog Section */}
-      <section className="py-12 md:py-16 bg-white" id="blog">
+      <section className="py-8 md:py-12 bg-white" id="blog">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl text-black mb-4">Entre líneas</h2>
@@ -396,7 +396,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 md:py-16" id="contacto">
+      <section className="py-8 md:py-12" id="contacto">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl text-black mb-4">Contacto</h2>

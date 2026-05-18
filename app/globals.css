@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Section spacing */
 .section {
-  @apply py-12 md:py-16 lg:py-20;
+  @apply py-8 md:py-12;
 }
 
 /* Card hover with lift and glow */

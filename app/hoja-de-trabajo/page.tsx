@@ -282,7 +282,7 @@ export default function WorksheetPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
-      <section className="bg-[#B2F7EF]/10 py-12 md:py-16">
+      <section className="bg-[#B2F7EF]/10 py-8 md:py-12">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
             Exploraciones creativas
@@ -294,7 +294,7 @@ export default function WorksheetPage() {
       </section>
 
       {/* Exercise 1: Form-based personalized exercise */}
-      <section className="py-12 md:py-16">
+      <section className="py-8 md:py-12">
         <div className="max-w-3xl mx-auto px-6">
           {/* Exercise Header with Badge */}
           <div className="flex items-center gap-4 mb-6">
@@ -433,7 +433,7 @@ export default function WorksheetPage() {
       </section>
 
       {/* Exercise 2: Drawing Canvas */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-12 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6">
           {/* Exercise Header with Badge */}
           <div className="flex items-center gap-4 mb-6">
