@@ -382,7 +382,7 @@ export default function HomePage() {
                     ¿Qué es el duelo?
                   </h3>
                   <p className="text-black/70 text-sm leading-relaxed mb-4">
-                    Guía para entender y atravesar el proceso de pérdida.
+                    Todo sobre el proceso de pérdida y cómo atravesarlo.
                   </p>
                   <span className="inline-flex items-center gap-2 text-black text-sm font-medium">
                     Leer más

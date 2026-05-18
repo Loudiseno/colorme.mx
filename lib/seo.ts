@@ -13,7 +13,7 @@ export const siteConfig = {
     country: 'MX',
   },
   social: {
-    instagram: 'https://www.instagram.com/color.me.lab',
+    instagram: 'https://www.instagram.com/colormelab',
     facebook: 'https://www.facebook.com/profile.php?id=61577247024225',
   },
   book: {
