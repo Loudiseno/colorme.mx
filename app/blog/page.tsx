@@ -211,6 +211,13 @@ const tanatologiaArticles = [
     alt: 'Duelo migratorio',
   },
   {
+    href: '/blog/duelos-invisibles-desautorizados',
+    image: '/duelos-invisibles.jpeg',
+    title: 'Duelos invisibles: las pérdidas que nadie reconoce',
+    description: 'Las pérdidas que el mundo no valida pero que duelen igual.',
+    alt: 'Duelos invisibles y desautorizados',
+  },
+  {
     href: '/blog/duelo-por-tu-cuerpo',
     image: '/duelo por tu cuerpo.jpeg',
     title: 'Duelo por tu cuerpo: cuando ya no es el mismo',
