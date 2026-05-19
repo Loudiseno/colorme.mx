@@ -42,7 +42,7 @@ export default function QueDecirDueloPage() {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-black/80 italic mb-8">
-            Guía para acompañar con empatía y respeto.
+            Cómo acompañar con empatía y respeto.
           </p>
 
           <p>Tu amigo perdió a su papá. Tu compañera de trabajo perdió un embarazo. Tu vecina enviudó.</p>

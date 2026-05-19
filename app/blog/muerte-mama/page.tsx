@@ -29,7 +29,7 @@ export default function ArticuloMuerteMama() {
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/duelo-muerte-mama.webp"
-            alt="Cómo atravesar la muerte de tu mamá - Una guía honesta."
+            alt="Cómo atravesar la muerte de tu mamá"
             width={300}
             height={200}
             priority
@@ -51,7 +51,7 @@ export default function ArticuloMuerteMama() {
           </p>
 
           <p>
-            Esta guía no te va a decir cómo &quot;superar&quot; su muerte, porque eso implica dejarla atrás. Lo que voy a ofrecerte es algo más realista: cómo aprender a vivir con su ausencia. Cómo cargar ese amor que ahora no tiene el mismo destino. Cómo seguir adelante sin olvidarla.
+            Este artículo no te va a decir cómo &quot;superar&quot; su muerte, porque eso implica dejarla atrás. Lo que voy a ofrecerte es algo más realista: cómo aprender a vivir con su ausencia. Cómo cargar ese amor que ahora no tiene el mismo destino. Cómo seguir adelante sin olvidarla.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El duelo por una madre es particular</h2>
