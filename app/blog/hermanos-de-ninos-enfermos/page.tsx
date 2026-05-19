@@ -24,7 +24,7 @@ export default function HermanosDeNinosEnfermosPage() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/hermanos de ninos enfermos.jpeg" alt="Hermanos de niños enfermos" width={300} height={200} priority className="w-full h-auto" />
+          <Image src="/hermanos-de-ninos-enfermos.jpeg" alt="Hermanos de niños enfermos" width={300} height={200} priority className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">

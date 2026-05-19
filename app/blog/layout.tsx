@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Blog - Entre Líneas | ColorMe',
@@ -24,5 +25,10 @@ export const metadata: Metadata = {
 }
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  return (
+    <>
+      <BreadcrumbSchema />
+      {children}
+    </>
+  )
 }

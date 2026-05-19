@@ -28,7 +28,7 @@ export default function GreciaRitualesPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/grecia athenas.jpeg"
+            src="/grecia-athenas.jpeg"
             alt="Grecia - Rituales y espiritualidad griega"
             width={300}
             height={200}

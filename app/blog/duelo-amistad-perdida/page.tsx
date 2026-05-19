@@ -24,7 +24,7 @@ export default function DueloAmistadPerdidaPage() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/duelo amistad perdida.jpeg" alt="Duelo por una amistad perdida" width={300} height={200} priority className="w-full h-auto" />
+          <Image src="/duelo-amistad-perdida.jpeg" alt="Duelo por una amistad perdida" width={300} height={200} priority className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">

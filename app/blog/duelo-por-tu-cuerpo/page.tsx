@@ -24,7 +24,7 @@ export default function DueloPorTuCuerpoPage() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/duelo por tu cuerpo.jpeg" alt="Duelo por tu cuerpo" width={300} height={200} priority className="w-full h-auto" />
+          <Image src="/duelo-por-tu-cuerpo.jpeg" alt="Duelo por tu cuerpo" width={300} height={200} priority className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">

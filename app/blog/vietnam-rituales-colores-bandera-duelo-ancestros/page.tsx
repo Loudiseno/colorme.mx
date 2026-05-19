@@ -27,7 +27,7 @@ export default function VietnamRitualesPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/vietnam olores.jpeg"
+            src="/vietnam-olores.jpeg"
             alt="Vietnam - Rituales y culto a los ancestros"
             width={300}
             height={200}

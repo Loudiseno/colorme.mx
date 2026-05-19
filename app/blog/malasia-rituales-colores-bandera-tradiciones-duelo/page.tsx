@@ -27,7 +27,7 @@ export default function MalasiaRitualesPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/malasia .jpeg"
+            src="/malasia.jpeg"
             alt="Rituales de Malasia - Tres culturas espirituales"
             width={800}
             height={450}

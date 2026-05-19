@@ -25,7 +25,7 @@ export default function DueloPerdidaTrabajoPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/duelo por perdida empleo.jpeg"
+            src="/duelo-por-perdida-empleo.jpeg"
             alt="Duelo por pérdida de trabajo"
             width={300}
             height={200}

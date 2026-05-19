@@ -28,7 +28,7 @@ export default function CubaRitualesPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/cuban flag.jpeg"
+            src="/cuban-flag.jpeg"
             alt="Cuba - Rituales y tradiciones cubanas"
             width={300}
             height={200}

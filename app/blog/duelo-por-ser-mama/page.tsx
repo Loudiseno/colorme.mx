@@ -25,7 +25,7 @@ export default function DueloPorSerMamaPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/duelo maternidad.jpeg"
+            src="/duelo-maternidad.jpeg"
             alt="Duelo por ser mamá y las pérdidas dentro de la maternidad"
             width={300}
             height={200}
