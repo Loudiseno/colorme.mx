@@ -88,7 +88,7 @@ const process = [
 const sessionTypes = [
   { icon: '/columpio.webp', title: 'Terapia individual', description: 'Sesiones personalizadas a tu ritmo y necesidades, con apoyo emocional cercano.' },
   { icon: '/corazon.webp', title: 'Sesión grupal', description: 'Encuentros seguros para crear, compartir y sanar desde lo colectivo, trabajando temas de interés común.' },
-  { icon: '/adolecente hombre.webp', title: 'Talleres para organizaciones', description: 'Programas de bienestar emocional diseñados a medida según los objetivos del grupo.' },
+  { icon: '/adolecente-hombre.webp', title: 'Talleres para organizaciones', description: 'Programas de bienestar emocional diseñados a medida según los objetivos del grupo.' },
 ]
 
 export default function TanatologiaPage() {

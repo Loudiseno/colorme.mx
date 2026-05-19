@@ -13,7 +13,7 @@ interface Article {
 }
 
 const tanatologiaArticles: Article[] = [
-  { href: '/blog/duelo-perdida', image: '/el-duelo.webp', alt: '¿Qué es el duelo?', title: '¿Qué es el duelo?', description: 'Guía para entender y atravesar el proceso de pérdida.' },
+  { href: '/blog/duelo-perdida', image: '/el-duelo.webp', alt: '¿Qué es el duelo?', title: '¿Qué es el duelo?', description: 'Cómo entender y atravesar el proceso de pérdida.' },
   { href: '/blog/cuanto-dura-el-duelo', image: '/cuanto-dura-el-duelo.webp', alt: '¿Cuánto dura el duelo?', title: '¿Cuánto dura el duelo?', description: 'No hay tiempos fijos, cada proceso es único.' },
   { href: '/blog/duelo-complicado', image: '/duelo-complicado.webp', alt: 'Duelo complicado', title: 'Duelo complicado', description: 'Cuando el duelo se estanca y necesita atención especial.' },
   { href: '/blog/duelo-anticipado', image: '/duelo-anticipado.webp', alt: 'Duelo anticipado', title: 'Duelo anticipado', description: 'Cuando el duelo comienza antes de la pérdida.' },
@@ -26,7 +26,7 @@ const tanatologiaArticles: Article[] = [
   { href: '/blog/cumpleanos-persona-fallecida', image: '/cumpleanos persona fallecida.jpeg', alt: 'Cumpleaños de persona fallecida', title: 'El cumpleaños de quien ya no está', description: 'Cómo atravesar y honrar el cumpleaños de una persona fallecida.' },
   { href: '/blog/duelo-sucio-alivio', image: '/duelo-sucio-alivio.webp', alt: 'Duelo sucio y alivio', title: 'El duelo sucio: sentir alivio', description: 'Cuando sentimos alivio después de una pérdida.' },
   { href: '/blog/aniversarios-dificiles', image: '/aniversarios-dificiles.webp', alt: 'Aniversarios difíciles', title: 'Aniversarios difíciles', description: 'Cómo atravesar las fechas que duelen.' },
-  { href: '/blog/como-superar-la-perdida-de-un-ser-querido', image: '/como-superar-perdida.webp', alt: 'Cómo superar la pérdida', title: 'Cómo superar la pérdida de un ser querido', description: 'Guía para atravesar el dolor de perder a alguien.' },
+  { href: '/blog/como-superar-la-perdida-de-un-ser-querido', image: '/como-superar-perdida.webp', alt: 'Cómo superar la pérdida', title: 'Cómo superar la pérdida de un ser querido', description: 'Cómo atravesar el dolor de perder a alguien.' },
   { href: '/blog/duelo-del-cuidador', image: '/duelo del cuidador.jpeg', alt: 'Duelo del cuidador', title: 'El duelo del cuidador', description: 'El duelo silencioso de quienes cuidan.' },
   { href: '/blog/duelo-por-divorcio', image: '/duelo por divorcio.jpeg', alt: 'Duelo por divorcio', title: 'Duelo por divorcio', description: 'Cuando una relación termina, también hay duelo.' },
   { href: '/blog/duelo-por-enfermedad-o-diagnostico', image: '/duelo por infertilidad.jpeg', alt: 'Duelo por enfermedad', title: 'Duelo por enfermedad o diagnóstico', description: 'El duelo que viene con un diagnóstico difícil.' },
@@ -47,7 +47,7 @@ const arteterapiaArticles: Article[] = [
   { href: '/blog/beneficios-arte', image: '/beneficios-del-arte.webp', alt: 'Beneficios del arte', title: 'Beneficios del arte', description: 'Cómo el arte mejora tu bienestar emocional.' },
   { href: '/blog/mandalas-terapeuticos', image: '/mandalas-terapeuticos.webp', alt: 'Mandalas terapéuticos', title: 'Mandalas terapéuticos', description: 'El poder sanador de colorear mandalas.' },
   { href: '/blog/arte-trauma', image: '/arte-y-trauma.webp', alt: 'Arte y trauma', title: 'Arte y trauma', description: 'Cómo el arte ayuda a procesar experiencias difíciles.' },
-  { href: '/blog/arteterapia-para-ninos', image: '/arteterapia-ninos.webp', alt: 'Arteterapia para niños', title: 'Arteterapia para niños', description: 'Guía por edades para acompañar a los más pequeños.' },
+  { href: '/blog/arteterapia-para-ninos', image: '/arteterapia-ninos.webp', alt: 'Arteterapia para niños', title: 'Arteterapia para niños', description: 'Por edades para acompañar a los más pequeños.' },
   { href: '/blog/arteterapia-para-la-ansiedad', image: '/arteterapia-ansiedad.webp', alt: 'Arteterapia para la ansiedad', title: 'Arteterapia para la ansiedad', description: 'Cómo el arte te ayuda a manejar la ansiedad.' },
   { href: '/blog/diferencia-psicologia-arteterapia', image: '/diferencia psicologia y arteterapia.jpeg', alt: 'Diferencia psicología y arteterapia', title: 'Diferencia entre psicología y arteterapia', description: '¿Cuál es la diferencia y cuál necesitas?' },
 ]
