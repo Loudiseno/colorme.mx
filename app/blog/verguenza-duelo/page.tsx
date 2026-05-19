@@ -6,7 +6,7 @@ import { ArrowLeft } from 'lucide-react'
 import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
-export default function ArticuloVerguenzaDuelo() {
+export default function ArticuloVergüenzaDuelo() {
   return (
     <article className="pt-28 pb-16 md:pt-36 md:pb-20">
       <div className="max-w-3xl mx-auto px-6">
@@ -21,15 +21,15 @@ export default function ArticuloVerguenzaDuelo() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            La verguenza: la emocion que te hace esconderte
+            La vergüenza: la emoción que te hace esconderte
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/verguenza-duelo.webp"
-            alt="Verguenza emocional, duelo silenciado, emociones ocultas, miedo al juicio."
+            alt="Vergüenza emocional, duelo silenciado, emociones ocultas, miedo al juicio."
             width={300}
             height={200}
             priority
@@ -43,21 +43,21 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            Hay una emocion de la que casi nadie habla. Precisamente porque hablar de ella la activa.
+            Hay una emoción de la que casi nadie habla. Precisamente porque hablar de ella la activa.
           </p>
 
           <p>
-            La verguenza.
+            La vergüenza.
           </p>
 
           <p>
-            Es la emocion que te hace querer desaparecer. Que te convence de que si alguien viera quien eres realmente, te rechazaria. Que te mantiene en silencio sobre las cosas mas importantes.
+            Es la emoción que te hace querer desaparecer. Que te convence de que si alguien viera quien eres realmente, te rechazaria. Que te mantiene en silencio sobre las cosas mas importantes.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La emocion que no queremos admitir que sentimos</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La emoción que no queremos admitir que sentimos</h2>
 
           <p>
-            La verguenza tiene una caracteristica peculiar: sentir verguenza da verguenza.
+            La vergüenza tiene una caracteristica peculiar: sentir vergüenza da vergüenza.
           </p>
 
           <p>
@@ -69,13 +69,13 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            Segun investigaciones de la psicologa Brene Brown, quien ha estudiado la verguenza durante mas de dos decadas, esta emocion es universal. Todos la sentimos. La unica diferencia es que tanto control tiene sobre nuestras vidas.
+            Según investigaciones de la psicóloga Brene Brown, quien ha estudiado la vergüenza durante mas de dos décadas, esta emoción es universal. Todos la sentimos. La única diferencia es que tanto control tiene sobre nuestras vidas.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Verguenza versus culpa</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Vergüenza versus culpa</h2>
 
           <p>
-            Aunque a menudo se confunden, verguenza y culpa son emociones diferentes.
+            Aunque a menudo se confunden, vergüenza y culpa son emociones diferentes.
           </p>
 
           <p>
@@ -83,7 +83,7 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            La verguenza dice: &quot;Soy algo malo.&quot;
+            La vergüenza dice: &quot;Soy algo malo.&quot;
           </p>
 
           <p>
@@ -91,17 +91,17 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            La verguenza se enfoca en la identidad. No dice que fallaste; dice que eres un fracaso. No senala algo que puedes cambiar; te define como defectuoso en tu esencia.
+            La vergüenza se enfoca en la identidad. No dice que fallaste; dice que eres un fracaso. No senala algo que puedes cambiar; te define como defectuoso en tu esencia.
           </p>
 
           <p>
-            Esta diferencia es crucial. La culpa, cuando es proporcional, puede ser constructiva. La verguenza rara vez lo es.
+            Esta diferencia es crucial. La culpa, cuando es proporcional, puede ser constructiva. La vergüenza rara vez lo es.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que la verguenza nos hace creer</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que la vergüenza nos hace creer</h2>
 
           <p>
-            La verguenza tiene mensajes caracteristicos.
+            La vergüenza tiene mensajes caracteristicos.
           </p>
 
           <p>
@@ -109,25 +109,25 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            &quot;Si me conocieran de verdad, me rechazarian.&quot; La verguenza crea una separacion entre el yo que mostramos y el yo que escondemos. Vivimos con el terror de que la mascara caiga.
+            &quot;Si me conocieran de verdad, me rechazarian.&quot; La vergüenza crea una separación entre el yo que mostramos y el yo que escondemos. Vivimos con el terror de que la mascara caiga.
           </p>
 
           <p>
-            &quot;No merezco amor ni pertenencia.&quot; La verguenza nos convence de que el amor que recibimos es condicional, basado en una version editada de nosotros. El verdadero yo no seria amado.
+            &quot;No merezco amor ni pertenencia.&quot; La vergüenza nos convence de que el amor que recibimos es condicional, basado en una version editada de nosotros. El verdadero yo no seria amado.
           </p>
 
           <p>
-            &quot;Soy el unico que se siente asi.&quot; Parte del poder de la verguenza es hacernos creer que nuestra experiencia es unica, que nadie mas tiene estos secretos o defectos.
+            &quot;Soy el único que se siente asi.&quot; Parte del poder de la vergüenza es hacernos creer que nuestra experiencia es única, que nadie mas tiene estos secretos o defectos.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">De donde viene la verguenza</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">De donde viene la vergüenza</h2>
 
           <p>
-            La verguenza se aprende. Generalmente temprano.
+            La vergüenza se aprende. Generalmente temprano.
           </p>
 
           <p>
-            <strong>Mensajes familiares.</strong> Padres que avergonzaban como forma de disciplina. Comparaciones con hermanos o con otros ninos. Mensajes explicitos o implicitos de que no eras suficiente.
+            <strong>Mensajes familiares.</strong> Padres que avergonzaban como forma de disciplina. Comparaciones con hermanos o con otros niños. Mensajes explicitos o implicitos de que no eras suficiente.
           </p>
 
           <p>
@@ -139,61 +139,61 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            <strong>Secretos familiares.</strong> Crecer en familias donde habia cosas de las que no se podia hablar: adicciones, abusos, enfermedades mentales, situacion economica. El silencio ensena que ciertas realidades son vergonzosas.
+            <strong>Secretos familiares.</strong> Crecer en familias donde habia cosas de las que no se podia hablar: adicciones, abusos, enfermedades mentales, situacion economica. El silencio enseña que ciertas realidades son vergonzosas.
           </p>
 
           <p>
             <strong>Mensajes culturales.</strong> La cultura transmite que es vergonzoso: ciertos cuerpos, ciertas orientaciones, ciertas condiciones de vida, ciertas emociones. Internalizamos esos mensajes aunque no los hayamos elegido.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Verguenza en el duelo</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Vergüenza en el duelo</h2>
 
           <p>
-            La verguenza aparece frecuentemente en el proceso de duelo, aunque rara vez se menciona.
+            La vergüenza aparece frecuentemente en el proceso de duelo, aunque rara vez se menciona.
           </p>
 
           <p>
-            Verguenza por como murio la persona: suicidio, sobredosis, causas estigmatizadas.
+            Vergüenza por como murio la persona: suicidio, sobredosis, causas estigmatizadas.
           </p>
 
           <p>
-            Verguenza por la relacion que tenias: conflictos no resueltos, distancia, ambivalencia.
+            Vergüenza por la relación que tenias: conflictos no resueltos, distancia, ambivalencia.
           </p>
 
           <p>
-            Verguenza por lo que sientes: alivio, enojo con quien murio, culpa por seguir vivo.
+            Vergüenza por lo que sientes: alivio, enojo con quien murio, culpa por seguir vivo.
           </p>
 
           <p>
-            Verguenza por como estas llevando el duelo: si lloras demasiado o demasiado poco, si no puedes funcionar o si funcionas &quot;demasiado bien.&quot;
+            Vergüenza por como estas llevando el duelo: si lloras demasiado o demasiado poco, si no puedes funcionar o si funcionas &quot;demasiado bien.&quot;
           </p>
 
           <p>
-            Esta verguenza anade una capa de sufrimiento al duelo y puede hacer que las personas se aislen justamente cuando mas necesitan conexion.
+            Esta vergüenza anade una capa de sufrimiento al duelo y puede hacer que las personas se aislen justamente cuando mas necesitan conexión.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como la verguenza nos aisla</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como la vergüenza nos aisla</h2>
 
           <p>
-            La verguenza prospera en el secreto y el silencio.
-          </p>
-
-          <p>
-            Cuando sentimos verguenza, nuestro impulso es escondernos. No hablar. No dejar que nadie vea. Creemos que el silencio nos protege.
+            La vergüenza prospera en el secreto y el silencio.
           </p>
 
           <p>
-            Pero el aislamiento alimenta la verguenza. Sin el reflejo de otros, sin escuchar &quot;yo tambien me he sentido asi,&quot; quedamos atrapados en la creencia de que somos los unicos, de que nuestro defecto es unico e imperdonable.
+            Cuando sentimos vergüenza, nuestro impulso es escondernos. No hablar. No dejar que nadie vea. Creemos que el silencio nos protege.
           </p>
 
           <p>
-            El aislamiento tambien nos impide cuestionar los mensajes de la verguenza. Sin perspectivas externas, las distorsiones de la verguenza pasan por verdad.
+            Pero el aislamiento alimenta la vergüenza. Sin el reflejo de otros, sin escuchar &quot;yo también me he sentido asi,&quot; quedamos atrapados en la creencia de que somos los unicos, de que nuestro defecto es único e imperdonable.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El antidoto: conexion y vulnerabilidad</h2>
+          <p>
+            El aislamiento también nos impide cuestionar los mensajes de la vergüenza. Sin perspectivas externas, las distorsiones de la vergüenza pasan por verdad.
+          </p>
+
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El antidoto: conexión y vulnerabilidad</h2>
 
           <p>
-            Si la verguenza prospera en el silencio, el antidoto es la conexion.
+            Si la vergüenza prospera en el silencio, el antidoto es la conexión.
           </p>
 
           <p>
@@ -201,14 +201,14 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            Cuando compartes algo que te averguenza y la otra persona responde con comprension, algo cambia. La creencia de que serias rechazado si alguien supiera se confronta con la realidad de que alguien sabe y sigue ahi.
+            Cuando compartes algo que te avergüenza y la otra persona responde con comprension, algo cambia. La creencia de que serias rechazado si alguien supiera se confronta con la realidad de que alguien sabe y sigue ahi.
           </p>
 
           <p>
-            La vulnerabilidad es el camino, aunque se sienta aterrador. Brene Brown la define como &quot;incertidumbre, riesgo y exposicion emocional.&quot; No es comoda. Pero es la puerta de salida de la verguenza.
+            La vulnerabilidad es el camino, aunque se sienta aterrador. Brene Brown la define como &quot;incertidumbre, riesgo y exposicion emocional.&quot; No es comoda. Pero es la puerta de salida de la vergüenza.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Expresar lo que averguenza a traves del arte</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Expresar lo que avergüenza a traves del arte</h2>
 
           <p>
             No todo necesita ser dicho en voz alta a otra persona.
@@ -219,7 +219,7 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            Escribir lo que te averguenza, para ti mismo. El acto de poner palabras a lo que guardas en silencio ya tiene poder.
+            Escribir lo que te avergüenza, para ti mismo. El acto de poner palabras a lo que guardas en silencio ya tiene poder.
           </p>
 
           <p>
@@ -227,21 +227,21 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            Crear algo y despues destruirlo si lo necesitas. El arte no tiene que ser permanente ni publico para ser terapeutico.
+            Crear algo y después destruirlo si lo necesitas. El arte no tiene que ser permanente ni publico para ser terapeutico.
           </p>
 
           <p>
             Estos actos creativos pueden ser pasos hacia nombrar lo que sientes, sacar del interior lo que has cargado solo.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Trabajar con la verguenza</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Trabajar con la vergüenza</h2>
 
           <p>
-            La verguenza profunda generalmente requiere trabajo consciente, muchas veces con apoyo profesional.
+            La vergüenza profunda generalmente requiere trabajo consciente, muchas veces con apoyo profesional.
           </p>
 
           <p>
-            <strong>Reconocer la verguenza.</strong> Identificar cuando esta presente, que la activa, que mensajes trae. Esto ya es un paso significativo porque la verguenza opera mejor cuando permanece invisible.
+            <strong>Reconocer la vergüenza.</strong> Identificar cuando esta presente, que la activa, que mensajes trae. Esto ya es un paso significativo porque la vergüenza opera mejor cuando permanece invisible.
           </p>
 
           <p>
@@ -259,7 +259,7 @@ export default function ArticuloVerguenzaDuelo() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una reflexion</h2>
 
           <p>
-            La verguenza es una de las emociones mas dolorosas que existen. Y tambien una de las mas comunes.
+            La vergüenza es una de las emociones mas dolorosas que existen. Y también una de las mas comunes.
           </p>
 
           <p>
@@ -271,7 +271,7 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p>
-            La verguenza pierde poder cuando se nombra, cuando se comparte, cuando se expone a la luz.
+            La vergüenza pierde poder cuando se nombra, cuando se comparte, cuando se expone a la luz.
           </p>
 
           <p>
@@ -279,14 +279,14 @@ export default function ArticuloVerguenzaDuelo() {
           </p>
 
           <p className="italic text-black/60 mt-8">
-            Lo que escondes por verguenza no te define. Pero guardarlo te limita.
+            Lo que escondes por vergüenza no te define. Pero guardarlo te limita.
           </p>
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesion de orientacion gratuita</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si cargas con emociones dificiles y necesitas un espacio seguro para expresarlas, estoy aqui para ti.
+            Si cargas con emociones difíciles y necesitas un espacio seguro para expresarlas, estoy aqui para ti.
           </p>
           <a
             href={siteConfig.calendly}

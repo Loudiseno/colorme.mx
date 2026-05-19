@@ -20,9 +20,9 @@ export default function MehndiIndiaPage() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">RITUALES Y COLORES DEL MUNDO</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Mehndi, el arte sagrado de la India donde la piel se convierte en oracion
+            Mehndi, el arte sagrado de la India donde la piel se convierte en oración
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -51,7 +51,7 @@ export default function MehndiIndiaPage() {
             Se dice que las primeras mujeres en llevar estos trazos vivian en los desiertos de Rajasthan, Punjab y Gujarat. Cubrian sus manos y sus pies con esa pasta ancestral porque refrescaba el cuerpo bajo el sol implacable. Con el tiempo, alguien noto que donde caia una gota quedaba un punto luminoso. Y de ese pequeno descubrimiento nacieron los patrones mas hermosos del mundo.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Mas que un adorno: una bendicion que se lleva en el cuerpo</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Más que un adorno: una bendición que se lleva en el cuerpo</h2>
 
           <p>
             En la India, el Mehndi acompana a las mujeres en muchos momentos sagrados de la vida. Se aplica en festivales, en celebraciones religiosas, durante el embarazo, en aniversarios espirituales y en cualquier umbral importante donde el alma necesita ser bendecida.
@@ -61,30 +61,30 @@ export default function MehndiIndiaPage() {
             Durante festivales como Karva Chauth, Diwali, Teej o Eid, las mujeres se reunen para pintarse las manos como gesto de gratitud y devocion.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El lenguaje secreto de los simbolos</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El lenguaje secreto de los símbolos</h2>
 
           <p>
-            Cada trazo del Mehndi guarda una intencion. Nada es decoracion pura. Cada figura es un mensaje, una oracion hecha visible.
+            Cada trazo del Mehndi guarda una intencion. Nada es decoracion pura. Cada figura es un mensaje, una oración hecha visible.
           </p>
 
           <p>
-            La flor de loto pide apertura espiritual y pureza del corazon. El pavo real promete belleza y fidelidad. La enredadera anuncia fertilidad y crecimiento. La luna cuida los ciclos del alma femenina. El sol convoca vitalidad y fuerza. Los mandalas representan al universo entero contenido en una sola palma.
+            La flor de loto pide apertura espiritual y pureza del corazón. El pavo real promete belleza y fidelidad. La enredadera anuncia fertilidad y crecimiento. La luna cuida los ciclos del alma femenina. El sol convoca vitalidad y fuerza. Los mandalas representan al universo entero contenido en una sola palma.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los colores del alma india</h2>
 
           <p>
-            En esta tradicion, los colores son mensajeros. El rojo representa el amor, la pasion y la fuerza vital. El amarillo convoca la alegria, la luz del sol y la bendicion de los dioses. El naranja simboliza el fuego sagrado y la transformacion interior. El verde recuerda la naturaleza, la fertilidad y los nuevos comienzos.
+            En esta tradicion, los colores son mensajeros. El rojo representa el amor, la pasion y la fuerza vital. El amarillo convoca la alegria, la luz del sol y la bendición de los dioses. El naranja simboliza el fuego sagrado y la transformación interior. El verde recuerda la naturaleza, la fertilidad y los nuevos comienzos.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que el Mehndi ensena sobre los ritos de paso</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que el Mehndi enseña sobre los ritos de paso</h2>
 
           <p>
             Aprendi que toda transicion merece ser honrada. Que pasar de una etapa a otra no deberia hacerse en silencio ni en soledad, sino rodeada de gestos que le digan al alma: este momento importa.
           </p>
 
           <p>
-            Como tanatologa, encuentro en esta tradicion una verdad que suelo compartir en cada acompanamiento. No solo la muerte necesita ceremonia. Tambien la necesitan los finales mas pequenos y los comienzos mas sutiles: una despedida, una mudanza, el cierre de una etapa, el comienzo de una vida distinta.
+            Como tanatóloga, encuentro en esta tradicion una verdad que suelo compartir en cada acompañamiento. No solo la muerte necesita ceremonia. También la necesitan los finales mas pequenos y los comienzos mas sutiles: una despedida, una mudanza, el cierre de una etapa, el comienzo de una vida distinta.
           </p>
 
           <p>
@@ -95,7 +95,7 @@ export default function MehndiIndiaPage() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">¿Estas atravesando una transicion?</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si necesitas acompanamiento en un cierre de ciclo o un nuevo comienzo, estoy aqui para ti.
+            Si necesitas acompañamiento en un cierre de ciclo o un nuevo comienzo, estoy aqui para ti.
           </p>
           <a
             href={siteConfig.calendly}

@@ -167,7 +167,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>El material lo iremos definiendo de acuerdo a los ejercicios que necesites y tambien puedo ajustar las sesiones a lo que puedas conseguir en caso de que sean en línea.</strong>
+            <strong>El material lo iremos definiendo de acuerdo a los ejercicios que necesites y también puedo ajustar las sesiones a lo que puedas conseguir en caso de que sean en línea.</strong>
           </p>
 
           <p>

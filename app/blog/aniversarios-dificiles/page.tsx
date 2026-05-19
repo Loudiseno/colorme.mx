@@ -6,7 +6,7 @@ import { ArrowLeft } from 'lucide-react'
 import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
-export default function ArticuloAniversariosDificiles() {
+export default function ArticuloAniversariosDifíciles() {
   return (
     <article className="pt-28 pb-16 md:pt-36 md:pb-20">
       <div className="max-w-3xl mx-auto px-6">

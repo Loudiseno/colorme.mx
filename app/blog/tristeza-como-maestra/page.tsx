@@ -23,13 +23,13 @@ export default function ArticuloTristezaComoMaestra() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             La tristeza no vino a destruirte
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/tristeza.webp"
-            alt="Tristeza emocional, procesar tristeza, emociones dificiles, inteligencia emocional."
+            alt="Tristeza emocional, procesar tristeza, emociones difíciles, inteligencia emocional."
             width={300}
             height={200}
             priority
@@ -54,7 +54,7 @@ export default function ArticuloTristezaComoMaestra() {
             Pero la tristeza no es el enemigo que nos han hecho creer.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La emocion que nadie quiere sentir</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La emoción que nadie quiere sentir</h2>
 
           <p>
             Desde pequenos recibimos mensajes claros sobre la tristeza. &quot;No llores.&quot; &quot;No te pongas asi.&quot; &quot;Animate.&quot; &quot;Mira el lado positivo.&quot;
@@ -97,7 +97,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            La tristeza es una emocion temporal que responde a circunstancias especificas. Viene, se siente, y eventualmente pasa. Puedes estar triste y aun asi funcionar en tu vida diaria, encontrar momentos de alivio, conectar con otros.
+            La tristeza es una emoción temporal que responde a circunstancias especificas. Viene, se siente, y eventualmente pasa. Puedes estar triste y aun asi funcionar en tu vida diaria, encontrar momentos de alivio, conectar con otros.
           </p>
 
           <p>
@@ -119,7 +119,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            <strong>Positividad forzada.</strong> Obligarnos a ver el lado bueno antes de haber procesado el lado dificil. Sonreir cuando por dentro estamos rotos.
+            <strong>Positividad forzada.</strong> Obligarnos a ver el lado bueno antes de haber procesado el lado difícil. Sonreir cuando por dentro estamos rotos.
           </p>
 
           <p>
@@ -167,11 +167,11 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            Despues de llorar, muchas personas reportan sentirse mas aliviadas, mas claras, menos tensas. No es imaginacion. Es biologia.
+            Después de llorar, muchas personas reportan sentirse mas aliviadas, mas claras, menos tensas. No es imaginacion. Es biologia.
           </p>
 
           <p>
-            Sin embargo, muchos adultos han olvidado como llorar. Les da verguenza, lo consideran debilidad, lo reprimen automaticamente.
+            Sin embargo, muchos adultos han olvidado como llorar. Les da vergüenza, lo consideran debilidad, lo reprimen automaticamente.
           </p>
 
           <p>
@@ -233,7 +233,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            Pero la tristeza tambien es prueba de que algo importo. No puedes entristecerte por lo que no valoras. El dolor es proporcional al amor.
+            Pero la tristeza también es prueba de que algo importo. No puedes entristecerte por lo que no valoras. El dolor es proporcional al amor.
           </p>
 
           <p>
@@ -250,9 +250,9 @@ export default function ArticuloTristezaComoMaestra() {
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesion de orientacion gratuita</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si necesitas acompanamiento para procesar tus emociones, estoy aqui para ti.
+            Si necesitas acompañamiento para procesar tus emociones, estoy aqui para ti.
           </p>
           <a
             href={siteConfig.calendly}
