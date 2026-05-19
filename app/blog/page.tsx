@@ -443,6 +443,20 @@ const ritualesArticles = [
     description: 'Descubre los rituales italianos de duelo, el significado de los colores de su bandera y cómo Italia honra a sus difuntos.',
     alt: 'Rituales de Italia',
   },
+  {
+    href: '/blog/mehndi-india-significado-henna-ritual-espiritual',
+    image: '/mehndi-india.jpeg',
+    title: 'Mehndi: el arte sagrado de la India donde la piel se convierte en oración',
+    description: 'Descubre el significado espiritual del mehndi, la henna sagrada de India, y cómo este arte conecta con el alma.',
+    alt: 'Mehndi India henna sagrada',
+  },
+  {
+    href: '/blog/melukat-ceremonia-purificacion-bali-agua-sagrada',
+    image: '/melukat-bali.jpeg',
+    title: 'Melukat: la ceremonia balinesa donde el agua limpia el dolor del alma',
+    description: 'Conoce la ceremonia de purificación Melukat de Bali y cómo el agua sagrada sana el cuerpo y el espíritu.',
+    alt: 'Ceremonia Melukat Bali purificación',
+  },
 ]
 
 const allArticles = [
