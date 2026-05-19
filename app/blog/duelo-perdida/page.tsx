@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import RelatedArticles from '@/components/RelatedArticles'
 import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloPerdida() {
@@ -11,7 +12,7 @@ export default function ArticuloDueloPerdida() {
       <div className="max-w-3xl mx-auto px-6">
         {/* Back link */}
         <Link
-          href="/#blog"
+          href="/blog"
           className="inline-flex items-center gap-2 text-black hover:text-black/70 transition-colors mb-8"
         >
           <ArrowLeft size={18} />
@@ -21,8 +22,8 @@ export default function ArticuloDueloPerdida() {
         {/* Header */}
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mt-3 mb-6 leading-tight font-semibold">
-            ¿Qué es el Duelo?
+          <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
+            ¿Qué es el duelo? Guía para entender y atravesar el proceso de pérdida
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
@@ -30,10 +31,11 @@ export default function ArticuloDueloPerdida() {
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/el duelo.jpeg"
+            src="/el-duelo.webp"
             alt="Persona procesando el duelo en soledad"
-            width={1200}
-            height={675}
+            width={300}
+            height={200}
+            priority
             className="w-full h-auto"
           />
         </div>
@@ -60,7 +62,7 @@ export default function ArticuloDueloPerdida() {
             Hoy quiero acompañarte a entender qué es realmente el duelo, por qué duele tanto y cómo puedes transitarlo sin perderte en el camino.
           </p>
 
-          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿Qué significa hacer duelo?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué significa hacer duelo?</h2>
 
           <p>
             El duelo es la respuesta emocional, física y psicológica que experimentamos cuando perdemos algo significativo en nuestra vida. Es el proceso interno que nos permite procesar esa ausencia, reorganizar nuestra realidad y eventualmente encontrar una nueva forma de vivir.
@@ -78,7 +80,7 @@ export default function ArticuloDueloPerdida() {
             Y algo crucial: el duelo no tiene fecha de caducidad. No existe un momento en que "deberías" estar mejor. Cada organismo, cada historia, cada vínculo requiere su propio tiempo de procesamiento.
           </p>
 
-          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Más allá de la muerte: los duelos invisibles</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Más allá de la muerte: los duelos invisibles</h2>
 
           <p>
             Cuando escuchamos "duelo", pensamos automáticamente en la muerte de un ser querido. Y sí, perder a alguien que amas es devastador. Pero el duelo tiene muchas más caras de las que solemos reconocer.
@@ -91,7 +93,7 @@ export default function ArticuloDueloPerdida() {
           <h3 className="text-xl text-black font-semibold mt-6 mb-3">Pérdidas relacionales</h3>
 
           <p>
-            La muerte de un familiar, sí. Pero también la muerte de tu mascota —ese compañero que estuvo contigo cada día durante años. La ruptura de una pareja con quien construiste una vida. El divorcio que partió tu mundo en dos. El distanciamiento de un hijo, un padre, un amigo que ya no responde tus mensajes.
+            La muerte de un familiar, sí. Pero también la muerte de tu mascota -ese compañero que estuvo contigo cada día durante años. La ruptura de una pareja con quien construiste una vida. El divorcio que partió tu mundo en dos. El distanciamiento de un hijo, un padre, un amigo que ya no responde tus mensajes.
           </p>
 
           <h3 className="text-xl text-black font-semibold mt-6 mb-3">Pérdidas de identidad</h3>
@@ -128,7 +130,7 @@ export default function ArticuloDueloPerdida() {
             Todas estas pérdidas merecen ser nombradas. Todas merecen espacio para el dolor.
           </p>
 
-          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">El camino del duelo: ¿realmente hay etapas?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El camino del duelo: ¿realmente hay etapas?</h2>
 
           <p>
             Probablemente conoces el modelo de las cinco etapas del duelo de Elisabeth Kübler-Ross: negación, ira, negociación, depresión y aceptación. Este modelo ha ayudado a millones de personas a entender que el duelo tiene diferentes momentos emocionales.
@@ -143,21 +145,21 @@ export default function ArticuloDueloPerdida() {
           </p>
 
           <p>
-            Puedes sentir aceptación por la mañana y rabia por la noche. Puedes tener una semana entera de paz y de pronto derrumbarte por una canción, un olor, una fecha. Puedes experimentar alivio y culpa al mismo tiempo —especialmente si quien partió estaba sufriendo.
+            Puedes sentir aceptación por la mañana y rabia por la noche. Puedes tener una semana entera de paz y de pronto derrumbarte por una canción, un olor, una fecha. Puedes experimentar alivio y culpa al mismo tiempo -especialmente si quien partió estaba sufriendo.
           </p>
 
           <p>
             Todo eso es normal. No significa que estés retrocediendo ni que lo estés haciendo mal. Significa que eres humano procesando algo enorme.
           </p>
 
-          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Las señales del cuerpo: el duelo también es físico</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Las señales del cuerpo: el duelo también es físico</h2>
 
           <p>
             El duelo no vive solo en tu mente. Se instala en tu cuerpo con síntomas que pueden confundirte o asustarte.
           </p>
 
           <p>
-            Es común experimentar alteraciones del sueño —dormir demasiado o no poder conciliar el sueño. Cambios en el apetito, ya sea comer en exceso o perder todo interés por la comida. Fatiga extrema aunque no hayas hecho nada físicamente demandante. Dolor en el pecho, opresión en la garganta, sensación de vacío en el estómago.
+            Es común experimentar alteraciones del sueño -dormir demasiado o no poder conciliar el sueño. Cambios en el apetito, ya sea comer en exceso o perder todo interés por la comida. Fatiga extrema aunque no hayas hecho nada físicamente demandante. Dolor en el pecho, opresión en la garganta, sensación de vacío en el estómago.
           </p>
 
           <p>
@@ -165,10 +167,10 @@ export default function ArticuloDueloPerdida() {
           </p>
 
           <p>
-            Cuidar tu cuerpo durante este proceso no es un lujo —es una necesidad. Descansar aunque el sueño sea difícil. Comer aunque no tengas hambre. Moverte aunque solo sea caminar unos minutos. Tu cuerpo necesita recursos para atravesar esta tormenta.
+            Cuidar tu cuerpo durante este proceso no es un lujo -es una necesidad. Descansar aunque el sueño sea difícil. Comer aunque no tengas hambre. Moverte aunque solo sea caminar unos minutos. Tu cuerpo necesita recursos para atravesar esta tormenta.
           </p>
 
-          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">¿Cuándo el duelo necesita ayuda profesional?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cuándo el duelo necesita ayuda profesional?</h2>
 
           <p>
             El duelo es un proceso natural, pero hay momentos en que se complica y requiere acompañamiento especializado. Reconocer estas señales puede marcar una diferencia enorme en tu recuperación.
@@ -192,7 +194,7 @@ export default function ArticuloDueloPerdida() {
             Pedir ayuda no es rendirse. Es reconocer que algunas cargas son demasiado pesadas para llevarlas solo.
           </p>
 
-          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">El acompañamiento tanatológico: un espacio para tu dolor</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El acompañamiento tanatológico: un espacio para tu dolor</h2>
 
           <p>
             La tanatología es la disciplina que se especializa en acompañar a personas que atraviesan procesos de pérdida, duelo y final de la vida. Como tanatóloga, mi trabajo consiste en ofrecerte un espacio seguro donde tu dolor tenga lugar.
@@ -210,7 +212,7 @@ export default function ArticuloDueloPerdida() {
             No necesitas llegar con las ideas claras ni saber exactamente qué sientes. Parte del proceso es justamente ir descubriendo y nombrando eso que llevas dentro.
           </p>
 
-          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Lo que nadie te dice sobre el duelo</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que nadie te dice sobre el duelo</h2>
 
           <p>
             El duelo te cambia. No vas a volver a ser quien eras antes de la pérdida, y eso está bien. La meta no es regresar a tu vida anterior sino construir una vida nueva que integre lo que sucedió.
@@ -221,14 +223,14 @@ export default function ArticuloDueloPerdida() {
           </p>
 
           <p>
-            Con el tiempo, el dolor no desaparece —se transforma. Deja de ocupar cada rincón de tu mente y empieza a convivir con otras emociones. Aprendes a cargar esa ausencia de una forma diferente.
+            Con el tiempo, el dolor no desaparece -se transforma. Deja de ocupar cada rincón de tu mente y empieza a convivir con otras emociones. Aprendes a cargar esa ausencia de una forma diferente.
           </p>
 
           <p>
             Y un día, sin darte cuenta, descubrirás que puedes recordar sin derrumbarte. Que la tristeza sigue ahí pero ya no te ahoga. Que honrar a quien perdiste también puede incluir seguir viviendo tu propia vida.
           </p>
 
-          <h2 className="text-3xl md:text-4xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes</h2>
 
           <div className="space-y-6">
             <div>
@@ -245,7 +247,7 @@ export default function ArticuloDueloPerdida() {
                 ¿Es normal sentir alivio cuando alguien muere?
               </p>
               <p>
-                Completamente. Especialmente cuando esa persona sufría por una enfermedad. El alivio no contradice el amor —conviven.
+                Completamente. Especialmente cuando esa persona sufría por una enfermedad. El alivio no contradice el amor -conviven.
               </p>
             </div>
 
@@ -293,6 +295,9 @@ export default function ArticuloDueloPerdida() {
             Agenda tu primera consulta gratuita
           </a>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles currentSlug="duelo-perdida" category="tanatologia" />
       </div>
     </article>
   )
