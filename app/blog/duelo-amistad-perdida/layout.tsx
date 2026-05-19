@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Duelo por la pérdida de una amistad',
-  description: 'El duelo por perder una amistad es real. Guía para procesar el fin de una relación de amistad importante.',
+  description: 'El duelo por perder una amistad es real. Para procesar el fin de una relación de amistad importante.',
   keywords: ['duelo amistad', 'pérdida de amistad', 'fin de amistad', 'duelo', 'relaciones'],
   alternates: { canonical: '/blog/duelo-amistad-perdida' },
   openGraph: { type: 'article', title: 'Duelo por la pérdida de una amistad | ColorMe', url: '/blog/duelo-amistad-perdida' },

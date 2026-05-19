@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Navidad en Duelo | Cómo Sobrevivir las Fiestas',
-  description: 'Cómo sobrevivir la Navidad cuando estás en duelo. Guía para atravesar las fiestas cuando el corazón está de luto.',
+  description: 'Cómo sobrevivir la Navidad cuando estás en duelo. Para atravesar las fiestas cuando el corazón está de luto.',
   keywords: ['navidad en duelo', 'fiestas en duelo', 'duelo navidad', 'primer navidad sin', 'fiestas decembrinas duelo'],
   alternates: {
     canonical: '/blog/navidad-en-duelo',
