@@ -212,7 +212,7 @@ const tanatologiaArticles = [
   },
   {
     href: '/blog/duelos-invisibles-desautorizados',
-    image: '/duelos-invisibles.jpeg',
+    image: '/hombre-en-duelo.webp',
     title: 'Duelos invisibles: las pérdidas que nadie reconoce',
     description: 'Las pérdidas que el mundo no valida pero que duelen igual.',
     alt: 'Duelos invisibles y desautorizados',

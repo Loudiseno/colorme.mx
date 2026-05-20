@@ -24,7 +24,7 @@ export default function DuelosInvisiblesPage() {
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/duelos-invisibles.jpeg" alt="Duelos invisibles y desautorizados" width={300} height={200} priority className="w-full h-auto" />
+          <Image src="/hombre-en-duelo.webp" alt="Duelos invisibles y desautorizados" width={300} height={200} priority className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">
