@@ -18,6 +18,8 @@ const tanatologiaArticles: Article[] = [
   { href: '/blog/duelo-complicado', image: '/duelo-complicado.webp', alt: 'Duelo complicado', title: 'Duelo complicado', description: 'Cuando el duelo se estanca y necesita atención especial.' },
   { href: '/blog/duelo-anticipado', image: '/duelo-anticipado.webp', alt: 'Duelo anticipado', title: 'Duelo anticipado', description: 'Cuando el duelo comienza antes de la pérdida.' },
   { href: '/blog/duelo-perinatal', image: '/duelo-perinatal.webp', alt: 'Duelo perinatal', title: 'Duelo perinatal', description: 'Acompañamiento en la pérdida gestacional.' },
+  { href: '/blog/bebe-arcoiris', image: '/bebe arcoiris.jpg', alt: 'Bebé arcoíris', title: 'Bebé arcoíris: la luz después de la tormenta', description: 'La experiencia de esperar un bebé después de una pérdida gestacional.' },
+  { href: '/blog/duelos-invisibles-desautorizados', image: '/hombre-en-duelo.webp', alt: 'Duelos invisibles', title: 'Duelos invisibles: las pérdidas que nadie reconoce', description: 'Las pérdidas que el mundo no valida pero que duelen igual.' },
   { href: '/blog/duelo-por-mascota', image: '/duelo-por-mascota.webp', alt: 'Duelo por mascota', title: 'Duelo por mascota', description: 'La pérdida de un compañero animal es un duelo válido.' },
   { href: '/blog/muerte-mama', image: '/duelo-muerte-mama.webp', alt: 'Muerte de mamá', title: 'La muerte de mamá', description: 'Cuando perdemos a quien nos dio la vida.' },
   { href: '/blog/sindrome-cuidador', image: '/sindrome-cuidador.webp', alt: 'Síndrome del cuidador', title: 'Síndrome del cuidador', description: 'El agotamiento de quienes cuidan a otros.' },
