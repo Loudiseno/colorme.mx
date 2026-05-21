@@ -69,6 +69,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'siete-etapas-del-duelo',
     'duelo-perdida-trabajo',
     'duelo-por-ser-mama',
+    'primeros-dias-despues-muerte',
+    'bloqueo-emocional-no-siento-nada',
   ]
 
   // Core pages

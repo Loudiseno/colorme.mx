@@ -47,6 +47,7 @@ const tanatologiaArticles: Article[] = [
   { href: '/blog/siete-etapas-del-duelo', image: '/siete-etapas-del-duelo.jpeg', alt: 'Las 7 etapas del duelo', title: 'Las 7 etapas del duelo', description: 'Todo lo que necesitas saber sobre las etapas del duelo.' },
   { href: '/blog/como-acompanar-cancer-terminal', image: '/como-acompanar-cancer-terminal.jpeg', alt: 'Acompañar cáncer terminal', title: 'Cómo acompañar en cáncer terminal', description: 'Para estar presente cuando más se necesita.' },
   { href: '/blog/como-hablar-con-hijos-sobre-cancer', image: '/como-hablar-con-hijos-sobre-cancer.jpeg', alt: 'Hablar con hijos sobre cáncer', title: 'Cómo hablar con tus hijos sobre el cáncer', description: 'Palabras honestas para conversaciones difíciles.' },
+  { href: '/blog/primeros-dias-despues-muerte', image: '/primeros-dias-despues-muerte.jpeg', alt: 'Primeros días después de la muerte', title: 'Los primeros días después de la muerte', description: 'Cómo sobrevivir el shock y el silencio de los primeros días.' },
 ]
 
 const arteterapiaArticles: Article[] = [
@@ -70,6 +71,7 @@ const emocionesArticles: Article[] = [
   { href: '/blog/duelo-y-culpa', image: '/duelo-y-culpa.jpeg', alt: 'Duelo y culpa', title: 'Duelo y culpa', description: 'Cómo la culpa complica el duelo y cómo liberarte de ella.' },
   { href: '/blog/perder-la-fe', image: '/perder-la-fe.webp', alt: 'Perder la fe', title: 'Perder la fe', description: 'Cuando el duelo sacude nuestras creencias.' },
   { href: '/blog/miedo-a-cumplir-anos', image: '/miedo-a-cumplir-anos.jpeg', alt: 'Miedo a cumplir años', title: 'Miedo a cumplir años', description: 'Cuando los cumpleaños traen angustia en vez de alegría.' },
+  { href: '/blog/bloqueo-emocional-no-siento-nada', image: '/bloqueo-emocional-no-siento-nada.jpeg', alt: 'Bloqueo emocional', title: 'No siento nada: bloqueo emocional', description: 'Cuando las emociones se apagan y no puedes sentir.' },
 ]
 
 const ritualesArticles: Article[] = [

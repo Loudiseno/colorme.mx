@@ -8,6 +8,13 @@ import BlogCarousel from '@/components/BlogCarousel'
 
 const tanatologiaArticles = [
   {
+    href: '/blog/primeros-dias-despues-muerte',
+    image: '/primeros-dias-despues-muerte.jpeg',
+    title: 'Los primeros días después de la muerte de un ser querido',
+    description: 'Nadie te prepara para estos días. Un espacio honesto para sobrevivir el shock y el silencio que viene después.',
+    alt: 'Los primeros días después de la muerte de un ser querido',
+  },
+  {
     href: '/blog/duelo-perdida',
     image: '/el-duelo.webp',
     title: '¿Qué es el duelo? Los duelos invisibles',
@@ -369,6 +376,14 @@ const emocionesArticles = [
     title: 'Miedo a cumplir años: cuando los cumpleaños duelen',
     description: 'El miedo a envejecer y la angustia de los cumpleaños.',
     alt: 'Miedo a cumplir años',
+  },
+  {
+  {
+    href: '/blog/bloqueo-emocional-no-siento-nada',
+    image: '/bloqueo-emocional-no-siento-nada.jpeg',
+    title: 'No siento nada: cuando las emociones se apagan',
+    description: 'Bloqueo emocional, anestesia emocional y cómo empezar a reconectarte con lo que sientes.',
+    alt: 'Bloqueo emocional - No siento nada',
   },
 ]
 
