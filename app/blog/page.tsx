@@ -43,6 +43,13 @@ const tanatologiaArticles = [
     alt: 'Duelo perinatal',
   },
   {
+    href: '/blog/bebe-arcoiris',
+    image: '/bebe arcoiris.jpg',
+    title: 'Bebé arcoíris: la luz después de la tormenta',
+    description: 'La experiencia de esperar un bebé después de una pérdida gestacional.',
+    alt: 'Bebé arcoíris',
+  },
+  {
     href: '/blog/duelo-por-mascota',
     image: '/duelo-por-mascota.webp',
     title: 'Duelo por mascota: tu dolor es válido',
