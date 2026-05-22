@@ -378,7 +378,6 @@ const emocionesArticles = [
     alt: 'Miedo a cumplir años',
   },
   {
-  {
     href: '/blog/bloqueo-emocional-no-siento-nada',
     image: '/bloqueo-emocional-no-siento-nada.jpeg',
     title: 'No siento nada: cuando las emociones se apagan',
