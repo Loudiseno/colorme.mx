@@ -252,6 +252,13 @@ const tanatologiaArticles = [
     description: 'La maternidad trae alegría, pero también pérdidas silenciosas que pocas veces se nombran.',
     alt: 'Duelo por ser mamá',
   },
+  {
+    href: '/blog/duelo-invisible-infertilidad',
+    image: '/duelo-invisible-infertilidad.jpeg',
+    title: 'El duelo invisible: cuando la maternidad o paternidad no llega',
+    description: 'Sin funeral ni condolencias, pero con un dolor real. El duelo por no poder tener hijos merece ser nombrado.',
+    alt: 'El duelo invisible por infertilidad',
+  },
 ]
 
 const arteterapiaArticles = [

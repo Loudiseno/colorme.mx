@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'duelo-por-ser-mama',
     'primeros-dias-despues-muerte',
     'bloqueo-emocional-no-siento-nada',
+    'duelo-invisible-infertilidad',
   ]
 
   // Core pages

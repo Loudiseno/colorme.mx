@@ -48,6 +48,7 @@ const tanatologiaArticles: Article[] = [
   { href: '/blog/como-acompanar-cancer-terminal', image: '/como-acompanar-cancer-terminal.jpeg', alt: 'Acompañar cáncer terminal', title: 'Cómo acompañar en cáncer terminal', description: 'Para estar presente cuando más se necesita.' },
   { href: '/blog/como-hablar-con-hijos-sobre-cancer', image: '/como-hablar-con-hijos-sobre-cancer.jpeg', alt: 'Hablar con hijos sobre cáncer', title: 'Cómo hablar con tus hijos sobre el cáncer', description: 'Palabras honestas para conversaciones difíciles.' },
   { href: '/blog/primeros-dias-despues-muerte', image: '/primeros-dias-despues-muerte.jpeg', alt: 'Primeros días después de la muerte', title: 'Los primeros días después de la muerte', description: 'Cómo sobrevivir el shock y el silencio de los primeros días.' },
+  { href: '/blog/duelo-invisible-infertilidad', image: '/duelo-invisible-infertilidad.jpeg', alt: 'Duelo invisible por infertilidad', title: 'El duelo invisible: cuando la maternidad no llega', description: 'Sin funeral ni condolencias, pero con un dolor absolutamente real.' },
 ]
 
 const arteterapiaArticles: Article[] = [
