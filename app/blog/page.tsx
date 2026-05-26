@@ -22,6 +22,13 @@ const tanatologiaArticles = [
     alt: '¿Qué es el duelo?',
   },
   {
+    href: '/blog/duelos-invisibles-desautorizados',
+    image: '/hombre-en-duelo.webp',
+    title: 'Duelos invisibles: las pérdidas que nadie reconoce pero que duelen igual',
+    description: 'Los duelos desautorizados son pérdidas reales que la sociedad no valida. Tu dolor es legítimo aunque nadie lo nombre.',
+    alt: 'Duelos invisibles y pérdidas desautorizadas',
+  },
+  {
     href: '/blog/cuanto-dura-el-duelo',
     image: '/cuanto-dura-el-duelo.webp',
     title: '¿Cuánto dura el duelo?',

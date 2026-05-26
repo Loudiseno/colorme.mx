@@ -72,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'primeros-dias-despues-muerte',
     'bloqueo-emocional-no-siento-nada',
     'duelo-invisible-infertilidad',
+    'duelos-invisibles-desautorizados',
   ]
 
   // Core pages
