@@ -23,7 +23,7 @@ export default function ArticuloDueloPerdida() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGÍA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            ¿Qué es el duelo? El proceso de pérdida, los duelos invisibles y cómo atravesarlos
+            ¿Qué es el duelo?
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>

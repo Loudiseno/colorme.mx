@@ -17,9 +17,9 @@ const tanatologiaArticles = [
   {
     href: '/blog/duelo-perdida',
     image: '/el-duelo.webp',
-    title: '¿Qué es el duelo? Los duelos invisibles',
-    description: 'El proceso de pérdida, los duelos invisibles y todo lo que nadie te dice sobre el duelo.',
-    alt: '¿Qué es el duelo? Los duelos invisibles',
+    title: '¿Qué es el duelo?',
+    description: 'Un proceso natural que atravesamos cuando perdemos algo o alguien significativo.',
+    alt: '¿Qué es el duelo?',
   },
   {
     href: '/blog/cuanto-dura-el-duelo',
