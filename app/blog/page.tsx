@@ -24,7 +24,7 @@ const tanatologiaArticles = [
   {
     href: '/blog/duelos-invisibles-desautorizados',
     image: '/hombre-en-duelo.webp',
-    title: 'Duelos invisibles: las pérdidas que nadie reconoce pero que duelen igual',
+    title: 'Duelos invisibles o desautorizados',
     description: 'Los duelos desautorizados son pérdidas reales que la sociedad no valida. Tu dolor es legítimo aunque nadie lo nombre.',
     alt: 'Duelos invisibles y pérdidas desautorizadas',
   },
@@ -262,7 +262,7 @@ const tanatologiaArticles = [
   {
     href: '/blog/duelo-invisible-infertilidad',
     image: '/duelo-invisible-infertilidad.jpeg',
-    title: 'El duelo invisible: cuando la maternidad o paternidad no llega',
+    title: 'El duelo invisible',
     description: 'Sin funeral ni condolencias, pero con un dolor real. El duelo por no poder tener hijos merece ser nombrado.',
     alt: 'El duelo invisible por infertilidad',
   },
