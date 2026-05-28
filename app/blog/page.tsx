@@ -262,9 +262,9 @@ const tanatologiaArticles = [
   {
     href: '/blog/duelo-invisible-infertilidad',
     image: '/duelo-invisible-infertilidad.jpeg',
-    title: 'El duelo invisible',
+    title: 'Cuando la maternidad o paternidad no llega',
     description: 'Sin funeral ni condolencias, pero con un dolor real. El duelo por no poder tener hijos merece ser nombrado.',
-    alt: 'El duelo invisible por infertilidad',
+    alt: 'Duelo por infertilidad',
   },
 ]
 
