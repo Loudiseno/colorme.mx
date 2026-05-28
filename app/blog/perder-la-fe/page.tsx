@@ -23,7 +23,7 @@ export default function ArticuloPerderLaFe() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Cuando pierdes la fe: el duelo espiritual
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -39,7 +39,7 @@ export default function ArticuloPerderLaFe() {
 
         <div className="prose prose-lg max-w-none text-black/80">
           <p className="italic">
-            Dejar de creer tambien es una perdida.
+            Dejar de creer también es una perdida.
           </p>
 
           <p>
@@ -47,11 +47,11 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            Las oraciones se sienten vacias. Las respuestas que antes te sostenian ya no tienen sentido. La comunidad que era tu hogar empieza a sentirse ajena.
+            Las oraciones se sienten vacías. Las respuestas que antes te sostenian ya no tienen sentido. La comunidad que era tu hogar empieza a sentirse ajena.
           </p>
 
           <p>
-            Y nadie te preparo para el duelo que viene despues.
+            Y nadie te preparo para el duelo que viene después.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Perder la fe es perder un mundo entero</h2>
@@ -61,7 +61,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            Proporciona respuestas a las preguntas mas dificiles: por que existimos, que pasa cuando morimos, tiene sentido el sufrimiento. Ofrece comunidad, pertenencia, rituales que marcan los momentos importantes. Define la moral, la identidad, el proposito.
+            Proporciona respuestas a las preguntas mas difíciles: por que existimos, que pasa cuando morimos, tiene sentido el sufrimiento. Ofrece comunidad, pertenencia, rituales que marcan los momentos importantes. Define la moral, la identidad, el propósito.
           </p>
 
           <p>
@@ -79,11 +79,11 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            <strong>Sentido de proposito.</strong> La religion ofrece un marco de significado. Tu vida tiene un proposito divino, tus acciones importan en un plan mayor. Sin eso, puede aparecer un vacio existencial profundo.
+            <strong>Sentido de propósito.</strong> La religion ofrece un marco de significado. Tu vida tiene un propósito divino, tus acciones importan en un plan mayor. Sin eso, puede aparecer un vacío existencial profundo.
           </p>
 
           <p>
-            <strong>Respuestas a preguntas dificiles.</strong> Que pasa despues de la muerte, por que sufren los inocentes, hay justicia ultima. La fe ofrecia respuestas. Sin ella, estas preguntas quedan abiertas de maneras que pueden ser angustiantes.
+            <strong>Respuestas a preguntas difíciles.</strong> Que pasa después de la muerte, por que sufren los inocentes, hay justicia ultima. La fe ofrecia respuestas. Sin ella, estas preguntas quedan abiertas de maneras que pueden ser angustiantes.
           </p>
 
           <p>
@@ -105,11 +105,11 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            Hay algo que se pierde que tenia valor significativo. Hay un proceso de adaptacion a una nueva realidad. Hay emociones intensas que necesitan ser procesadas. Hay una reconstruccion de identidad que toma tiempo.
+            Hay algo que se pierde que tenia valor significativo. Hay un proceso de adaptacion a una nueva realidad. Hay emociones intensas que necesitan ser procesadas. Hay una reconstrucción de identidad que toma tiempo.
           </p>
 
           <p>
-            Un estudio publicado en el Journal of Religion and Health encontro que las personas que atraviesan una perdida de fe experimentan sintomas comparables a otros tipos de duelo: tristeza, ansiedad, sensacion de vacio, cuestionamiento de la identidad.
+            Un estudio publicado en el Journal of Religion and Health encontro que las personas que atraviesan una perdida de fe experimentan sintomas comparables a otros tipos de duelo: tristeza, ansiedad, sensacion de vacío, cuestionamiento de la identidad.
           </p>
 
           <p>
@@ -123,7 +123,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            <strong>Liberacion y vacio a la vez.</strong> Puedes sentir alivio por dejar atras creencias que ya no te funcionaban, y simultaneamente terror por el vacio que queda. Ambas emociones son validas.
+            <strong>Liberacion y vacío a la vez.</strong> Puedes sentir alivio por dejar atras creencias que ya no te funcionaban, y simultaneamente terror por el vacío que queda. Ambas emociones son validas.
           </p>
 
           <p>
@@ -146,32 +146,32 @@ export default function ArticuloPerderLaFe() {
             <strong>Tristeza.</strong> Por lo que se pierde, por la inocencia que ya no puedes recuperar, por las relaciones que cambian.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El proceso de deconstruccion</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El proceso de deconstrucción</h2>
 
           <p>
-            El termino &quot;deconstruccion&quot; se ha popularizado para describir este proceso de desmontar creencias.
+            El termino &quot;deconstrucción&quot; se ha popularizado para describir este proceso de desmontar creencias.
           </p>
 
           <p>
-            No sucede de un dia para otro. Puede tomar meses o anos. A menudo comienza con preguntas que no encuentran respuestas satisfactorias, experiencias que contradicen lo que se ensenaba, o la exposicion a perspectivas diferentes.
+            No sucede de un dia para otro. Puede tomar meses o años. A menudo comienza con preguntas que no encuentran respuestas satisfactorias, experiencias que contradicen lo que se ensenaba, o la exposicion a perspectivas diferentes.
           </p>
 
           <p>
-            Algunas personas deconstruyen completamente y llegan al ateismo o agnosticismo. Otras reconstruyen una espiritualidad diferente, mas personal. Otras mantienen algunas creencias mientras abandonan otras. No hay un camino unico.
+            Algunas personas deconstruyen completamente y llegan al ateismo o agnosticismo. Otras reconstruyen una espiritualidad diferente, mas personal. Otras mantienen algunas creencias mientras abandonan otras. No hay un camino único.
           </p>
 
           <p>
-            Lo importante es reconocer que este proceso merece atencion y cuidado. No es algo que se pueda apurar ni ignorar.
+            Lo importante es reconocer que este proceso merece atención y cuidado. No es algo que se pueda apurar ni ignorar.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Reconstruir significado sin religion</h2>
 
           <p>
-            Despues del duelo viene la pregunta: y ahora que.
+            Después del duelo viene la pregunta: y ahora que.
           </p>
 
           <p>
-            <strong>Encontrar otras fuentes de significado.</strong> El proposito puede venir de las relaciones, del trabajo que amas, del servicio a otros, de la creatividad, de la conexion con la naturaleza. No necesita venir de lo sobrenatural para ser real.
+            <strong>Encontrar otras fuentes de significado.</strong> El propósito puede venir de las relaciones, del trabajo que amas, del servicio a otros, de la creatividad, de la conexión con la naturaleza. No necesita venir de lo sobrenatural para ser real.
           </p>
 
           <p>
@@ -179,7 +179,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            <strong>Construir comunidad fuera de la iglesia.</strong> Hay comunidades seculares, grupos de personas que tambien han dejado la fe, espacios donde puedes pertenecer sin creer.
+            <strong>Construir comunidad fuera de la iglesia.</strong> Hay comunidades seculares, grupos de personas que también han dejado la fe, espacios donde puedes pertenecer sin creer.
           </p>
 
           <p>
@@ -197,7 +197,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            Busca personas con quienes puedas hablar honestamente. Pueden ser amigos que han pasado por algo similar, terapeutas que entiendan el tema, comunidades en linea de personas en proceso de deconstruccion.
+            Busca personas con quienes puedas hablar honestamente. Pueden ser amigos que han pasado por algo similar, terapeutas que entiendan el tema, comunidades en linea de personas en proceso de deconstrucción.
           </p>
 
           <p>
@@ -211,7 +211,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            Algunas personas encuentran conexion espiritual en la naturaleza, en la meditacion secular, en el arte, en la musica, en la contemplacion. Otros prefieren una vida completamente secular y encuentran plenitud en ella.
+            Algunas personas encuentran conexión espiritual en la naturaleza, en la meditación secular, en el arte, en la musica, en la contemplacion. Otros prefieren una vida completamente secular y encuentran plenitud en ella.
           </p>
 
           <p>
@@ -229,7 +229,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            Lo que creias antes no fue tiempo perdido. Fue parte de tu camino. Lo que creas o no creas ahora tambien es parte de tu camino.
+            Lo que creias antes no fue tiempo perdido. Fue parte de tu camino. Lo que creas o no creas ahora también es parte de tu camino.
           </p>
 
           <p>
@@ -237,14 +237,14 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p className="italic text-black/60 mt-8">
-            La busqueda de la verdad, aunque dolorosa, es profundamente valiente.
+            La búsqueda de la verdad, aunque dolorosa, es profundamente valiente.
           </p>
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesion de orientacion gratuita</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si estas atravesando un duelo espiritual y necesitas acompanamiento, estoy aqui para ti.
+            Si estas atravesando un duelo espiritual y necesitas acompañamiento, estoy aqui para ti.
           </p>
           <a
             href={siteConfig.calendly}

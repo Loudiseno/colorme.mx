@@ -28,7 +28,7 @@ export default function TailandiaRitualesPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/thailand rituals.jpeg"
+            src="/thailand-rituals.jpeg"
             alt="Rituales de Tailandia - Templos y espiritualidad budista"
             width={300}
             height={200}

@@ -28,7 +28,7 @@ export default function CubaRitualesPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/cuban flag.jpeg"
+            src="/cuban-flag.jpeg"
             alt="Cuba - Rituales y tradiciones cubanas"
             width={300}
             height={200}
@@ -63,7 +63,7 @@ export default function CubaRitualesPage() {
           </p>
 
           <p>
-            En algunos pueblos del interior, todavía se practica el velorio cantado, donde los asistentes entonan décimas improvisadas en honor al difunto. Es poesía popular que transforma el dolor en arte colectivo.
+            En algunos pueblos del interior, todavía se práctica el velorio cantado, donde los asistentes entonan décimas improvisadas en honor al difunto. Es poesía popular que transforma el dolor en arte colectivo.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los colores sagrados de Cuba</h2>

@@ -23,7 +23,7 @@ export default function ArticuloSindromeCuidador() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             El sindrome del cuidador primario
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatologa</p>
+          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -43,7 +43,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            Llevas meses, quiza anos, cuidando a alguien que amas. Un padre con Alzheimer. Una madre que ya no puede valerse sola. Un hijo con una condicion cronica. Una pareja que enfrenta una enfermedad grave.
+            Llevas meses, quiza años, cuidando a alguien que amas. Un padre con Alzheimer. Una madre que ya no puede valerse sola. Un hijo con una condicion cronica. Una pareja que enfrenta una enfermedad grave.
           </p>
 
           <p>
@@ -57,17 +57,17 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            Segun datos de la Organizacion Mundial de la Salud, aproximadamente el 70% de los cuidadores primarios son mujeres, muchas de ellas hijas o esposas del paciente. La mayoria no recibe compensacion economica ni capacitacion formal para el rol que desempena.
+            Según datos de la Organizacion Mundial de la Salud, aproximadamente el 70% de los cuidadores primarios son mujeres, muchas de ellas hijas o esposas del paciente. La mayoria no recibe compensacion economica ni capacitacion formal para el rol que desempena.
           </p>
 
           <p>
-            El cuidador primario se encarga de tareas que van desde la higiene personal del paciente hasta la administracion de medicamentos, las citas medicas, la alimentacion, el acompanamiento emocional y la toma de decisiones. Todo esto, frecuentemente, mientras mantiene un trabajo, una familia propia y una vida que cada vez tiene menos espacio para si mismo.
+            El cuidador primario se encarga de tareas que van desde la higiene personal del paciente hasta la administracion de medicamentos, las citas medicas, la alimentacion, el acompañamiento emocional y la toma de decisiones. Todo esto, frecuentemente, mientras mantiene un trabajo, una familia propia y una vida que cada vez tiene menos espacio para si mismo.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Que es el sindrome del cuidador</h2>
 
           <p>
-            El sindrome del cuidador, tambien llamado burnout del cuidador, es un estado de agotamiento fisico, emocional y mental que resulta del estres prolongado de cuidar a otra persona.
+            El sindrome del cuidador, también llamado burnout del cuidador, es un estado de agotamiento fisico, emocional y mental que resulta del estres prolongado de cuidar a otra persona.
           </p>
 
           <p>
@@ -89,7 +89,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            <strong>Sintomas emocionales.</strong> Irritabilidad que antes no tenias. Tristeza persistente. Ansiedad por lo que pueda pasar. Sentirte atrapado sin salida. Resentimiento hacia la persona que cuidas, seguido de culpa por sentir ese resentimiento. Sensacion de vacio o de haber perdido tu identidad.
+            <strong>Sintomas emocionales.</strong> Irritabilidad que antes no tenias. Tristeza persistente. Ansiedad por lo que pueda pasar. Sentirte atrapado sin salida. Resentimiento hacia la persona que cuidas, seguido de culpa por sentir ese resentimiento. Sensacion de vacío o de haber perdido tu identidad.
           </p>
 
           <p>
@@ -99,7 +99,7 @@ export default function ArticuloSindromeCuidador() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por que ocurre el agotamiento</h2>
 
           <p>
-            El burnout del cuidador no sucede porque hagas algo mal. Sucede porque la situacion es objetivamente dificil y porque el sistema de apoyo suele ser insuficiente.
+            El burnout del cuidador no sucede porque hagas algo mal. Sucede porque la situacion es objetivamente difícil y porque el sistema de apoyo suele ser insuficiente.
           </p>
 
           <p>
@@ -125,7 +125,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            <strong>Fase de entrega total.</strong> Al principio hay energia, dedicacion y esperanza. Asumes el rol con determinacion. Crees que puedes con todo.
+            <strong>Fase de entrega total.</strong> Al principio hay energia, dedicación y esperanza. Asumes el rol con determinacion. Crees que puedes con todo.
           </p>
 
           <p>
@@ -155,7 +155,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            <strong>Busca apoyo profesional.</strong> Un terapeuta puede ayudarte a procesar las emociones complejas del cuidado: la culpa, el resentimiento, el duelo anticipado, la perdida de identidad. Los grupos de apoyo para cuidadores tambien ofrecen un espacio donde sentirte comprendido.
+            <strong>Busca apoyo profesional.</strong> Un terapeuta puede ayudarte a procesar las emociones complejas del cuidado: la culpa, el resentimiento, el duelo anticipado, la perdida de identidad. Los grupos de apoyo para cuidadores también ofrecen un espacio donde sentirte comprendido.
           </p>
 
           <p>
@@ -169,7 +169,7 @@ export default function ArticuloSindromeCuidador() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El permiso que necesitas escuchar</h2>
 
           <p>
-            Estas haciendo algo extraordinariamente dificil. El trabajo del cuidador es agotador, invisible y poco valorado socialmente.
+            Estas haciendo algo extraordinariamente difícil. El trabajo del cuidador es agotador, invisible y poco valorado socialmente.
           </p>
 
           <p>
@@ -229,7 +229,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            El mejor regalo que puedes darle a la persona que cuidas es un cuidador que tambien esta cuidado.
+            El mejor regalo que puedes darle a la persona que cuidas es un cuidador que también esta cuidado.
           </p>
 
           <p className="italic text-black/60 mt-8">
@@ -238,7 +238,7 @@ export default function ArticuloSindromeCuidador() {
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesion de orientacion gratuita</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
             Si eres cuidador y necesitas apoyo emocional, estoy aqui para acompanarte.
           </p>

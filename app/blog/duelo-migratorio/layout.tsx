@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Duelo migratorio: cuando dejas tu país',
-  description: 'El duelo migratorio es real. Guía para procesar la pérdida de tu tierra, tu cultura y tu gente al emigrar.',
+  description: 'El duelo migratorio es real. Para procesar la pérdida de tu tierra, tu cultura y tu gente al emigrar.',
   keywords: ['duelo migratorio', 'emigrar', 'migración', 'nostalgia', 'expatriados', 'duelo'],
   alternates: { canonical: '/blog/duelo-migratorio' },
   openGraph: { type: 'article', title: 'Duelo migratorio | ColorMe', url: '/blog/duelo-migratorio' },

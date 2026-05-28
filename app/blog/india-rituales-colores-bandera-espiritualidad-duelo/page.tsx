@@ -27,7 +27,7 @@ export default function IndiaRitualesPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/ofrendas india.jpeg"
+            src="/ofrendas-india.jpeg"
             alt="India - Rituales sagrados y colores espirituales"
             width={800}
             height={450}

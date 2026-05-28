@@ -67,6 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'hermanos-de-ninos-enfermos',
     'miedo-a-cumplir-anos',
     'siete-etapas-del-duelo',
+    'duelo-perdida-trabajo',
+    'duelo-por-ser-mama',
+    'primeros-dias-despues-muerte',
+    'bloqueo-emocional-no-siento-nada',
+    'duelo-invisible-infertilidad',
+    'duelos-invisibles-desautorizados',
   ]
 
   // Core pages
@@ -121,12 +127,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  // High-priority articles for indexing
+  const highPrioritySlugs = new Set([
+    'duelo-perdida', 'cuanto-dura-el-duelo', 'duelo-complicado', 'duelo-anticipado',
+    'duelo-perinatal', 'duelo-por-mascota', 'muerte-mama', 'sindrome-cuidador',
+    'que-es-un-tanatologo', 'duelo-sucio-alivio', 'como-superar-la-perdida-de-un-ser-querido',
+    'que-es-la-arteterapia-beneficios', 'ejercicios-arteterapia', 'siete-etapas-del-duelo',
+    'duelo-perdida-trabajo', 'duelo-por-ser-mama', 'duelo-por-tu-cuerpo',
+    'hablar-de-la-muerte', 'explicar-muerte-nino', 'menopausia-y-duelo',
+  ])
+
   // Blog article routes
   const blogRoutes: MetadataRoute.Sitemap = blogArticles.map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    priority: highPrioritySlugs.has(slug) ? 0.8 : 0.7,
   }))
 
   return [...coreRoutes, ...blogRoutes]

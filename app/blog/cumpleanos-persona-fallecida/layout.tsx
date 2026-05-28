@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'El Cumpleaños de Alguien que Ya No Está | Cómo Enfrentarlo',
-  description: 'Cómo enfrentar el cumpleaños de una persona fallecida. Guía para transitar esa fecha con el corazón abierto y honrar su memoria.',
+  description: 'Cómo enfrentar el cumpleaños de una persona fallecida y honrar su memoria con el corazón abierto.',
   keywords: ['cumpleaños persona fallecida', 'cumpleaños ser querido fallecido', 'honrar cumpleaños', 'duelo cumpleaños'],
   alternates: {
     canonical: '/blog/cumpleanos-persona-fallecida',

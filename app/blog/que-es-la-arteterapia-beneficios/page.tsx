@@ -23,7 +23,7 @@ export default function ArticuloArteterapia() {
         <header className="mb-8">
           <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            ¿Qué es la arteterapia? Guía para entender la terapia a través del arte
+            ¿Qué es la arteterapia? Descubre la terapia creativa que sana emociones
           </h1>
           <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
         </header>
@@ -167,7 +167,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>El material lo iremos definiendo de acuerdo a los ejercicios que necesites y tambien puedo ajustar las sesiones a lo que puedas conseguir en caso de que sean en línea.</strong>
+            <strong>El material lo iremos definiendo de acuerdo a los ejercicios que necesites y también puedo ajustar las sesiones a lo que puedas conseguir en caso de que sean en línea.</strong>
           </p>
 
           <p>

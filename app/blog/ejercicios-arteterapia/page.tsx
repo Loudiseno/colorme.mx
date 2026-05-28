@@ -325,7 +325,7 @@ export default function ArticuloEjerciciosArteterapia() {
           </p>
 
           <p>
-            Si sientes que el arte te ayuda pero necesitas guía más profunda, busca un arteterapeuta o un profesional que incorpore técnicas expresivas en su práctica.
+            Si sientes que el arte te ayuda pero necesitas apoyo más profundo, busca un arteterapeuta o un profesional que incorpore técnicas expresivas en su práctica.
           </p>
 
           <p>

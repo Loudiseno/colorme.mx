@@ -3,16 +3,16 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Melukat: La Ceremonia Balinesa de Purificacion con Agua Sagrada',
-  description: 'Melukat es el ritual balines de purificacion con agua sagrada. Descubre como esta ceremonia libera el dolor y devuelve al alma su claridad original.',
-  keywords: ['ceremonia Melukat Bali', 'ritual purificacion balines', 'agua sagrada Bali', 'Tirta Empul', 'espiritualidad balinesa'],
+  title: 'Melukat: La Ceremonia Balinesa de Purificación con Agua Sagrada',
+  description: 'Melukat es el ritual balinés de purificación con agua sagrada. Descubre como esta ceremonia libera el dolor y devuelve al alma su claridad original.',
+  keywords: ['ceremonia Melukat Bali', 'ritual purificación balinés', 'agua sagrada Bali', 'Tirta Empul', 'espiritualidad balinesa'],
   alternates: {
     canonical: '/blog/melukat-ceremonia-purificacion-bali-agua-sagrada',
   },
   openGraph: {
     type: 'article',
-    title: 'Melukat: La Ceremonia Balinesa de Purificacion | ColorMe',
-    description: 'Descubre el ritual balines de purificacion con agua sagrada.',
+    title: 'Melukat: La Ceremonia Balinesa de Purificación | ColorMe',
+    description: 'Descubre el ritual balinés de purificación con agua sagrada.',
     url: '/blog/melukat-ceremonia-purificacion-bali-agua-sagrada',
   },
   robots: {
@@ -25,7 +25,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Melukat, la ceremonia balinesa donde el agua limpia el dolor del alma',
-  description: 'Descubre el ritual balines de purificacion con agua sagrada.',
+  description: 'Descubre el ritual balinés de purificación con agua sagrada.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/melukat-ceremonia-purificacion-bali-agua-sagrada`,

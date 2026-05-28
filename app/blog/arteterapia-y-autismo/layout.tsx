@@ -25,7 +25,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Arteterapia y autismo: cuando el arte abre caminos que las palabras no encuentran',
-  description: 'La arteterapia ofrece a ninos con autismo un espacio donde pueden comunicarse y expresarse.',
+  description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/arteterapia-y-autismo`,
