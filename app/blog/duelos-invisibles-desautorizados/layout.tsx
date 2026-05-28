@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Duelos invisibles: las pérdidas que nadie reconoce pero que duelen igual | ColorMe',
     description: 'Los duelos desautorizados son pérdidas reales que la sociedad no valida. Tu dolor es legítimo aunque nadie lo nombre.',
     url: '/blog/duelos-invisibles-desautorizados',
-    images: [{ url: '/hombre-en-duelo.webp', alt: 'Duelos invisibles y pérdidas desautorizadas' }],
+    images: [{ url: '/duelos-invisibles.jpeg', alt: 'Duelos invisibles y pérdidas desautorizadas' }],
   },
 }
 

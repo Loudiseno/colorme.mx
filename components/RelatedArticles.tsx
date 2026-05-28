@@ -49,7 +49,7 @@ const tanatologiaArticles: Article[] = [
   { href: '/blog/como-hablar-con-hijos-sobre-cancer', image: '/como-hablar-con-hijos-sobre-cancer.jpeg', alt: 'Hablar con hijos sobre cáncer', title: 'Cómo hablar con tus hijos sobre el cáncer', description: 'Palabras honestas para conversaciones difíciles.' },
   { href: '/blog/primeros-dias-despues-muerte', image: '/primeros-dias-despues-muerte.jpeg', alt: 'Primeros días después de la muerte', title: 'Los primeros días después de la muerte', description: 'Cómo sobrevivir el shock y el silencio de los primeros días.' },
   { href: '/blog/duelo-invisible-infertilidad', image: '/duelo-invisible-infertilidad.jpeg', alt: 'Duelo por infertilidad', title: 'Cuando la maternidad o paternidad no llega', description: 'Sin funeral ni condolencias, pero con un dolor absolutamente real.' },
-  { href: '/blog/duelos-invisibles-desautorizados', image: '/hombre-en-duelo.webp', alt: 'Duelos invisibles y pérdidas desautorizadas', title: 'Duelos invisibles o desautorizados', description: 'Las pérdidas que la sociedad no valida pero que duelen igual.' },
+  { href: '/blog/duelos-invisibles-desautorizados', image: '/duelos-invisibles.jpeg', alt: 'Duelos invisibles y pérdidas desautorizadas', title: 'Duelos invisibles o desautorizados', description: 'Las pérdidas que la sociedad no valida pero que duelen igual.' },
 ]
 
 const arteterapiaArticles: Article[] = [

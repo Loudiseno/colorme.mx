@@ -25,7 +25,7 @@ export default function DuelosInvisiblesDesautorizadosPage() {
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
-            src="/hombre-en-duelo.webp"
+            src="/duelos-invisibles.jpeg"
             alt="Duelos invisibles y pérdidas desautorizadas"
             width={300}
             height={200}

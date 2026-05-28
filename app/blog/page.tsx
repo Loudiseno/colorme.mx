@@ -23,7 +23,7 @@ const tanatologiaArticles = [
   },
   {
     href: '/blog/duelos-invisibles-desautorizados',
-    image: '/hombre-en-duelo.webp',
+    image: '/duelos-invisibles.jpeg',
     title: 'Duelos invisibles o desautorizados',
     description: 'Los duelos desautorizados son pérdidas reales que la sociedad no valida. Tu dolor es legítimo aunque nadie lo nombre.',
     alt: 'Duelos invisibles y pérdidas desautorizadas',
