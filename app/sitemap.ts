@@ -73,6 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'bloqueo-emocional-no-siento-nada',
     'duelo-invisible-infertilidad',
     'duelos-invisibles-desautorizados',
+    'bebe-arcoiris',
   ]
 
   // Core pages
