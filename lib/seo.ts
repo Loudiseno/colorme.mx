@@ -6,7 +6,7 @@ export const siteConfig = {
   author: 'Lourdes',
   locale: 'es_MX',
   email: 'hola@colorme.mx',
-  phone: '', // Add when available
+  phone: '+529992472678',
   address: {
     // Add physical address when available for local SEO
     city: 'México',
@@ -34,6 +34,7 @@ export function generateBusinessSchema() {
     description: siteConfig.description,
     url: siteConfig.url,
     email: siteConfig.email,
+    telephone: siteConfig.phone,
     image: `${siteConfig.url}/og-image.jpg`,
     priceRange: '$$',
     areaServed: {

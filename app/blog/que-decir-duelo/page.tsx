@@ -164,7 +164,7 @@ export default function QueDecirDueloPage() {
             Si estás atravesando un duelo, puedo acompañarte en este proceso.
           </p>
           <a
-            href="https://calendly.com/colormemx/30min"
+            href="https://calendly.com/colormelab/primera-consulta-colorme"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-black text-white px-6 py-3 rounded-xl hover:bg-black/80 transition-colors"

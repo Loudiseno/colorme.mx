@@ -74,6 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'duelo-invisible-infertilidad',
     'duelos-invisibles-desautorizados',
     'bebe-arcoiris',
+    'dia-del-padre-duelo',
   ]
 
   // Core pages
@@ -125,6 +126,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/links`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
     },
   ]
 
