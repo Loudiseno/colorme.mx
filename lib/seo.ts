@@ -21,6 +21,10 @@ export const siteConfig = {
     amazonEs: 'https://www.amazon.com.mx/dp/B0F2MYQHHZ',
     amazonEn: 'https://www.amazon.com/dp/B0F4KNJZ6B',
   },
+  diario: {
+    payhip: 'https://payhip.com/b/cqtL2',
+  },
+  whatsapp: 'https://wa.me/529992472678',
   calendly: 'https://calendly.com/colormelab/primera-consulta-colorme',
 }
 
