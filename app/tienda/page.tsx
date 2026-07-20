@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import { Check, Download, Heart, Sparkles } from 'lucide-react'
+import { Check, Download, Sparkles } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 
 // Precios (actualizar aquí cuando cambien)
 const PRECIO_CONSULTA = 800
 
 const whatsappBundle = `${siteConfig.whatsapp}?text=${encodeURIComponent(
-  'Hola Lou, me interesa el paquete del diario de duelo + 2 consultas individuales. ¿Me compartes los detalles?'
+  'Hola Lou, me interesa el paquete de "El arte de habitar tu duelo" + 2 consultas individuales. ¿Me compartes los detalles?'
 )}`
 
 const contenidoDiario = [
@@ -36,21 +36,16 @@ export default function TiendaPage() {
       <section className="py-10 md:py-12 bg-[#B2F7EF]/5" id="diario">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF] bg-white">
-            {/* Portada tipográfica */}
+            {/* Portada del diario */}
             <div className="bg-[#B2F7EF]/20 p-8 md:p-12 flex items-center justify-center">
-              <div className="max-w-sm w-full aspect-[3/4] rounded-2xl bg-white border border-[#B2F7EF] shadow-lg flex flex-col items-center justify-center text-center p-8">
-                <Heart className="text-black mb-6" size={32} strokeWidth={1.5} />
-                <p className="text-2xl md:text-3xl text-black leading-snug mb-4" style={{ fontFamily: 'var(--font-lora)' }}>
-                  El duelo no se supera.
-                  <br />
-                  Se habita.
-                </p>
-                <p className="text-sm text-black/50 tracking-widest uppercase">
-                  Diario de duelo
-                </p>
-                <p className="text-xs text-black/40 mt-6">
-                  189 páginas · PDF descargable
-                </p>
+              <div className="max-w-sm w-full rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/el-arte-de-habitar-tu-duelo-portada.webp"
+                  alt="El arte de habitar tu duelo - Diario terapéutico de duelo por Lou Pérez"
+                  width={900}
+                  height={1165}
+                  className="w-full h-auto"
+                />
               </div>
             </div>
 
@@ -58,8 +53,11 @@ export default function TiendaPage() {
             <div className="p-8 md:p-12 flex items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl text-black mb-4">
-                  Diario de duelo: <strong>sentir, escribir, crear</strong>
+                  <strong>El arte de habitar tu duelo</strong>
                 </h2>
+                <p className="text-base text-black font-bold mb-4">
+                  El duelo no se supera. Se habita.
+                </p>
                 <div className="space-y-4 text-black/70 leading-relaxed mb-6">
                   <p>
                     Te dijeron que fueras fuerte, que el tiempo lo cura todo, que ya
@@ -94,7 +92,7 @@ export default function TiendaPage() {
                     <Download size={16} className="text-black mt-1 flex-shrink-0" />
                     <span>
                       <strong className="text-black">PDF de descarga inmediata</strong>, tamaño carta.
-                      Imprímelo o úsalo en tu tablet (GoodNotes, Notability).
+                      Imprímelo o úsalo en tu tablet.
                     </span>
                   </p>
                 </div>
@@ -128,7 +126,7 @@ export default function TiendaPage() {
               PAQUETE DE ACOMPAÑAMIENTO
             </div>
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              Diario + 2 consultas individuales
+              El arte de habitar tu duelo + 2 consultas individuales
             </h2>
             <p className="text-black/70 leading-relaxed max-w-2xl mx-auto mb-8">
               El diario te acompaña todos los días; las consultas te dan un espacio
@@ -138,7 +136,7 @@ export default function TiendaPage() {
 
             <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8 text-left">
               <div className="bg-white rounded-xl border border-[#B2F7EF] p-4">
-                <p className="text-black font-semibold text-sm mb-1">Diario de duelo</p>
+                <p className="text-black font-semibold text-sm mb-1">El arte de habitar tu duelo</p>
                 <p className="text-black/60 text-xs leading-relaxed">PDF de 189 páginas, descarga inmediata</p>
               </div>
               <div className="bg-white rounded-xl border border-[#B2F7EF] p-4">
