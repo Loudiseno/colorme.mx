@@ -78,21 +78,21 @@ export default function EmailGateModal() {
         </div>
 
         <h2 className="text-2xl md:text-3xl text-black mb-3">
-          Recursos gratis para ti
+          ¡Recursos gratis para ti!
         </h2>
         <p className="text-black/70 text-sm leading-relaxed mb-6">
-          Déjame tu correo para acceder a los ejercicios creativos gratuitos.
-          Así también puedo compartirte nuevos recursos y acompañamiento de vez
-          en cuando.
+          Accede a ejercicios creativos y herramientas diseñadas para
+          acompañarte en tu proceso.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-3 text-left">
           <input
             type="text"
+            required
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Tu nombre (opcional)"
-            className="w-full px-4 py-3 rounded-xl border border-black/15 text-sm focus:outline-none focus:border-[#0D9488] transition-colors"
+            placeholder="Nombre o apodo *"
+            className="w-full px-4 py-3 rounded-xl border border-black/15 text-sm focus:outline-none focus:border-[#B2F7EF] transition-colors"
           />
           <input
             type="email"
@@ -100,13 +100,13 @@ export default function EmailGateModal() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Tu correo electrónico *"
-            className="w-full px-4 py-3 rounded-xl border border-black/15 text-sm focus:outline-none focus:border-[#0D9488] transition-colors"
+            className="w-full px-4 py-3 rounded-xl border border-black/15 text-sm focus:outline-none focus:border-[#B2F7EF] transition-colors"
           />
           {error && <p className="text-red-600 text-xs">{error}</p>}
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-[#0D9488] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#0D9488]/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
+            className="w-full bg-[#B2F7EF] text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
           >
             {isSubmitting ? 'Un momento...' : 'Acceder a los recursos gratis'}
           </button>

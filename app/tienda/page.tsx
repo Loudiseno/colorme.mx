@@ -39,7 +39,7 @@ export default function TiendaPage() {
             {/* Portada tipográfica */}
             <div className="bg-[#B2F7EF]/20 p-8 md:p-12 flex items-center justify-center">
               <div className="max-w-sm w-full aspect-[3/4] rounded-2xl bg-white border border-[#B2F7EF] shadow-lg flex flex-col items-center justify-center text-center p-8">
-                <Heart className="text-[#0D9488] mb-6" size={32} strokeWidth={1.5} />
+                <Heart className="text-black mb-6" size={32} strokeWidth={1.5} />
                 <p className="text-2xl md:text-3xl text-black leading-snug mb-4" style={{ fontFamily: 'var(--font-lora)' }}>
                   El duelo no se supera.
                   <br />
@@ -78,7 +78,7 @@ export default function TiendaPage() {
                 <ul className="space-y-2 mb-6">
                   {contenidoDiario.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
-                      <Check size={16} className="text-[#0D9488] mt-1 flex-shrink-0" strokeWidth={2.5} />
+                      <Check size={16} className="text-[#B2F7EF] mt-1 flex-shrink-0" strokeWidth={2.5} />
                       {item}
                     </li>
                   ))}
@@ -91,7 +91,7 @@ export default function TiendaPage() {
 
                 <div className="bg-[#B2F7EF]/10 border border-[#B2F7EF] rounded-xl p-4 mb-6">
                   <p className="text-sm text-black/70 leading-relaxed flex items-start gap-2">
-                    <Download size={16} className="text-[#0D9488] mt-1 flex-shrink-0" />
+                    <Download size={16} className="text-black mt-1 flex-shrink-0" />
                     <span>
                       <strong className="text-black">PDF de descarga inmediata</strong>, tamaño carta.
                       Imprímelo o úsalo en tu tablet (GoodNotes, Notability).
@@ -103,7 +103,7 @@ export default function TiendaPage() {
                   href={siteConfig.diario.payhip}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#0D9488] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#0D9488]/90 transition-all inline-block shadow-md"
+                  className="bg-[#B2F7EF] text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block shadow-md"
                 >
                   Comprar el diario — descarga inmediata
                 </a>
@@ -122,8 +122,8 @@ export default function TiendaPage() {
       {/* Bundle: Diario + 2 consultas */}
       <section className="py-10 md:py-12 bg-white" id="paquete">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="rounded-3xl border-2 border-[#0D9488] bg-[#B2F7EF]/10 p-8 md:p-12 text-center relative overflow-hidden">
-            <div className="inline-flex items-center gap-2 bg-[#0D9488] text-white px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
+          <div className="rounded-3xl border-2 border-[#B2F7EF] bg-[#B2F7EF]/10 p-8 md:p-12 text-center relative overflow-hidden">
+            <div className="inline-flex items-center gap-2 bg-[#B2F7EF] text-black px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
               <Sparkles size={14} />
               PAQUETE DE ACOMPAÑAMIENTO
             </div>
@@ -155,7 +155,7 @@ export default function TiendaPage() {
               href={whatsappBundle}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#0D9488] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-[#0D9488]/90 transition-all inline-block shadow-md"
+              className="bg-[#B2F7EF] text-black px-8 py-3 rounded-full text-base font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block shadow-md"
             >
               Quiero el paquete — escríbeme por WhatsApp
             </a>
