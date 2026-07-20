@@ -24,7 +24,7 @@ export default function TiendaPage() {
       {/* Hero */}
       <section className="pt-28 pb-8 md:pt-36 md:pb-10 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Tienda</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Productos</h1>
           <p className="text-black/70 leading-relaxed max-w-2xl mx-auto">
             Recursos creados desde la tanatología y la arteterapia para acompañarte
             en tu proceso, a tu ritmo y desde donde estés.

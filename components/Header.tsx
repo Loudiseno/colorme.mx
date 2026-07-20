@@ -26,7 +26,7 @@ const navigation = [
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Exploraciones creativas', href: '/hoja-de-trabajo' },
-  { name: 'Tienda', href: '/tienda' },
+  { name: 'Productos', href: '/tienda' },
   { name: 'Blog', href: '/blog' },
 ]
 

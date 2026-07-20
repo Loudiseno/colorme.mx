@@ -222,12 +222,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Book Section */}
+      {/* Productos */}
       <section className="py-10 md:py-12 bg-white" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF]">
-            <div className="order-2 lg:order-1 bg-white p-8 md:p-12 flex items-center justify-center">
-              <div className="max-w-sm mx-auto">
+          <h2 className="text-4xl md:text-5xl text-black mb-10 text-center">Productos</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
+            {/* Indeleble */}
+            <div className="bg-[#B2F7EF]/10 rounded-3xl border border-[#B2F7EF] p-8 flex flex-col">
+              <div className="max-w-xs mx-auto mb-6">
                 <Image
                   src="/libro-indeleble-cancer-resiliencia.webp"
                   alt="Indeleble - Libro sobre resiliencia y superación del cáncer por Lou"
@@ -236,43 +238,72 @@ export default function HomePage() {
                   className="w-full h-auto"
                 />
               </div>
+              <h3 className="text-3xl md:text-4xl text-black mb-2 text-center"><strong>Indeleble</strong></h3>
+              <p className="text-base text-black font-bold mb-4 text-center">
+                Una historia real de resiliencia y superación ante el cáncer
+              </p>
+              <ul className="space-y-2 mb-6 flex-1">
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
+                  <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
+                  Testimonio honesto sobre la vida y la transformación personal
+                </li>
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
+                  <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
+                  Disponible en Kindle, en español y en inglés
+                </li>
+              </ul>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <a
+                  href={siteConfig.book.amazonEs}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+                >
+                  Versión español
+                </a>
+                <a
+                  href={siteConfig.book.amazonEn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+                >
+                  Versión inglés
+                </a>
+              </div>
             </div>
-            <div className="order-1 lg:order-2 bg-[#B2F7EF]/10 p-8 md:p-12 flex items-center">
-              <div>
-                <h2 className="text-4xl md:text-5xl text-black mb-2"><strong>Indeleble</strong></h2>
-                <p className="text-base text-black font-bold mb-6">
-                  Una historia real de resiliencia y superación ante el cáncer
-                </p>
-                <div className="space-y-4 leading-relaxed mb-8">
-                  <p className="text-black/70">
-                    Crees que eres invencible, hasta que un diagnóstico lo cambia todo. Cuando el cáncer llega sin avisar, los sueños se detienen y la incertidumbre se apodera de ti.
-                  </p>
-                  <p className="text-black/70">
-                    Pero en medio del miedo, también surge algo más: la fuerza para afrontar lo impensable y la capacidad de sanar —no solo el cuerpo, sino el alma.
-                  </p>
-                  <p className="text-black/70">
-                    Una historia honesta sobre la vida, la transformación personal y la belleza que persiste en el caos.
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href={siteConfig.book.amazonEs}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
-                  >
-                    Versión español
-                  </a>
-                  <a
-                    href={siteConfig.book.amazonEn}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
-                  >
-                    Versión inglés
-                  </a>
-                </div>
 
+            {/* El arte de habitar tu duelo */}
+            <div className="bg-[#B2F7EF]/10 rounded-3xl border border-[#B2F7EF] p-8 flex flex-col">
+              <div className="max-w-[220px] mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/el-arte-de-habitar-tu-duelo-portada.webp"
+                  alt="El arte de habitar tu duelo - Diario terapéutico de duelo por Lou Pérez"
+                  width={900}
+                  height={1165}
+                  className="w-full h-auto"
+                />
+              </div>
+              <h3 className="text-3xl md:text-4xl text-black mb-2 text-center"><strong>El arte de habitar tu duelo</strong></h3>
+              <p className="text-base text-black font-bold mb-4 text-center">
+                El duelo no se supera. Se habita.
+              </p>
+              <ul className="space-y-2 mb-6 flex-1">
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
+                  <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
+                  Más de 50 ejercicios de arte, escritura y reflexión en 189 páginas
+                </li>
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
+                  <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
+                  PDF de descarga inmediata, para imprimir o usar en tablet
+                </li>
+              </ul>
+              <div className="flex justify-center">
+                <Link
+                  href="/tienda#diario"
+                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+                >
+                  Ver más
+                </Link>
               </div>
             </div>
           </div>
