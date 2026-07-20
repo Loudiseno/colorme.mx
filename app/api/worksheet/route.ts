@@ -45,7 +45,7 @@ export async function POST(request: Request) {
 
       const result = await resend.emails.send({
         from: 'ColorMe <noreply@colorme.mx>',
-        to: 'hola@colorme.mx',
+        to: ['hola@colorme.mx', 'lou.diseno@gmail.com'],
         subject: `Nuevo ejercicio creativo personalizado - ${data.name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

@@ -22,7 +22,7 @@ export async function POST(request: Request) {
         const resend = new Resend(process.env.RESEND_API_KEY)
         await resend.emails.send({
           from: 'ColorMe <noreply@colorme.mx>',
-          to: 'hola@colorme.mx',
+          to: ['hola@colorme.mx', 'lou.diseno@gmail.com'],
           replyTo: data.email,
           subject: `Nueva consulta de ${data.nombre} ${data.apellidos || ''}`.trim(),
           html: `
