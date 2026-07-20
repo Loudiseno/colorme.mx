@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { matchExercises } from '@/lib/artTherapyExercises';
 import Image from 'next/image';
+import EmailGateModal from '@/components/EmailGateModal';
 
 export default function WorksheetPage() {
   const [formData, setFormData] = useState({
@@ -288,6 +289,9 @@ export default function WorksheetPage() {
 
   return (
     <div className="min-h-screen bg-white pt-20">
+      {/* Email requerido para acceder a los recursos gratis */}
+      <EmailGateModal />
+
       {/* Hero Section */}
       <section className="bg-[#B2F7EF]/10 py-10">
         <div className="max-w-4xl mx-auto px-6 text-center">

@@ -116,6 +116,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/tienda`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/hoja-de-trabajo`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
