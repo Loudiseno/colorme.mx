@@ -239,17 +239,17 @@ export default function HomePage() {
                 />
               </div>
               <h3 className="text-3xl md:text-4xl text-black mb-2 text-center"><strong>Indeleble</strong></h3>
-              <p className="text-base text-black font-bold mb-4 text-center">
-                Una historia real de resiliencia y superación ante el cáncer
+              <p className="text-base text-black font-bold mb-4 text-center leading-snug">
+                Una historia real de resiliencia y superación ante el cáncer, con ilustraciones en acuarela
               </p>
               <ul className="space-y-2 mb-6 flex-1">
-                <li className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
                   <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
-                  Testimonio honesto sobre la vida y la transformación personal
+                  Un testimonio sobre la vida y la transformación personal después de un diagnóstico
                 </li>
-                <li className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
                   <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
-                  Disponible en Kindle, en español y en inglés
+                  Disponible en Kindle y PDF descargable, en español y en inglés
                 </li>
               </ul>
               <div className="flex flex-wrap gap-3 justify-center">
@@ -284,15 +284,15 @@ export default function HomePage() {
                 />
               </div>
               <h3 className="text-3xl md:text-4xl text-black mb-2 text-center"><strong>El arte de habitar tu duelo</strong></h3>
-              <p className="text-base text-black font-bold mb-4 text-center">
+              <p className="text-base text-black font-bold mb-4 text-center leading-snug">
                 El duelo no se supera. Se habita.
               </p>
               <ul className="space-y-2 mb-6 flex-1">
-                <li className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
                   <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
-                  Más de 50 ejercicios de arte, escritura y reflexión en 189 páginas
+                  Diario con más de 50 ejercicios de arte, escritura y reflexión en 189 páginas
                 </li>
-                <li className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
                   <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
                   PDF de descarga inmediata, para imprimir o usar en tablet
                 </li>
