@@ -204,13 +204,6 @@ const tanatologiaArticles = [
     alt: 'Rituales de despedida',
   },
   {
-    href: '/blog/superar-perdida-ser-querido',
-    image: '/superar-perdida-ser-querido.webp',
-    title: 'Superar la pérdida de un ser querido',
-    description: 'El camino hacia la sanación después de una pérdida.',
-    alt: 'Superar pérdida',
-  },
-  {
     href: '/blog/como-acompanar-cancer-terminal',
     image: '/como-acompanar-cancer-terminal.jpeg',
     title: 'Cómo acompañar a alguien con cáncer terminal',

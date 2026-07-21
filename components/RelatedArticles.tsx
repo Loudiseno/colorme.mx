@@ -38,7 +38,6 @@ const tanatologiaArticles: Article[] = [
   { href: '/blog/navidad-en-duelo', image: '/navidad-en-duelo.jpeg', alt: 'Navidad en duelo', title: 'Navidad en duelo', description: 'Cómo atravesar las fiestas cuando alguien falta.' },
   { href: '/blog/que-decir-duelo', image: '/como-acompanar-duelo.webp', alt: 'Qué decir en el duelo', title: '¿Qué decir a alguien en duelo?', description: 'Cómo acompañar sin herir con las palabras.' },
   { href: '/blog/rituales-despedida', image: '/rituales-despedida.webp', alt: 'Rituales de despedida', title: 'Rituales de despedida', description: 'La importancia de crear rituales para decir adiós.' },
-  { href: '/blog/superar-perdida-ser-querido', image: '/superar-perdida-ser-querido.webp', alt: 'Superar pérdida', title: 'Superar la pérdida de un ser querido', description: 'El camino hacia la sanación después de una pérdida.' },
   { href: '/blog/duelo-amistad-perdida', image: '/duelo-amistad-perdida.jpeg', alt: 'Duelo por pérdida de amistad', title: 'Duelo por pérdida de amistad', description: 'Cuando una amistad se rompe, el dolor es igual de real.' },
   { href: '/blog/duelo-migratorio', image: '/duelo-migratorio.jpeg', alt: 'Duelo migratorio', title: 'Duelo migratorio', description: 'Las pérdidas invisibles de quienes dejan su tierra.' },
   { href: '/blog/duelo-perdida-trabajo', image: '/duelo-por-perdida-empleo.jpeg', alt: 'Duelo por pérdida de trabajo', title: 'Duelo por pérdida de trabajo', description: 'Perder el empleo es perder identidad y propósito.' },

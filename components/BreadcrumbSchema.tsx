@@ -29,7 +29,6 @@ const slugToTitle: Record<string, string> = {
   'navidad-en-duelo': 'Navidad en duelo',
   'que-decir-duelo': 'Qué decir a alguien en duelo',
   'rituales-despedida': 'Rituales de despedida',
-  'superar-perdida-ser-querido': 'Superar la pérdida de un ser querido',
   'como-acompanar-cancer-terminal': 'Cómo acompañar en cáncer terminal',
   'como-hablar-con-hijos-sobre-cancer': 'Cómo hablar con hijos sobre el cáncer',
   'duelo-amistad-perdida': 'Duelo por pérdida de amistad',
