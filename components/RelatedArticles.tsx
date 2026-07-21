@@ -126,9 +126,8 @@ export default function RelatedArticles({ currentSlug, category }: RelatedArticl
                   src={article.image}
                   alt={article.alt}
                   fill
-                  className="object-cover grayscale mix-blend-luminosity"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
               </div>
               <div className="p-5">
                 <h4 className="text-lg text-black mb-2 leading-tight">{article.title}</h4>
