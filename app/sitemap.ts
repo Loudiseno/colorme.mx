@@ -30,7 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'navidad-en-duelo',
     'que-decir-duelo',
     'rituales-despedida',
-    'superar-perdida-ser-querido',
     'que-es-la-arteterapia-beneficios',
     'arteterapia-cancer',
     'ejercicios-arteterapia',

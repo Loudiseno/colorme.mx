@@ -3,10 +3,14 @@ import { Check, Download, Sparkles } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 
 // Precios (actualizar aquí cuando cambien)
-const PRECIO_CONSULTA = 800
+const PRECIO_PAQUETE_DUELO_CONSULTA = 950
 
-const whatsappBundle = `${siteConfig.whatsapp}?text=${encodeURIComponent(
-  'Hola Lou, me interesa el paquete de "El arte de habitar tu duelo" + 2 consultas individuales. ¿Me compartes los detalles?'
+// Paquete 1: Indeleble + El arte de habitar tu duelo (pago por Payhip)
+const PAQUETE_LIBRO_DIARIO_PAYHIP = 'https://payhip.com/b/br6z2'
+
+// Paquete 2: El arte de habitar tu duelo + 1 consulta individual (por WhatsApp)
+const whatsappPaqueteConsulta = `${siteConfig.whatsapp}?text=${encodeURIComponent(
+  'Hola Lou, quiero reservar el paquete de "El arte de habitar tu duelo" + 1 consulta individual ($950). ¿Me compartes los detalles?'
 )}`
 
 const contenidoDiario = [
@@ -117,49 +121,60 @@ export default function TiendaPage() {
         </div>
       </section>
 
-      {/* Bundle: Diario + 2 consultas */}
-      <section className="py-10 md:py-12 bg-white" id="paquete">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="rounded-3xl border-2 border-[#B2F7EF] bg-[#B2F7EF]/10 p-8 md:p-12 text-center relative overflow-hidden">
-            <div className="inline-flex items-center gap-2 bg-[#B2F7EF] text-black px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
-              <Sparkles size={14} />
-              PAQUETE DE ACOMPAÑAMIENTO
-            </div>
-            <h2 className="text-3xl md:text-4xl text-black mb-4">
-              El arte de habitar tu duelo + 2 consultas individuales
-            </h2>
-            <p className="text-black/70 leading-relaxed max-w-2xl mx-auto mb-8">
-              El diario te acompaña todos los días; las consultas te dan un espacio
-              vivo para procesar lo que va surgiendo. Dos sesiones individuales
-              conmigo, en línea, para trabajar tu proceso con el apoyo del diario.
-            </p>
+      {/* Paquetes */}
+      <section className="py-10 md:py-12 bg-white" id="paquetes">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl text-black mb-10 text-center">Paquetes</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
 
-            <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8 text-left">
-              <div className="bg-white rounded-xl border border-[#B2F7EF] p-4">
-                <p className="text-black font-semibold text-sm mb-1">El arte de habitar tu duelo</p>
-                <p className="text-black/60 text-xs leading-relaxed">PDF de 189 páginas, descarga inmediata</p>
+            {/* Paquete 1: Libro + Diario */}
+            <div className="rounded-3xl border-2 border-[#B2F7EF] bg-[#B2F7EF]/10 p-8 md:p-10 flex flex-col text-center">
+              <div className="inline-flex self-center items-center gap-2 bg-[#B2F7EF] text-black px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
+                <Sparkles size={14} />
+                PAQUETE 1
               </div>
-              <div className="bg-white rounded-xl border border-[#B2F7EF] p-4">
-                <p className="text-black font-semibold text-sm mb-1">Consulta individual 1</p>
-                <p className="text-black/60 text-xs leading-relaxed">Sesión en línea (valor ${PRECIO_CONSULTA} MXN)</p>
-              </div>
-              <div className="bg-white rounded-xl border border-[#B2F7EF] p-4">
-                <p className="text-black font-semibold text-sm mb-1">Consulta individual 2</p>
-                <p className="text-black/60 text-xs leading-relaxed">Sesión en línea (valor ${PRECIO_CONSULTA} MXN)</p>
-              </div>
+              <h3 className="text-2xl md:text-3xl text-black mb-2 leading-snug">
+                Indeleble + El arte de habitar tu duelo
+              </h3>
+              <p className="text-base text-black font-bold mb-4">Sobrevivir y habitar.</p>
+              <p className="text-black/70 leading-snug mb-8 flex-1">
+                Un testimonio real de un diagnóstico de cáncer ilustrado en acuarelas
+                y un diario con ejercicios y herramientas para acompañar cualquier duelo.
+              </p>
+              <a
+                href={PAQUETE_LIBRO_DIARIO_PAYHIP}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#B2F7EF] text-black px-8 py-3 rounded-full text-base font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block shadow-md self-center"
+              >
+                Quiero el paquete
+              </a>
             </div>
 
-            <a
-              href={whatsappBundle}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#B2F7EF] text-black px-8 py-3 rounded-full text-base font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block shadow-md"
-            >
-              Quiero el paquete — escríbeme por WhatsApp
-            </a>
-            <p className="text-xs text-black/50 mt-4">
-              Te respondo personalmente para coordinar el pago y agendar tus sesiones.
-            </p>
+            {/* Paquete 2: Diario + 1 consulta */}
+            <div className="rounded-3xl border-2 border-[#B2F7EF] bg-[#B2F7EF]/10 p-8 md:p-10 flex flex-col text-center">
+              <div className="inline-flex self-center items-center gap-2 bg-[#B2F7EF] text-black px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
+                <Sparkles size={14} />
+                PAQUETE 2
+              </div>
+              <h3 className="text-2xl md:text-3xl text-black mb-2 leading-snug">
+                El arte de habitar tu duelo + 1 consulta individual
+              </h3>
+              <p className="text-base text-black font-bold mb-4">${PRECIO_PAQUETE_DUELO_CONSULTA} MXN</p>
+              <p className="text-black/70 leading-snug mb-8 flex-1">
+                El diario te acompaña todos los días y una consulta individual en línea
+                conmigo te da un espacio vivo para procesar lo que va surgiendo en tu proceso.
+              </p>
+              <a
+                href={whatsappPaqueteConsulta}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#B2F7EF] text-black px-8 py-3 rounded-full text-base font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block shadow-md self-center"
+              >
+                Reserva tu sesión
+              </a>
+            </div>
+
           </div>
         </div>
       </section>
@@ -195,14 +210,15 @@ export default function TiendaPage() {
                     Disponible en Kindle y PDF descargable, en español y en inglés.
                   </p>
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <p className="text-xs text-black/50 uppercase tracking-wider mb-2">Kindle</p>
+                <div className="flex flex-wrap gap-3 mb-5">
                   <a
                     href={siteConfig.book.amazonEs}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
                   >
-                    Versión español
+                    Español
                   </a>
                   <a
                     href={siteConfig.book.amazonEn}
@@ -211,6 +227,25 @@ export default function TiendaPage() {
                     className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
                   >
                     Buy in English
+                  </a>
+                </div>
+                <p className="text-xs text-black/50 uppercase tracking-wider mb-2">PDF descargable</p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={siteConfig.book.pdfEs}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+                  >
+                    PDF en español
+                  </a>
+                  <a
+                    href={siteConfig.book.pdfEn}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+                  >
+                    PDF in English
                   </a>
                 </div>
               </div>
