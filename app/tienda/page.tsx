@@ -24,7 +24,7 @@ export default function TiendaPage() {
       {/* Hero */}
       <section className="pt-28 pb-8 md:pt-36 md:pb-10 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Tienda</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Productos</h1>
           <p className="text-black/70 leading-relaxed max-w-2xl mx-auto">
             Recursos creados desde la tanatología y la arteterapia para acompañarte
             en tu proceso, a tu ritmo y desde donde estés.
@@ -182,17 +182,17 @@ export default function TiendaPage() {
             <div className="bg-[#B2F7EF]/10 p-8 md:p-12 flex items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl text-black mb-2"><strong>Indeleble</strong></h2>
-                <p className="text-base text-black font-bold mb-6">
-                  Una historia real de resiliencia y superación ante el cáncer
+                <p className="text-base text-black font-bold mb-6 leading-snug">
+                  Una historia real de resiliencia y superación ante el cáncer, con ilustraciones en acuarela
                 </p>
-                <div className="space-y-4 leading-relaxed mb-6 text-black/70">
+                <div className="space-y-4 leading-snug mb-6 text-black/70">
                   <p>
                     Crees que eres invencible, hasta que un diagnóstico lo cambia todo.
-                    Una historia honesta sobre la vida, la transformación personal y la
-                    belleza que persiste en el caos.
+                    Un testimonio sobre la vida, la transformación personal y la belleza
+                    que persiste en el caos después de un diagnóstico.
                   </p>
-                  <p>
-                    Disponible en formato Kindle, en español y en inglés.
+                  <p className="text-black font-semibold">
+                    Disponible en Kindle y PDF descargable, en español y en inglés.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">
@@ -202,7 +202,7 @@ export default function TiendaPage() {
                     rel="noopener noreferrer"
                     className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
                   >
-                    Comprar en español (Kindle)
+                    Versión español
                   </a>
                   <a
                     href={siteConfig.book.amazonEn}
@@ -210,7 +210,7 @@ export default function TiendaPage() {
                     rel="noopener noreferrer"
                     className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
                   >
-                    Buy in English (Kindle)
+                    Buy in English
                   </a>
                 </div>
               </div>

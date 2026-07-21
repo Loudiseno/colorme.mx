@@ -24,7 +24,7 @@ const navigation = [
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Mi libro', href: '/#indeleble' },
-  { name: 'Tienda', href: '/tienda' },
+  { name: 'Productos', href: '/tienda' },
   { name: 'Política de privacidad', href: '/politica-de-privacidad' },
 ]
 

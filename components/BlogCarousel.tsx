@@ -64,8 +64,7 @@ export default function BlogCarousel({ title, articles }: BlogCarouselProps) {
           <Link key={article.href} href={article.href} className="group flex-shrink-0 w-72">
             <article className="bg-white rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all h-full">
               <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                <Image src={article.image} alt={article.alt} fill className="object-cover grayscale mix-blend-luminosity" />
-                <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
+                <Image src={article.image} alt={article.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-5">
                 <h4 className="text-lg text-black mb-2 leading-tight">{article.title}</h4>

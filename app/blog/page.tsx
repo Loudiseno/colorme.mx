@@ -22,6 +22,13 @@ const tanatologiaArticles = [
     alt: '¿Qué es el duelo?',
   },
   {
+    href: '/blog/dia-del-padre-duelo',
+    image: '/duelo-por-padre.jpeg',
+    title: 'Día del Padre cuando tu papá ya no está',
+    description: 'Cómo transitar el Día del Padre en duelo: cuando tu papá murió, cuando la relación era complicada, o cuando extrañas al padre que nunca tuviste.',
+    alt: 'Día del Padre en duelo',
+  },
+  {
     href: '/blog/duelos-invisibles-desautorizados',
     image: '/duelos-invisibles.jpeg',
     title: 'Duelos invisibles o desautorizados',
