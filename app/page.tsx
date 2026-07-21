@@ -252,14 +252,15 @@ export default function HomePage() {
                   Disponible en Kindle y PDF descargable, en español y en inglés
                 </li>
               </ul>
-              <div className="flex flex-wrap gap-3 justify-center">
+              <p className="text-xs text-black/50 uppercase tracking-wider mb-2 text-center">Kindle</p>
+              <div className="flex flex-wrap gap-3 justify-center mb-4">
                 <a
                   href={siteConfig.book.amazonEs}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
                 >
-                  Versión español
+                  Español
                 </a>
                 <a
                   href={siteConfig.book.amazonEn}
@@ -267,7 +268,26 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
                 >
-                  Versión inglés
+                  Buy in English
+                </a>
+              </div>
+              <p className="text-xs text-black/50 uppercase tracking-wider mb-2 text-center">PDF descargable</p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <a
+                  href={siteConfig.book.pdfEs}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+                >
+                  PDF en español
+                </a>
+                <a
+                  href={siteConfig.book.pdfEn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+                >
+                  PDF in English
                 </a>
               </div>
             </div>

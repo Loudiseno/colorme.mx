@@ -20,6 +20,8 @@ export const siteConfig = {
     title: 'Indeleble',
     amazonEs: 'https://www.amazon.com.mx/dp/B0F2MYQHHZ',
     amazonEn: 'https://www.amazon.com/dp/B0F4KNJZ6B',
+    pdfEs: 'https://payhip.com/b/wtIk3',
+    pdfEn: 'https://payhip.com/b/m3wWV',
   },
   diario: {
     payhip: 'https://payhip.com/b/cqtL2',
