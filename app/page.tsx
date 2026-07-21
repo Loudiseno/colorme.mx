@@ -283,7 +283,7 @@ export default function HomePage() {
               <ul className="space-y-2 mb-6 flex-1">
                 <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
                   <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
-                  Te guía en cuatro momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar tu vida e integrar lo vivido como parte de tu historia
+                  Guía en cuatro momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar tu vida e integrar lo vivido como parte de tu historia.
                 </li>
                 <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
                   <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>

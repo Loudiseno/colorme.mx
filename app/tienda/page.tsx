@@ -14,7 +14,7 @@ const whatsappPaqueteConsulta = `${siteConfig.whatsapp}?text=${encodeURIComponen
 )}`
 
 const contenidoDiario = [
-  'Te guía en cuatro momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar tu vida e integrar lo vivido como parte de tu historia',
+  'Guía en cuatro momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar tu vida e integrar lo vivido como parte de tu historia.',
   'Más de 50 ejercicios de arte, escritura y reflexión, paso a paso',
   'Reflexiones guiadas para escribir',
   'Check-in emocional de 30 días y micro-rituales',
@@ -166,7 +166,7 @@ export default function TiendaPage() {
               <p className="text-base text-black font-bold mb-4">${PRECIO_PAQUETE_DUELO_CONSULTA} MXN</p>
               <p className="text-black/70 leading-snug mb-8 flex-1">
                 El diario te acompaña todos los días, más una consulta individual en línea:
-                un espacio en vivo individual de 50 minutos para platicar.
+                50 minutos de acompañamiento tanatológico individual.
               </p>
               <a
                 href={whatsappPaqueteConsulta}
