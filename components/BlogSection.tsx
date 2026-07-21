@@ -23,7 +23,7 @@ const featuredArticles = [
   },
   {
     href: '/blog/india-rituales-colores-bandera-espiritualidad-duelo',
-    image: '/ofrendas india.jpeg',
+    image: '/ofrendas-india.jpeg',
     alt: 'India, el país donde el alma camina descalza',
     title: 'India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós',
     description: 'India es el corazón espiritual del planeta. Descubre sus rituales hindúes y los colores sagrados.',
@@ -54,9 +54,8 @@ export default function BlogSection() {
                     src={article.image}
                     alt={article.alt}
                     fill
-                    className="object-cover grayscale mix-blend-luminosity group-hover:grayscale-0 transition-all"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-[#B2F7EF]/10 mix-blend-overlay"></div>
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-gray-500 uppercase tracking-wider">{article.category}</span>

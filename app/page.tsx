@@ -252,43 +252,13 @@ export default function HomePage() {
                   Disponible en Kindle y PDF descargable, en español y en inglés
                 </li>
               </ul>
-              <p className="text-xs text-black/50 uppercase tracking-wider mb-2 text-center">Kindle</p>
-              <div className="flex flex-wrap gap-3 justify-center mb-4">
-                <a
-                  href={siteConfig.book.amazonEs}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
+              <div className="flex justify-center">
+                <Link
+                  href="/tienda#indeleble"
+                  className="bg-[#B2F7EF] text-black px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
                 >
-                  Español
-                </a>
-                <a
-                  href={siteConfig.book.amazonEn}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
-                >
-                  Buy in English
-                </a>
-              </div>
-              <p className="text-xs text-black/50 uppercase tracking-wider mb-2 text-center">PDF descargable</p>
-              <div className="flex flex-wrap gap-3 justify-center">
-                <a
-                  href={siteConfig.book.pdfEs}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#B2F7EF] text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all"
-                >
-                  PDF en español
-                </a>
-                <a
-                  href={siteConfig.book.pdfEn}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-black text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
-                >
-                  PDF in English
-                </a>
+                  Ver opciones de compra
+                </Link>
               </div>
             </div>
 
@@ -304,13 +274,20 @@ export default function HomePage() {
                 />
               </div>
               <h3 className="text-3xl md:text-4xl text-black mb-2 text-center"><strong>El arte de habitar tu duelo</strong></h3>
-              <p className="text-base text-black font-bold mb-4 text-center leading-snug">
+              <p className="text-base text-black font-bold mb-1 text-center leading-snug">
                 El duelo no se supera. Se habita.
+              </p>
+              <p className="text-sm text-black/60 mb-4 text-center leading-snug">
+                Diario guiado de duelo y transformación (arteterapia y tanatología)
               </p>
               <ul className="space-y-2 mb-6 flex-1">
                 <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
                   <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
-                  Diario con más de 50 ejercicios de arte, escritura y reflexión en 189 páginas
+                  Te guía en cuatro momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar tu vida e integrar lo vivido como parte de tu historia
+                </li>
+                <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
+                  <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>
+                  Más de 50 ejercicios de arte, escritura y reflexión en 189 páginas
                 </li>
                 <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">
                   <span className="text-[#B2F7EF] mt-0.5 font-bold">✓</span>

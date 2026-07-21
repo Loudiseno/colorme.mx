@@ -14,7 +14,7 @@ const whatsappPaqueteConsulta = `${siteConfig.whatsapp}?text=${encodeURIComponen
 )}`
 
 const contenidoDiario = [
-  'Un recorrido en 4 momentos: reconocer, sentir, reorganizar e integrar',
+  'Te guía en cuatro momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar tu vida e integrar lo vivido como parte de tu historia',
   'Más de 50 ejercicios de arte, escritura y reflexión, paso a paso',
   'Reflexiones guiadas para escribir',
   'Check-in emocional de 30 días y micro-rituales',
@@ -56,11 +56,14 @@ export default function TiendaPage() {
             {/* Descripción */}
             <div className="p-8 md:p-12 flex items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl text-black mb-4">
+                <h2 className="text-3xl md:text-4xl text-black mb-2">
                   <strong>El arte de habitar tu duelo</strong>
                 </h2>
-                <p className="text-base text-black font-bold mb-4">
+                <p className="text-base text-black font-bold mb-1">
                   El duelo no se supera. Se habita.
+                </p>
+                <p className="text-sm text-black/60 mb-4">
+                  Diario guiado de duelo y transformación (arteterapia y tanatología)
                 </p>
                 <div className="space-y-4 text-black/70 leading-relaxed mb-6">
                   <p>
@@ -162,8 +165,8 @@ export default function TiendaPage() {
               </h3>
               <p className="text-base text-black font-bold mb-4">${PRECIO_PAQUETE_DUELO_CONSULTA} MXN</p>
               <p className="text-black/70 leading-snug mb-8 flex-1">
-                El diario te acompaña todos los días y una consulta individual en línea
-                conmigo te da un espacio vivo para procesar lo que va surgiendo en tu proceso.
+                El diario te acompaña todos los días, más una consulta individual en línea:
+                un espacio en vivo individual de 50 minutos para platicar.
               </p>
               <a
                 href={whatsappPaqueteConsulta}
