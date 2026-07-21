@@ -19,7 +19,7 @@ export default function ArticuloSindromeCuidador() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Tanatología</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             El sindrome del cuidador primario
           </h1>
@@ -47,13 +47,13 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            Y en algun momento dejaste de preguntarte como estas tu.
+            Y en algún momento dejaste de preguntarte como estas tu.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Que es un cuidador primario</h2>
 
           <p>
-            Un cuidador primario es la persona que asume la responsabilidad principal del cuidado de alguien que no puede valerse por si mismo. No es un titulo oficial. No hay diploma que lo certifique. Simplemente un dia te convertiste en esa persona porque alguien tenia que hacerlo.
+            Un cuidador primario es la persona que asume la responsabilidad principal del cuidado de alguien que no puede valerse por si mismo. No es un titulo oficial. No hay diploma que lo certifique. Simplemente un día te convertiste en esa persona porque alguien tenía que hacerlo.
           </p>
 
           <p>
@@ -67,7 +67,7 @@ export default function ArticuloSindromeCuidador() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Que es el sindrome del cuidador</h2>
 
           <p>
-            El sindrome del cuidador, también llamado burnout del cuidador, es un estado de agotamiento fisico, emocional y mental que resulta del estres prolongado de cuidar a otra persona.
+            El sindrome del cuidador, también llamado burnout del cuidador, es un estado de agotamiento físico, emocional y mental que resulta del estres prolongado de cuidar a otra persona.
           </p>
 
           <p>
@@ -75,17 +75,17 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            Un estudio publicado en el Journal of the American Medical Association encontro que los cuidadores de personas con demencia tienen un 63% mas de riesgo de mortalidad que los no cuidadores de la misma edad. El cuidado cronico sin descanso tiene consecuencias reales en la salud.
+            Un estudio publicado en el Journal of the American Medical Association encontro que los cuidadores de personas con demencia tienen un 63% mas de riesgo de mortalidad que los no cuidadores de la misma edad. El cuidado crónico sin descanso tiene consecuencias reales en la salud.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Senales de que estas llegando al limite</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Señales de que estas llegando al limite</h2>
 
           <p>
-            El agotamiento del cuidador no aparece de un dia para otro. Se acumula gradualmente, muchas veces sin que lo notes porque estas demasiado ocupado atendiendo a otra persona.
+            El agotamiento del cuidador no aparece de un día para otro. Se acumula gradualmente, muchas veces sin que lo notes porque estas demasiado ocupado atendiendo a otra persona.
           </p>
 
           <p>
-            <strong>Sintomas fisicos.</strong> Fatiga constante que no mejora con el descanso. Dolores de cabeza frecuentes. Problemas de sueno. Cambios en el apetito. Enfermarte mas seguido porque tu sistema inmune esta debilitado. Tension muscular cronica, especialmente en cuello y espalda.
+            <strong>Sintomas fisicos.</strong> Fatiga constante que no mejora con el descanso. Dolores de cabeza frecuentes. Problemas de sueño. Cambios en el apetito. Enfermarte mas seguido porque tu sistema inmune esta debilitado. Tension muscular cronica, especialmente en cuello y espalda.
           </p>
 
           <p>
@@ -125,7 +125,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            <strong>Fase de entrega total.</strong> Al principio hay energia, dedicación y esperanza. Asumes el rol con determinacion. Crees que puedes con todo.
+            <strong>Fase de entrega total.</strong> Al principio hay energía, dedicación y esperanza. Asumes el rol con determinacion. Crees que puedes con todo.
           </p>
 
           <p>
@@ -133,7 +133,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            <strong>Fase de burnout.</strong> El agotamiento se vuelve cronico. Puedes sentir desapego emocional, cinismo o incluso resentimiento. Tu salud se deteriora. Ya no puedes seguir asi, pero tampoco ves como parar.
+            <strong>Fase de burnout.</strong> El agotamiento se vuelve crónico. Puedes sentir desapego emocional, cinismo o incluso resentimiento. Tu salud se deteriora. Ya no puedes seguir así, pero tampoco ves como parar.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como cuidarte mientras cuidas</h2>
@@ -163,7 +163,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            <strong>Encuentra formas de expresion.</strong> El arte, la escritura, la musica pueden ser canales para liberar emociones que no sabes como nombrar. Pintar o colorear durante unos minutos al dia puede funcionar como una pausa activa que descomprime el estres acumulado.
+            <strong>Encuentra formas de expresion.</strong> El arte, la escritura, la musica pueden ser canales para liberar emociones que no sabes como nombrar. Pintar o colorear durante unos minutos al día puede funcionar como una pausa activa que descomprime el estres acumulado.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El permiso que necesitas escuchar</h2>
@@ -195,7 +195,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            Pensamientos de hacerte dano o de que todo seria mas facil si no estuvieras.
+            Pensamientos de hacerte dano o de que todo seria mas fácil si no estuvieras.
           </p>
 
           <p>
@@ -207,7 +207,7 @@ export default function ArticuloSindromeCuidador() {
           </p>
 
           <p>
-            Uso de alcohol u otras sustancias para sobrellevar el dia.
+            Uso de alcohol u otras sustancias para sobrellevar el día.
           </p>
 
           <p>
@@ -240,7 +240,7 @@ export default function ArticuloSindromeCuidador() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si eres cuidador y necesitas apoyo emocional, estoy aqui para acompanarte.
+            Si eres cuidador y necesitas apoyo emocional, estoy aquí para acompanarte.
           </p>
           <a
             href={siteConfig.calendly}

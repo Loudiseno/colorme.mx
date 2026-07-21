@@ -19,7 +19,7 @@ export default function ArticuloPerderLaFe() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Tanatología</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Cuando pierdes la fe: el duelo espiritual
           </h1>
@@ -43,7 +43,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            Un dia te das cuenta de que ya no crees lo que antes creias.
+            Un día te das cuenta de que ya no crees lo que antes creias.
           </p>
 
           <p>
@@ -83,7 +83,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            <strong>Respuestas a preguntas difíciles.</strong> Que pasa después de la muerte, por que sufren los inocentes, hay justicia ultima. La fe ofrecia respuestas. Sin ella, estas preguntas quedan abiertas de maneras que pueden ser angustiantes.
+            <strong>Respuestas a preguntas difíciles.</strong> Que pasa después de la muerte, por que sufren los inocentes, hay justicia última. La fe ofrecia respuestas. Sin ella, estas preguntas quedan abiertas de maneras que pueden ser angustiantes.
           </p>
 
           <p>
@@ -105,7 +105,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            Hay algo que se pierde que tenia valor significativo. Hay un proceso de adaptacion a una nueva realidad. Hay emociones intensas que necesitan ser procesadas. Hay una reconstrucción de identidad que toma tiempo.
+            Hay algo que se pierde que tenía valor significativo. Hay un proceso de adaptacion a una nueva realidad. Hay emociones intensas que necesitan ser procesadas. Hay una reconstrucción de identidad que toma tiempo.
           </p>
 
           <p>
@@ -123,7 +123,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            <strong>Liberacion y vacío a la vez.</strong> Puedes sentir alivio por dejar atras creencias que ya no te funcionaban, y simultaneamente terror por el vacío que queda. Ambas emociones son validas.
+            <strong>Liberacion y vacío a la vez.</strong> Puedes sentir alivio por dejar atrás creencias que ya no te funcionaban, y simultaneamente terror por el vacío que queda. Ambas emociones son validas.
           </p>
 
           <p>
@@ -135,7 +135,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            <strong>Miedo.</strong> Miedo al infierno si esa creencia persiste en algun nivel. Miedo al rechazo de la comunidad o la familia. Miedo a enfrentar la vida y la muerte sin las respuestas que la fe proporcionaba.
+            <strong>Miedo.</strong> Miedo al infierno si esa creencia persiste en algún nivel. Miedo al rechazo de la comunidad o la familia. Miedo a enfrentar la vida y la muerte sin las respuestas que la fe proporcionaba.
           </p>
 
           <p>
@@ -153,7 +153,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            No sucede de un dia para otro. Puede tomar meses o años. A menudo comienza con preguntas que no encuentran respuestas satisfactorias, experiencias que contradicen lo que se ensenaba, o la exposicion a perspectivas diferentes.
+            No sucede de un día para otro. Puede tomar meses o años. A menudo comienza con preguntas que no encuentran respuestas satisfactorias, experiencias que contradicen lo que se ensenaba, o la exposicion a perspectivas diferentes.
           </p>
 
           <p>
@@ -201,7 +201,7 @@ export default function ArticuloPerderLaFe() {
           </p>
 
           <p>
-            El cuestionamiento no es traicion. Es honestidad intelectual y emocional. Si tu fe no puede sostener preguntas, quizas el problema no eres tu.
+            El cuestionamiento no es traicion. Es honestidad intelectual y emocional. Si tu fe no puede sostener preguntas, quizás el problema no eres tu.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Encontrar tu propia espiritualidad (o no)</h2>
@@ -244,7 +244,7 @@ export default function ArticuloPerderLaFe() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si estas atravesando un duelo espiritual y necesitas acompañamiento, estoy aqui para ti.
+            Si estas atravesando un duelo espiritual y necesitas acompañamiento, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}

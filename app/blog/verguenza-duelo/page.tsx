@@ -19,7 +19,7 @@ export default function ArticuloVergüenzaDuelo() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Tanatología</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             La vergüenza: la emoción que te hace esconderte
           </h1>
@@ -117,7 +117,7 @@ export default function ArticuloVergüenzaDuelo() {
           </p>
 
           <p>
-            &quot;Soy el único que se siente asi.&quot; Parte del poder de la vergüenza es hacernos creer que nuestra experiencia es única, que nadie mas tiene estos secretos o defectos.
+            &quot;Soy el único que se siente así.&quot; Parte del poder de la vergüenza es hacernos creer que nuestra experiencia es única, que nadie mas tiene estos secretos o defectos.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">De donde viene la vergüenza</h2>
@@ -139,7 +139,7 @@ export default function ArticuloVergüenzaDuelo() {
           </p>
 
           <p>
-            <strong>Secretos familiares.</strong> Crecer en familias donde habia cosas de las que no se podia hablar: adicciones, abusos, enfermedades mentales, situacion economica. El silencio enseña que ciertas realidades son vergonzosas.
+            <strong>Secretos familiares.</strong> Crecer en familias donde había cosas de las que no se podia hablar: adicciones, abusos, enfermedades mentales, situacion economica. El silencio enseña que ciertas realidades son vergonzosas.
           </p>
 
           <p>
@@ -183,7 +183,7 @@ export default function ArticuloVergüenzaDuelo() {
           </p>
 
           <p>
-            Pero el aislamiento alimenta la vergüenza. Sin el reflejo de otros, sin escuchar &quot;yo también me he sentido asi,&quot; quedamos atrapados en la creencia de que somos los unicos, de que nuestro defecto es único e imperdonable.
+            Pero el aislamiento alimenta la vergüenza. Sin el reflejo de otros, sin escuchar &quot;yo también me he sentido así,&quot; quedamos atrapados en la creencia de que somos los unicos, de que nuestro defecto es único e imperdonable.
           </p>
 
           <p>
@@ -208,7 +208,7 @@ export default function ArticuloVergüenzaDuelo() {
             La vulnerabilidad es el camino, aunque se sienta aterrador. Brene Brown la define como &quot;incertidumbre, riesgo y exposicion emocional.&quot; No es comoda. Pero es la puerta de salida de la vergüenza.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Expresar lo que avergüenza a traves del arte</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Expresar lo que avergüenza a través del arte</h2>
 
           <p>
             No todo necesita ser dicho en voz alta a otra persona.
@@ -286,7 +286,7 @@ export default function ArticuloVergüenzaDuelo() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si cargas con emociones difíciles y necesitas un espacio seguro para expresarlas, estoy aqui para ti.
+            Si cargas con emociones difíciles y necesitas un espacio seguro para expresarlas, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}

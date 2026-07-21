@@ -19,7 +19,7 @@ export default function ArticuloMuerteMama() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Tanatología</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Cómo atravesar la muerte de tu mamá
           </h1>

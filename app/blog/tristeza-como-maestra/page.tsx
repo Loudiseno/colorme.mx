@@ -19,7 +19,7 @@ export default function ArticuloTristezaComoMaestra() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Tanatología</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             La tristeza no vino a destruirte
           </h1>
@@ -47,7 +47,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            Apenas aparece, buscamos como deshacernos de ella. Distracciones, consejos para animarse, frases motivacionales, cualquier cosa que nos saque de ese estado incomodo lo mas rapido posible.
+            Apenas aparece, buscamos como deshacernos de ella. Distracciones, consejos para animarse, frases motivacionales, cualquier cosa que nos saque de ese estado incomodo lo mas rápido posible.
           </p>
 
           <p>
@@ -57,7 +57,7 @@ export default function ArticuloTristezaComoMaestra() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La emoción que nadie quiere sentir</h2>
 
           <p>
-            Desde pequenos recibimos mensajes claros sobre la tristeza. &quot;No llores.&quot; &quot;No te pongas asi.&quot; &quot;Animate.&quot; &quot;Mira el lado positivo.&quot;
+            Desde pequeños recibimos mensajes claros sobre la tristeza. &quot;No llores.&quot; &quot;No te pongas así.&quot; &quot;Animate.&quot; &quot;Mira el lado positivo.&quot;
           </p>
 
           <p>
@@ -65,7 +65,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            Y asi aprendemos a desconfiar de una de las emociones mas naturales y necesarias que tenemos.
+            Y así aprendemos a desconfiar de una de las emociones mas naturales y necesarias que tenemos.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Para que sirve la tristeza</h2>
@@ -79,7 +79,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            <strong>Nos conecta con otros.</strong> La expresion de tristeza comunica que necesitamos apoyo. Es una senal social que invita al consuelo y la cercania. Llorar frente a alguien crea intimidad.
+            <strong>Nos conecta con otros.</strong> La expresion de tristeza comunica que necesitamos apoyo. Es una señal social que invita al consuelo y la cercania. Llorar frente a alguien crea intimidad.
           </p>
 
           <p>
@@ -87,7 +87,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            <strong>Precede transformaciones.</strong> Muchos momentos de crecimiento personal estan precedidos por periodos de tristeza. El dolor puede ser el terreno donde germinan cambios importantes.
+            <strong>Precede transformaciones.</strong> Muchos momentos de crecimiento personal están precedidos por periodos de tristeza. El dolor puede ser el terreno donde germinan cambios importantes.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Tristeza versus depresion</h2>
@@ -97,11 +97,11 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            La tristeza es una emoción temporal que responde a circunstancias especificas. Viene, se siente, y eventualmente pasa. Puedes estar triste y aun asi funcionar en tu vida diaria, encontrar momentos de alivio, conectar con otros.
+            La tristeza es una emoción temporal que responde a circunstancias especificas. Viene, se siente, y eventualmente pasa. Puedes estar triste y aun así funcionar en tu vida diaria, encontrar momentos de alivio, conectar con otros.
           </p>
 
           <p>
-            La depresion es una condicion clinica que persiste mas alla de las circunstancias. Afecta el funcionamiento diario de manera significativa. Incluye sintomas como perdida de interes en actividades que antes disfrutabas, cambios importantes en sueno y apetito, fatiga constante, dificultad para concentrarte, sentimientos de inutilidad, y en casos graves, pensamientos de hacerte dano.
+            La depresion es una condicion clinica que persiste mas alla de las circunstancias. Afecta el funcionamiento diario de manera significativa. Incluye sintomas como perdida de interes en actividades que antes disfrutabas, cambios importantes en sueño y apetito, fatiga constante, dificultad para concentrarte, sentimientos de inutilidad, y en casos graves, pensamientos de hacerte dano.
           </p>
 
           <p>
@@ -127,14 +127,14 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            <strong>Racionalizacion.</strong> Explicar intelectualmente por que no deberiamos sentirnos asi. &quot;Otros estan peor.&quot; &quot;No es para tanto.&quot; &quot;Deberia ser mas fuerte.&quot;
+            <strong>Racionalizacion.</strong> Explicar intelectualmente por que no deberiamos sentirnos así. &quot;Otros están peor.&quot; &quot;No es para tanto.&quot; &quot;Deberia ser mas fuerte.&quot;
           </p>
 
           <p>
             Ninguna de estas estrategias funciona a largo plazo. El dolor evitado no desaparece. Se acumula, se transforma, emerge de otras formas.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como acompanar tu propia tristeza</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como acompañar tu propia tristeza</h2>
 
           <p>
             En lugar de huir, puedes aprender a estar con la tristeza.
@@ -175,7 +175,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            Si esto te pasa, no te fuerces. Pero tampoco te juzgues si las lagrimas aparecen. Estan haciendo su trabajo.
+            Si esto te pasa, no te fuerces. Pero tampoco te juzgues si las lagrimas aparecen. Están haciendo su trabajo.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La tristeza y el arte</h2>
@@ -185,7 +185,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            La musica en tonos menores, la poesia del dolor, las pinturas de melancolia. Los artistas siempre han sabido que la tristeza necesita expresion y que esa expresion puede transformarse en algo significativo.
+            La musica en tonos menores, la poesia del dolor, las pinturas de melancolía. Los artistas siempre han sabido que la tristeza necesita expresion y que esa expresion puede transformarse en algo significativo.
           </p>
 
           <p>
@@ -199,7 +199,7 @@ export default function ArticuloTristezaComoMaestra() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cuando la tristeza necesita ayuda profesional</h2>
 
           <p>
-            La tristeza normal es parte de la vida. Pero hay senales de que algo mas esta pasando:
+            La tristeza normal es parte de la vida. Pero hay señales de que algo mas esta pasando:
           </p>
 
           <p>
@@ -219,7 +219,7 @@ export default function ArticuloTristezaComoMaestra() {
           </p>
 
           <p>
-            No puedes encontrar ningun momento de alivio, por breve que sea.
+            No puedes encontrar ningún momento de alivio, por breve que sea.
           </p>
 
           <p>
@@ -252,7 +252,7 @@ export default function ArticuloTristezaComoMaestra() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si necesitas acompañamiento para procesar tus emociones, estoy aqui para ti.
+            Si necesitas acompañamiento para procesar tus emociones, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}

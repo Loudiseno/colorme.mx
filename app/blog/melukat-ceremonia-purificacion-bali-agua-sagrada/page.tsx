@@ -38,7 +38,7 @@ export default function MelukatBaliPage() {
 
         <div className="prose prose-lg max-w-none text-black/80">
           <p className="text-xl leading-relaxed">
-            En Bali hay verdades que no entran por los ojos. Se deslizan suavemente hacia adentro, como una corriente invisible que encuentra el lugar exacto donde algo pesa. Asi es el Melukat. Una ceremonia que no se entiende con la mente, se recibe con el cuerpo.
+            En Bali hay verdades que no entran por los ojos. Se deslizan suavemente hacia adentro, como una corriente invisible que encuentra el lugar exacto donde algo pesa. Así es el Melukat. Una ceremonia que no se entiende con la mente, se recibe con el cuerpo.
           </p>
 
           <p>
@@ -52,7 +52,7 @@ export default function MelukatBaliPage() {
           </p>
 
           <p>
-            El mas famoso de todos es Tirta Empul, fundado en el año 962 d.C., muy cerca de Ubud. Según la mitología hindu balinesa, el dios Indra hizo brotar ese manantial de la tierra como un elixir de claridad para devolver la vida a quienes la habian perdido.
+            El mas famoso de todos es Tirta Empul, fundado en el año 962 d.C., muy cerca de Ubud. Según la mitología hindu balinesa, el dios Indra hizo brotar ese manantial de la tierra como un elixir de claridad para devolver la vida a quienes la habían perdido.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El corazón de la ceremonia</h2>
@@ -82,7 +82,7 @@ export default function MelukatBaliPage() {
           </p>
 
           <p>
-            Como tanatóloga, encuentro en el Melukat una verdad que acompano todos los dias. El dolor necesita un lugar donde descansar. Necesita un gesto, un ritual, un símbolo que le diga al cuerpo: ya puedes dejar ir.
+            Como tanatóloga, encuentro en el Melukat una verdad que acompano todos los días. El dolor necesita un lugar donde descansar. Necesita un gesto, un ritual, un símbolo que le diga al cuerpo: ya puedes dejar ir.
           </p>
 
           <p>
@@ -97,7 +97,7 @@ export default function MelukatBaliPage() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">¿Estas atravesando un duelo?</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si necesitas acompañamiento desde una mirada cálida, cercana y respetuosa de tu propio ritmo, estoy aqui para ti.
+            Si necesitas acompañamiento desde una mirada cálida, cercana y respetuosa de tu propio ritmo, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}
