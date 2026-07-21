@@ -241,8 +241,8 @@ const tanatologiaArticles = [
   {
     href: '/blog/hermanos-de-ninos-enfermos',
     image: '/hermanos-de-ninos-enfermos.jpeg',
-    title: 'Hermanos de niños enfermos: los olvidados',
-    description: 'Los hermanos de niños con enfermedades graves también sufren.',
+    title: 'Los hermanos que no enferman: el duelo invisible de los niños sanos',
+    description: 'Los hermanos de niños con enfermedades graves también viven su propio duelo.',
     alt: 'Hermanos de niños enfermos',
   },
   {

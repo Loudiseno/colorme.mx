@@ -3,8 +3,8 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Hermanos de niños enfermos: los olvidados',
-  description: 'Los hermanos de niños con enfermedades graves también sufren. Cómo acompañarlos durante la enfermedad.',
+  title: 'Los hermanos que no enferman: el duelo invisible de los niños sanos',
+  description: 'Los hermanos de niños con enfermedades graves también viven su propio duelo. Cómo acompañarlos durante la enfermedad.',
   keywords: ['hermanos', 'niños enfermos', 'familia', 'cáncer infantil', 'duelo', 'acompañamiento'],
   alternates: { canonical: '/blog/hermanos-de-ninos-enfermos' },
   openGraph: { type: 'article', title: 'Hermanos de niños enfermos | ColorMe', url: '/blog/hermanos-de-ninos-enfermos' },
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'Article',
-  headline: 'Hermanos de niños enfermos: los olvidados',
+  headline: 'Los hermanos que no enferman: el duelo invisible de los niños sanos',
   author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/hermanos-de-ninos-enfermos`,
