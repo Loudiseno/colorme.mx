@@ -19,7 +19,7 @@ export default function ArticuloHablarDeLaMuerte() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">TANATOLOGIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Tanatología</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Por que nos incomoda hablar de la muerte
           </h1>
@@ -47,7 +47,7 @@ export default function ArticuloHablarDeLaMuerte() {
           </p>
 
           <p>
-            La muerte es quizas el único tema verdaderamente universal, el único destino que compartimos todos los seres humanos, y sin embargo actuamos como si nombrarla fuera peligroso.
+            La muerte es quizás el único tema verdaderamente universal, el único destino que compartimos todos los seres humanos, y sin embargo actuamos como si nombrarla fuera peligroso.
           </p>
 
           <p>
@@ -79,11 +79,11 @@ export default function ArticuloHablarDeLaMuerte() {
           </p>
 
           <p>
-            El historiador Philippe Aries documento como la relación occidental con la muerte cambio drasticamente en los ultimos dos siglos. Antes, la muerte era parte visible de la vida cotidiana. Las personas morian en casa, rodeadas de familia. Los niños presenciaban el proceso. Los cuerpos se velaban en el hogar. La comunidad participaba en los rituales.
+            El historiador Philippe Aries documento como la relación occidental con la muerte cambio drasticamente en los últimos dos siglos. Antes, la muerte era parte visible de la vida cotidiana. Las personas morian en casa, rodeadas de familia. Los niños presenciaban el proceso. Los cuerpos se velaban en el hogar. La comunidad participaba en los rituales.
           </p>
 
           <p>
-            A partir del siglo XX, la muerte se traslado del hogar al hospital. Se convirtio en un evento medico mas que en un evento humano. Los moribundos fueron aislados. Los niños fueron &quot;protegidos&quot; de la realidad. Los rituales se acortaron.
+            A partir del siglo XX, la muerte se traslado del hogar al hospital. Se convirtio en un evento médico mas que en un evento humano. Los moribundos fueron aislados. Los niños fueron &quot;protegidos&quot; de la realidad. Los rituales se acortaron.
           </p>
 
           <p>
@@ -113,7 +113,7 @@ export default function ArticuloHablarDeLaMuerte() {
           </p>
 
           <p>
-            <strong>La ilusion de que evitarla nos protege.</strong> Si no hablamos de ella, quizas no sucedera. Si no pensamos en ella, quizas se mantendra lejos. Por supuesto, esto no funciona. Pero el pensamiento magico es difícil de abandonar.
+            <strong>La ilusion de que evitarla nos protege.</strong> Si no hablamos de ella, quizás no sucedera. Si no pensamos en ella, quizás se mantendra lejos. Por supuesto, esto no funciona. Pero el pensamiento magico es difícil de abandonar.
           </p>
 
           <p>
@@ -131,11 +131,11 @@ export default function ArticuloHablarDeLaMuerte() {
           </p>
 
           <p>
-            <strong>No sabemos acompanar a otros.</strong> Cuando alguien cercano esta muriendo o ha perdido a alguien, no sabemos que decir. Nuestra incomodidad puede hacer que evitemos a quienes mas necesitan compania.
+            <strong>No sabemos acompañar a otros.</strong> Cuando alguien cercano esta muriendo o ha perdido a alguien, no sabemos que decir. Nuestra incomodidad puede hacer que evitemos a quienes mas necesitan compania.
           </p>
 
           <p>
-            <strong>El duelo se vuelve mas difícil.</strong> Según investigaciones de la Asociacion Americana de Psicologia, las personas que han tenido conversaciones abiertas sobre la muerte antes de una perdida tienden a tener procesos de duelo mas saludables.
+            <strong>El duelo se vuelve mas difícil.</strong> Según investigaciones de la Asociacion Americana de Psicología, las personas que han tenido conversaciones abiertas sobre la muerte antes de una perdida tienden a tener procesos de duelo mas saludables.
           </p>
 
           <p>
@@ -165,7 +165,7 @@ export default function ArticuloHablarDeLaMuerte() {
           </p>
 
           <p>
-            <strong>Acompanar mejor a quien esta muriendo.</strong> Estar presente con alguien que muere requiere haber hecho cierta paz con la propia mortalidad. Sin eso, la incomodidad puede hacer que abandonemos a quien mas nos necesita.
+            <strong>Acompañar mejor a quien esta muriendo.</strong> Estar presente con alguien que muere requiere haber hecho cierta paz con la propia mortalidad. Sin eso, la incomodidad puede hacer que abandonemos a quien mas nos necesita.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Como empezar a hablar de la muerte</h2>
@@ -226,7 +226,7 @@ export default function ArticuloHablarDeLaMuerte() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si necesitas acompañamiento para atravesar conversaciones difíciles sobre la muerte, estoy aqui para ti.
+            Si necesitas acompañamiento para atravesar conversaciones difíciles sobre la muerte, estoy aquí para ti.
           </p>
           <a
             href={siteConfig.calendly}
