@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Check, Download, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 
 // Precios (actualizar aquí cuando cambien)
@@ -13,13 +13,19 @@ const whatsappPaqueteConsulta = `${siteConfig.whatsapp}?text=${encodeURIComponen
   'Hola Lou, quiero reservar el paquete de "El arte de habitar tu duelo" + 1 consulta individual ($950). ¿Me compartes los detalles?'
 )}`
 
-const contenidoDiario = [
-  'Guía en cuatro momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar tu vida e integrar lo vivido como parte de tu historia.',
-  'Más de 50 ejercicios de arte, escritura y reflexión, paso a paso',
-  'Reflexiones guiadas para escribir',
-  'Check-in emocional de 30 días y micro-rituales',
-  'Prácticas de respiración y calma para los días más difíciles',
-  'Tu propio kit personal de crisis y un calendario de fechas difíciles',
+const encontrarasDiario = [
+  'Más de 50 ejercicios paso a paso, sin necesidad de saber dibujar.',
+  'Reflexiones guiadas para escribir y explorar lo que sientes.',
+  'Un check-in emocional de 30 días y micro-rituales diarios.',
+  'Prácticas de respiración y calma para los días más difíciles.',
+  'Tu propio kit personal de crisis y un calendario de fechas difíciles.',
+]
+
+const galeriaDiario = [
+  { src: '/diario-antes-de-comenzar.webp', alt: 'El arte de habitar tu duelo — antes de comenzar' },
+  { src: '/diario-frase.webp', alt: 'El arte de habitar tu duelo — frase' },
+  { src: '/diario-lo-que-encontraras.webp', alt: 'El arte de habitar tu duelo — lo que encontrarás' },
+  { src: '/el-arte-de-habitar-tablet.webp', alt: 'El arte de habitar tu duelo en tablet' },
 ]
 
 export default function TiendaPage() {
@@ -36,13 +42,13 @@ export default function TiendaPage() {
         </div>
       </section>
 
-      {/* Diario de Duelo */}
+      {/* Diario: El arte de habitar tu duelo */}
       <section className="py-10 md:py-12 bg-[#B2F7EF]/5" id="diario">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF] bg-white">
-            {/* Portada del diario */}
-            <div className="bg-[#B2F7EF]/20 p-8 md:p-12 flex items-center justify-center">
-              <div className="max-w-sm w-full rounded-2xl overflow-hidden shadow-lg">
+          <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF]">
+            {/* Imágenes (fondo blanco) */}
+            <div className="bg-white p-6 md:p-8 flex flex-col justify-center gap-4">
+              <div className="max-w-[280px] w-full mx-auto rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/el-arte-de-habitar-tu-duelo-portada.webp"
                   alt="El arte de habitar tu duelo - Diario terapéutico de duelo por Lou Pérez"
@@ -51,56 +57,61 @@ export default function TiendaPage() {
                   className="w-full h-auto"
                 />
               </div>
+              <div className="grid grid-cols-2 gap-4">
+                {galeriaDiario.map((img) => (
+                  <div key={img.src} className="rounded-xl overflow-hidden border border-[#B2F7EF]/40">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      width={700}
+                      height={906}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Descripción */}
-            <div className="p-8 md:p-12 flex items-center">
+            {/* Texto (fondo cyan) */}
+            <div className="bg-[#B2F7EF]/20 p-8 md:p-12 flex items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl text-black mb-2">
+                <h2 className="text-3xl md:text-4xl text-black mb-1">
                   <strong>El arte de habitar tu duelo</strong>
                 </h2>
-                <p className="text-base text-black font-bold mb-1">
-                  El duelo no se supera. Se habita.
+                <p className="text-sm text-black/60 mb-5">
+                  Diario guiado de duelo y transformación
                 </p>
-                <p className="text-sm text-black/60 mb-4">
-                  Diario guiado de duelo y transformación (arteterapia y tanatología)
-                </p>
-                <div className="space-y-4 text-black/70 leading-relaxed mb-6">
+
+                <div className="space-y-3 text-sm text-black/80 leading-snug">
+                  <p className="font-semibold text-black">El duelo no se supera. Se habita.</p>
                   <p>
-                    Te dijeron que fueras fuerte, que el tiempo lo cura todo, que ya
-                    deberías estar mejor. Pero nadie te dio un espacio para sentir lo
-                    que estás sintiendo. <strong className="text-black">Este diario es ese espacio.</strong>
+                    Te dijeron que fueras fuerte. Que el tiempo lo cura todo. Que ya deberías
+                    estar mejor. Pero nadie te dio un espacio para vivir lo que llevas dentro.
+                    Este diario quiere ser ese lugar.
                   </p>
                   <p>
-                    Un diario para sentir, escribir, crear y acompañarte en tu proceso,
-                    creado desde la tanatología y la arteterapia. No necesitas saber
-                    dibujar ni tener las palabras correctas: las líneas, las formas y
-                    el color hablan por ti.
+                    Creado por Lou Pérez, una especialista certificada en tanatología, cuya
+                    formación integra técnicas de arteterapia y otros enfoques aprendidos en
+                    México, Bali, Tailandia, Malasia e India, este diario te guía en cuatro
+                    momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar
+                    tu vida e integrar lo vivido como parte de tu historia.
                   </p>
-                </div>
-
-                <p className="text-black font-semibold mb-3">Lo que encontrarás dentro (189 páginas):</p>
-                <ul className="space-y-2 mb-6">
-                  {contenidoDiario.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-black/70 text-sm leading-relaxed">
-                      <Check size={16} className="text-[#B2F7EF] mt-1 flex-shrink-0" strokeWidth={2.5} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-
-                <p className="text-black/70 text-sm leading-relaxed mb-6">
-                  Para todo tipo de pérdida: un ser querido, una relación, la salud,
-                  un país, la vida que imaginabas.
-                </p>
-
-                <div className="bg-[#B2F7EF]/10 border border-[#B2F7EF] rounded-xl p-4 mb-6">
-                  <p className="text-sm text-black/70 leading-relaxed flex items-start gap-2">
-                    <Download size={16} className="text-black mt-1 flex-shrink-0" />
-                    <span>
-                      <strong className="text-black">PDF de descarga inmediata</strong>, tamaño carta.
-                      Imprímelo o úsalo en tu tablet.
-                    </span>
+                  <p className="font-semibold text-black">Dentro encontrarás:</p>
+                  <ul className="space-y-1.5">
+                    {encontrarasDiario.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <span className="text-black mt-0.5">✦</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <p>
+                    Creado para acompañar distintos tipos de pérdida: un ser querido, una relación,
+                    la salud, una mascota, un país, la vida que imaginabas...
+                  </p>
+                  <p>
+                    No existe una forma correcta de atravesar un duelo. Cada proceso es único.
+                    Pero no tienes que hacerlo en soledad.
                   </p>
                 </div>
 
@@ -108,14 +119,14 @@ export default function TiendaPage() {
                   href={siteConfig.diario.payhip}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#B2F7EF] text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block shadow-md"
+                  className="bg-[#B2F7EF] text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-[#B2F7EF]/80 transition-all inline-block shadow-md mt-6"
                 >
                   Comprar el diario — descarga inmediata
                 </a>
 
-                <p className="text-xs text-black/40 mt-6 leading-relaxed">
-                  ⚠️ Este material es un recurso de acompañamiento y no sustituye
-                  atención psicológica, psiquiátrica ni médica profesional.
+                <p className="text-xs text-black/40 mt-6 leading-snug">
+                  ⚠️ Este material es un recurso de acompañamiento y no sustituye atención
+                  psicológica, psiquiátrica ni médica profesional.
                   <br />© Lou Pérez · ColorMe. Uso personal. Prohibida su distribución o reventa.
                 </p>
               </div>
@@ -135,6 +146,15 @@ export default function TiendaPage() {
               <div className="inline-flex self-center items-center gap-2 bg-[#B2F7EF] text-black px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
                 <Sparkles size={14} />
                 PAQUETE 1
+              </div>
+              <div className="rounded-2xl overflow-hidden mb-6 shadow-md">
+                <Image
+                  src="/bundle-indeleble-diario.webp"
+                  alt="Paquete: Indeleble + El arte de habitar tu duelo"
+                  width={1000}
+                  height={563}
+                  className="w-full h-auto"
+                />
               </div>
               <h3 className="text-2xl md:text-3xl text-black mb-2 leading-snug">
                 Indeleble + El arte de habitar tu duelo
@@ -159,6 +179,15 @@ export default function TiendaPage() {
               <div className="inline-flex self-center items-center gap-2 bg-[#B2F7EF] text-black px-4 py-1.5 rounded-full text-xs font-medium tracking-wide mb-6">
                 <Sparkles size={14} />
                 PAQUETE 2
+              </div>
+              <div className="max-w-[240px] mx-auto rounded-2xl overflow-hidden mb-6 shadow-md">
+                <Image
+                  src="/el-arte-de-habitar-mockup.webp"
+                  alt="El arte de habitar tu duelo"
+                  width={900}
+                  height={1273}
+                  className="w-full h-auto"
+                />
               </div>
               <h3 className="text-2xl md:text-3xl text-black mb-2 leading-snug">
                 El arte de habitar tu duelo + 1 consulta individual
