@@ -4,14 +4,14 @@ import { siteConfig } from '@/lib/seo'
 import DiarioCarousel from '@/components/DiarioCarousel'
 
 // Precios (actualizar aquí cuando cambien)
-const PRECIO_PAQUETE_DUELO_CONSULTA = 950
+const PRECIO_PAQUETE_DUELO_CONSULTA = 850
 
 // Paquete 1: Indeleble + El arte de habitar tu duelo (pago por Payhip)
 const PAQUETE_LIBRO_DIARIO_PAYHIP = 'https://payhip.com/b/br6z2'
 
 // Paquete 2: El arte de habitar tu duelo + 1 consulta individual (por WhatsApp)
 const whatsappPaqueteConsulta = `${siteConfig.whatsapp}?text=${encodeURIComponent(
-  'Hola Lou, quiero reservar el paquete de "El arte de habitar tu duelo" + 1 consulta individual ($950). ¿Me compartes los detalles?'
+  'Hola Lou, quiero reservar el paquete de "El arte de habitar tu duelo" + 1 consulta individual ($850). ¿Me compartes los detalles?'
 )}`
 
 const encontrarasDiario = [
