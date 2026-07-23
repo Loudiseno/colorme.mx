@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Sparkles } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
+import DiarioCarousel from '@/components/DiarioCarousel'
 
 // Precios (actualizar aquí cuando cambien)
 const PRECIO_PAQUETE_DUELO_CONSULTA = 950
@@ -47,8 +48,8 @@ export default function TiendaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF]">
             {/* Imágenes (fondo blanco) */}
-            <div className="bg-white p-6 md:p-8 flex flex-col justify-center gap-5">
-              <div className="max-w-[200px] w-full mx-auto rounded-2xl overflow-hidden shadow-lg">
+            <div className="bg-white p-6 md:p-8 flex flex-col justify-center gap-6">
+              <div className="max-w-[300px] w-full mx-auto rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/el-arte-de-habitar-tu-duelo-portada.webp"
                   alt="El arte de habitar tu duelo - Diario terapéutico de duelo por Lou Pérez"
@@ -57,23 +58,8 @@ export default function TiendaPage() {
                   className="w-full h-auto"
                 />
               </div>
-              {/* Carrusel de imágenes pequeñas */}
-              <div
-                className="flex gap-3 overflow-x-auto pb-2 snap-x snap-mandatory scrollbar-hide"
-                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-              >
-                {galeriaDiario.map((img) => (
-                  <div key={img.src} className="snap-center shrink-0 w-28 rounded-xl overflow-hidden border border-[#B2F7EF]/40">
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      width={700}
-                      height={906}
-                      className="w-full h-auto"
-                    />
-                  </div>
-                ))}
-              </div>
+              {/* Carrusel de imágenes (2 a la vez, con flechas) */}
+              <DiarioCarousel images={galeriaDiario} />
             </div>
 
             {/* Texto (fondo cyan) */}
