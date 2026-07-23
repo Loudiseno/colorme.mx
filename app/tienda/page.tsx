@@ -116,7 +116,7 @@ export default function TiendaPage() {
 
                 <p className="text-xs text-black/40 mt-6 leading-snug">
                   ⚠️ Este material es un recurso de acompañamiento y no sustituye atención
-                  psicológica, psiquiátrica ni médica profesional.
+                  médica profesional.
                   <br />© Lou Pérez · ColorMe. Uso personal. Prohibida su distribución o reventa.
                 </p>
               </div>
