@@ -43,12 +43,12 @@ export default function TiendaPage() {
       </section>
 
       {/* Diario: El arte de habitar tu duelo */}
-      <section className="py-10 md:py-12 bg-[#B2F7EF]/5" id="diario">
+      <section className="py-6 md:py-8 bg-[#B2F7EF]/5" id="diario">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF]">
             {/* Imágenes (fondo blanco) */}
-            <div className="bg-white p-6 md:p-8 flex flex-col justify-center gap-4">
-              <div className="max-w-[280px] w-full mx-auto rounded-2xl overflow-hidden shadow-lg">
+            <div className="bg-white p-6 md:p-8 flex flex-col justify-center gap-5">
+              <div className="max-w-[200px] w-full mx-auto rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/el-arte-de-habitar-tu-duelo-portada.webp"
                   alt="El arte de habitar tu duelo - Diario terapéutico de duelo por Lou Pérez"
@@ -57,9 +57,13 @@ export default function TiendaPage() {
                   className="w-full h-auto"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              {/* Carrusel de imágenes pequeñas */}
+              <div
+                className="flex gap-3 overflow-x-auto pb-2 snap-x snap-mandatory scrollbar-hide"
+                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              >
                 {galeriaDiario.map((img) => (
-                  <div key={img.src} className="rounded-xl overflow-hidden border border-[#B2F7EF]/40">
+                  <div key={img.src} className="snap-center shrink-0 w-28 rounded-xl overflow-hidden border border-[#B2F7EF]/40">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -180,7 +184,7 @@ export default function TiendaPage() {
                 <Sparkles size={14} />
                 PAQUETE 2
               </div>
-              <div className="max-w-[240px] mx-auto rounded-2xl overflow-hidden mb-6 shadow-md">
+              <div className="max-w-[150px] mx-auto rounded-2xl overflow-hidden mb-6 shadow-md">
                 <Image
                   src="/el-arte-de-habitar-mockup.webp"
                   alt="El arte de habitar tu duelo"
