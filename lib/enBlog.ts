@@ -1031,6 +1031,478 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'miscarriage-and-pregnancy-loss',
+    category: 'Grief',
+    title: 'Miscarriage & Pregnancy Loss: Grieving a Baby the World Never Met',
+    metaTitle: 'Miscarriage & Pregnancy Loss: Grieving Your Baby | ColorMe',
+    description:
+      'Miscarriage and pregnancy loss bring a real, profound grief that is too often unseen. Your baby existed and your pain is valid. Gentle guidance for grieving and healing.',
+    keywords: [
+      'miscarriage grief',
+      'pregnancy loss',
+      'grieving a miscarriage',
+      'stillbirth grief',
+      'perinatal loss',
+      'coping with pregnancy loss',
+    ],
+    image: '/duelo-perinatal.webp',
+    imageAlt: 'Miscarriage and pregnancy loss — grieving a baby the world never met',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When you lose a baby to miscarriage, stillbirth, or in the first days of life, you do not just lose a pregnancy. You lose a future — the name you imagined, the first steps, the whole life you had already begun to dream. Your baby existed, and your grief is real.',
+      },
+      { type: 'h2', text: 'A grief the world often cannot see' },
+      {
+        type: 'p',
+        text: 'Perinatal loss is one of the loneliest griefs, because others often never met your baby and may not know what to say. Some stay silent, or offer well-meaning words that wound — “at least it was early,” “you can try again.” But your bond with your baby was real from the start, and so is your loss.',
+      },
+      {
+        type: 'quote',
+        text: 'No length of pregnancy determines the size of the love — or the size of the grief.',
+      },
+      { type: 'h2', text: 'What you might be feeling' },
+      {
+        type: 'ul',
+        items: [
+          'Deep sadness and longing for the baby you will not raise.',
+          'Guilt or the endless question of whether you did something wrong (you almost certainly did not).',
+          'Anger, envy around others’ pregnancies, or fear about the future.',
+          'A sense of isolation, as if you are grieving alone.',
+        ],
+      },
+      { type: 'h2', text: 'For partners, too' },
+      {
+        type: 'p',
+        text: 'Partners grieve this loss as well, often silently while trying to be strong. There is no right way to grieve a baby, and no comparison of whose pain is greater. Both of you are allowed to mourn.',
+      },
+      { type: 'h2', text: 'Ways to honour your baby and your grief' },
+      {
+        type: 'ul',
+        items: [
+          'Name your baby, if that feels right to you.',
+          'Create something in their memory: a drawing, a small ritual, a keepsake, a candle.',
+          'Mark meaningful dates in your own way, without pressure.',
+          'Use art to express what has no words — a page of color, an image of the love you carry.',
+        ],
+      },
+      { type: 'h2', text: 'You do not have to grieve alone' },
+      {
+        type: 'p',
+        text: 'This loss deserves acknowledgement and support. If the grief feels overwhelming, or those around you cannot hold it, compassionate accompaniment can help you carry it and heal at your own pace.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve deeply after an early miscarriage?',
+        a: 'Yes. Grief is not measured by how many weeks the pregnancy lasted. The bond and the dreams were real from the beginning, so profound grief is completely valid.',
+      },
+      {
+        q: 'Was the miscarriage my fault?',
+        a: 'Almost always, no. The vast majority of miscarriages are caused by factors entirely outside your control. Guilt is common, but it does not mean you did anything wrong.',
+      },
+      {
+        q: 'How can I support my partner after pregnancy loss?',
+        a: 'Acknowledge that they are grieving too, make space for both of your feelings without comparison, and consider grieving together through ritual, conversation, or creative expression.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'what-to-say-to-someone-grieving',
+    category: 'Grief',
+    title: 'What to Say to Someone Who Is Grieving (and What Not to Say)',
+    metaTitle: 'What to Say to Someone Grieving (and What Not To) | ColorMe',
+    description:
+      'Not sure what to say to someone who is grieving? A simple, compassionate guide to words that comfort, phrases to avoid, and how to truly show up for someone in loss.',
+    keywords: [
+      'what to say to someone grieving',
+      'what to say to someone who lost a loved one',
+      'comforting words for grief',
+      'what not to say to someone grieving',
+      'how to support a grieving friend',
+      'condolence messages',
+    ],
+    image: '/como-acompanar-duelo.webp',
+    imageAlt: 'What to say to someone who is grieving',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When someone we love is grieving, we freeze. We are so afraid of saying the wrong thing that we sometimes say nothing at all. But your presence matters far more than finding perfect words. Here is how to show up.',
+      },
+      { type: 'h2', text: 'What helps to say' },
+      {
+        type: 'ul',
+        items: [
+          '“I’m so sorry. I’m here for you.”',
+          '“I don’t know what to say, but I’m not going anywhere.”',
+          '“Tell me about them.” — inviting memories is a gift.',
+          '“It’s okay to feel however you feel.”',
+          '“I’m bringing dinner on Tuesday.” — specific help beats “let me know if you need anything.”',
+        ],
+      },
+      { type: 'h2', text: 'What to avoid' },
+      {
+        type: 'ul',
+        items: [
+          '“Everything happens for a reason.”',
+          '“At least they lived a long life / at least it was quick.”',
+          '“They’re in a better place now.”',
+          '“I know exactly how you feel.”',
+          '“You need to be strong” or “It’s time to move on.”',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Grief does not need to be fixed. It needs to be witnessed.',
+      },
+      { type: 'h2', text: 'Why those phrases hurt' },
+      {
+        type: 'p',
+        text: 'Most unhelpful comments try to minimise the pain or rush the person past it. Even when kindly meant, they can leave a grieving person feeling unseen or pressured to hide what they feel. You do not need to explain the loss or find a silver lining — you just need to stay.',
+      },
+      { type: 'h2', text: 'Showing up beyond words' },
+      {
+        type: 'ul',
+        items: [
+          'Keep checking in — grief lasts long after the funeral, when others disappear.',
+          'Remember dates: anniversaries and birthdays are especially hard.',
+          'Say the person’s name. Fear of “reminding” them is a myth — they never forgot.',
+          'Offer concrete, practical help rather than putting the burden on them to ask.',
+        ],
+      },
+      { type: 'h2', text: 'When they need more support' },
+      {
+        type: 'p',
+        text: 'If someone’s grief seems to be swallowing them whole with no relief over time, gently encouraging professional support — and offering to help them find it — can be an act of deep love.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the best thing to say to someone grieving?',
+        a: 'Simple, honest presence works best: “I’m so sorry, I’m here for you.” Inviting them to talk about the person they lost, and offering specific help, means more than perfect words.',
+      },
+      {
+        q: 'What should you not say to someone grieving?',
+        a: 'Avoid phrases that minimise or rush the loss, like “everything happens for a reason,” “at least…,” “they’re in a better place,” or “it’s time to move on.”',
+      },
+      {
+        q: 'Is it okay to mention the person who died?',
+        a: 'Yes. Saying their name and sharing memories is usually comforting. The grieving person has not forgotten them — being able to talk about them often helps.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'grief-after-losing-a-parent'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-for-trauma',
+    category: 'Art Therapy',
+    title: 'Art Therapy for Trauma: Healing What Words Can’t Reach',
+    metaTitle: 'Art Therapy for Trauma: Healing Beyond Words | ColorMe',
+    description:
+      'Trauma often lives beyond language, stored in the body and images. Learn how art therapy helps process trauma safely and gently, and what to expect from the work.',
+    keywords: [
+      'art therapy for trauma',
+      'trauma art therapy',
+      'healing trauma with art',
+      'creative trauma therapy',
+      'art therapy PTSD',
+      'processing trauma',
+    ],
+    image: '/arte-y-trauma.webp',
+    imageAlt: 'Art therapy for trauma — healing what words cannot reach',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Trauma is not stored the way ordinary memories are. It lives in the body, in sensations and images, often in a place words cannot easily reach. This is why talking alone sometimes is not enough — and why art therapy can be so powerful for healing trauma.',
+      },
+      { type: 'h2', text: 'Why trauma resists words' },
+      {
+        type: 'p',
+        text: 'During overwhelming experiences, the brain’s language centres can go offline while sensory and emotional memory keeps recording. Later, the trauma may surface as flashbacks, tension, or dread rather than a clear story. Art offers a different route in — through image, color, and the body — allowing what is wordless to be expressed safely.',
+      },
+      {
+        type: 'quote',
+        text: 'You do not have to relive a trauma to heal it. Sometimes you only have to give it a shape.',
+      },
+      { type: 'h2', text: 'How art therapy helps' },
+      {
+        type: 'ul',
+        items: [
+          'Lets you express the experience without having to narrate it out loud.',
+          'Creates distance and safety — the feeling goes onto the page, not back into the body.',
+          'Helps regulate the nervous system through rhythmic, grounding creativity.',
+          'Restores a sense of control and choice that trauma took away.',
+          'Rebuilds a sense of self beyond the traumatic event.',
+        ],
+      },
+      { type: 'h2', text: 'Safety comes first' },
+      {
+        type: 'p',
+        text: 'Trauma work should never be rushed. A trained art therapist moves at your pace, building safety and grounding before approaching anything painful. You are always in control of how much you explore and share. The goal is not to reopen wounds, but to help them heal.',
+      },
+      { type: 'h2', text: 'A note on doing this alone' },
+      {
+        type: 'p',
+        text: 'Gentle creative practices can support you, but trauma is best explored with professional guidance, because difficult material can surface. If you have experienced trauma, working with a therapist gives you a safe container to process it.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does art therapy help with trauma?',
+        a: 'It allows trauma stored in the body and images to be expressed without words, creates safe distance from painful memories, regulates the nervous system, and restores a sense of control.',
+      },
+      {
+        q: 'Do I have to talk about my trauma in art therapy?',
+        a: 'No. A key benefit is that you can express and process trauma through images without narrating it aloud. You always control how much you share.',
+      },
+      {
+        q: 'Is art therapy safe for trauma?',
+        a: 'When guided by a trained therapist who prioritises grounding and pacing, yes. Trauma-informed art therapy is designed to help wounds heal, not reopen them.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'what-is-a-thanatologist',
+    category: 'Thanatology',
+    title: 'What Is a Thanatologist? How Grief Specialists Help',
+    metaTitle: 'What Is a Thanatologist? How Grief Specialists Help | ColorMe',
+    description:
+      'A thanatologist is a specialist in death, dying, and grief who accompanies people through loss. Learn what thanatology is, what a thanatologist does, and when to see one.',
+    keywords: [
+      'what is a thanatologist',
+      'thanatology',
+      'grief specialist',
+      'death and dying specialist',
+      'grief counselor',
+      'thanatologist meaning',
+    ],
+    image: '/tanatologia-acompanamiento-duelo.webp',
+    imageAlt: 'What is a thanatologist — a specialist who accompanies people through grief',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'The word “thanatologist” is unfamiliar to many people — but the work is deeply human. A thanatologist is a professional who specialises in death, dying, and grief, accompanying people through some of the hardest passages of life.',
+      },
+      { type: 'h2', text: 'What is thanatology?' },
+      {
+        type: 'p',
+        text: 'Thanatology is the study of death and the processes surrounding it — including grief, loss, and how we cope. It draws on psychology, philosophy, and the practical care of the dying and the bereaved. The name comes from Thánatos, the Greek personification of death.',
+      },
+      { type: 'h2', text: 'What does a thanatologist do?' },
+      {
+        type: 'ul',
+        items: [
+          'Accompanies people through grief after the death of a loved one.',
+          'Supports those facing a terminal diagnosis, and their families.',
+          'Helps with anticipatory grief and end-of-life processes.',
+          'Guides people through non-death losses too: divorce, illness, major life change.',
+          'Offers tools and a safe, non-judgemental space to process loss.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A thanatologist does not take the pain away. They walk beside you so you do not have to face it alone.',
+      },
+      { type: 'h2', text: 'When might you see a thanatologist?' },
+      {
+        type: 'p',
+        text: 'You might reach out when a loss feels too heavy to carry alone, when you are supporting a dying loved one, when grief has become stuck, or when you simply want compassionate guidance through a painful transition. You do not have to be “in crisis” to deserve support.',
+      },
+      { type: 'h2', text: 'Thanatology and art therapy together' },
+      {
+        type: 'p',
+        text: 'Combining thanatology with art therapy is especially powerful: the thanatologist holds the grief process with expertise, while art gives you a language for feelings too big for words. Together, they offer a gentle, whole-person way through loss.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What does a thanatologist do?',
+        a: 'A thanatologist specialises in death, dying, and grief. They accompany people through bereavement, terminal illness, anticipatory grief, and other losses, offering tools and a safe space to process them.',
+      },
+      {
+        q: 'What is the difference between a thanatologist and a therapist?',
+        a: 'A thanatologist focuses specifically on death, dying, and grief-related processes, while a general therapist addresses a broader range of mental-health concerns. Many people benefit from a specialist in loss.',
+      },
+      {
+        q: 'When should I see a thanatologist?',
+        a: 'Consider it when a loss feels overwhelming, when supporting a dying loved one, when grief feels stuck, or when you want compassionate guidance through any painful transition.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'how-long-does-grief-last'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'healing-mandalas',
+    category: 'Art Therapy',
+    title: 'Healing Mandalas: How Drawing Circles Calms the Mind',
+    metaTitle: 'Healing Mandalas: How Drawing Circles Calms the Mind | ColorMe',
+    description:
+      'Mandalas are more than pretty patterns — drawing and coloring them calms anxiety and focuses the mind. Learn the meaning of healing mandalas and how to make your own.',
+    keywords: [
+      'healing mandalas',
+      'mandala meaning',
+      'mandala art therapy',
+      'how to draw a mandala',
+      'mandalas for anxiety',
+      'benefits of coloring mandalas',
+    ],
+    image: '/mandalas-terapeuticos.webp',
+    imageAlt: 'Healing mandalas — how drawing circles calms the mind',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A mandala is a circular design radiating from a centre point. For thousands of years, across many cultures, mandalas have been used for meditation, prayer, and healing. In art therapy, they are a simple, powerful tool for calming the mind and returning to yourself.',
+      },
+      { type: 'h2', text: 'What mandalas represent' },
+      {
+        type: 'p',
+        text: 'The word “mandala” means “circle” in Sanskrit. The circle symbolises wholeness, unity, and the cycles of life. Working from the centre outward can feel like an act of gathering yourself — of finding a still point in the middle of everything.',
+      },
+      { type: 'h2', text: 'Why they calm the mind' },
+      {
+        type: 'ul',
+        items: [
+          'The repetitive, symmetrical patterns act like a moving meditation.',
+          'Focusing on the design gently interrupts anxious thought loops.',
+          'The predictable structure feels safe and contained when life feels chaotic.',
+          'Choosing colors and patterns is soothing and quietly self-expressive.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'When the world feels scattered, a mandala gives your attention somewhere gentle to rest.',
+      },
+      { type: 'h2', text: 'How to make your own healing mandala' },
+      {
+        type: 'ul',
+        items: [
+          'Draw a dot in the centre of your page and a light circle around it.',
+          'Add simple shapes radiating outward — petals, dots, waves — repeating them around the circle.',
+          'Work slowly, letting each ring build on the last. There is no “right” design.',
+          'Add color intuitively, choosing whatever feels calming or true today.',
+        ],
+      },
+      { type: 'h2', text: 'Using mandalas in daily life' },
+      {
+        type: 'p',
+        text: 'You do not need to be an artist. Even coloring a pre-drawn mandala for ten minutes can lower stress and steady a racing mind. Keep a small mandala practice for hard days — it is a portable way to come back to calm.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the meaning of a mandala?',
+        a: 'A mandala is a circular design symbolising wholeness, unity, and the cycles of life. Across many cultures it has been used for meditation, prayer, and healing.',
+      },
+      {
+        q: 'How do mandalas help with anxiety?',
+        a: 'Drawing or coloring their repetitive, symmetrical patterns works like a moving meditation, interrupting anxious thoughts and offering a calming, contained focus.',
+      },
+      {
+        q: 'Do I need to be artistic to make a mandala?',
+        a: 'No. Simple repeated shapes from a central point are all you need, and even coloring a pre-drawn mandala provides the calming benefits.',
+      },
+    ],
+    related: ['art-therapy-for-anxiety', 'art-therapy-exercises'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-and-guilt',
+    category: 'Grief',
+    title: 'Grief and Guilt: Making Peace with “I Should Have…”',
+    metaTitle: 'Grief and Guilt: Making Peace with “I Should Have” | ColorMe',
+    description:
+      'Guilt is one of grief’s heaviest companions. Learn why we feel guilty after a loss, the forms grief guilt takes, and gentle ways to make peace and forgive yourself.',
+    keywords: [
+      'grief and guilt',
+      'guilt after death',
+      'survivor guilt',
+      'feeling guilty after loss',
+      'grief guilt',
+      'self-forgiveness grief',
+    ],
+    image: '/verguenza-duelo.webp',
+    imageAlt: 'Grief and guilt — making peace with “I should have”',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Alongside the sadness of grief often comes a quieter, sharper pain: guilt. The endless “I should have,” “if only,” and “why didn’t I.” If guilt is weighing on your grief, you are not alone — and you are not the failure your mind is telling you that you are.',
+      },
+      { type: 'h2', text: 'Why guilt and grief go together' },
+      {
+        type: 'p',
+        text: 'Guilt is often the mind’s attempt to make sense of the senseless. If we could have done something differently, then maybe the loss was preventable — and maybe the world is less random than it feels. Guilt gives us a false sense of control over something utterly out of our hands.',
+      },
+      { type: 'h2', text: 'Common forms of grief guilt' },
+      {
+        type: 'ul',
+        items: [
+          '“I should have done more” — for what you did or didn’t do before the death.',
+          'Guilt over things left unsaid, or a last conversation that went badly.',
+          'Relief guilt — feeling relief after a long illness, then guilt for the relief.',
+          'Survivor guilt — “Why them and not me?”',
+          'Guilt for laughing, healing, or living again.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You made the best decisions you could with the information, love, and strength you had at the time. That is all any of us can do.',
+      },
+      { type: 'h2', text: 'Gentle steps toward self-forgiveness' },
+      {
+        type: 'ul',
+        items: [
+          'Name the guilt out loud or on paper — unspoken, it grows in the dark.',
+          'Ask what you would say to a friend who felt this. Offer yourself the same compassion.',
+          'Separate responsibility from hindsight: you could not have known then what you know now.',
+          'Write or draw a letter to the person, saying what guilt keeps you from saying.',
+        ],
+      },
+      { type: 'h2', text: 'When guilt won’t loosen its grip' },
+      {
+        type: 'p',
+        text: 'If guilt is keeping you stuck, tormenting you, or convincing you that you do not deserve to heal, please reach out for support. Grief guilt is common and workable — you do not have to carry it as a life sentence.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why do I feel so guilty after losing someone?',
+        a: 'Guilt is often the mind’s way of seeking control over an uncontrollable loss. Believing you could have changed the outcome can feel less frightening than accepting how powerless we sometimes are.',
+      },
+      {
+        q: 'Is it normal to feel relief when someone dies?',
+        a: 'Yes, especially after a long illness or difficult relationship. Relief does not mean you did not love them, and it is nothing to be ashamed of.',
+      },
+      {
+        q: 'How do I stop feeling guilty about a loss?',
+        a: 'Name the guilt, offer yourself the compassion you’d give a friend, separate what you knew then from hindsight, and seek support if the guilt stays stuck. Self-forgiveness is a process, not a single moment.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'grief-after-losing-a-parent'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
