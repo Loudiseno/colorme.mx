@@ -36,6 +36,12 @@ const nextConfig = {
         destination: 'https://www.colorme.mx/:path*',
         permanent: true,
       },
+      // Artículo duplicado eliminado -> versión que conservamos (preserva SEO)
+      {
+        source: '/blog/superar-perdida-ser-querido',
+        destination: '/blog/como-superar-la-perdida-de-un-ser-querido',
+        permanent: true,
+      },
     ]
   },
 }
