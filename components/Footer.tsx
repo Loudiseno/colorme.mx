@@ -35,6 +35,7 @@ const navEn = [
   { name: 'Grief Counseling', href: '/en/grief-counseling' },
   { name: 'About', href: '/en/about' },
   { name: 'Shop', href: '/en/shop' },
+  { name: 'Blog', href: '/en/blog' },
 ]
 
 const socials = [

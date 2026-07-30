@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/seo'
+import { enArticles } from '@/lib/enBlog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
@@ -147,11 +148,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/en/art-as-therapy',
     '/en/grief-counseling',
     '/en/shop',
+    '/en/blog',
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: path === '/en' ? 0.9 : 0.7,
+  }))
+
+  // English blog articles
+  const enBlogRoutes: MetadataRoute.Sitemap = enArticles.map((a) => ({
+    url: `${baseUrl}/en/blog/${a.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
   }))
 
   // High-priority articles for indexing
@@ -172,5 +182,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: highPrioritySlugs.has(slug) ? 0.8 : 0.7,
   }))
 
-  return [...coreRoutes, ...enRoutes, ...blogRoutes]
+  return [...coreRoutes, ...enRoutes, ...enBlogRoutes, ...blogRoutes]
 }
