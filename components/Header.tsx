@@ -84,6 +84,13 @@ export default function Header() {
 
         {/* Social Icons - Desktop */}
         <div className="hidden md:flex items-center gap-3">
+          <Link
+            href="/en/blog"
+            className="text-xs font-semibold border border-black/25 rounded-full px-3 py-1 text-black/70 hover:bg-black hover:text-white hover:border-black transition-colors"
+            aria-label="English blog"
+          >
+            EN
+          </Link>
           {socials.map((social) => (
             <a
               key={social.name}
@@ -129,6 +136,16 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            <Link
+              href="/en/blog"
+              onClick={() => setIsOpen(false)}
+              className={`text-2xl font-semibold text-[#0D9488] hover:text-[#0D9488]/70 transition-all duration-300 ${
+                isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}
+              style={{ transitionDelay: `${navigation.length * 100}ms` }}
+            >
+              English blog
+            </Link>
             <div className="flex items-center gap-6 mt-8">
               {socials.map((social, index) => (
                 <a
