@@ -608,6 +608,429 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'anticipatory-grief',
+    category: 'Grief',
+    title: 'Anticipatory Grief: Mourning Someone Who Is Still Here',
+    metaTitle: 'Anticipatory Grief: Mourning Someone Still Here | ColorMe',
+    description:
+      'Anticipatory grief is the pain of mourning a loss before it happens. Learn what it is, why it feels so confusing, and how to cope when someone you love is dying.',
+    keywords: [
+      'anticipatory grief',
+      'grieving before death',
+      'anticipatory grief symptoms',
+      'mourning someone who is still alive',
+      'grief before a loss',
+      'terminal illness grief',
+    ],
+    image: '/duelo-anticipado.webp',
+    imageAlt: 'Anticipatory grief — mourning someone who is still here',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Grief does not always wait for death. When someone you love is seriously ill, ageing, or fading from a condition like dementia, you can begin to mourn while they are still here. This is called anticipatory grief — and it is one of the most confusing, isolating forms of loss.',
+      },
+      { type: 'h2', text: 'What is anticipatory grief?' },
+      {
+        type: 'p',
+        text: 'Anticipatory grief is the emotional response to an expected loss. You grieve the future you will not have, the decline you are watching, and the slow goodbyes along the way. It is common among caregivers, families facing a terminal diagnosis, and anyone loving someone through a long illness.',
+      },
+      { type: 'h2', text: 'Why it feels so confusing' },
+      {
+        type: 'p',
+        text: 'Part of you is still hoping, caring, and showing up each day. Another part is already aching for a loss that has not happened. You may feel guilty for grieving “too soon,” or for the exhaustion and even relief that creep in. None of this makes you a bad person. It makes you human, carrying an impossible weight.',
+      },
+      {
+        type: 'quote',
+        text: 'Anticipatory grief is love and loss happening at the same time. You are saying hello and goodbye in the same breath.',
+      },
+      { type: 'h2', text: 'What it can look like' },
+      {
+        type: 'ul',
+        items: [
+          'Waves of sadness, dread, or anxiety about what is coming.',
+          'Guilt for imagining life after the loss — or for wishing the suffering would end.',
+          'Emotional numbness or “pulling away” to protect yourself.',
+          'Exhaustion from holding hope and grief at once.',
+        ],
+      },
+      { type: 'h2', text: 'Gentle ways to cope' },
+      {
+        type: 'ul',
+        items: [
+          'Let both feelings exist: you can love someone fully and grieve them at the same time.',
+          'Say what matters now. Anticipatory grief can be an invitation to express love, forgiveness, and gratitude while there is still time.',
+          'Care for yourself too. Caregiver burnout is real — rest is not a betrayal.',
+          'Use art or writing to hold feelings too big to say out loud.',
+        ],
+      },
+      { type: 'h2', text: 'How art helps in this in-between' },
+      {
+        type: 'p',
+        text: 'When you cannot say the words — to them or to yourself — art can. A drawn letter, an image of a shared memory, a page of color for the day’s emotion: these give your anticipatory grief a safe place to live, so it does not have to be carried silently.',
+      },
+      { type: 'h2', text: 'You do not have to carry it alone' },
+      {
+        type: 'p',
+        text: 'Anticipatory grief is real grief, and it deserves support. If you are walking someone toward the end of their life, accompaniment for you matters just as much as care for them.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve before someone dies?',
+        a: 'Yes. Anticipatory grief is a well-recognised experience, especially for caregivers and families facing a terminal illness. Mourning a loss before it happens does not mean you are giving up hope.',
+      },
+      {
+        q: 'Does anticipatory grief make the loss easier later?',
+        a: 'Not necessarily. It does not “use up” your grief. After the death you may still grieve deeply — but having expressed love and said goodbye can bring some peace.',
+      },
+      {
+        q: 'Is feeling relief when someone dies wrong?',
+        a: 'No. Relief after a long illness — that their suffering is over, or that caregiving has ended — is common and human. It does not mean you loved them any less.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'grief-after-losing-a-parent'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'pet-loss-grief',
+    category: 'Grief',
+    title: 'Pet Loss Grief: Why Losing a Pet Hurts So Much',
+    metaTitle: 'Pet Loss Grief: Why It Hurts So Much & How to Cope | ColorMe',
+    description:
+      'Losing a pet is a real and profound loss. Learn why pet loss grief hurts so deeply, why your pain is valid, and gentle ways to cope and honour your companion.',
+    keywords: [
+      'pet loss grief',
+      'losing a pet',
+      'grief over pet death',
+      'how to cope with pet loss',
+      'pet loss support',
+      'mourning a pet',
+    ],
+    image: '/duelo-por-mascota.webp',
+    imageAlt: 'Pet loss grief — why losing a pet hurts so much',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'If you have lost a pet and the grief has floored you, you are not overreacting. Losing an animal companion can hurt as much as losing a person — sometimes more. Your pain is real, and it is valid.',
+      },
+      { type: 'h2', text: 'Why pet loss cuts so deep' },
+      {
+        type: 'p',
+        text: 'A pet offers something rare: unconditional love with no judgement. They are woven into the fabric of daily life — the morning greeting, the walk, the warm weight beside you. When they die, you lose not just a companion but a constant source of comfort and a witness to your everyday world.',
+      },
+      { type: 'h2', text: 'The pain of disenfranchised grief' },
+      {
+        type: 'p',
+        text: 'Part of what makes pet loss so hard is that society often minimises it. “It was just a dog.” “You can get another one.” These comments can leave you grieving in silence, feeling you have no right to hurt this much. This is called disenfranchised grief — real loss that goes unacknowledged.',
+      },
+      {
+        type: 'quote',
+        text: 'The size of your grief reflects the size of the love. There is no “just” about it.',
+      },
+      { type: 'h2', text: 'Gentle ways to cope' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself grieve fully, without apologising for it.',
+          'Create a small ritual or memorial — a photo, a paw print, a special spot.',
+          'Make art about your pet: draw a favourite memory or a portrait, however imperfect.',
+          'Talk to people who understand, and protect your energy around those who dismiss it.',
+        ],
+      },
+      { type: 'h2', text: 'Honouring the bond through art' },
+      {
+        type: 'p',
+        text: 'Creating something in memory of your pet can be deeply healing — a drawing, a page of the things you loved about them, a colour that reminds you of them. It keeps the bond alive in a new form and gives your grief a place to go.',
+      },
+      { type: 'h2', text: 'When to seek support' },
+      {
+        type: 'p',
+        text: 'If the grief feels overwhelming, or the world around you does not understand, you do not have to carry it alone. Support for pet loss is not silly — it is a compassionate response to a genuine loss.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why does losing a pet hurt so much?',
+        a: 'Pets offer unconditional love and are part of your daily routine and sense of comfort. Losing them removes a constant companion, so the grief can be as intense as losing a person.',
+      },
+      {
+        q: 'Is it normal to grieve a pet more than a person?',
+        a: 'Yes. The depth of grief reflects the bond, not the species. Intense grief over a pet is normal and valid.',
+      },
+      {
+        q: 'How long does grief over a pet last?',
+        a: 'There is no set timeline. The sharpest pain usually eases over weeks and months, but missing your companion can continue and may resurface on anniversaries.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'complicated-grief',
+    category: 'Grief',
+    title: 'Complicated Grief: When Grief Gets Stuck',
+    metaTitle: 'Complicated Grief: Signs, Causes & When to Get Help | ColorMe',
+    description:
+      'Complicated grief is when the pain of loss stays intense and disabling over time. Learn the signs, why grief gets stuck, and when to reach out for support.',
+    keywords: [
+      'complicated grief',
+      'prolonged grief disorder',
+      'signs of complicated grief',
+      'stuck in grief',
+      'grief that won’t go away',
+      'when to get help for grief',
+    ],
+    image: '/duelo-complicado.webp',
+    imageAlt: 'Complicated grief — when grief gets stuck',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Grief is painful, but for most people it slowly softens and becomes possible to live with. Sometimes, though, grief gets stuck. The pain stays as raw as day one, months or years later, and it starts to take over life. This is often called complicated grief, or prolonged grief.',
+      },
+      { type: 'h2', text: 'What is complicated grief?' },
+      {
+        type: 'p',
+        text: 'Complicated grief is a persistent, intense form of mourning that does not ease over time and significantly interferes with daily functioning. It is not a weakness or a failure to “move on” — it is a signal that the loss is too heavy to carry alone.',
+      },
+      { type: 'h2', text: 'Signs grief may be stuck' },
+      {
+        type: 'ul',
+        items: [
+          'Intense longing or preoccupation with the person that does not lessen over many months.',
+          'An inability to accept the reality of the death.',
+          'Avoiding all reminders — or being unable to do anything but focus on the loss.',
+          'Feeling that life has no meaning, or that a part of you died too.',
+          'Struggling to function at work, at home, or in relationships with no improvement.',
+        ],
+      },
+      { type: 'h2', text: 'Why grief gets stuck' },
+      {
+        type: 'p',
+        text: 'Certain losses carry a higher risk: a sudden or traumatic death, the loss of a child, a very dependent relationship, multiple losses at once, or a lack of support. Unresolved feelings — guilt, anger, things left unsaid — can also keep grief frozen in place.',
+      },
+      {
+        type: 'quote',
+        text: 'Needing help to grieve is not a sign that you loved wrong. It is a sign that you loved deeply.',
+      },
+      { type: 'h2', text: 'How support helps' },
+      {
+        type: 'p',
+        text: 'Complicated grief usually does not resolve on its own — but it responds well to support. Grief-focused accompaniment helps you face the loss safely, work through what is stuck, and slowly find a way to live alongside it. Art therapy can be especially helpful when the pain is too tangled or too deep for words.',
+      },
+      { type: 'h2', text: 'When to reach out' },
+      {
+        type: 'p',
+        text: 'If, well after a loss, the grief is still all-consuming and life feels impossible — or if you have thoughts that you would be better off gone — please reach out to a professional. You deserve support, and healing is possible.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between normal and complicated grief?',
+        a: 'Normal grief gradually softens and becomes livable. Complicated grief stays intense and disabling over a long period and keeps interfering with daily life without easing.',
+      },
+      {
+        q: 'How long before grief is considered “complicated”?',
+        a: 'There is no exact cutoff, but grief that remains severe and disabling roughly a year or more after the loss, with no improvement, may be complicated grief worth discussing with a professional.',
+      },
+      {
+        q: 'Can complicated grief be treated?',
+        a: 'Yes. Grief-focused therapy and approaches like art therapy help people process what is stuck and gradually find a way to live with the loss.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-exercises',
+    category: 'Art Therapy',
+    title: '8 Art Therapy Exercises You Can Do at Home',
+    metaTitle: '8 Art Therapy Exercises You Can Do at Home | ColorMe',
+    description:
+      'Simple art therapy exercises to process emotions, reduce stress, and reconnect with yourself — no art skills or special supplies needed. Try them at home today.',
+    keywords: [
+      'art therapy exercises',
+      'art therapy activities',
+      'art therapy exercises at home',
+      'art therapy techniques',
+      'art journaling prompts',
+      'creative exercises for emotions',
+    ],
+    image: '/ejercicios-arteterapia.webp',
+    imageAlt: 'Art therapy exercises you can do at home',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'You do not need a studio, expensive materials, or any artistic skill to benefit from art therapy at home. A pen and paper are enough. These eight exercises help you process emotions, calm your mind, and reconnect with yourself. There is no wrong way to do them.',
+      },
+      { type: 'h2', text: 'Before you begin' },
+      {
+        type: 'p',
+        text: 'Find a quiet ten minutes. Let go of making anything “good.” The goal is honesty, not beauty. If a feeling comes up, that is the exercise working.',
+      },
+      { type: 'h2', text: '8 exercises to try' },
+      { type: 'h3', text: '1. Emotion color map' },
+      {
+        type: 'p',
+        text: 'Fill a page with colors that match how you feel right now — no shapes needed, just color and movement. It gives shape to emotions that are hard to name.',
+      },
+      { type: 'h3', text: '2. Scribble and find' },
+      {
+        type: 'p',
+        text: 'Scribble freely for a minute, then look for an image hidden in the lines and bring it out. This loosens control and invites the subconscious in.',
+      },
+      { type: 'h3', text: '3. Draw your safe place' },
+      {
+        type: 'p',
+        text: 'Draw a place — real or imagined — where you feel completely safe. Return to it on hard days as a grounding anchor.',
+      },
+      { type: 'h3', text: '4. The worry container' },
+      {
+        type: 'p',
+        text: 'Draw a jar or box and place your worries inside it. Closing the lid tells your mind you can set them down for now.',
+      },
+      { type: 'h3', text: '5. A letter you will not send' },
+      {
+        type: 'p',
+        text: 'Write or draw a message to someone — living or gone — saying what you never got to say. This is powerful for grief and unfinished goodbyes.',
+      },
+      { type: 'h3', text: '6. Mandala for focus' },
+      {
+        type: 'p',
+        text: 'Draw a circle and fill it with repeating patterns from the centre outward. The rhythm quiets a racing mind, like a moving meditation.',
+      },
+      { type: 'h3', text: '7. Gratitude page' },
+      {
+        type: 'p',
+        text: 'Draw or collage small things you are grateful for today. It gently shifts attention toward what is still good.',
+      },
+      { type: 'h3', text: '8. Then and now' },
+      {
+        type: 'p',
+        text: 'Divide a page in two: how you felt before a hard event, and how you feel now. It helps you see movement and honour how far you have come.',
+      },
+      {
+        type: 'quote',
+        text: 'The page cannot judge you. That is exactly why it can hold what words cannot.',
+      },
+      { type: 'h2', text: 'When to go deeper' },
+      {
+        type: 'p',
+        text: 'These exercises are wonderful self-care, but they are not a substitute for support when you are struggling. If painful feelings surface and feel too big to hold alone, working with an art therapist gives you a safe space to explore them.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What supplies do I need for art therapy at home?',
+        a: 'Very little — paper and a pen, pencil, or crayons are enough. The process matters far more than the materials.',
+      },
+      {
+        q: 'Do art therapy exercises really work?',
+        a: 'Yes. Simple creative activities help regulate the nervous system, externalise difficult emotions, and build self-awareness, even done on your own.',
+      },
+      {
+        q: 'Can I do art therapy exercises if I can’t draw?',
+        a: 'Absolutely. These exercises need no skill. Color, scribbles, and simple shapes are exactly right.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-for-children',
+    category: 'Art Therapy',
+    title: 'Art Therapy for Children: Helping Kids Express Big Feelings',
+    metaTitle: 'Art Therapy for Children: Helping Kids Express Feelings | ColorMe',
+    description:
+      'Children often cannot put big feelings into words — but they can draw them. Learn how art therapy helps kids process emotions, grief, and anxiety, and how to support them.',
+    keywords: [
+      'art therapy for children',
+      'art therapy for kids',
+      'helping children express emotions',
+      'art therapy child grief',
+      'children and anxiety art',
+      'creative therapy for kids',
+    ],
+    image: '/arteterapia-ninos.webp',
+    imageAlt: 'Art therapy for children — helping kids express big feelings',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Children feel just as deeply as adults, but they rarely have the words to explain it. A four-year-old cannot say “I feel anxious and abandoned.” But they can draw a tiny figure alone in a big, dark space. For kids, art is a natural language — and art therapy meets them exactly where they are.',
+      },
+      { type: 'h2', text: 'Why art works so well for children' },
+      {
+        type: 'p',
+        text: 'Play and drawing are how children naturally process the world. Through art, feelings that are too big, too scary, or too confusing to say out loud can come out safely on the page. It gives adults a window into a child’s inner world — and gives the child a sense of relief and control.',
+      },
+      { type: 'h2', text: 'What art therapy can help children with' },
+      {
+        type: 'ul',
+        items: [
+          'Grief and loss, including the death of a loved one or a pet.',
+          'Anxiety, fears, and worries they cannot explain.',
+          'Big life changes: divorce, a new sibling, moving, or starting school.',
+          'Trauma or difficult experiences that are hard to talk about.',
+          'Building confidence, emotional vocabulary, and self-regulation.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A child may not be able to tell you what happened. But often, they can show you.',
+      },
+      { type: 'h2', text: 'How a session works' },
+      {
+        type: 'p',
+        text: 'In child art therapy, a trained therapist creates a safe, playful space with simple materials. The child is invited to draw, paint, or build freely. The therapist gently notices themes and feelings in the work, following the child’s lead rather than directing them. There is never pressure to explain or perform.',
+      },
+      { type: 'h2', text: 'Simple ways parents can support at home' },
+      {
+        type: 'ul',
+        items: [
+          'Offer art materials and time, without correcting or judging the result.',
+          'Ask open, curious questions: “Tell me about your drawing,” instead of “What is that?”',
+          'Let them lead — do not force meaning or interpret their art for them.',
+          'Notice and name feelings gently: “It looks like this part feels stormy.”',
+        ],
+      },
+      { type: 'h2', text: 'When to seek professional support' },
+      {
+        type: 'p',
+        text: 'If a child is struggling with grief, anxiety, big behavioural changes, or a difficult experience, a professional art therapist can help them process it safely. Early support gives children tools that last a lifetime.',
+      },
+    ],
+    faq: [
+      {
+        q: 'At what age can a child start art therapy?',
+        a: 'Children as young as three or four can benefit, since drawing and play are natural ways for them to express feelings. Art therapy is adapted to each child’s age and stage.',
+      },
+      {
+        q: 'How does art therapy help a grieving child?',
+        a: 'It lets children express grief they cannot put into words, gives them a safe outlet for confusing feelings, and offers a sense of control and relief during a frightening time.',
+      },
+      {
+        q: 'What can parents do at home?',
+        a: 'Provide art materials and unhurried time, ask open and curious questions, let the child lead, and gently name feelings — without judging or correcting their art.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
