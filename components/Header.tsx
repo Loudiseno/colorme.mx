@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, Instagram, Facebook, BookOpen, Youtube } from 'lucide-react'
@@ -21,13 +22,20 @@ const WhatsAppIcon = ({ size = 18, strokeWidth = 1.5 }: { size?: number; strokeW
   </svg>
 )
 
-const navigation = [
+const navEs = [
   { name: 'Arteterapia', href: '/arteterapia-mexico' },
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Productos', href: '/tienda' },
   { name: 'Exploraciones creativas', href: '/hoja-de-trabajo' },
   { name: 'Blog', href: '/blog' },
+]
+
+const navEn = [
+  { name: 'Art as Therapy', href: '/en/art-as-therapy' },
+  { name: 'Grief Counseling', href: '/en/grief-counseling' },
+  { name: 'About', href: '/en/about' },
+  { name: 'Shop', href: '/en/shop' },
 ]
 
 const socials = [
@@ -42,12 +50,32 @@ const socials = [
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+  const isEn = pathname?.startsWith('/en') ?? false
+
+  const navigation = isEn ? navEn : navEs
+  const homeHref = isEn ? '/en' : '/'
+  const langHref = isEn ? '/' : '/en'
+  const langFlag = isEn ? '🇲🇽' : '🇺🇸'
+  const langLabel = isEn ? 'ES' : 'EN'
+  const langAria = isEn ? 'Ver en español' : 'View in English'
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const LangToggle = ({ className = '' }: { className?: string }) => (
+    <Link
+      href={langHref}
+      aria-label={langAria}
+      className={`inline-flex items-center gap-1.5 rounded-full border border-black/15 px-3 py-1 text-black/80 hover:bg-[#B2F7EF]/30 hover:text-black transition-all ${className}`}
+    >
+      <span className="text-base leading-none">{langFlag}</span>
+      <span className="text-xs font-medium">{langLabel}</span>
+    </Link>
+  )
 
   return (
     <header
@@ -58,7 +86,7 @@ export default function Header() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="hover:opacity-80 transition-opacity">
+        <Link href={homeHref} className="hover:opacity-80 transition-opacity">
           <Image
             src="/COLORME_logo-19-768x141.webp"
             alt="ColorMe"
@@ -82,7 +110,7 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Social Icons - Desktop */}
+        {/* Social Icons + Language - Desktop */}
         <div className="hidden md:flex items-center gap-3">
           {socials.map((social) => (
             <a
@@ -96,6 +124,7 @@ export default function Header() {
               <social.icon size={18} strokeWidth={1.5} />
             </a>
           ))}
+          <LangToggle className="ml-1" />
         </div>
 
         {/* Mobile Menu Button */}
@@ -129,7 +158,8 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <div className="flex items-center gap-6 mt-8">
+            <LangToggle />
+            <div className="flex items-center gap-6 mt-4">
               {socials.map((social, index) => (
                 <a
                   key={social.name}

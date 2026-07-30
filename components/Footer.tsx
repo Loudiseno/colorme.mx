@@ -1,8 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { Instagram, Facebook, BookOpen, Mail, Youtube } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
-import ScrollToTop from './ScrollToTop'
 
 // Custom TikTok icon (not available in lucide)
 const TikTokIcon = ({ size = 16, strokeWidth = 1.5 }: { size?: number; strokeWidth?: number }) => (
@@ -19,13 +21,20 @@ const WhatsAppIcon = ({ size = 16, strokeWidth = 1.5 }: { size?: number; strokeW
   </svg>
 )
 
-const navigation = [
+const navEs = [
   { name: 'Arteterapia', href: '/arteterapia-mexico' },
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Productos', href: '/tienda' },
   { name: 'Política de privacidad', href: '/politica-de-privacidad' },
+]
+
+const navEn = [
+  { name: 'Art as Therapy', href: '/en/art-as-therapy' },
+  { name: 'Grief Counseling', href: '/en/grief-counseling' },
+  { name: 'About', href: '/en/about' },
+  { name: 'Shop', href: '/en/shop' },
 ]
 
 const socials = [
@@ -38,13 +47,23 @@ const socials = [
 ]
 
 export default function Footer() {
+  const pathname = usePathname()
+  const isEn = pathname?.startsWith('/en') ?? false
+  const navigation = isEn ? navEn : navEs
+  const homeHref = isEn ? '/en' : '/'
+  const aboutTitle = isEn ? 'About' : 'Acerca de'
+  const contactTitle = isEn ? 'Contact' : 'Contacto'
+  const tagline = isEn
+    ? 'Emotional support through art as therapy and grief counseling.'
+    : 'Acompañamiento emocional a través de arteterapia y tanatología.'
+
   return (
     <footer className="bg-[#B2F7EF] pt-12 pb-6">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12 mb-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block">
+            <Link href={homeHref} className="inline-block">
               <Image
                 src="/COLORME_logo-19-768x141.webp"
                 alt="ColorMe"
@@ -54,13 +73,13 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-4 text-black/70 text-sm leading-relaxed">
-              Acompañamiento emocional a través de arteterapia y tanatología.
+              {tagline}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="text-base font-semibold text-black mb-3">Acerca de</h4>
+            <h4 className="text-base font-semibold text-black mb-3">{aboutTitle}</h4>
             <ul className="space-y-1.5">
               {navigation.map((item) => (
                 <li key={item.name}>
@@ -77,7 +96,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-base font-semibold text-black mb-3">Contacto</h4>
+            <h4 className="text-base font-semibold text-black mb-3">{contactTitle}</h4>
             <a
               href={`mailto:${siteConfig.email}`}
               className="flex items-center gap-2 text-black/70 hover:text-black transition-colors text-sm"
