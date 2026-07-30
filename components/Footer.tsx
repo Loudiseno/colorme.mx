@@ -25,6 +25,7 @@ const navigation = [
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Productos', href: '/tienda' },
+  { name: 'English blog', href: '/en/blog' },
   { name: 'Política de privacidad', href: '/politica-de-privacidad' },
 ]
 

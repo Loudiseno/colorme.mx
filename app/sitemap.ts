@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/seo'
+import { allEnSlugs } from '@/lib/enBlog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
@@ -158,5 +159,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: highPrioritySlugs.has(slug) ? 0.8 : 0.7,
   }))
 
-  return [...coreRoutes, ...blogRoutes]
+  // English blog
+  const enBlogIndex: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/en/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+  ]
+
+  const enBlogRoutes: MetadataRoute.Sitemap = allEnSlugs().map((slug) => ({
+    url: `${baseUrl}/en/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
+  return [...coreRoutes, ...blogRoutes, ...enBlogIndex, ...enBlogRoutes]
 }
