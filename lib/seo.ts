@@ -18,8 +18,8 @@ export const siteConfig = {
   },
   book: {
     title: 'Indeleble',
-    amazonEs: 'https://www.amazon.com.mx/dp/B0F2MYQHHZ',
-    amazonEn: 'https://www.amazon.com/dp/B0F4KNJZ6B',
+    amazonEs: 'https://www.amazon.com.mx/dp/B0F4KNJZ6B',
+    amazonEn: 'https://www.amazon.com/dp/B0F2MYQHHZ',
     pdfEs: 'https://payhip.com/b/wtIk3',
     pdfEn: 'https://payhip.com/b/m3wWV',
   },
