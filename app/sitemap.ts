@@ -140,6 +140,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  // English pages
+  const enRoutes: MetadataRoute.Sitemap = [
+    '/en',
+    '/en/about',
+    '/en/art-as-therapy',
+    '/en/grief-counseling',
+    '/en/shop',
+  ].map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: path === '/en' ? 0.9 : 0.7,
+  }))
+
   // High-priority articles for indexing
   const highPrioritySlugs = new Set([
     'duelo-perdida', 'cuanto-dura-el-duelo', 'duelo-complicado', 'duelo-anticipado',
@@ -158,5 +172,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: highPrioritySlugs.has(slug) ? 0.8 : 0.7,
   }))
 
-  return [...coreRoutes, ...blogRoutes]
+  return [...coreRoutes, ...enRoutes, ...blogRoutes]
 }
