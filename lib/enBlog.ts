@@ -1503,6 +1503,456 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['seven-stages-of-grief', 'grief-after-losing-a-parent'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-during-the-holidays',
+    category: 'Grief',
+    title: 'Grief During the Holidays: Surviving the Season After a Loss',
+    metaTitle: 'Grief During the Holidays: Surviving the Season | ColorMe',
+    description:
+      'The holidays can be unbearable when you are grieving. Gentle, practical ways to survive Christmas and the season after a loss, honour your person, and protect your heart.',
+    keywords: [
+      'grief during the holidays',
+      'grief at christmas',
+      'first christmas after loss',
+      'holidays after death of loved one',
+      'coping with grief holidays',
+      'grief and the holiday season',
+    ],
+    image: '/hombre-en-duelo.webp',
+    imageAlt: 'Grief during the holidays — surviving the season after a loss',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When the world is lit up with celebration and togetherness, grief can feel unbearably loud. The empty chair, the traditions that now ache, the pressure to be merry — the holidays after a loss can be one of the hardest stretches of the year. Be gentle with yourself. You are allowed to do this differently.',
+      },
+      { type: 'h2', text: 'Why the holidays hurt so much' },
+      {
+        type: 'p',
+        text: 'Holidays are built around family, ritual, and memory — exactly the places your loss lives. Everything from a song to a recipe can bring a wave of grief. And the contrast between the joy around you and the pain inside you can make you feel painfully alone.',
+      },
+      { type: 'h2', text: 'Gentle ways to get through' },
+      {
+        type: 'ul',
+        items: [
+          'Give yourself permission to opt out of what feels too painful. You do not owe anyone your presence.',
+          'Decide in advance how much you can handle, and have an exit plan for gatherings.',
+          'Keep, change, or skip traditions — whatever your heart needs this year.',
+          'Include your person: light a candle, set a place, share a memory, cook their dish.',
+          'Let others help. Say yes to support and no to obligation.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You do not have to be festive to be worthy of care. Surviving the day is enough.',
+      },
+      { type: 'h2', text: 'Making space for your person' },
+      {
+        type: 'p',
+        text: 'Many people find comfort in a small ritual of remembrance: an ornament, a drawing, a letter, a moment of quiet with their name. Creating something — even a simple page of color for how you feel — can hold the grief so it does not have to be carried in silence through the celebrations.',
+      },
+      { type: 'h2', text: 'When you need more support' },
+      {
+        type: 'p',
+        text: 'If the season feels impossible, you do not have to white-knuckle through it alone. Reaching out for accompaniment during the hardest weeks of the year is a kindness to yourself, not a weakness.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do I cope with the first holiday after a loss?',
+        a: 'Lower your expectations, decide in advance what you can handle, keep or skip traditions freely, and find a small way to include your person. Surviving the day gently is enough.',
+      },
+      {
+        q: 'Is it okay to skip holiday celebrations while grieving?',
+        a: 'Yes. You are allowed to opt out of anything too painful. Protecting your heart is not selfish — it is necessary.',
+      },
+      {
+        q: 'How can I honour my loved one during the holidays?',
+        a: 'Light a candle, set a place at the table, cook their favourite dish, share memories, or create a small keepsake or drawing in their memory.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'what-to-say-to-someone-grieving'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'coping-with-sudden-loss',
+    category: 'Grief',
+    title: 'Coping With Sudden Loss: When Goodbye Never Came',
+    metaTitle: 'Coping With Sudden Loss: When Goodbye Never Came | ColorMe',
+    description:
+      'Sudden, unexpected loss carries a unique kind of shock and trauma. Understand why sudden death grief is so disorienting and find gentle ways to begin to cope.',
+    keywords: [
+      'sudden loss grief',
+      'coping with sudden death',
+      'unexpected death grief',
+      'traumatic loss',
+      'sudden death of a loved one',
+      'grief after accident',
+    ],
+    image: '/superar-perdida-ser-querido.webp',
+    imageAlt: 'Coping with sudden loss — when goodbye never came',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When someone dies suddenly — an accident, a heart attack, an overnight tragedy — the ground vanishes beneath you. There was no warning, no chance to say goodbye, no time to prepare. Sudden loss is not just grief; it is grief tangled with shock and trauma.',
+      },
+      { type: 'h2', text: 'Why sudden loss is so disorienting' },
+      {
+        type: 'p',
+        text: 'Your mind was given no time to absorb the reality, so it keeps rejecting it. You may replay the last ordinary moments, struggle to believe it is real, or feel frozen and numb. This is your nervous system trying to protect you from a blow it could not see coming.',
+      },
+      {
+        type: 'quote',
+        text: 'With sudden loss, the mind has to catch up to a reality the heart was never warned about.',
+      },
+      { type: 'h2', text: 'Common experiences' },
+      {
+        type: 'ul',
+        items: [
+          'Shock, disbelief, and a sense of unreality that can last a long time.',
+          'Intrusive thoughts or images, especially with a traumatic death.',
+          'Guilt over things left unsaid or a goodbye that never happened.',
+          'Anxiety and a new fear that catastrophe can strike anytime.',
+        ],
+      },
+      { type: 'h2', text: 'Gentle first steps' },
+      {
+        type: 'ul',
+        items: [
+          'Take it one hour at a time. You do not have to process it all at once.',
+          'Lean on practical support for daily tasks while you are in shock.',
+          'Find safe ways to say the goodbye you never got — a letter, a drawing, a spoken message.',
+          'Be patient: trauma-touched grief often takes longer to settle.',
+        ],
+      },
+      { type: 'h2', text: 'When to reach for support' },
+      {
+        type: 'p',
+        text: 'Because sudden loss can carry trauma, professional support is especially valuable. If you are haunted by intrusive images, unable to function, or stuck in shock, a grief or trauma specialist can help you find solid ground again.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why is sudden death harder to grieve?',
+        a: 'There is no time to prepare or say goodbye, so the mind struggles to accept the reality. Sudden loss often combines grief with shock and trauma, which can make it more disorienting and longer to settle.',
+      },
+      {
+        q: 'How do you cope when you didn’t get to say goodbye?',
+        a: 'Create your own goodbye in a safe way — write a letter, make a drawing, speak the words aloud, or hold a small ritual. Unsaid things can still be expressed and released.',
+      },
+      {
+        q: 'Is trauma part of sudden loss?',
+        a: 'Often, yes, especially with accidents or violent deaths. Intrusive images and heightened anxiety are common, and trauma-informed support can help significantly.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'complicated-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'journaling-for-grief',
+    category: 'Art Therapy',
+    title: 'Journaling for Grief: Writing and Drawing Your Way Through Loss',
+    metaTitle: 'Journaling for Grief: Writing Through Loss | ColorMe',
+    description:
+      'Grief journaling gives your pain a safe place to go. Discover the benefits of journaling through loss, plus simple prompts that combine writing and art to help you heal.',
+    keywords: [
+      'journaling for grief',
+      'grief journal',
+      'grief journal prompts',
+      'writing to heal grief',
+      'expressive writing loss',
+      'art journaling grief',
+    ],
+    image: '/beneficios-del-arte.webp',
+    imageAlt: 'Journaling for grief — writing and drawing your way through loss',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Grief needs somewhere to go. When it stays locked inside, it can feel like it is swallowing you. A journal — one where you can both write and draw — offers a private, judgement-free place to pour it out, at your own pace, on your own terms.',
+      },
+      { type: 'h2', text: 'Why journaling helps you grieve' },
+      {
+        type: 'ul',
+        items: [
+          'It gives shapeless, overwhelming feelings a form you can see and hold.',
+          'It lets you say the things you cannot say out loud to anyone.',
+          'It keeps your bond with the person alive through memory and words.',
+          'It becomes a record of your healing — proof of how far you have come.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'The page asks nothing of you. It just listens.',
+      },
+      { type: 'h2', text: 'Prompts to begin' },
+      {
+        type: 'ul',
+        items: [
+          '“Today my grief feels like…” — then draw it in color, no words needed.',
+          'Write a letter to the person you lost. Tell them what you never got to say.',
+          'Describe a memory you never want to forget, in as much detail as you can.',
+          'List the small, ordinary things you miss most.',
+          '“What I need right now is…” — an act of gentle self-listening.',
+        ],
+      },
+      { type: 'h2', text: 'Combine words and art' },
+      {
+        type: 'p',
+        text: 'You do not have to choose between writing and drawing. Some feelings come out in words; others only in color, line, or image. Let your journal hold both. A page can be half letter, half scribble — whatever your grief needs that day.',
+      },
+      { type: 'h2', text: 'A gentle reminder' },
+      {
+        type: 'p',
+        text: 'There is no right way and no schedule. Skip days. Write one line. Fill ten pages. Journaling is not homework — it is a companion. And if the feelings that surface feel too heavy to hold alone, that is a sign to reach out for support, not to stop.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Does journaling really help with grief?',
+        a: 'Yes. Expressive writing and drawing help externalise overwhelming emotions, preserve memories, and track healing over time, giving grief a safe place to be felt and released.',
+      },
+      {
+        q: 'What should I write in a grief journal?',
+        a: 'Anything honest — how your grief feels today, a letter to the person you lost, memories you cherish, things you miss, or what you need right now. There is no wrong entry.',
+      },
+      {
+        q: 'How often should I journal while grieving?',
+        a: 'As often or as little as you like. One line or ten pages, daily or occasionally — there is no schedule. Let it be a companion, not a chore.',
+      },
+    ],
+    related: ['art-therapy-exercises', 'what-is-art-therapy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-vs-talk-therapy',
+    category: 'Art Therapy',
+    title: 'Art Therapy vs. Talk Therapy: Which Is Right for You?',
+    metaTitle: 'Art Therapy vs. Talk Therapy: Which Is Right for You? | ColorMe',
+    description:
+      'Wondering whether art therapy or talk therapy suits you better? A clear comparison of how each works, their benefits, and how to choose the right approach for your needs.',
+    keywords: [
+      'art therapy vs talk therapy',
+      'difference between art therapy and talk therapy',
+      'is art therapy effective',
+      'types of therapy',
+      'choosing a therapy',
+      'art therapy or counseling',
+    ],
+    image: '/arteterapia-sesion-creativa.webp',
+    imageAlt: 'Art therapy vs. talk therapy — which is right for you',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Talk therapy has helped millions of people — but words are not the only path to healing. For some, especially when emotions live below language, art therapy reaches places that talking cannot. So how do you know which is right for you? Often, the answer is not either/or.',
+      },
+      { type: 'h2', text: 'How talk therapy works' },
+      {
+        type: 'p',
+        text: 'Talk therapy uses conversation to explore thoughts, feelings, and patterns. It is powerful for gaining insight, understanding relationships, and working things through verbally. It works best when you can access and articulate what you feel.',
+      },
+      { type: 'h2', text: 'How art therapy works' },
+      {
+        type: 'p',
+        text: 'Art therapy uses the creative process — drawing, color, image — guided by a trained therapist. It is especially helpful when feelings are hard to name, when talking feels blocked, or when trauma and grief live in the body more than in words. You do not need any artistic skill.',
+      },
+      {
+        type: 'quote',
+        text: 'Talk therapy starts with words. Art therapy starts with what has no words yet.',
+      },
+      { type: 'h2', text: 'Art therapy might suit you if…' },
+      {
+        type: 'ul',
+        items: [
+          'You find it hard to put your feelings into words.',
+          'You feel “stuck” or shut down in traditional talk therapy.',
+          'You are processing trauma or grief that resists language.',
+          'You are a child, or you simply think in images more than sentences.',
+        ],
+      },
+      { type: 'h2', text: 'You do not have to choose' },
+      {
+        type: 'p',
+        text: 'Art therapy is a form of psychotherapy, not a lesser alternative to it. Many people benefit from combining approaches — talking where words help, and creating where they fall short. The best therapy is the one that meets you where you are.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is art therapy as effective as talk therapy?',
+        a: 'Yes. Art therapy is an established form of psychotherapy. For people who struggle to verbalise feelings, or who are processing trauma and grief, it can reach places talking alone cannot.',
+      },
+      {
+        q: 'What is the main difference between art therapy and talk therapy?',
+        a: 'Talk therapy works through conversation; art therapy works through the creative process. Art therapy is especially useful when emotions are hard to put into words.',
+      },
+      {
+        q: 'Can I do both art therapy and talk therapy?',
+        a: 'Absolutely. Many people combine them — talking where it helps and creating where words fall short. They complement each other well.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-trauma'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'coping-with-loss-of-a-spouse',
+    category: 'Grief',
+    title: 'Coping With the Loss of a Spouse: Life After Losing Your Partner',
+    metaTitle: 'Coping With the Loss of a Spouse | ColorMe',
+    description:
+      'Losing a spouse means losing your partner, your routines, and your imagined future. Compassionate guidance for grieving a husband or wife and rebuilding, slowly.',
+    keywords: [
+      'loss of a spouse',
+      'losing a husband',
+      'losing a wife',
+      'grieving a partner',
+      'widow grief',
+      'life after losing your spouse',
+    ],
+    image: '/como-superar-perdida.webp',
+    imageAlt: 'Coping with the loss of a spouse — life after losing your partner',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Losing a spouse is losing far more than a person. It is losing your partner in the everyday, your shared history, your plans for the future, and the person who knew you best. The grief can feel total, because your whole life was built together.',
+      },
+      { type: 'h2', text: 'Why this loss reshapes everything' },
+      {
+        type: 'p',
+        text: 'A spouse is woven into the fabric of daily life — the morning routine, the person to call with news, the other half of a thousand small decisions. When they are gone, the absence is everywhere. You may also grieve the future you had planned: the trips, the retirement, the growing old together.',
+      },
+      { type: 'h2', text: 'The many losses inside the loss' },
+      {
+        type: 'ul',
+        items: [
+          'The daily companionship and routines you shared.',
+          'Your identity as part of a couple.',
+          'Practical support — finances, chores, decisions once shared.',
+          'The future you imagined together.',
+          'Physical closeness and simply being known.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Grieving a spouse is grieving the life you built and the life you planned, all at once.',
+      },
+      { type: 'h2', text: 'Gentle ways to cope' },
+      {
+        type: 'ul',
+        items: [
+          'Take practical decisions slowly. Avoid big changes while grief is raw.',
+          'Let yourself feel the full weight — loneliness, anger, fear, and love.',
+          'Keep their memory close through rituals, photos, or creating something in their honour.',
+          'Accept help, and stay connected to people even when you want to withdraw.',
+        ],
+      },
+      { type: 'h2', text: 'Rebuilding, in your own time' },
+      {
+        type: 'p',
+        text: 'Healing does not mean forgetting or “moving on” from your partner. It means slowly learning to carry your love for them into a changed life. There is no timeline for this, and no need to rush. If the loneliness or grief feels unbearable, support can help you find your footing again.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do you cope with losing a spouse?',
+        a: 'Take practical decisions slowly, allow yourself to feel the full range of grief, keep your partner’s memory close, and lean on support. There is no timeline — be gentle with yourself.',
+      },
+      {
+        q: 'Why does losing a spouse feel so overwhelming?',
+        a: 'A spouse is part of your daily life, identity, and future plans. Losing them means grieving your shared present and the life you imagined together, all at once.',
+      },
+      {
+        q: 'Is it normal to feel lost after losing a partner?',
+        a: 'Completely. Much of your identity and routine was built together. Feeling unanchored is a natural part of this profound loss, and it can ease with time and support.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'grief-during-the-holidays'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-and-relief',
+    category: 'Grief',
+    title: 'Grief and Relief: The Feelings No One Talks About',
+    metaTitle: 'Grief and Relief: The Feelings No One Talks About | ColorMe',
+    description:
+      'Feeling relief after a death does not make you a bad person. An honest look at the messy, contradictory feelings of grief — relief, anger, numbness — and why they are normal.',
+    keywords: [
+      'grief and relief',
+      'relief after death',
+      'messy grief',
+      'contradictory grief feelings',
+      'feeling relieved after someone dies',
+      'complicated feelings grief',
+    ],
+    image: '/duelo-sucio-alivio.webp',
+    imageAlt: 'Grief and relief — the messy, contradictory feelings no one talks about',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'We are taught that grief looks like sadness and tears. But real grief is far messier than that. It can include relief, anger, numbness, even moments of laughter — sometimes all in the same hour. If your grief does not look “right,” you are not broken. You are human.',
+      },
+      { type: 'h2', text: 'The relief no one admits to' },
+      {
+        type: 'p',
+        text: 'After a long illness, a difficult relationship, or an exhausting caregiving journey, relief is common — relief that the suffering is over, that the waiting has ended, that you can breathe again. And almost always, relief comes bundled with guilt. But relief is not a betrayal of love. It is a natural response to the end of pain.',
+      },
+      {
+        type: 'quote',
+        text: 'You can be heartbroken and relieved at the same time. Grief is big enough to hold both.',
+      },
+      { type: 'h2', text: 'The other “unacceptable” feelings' },
+      {
+        type: 'ul',
+        items: [
+          'Anger — at the person, the doctors, yourself, or the unfairness of it all.',
+          'Numbness — feeling nothing when you expected to fall apart.',
+          'Guilt — for laughing, for relief, for beginning to heal.',
+          'Ambivalence — grieving someone who also hurt you.',
+        ],
+      },
+      { type: 'h2', text: 'Why the mess is normal' },
+      {
+        type: 'p',
+        text: 'Human relationships are complicated, so our grief is too. We rarely feel just one clean emotion about anyone. Allowing the full, contradictory truth of what you feel — without judging it — is not a detour from healing. It is the path.',
+      },
+      { type: 'h2', text: 'Giving the feelings somewhere to go' },
+      {
+        type: 'p',
+        text: 'Contradictory feelings are hard to say out loud. Art gives them a place to exist without needing to explain or defend them — a page of color for the tangle, an image of the relief and the sorrow side by side. And if the mess feels like too much to hold alone, support can help you make sense of it.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to feel relief when someone dies?',
+        a: 'Yes. After a long illness, caregiving, or a difficult relationship, relief is a natural response to the end of suffering. It does not mean you loved the person any less.',
+      },
+      {
+        q: 'Why do I feel numb instead of sad?',
+        a: 'Numbness is a common protective response, especially early in grief or after shock. Feeling little or nothing does not mean you did not care — it is your mind buffering the pain.',
+      },
+      {
+        q: 'Can you grieve someone who hurt you?',
+        a: 'Yes. Grief over a complicated relationship is often tangled with anger, relief, and love all at once. These contradictory feelings are normal and valid.',
+      },
+    ],
+    related: ['grief-and-guilt', 'seven-stages-of-grief'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {

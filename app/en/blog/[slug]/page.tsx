@@ -185,12 +185,12 @@ export default async function EnArticlePage({ params }: Props) {
           </div>
         </header>
 
-        <div className="mb-12 rounded-2xl overflow-hidden">
+        <div className="mb-12 rounded-2xl overflow-hidden max-w-sm mx-auto">
           <Image
             src={article.image}
             alt={article.imageAlt}
-            width={800}
-            height={500}
+            width={400}
+            height={250}
             priority
             className="w-full h-auto"
           />
