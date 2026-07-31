@@ -23,6 +23,7 @@ const navigation = [
   { name: 'Arteterapia', href: '/arteterapia-mexico' },
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
+  { name: 'Obra', href: '/obra' },
   { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Productos', href: '/tienda' },
   { name: 'English blog', href: '/en/blog' },
