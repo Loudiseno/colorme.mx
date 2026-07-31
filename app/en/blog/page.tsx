@@ -6,9 +6,9 @@ import { enArticles } from '@/lib/enBlog'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Grief & Art Therapy Blog (English) | ColorMe',
+  title: 'Between the Lines — Art Therapy & Grief Blog | ColorMe',
   description:
-    'Honest, compassionate articles in English on grief, loss, and art therapy — how long grief lasts, the stages of grief, art therapy for anxiety and cancer, and more.',
+    'Reflections, information, and tools on art therapy, grief, and emotions. A place to explore life, loss, self-discovery, and creativity through art, color, and rituals from around the world.',
   keywords: [
     'grief blog',
     'art therapy blog',
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'Grief & Art Therapy Blog (English) | ColorMe',
+    title: 'Between the Lines — Art Therapy & Grief Blog | ColorMe',
     description:
-      'Honest, compassionate articles in English on grief, loss, and art therapy.',
+      'Reflections, information, and tools on art therapy, grief, and emotions — through art, color, and rituals from around the world.',
     url: '/en/blog',
   },
   robots: { index: true, follow: true },
@@ -38,12 +38,12 @@ export default function EnBlogIndex() {
         <header className="text-center mb-12">
           <p className="text-xs text-black/50 uppercase tracking-wider mb-3">English Blog</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4 font-semibold">
-            Grief &amp; Art Therapy
+            Between the Lines
           </h1>
           <p className="text-black/70 leading-relaxed max-w-2xl mx-auto">
-            Honest, compassionate writing on grief, loss, and healing through art — from an art
-            therapist and thanatologist. No jargon, no rushing. Just a gentle hand through the hard
-            parts.
+            Reflections, information, and tools on art therapy, grief counseling, and the world of
+            emotions. A place to explore life, loss, self-discovery, and creativity through art,
+            color, and rituals from around the world.
           </p>
         </header>
 

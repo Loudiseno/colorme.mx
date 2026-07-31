@@ -178,7 +178,7 @@ export default async function EnArticlePage({ params }: Props) {
             {article.title}
           </h1>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-black/60 text-sm">
-            <span>By Lou · Art Therapist &amp; Thanatologist</span>
+            <span>By Lou · Art Therapist &amp; Grief Counselor</span>
             <span className="inline-flex items-center gap-1">
               <Clock size={14} /> {article.readingTime}
             </span>
@@ -223,8 +223,8 @@ export default async function EnArticlePage({ params }: Props) {
             You don’t have to walk this alone
           </h2>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Gentle accompaniment through grief and difficult emotions with art therapy and
-            thanatology. Book a free first orientation session.
+            Gentle accompaniment through grief and difficult emotions with art therapy and grief
+            counseling. Book a free first orientation session.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <a
