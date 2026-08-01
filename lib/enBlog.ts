@@ -4503,6 +4503,417 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['what-is-art-therapy', 'psychology-vs-art-therapy'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'day-of-the-dead-mexico',
+    category: 'World Rituals',
+    title: 'Day of the Dead: Where Mexico Celebrates Death With Life',
+    metaTitle: 'Day of the Dead in Mexico: Traditions & Meaning | ColorMe',
+    description:
+      'Discover Día de Muertos, Mexico’s Day of the Dead — the ofrenda, marigolds, and the joyful tradition of honouring those who have died by welcoming them back with life.',
+    keywords: [
+      'day of the dead',
+      'dia de muertos',
+      'mexican day of the dead traditions',
+      'ofrenda meaning',
+      'day of the dead altar',
+      'mexico death traditions',
+    ],
+    image: '/dia-de-muerto.jpeg',
+    imageAlt: 'Day of the Dead — where Mexico celebrates death with life',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In much of the world, death is met with silence and black. In Mexico, it is met with marigolds, candles, music, and the favourite foods of those who have died. Día de Muertos — the Day of the Dead — is one of the most beautiful ways any culture has found to hold grief and love together.',
+      },
+      { type: 'h2', text: 'A celebration, not a mourning' },
+      {
+        type: 'p',
+        text: 'On the 1st and 2nd of November, families welcome the souls of their loved ones back for a brief, joyful reunion. Rather than dwelling on loss, the tradition celebrates that the dead are never truly gone as long as they are remembered.',
+      },
+      { type: 'h2', text: 'The ofrenda: an altar of memory' },
+      {
+        type: 'p',
+        text: 'At the heart of the celebration is the ofrenda, a home altar built to guide and welcome the departed:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Marigolds (cempasúchil), whose scent and colour guide the souls home.',
+          'Photos of the departed, at the centre of the altar.',
+          'Their favourite foods, drinks, and belongings.',
+          'Candles, water, salt, and pan de muerto (bread of the dead).',
+          'Papel picado and sugar skulls, symbols of the fragility and sweetness of life.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Mexico, the dead are not mourned in silence but welcomed back with everything they loved in life.',
+      },
+      { type: 'h2', text: 'What the world can learn from it' },
+      {
+        type: 'p',
+        text: 'Día de Muertos offers a healthier relationship with death: one that keeps bonds alive through memory and ritual, and lets grief and joy exist side by side. Building an ofrenda for your own loved one can be a deeply healing act, wherever you live.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the Day of the Dead?',
+        a: 'Día de Muertos is a Mexican tradition on 1–2 November when families welcome back the souls of loved ones with altars, marigolds, food, and celebration, honouring them with joy rather than only sorrow.',
+      },
+      {
+        q: 'What is an ofrenda?',
+        a: 'An ofrenda is a home altar built for the Day of the Dead with marigolds, photos, candles, favourite foods, and symbolic objects to guide and welcome the departed souls.',
+      },
+      {
+        q: 'Can I build an ofrenda for my own loved one?',
+        a: 'Yes. Creating an altar with photos, marigolds, candles, and their favourite things can be a healing ritual of remembrance, wherever you live.',
+      },
+    ],
+    related: ['farewell-rituals', 'grief-rituals-india'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-india',
+    category: 'World Rituals',
+    title: 'India: Where the Soul Walks Barefoot — Rituals of Farewell',
+    metaTitle: 'Grief Rituals in India: Sacred Colours & Farewell | ColorMe',
+    description:
+      'Explore India’s spiritual approach to death — Hindu rituals, sacred colours, cremation by the Ganges, and the belief in the soul’s continuing journey.',
+    keywords: [
+      'grief rituals india',
+      'hindu death rituals',
+      'indian mourning traditions',
+      'death in hinduism',
+      'sacred colours india',
+      'ganges cremation',
+    ],
+    image: '/ofrendas-india.jpeg',
+    imageAlt: 'India — where the soul walks barefoot, rituals of farewell',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'India is often called the spiritual heart of the world, and nowhere is that clearer than in how it meets death. Here, death is not an ending but a passage — one stop in the soul’s long journey through many lives.',
+      },
+      { type: 'h2', text: 'Death as transition, not termination' },
+      {
+        type: 'p',
+        text: 'In Hindu belief, the soul (atman) is eternal and moves through cycles of birth, death, and rebirth (samsara) until it reaches liberation (moksha). Death is mourned, but also understood as a natural doorway rather than a final wall.',
+      },
+      { type: 'h2', text: 'Rituals of farewell' },
+      {
+        type: 'ul',
+        items: [
+          'Cremation, which frees the soul from the body, often by sacred rivers like the Ganges.',
+          'Antyesti, the last rites performed by family with deep devotion.',
+          'A mourning period during which the community surrounds the bereaved.',
+          'Prayers and offerings to help the soul on its onward journey.',
+        ],
+      },
+      { type: 'h2', text: 'The language of sacred colours' },
+      {
+        type: 'p',
+        text: 'Colour carries deep meaning in India. White is traditionally worn in mourning, symbolising purity and the soul’s release. Saffron represents the sacred and the search for the divine, while other colours weave through rituals as prayers made visible.',
+      },
+      {
+        type: 'quote',
+        text: 'In India, grief is held within a vast belief that the soul never truly ends — it simply walks on.',
+      },
+      { type: 'h2', text: 'A wider perspective on loss' },
+      {
+        type: 'p',
+        text: 'India’s traditions remind us that how a culture views death shapes how it grieves. Seeing death as part of a larger journey can soften its finality — a perspective that many find comforting, whatever their own beliefs.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How is death viewed in Hinduism?',
+        a: 'Death is seen as a transition, not an ending. The eternal soul moves through cycles of birth, death, and rebirth until it reaches liberation (moksha).',
+      },
+      {
+        q: 'What colour represents mourning in India?',
+        a: 'White is traditionally worn in mourning, symbolising purity and the soul’s release. Saffron represents the sacred and spiritual search.',
+      },
+      {
+        q: 'Why is cremation important in Indian tradition?',
+        a: 'Cremation is believed to free the soul from the body so it can continue its journey. It is often performed by sacred rivers such as the Ganges.',
+      },
+    ],
+    related: ['day-of-the-dead-mexico', 'mehndi-sacred-art-india'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-bali-ngaben',
+    category: 'World Rituals',
+    title: 'Bali: Where Death Is Celebrated — The Ngaben Ritual',
+    metaTitle: 'Bali’s Ngaben: Where Death Is Celebrated | ColorMe',
+    description:
+      'In Bali, death is not wept but released. Discover the Ngaben cremation ceremony and the colours of the soul in one of the world’s most vivid farewell traditions.',
+    keywords: [
+      'ngaben bali',
+      'balinese death ritual',
+      'bali cremation ceremony',
+      'grief rituals bali',
+      'balinese hinduism death',
+      'colours of the soul bali',
+    ],
+    image: '/melukat-bali.jpeg',
+    imageAlt: 'Bali — where death is celebrated, the Ngaben ritual',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'On the island of Bali, death is met not with quiet sorrow but with colour, music, and celebration. The Balinese teach something radical: death is not to be wept over, but released — a joyful liberation of the soul.',
+      },
+      { type: 'h2', text: 'The Ngaben ceremony' },
+      {
+        type: 'p',
+        text: 'Ngaben is the Balinese cremation ritual, a vibrant ceremony that frees the soul from the body so it can continue toward reincarnation or union with the divine. The body is carried in a towering, ornate structure, often shaped like a bull or temple, and cremated in a public celebration of the soul’s release.',
+      },
+      { type: 'h2', text: 'Why it is a celebration' },
+      {
+        type: 'ul',
+        items: [
+          'Grief is expressed, but excessive weeping is discouraged — it is believed to hold the soul back.',
+          'The ceremony returns the body to the elements and frees the spirit.',
+          'Community gathers with music, offerings, and colour.',
+          'Death is seen as a natural, necessary step in the soul’s journey.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Bali, holding on too tightly can trap the soul. Love is shown by letting it go.',
+      },
+      { type: 'h2', text: 'A different relationship with letting go' },
+      {
+        type: 'p',
+        text: 'The Balinese approach invites a gentle question for all of us: what would it mean to grieve with celebration as well as sorrow, and to see letting go as an act of love rather than loss?',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is Ngaben?',
+        a: 'Ngaben is the Balinese cremation ceremony that frees the soul from the body so it can continue toward reincarnation or union with the divine. It is a colourful, communal celebration.',
+      },
+      {
+        q: 'Why do the Balinese celebrate death?',
+        a: 'Balinese Hinduism sees death as a natural step in the soul’s journey. Excessive weeping is believed to hold the soul back, so death is honoured with celebration and release.',
+      },
+      {
+        q: 'What can we learn from Balinese death rituals?',
+        a: 'They invite us to see letting go as an act of love, and to hold grief and celebration together rather than treating death as only loss.',
+      },
+    ],
+    related: ['melukat-bali-purification', 'day-of-the-dead-mexico'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-malaysia',
+    category: 'World Rituals',
+    title: 'Malaysia: The Crossroads of Three Souls',
+    metaTitle: 'Grief Rituals in Malaysia: Three Traditions | ColorMe',
+    description:
+      'Malaysia blends Malay, Chinese, and Indian traditions. Explore how three spiritual cultures honour death and grief side by side, and the wisdom of mourning in community.',
+    keywords: [
+      'grief rituals malaysia',
+      'malaysian death traditions',
+      'malay chinese indian funerals',
+      'multicultural mourning',
+      'death customs malaysia',
+      'community grief',
+    ],
+    image: '/malasia.jpeg',
+    imageAlt: 'Malaysia — the crossroads of three souls',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Few places hold as many ways of meeting death as Malaysia, where Malay, Chinese, and Indian cultures live side by side. Here, three great spiritual traditions honour the dead in their own ways — and all share one truth: grief is carried in community.',
+      },
+      { type: 'h2', text: 'Three traditions, one country' },
+      {
+        type: 'ul',
+        items: [
+          'Malay Muslim rites: swift burial, prayer, and simplicity, trusting the soul to God.',
+          'Chinese traditions: honouring ancestors with offerings, incense, and remembrance rituals.',
+          'Indian Hindu rites: cremation and prayers to free the soul for its onward journey.',
+        ],
+      },
+      { type: 'h2', text: 'Grief held by the community' },
+      {
+        type: 'p',
+        text: 'Across all three cultures, mourning is never done alone. Neighbours, extended family, and the wider community gather to cook, pray, sit, and share the weight of loss. No one is left to grieve in isolation.',
+      },
+      {
+        type: 'quote',
+        text: 'Malaysia’s deepest lesson is simple: grief was never meant to be carried alone.',
+      },
+      { type: 'h2', text: 'The wisdom of shared mourning' },
+      {
+        type: 'p',
+        text: 'In many modern societies, the bereaved are quickly left alone after the funeral. Malaysia’s traditions remind us how much healing lives in community — in being surrounded, fed, and accompanied through the hardest days.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How is death honoured in Malaysia?',
+        a: 'Malaysia blends Malay Muslim, Chinese, and Indian Hindu traditions, each with its own rites — from swift Muslim burial to ancestral offerings to Hindu cremation — all held within community.',
+      },
+      {
+        q: 'What do Malaysian death traditions have in common?',
+        a: 'Across all three cultures, grief is carried collectively. Community and extended family gather to support the bereaved so no one mourns alone.',
+      },
+      {
+        q: 'What can we learn from communal mourning?',
+        a: 'That healing is supported by being surrounded and accompanied. Community care through the hardest days eases the isolation grief often brings.',
+      },
+    ],
+    related: ['grief-rituals-india', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-thailand',
+    category: 'World Rituals',
+    title: 'Thailand: The Wisdom of Letting Go With Gratitude',
+    metaTitle: 'Grief Rituals in Thailand: Letting Go | ColorMe',
+    description:
+      'In Thailand, Buddhist tradition meets death with calm and gratitude. Explore Thai funeral customs and the serene wisdom of impermanence and letting go.',
+    keywords: [
+      'grief rituals thailand',
+      'thai buddhist funeral',
+      'death in buddhism',
+      'impermanence letting go',
+      'thai mourning traditions',
+      'buddhist grief',
+    ],
+    image: '/thailand-rituals.jpeg',
+    imageAlt: 'Thailand — the wisdom of letting go with gratitude',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Known as the land of smiles, Thailand meets death with a serenity that can surprise outsiders. Rooted in Buddhism, Thai tradition sees death not as a catastrophe but as a natural part of impermanence — met, as much as possible, with calm and gratitude.',
+      },
+      { type: 'h2', text: 'Impermanence at the heart of it' },
+      {
+        type: 'p',
+        text: 'Buddhism teaches that everything is impermanent (anicca), including life itself. Accepting this truth does not erase grief, but it softens the shock of death and helps mourners find peace in the natural order of things.',
+      },
+      { type: 'h2', text: 'Thai funeral customs' },
+      {
+        type: 'ul',
+        items: [
+          'Multi-day ceremonies with monks chanting to guide the deceased.',
+          'Merit-making — good deeds and offerings dedicated to the departed.',
+          'Cremation, releasing the body and honouring impermanence.',
+          'White worn as the colour of mourning and purity.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'To let go with gratitude is not to stop loving. It is to thank what was, and release what must move on.',
+      },
+      { type: 'h2', text: 'Gratitude alongside grief' },
+      {
+        type: 'p',
+        text: 'Perhaps the deepest lesson of Thai tradition is that we can meet loss with thankfulness for what we were given, rather than only bitterness for what was taken. Gratitude and grief can share the same heart.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does Buddhism view death?',
+        a: 'Buddhism sees death as a natural part of impermanence (anicca). Accepting that everything changes helps soften the shock of loss and find peace.',
+      },
+      {
+        q: 'What are Thai funeral customs?',
+        a: 'They often include multi-day ceremonies with chanting monks, merit-making dedicated to the deceased, cremation, and white worn as the colour of mourning.',
+      },
+      {
+        q: 'What does “letting go with gratitude” mean?',
+        a: 'It means honouring and thanking what a person or experience gave you while releasing them — holding gratitude and grief together rather than only loss.',
+      },
+    ],
+    related: ['grief-rituals-vietnam', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-vietnam',
+    category: 'World Rituals',
+    title: 'Vietnam: Where Ancestors Never Truly Leave',
+    metaTitle: 'Grief Rituals in Vietnam: Ancestor Worship | ColorMe',
+    description:
+      'In Vietnam, death does not break the bond — it deepens it. Discover ancestor worship, the family altar, and the wisdom of keeping loved ones present after death.',
+    keywords: [
+      'grief rituals vietnam',
+      'vietnamese ancestor worship',
+      'family altar vietnam',
+      'death traditions vietnam',
+      'honouring ancestors',
+      'vietnamese mourning',
+    ],
+    image: '/vietnam-olores.jpeg',
+    imageAlt: 'Vietnam — where ancestors never truly leave',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In Vietnam, death does not sever the bond between the living and the dead — it transforms it. Through ancestor worship, loved ones remain a present, honoured part of the family long after they have died.',
+      },
+      { type: 'h2', text: 'The family altar' },
+      {
+        type: 'p',
+        text: 'Most Vietnamese homes keep an ancestor altar, often in a place of honour. Here, families offer incense, food, and flowers, share news, and mark death anniversaries. The departed are not gone — they are consulted, remembered, and cared for.',
+      },
+      { type: 'h2', text: 'A continuing relationship' },
+      {
+        type: 'ul',
+        items: [
+          'Death anniversaries are marked with gatherings and offerings.',
+          'Ancestors are believed to watch over and guide the living.',
+          'Major family events are shared with the departed at the altar.',
+          'Remembering is a duty of love passed down the generations.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Vietnam, to remember is to keep someone alive. The dead remain part of the family they loved.',
+      },
+      { type: 'h2', text: 'The comfort of continued bonds' },
+      {
+        type: 'p',
+        text: 'Modern grief psychology increasingly recognises what Vietnam has always known: maintaining a continuing bond with those who have died — through ritual and remembrance — can be deeply healing, not a failure to “move on.”',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is ancestor worship in Vietnam?',
+        a: 'It is the practice of honouring deceased family members through a home altar with incense, food, and offerings, keeping them present and cared for as part of the family.',
+      },
+      {
+        q: 'Why do Vietnamese families keep an ancestor altar?',
+        a: 'The altar maintains a continuing bond with the departed, who are believed to watch over and guide the living. Remembering them is a duty of love.',
+      },
+      {
+        q: 'Is keeping a bond with the dead healthy?',
+        a: 'Yes. Modern grief research supports “continuing bonds” — staying connected to loved ones through ritual and memory can be healing, not a failure to move on.',
+      },
+    ],
+    related: ['grief-rituals-thailand', 'farewell-rituals'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
