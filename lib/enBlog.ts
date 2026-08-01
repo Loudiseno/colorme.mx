@@ -3895,6 +3895,614 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['menopause-and-grief', 'difficult-anniversaries'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'sadness-as-a-teacher',
+    category: 'Emotions',
+    title: 'Sadness Didn’t Come to Destroy You',
+    metaTitle: 'Sadness Didn’t Come to Destroy You | ColorMe',
+    description:
+      'We treat sadness as an enemy to escape. But sadness is a messenger, not a threat. Learning to sit with sadness instead of fleeing it — and what it has to teach.',
+    keywords: [
+      'sadness as a teacher',
+      'sitting with sadness',
+      'why do i feel sad',
+      'embracing sadness',
+      'emotional acceptance',
+      'sadness vs depression',
+    ],
+    image: '/tristeza.webp',
+    imageAlt: 'Sadness didn’t come to destroy you — sadness as a teacher',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'We are taught to fear sadness — to fix it, numb it, or escape it as fast as possible. But sadness is not your enemy. It is a messenger, arriving to tell you that something matters, something hurts, or something needs your attention.',
+      },
+      { type: 'h2', text: 'Sadness is not depression' },
+      {
+        type: 'p',
+        text: 'Sadness is a healthy, passing emotion in response to loss or disappointment. Depression is heavier and more persistent. Allowing yourself to feel sadness — rather than suppressing it — can actually protect you from getting stuck.',
+      },
+      { type: 'h2', text: 'What happens when we run from it' },
+      {
+        type: 'p',
+        text: 'The more we flee sadness, the louder it becomes. Suppressed emotions do not disappear; they resurface as anxiety, irritability, exhaustion, or numbness. Paradoxically, letting yourself be sad is often the fastest way through it.',
+      },
+      {
+        type: 'quote',
+        text: 'Sadness is not a sign that something is wrong with you. It is a sign that something mattered.',
+      },
+      { type: 'h2', text: 'Learning to sit with it' },
+      {
+        type: 'ul',
+        items: [
+          'Let it be there without rushing to fix it.',
+          'Ask what it is trying to tell you.',
+          'Express it — through tears, words, movement, or art.',
+          'Trust that emotions, when felt, move through and pass.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Is sadness a bad emotion?',
+        a: 'No. Sadness is a healthy, natural response to loss or disappointment. It is a messenger pointing to what matters, not a flaw to eliminate.',
+      },
+      {
+        q: 'What is the difference between sadness and depression?',
+        a: 'Sadness is a passing emotion tied to a cause; depression is heavier and more persistent, affecting daily functioning. Allowing sadness can help prevent getting stuck.',
+      },
+      {
+        q: 'Why should I let myself feel sad?',
+        a: 'Suppressed sadness resurfaces as anxiety, irritability, or numbness. Feeling it fully is often the fastest way for the emotion to move through and pass.',
+      },
+    ],
+    related: ['emotional-numbness', 'why-cant-i-cry'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'shame-and-grief',
+    category: 'Emotions',
+    title: 'Shame: The Emotion That Makes You Hide',
+    metaTitle: 'Shame: The Emotion That Makes You Hide | ColorMe',
+    description:
+      'Shame silences grief and makes us hide what we feel for fear of judgement. Understanding shame, how it silences mourning, and how to bring it into the light.',
+    keywords: [
+      'shame and grief',
+      'shame emotion',
+      'hidden grief shame',
+      'overcoming shame',
+      'guilt vs shame',
+      'emotional shame',
+    ],
+    image: '/verguenza-duelo.webp',
+    imageAlt: 'Shame — the emotion that makes you hide',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Shame is the emotion that whispers, “if they really knew you, they would turn away.” It makes us hide — our grief, our struggles, our true selves — for fear of being judged. And in grief, shame can be one of the quietest, most isolating forces of all.',
+      },
+      { type: 'h2', text: 'Guilt says “I did something bad.” Shame says “I am bad.”' },
+      {
+        type: 'p',
+        text: 'That is the crucial difference. Guilt is about behaviour; shame is about identity. Shame convinces us that something is fundamentally wrong with us — which is why it makes us want to disappear rather than reach out.',
+      },
+      { type: 'h2', text: 'How shame silences grief' },
+      {
+        type: 'p',
+        text: 'We feel ashamed of grieving “too much,” “too long,” or “the wrong way.” Ashamed of relief, of anger, of still not being okay. So we hide our pain behind “I’m fine” — and grief in hiding cannot heal.',
+      },
+      {
+        type: 'quote',
+        text: 'Shame cannot survive being spoken. The moment you share it with someone safe, it begins to lose its grip.',
+      },
+      { type: 'h2', text: 'Bringing it into the light' },
+      {
+        type: 'ul',
+        items: [
+          'Name the shame — silence is what feeds it.',
+          'Share it with someone safe and compassionate.',
+          'Speak to yourself as you would to a dear friend.',
+          'Express what you hide through writing or art, where nothing is judged.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between guilt and shame?',
+        a: 'Guilt says “I did something bad” and focuses on behaviour; shame says “I am bad” and attacks identity. Shame makes us want to hide rather than reach out.',
+      },
+      {
+        q: 'How does shame affect grief?',
+        a: 'Shame makes people feel they are grieving “wrong” or “too much,” so they hide their pain behind “I’m fine.” Grief kept in hiding cannot heal.',
+      },
+      {
+        q: 'How do you overcome shame?',
+        a: 'Shame cannot survive being spoken. Naming it, sharing it with someone safe, practising self-compassion, and expressing it through art all loosen its grip.',
+      },
+    ],
+    related: ['grief-and-guilt', 'why-cant-i-cry'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'why-cant-i-cry',
+    category: 'Emotions',
+    title: 'Why Can’t I Cry? Grief Without Tears',
+    metaTitle: 'Why Can’t I Cry? Grief Without Tears | ColorMe',
+    description:
+      'Not crying after a loss does not mean you do not care. Why some people grieve without tears, what blocks them, and how to process pain that will not release.',
+    keywords: [
+      'why can’t i cry',
+      'grief without tears',
+      'can’t cry after death',
+      'inability to cry',
+      'numb grief',
+      'processing grief without crying',
+    ],
+    image: '/porque-no-puedo-llorar.webp',
+    imageAlt: 'Why can’t I cry — grief without tears',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'You have lost someone, and everyone around you is crying — but your eyes stay dry. You wonder if something is wrong with you, if you are cold, if you even loved them enough. Please hear this: not crying does not mean you are not grieving.',
+      },
+      { type: 'h2', text: 'Grief without tears is still grief' },
+      {
+        type: 'p',
+        text: 'People grieve in wildly different ways. Some sob; others go quiet, busy, or numb. Tears are one expression of grief, not the measure of it. Your pain is real whether or not it comes out through your eyes.',
+      },
+      { type: 'h2', text: 'Why the tears may not come' },
+      {
+        type: 'ul',
+        items: [
+          'Shock and numbness are protecting you from a blow too big to feel yet.',
+          'You learned, somewhere, that crying was unsafe or not allowed.',
+          'You are in “survival mode,” holding everything together for others.',
+          'Your grief is coming out sideways — as anger, tension, or exhaustion.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Tears are not the price of admission to grief. Your love and your loss are valid without them.',
+      },
+      { type: 'h2', text: 'Letting the feeling find a way out' },
+      {
+        type: 'p',
+        text: 'You do not have to force tears. But you can give grief other exits — writing, movement, music, or art. Sometimes, when we stop demanding tears and simply make space, they arrive on their own. And if the numbness stays heavy, support can help.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why can’t I cry after a loss?',
+        a: 'Shock, numbness, learned emotional suppression, or being in survival mode can all block tears. It does not mean you are not grieving or did not care.',
+      },
+      {
+        q: 'Is it normal to grieve without crying?',
+        a: 'Yes. People grieve in many ways — some cry, others go quiet or numb. Tears are one expression of grief, not a measure of it.',
+      },
+      {
+        q: 'How can I process grief if I can’t cry?',
+        a: 'Give grief other outlets — writing, movement, music, or art. Making space without forcing tears often helps the feeling find its way out.',
+      },
+    ],
+    related: ['emotional-numbness', 'sadness-as-a-teacher'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'losing-faith-spiritual-grief',
+    category: 'Emotions',
+    title: 'When You Lose Your Faith: Spiritual Grief',
+    metaTitle: 'When You Lose Your Faith: Spiritual Grief | ColorMe',
+    description:
+      'Losing your faith is a real loss — of meaning, community, and certainty. Understanding spiritual grief and how to move through a crisis of belief with compassion.',
+    keywords: [
+      'losing faith grief',
+      'spiritual grief',
+      'crisis of faith',
+      'loss of belief',
+      'religious deconstruction grief',
+      'losing religion',
+    ],
+    image: '/perder-la-fe.webp',
+    imageAlt: 'When you lose your faith — spiritual grief',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Losing your faith — whether slowly or in a sudden crisis — is a profound loss, even though nothing physical has died. When belief that once anchored your life falls away, you can be left grieving meaning, community, and certainty all at once.',
+      },
+      { type: 'h2', text: 'A loss that is rarely recognised' },
+      {
+        type: 'p',
+        text: 'Spiritual grief is often invisible. Others may not understand it, or may try to argue you back into belief. But letting go of faith can mean losing your framework for right and wrong, your sense of an afterlife, and the community that came with it.',
+      },
+      { type: 'h2', text: 'What you may be grieving' },
+      {
+        type: 'ul',
+        items: [
+          'A sense of meaning and cosmic order.',
+          'Comfort in the face of death and suffering.',
+          'Belonging to a faith community.',
+          'The version of yourself that believed.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A crisis of faith is not a failure. It can be the painful beginning of a more honest search for meaning.',
+      },
+      { type: 'h2', text: 'Moving through spiritual grief' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve what belief gave you, even as you question it. Look for new sources of meaning, connection, and awe. This is disorienting territory, and you do not have to walk it alone — compassionate support can help you find your footing.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can losing your faith cause grief?',
+        a: 'Yes. Losing faith means losing meaning, comfort, community, and certainty. It is a real, often invisible grief, even though nothing physical has died.',
+      },
+      {
+        q: 'Why does a crisis of faith feel so disorienting?',
+        a: 'Faith often provides a framework for meaning, morality, death, and belonging. When it falls away, many parts of life feel unanchored at once.',
+      },
+      {
+        q: 'How do I cope with losing my religion?',
+        a: 'Allow yourself to grieve what belief gave you, seek new sources of meaning and connection, and lean on compassionate support as you find your footing.',
+      },
+    ],
+    related: ['what-is-grief', 'why-we-avoid-talking-about-death'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'emotional-numbness',
+    category: 'Emotions',
+    title: 'I Feel Nothing: When Emotions Shut Down',
+    metaTitle: 'I Feel Nothing: When Emotions Shut Down | ColorMe',
+    description:
+      'Emotional numbness is not the absence of feeling but a shield against it. Why we go numb, what it protects us from, and how to gently reconnect with what we feel.',
+    keywords: [
+      'emotional numbness',
+      'i feel nothing',
+      'emotional shutdown',
+      'feeling numb',
+      'disconnected from emotions',
+      'reconnecting with feelings',
+    ],
+    image: '/bloqueo-emocional-no-siento-nada.jpeg',
+    imageAlt: 'I feel nothing — when emotions shut down',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: '“I feel nothing.” It can be one of the most unsettling experiences — a flatness where emotion should be, a sense of watching your life from behind glass. Emotional numbness is not the absence of feeling. It is a shield your mind builds to protect you from feeling too much.',
+      },
+      { type: 'h2', text: 'Numbness is protection, not coldness' },
+      {
+        type: 'p',
+        text: 'When pain, grief, or stress become overwhelming, the mind can turn the volume down on all emotion to keep you functioning. It is a survival response — but when it lingers, it can leave you disconnected from joy as well as pain.',
+      },
+      { type: 'h2', text: 'What numbness can look like' },
+      {
+        type: 'ul',
+        items: [
+          'Feeling flat, empty, or “switched off.”',
+          'Watching yourself as if from outside.',
+          'Struggling to feel joy, sadness, or connection.',
+          'Going through the motions without really being present.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You are not broken or cold. You are protected. And protection, when you are ready, can gently loosen.',
+      },
+      { type: 'h2', text: 'Reconnecting, gently' },
+      {
+        type: 'p',
+        text: 'You cannot force feeling to return, but you can invite it — through the body, the senses, and creativity. Movement, music, and art can reach emotions that words cannot. If numbness persists or worries you, support can help you thaw safely, at your own pace.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is emotional numbness?',
+        a: 'It is a protective shutting-down of emotion when feelings become overwhelming. Rather than an absence of feeling, it is a shield the mind builds to help you cope.',
+      },
+      {
+        q: 'Why do I feel numb after a loss or stress?',
+        a: 'When pain or stress become too much, the mind turns down all emotion to keep you functioning. It is a normal survival response, though it can linger.',
+      },
+      {
+        q: 'How do I reconnect with my emotions?',
+        a: 'Invite feeling gently through the body and senses — movement, music, and art can reach emotions words cannot. If numbness persists, seek support to thaw safely.',
+      },
+    ],
+    related: ['why-cant-i-cry', 'sadness-as-a-teacher'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'how-art-heals-the-brain',
+    category: 'Art Therapy',
+    title: 'How Art Heals: What Happens in Your Brain When You Create',
+    metaTitle: 'How Art Heals the Brain When You Create | ColorMe',
+    description:
+      'The neuroscience behind why making art reduces stress and boosts wellbeing. What happens in your brain when you create — and why you don’t need to be an artist.',
+    keywords: [
+      'how art heals the brain',
+      'art and the brain',
+      'neuroscience of art',
+      'art reduces stress',
+      'benefits of making art',
+      'creativity and mental health',
+    ],
+    image: '/beneficios-del-arte.webp',
+    imageAlt: 'How art heals — what happens in your brain when you create',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'The urge to make art is as old as humanity. It turns out there is real science behind why creating feels so good and helps us heal. When you make art, measurable things happen in your brain and body — and none of it depends on talent.',
+      },
+      { type: 'h2', text: 'Art lowers stress' },
+      {
+        type: 'p',
+        text: 'Studies show that even a short time spent making art can reduce cortisol, the body’s main stress hormone. The focused, absorbing nature of creating shifts the nervous system out of “fight or flight” and into a calmer state.',
+      },
+      { type: 'h2', text: 'It activates reward and flow' },
+      {
+        type: 'p',
+        text: 'Creating art releases dopamine, linked to motivation and pleasure, and can induce “flow” — that absorbing state where time falls away and worry quiets. This is one reason art feels meditative and restorative.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Reduces stress and calms the nervous system.',
+          'Releases dopamine and boosts mood.',
+          'Engages both logical and emotional parts of the brain.',
+          'Helps process emotions that words cannot reach.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You do not create art to be good at it. You create because of what it does to you while you make it.',
+      },
+      { type: 'h2', text: 'Why this matters for healing' },
+      {
+        type: 'p',
+        text: 'Because art engages the emotional, sensory brain, it can access and process feelings that talking alone cannot — which is exactly why art therapy is so powerful for grief, anxiety, and trauma. And you need no skill to receive the benefits.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does making art affect the brain?',
+        a: 'Making art lowers cortisol (a stress hormone), releases dopamine linked to pleasure and motivation, and can induce a calming “flow” state, while engaging both emotional and logical parts of the brain.',
+      },
+      {
+        q: 'Do you need to be talented for art to help?',
+        a: 'No. The healing benefits come from the process of creating, not the quality of the result. No artistic skill is required.',
+      },
+      {
+        q: 'Why does art help with emotions?',
+        a: 'Art engages the emotional, sensory brain, allowing it to access and process feelings that words alone cannot reach — which is why it helps with grief, anxiety, and trauma.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-exercises'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'psychology-vs-art-therapy',
+    category: 'Art Therapy',
+    title: 'Psychology vs. Art Therapy: What’s the Difference?',
+    metaTitle: 'Psychology vs. Art Therapy: The Difference | ColorMe',
+    description:
+      'Psychology and art therapy both support mental health, but they work differently. The key differences, what each is best for, and how to choose the right one for you.',
+    keywords: [
+      'psychology vs art therapy',
+      'difference between psychology and art therapy',
+      'art therapy or psychology',
+      'types of therapy',
+      'choosing a therapist',
+      'what is art therapy',
+    ],
+    image: '/diferencia-psicologia-y-arteterapia.jpeg',
+    imageAlt: 'Psychology vs. art therapy — what’s the difference',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Psychology and art therapy both support mental and emotional health, and they can work beautifully together — but they are not the same. Understanding the difference can help you choose what fits your needs.',
+      },
+      { type: 'h2', text: 'How psychology works' },
+      {
+        type: 'p',
+        text: 'Traditional psychology and psychotherapy work mainly through conversation — exploring thoughts, behaviours, and patterns to gain insight and change. It is verbal, analytical, and highly effective when you can access and articulate your feelings.',
+      },
+      { type: 'h2', text: 'How art therapy works' },
+      {
+        type: 'p',
+        text: 'Art therapy uses the creative process — image, colour, and material — guided by a trained therapist. It reaches feelings that live below language, making it especially helpful when words are hard to find, or when talking feels blocked.',
+      },
+      {
+        type: 'quote',
+        text: 'One begins with words. The other begins with what has no words yet.',
+      },
+      { type: 'h2', text: 'Which do you need?' },
+      {
+        type: 'ul',
+        items: [
+          'Choose talk-based work if you process best verbally and want analytical insight.',
+          'Choose art therapy if feelings are hard to name or talking feels stuck.',
+          'Many people benefit from combining both approaches.',
+          'The best therapy is the one that meets you where you are.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between psychology and art therapy?',
+        a: 'Psychology works mainly through conversation and analysis, while art therapy uses the creative process to reach feelings that live below language. Both support mental health and can complement each other.',
+      },
+      {
+        q: 'Is art therapy a real form of psychology?',
+        a: 'Art therapy is an established form of psychotherapy delivered by trained professionals. It uses creativity rather than conversation as its primary tool.',
+      },
+      {
+        q: 'Which is better for me?',
+        a: 'It depends. Talk-based work suits those who process verbally; art therapy helps when feelings are hard to name or talking feels blocked. Many people combine both.',
+      },
+    ],
+    related: ['art-therapy-vs-talk-therapy', 'what-is-art-therapy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-and-autism',
+    category: 'Art Therapy',
+    title: 'Art Therapy and Autism: When Art Opens Doors',
+    metaTitle: 'Art Therapy and Autism: When Art Opens Doors | ColorMe',
+    description:
+      'For autistic children and adults, art therapy offers a space to communicate and express beyond words. How art therapy supports autism with sensory, gentle connection.',
+    keywords: [
+      'art therapy and autism',
+      'art therapy for autistic children',
+      'autism creative therapy',
+      'nonverbal expression autism',
+      'autism emotional support',
+      'art therapy neurodivergent',
+    ],
+    image: '/mari-final.jpeg',
+    imageAlt: 'Art therapy and autism — when art opens doors',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'For many autistic children and adults, words are not the easiest way to communicate feelings. Art therapy offers another door — a sensory, visual language that can express what speech cannot, at a pace and in a way that feels safe.',
+      },
+      { type: 'h2', text: 'Communication beyond words' },
+      {
+        type: 'p',
+        text: 'Art therapy does not require verbal explanation. Through colour, shape, and material, an autistic person can express emotions, experiences, and inner worlds — giving both them and those around them a new way to connect.',
+      },
+      { type: 'h2', text: 'How art therapy can support autism' },
+      {
+        type: 'ul',
+        items: [
+          'A non-verbal channel for expressing feelings and needs.',
+          'Sensory engagement that can be soothing and regulating.',
+          'A predictable, safe space with gentle structure.',
+          'Support for emotional regulation and self-understanding.',
+          'Building confidence and connection at the person’s own pace.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'When words are hard, art can become a bridge — from the inner world to the people who love them.',
+      },
+      { type: 'h2', text: 'Meeting each person as an individual' },
+      {
+        type: 'p',
+        text: 'Every autistic person is different, so art therapy is adapted to their sensory preferences, strengths, and needs. The goal is never to “fix,” but to offer a space where they can be understood and express themselves fully.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does art therapy help autistic children?',
+        a: 'It offers a non-verbal way to express feelings, provides soothing sensory engagement, supports emotional regulation, and builds connection and confidence in a safe, structured space.',
+      },
+      {
+        q: 'Do you need to be verbal to benefit from art therapy?',
+        a: 'No. Art therapy works through image, colour, and material rather than speech, making it especially valuable for those who find words difficult.',
+      },
+      {
+        q: 'Is art therapy adapted to each autistic person?',
+        a: 'Yes. It is tailored to individual sensory preferences, strengths, and needs, with the goal of understanding and expression rather than “fixing.”',
+      },
+    ],
+    related: ['art-therapy-for-children', 'what-is-art-therapy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-vs-art-class',
+    category: 'Art Therapy',
+    title: 'Art Therapy vs. Art Class: What’s the Difference?',
+    metaTitle: 'Art Therapy vs. Art Class: The Difference | ColorMe',
+    description:
+      'Making art to learn is not the same as making art to heal. The key differences between an art class and art therapy, and how to know which one you need.',
+    keywords: [
+      'art therapy vs art class',
+      'difference art therapy art class',
+      'is art therapy a class',
+      'art class vs therapy',
+      'what is art therapy',
+      'healing through art',
+    ],
+    image: '/anagaby-final.jpeg',
+    imageAlt: 'Art therapy vs. art class — what’s the difference',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Both involve paint, paper, and creativity — but an art class and art therapy are fundamentally different. One is about learning to make art; the other is about using art to heal. Knowing the difference helps you find what you are really looking for.',
+      },
+      { type: 'h2', text: 'An art class: the product' },
+      {
+        type: 'p',
+        text: 'An art class teaches technique and skill. The focus is the artwork itself — improving how you draw, paint, or sculpt. Success is measured by the result, and the teacher guides you toward making “better” art.',
+      },
+      { type: 'h2', text: 'Art therapy: the process' },
+      {
+        type: 'p',
+        text: 'Art therapy uses creating as a path to emotional healing, guided by a trained therapist. The focus is never the final product but what the process reveals and releases. There is no skill to master and no judgement — only what the art helps you feel and understand.',
+      },
+      {
+        type: 'quote',
+        text: 'In an art class, the art is the goal. In art therapy, you are the goal.',
+      },
+      { type: 'h2', text: 'Which one do you need?' },
+      {
+        type: 'ul',
+        items: [
+          'Choose an art class to build skills and enjoy making art.',
+          'Choose art therapy to process emotions, grief, or stress.',
+          'You do not need any artistic ability for art therapy.',
+          'Both are valuable — they simply serve different purposes.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between art therapy and an art class?',
+        a: 'An art class teaches technique and focuses on the artwork; art therapy uses the creative process for emotional healing, guided by a trained therapist, with no focus on the result.',
+      },
+      {
+        q: 'Do I need art skills for art therapy?',
+        a: 'No. Art therapy requires no artistic ability. The benefit comes from the process, not the quality of what you make.',
+      },
+      {
+        q: 'Which should I choose?',
+        a: 'Choose an art class to learn and enjoy making art; choose art therapy to process emotions, grief, or stress. They serve different purposes and both are valuable.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'psychology-vs-art-therapy'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
