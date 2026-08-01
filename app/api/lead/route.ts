@@ -7,6 +7,12 @@ export async function POST(request: Request) {
 
     const email = typeof data.email === 'string' ? data.email.trim() : ''
     const name = typeof data.name === 'string' ? data.name.trim() : ''
+    const source = typeof data.source === 'string' ? data.source : 'exploraciones-creativas'
+    const sourceLabels: Record<string, string> = {
+      'exploraciones-creativas': 'Exploraciones creativas (recursos gratis)',
+      'en-blog': 'English blog (newsletter)',
+    }
+    const sourceLabel = sourceLabels[source] || source
 
     // Validate email format
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -45,14 +51,14 @@ export async function POST(request: Request) {
       const result = await resend.emails.send({
         from: 'ColorMe <noreply@colorme.mx>',
         to: ['hola@colorme.mx', 'lou.diseno@gmail.com'],
-        subject: `Nuevo correo capturado en Exploraciones creativas${name ? ` - ${name}` : ''}`,
+        subject: `Nuevo correo capturado${sourceLabel ? ` - ${sourceLabel}` : ''}${name ? ` - ${name}` : ''}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #000; border-bottom: 2px solid #B2F7EF; padding-bottom: 10px;">Nuevo correo capturado</h2>
             <table style="width: 100%; border-collapse: collapse;">
               ${name ? `<tr><td style="padding: 8px 0; font-weight: bold; width: 160px;">Nombre:</td><td style="padding: 8px 0;">${name}</td></tr>` : ''}
               <tr><td style="padding: 8px 0; font-weight: bold; width: 160px;">Correo:</td><td style="padding: 8px 0;">${email}</td></tr>
-              <tr><td style="padding: 8px 0; font-weight: bold;">Origen:</td><td style="padding: 8px 0;">Exploraciones creativas (recursos gratis)</td></tr>
+              <tr><td style="padding: 8px 0; font-weight: bold;">Origen:</td><td style="padding: 8px 0;">${sourceLabel}</td></tr>
               <tr><td style="padding: 8px 0; font-weight: bold;">Fecha:</td><td style="padding: 8px 0;">${dateStr}</td></tr>
             </table>
           </div>

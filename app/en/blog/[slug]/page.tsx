@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Script from 'next/script'
 import { ArrowLeft, ArrowRight, Calendar, Clock } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
+import EnNewsletter from '@/components/EnNewsletter'
 import {
   enArticles,
   getEnArticle,
@@ -245,6 +246,11 @@ export default async function EnArticlePage({ params }: Props) {
             </a>
           </div>
         </section>
+
+        {/* Newsletter */}
+        <div className="mt-8">
+          <EnNewsletter />
+        </div>
 
         {/* Related */}
         {related.length > 0 && (
