@@ -1953,6 +1953,517 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['grief-and-guilt', 'seven-stages-of-grief'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'what-is-grief',
+    category: 'Grief',
+    title: 'What Is Grief? Understanding the Process of Loss',
+    metaTitle: 'What Is Grief? Understanding the Process of Loss | ColorMe',
+    description:
+      'Grief is the natural process we go through when we lose something or someone meaningful. Understand what grief is, how it shows up, and why there is no wrong way to feel it.',
+    keywords: [
+      'what is grief',
+      'grief meaning',
+      'grieving process',
+      'understanding grief',
+      'types of grief',
+      'coping with loss',
+    ],
+    image: '/el-duelo.webp',
+    imageAlt: 'What is grief — understanding the natural process of loss',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Grief is the natural process we move through when we lose something or someone meaningful. It is not a disease or a weakness — it is the price of having loved, cared, and been attached. And it looks different for everyone.',
+      },
+      { type: 'h2', text: 'More than sadness' },
+      {
+        type: 'p',
+        text: 'We often imagine grief as only tears and sadness, but it is far wider than that. Grief can show up as anger, guilt, exhaustion, numbness, anxiety, relief, or even physical symptoms like a tight chest or no appetite. All of these belong to grief.',
+      },
+      { type: 'h2', text: 'Grief is not only about death' },
+      {
+        type: 'p',
+        text: 'We grieve many losses that are not deaths: a divorce, a diagnosis, the end of a friendship, leaving a country, losing a job, or a version of ourselves we can no longer be. Any meaningful loss can bring real grief.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'The loss of a loved one.',
+          'The end of a relationship or friendship.',
+          'A change in health, body, or ability.',
+          'The loss of a home, a job, or a way of life.',
+          'The loss of a dream or an imagined future.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Grief is love with nowhere to go. Its size is a measure of how much something mattered.',
+      },
+      { type: 'h2', text: 'There is no “right” way to grieve' },
+      {
+        type: 'p',
+        text: 'There is no correct order, no schedule, and no finish line. You may feel waves of intense pain followed by calm, only for the pain to return. This is normal. Grief is not a problem to solve but an experience to move through, at your own pace.',
+      },
+      { type: 'h2', text: 'When to reach for support' },
+      {
+        type: 'p',
+        text: 'If your grief feels unbearable, stuck, or is keeping you from living your life, you do not have to carry it alone. Compassionate accompaniment — through conversation or through creative expression like art therapy — can help you find your way.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What exactly is grief?',
+        a: 'Grief is the natural emotional, physical, and mental response to losing something or someone meaningful. It is much broader than sadness and can include anger, guilt, numbness, and relief.',
+      },
+      {
+        q: 'Can you grieve something other than a death?',
+        a: 'Yes. Divorce, illness, job loss, moving, and the end of friendships can all bring real grief. Any significant loss can trigger the grieving process.',
+      },
+      {
+        q: 'Is there a right way to grieve?',
+        a: 'No. Grief has no fixed order or timeline. Everyone experiences it differently, and there is no wrong way to feel your loss.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'the-first-days-after-a-death',
+    category: 'Grief',
+    title: 'The First Days After Losing a Loved One',
+    metaTitle: 'The First Days After Losing a Loved One | ColorMe',
+    description:
+      'Nobody prepares you for the first days after a death. An honest space for surviving the shock, the numbness, and the silence that follows losing someone you love.',
+    keywords: [
+      'first days after a death',
+      'what to do when someone dies',
+      'surviving early grief',
+      'shock after loss',
+      'grief first week',
+      'coping right after a death',
+    ],
+    image: '/primeros-dias-despues-muerte.jpeg',
+    imageAlt: 'The first days after losing a loved one',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Nobody prepares you for the first days after a death. The world keeps moving as if nothing happened, while yours has stopped completely. If you are in those first raw days, this is a space to breathe. You do not have to be strong right now.',
+      },
+      { type: 'h2', text: 'The shock is protecting you' },
+      {
+        type: 'p',
+        text: 'In the first hours and days, many people feel strangely numb, robotic, or unable to cry. You may go through the motions of arrangements and phone calls as if watching yourself from outside. This is not coldness — it is your mind buffering a reality too big to absorb all at once.',
+      },
+      { type: 'h2', text: 'What you might feel' },
+      {
+        type: 'ul',
+        items: [
+          'Waves of disbelief — expecting them to walk back in.',
+          'Numbness, or sudden bursts of overwhelming pain.',
+          'Exhaustion, confusion, or trouble making simple decisions.',
+          'Physical symptoms: no appetite, no sleep, a heavy chest.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You do not have to understand it, accept it, or be okay. You only have to get through the next hour.',
+      },
+      { type: 'h2', text: 'Gentle things that help' },
+      {
+        type: 'ul',
+        items: [
+          'Let people help with practical tasks — food, calls, logistics.',
+          'Take it one hour at a time. Do not think about “forever” yet.',
+          'Drink water and rest when you can, even if you cannot sleep.',
+          'Say no to anything that feels like too much. There will be time.',
+        ],
+      },
+      { type: 'h2', text: 'The silence that comes later' },
+      {
+        type: 'p',
+        text: 'After the funeral, when others return to their lives, a heavier silence often settles in. This is frequently when grief hits hardest — and when support quietly disappears. If you are approaching that stage, reaching out for accompaniment can make all the difference.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why do I feel numb after a death instead of sad?',
+        a: 'Numbness is a common protective response to shock. Your mind shields you from a reality too overwhelming to absorb at once. It does not mean you did not love the person.',
+      },
+      {
+        q: 'What should I do in the first days after someone dies?',
+        a: 'Take it one hour at a time, accept practical help, rest and hydrate when you can, and say no to anything that feels like too much. There is no need to process everything immediately.',
+      },
+      {
+        q: 'When does grief hit hardest?',
+        a: 'For many people it is not the first days but the weeks after the funeral, when others return to normal life and the silence sets in. Support at that stage is especially valuable.',
+      },
+    ],
+    related: ['what-is-grief', 'how-long-does-grief-last'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'how-to-cope-with-losing-a-loved-one',
+    category: 'Grief',
+    title: 'How to Cope With Losing a Loved One: 12 Gentle Keys',
+    metaTitle: 'How to Cope With Losing a Loved One: 12 Keys | ColorMe',
+    description:
+      '12 practical, compassionate keys to move through grief and find moments of peace after losing someone you love — without rushing or forcing yourself to “move on.”',
+    keywords: [
+      'how to cope with losing a loved one',
+      'how to deal with grief',
+      'coping with loss',
+      'moving through grief',
+      'grief support tips',
+      'finding peace after loss',
+    ],
+    image: '/como-superar-perdida.webp',
+    imageAlt: 'How to cope with losing a loved one — gentle keys to move through grief',
+    datePublished: '2026-07-31',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'You do not “get over” losing someone you love — you slowly learn to live with the loss. There is no formula, but there are gentle practices that help you move through grief and find moments of peace along the way. Here are twelve.',
+      },
+      { type: 'h2', text: '12 keys to move through grief' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself feel it. Suppressed grief does not disappear; it waits.',
+          'Drop the timeline. There is no schedule and no deadline for healing.',
+          'Name your emotions — sadness, anger, guilt, relief — without judging them.',
+          'Talk about the person. Saying their name keeps the bond alive.',
+          'Create small rituals: a candle, a photo, a place, a date.',
+          'Move your body gently. Grief lives in the body, not just the mind.',
+          'Protect your energy around people who minimise your loss.',
+          'Accept help, and let others show up for you.',
+          'Express what words cannot — through writing, art, or music.',
+          'Rest without guilt. Grieving is exhausting work.',
+          'Mark the hard dates in your own way, with no pressure.',
+          'Ask for support when the weight is too much to carry alone.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Healing is not forgetting. It is learning to carry your love and your loss in the same heart.',
+      },
+      { type: 'h2', text: 'Be patient with the waves' },
+      {
+        type: 'p',
+        text: 'Grief comes in waves — calm days followed by sudden, sharp pain triggered by a song or a smell. This is not going backward. Over time the waves usually come less often, even if they never fully disappear.',
+      },
+      { type: 'h2', text: 'When to seek support' },
+      {
+        type: 'p',
+        text: 'If the grief feels frozen, all-consuming, or impossible to face alone, professional accompaniment can help. Reaching out is not a failure — it is one of the kindest things you can do for yourself.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do you cope with losing a loved one?',
+        a: 'Let yourself feel the grief without a timeline, name your emotions, keep the person’s memory alive through ritual and conversation, care for your body, and lean on support. Healing means learning to live with the loss, not erasing it.',
+      },
+      {
+        q: 'How long does it take to heal from losing someone?',
+        a: 'There is no set timeline. The sharpest pain usually softens over the first year or two, but missing the person can continue for life, especially on anniversaries and milestones.',
+      },
+      {
+        q: 'Is it normal to still feel fine some days and shattered others?',
+        a: 'Completely. Grief comes in waves. Calm moments interrupted by sudden pain are a normal part of the process, not a sign you are grieving wrong.',
+      },
+    ],
+    related: ['what-is-grief', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'disenfranchised-grief',
+    category: 'Grief',
+    title: 'Disenfranchised Grief: When Your Loss Isn’t Recognised',
+    metaTitle: 'Disenfranchised Grief: When Loss Isn’t Recognised | ColorMe',
+    description:
+      'Disenfranchised grief is real loss that society fails to validate. Learn what it is, common examples, and why your pain is legitimate even when no one else names it.',
+    keywords: [
+      'disenfranchised grief',
+      'unrecognised grief',
+      'invisible grief',
+      'grief no one understands',
+      'unacknowledged loss',
+      'types of grief',
+    ],
+    image: '/duelos-invisibles.jpeg',
+    imageAlt: 'Disenfranchised grief — when your loss is not recognised',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Some losses come with flowers, cards, and time off work. Others are met with silence — as if they do not count. When a loss is real but society fails to acknowledge it, we call it disenfranchised grief. And it can be one of the loneliest kinds of pain.',
+      },
+      { type: 'h2', text: 'What is disenfranchised grief?' },
+      {
+        type: 'p',
+        text: 'It is grief that is not openly recognised, publicly mourned, or socially supported. Because others do not see the loss as significant, the griever is left without the validation and comfort that usually surrounds mourning.',
+      },
+      { type: 'h2', text: 'Common examples' },
+      {
+        type: 'ul',
+        items: [
+          'The death of a pet, an ex-partner, or someone you were not “supposed” to grieve.',
+          'Miscarriage, infertility, or pregnancy loss.',
+          'The loss of a friendship, or an estranged family member.',
+          'Grief over a diagnosis, addiction, or dementia in a loved one.',
+          'Non-death losses: divorce, job loss, migration, or a changed body.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A loss does not need anyone’s permission to hurt. Your grief is valid, even if no one else names it.',
+      },
+      { type: 'h2', text: 'Why it hurts extra' },
+      {
+        type: 'p',
+        text: 'When people minimise your loss — “it was just a pet,” “at least you can try again” — you can feel ashamed of your own pain, and start to hide it. That isolation adds a second wound on top of the first.',
+      },
+      { type: 'h2', text: 'How to honour your grief' },
+      {
+        type: 'ul',
+        items: [
+          'Name your loss out loud and let it be real.',
+          'Find people or spaces that do understand it.',
+          'Create your own ritual of acknowledgement.',
+          'Consider support that takes your grief seriously.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is disenfranchised grief?',
+        a: 'It is grief over a loss that society does not openly recognise or support — such as a pet, a miscarriage, a friendship, or a divorce — leaving the griever without the usual validation and comfort.',
+      },
+      {
+        q: 'Is disenfranchised grief real grief?',
+        a: 'Absolutely. The loss is real and so is the pain. The only difference is a lack of social acknowledgement, which can make it harder, not less valid.',
+      },
+      {
+        q: 'How do you cope with grief no one understands?',
+        a: 'Name the loss, seek out people or spaces that validate it, create your own rituals of acknowledgement, and consider support that takes your grief seriously.',
+      },
+    ],
+    related: ['pet-loss-grief', 'miscarriage-and-pregnancy-loss'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'death-anniversary',
+    category: 'Grief',
+    title: 'The Anniversary of a Death: How to Live and Honour the Date',
+    metaTitle: 'The Anniversary of a Death: How to Honour the Date | ColorMe',
+    description:
+      'A death anniversary can reopen grief. Gentle ways to prepare for, live through, and honour the date that marks the absence of someone you love.',
+    keywords: [
+      'death anniversary',
+      'anniversary of a death',
+      'grief anniversary',
+      'honouring a death anniversary',
+      'coping with anniversary of loss',
+      'remembering a loved one',
+    ],
+    image: '/aniversario-muerte.jpeg',
+    imageAlt: 'The anniversary of a death — how to live and honour the date',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'As the anniversary of a death approaches, grief often rises again — sometimes before you consciously remember the date. Your body and heart keep their own calendar. This is normal, and there is no wrong way to move through it.',
+      },
+      { type: 'h2', text: 'The build-up can be the hardest part' },
+      {
+        type: 'p',
+        text: 'Many people find the days leading up to an anniversary heavier than the day itself. A quiet dread, more tears, trouble sleeping — this “anniversary reaction” is your grief remembering. Naming it can take away some of its power.',
+      },
+      { type: 'h2', text: 'Ways to honour the date' },
+      {
+        type: 'ul',
+        items: [
+          'Visit a meaningful place, or a place they loved.',
+          'Cook their favourite meal or play their music.',
+          'Light a candle, write them a letter, or make art in their memory.',
+          'Gather with people who loved them and share stories.',
+          'Or spend it quietly alone — there is no obligation to mark it a certain way.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You are not “still” grieving. You are loving someone who is no longer here — and love does not expire.',
+      },
+      { type: 'h2', text: 'Plan gently, and be flexible' },
+      {
+        type: 'p',
+        text: 'It can help to decide in advance roughly how you want to spend the day, and with whom — while giving yourself full permission to change your mind. Protect your energy, and let yourself feel whatever comes.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why is a death anniversary so hard?',
+        a: 'Anniversaries reactivate grief, often before you consciously recall the date. This “anniversary reaction” — sadness, dread, poor sleep — is a normal way your grief remembers the loss.',
+      },
+      {
+        q: 'How do you honour the anniversary of a death?',
+        a: 'Visit a meaningful place, cook their favourite meal, light a candle, write a letter, make art, gather with loved ones, or spend it quietly — whatever feels right to you.',
+      },
+      {
+        q: 'Is it normal to grieve harder before the anniversary than on the day?',
+        a: 'Yes. For many people the build-up is heavier than the day itself. Naming the anniversary reaction can help lessen its intensity.',
+      },
+    ],
+    related: ['difficult-anniversaries', 'how-long-does-grief-last'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'difficult-anniversaries',
+    category: 'Grief',
+    title: 'Difficult Anniversaries: Getting Through the Painful Dates',
+    metaTitle: 'Difficult Anniversaries: Getting Through Painful Dates | ColorMe',
+    description:
+      'Birthdays, holidays, and anniversaries can turn the calendar into a minefield after a loss. Gentle strategies for getting through the dates that hurt.',
+    keywords: [
+      'difficult anniversaries grief',
+      'painful dates after loss',
+      'grief and special dates',
+      'coping with holidays after death',
+      'grief triggers dates',
+      'hard dates grieving',
+    ],
+    image: '/aniversarios-dificiles.webp',
+    imageAlt: 'Difficult anniversaries — getting through the painful dates after a loss',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'After a loss, the calendar can become a minefield. Birthdays, holidays, wedding anniversaries, the change of seasons — dates that once meant joy can now bring a wave of pain. If certain days on the calendar feel heavy, you are not alone.',
+      },
+      { type: 'h2', text: 'Why dates carry so much weight' },
+      {
+        type: 'p',
+        text: 'Special dates are woven with memory and ritual. They highlight the absence, the empty chair, the tradition that now aches. Even your body can register a date before your mind does, bringing a heaviness you cannot quite explain.',
+      },
+      { type: 'h2', text: 'Strategies that help' },
+      {
+        type: 'ul',
+        items: [
+          'Anticipate the hard dates rather than being ambushed by them.',
+          'Decide in advance what you will do — and give yourself an exit plan.',
+          'Keep, change, or skip traditions freely. Nothing is obligatory.',
+          'Include your person: a toast, a candle, a story, an empty place set with love.',
+          'Lean on people who understand, and let them support you.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You cannot avoid the date, but you can decide how to meet it — gently, and on your own terms.',
+      },
+      { type: 'h2', text: 'When the dates stay overwhelming' },
+      {
+        type: 'p',
+        text: 'If difficult dates consistently pull you under with no relief, support can help you build tools to face them. You do not have to dread the calendar forever.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why are certain dates so painful after a loss?',
+        a: 'Special dates are tied to memory and ritual, so they highlight the absence and reopen grief. Your body may even react to a date before your mind consciously recalls it.',
+      },
+      {
+        q: 'How do you get through difficult anniversaries?',
+        a: 'Anticipate them, plan gently with an exit strategy, keep or skip traditions as you wish, include your person in a meaningful way, and lean on people who understand.',
+      },
+      {
+        q: 'Should I ignore the date or mark it?',
+        a: 'Either is valid. Some people find comfort in ritual and remembrance; others prefer a quiet, low-key day. Do what feels right for you, without pressure.',
+      },
+    ],
+    related: ['death-anniversary', 'grief-during-the-holidays'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'birthday-of-someone-who-died',
+    category: 'Grief',
+    title: 'The Birthday of Someone Who Died: How to Honour the Day',
+    metaTitle: 'The Birthday of Someone Who Died: How to Honour It | ColorMe',
+    description:
+      'The birthday of someone who died can be tender and painful. Gentle ways to remember, celebrate, and honour the birthday of a person you have lost.',
+    keywords: [
+      'birthday of someone who died',
+      'deceased loved one birthday',
+      'honouring a birthday after death',
+      'grief birthday',
+      'remembering someone on their birthday',
+      'celebrating a life',
+    ],
+    image: '/cumpleanos-persona-fallecida.jpeg',
+    imageAlt: 'The birthday of someone who died — how to honour the day',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A birthday is a day made for celebrating a life. When that person is gone, the date becomes bittersweet — a tender mix of love, memory, and ache. There is no wrong way to spend it, but many people find comfort in honouring the day rather than avoiding it.',
+      },
+      { type: 'h2', text: 'Turning the day toward celebration' },
+      {
+        type: 'p',
+        text: 'A birthday can be a chance to celebrate that the person existed, rather than only mourning that they are gone. Remembering the joy they brought can sit alongside the sadness — both are welcome.',
+      },
+      { type: 'h2', text: 'Ways to honour their birthday' },
+      {
+        type: 'ul',
+        items: [
+          'Bake or buy their favourite cake and share it with loved ones.',
+          'Do something they loved, or visit a place that reminds you of them.',
+          'Write them a birthday letter, or make art in their honour.',
+          'Do a small act of kindness in their name.',
+          'Gather to share favourite memories and stories about them.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Celebrating their birthday is a way of saying: your life mattered, and it still does.',
+      },
+      { type: 'h2', text: 'Let the feelings come' },
+      {
+        type: 'p',
+        text: 'You might laugh and cry in the same hour, and that is exactly right. Give yourself permission to feel it all. If the day feels too heavy to face alone, reach out to someone who understands.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do you honour the birthday of someone who died?',
+        a: 'Celebrate that they existed: share their favourite cake, do something they loved, write them a letter, make art, perform an act of kindness in their name, or gather to share memories.',
+      },
+      {
+        q: 'Is it okay to celebrate the birthday of someone who passed away?',
+        a: 'Yes. Celebrating their birthday honours their life and keeps their memory alive. Joy and grief can coexist on the same day.',
+      },
+      {
+        q: 'What if their birthday is too painful?',
+        a: 'That is valid too. You can keep the day quiet and low-key, and lean on someone who understands. There is no obligation to mark it a certain way.',
+      },
+    ],
+    related: ['death-anniversary', 'difficult-anniversaries'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
