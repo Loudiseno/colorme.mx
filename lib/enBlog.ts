@@ -2944,6 +2944,482 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['what-to-say-to-someone-grieving', 'how-long-does-grief-last'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'explaining-death-to-a-child',
+    category: 'Grief',
+    title: 'How to Explain Death to a Child',
+    metaTitle: 'How to Explain Death to a Child | ColorMe',
+    description:
+      'Talking to a child about death is one of the hardest conversations. How to explain death honestly, gently, and in age-appropriate ways that help a child grieve.',
+    keywords: [
+      'how to explain death to a child',
+      'talking to children about death',
+      'helping a child grieve',
+      'children and death',
+      'explaining loss to kids',
+      'child grief',
+    ],
+    image: '/explicar-muerte-nino.webp',
+    imageAlt: 'How to explain death to a child',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Explaining death to a child is one of the hardest conversations a parent can face. Our instinct is to protect them from pain — but children cope best with honesty, delivered gently and in words they can understand.',
+      },
+      { type: 'h2', text: 'Use clear, simple words' },
+      {
+        type: 'p',
+        text: 'Avoid euphemisms like “went to sleep,” “passed away,” or “we lost them” — young children take language literally and can become confused or frightened. It is kinder to use the real words: “died,” “death,” and to explain that the body stopped working and will not come back.',
+      },
+      { type: 'h2', text: 'Match the explanation to their age' },
+      {
+        type: 'ul',
+        items: [
+          'Young children need short, concrete, repeated explanations.',
+          'They may ask the same questions again and again — that is how they process.',
+          'Older children can handle more detail and may hide big feelings.',
+          'Reassure them the death was not their fault and that they are safe and loved.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Children do not need perfect words. They need honesty, reassurance, and permission to feel.',
+      },
+      { type: 'h2', text: 'Let them grieve their own way' },
+      {
+        type: 'p',
+        text: 'Children often grieve in bursts — crying one moment, playing the next. This is healthy. Invite them to express feelings through talking, drawing, or play, and let them see that the adults around them are sad too. Grief shared is grief made bearable.',
+      },
+      { type: 'h2', text: 'When to seek support' },
+      {
+        type: 'p',
+        text: 'If a child seems stuck, withdrawn, or overwhelmed, art therapy and child grief support offer safe, playful ways to process a loss they cannot yet put into words.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What words should I use to explain death to a child?',
+        a: 'Use clear, honest language like “died” and “death,” and explain that the body stopped working and will not come back. Avoid euphemisms like “went to sleep,” which can confuse or frighten young children.',
+      },
+      {
+        q: 'Why does my child keep asking the same questions about death?',
+        a: 'Repetition is how children process difficult information. Answering patiently each time helps them slowly understand and feel secure.',
+      },
+      {
+        q: 'Is it okay to cry in front of my child?',
+        a: 'Yes. Seeing adults grieve teaches children that sadness is normal and safe to express. It helps them feel less alone in their own feelings.',
+      },
+    ],
+    related: ['art-therapy-for-children', 'what-to-say-to-someone-grieving'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'why-we-avoid-talking-about-death',
+    category: 'Grief',
+    title: 'Why We Avoid Talking About Death',
+    metaTitle: 'Why We Avoid Talking About Death | ColorMe',
+    description:
+      'Death is the one destiny we all share, yet we avoid naming it. Why talking about death is so uncomfortable, and why opening the conversation can bring peace.',
+    keywords: [
+      'talking about death',
+      'why we fear death',
+      'death taboo',
+      'death anxiety',
+      'discussing mortality',
+      'accepting death',
+    ],
+    image: '/hablar-de-la-muerte.webp',
+    imageAlt: 'Why we avoid talking about death',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Death is the one destiny every human being shares — and yet it may be the hardest thing for us to talk about. We whisper around it, soften it with euphemisms, and change the subject. Why does the most universal experience make us so uncomfortable?',
+      },
+      { type: 'h2', text: 'Fear of the unknown' },
+      {
+        type: 'p',
+        text: 'Death is the ultimate uncertainty. We cannot control it, predict it, or fully understand it. Avoiding the topic can feel like a way to keep it at a distance — as if not naming it might keep it away.',
+      },
+      { type: 'h2', text: 'A culture that hides death' },
+      {
+        type: 'p',
+        text: 'Modern life keeps death out of sight — in hospitals and behind closed doors — so most of us grow up with little exposure to it. Without practice, the conversation feels foreign and frightening. Other cultures, which integrate death into daily life and ritual, often carry less of this dread.',
+      },
+      {
+        type: 'quote',
+        text: 'Talking about death does not bring it closer. It helps us live more fully while we are here.',
+      },
+      { type: 'h2', text: 'Why the conversation matters' },
+      {
+        type: 'p',
+        text: 'Naming death allows us to prepare, to say what matters, and to support one another in grief. Families who talk openly about death often navigate loss with more peace. Avoiding the subject does not protect us — it leaves us alone with our fear.',
+      },
+      { type: 'h2', text: 'Beginning gently' },
+      {
+        type: 'p',
+        text: 'You do not have to solve your relationship with mortality in one conversation. Small, honest openings — with loved ones, or with a professional — can slowly turn dread into acceptance.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why is it so hard to talk about death?',
+        a: 'Death represents the ultimate unknown, and modern culture keeps it hidden, so most people have little practice discussing it. Avoidance feels like a way to keep the fear at a distance.',
+      },
+      {
+        q: 'Does talking about death make it more frightening?',
+        a: 'Usually the opposite. Naming death openly tends to reduce anxiety, helps us prepare and connect, and allows us to live more fully.',
+      },
+      {
+        q: 'How do I start a conversation about death?',
+        a: 'Begin small and honestly with a trusted person or professional. You do not need to resolve everything at once — gentle, repeated openings ease the discomfort over time.',
+      },
+    ],
+    related: ['what-is-a-thanatologist', 'what-is-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'menopause-and-grief',
+    category: 'Grief',
+    title: 'Menopause and Grief: The Invisible Losses',
+    metaTitle: 'Menopause and Grief: The Invisible Losses | ColorMe',
+    description:
+      'Menopause is not only a physical transition — it carries real, often invisible grief. Understanding the losses of this stage and how to move through them with compassion.',
+    keywords: [
+      'menopause and grief',
+      'menopause emotional',
+      'grief during menopause',
+      'midlife loss',
+      'menopause identity',
+      'menopause mental health',
+    ],
+    image: '/menopausia-yduelo.jpeg',
+    imageAlt: 'Menopause and grief — the invisible losses',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Menopause is usually talked about in terms of hot flashes and hormones. But for many women it is also a profound emotional passage — one that carries real, often unspoken grief. Naming those losses is the first step to moving through them.',
+      },
+      { type: 'h2', text: 'The losses no one names' },
+      {
+        type: 'ul',
+        items: [
+          'The end of fertility, and the door it closes — even for those who did not want more children.',
+          'A changing body and a shifting sense of identity.',
+          'The passing of youth and how the world sees you.',
+          'A reckoning with time, ageing, and what comes next.',
+        ],
+      },
+      { type: 'h2', text: 'Grief tangled with hormones' },
+      {
+        type: 'p',
+        text: 'Hormonal changes can intensify emotions, making sadness and anxiety feel bigger and harder to place. The grief is real, and it is not “just hormones.” It deserves acknowledgement, not dismissal.',
+      },
+      {
+        type: 'quote',
+        text: 'This is not only an ending. It can also be a threshold — but you are allowed to grieve what you leave behind.',
+      },
+      { type: 'h2', text: 'Moving through with compassion' },
+      {
+        type: 'p',
+        text: 'Allow yourself to mourn the chapter that is closing while making space for the one beginning. Creative expression, connection with others in the same passage, and support can help you meet this transition with more gentleness.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can menopause cause grief?',
+        a: 'Yes. Beyond physical symptoms, menopause can bring grief over the end of fertility, a changing body, shifting identity, and the passing of youth. These losses are real and valid.',
+      },
+      {
+        q: 'Is emotional intensity during menopause normal?',
+        a: 'Very. Hormonal changes can amplify sadness and anxiety. The grief is genuine and deserves acknowledgement, not dismissal as “just hormones.”',
+      },
+      {
+        q: 'How can I cope with grief during menopause?',
+        a: 'Acknowledge the losses, allow yourself to mourn while embracing the new chapter, connect with others going through it, and seek support if the feelings become heavy.',
+      },
+    ],
+    related: ['grieving-your-body', 'fear-of-getting-older'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'farewell-rituals',
+    category: 'Grief',
+    title: 'Farewell Rituals: How to Create Your Own',
+    metaTitle: 'Farewell Rituals: How to Create Your Own | ColorMe',
+    description:
+      'Rituals help us grieve, remember, and say goodbye. How to create your own meaningful farewell ritual to honour someone or something you have lost.',
+    keywords: [
+      'farewell rituals',
+      'grief rituals',
+      'creating a ritual for the dead',
+      'memorial ritual ideas',
+      'saying goodbye ritual',
+      'honouring a loss',
+    ],
+    image: '/rituales-despedida.webp',
+    imageAlt: 'Farewell rituals — how to create your own',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Across every culture and century, humans have used rituals to grieve. A ritual gives shape to what feels shapeless, marks a moment, and helps the heart do what the mind cannot force. And you do not need a religion or a tradition to create one — you can make your own.',
+      },
+      { type: 'h2', text: 'Why rituals help us grieve' },
+      {
+        type: 'p',
+        text: 'Rituals turn abstract grief into something we can see, touch, and do. They give us a container for overwhelming emotion, a way to say goodbye, and a sense of meaning and agency when everything feels out of control.',
+      },
+      { type: 'h2', text: 'Ideas for your own farewell ritual' },
+      {
+        type: 'ul',
+        items: [
+          'Write a letter to the person and read it aloud, burn it, or keep it.',
+          'Light a candle on meaningful dates and sit quietly with your memories.',
+          'Plant something living — a tree or flowers — in their memory.',
+          'Create art, a memory box, or a small altar with photos and objects.',
+          'Release something symbolic: flowers on water, a note, a moment of silence.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A ritual does not have to make sense to anyone else. It only has to mean something to you.',
+      },
+      { type: 'h2', text: 'Make it yours' },
+      {
+        type: 'p',
+        text: 'The most powerful rituals are personal. Choose actions, objects, and words that reflect your bond and your beliefs. Repeat it, adapt it, or do it once — there is no right way, only what brings you comfort and connection.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why are rituals important in grief?',
+        a: 'Rituals give shape to overwhelming emotion, create a way to say goodbye, and restore a sense of meaning and agency when grief feels out of control.',
+      },
+      {
+        q: 'How do I create my own farewell ritual?',
+        a: 'Choose personal actions and objects — a letter, a candle, planting something, art, or releasing something symbolic — that reflect your bond and beliefs. It only needs to be meaningful to you.',
+      },
+      {
+        q: 'Do I need a religion to hold a grief ritual?',
+        a: 'No. Rituals can be entirely personal and secular. What matters is the meaning and comfort they bring you, not any particular tradition.',
+      },
+    ],
+    related: ['death-anniversary', 'journaling-for-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'supporting-someone-with-terminal-cancer',
+    category: 'Grief',
+    title: 'How to Support Someone With Terminal Cancer',
+    metaTitle: 'How to Support Someone With Terminal Cancer | ColorMe',
+    description:
+      'Being present for a loved one with terminal cancer is tender and hard. How to accompany them with honesty and love, and care for yourself through it.',
+    keywords: [
+      'supporting someone with terminal cancer',
+      'accompanying a dying loved one',
+      'terminal illness support',
+      'what to say to a dying person',
+      'end of life support',
+      'caring for a terminally ill loved one',
+    ],
+    image: '/como-acompanar-cancer-terminal.jpeg',
+    imageAlt: 'How to support someone with terminal cancer',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Accompanying a loved one through terminal cancer is one of the most tender and difficult things you will ever do. There are no perfect words and no way to fix it — but your steady presence is worth more than any solution.',
+      },
+      { type: 'h2', text: 'Presence over answers' },
+      {
+        type: 'p',
+        text: 'You do not need to say the right thing. Often the greatest gift is simply being there — sitting in silence, holding a hand, listening without trying to cheer them up or fix their fear. Let them lead the conversation.',
+      },
+      { type: 'h2', text: 'How to show up' },
+      {
+        type: 'ul',
+        items: [
+          'Follow their pace — talk about death, or about ordinary life, as they wish.',
+          'Keep treating them as a whole person, not only a patient.',
+          'Offer specific, practical help rather than “let me know if you need anything.”',
+          'Allow honest conversations, including fears and goodbyes.',
+          'Create small moments of normalcy, laughter, and beauty.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You cannot take away the fear or the illness. But you can make sure they do not face it alone.',
+      },
+      { type: 'h2', text: 'Care for yourself too' },
+      {
+        type: 'p',
+        text: 'Accompanying someone toward the end of life is exhausting and grief-filled. Your anticipatory grief is real. Rest, accept support, and give yourself permission to feel — you cannot pour from an empty cup.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What do you say to someone with terminal cancer?',
+        a: 'You do not need perfect words. Being present, listening, and following their lead matters more. Honest, gentle conversation — including about their fears — is often more comforting than forced positivity.',
+      },
+      {
+        q: 'How can I support a dying loved one?',
+        a: 'Offer steady presence, keep treating them as a whole person, provide specific practical help, allow honest conversations, and create small moments of normalcy and connection.',
+      },
+      {
+        q: 'How do I cope with my own grief while caring for them?',
+        a: 'Recognise your anticipatory grief as real, rest, accept help, and give yourself permission to feel. Supporting your own wellbeing helps you keep showing up.',
+      },
+    ],
+    related: ['anticipatory-grief', 'caregiver-burnout'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'talking-to-your-children-about-cancer',
+    category: 'Grief',
+    title: 'How to Talk to Your Children About Cancer',
+    metaTitle: 'How to Talk to Your Children About Cancer | ColorMe',
+    description:
+      'Telling your children about a cancer diagnosis is daunting. How to share the news honestly and age-appropriately, and help your kids cope with their feelings.',
+    keywords: [
+      'talking to children about cancer',
+      'telling kids about cancer diagnosis',
+      'explaining cancer to children',
+      'helping children cope with parent’s cancer',
+      'family cancer conversation',
+      'children and illness',
+    ],
+    image: '/como-hablar-con-hijos-sobre-cancer.jpeg',
+    imageAlt: 'How to talk to your children about cancer',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Telling your children that you — or someone they love — has cancer is a conversation no parent wants to have. But children usually sense when something is wrong, and honesty, told with love, helps them feel safe and included rather than frightened and alone.',
+      },
+      { type: 'h2', text: 'Be honest, in words they understand' },
+      {
+        type: 'p',
+        text: 'Use the real word, “cancer,” and simple, age-appropriate explanations. Children fill silence with imagination, often fearing something worse than the truth. Clear, calm honesty is more reassuring than secrecy.',
+      },
+      { type: 'h2', text: 'What children need to hear' },
+      {
+        type: 'ul',
+        items: [
+          'That it is not their fault, and cancer is not their doing.',
+          'That they cannot “catch” it, and they will always be cared for.',
+          'What might change day to day — treatments, tiredness, hospital visits.',
+          'That it is okay to feel scared, sad, or angry, and to ask questions.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Children can cope with hard truths far better than with frightening silence.',
+      },
+      { type: 'h2', text: 'Give feelings somewhere to go' },
+      {
+        type: 'p',
+        text: 'Invite your children to express their feelings through talking, drawing, or play. Keep checking in, since their questions and emotions will shift over time. If they are struggling, art therapy offers a gentle, safe outlet.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Should I tell my children about a cancer diagnosis?',
+        a: 'Yes. Children usually sense when something is wrong, and honest, age-appropriate information helps them feel safe and included rather than frightened by secrecy.',
+      },
+      {
+        q: 'What do children need to hear about cancer?',
+        a: 'That it is not their fault, they cannot catch it, they will be cared for, what may change day to day, and that all their feelings and questions are welcome.',
+      },
+      {
+        q: 'How can I help my child cope with a parent’s cancer?',
+        a: 'Keep communication open, invite feelings through talking, drawing, or play, check in regularly, and consider art therapy if they are struggling to process it.',
+      },
+    ],
+    related: ['explaining-death-to-a-child', 'art-therapy-for-children'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-over-a-lost-friendship',
+    category: 'Grief',
+    title: 'Grieving the Loss of a Friendship',
+    metaTitle: 'Grieving the Loss of a Friendship | ColorMe',
+    description:
+      'The end of a friendship can hurt as much as a breakup, yet it is rarely acknowledged. Why grief over a lost friendship is real, and how to move through it.',
+    keywords: [
+      'grief over lost friendship',
+      'losing a friend',
+      'friendship breakup',
+      'end of a friendship grief',
+      'friend estrangement',
+      'coping with losing a friend',
+    ],
+    image: '/duelo-amistad-perdida.jpeg',
+    imageAlt: 'Grieving the loss of a friendship',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'The end of a close friendship can hurt as deeply as a romantic breakup — sometimes more. Yet there are no cards, no rituals, and little acknowledgement for this kind of loss. If you are grieving a friendship, your pain is real and it deserves to be named.',
+      },
+      { type: 'h2', text: 'Why losing a friend hurts so much' },
+      {
+        type: 'p',
+        text: 'Friends are the family we choose. A close friend holds our history, our secrets, and our sense of belonging. When that bond ends — through conflict, drifting apart, betrayal, or life changes — we lose a witness to our life and a piece of our identity.',
+      },
+      { type: 'h2', text: 'A grief that is rarely acknowledged' },
+      {
+        type: 'p',
+        text: 'Because society does not treat friendship breakups as “real” losses, you may feel you have no right to grieve. That lack of validation can make it lonelier. But love and loss do not only live in romantic or family bonds.',
+      },
+      {
+        type: 'quote',
+        text: 'You are allowed to grieve a friendship as deeply as you loved it.',
+      },
+      { type: 'h2', text: 'Moving through the loss' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself grieve without minimising it.',
+          'Honour what the friendship gave you, even if it ended painfully.',
+          'Accept that some friendships are for a season, not forever.',
+          'Express the unsaid through writing or art, and lean on other connections.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve the end of a friendship?',
+        a: 'Yes. Losing a close friend can hurt as much as a romantic breakup. Friendships hold our history and belonging, so their loss brings real, valid grief.',
+      },
+      {
+        q: 'Why does losing a friend feel so lonely?',
+        a: 'Society rarely acknowledges friendship breakups as real losses, so the grief often goes unvalidated. That lack of recognition can make it especially isolating.',
+      },
+      {
+        q: 'How do I cope with losing a friendship?',
+        a: 'Allow yourself to grieve, honour what the friendship gave you, accept that some friendships are for a season, and express your feelings through writing, art, or other connections.',
+      },
+    ],
+    related: ['disenfranchised-grief', 'what-is-grief'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
