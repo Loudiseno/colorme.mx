@@ -2464,6 +2464,486 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['death-anniversary', 'difficult-anniversaries'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'fathers-day-grief',
+    category: 'Grief',
+    title: 'Father’s Day When Your Dad Is Gone',
+    metaTitle: 'Father’s Day When Your Dad Is Gone | ColorMe',
+    description:
+      'Father’s Day can ache when your dad has died, when the relationship was complicated, or when you longed for a father you never had. Gentle ways to get through the day.',
+    keywords: [
+      'father’s day grief',
+      'father’s day after dad died',
+      'grieving your father',
+      'father’s day without dad',
+      'complicated father relationship grief',
+      'coping father’s day',
+    ],
+    image: '/duelo-por-padre.jpeg',
+    imageAlt: 'Father’s Day when your dad is gone',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Father’s Day fills the world with cards, ads, and celebrations — and for many people, with a quiet ache. Whether your dad has died, the relationship was painful, or you longed for a father you never really had, this day can be complicated. All of it is valid.',
+      },
+      { type: 'h2', text: 'When your father has died' },
+      {
+        type: 'p',
+        text: 'If your dad is gone, Father’s Day can reopen the loss. You might miss his voice, his advice, or simply his presence. Honouring him — through a memory, a ritual, or a story — can hold both the love and the grief.',
+      },
+      { type: 'h2', text: 'When the relationship was complicated' },
+      {
+        type: 'p',
+        text: 'Not every father-child bond is simple. If yours was distant, painful, or absent, you may grieve not only the father you lost but the father you never had. That grief is real, even when it is tangled with anger or relief.',
+      },
+      {
+        type: 'quote',
+        text: 'You can grieve the dad you had and the dad you wished for. Both losses are allowed to live in you.',
+      },
+      { type: 'h2', text: 'Gentle ways through the day' },
+      {
+        type: 'ul',
+        items: [
+          'Give yourself permission to opt out of celebrations that hurt.',
+          'Honour him in your own way — his music, his food, a place he loved.',
+          'Write him a letter or make art for the things left unsaid.',
+          'Protect your energy and lean on people who understand.',
+        ],
+      },
+      { type: 'h2', text: 'You are not alone' },
+      {
+        type: 'p',
+        text: 'However you feel about your father, the ache of this day deserves compassion. If it feels too heavy, reaching out for support is a gift to yourself.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do I cope with Father’s Day after my dad died?',
+        a: 'Give yourself permission to skip painful celebrations, honour him in your own way, express what was left unsaid through a letter or art, and lean on people who understand.',
+      },
+      {
+        q: 'Is it normal to grieve a father I had a difficult relationship with?',
+        a: 'Yes. You may grieve both the father you lost and the one you never had. Complicated grief, tangled with anger or relief, is valid.',
+      },
+      {
+        q: 'What if I never had a father figure at all?',
+        a: 'Longing for a father you never had is a real grief. Father’s Day can highlight that absence, and your feelings deserve compassion and support.',
+      },
+    ],
+    related: ['grief-after-losing-a-parent', 'difficult-anniversaries'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'rainbow-baby',
+    category: 'Grief',
+    title: 'Rainbow Baby: The Light That Comes After the Storm',
+    metaTitle: 'Rainbow Baby: The Light After Loss | ColorMe',
+    description:
+      'A rainbow baby is a child born after pregnancy or infant loss. It does not erase the grief, but it brings hope. Navigating the tender mix of joy and mourning.',
+    keywords: [
+      'rainbow baby',
+      'rainbow baby meaning',
+      'pregnancy after loss',
+      'baby after miscarriage',
+      'grief and joy pregnancy',
+      'hope after pregnancy loss',
+    ],
+    image: '/bebe-arcoiris.jpg',
+    imageAlt: 'Rainbow baby — the light that comes after the storm',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A “rainbow baby” is a baby born after the loss of a previous pregnancy or infant — the rainbow that appears after the storm. This child does not erase the one that came before, but they bring light and hope into a place that knew deep grief.',
+      },
+      { type: 'h2', text: 'Joy and grief, side by side' },
+      {
+        type: 'p',
+        text: 'A pregnancy after loss is rarely simple joy. It often carries anxiety, fear, and a bittersweet awareness of the baby who is missing. You can be overjoyed and still grieving. Both feelings are true, and both are welcome.',
+      },
+      { type: 'h2', text: 'The anxiety no one warns you about' },
+      {
+        type: 'p',
+        text: 'Many parents describe holding their breath through a rainbow pregnancy, afraid to hope, bracing for bad news. Guarding your heart is a natural response to having been hurt. Be gentle with yourself.',
+      },
+      {
+        type: 'quote',
+        text: 'A rainbow baby does not replace the storm. It reminds us that light and love can return after the rain.',
+      },
+      { type: 'h2', text: 'Honouring both babies' },
+      {
+        type: 'ul',
+        items: [
+          'Acknowledge the baby you lost — they remain part of your story.',
+          'Let yourself feel joy without guilt toward the one who is gone.',
+          'Create a small ritual that includes both babies.',
+          'Seek support if anxiety or grief feels overwhelming.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is a rainbow baby?',
+        a: 'A rainbow baby is a baby born after the loss of a previous pregnancy, stillbirth, or infant death — symbolising the rainbow that appears after a storm.',
+      },
+      {
+        q: 'Is it normal to feel anxious during a pregnancy after loss?',
+        a: 'Very. After experiencing loss, fear and guarded hope are natural. Many parents feel they are holding their breath. Support can help ease that anxiety.',
+      },
+      {
+        q: 'Can you grieve and feel joy at the same time?',
+        a: 'Yes. A rainbow baby brings joy while the grief for the baby who was lost remains. Both feelings can coexist, and both are valid.',
+      },
+    ],
+    related: ['miscarriage-and-pregnancy-loss', 'grief-of-infertility'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'caregiver-burnout',
+    category: 'Grief',
+    title: 'Caregiver Burnout: When Caring for Others Consumes You',
+    metaTitle: 'Caregiver Burnout: When Caring Consumes You | ColorMe',
+    description:
+      'Caring for a sick or dying loved one can quietly empty you. Learn the signs of caregiver burnout, why it happens, and how to care for yourself while caring for others.',
+    keywords: [
+      'caregiver burnout',
+      'caregiver syndrome',
+      'caregiver exhaustion',
+      'caring for a sick loved one',
+      'caregiver stress',
+      'caregiver self-care',
+    ],
+    image: '/sindrome-cuidador.webp',
+    imageAlt: 'Caregiver burnout — when caring for others consumes you',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When you spend your days caring for someone who is ill, ageing, or dying, it is easy to disappear. You give and give until there is nothing left for yourself. Caregiver burnout is the physical and emotional exhaustion that follows — and it is far more common than people admit.',
+      },
+      { type: 'h2', text: 'Signs of caregiver burnout' },
+      {
+        type: 'ul',
+        items: [
+          'Constant exhaustion that rest does not fix.',
+          'Irritability, resentment, or feeling numb.',
+          'Neglecting your own health, meals, or sleep.',
+          'Anxiety, sadness, or a sense of hopelessness.',
+          'Guilt for wanting a break, or for your own feelings.',
+        ],
+      },
+      { type: 'h2', text: 'Why caregivers ignore their own needs' },
+      {
+        type: 'p',
+        text: 'Love, duty, and guilt keep caregivers going long past their limits. Many feel they have no right to rest while their loved one suffers. But an empty cup cannot pour. Your wellbeing is not a betrayal of theirs.',
+      },
+      {
+        type: 'quote',
+        text: 'You cannot care for someone from an empty place. Looking after yourself is part of looking after them.',
+      },
+      { type: 'h2', text: 'Gentle ways to protect yourself' },
+      {
+        type: 'ul',
+        items: [
+          'Accept help and share the load where you can.',
+          'Protect small pockets of rest without guilt.',
+          'Let yourself feel resentment or grief — it does not make you a bad caregiver.',
+          'Seek support before you reach breaking point.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is caregiver burnout?',
+        a: 'It is the physical, emotional, and mental exhaustion that comes from caring for a sick or dying loved one, often marked by fatigue, resentment, guilt, and neglecting your own needs.',
+      },
+      {
+        q: 'Is it normal to feel resentment as a caregiver?',
+        a: 'Yes. Resentment, frustration, and grief are common and do not make you a bad person. They are signs you are carrying too much without enough support.',
+      },
+      {
+        q: 'How do caregivers avoid burnout?',
+        a: 'Accept help, share the load, protect small moments of rest without guilt, allow your feelings, and seek support before reaching breaking point.',
+      },
+    ],
+    related: ['caregiver-grief', 'anticipatory-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'caregiver-grief',
+    category: 'Grief',
+    title: 'Caregiver Grief: The Silent Mourning of Those Who Care',
+    metaTitle: 'Caregiver Grief: The Silent Mourning of Carers | ColorMe',
+    description:
+      'Caregivers grieve too — often silently, and long before and after a death. Understanding the layered grief of caring for a loved one through illness and loss.',
+    keywords: [
+      'caregiver grief',
+      'grief after caregiving ends',
+      'caregiver loss',
+      'grieving as a carer',
+      'grief after caring for someone',
+      'caregiver mourning',
+    ],
+    image: '/duelo-del-cuidador.jpeg',
+    imageAlt: 'Caregiver grief — the silent mourning of those who care',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Caregivers carry a grief that few people see. They mourn while their loved one is still alive, and again — differently — when they are gone. This layered, often silent grief deserves to be named and honoured.',
+      },
+      { type: 'h2', text: 'Grief that starts before the death' },
+      {
+        type: 'p',
+        text: 'Watching someone you love decline is its own grief. You mourn the person they used to be, the future you imagined, and the relationship as it once was — all while still caring for them each day. This is anticipatory grief woven into daily life.',
+      },
+      { type: 'h2', text: 'The grief after caregiving ends' },
+      {
+        type: 'p',
+        text: 'When a loved one dies, caregivers often feel not only sorrow but a strange emptiness. The role that filled every hour is suddenly gone, along with the person. Relief, guilt about that relief, and a loss of identity can all follow.',
+      },
+      {
+        type: 'quote',
+        text: 'You did not just lose a person. You lost a role, a routine, and a purpose that shaped your days.',
+      },
+      { type: 'h2', text: 'Being gentle with yourself' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself grieve both the person and the caregiving role.',
+          'Allow relief without judging yourself for it.',
+          'Rebuild slowly — you may need to rediscover who you are now.',
+          'Seek support; caregiver grief is real and can be heavy.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Do caregivers grieve differently?',
+        a: 'Yes. Caregivers often grieve twice — first while watching a loved one decline, and again after the death, when the caregiving role and its purpose also disappear.',
+      },
+      {
+        q: 'Why do I feel empty after caregiving ends?',
+        a: 'Caregiving fills your time, identity, and sense of purpose. When it ends, losing that role alongside the person can leave a profound emptiness. This is a normal part of caregiver grief.',
+      },
+      {
+        q: 'Is relief after a loved one dies normal for caregivers?',
+        a: 'Completely. Relief that their suffering — and the exhausting caregiving — has ended is human and common. It does not mean you loved them any less.',
+      },
+    ],
+    related: ['caregiver-burnout', 'anticipatory-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-after-divorce',
+    category: 'Grief',
+    title: 'Grief After Divorce: Mourning the End of a Marriage',
+    metaTitle: 'Grief After Divorce: Mourning a Marriage | ColorMe',
+    description:
+      'Divorce is a death of sorts — the end of a shared life and an imagined future. Why grief after divorce is real, and how to move through it toward healing.',
+    keywords: [
+      'grief after divorce',
+      'divorce grief',
+      'mourning a marriage',
+      'coping with divorce emotionally',
+      'end of relationship grief',
+      'healing after divorce',
+    ],
+    image: '/duelo-por-divorcio.jpeg',
+    imageAlt: 'Grief after divorce — mourning the end of a marriage',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When a marriage ends, something dies — even if both people are still alive. Divorce is a genuine loss: of a partner, a shared daily life, and the future you had planned together. The grief that follows is real, even when the divorce is the right decision.',
+      },
+      { type: 'h2', text: 'Why divorce brings grief' },
+      {
+        type: 'p',
+        text: 'You are not only losing a relationship. You may be grieving your identity as part of a couple, your home, your routines, mutual friends, and the family life you imagined. Divorce touches nearly every part of your world at once.',
+      },
+      { type: 'h2', text: 'The complicated feelings' },
+      {
+        type: 'ul',
+        items: [
+          'Sadness and loneliness, even if you wanted the divorce.',
+          'Relief, and then guilt about feeling relieved.',
+          'Anger, betrayal, or failure.',
+          'Fear about the future and starting over.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You can be certain the marriage needed to end and still grieve everything it was — and everything it was supposed to be.',
+      },
+      { type: 'h2', text: 'Moving through it' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve without rushing to “be fine.” Lean on support, avoid major decisions while the pain is raw, and give yourself time to rebuild a new sense of self. Creative expression can help hold feelings that are hard to say aloud.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve after a divorce?',
+        a: 'Yes. Divorce is a real loss — of a partner, a shared life, and an imagined future — so grief is a normal response, even when the divorce is the right choice.',
+      },
+      {
+        q: 'Why do I feel sad if I wanted the divorce?',
+        a: 'You can want a marriage to end and still grieve what it was and what you hoped it would be. Relief and sadness often coexist.',
+      },
+      {
+        q: 'How long does grief after divorce last?',
+        a: 'There is no fixed timeline. The intensity usually eases over months as you rebuild, but healing happens at its own pace. Support can help.',
+      },
+    ],
+    related: ['what-is-grief', 'coping-with-loss-of-a-spouse'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-after-a-diagnosis',
+    category: 'Grief',
+    title: 'Grief After a Diagnosis: When Your Body Changes the Rules',
+    metaTitle: 'Grief After a Diagnosis: When the Body Changes | ColorMe',
+    description:
+      'A serious diagnosis can bring real grief — for your health, your independence, and the future you planned. How to navigate the grief that follows illness.',
+    keywords: [
+      'grief after diagnosis',
+      'grief chronic illness',
+      'illness grief',
+      'coping with a diagnosis',
+      'grieving your health',
+      'emotional impact of illness',
+    ],
+    image: '/hombre-en-duelo.webp',
+    imageAlt: 'Grief after a diagnosis — when your body changes the rules',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A serious diagnosis does not only change your body — it can shatter the future you assumed you had. The grief that follows is real, even though no one has died. You are mourning your health, your certainty, and the life you thought lay ahead.',
+      },
+      { type: 'h2', text: 'What you might be grieving' },
+      {
+        type: 'ul',
+        items: [
+          'The healthy body and independence you had.',
+          'Plans and dreams that now feel uncertain.',
+          'Your sense of identity beyond being a “patient.”',
+          'A feeling of safety and control over your own future.',
+        ],
+      },
+      { type: 'h2', text: 'The waves of illness grief' },
+      {
+        type: 'p',
+        text: 'Grief after a diagnosis often comes in waves — shock, denial, anger, fear, and sadness that resurface with each new change, test, or treatment. This is a normal response to an ongoing loss, not a lack of “positivity.”',
+      },
+      {
+        type: 'quote',
+        text: 'You are allowed to grieve your health and still fight for it. Hope and grief can live together.',
+      },
+      { type: 'h2', text: 'Caring for the emotional weight' },
+      {
+        type: 'p',
+        text: 'Tending to your emotional health is part of your care, not a distraction from it. Talking, writing, or making art about what you are living through can ease the burden. And you do not have to face it alone.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can you grieve a diagnosis even if no one died?',
+        a: 'Yes. A serious diagnosis brings real grief — for your health, independence, and the future you imagined. This kind of non-death loss is valid and common.',
+      },
+      {
+        q: 'Why does grief keep returning with a chronic illness?',
+        a: 'Illness brings ongoing losses, so grief resurfaces with each new change, test, or limitation. This wave-like pattern is a normal response, not weakness.',
+      },
+      {
+        q: 'How can I cope emotionally with a diagnosis?',
+        a: 'Allow yourself to grieve, express your feelings through talking, writing, or art, and seek support. Emotional care is part of your overall healing.',
+      },
+    ],
+    related: ['art-therapy-for-cancer', 'grieving-your-body'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-and-social-media',
+    category: 'Grief',
+    title: 'Grief and Social Media: Mourning in a Connected World',
+    metaTitle: 'Grief and Social Media: Mourning Online | ColorMe',
+    description:
+      'Social media has changed how we grieve — from memorial profiles to painful reminders. How to navigate loss, comparison, and digital ghosts in a connected world.',
+    keywords: [
+      'grief and social media',
+      'grieving online',
+      'social media after death',
+      'digital grief',
+      'memorial profiles',
+      'grief comparison social media',
+    ],
+    image: '/duelo-en-redes.jpeg',
+    imageAlt: 'Grief and social media — mourning in a connected world',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Social media has quietly reshaped how we grieve. A loved one’s profile lives on, memories resurface without warning, and the whole world seems to mourn — or move on — in public. This new landscape can bring comfort and pain in equal measure.',
+      },
+      { type: 'h2', text: 'When the feed reopens the wound' },
+      {
+        type: 'p',
+        text: 'A “memory” notification, a birthday reminder for someone who died, or an old photo appearing unexpectedly can ambush you with grief. These digital echoes can feel like both a gift and a fresh cut.',
+      },
+      { type: 'h2', text: 'The pressure of public grief' },
+      {
+        type: 'p',
+        text: 'Social media can make grief feel like a performance — how much to post, when it is “too soon” to smile again, comparing your mourning to others’. Remember: your grief is yours, and it owes no one a public timeline.',
+      },
+      {
+        type: 'quote',
+        text: 'You do not have to grieve online, or on anyone else’s schedule. Private grief is just as real.',
+      },
+      { type: 'h2', text: 'Protecting yourself online' },
+      {
+        type: 'ul',
+        items: [
+          'Adjust memory and notification settings if they hurt.',
+          'Mute or take breaks from feeds that deepen comparison.',
+          'Use memorial features intentionally, if they bring comfort.',
+          'Curate what you see toward what genuinely helps you heal.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'How does social media affect grief?',
+        a: 'It can both comfort and hurt — memorial profiles and shared memories keep a bond alive, while unexpected reminders and public pressure can reopen the wound or fuel comparison.',
+      },
+      {
+        q: 'Should I post about my grief online?',
+        a: 'Only if it helps you. There is no obligation to grieve publicly or on any timeline. Private grief is just as valid as public mourning.',
+      },
+      {
+        q: 'How do I handle painful reminders on social media?',
+        a: 'Adjust memory and notification settings, mute or take breaks from painful feeds, and curate your online space toward what genuinely supports your healing.',
+      },
+    ],
+    related: ['what-to-say-to-someone-grieving', 'how-long-does-grief-last'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
