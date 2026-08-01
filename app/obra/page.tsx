@@ -35,41 +35,30 @@ const clientes = [
 ]
 
 const exposicionesIndividuales = [
-  { title: 'Luces de existencia', place: 'Galería Aguafuerte, CDMX', date: 'Mayo 2016' },
-  { title: 'Reinterpretando', place: 'Restaurante Pizza Local, CDMX', date: 'Mayo – junio 2017' },
-  { title: 'Memorias', place: 'Cafetería Healthy Nutrition, CDMX', date: 'Mayo 2018' },
+  { title: 'Luces de existencia', place: 'Galería Aguafuerte, CDMX', date: '2016' },
+  { title: 'Reinterpretando', place: 'Restaurante Pizza Local, CDMX', date: '2017' },
+  { title: 'Memorias', place: 'Cafetería Healthy Nutrition, CDMX', date: '2018' },
 ]
 
 const exposicionesColectivas = [
-  { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, CDMX', date: 'Enero – junio 2015' },
-  { title: 'Amén sin tilde', place: 'Galería Fotográfica, CDMX', date: 'Marzo 2016' },
-  { title: 'Expo Subasta', place: 'Galería Aguafuerte, CDMX', date: 'Mayo 2016' },
-  { title: 'El Arca', place: 'Rio de Janeiro 9, CDMX', date: 'Octubre 2016' },
-  { title: 'El Arca', place: 'Plaza Tudor 275-7, CDMX', date: 'Diciembre 2016' },
-  { title: 'El Arca', place: 'Restaurante Paris 16, CDMX', date: 'Marzo – mayo 2017' },
-  { title: 'Habit-Art', place: 'Corredor Cultural Roma-Condesa, CDMX', date: 'Mayo 2017' },
-  { title: 'Homenaje a José Luis Ruissó', place: 'Restaurante Paris 16, CDMX', date: 'Julio 2017' },
+  { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, CDMX', date: '2015' },
+  { title: 'Amén sin tilde', place: 'Galería Fotográfica, CDMX', date: '2016' },
+  { title: 'Expo Subasta', place: 'Galería Aguafuerte, CDMX', date: '2016' },
+  { title: 'El Arca', place: 'Rio de Janeiro 9, CDMX', date: '2016' },
+  { title: 'El Arca', place: 'Plaza Tudor 275-7, CDMX', date: '2016' },
+  { title: 'El Arca', place: 'Restaurante Paris 16, CDMX', date: '2017' },
+  { title: 'Habit-Art', place: 'Corredor Cultural Roma-Condesa, CDMX', date: '2017' },
+  { title: 'Homenaje a José Luis Ruissó', place: 'Restaurante Paris 16, CDMX', date: '2017' },
   {
     title: 'Déjame ayudARTE',
     place: 'Obras con causa para fundación COPARMEX, CDMX',
-    date: 'Octubre 2017',
+    date: '2017',
     note: 'Reconstrucción de viviendas en México por el sismo',
   },
-  { title: 'Se la echó al plato', place: 'FloraLounge, CDMX', date: 'Abril 2018' },
+  { title: 'Se la echó al plato', place: 'FloraLounge, CDMX', date: '2018' },
 ]
 
 const reconocimientos = [
-  {
-    title: 'Pañuelos faciales Kleenex Bote',
-    place: 'Diseño seleccionado para Kimberly-Clark de México, CDMX',
-    date: '2008',
-  },
-  {
-    title: 'Cuadernos Estrella',
-    place: 'Talleres Estrella S.A. de C.V., CDMX',
-    date: '2008',
-    note: 'Diseño de línea y estrategia de lanzamiento al mercado',
-  },
   {
     title: 'Captura el espíritu de la celebración',
     place: 'Primer lugar en fotografía de paisaje y arquitectura · Olympus y Palacio de Hierro, CDMX',
