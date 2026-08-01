@@ -3420,6 +3420,481 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['disenfranchised-grief', 'what-is-grief'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'migration-grief',
+    category: 'Grief',
+    title: 'Migration Grief: When You Leave Your Country Behind',
+    metaTitle: 'Migration Grief: When You Leave Your Country | ColorMe',
+    description:
+      'Leaving your country brings a grief few people name — for home, language, belonging, and the self you left behind. Understanding and moving through migration grief.',
+    keywords: [
+      'migration grief',
+      'immigrant grief',
+      'homesickness',
+      'grief leaving your country',
+      'cultural grief',
+      'adapting to a new country',
+    ],
+    image: '/duelo-migratorio.jpeg',
+    imageAlt: 'Migration grief — when you leave your country behind',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Leaving your country — whether by choice or necessity — sets off a grief that few people name. You may have gained new opportunities, and still mourn everything you left behind: home, language, belonging, and a version of yourself that only existed there.',
+      },
+      { type: 'h2', text: 'The many losses of migrating' },
+      {
+        type: 'ul',
+        items: [
+          'Family, friends, and the daily closeness of loved ones.',
+          'Your native language and the ease of being fully understood.',
+          'Familiar streets, food, smells, and a sense of belonging.',
+          'Status, profession, or identity that did not travel with you.',
+          'The self you were “at home,” now reshaped by a new place.',
+        ],
+      },
+      { type: 'h2', text: 'Grief tangled with gratitude' },
+      {
+        type: 'p',
+        text: 'Migration grief is complicated because it often sits beside gratitude and hope. You can be thankful for a new life and still ache for the old one. Both are true, and neither cancels the other.',
+      },
+      {
+        type: 'quote',
+        text: 'You can build a new home and still grieve the one you left. Belonging in two places sometimes means grieving in two places.',
+      },
+      { type: 'h2', text: 'Moving through it' },
+      {
+        type: 'p',
+        text: 'Honour what you left behind rather than pushing it away. Keep meaningful traditions, connect with others who understand, and give yourself time to adapt. Creative expression can help hold the complex feelings of living between two worlds.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is migration grief?',
+        a: 'It is the grief that comes from leaving your country — mourning home, language, belonging, relationships, and the identity you had there, even when the move brings new opportunities.',
+      },
+      {
+        q: 'Is it normal to feel sad after moving abroad even if life is better?',
+        a: 'Yes. Gratitude and grief can coexist. You can be thankful for a new life while still aching for what you left behind.',
+      },
+      {
+        q: 'How do I cope with homesickness and migration grief?',
+        a: 'Honour what you left behind, keep meaningful traditions, connect with others who understand, allow time to adapt, and express your feelings creatively or with support.',
+      },
+    ],
+    related: ['what-is-grief', 'disenfranchised-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grieving-your-body',
+    category: 'Grief',
+    title: 'Grieving Your Body: When It’s No Longer the Same',
+    metaTitle: 'Grieving Your Body: When It Changes | ColorMe',
+    description:
+      'Illness, ageing, injury, or change can leave you grieving the body you used to have. How to process the loss and make peace with a body that has changed.',
+    keywords: [
+      'grieving your body',
+      'body grief',
+      'grief chronic illness body',
+      'body image after illness',
+      'making peace with your body',
+      'body changes grief',
+    ],
+    image: '/duelo-por-tu-cuerpo.jpeg',
+    imageAlt: 'Grieving your body — when it is no longer the same',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When your body changes — through illness, injury, ageing, surgery, or time — you can find yourself grieving the body you used to have. This grief is real, even though no one has died. You are mourning a version of yourself, and the ease you once took for granted.',
+      },
+      { type: 'h2', text: 'A loss that lives in the mirror' },
+      {
+        type: 'p',
+        text: 'Unlike other losses, this one is always with you. Every reflection, every limitation, every reminder of what your body could once do can reopen the grief. It is a loss you carry, not one you leave behind.',
+      },
+      { type: 'h2', text: 'What you might grieve' },
+      {
+        type: 'ul',
+        items: [
+          'Abilities, strength, or energy you have lost.',
+          'How you used to look, and how the world responded to you.',
+          'Freedom, independence, or spontaneity.',
+          'The trust and safety you once felt in your own body.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Making peace with a changed body does not mean loving every part of it. It means learning to live in it with less war.',
+      },
+      { type: 'h2', text: 'Toward acceptance' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve without shame or forced positivity. Slowly, you can build a new relationship with your body — one based on care rather than comparison. Creative expression can help you process what is hard to say and find gratitude alongside the grief.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can you grieve your own body?',
+        a: 'Yes. Illness, ageing, injury, or change can bring real grief for the body and abilities you used to have. Mourning a changed body is valid, even though no one has died.',
+      },
+      {
+        q: 'Why does body grief keep coming back?',
+        a: 'Unlike other losses, your body is always with you. Each reflection or limitation can reopen the grief, making it an ongoing rather than one-time experience.',
+      },
+      {
+        q: 'How do I make peace with a changed body?',
+        a: 'Grieve without shame, avoid forced positivity, and slowly build a relationship based on care rather than comparison. Creative expression and support can help.',
+      },
+    ],
+    related: ['grief-after-a-diagnosis', 'menopause-and-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'siblings-of-sick-children',
+    category: 'Grief',
+    title: 'The Siblings Who Don’t Get Sick: A Hidden Grief',
+    metaTitle: 'Siblings of Sick Children: A Hidden Grief | ColorMe',
+    description:
+      'When one child is seriously ill, their healthy siblings carry an invisible grief. How to recognise and support the quiet needs of the brothers and sisters.',
+    keywords: [
+      'siblings of sick children',
+      'healthy sibling grief',
+      'siblings of chronically ill children',
+      'invisible grief children',
+      'supporting siblings',
+      'family illness siblings',
+    ],
+    image: '/hermanos-de-ninos-enfermos.jpeg',
+    imageAlt: 'The siblings who do not get sick — a hidden grief',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When a child is seriously ill, all eyes turn — understandably — to them. But their healthy brothers and sisters carry a quiet, often invisible grief of their own. They love their sibling, worry about them, and at the same time miss the attention, normalcy, and family they used to have.',
+      },
+      { type: 'h2', text: 'The grief no one sees' },
+      {
+        type: 'p',
+        text: 'Healthy siblings often become “the easy one” — the child who must not add to the family’s burden. They may feel guilty for wanting attention, scared about their sibling, and lonely in a home organised around illness. These feelings rarely get spoken aloud.',
+      },
+      { type: 'h2', text: 'What they may be feeling' },
+      {
+        type: 'ul',
+        items: [
+          'Guilt for being healthy, or for their own needs.',
+          'Fear about their sibling, and about the future.',
+          'Jealousy of the attention their sibling receives — followed by more guilt.',
+          'Loneliness, and a sense that their feelings do not matter.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A child does not have to be sick to be struggling. The healthy sibling needs care too.',
+      },
+      { type: 'h2', text: 'How to support them' },
+      {
+        type: 'ul',
+        items: [
+          'Name their feelings and reassure them all emotions are okay.',
+          'Carve out one-on-one time, however small.',
+          'Keep them informed in age-appropriate ways.',
+          'Offer creative outlets — art and play — to express what they cannot say.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Do siblings of sick children experience grief?',
+        a: 'Yes. Healthy siblings often carry an invisible grief — worry, guilt, jealousy, and loneliness — as family life reorganises around their ill brother or sister.',
+      },
+      {
+        q: 'Why do healthy siblings feel guilty?',
+        a: 'They may feel guilty for being well, for wanting attention, or for feeling jealous. They often try to be “no trouble,” hiding their own needs.',
+      },
+      {
+        q: 'How can I support a healthy sibling?',
+        a: 'Acknowledge their feelings, give them one-on-one time, keep them informed age-appropriately, and offer creative outlets like art and play to express what they cannot put into words.',
+      },
+    ],
+    related: ['art-therapy-for-children', 'explaining-death-to-a-child'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-after-job-loss',
+    category: 'Grief',
+    title: 'The Grief of Losing Your Job: More Than a Layoff',
+    metaTitle: 'The Grief of Losing Your Job | ColorMe',
+    description:
+      'Losing a job means losing identity, structure, and purpose — not just income. Why job loss brings real grief, and how to move through it with compassion.',
+    keywords: [
+      'grief job loss',
+      'losing your job grief',
+      'unemployment emotional impact',
+      'layoff grief',
+      'job loss identity',
+      'coping with losing a job',
+    ],
+    image: '/duelo-por-perdida-empleo.jpeg',
+    imageAlt: 'The grief of losing your job — more than a layoff',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Losing a job is often treated as a practical problem — update the résumé, start applying. But beneath the logistics is a genuine grief. Work gives us identity, structure, purpose, and belonging. When it disappears, so does a large part of how we understand ourselves.',
+      },
+      { type: 'h2', text: 'What you are really losing' },
+      {
+        type: 'ul',
+        items: [
+          'Identity — the answer to “what do you do?”',
+          'Daily structure and a sense of purpose.',
+          'Community and belonging with colleagues.',
+          'Security, and confidence in the future.',
+        ],
+      },
+      { type: 'h2', text: 'The feelings that come with it' },
+      {
+        type: 'p',
+        text: 'Shock, shame, anger, anxiety, and a blow to self-worth are all common. You may feel you have lost not just a role but a part of who you are. This is grief, and it deserves the same compassion as any other loss.',
+      },
+      {
+        type: 'quote',
+        text: 'You lost a job, not your worth. Your value was never only what you produced.',
+      },
+      { type: 'h2', text: 'Moving forward gently' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve before rushing into the next thing. Keep some structure in your days, lean on support, and separate your self-worth from your job title. In time, this loss can also become an opening.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve after losing a job?',
+        a: 'Yes. A job provides identity, structure, purpose, and belonging. Losing it brings real grief that goes far beyond the loss of income.',
+      },
+      {
+        q: 'Why does losing a job hurt my sense of self?',
+        a: 'Work is deeply tied to identity and status. When it ends, it can feel like losing part of who you are, which is why job loss can shake your self-worth.',
+      },
+      {
+        q: 'How do I cope with the grief of unemployment?',
+        a: 'Let yourself grieve before rushing ahead, keep some daily structure, lean on support, and remember your worth is not defined by your job title.',
+      },
+    ],
+    related: ['what-is-grief', 'grief-after-divorce'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-of-motherhood',
+    category: 'Grief',
+    title: 'The Grief of Motherhood: The Losses No One Names',
+    metaTitle: 'The Grief of Motherhood: Unnamed Losses | ColorMe',
+    description:
+      'Motherhood brings joy — and quiet, unspoken losses. The grief of the self, freedom, and identity that can accompany becoming a mother, and why it is valid.',
+    keywords: [
+      'grief of motherhood',
+      'matrescence',
+      'losing yourself in motherhood',
+      'motherhood identity loss',
+      'new mother grief',
+      'maternal ambivalence',
+    ],
+    image: '/duelo-maternidad.jpeg',
+    imageAlt: 'The grief of motherhood — the losses no one names',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Motherhood is celebrated as pure joy — and it is profound. But alongside the love, many mothers carry a quiet grief that no one warned them about: for the self, the freedom, and the life they had before. Naming this grief does not make you a bad mother. It makes you honest.',
+      },
+      { type: 'h2', text: 'The self that changes forever' },
+      {
+        type: 'p',
+        text: 'Becoming a mother — sometimes called matrescence — transforms your identity as profoundly as adolescence. You may grieve the woman you were, your spontaneity, your body, your career rhythm, and the relationship you had with your partner before.',
+      },
+      { type: 'h2', text: 'The losses no one names' },
+      {
+        type: 'ul',
+        items: [
+          'Freedom, sleep, and time that is truly your own.',
+          'A previous sense of identity and independence.',
+          'Career momentum or ambitions on hold.',
+          'The couple you were before becoming parents.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You can love your child with your whole heart and still grieve the life you had before. Both are true.',
+      },
+      { type: 'h2', text: 'Holding love and grief together' },
+      {
+        type: 'p',
+        text: 'This grief does not compete with your love — it lives alongside it. Allow yourself to feel it without guilt, connect with other mothers who understand, and seek support. Making space for the loss helps you show up more fully for the joy.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve after becoming a mother?',
+        a: 'Yes. Motherhood transforms your identity and brings real losses — of freedom, self, and your former life — alongside the love. This grief is common and valid.',
+      },
+      {
+        q: 'Does grieving my old life mean I regret having children?',
+        a: 'No. You can deeply love your child and still grieve the life and self you had before. Love and grief coexist; one does not cancel the other.',
+      },
+      {
+        q: 'What is matrescence?',
+        a: 'Matrescence is the profound identity transition of becoming a mother — as significant as adolescence — which can carry both joy and grief.',
+      },
+    ],
+    related: ['grief-of-infertility', 'grieving-your-body'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-of-infertility',
+    category: 'Grief',
+    title: 'When Parenthood Doesn’t Come: The Grief of Infertility',
+    metaTitle: 'The Grief of Infertility & Childlessness | ColorMe',
+    description:
+      'Infertility brings a grief with no funeral and no condolences, but very real pain. Understanding the loss of the parenthood that never came, and how to cope.',
+    keywords: [
+      'grief of infertility',
+      'infertility grief',
+      'childlessness grief',
+      'coping with infertility',
+      'grief no children',
+      'involuntary childlessness',
+    ],
+    image: '/duelo-invisible-infertilidad.jpeg',
+    imageAlt: 'When parenthood does not come — the grief of infertility',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Infertility carries a grief with no funeral, no flowers, and no condolences — but the pain is very real. It is the grief of a child who was hoped for and never came, of a future imagined and slowly let go. This loss deserves to be named.',
+      },
+      { type: 'h2', text: 'Grieving something that never was' },
+      {
+        type: 'p',
+        text: 'How do you mourn someone who never existed? You grieve the dream, the imagined faces, the role of parent you longed to hold. It is an ambiguous loss — ongoing, without a clear ending — which can make it especially hard to move through.',
+      },
+      { type: 'h2', text: 'The layers of infertility grief' },
+      {
+        type: 'ul',
+        items: [
+          'Monthly cycles of hope and loss.',
+          'Painful reminders — pregnancy announcements, baby showers, questions.',
+          'Grief over your body, and a sense of betrayal by it.',
+          'Isolation, because so few people acknowledge this loss.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You are allowed to grieve the child who never came. Their absence is a real presence in your life.',
+      },
+      { type: 'h2', text: 'Caring for yourself through it' },
+      {
+        type: 'p',
+        text: 'Let your grief be real, protect yourself around painful reminders, and connect with others who understand this specific pain. Creative expression and support can help you carry a loss the world so often overlooks.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is infertility a form of grief?',
+        a: 'Yes. Infertility brings real grief — for the child who was hoped for, the imagined future, and the role of parent. It is an ambiguous, ongoing loss that deserves acknowledgement.',
+      },
+      {
+        q: 'Why is infertility grief so hard?',
+        a: 'It lacks a clear ending or social recognition, involves repeated cycles of hope and loss, and is surrounded by painful reminders, which can make it isolating.',
+      },
+      {
+        q: 'How do I cope with the grief of not being able to have children?',
+        a: 'Allow the grief to be real, protect yourself around painful triggers, connect with others who understand, and seek support or creative outlets to process the loss.',
+      },
+    ],
+    related: ['miscarriage-and-pregnancy-loss', 'disenfranchised-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'fear-of-getting-older',
+    category: 'Emotions',
+    title: 'The Fear of Getting Older: When Birthdays Hurt',
+    metaTitle: 'The Fear of Getting Older: When Birthdays Hurt | ColorMe',
+    description:
+      'For some, birthdays bring anxiety instead of joy. Understanding the fear of ageing, the grief hidden inside it, and how to meet each year with more peace.',
+    keywords: [
+      'fear of getting older',
+      'ageing anxiety',
+      'birthday anxiety',
+      'fear of ageing',
+      'midlife fears',
+      'accepting getting older',
+    ],
+    image: '/miedo-a-cumplir-anos.jpeg',
+    imageAlt: 'The fear of getting older — when birthdays hurt',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'For many people, birthdays are not simple celebrations but quiet sources of anxiety. Each year can feel like a countdown, a reminder of time passing and of everything not yet done. If birthdays bring you more dread than joy, there is a real grief hiding underneath.',
+      },
+      { type: 'h2', text: 'What the fear is really about' },
+      {
+        type: 'p',
+        text: 'The fear of ageing is often less about a number and more about what it represents: lost time, unfulfilled dreams, changing appearance, and the awareness of our own mortality. It can stir grief for the younger self and the futures that did not happen.',
+      },
+      { type: 'h2', text: 'The grief inside the fear' },
+      {
+        type: 'ul',
+        items: [
+          'Mourning goals or milestones not yet reached.',
+          'Grieving a changing body and appearance.',
+          'Facing the passage of time and lost opportunities.',
+          'Confronting mortality and the unknown ahead.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Ageing is not only loss. It is also depth, freedom, and the chance to become more yourself.',
+      },
+      { type: 'h2', text: 'Meeting each year more gently' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve what has passed while noticing what each year also brings. Focus on meaning rather than milestones, and let go of comparison. If birthday anxiety runs deep, support can help you meet ageing with more peace.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why do I feel anxious about getting older?',
+        a: 'The fear of ageing often reflects deeper concerns — lost time, unfulfilled dreams, a changing body, and awareness of mortality. Underneath it is frequently a real grief.',
+      },
+      {
+        q: 'Why do birthdays make me sad instead of happy?',
+        a: 'Birthdays can highlight the passage of time and the gap between where you are and where you hoped to be, stirring grief for the younger self and unrealised futures.',
+      },
+      {
+        q: 'How can I feel more at peace with ageing?',
+        a: 'Grieve what has passed while noticing what each year brings, focus on meaning over milestones, let go of comparison, and seek support if the anxiety runs deep.',
+      },
+    ],
+    related: ['menopause-and-grief', 'difficult-anniversaries'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
