@@ -4914,6 +4914,403 @@ export const enArticles: EnArticle[] = [
     ],
     related: ['grief-rituals-thailand', 'farewell-rituals'],
   },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-greece',
+    category: 'World Rituals',
+    title: 'Greece: The Birthplace of Philosophy Before Death',
+    metaTitle: 'Grief Rituals in Greece: Philosophy & Farewell | ColorMe',
+    description:
+      'From ancient philosophers to Orthodox tradition, Greece has long contemplated death. Explore Greek mourning customs and the wisdom of facing mortality with meaning.',
+    keywords: [
+      'grief rituals greece',
+      'greek death traditions',
+      'greek orthodox funeral',
+      'ancient greek views on death',
+      'greek mourning customs',
+      'philosophy of death',
+    ],
+    image: '/grecia-athenas.jpeg',
+    imageAlt: 'Greece — the birthplace of philosophy before death',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Long before modern psychology, the ancient Greeks were asking the deepest questions about death and how to live in its shadow. Greece gave the world philosophy — and much of that philosophy was a way of making peace with mortality.',
+      },
+      { type: 'h2', text: 'Ancient wisdom on mortality' },
+      {
+        type: 'p',
+        text: 'Greek thinkers taught that contemplating death is not morbid but freeing. To remember that life is finite is to value it more, to live with intention, and to loosen the grip of fear. This is one of philosophy’s oldest gifts.',
+      },
+      { type: 'h2', text: 'Orthodox mourning traditions' },
+      {
+        type: 'ul',
+        items: [
+          'Memorial services held at set intervals after a death, keeping the bond alive.',
+          'Kollyva — sweetened wheat shared in remembrance, symbolising eternal life.',
+          'Black worn during an extended mourning period.',
+          'Community gathering to support and accompany the bereaved.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'To reflect on death is not to darken life, but to remember how precious it is.',
+      },
+      { type: 'h2', text: 'Meaning in the face of loss' },
+      {
+        type: 'p',
+        text: 'Greece’s enduring lesson is that meeting mortality with reflection — rather than avoidance — can bring depth and peace. Facing death honestly is not despair; it can be the beginning of living more fully.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How did the ancient Greeks view death?',
+        a: 'Greek philosophers saw contemplating death as freeing rather than morbid — a way to value life, live with intention, and loosen the fear of dying.',
+      },
+      {
+        q: 'What are Greek Orthodox mourning traditions?',
+        a: 'They include memorial services at set intervals, sharing kollyva (sweetened wheat) in remembrance, wearing black during mourning, and gathering as a community to support the bereaved.',
+      },
+      {
+        q: 'Can thinking about death help us?',
+        a: 'Yes. Reflecting on mortality can deepen appreciation for life and bring peace, helping us live more intentionally rather than in avoidance.',
+      },
+    ],
+    related: ['why-we-avoid-talking-about-death', 'grief-rituals-italy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-cuba',
+    category: 'World Rituals',
+    title: 'Cuba: Where Death Dances to the Drum',
+    metaTitle: 'Grief Rituals in Cuba: Santería & Farewell | ColorMe',
+    description:
+      'In Cuba, grief and celebration intertwine. Explore Cuban mourning traditions, the influence of Santería, and how music and faith honour those who have died.',
+    keywords: [
+      'grief rituals cuba',
+      'cuban death traditions',
+      'santeria death',
+      'cuban funeral customs',
+      'afro-cuban mourning',
+      'music and grief',
+    ],
+    image: '/cuban-flag.jpeg',
+    imageAlt: 'Cuba — where death dances to the drum',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In Cuba, even grief carries the rhythm of the drum. A blend of Catholic and African traditions has created a culture where death is honoured with faith, music, and a fierce celebration of the life that was lived.',
+      },
+      { type: 'h2', text: 'A blend of two worlds' },
+      {
+        type: 'p',
+        text: 'Cuban spirituality weaves together Catholicism and Santería, an Afro-Cuban religion brought by enslaved Africans. This fusion shapes how many Cubans understand death — as a passage watched over by saints and spirits (orishas), and a moment for both mourning and honouring.',
+      },
+      { type: 'h2', text: 'Rituals of farewell' },
+      {
+        type: 'ul',
+        items: [
+          'Wakes (velorios) where family and friends gather through the night.',
+          'Prayer, music, and storytelling that celebrate the person’s life.',
+          'Santería rites honouring the orishas and guiding the spirit.',
+          'Strong community presence, so no one grieves alone.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Cuba, honouring the dead means celebrating that they lived — with faith, memory, and music.',
+      },
+      { type: 'h2', text: 'Celebrating a life' },
+      {
+        type: 'p',
+        text: 'Cuban tradition holds grief and joy together, insisting that mourning a person and celebrating their life are not opposites. Music, faith, and community turn the hardest days into a shared act of remembrance.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How is death honoured in Cuba?',
+        a: 'Cuban traditions blend Catholicism and Santería, honouring the dead through wakes, prayer, music, storytelling, and community — mourning while celebrating the life that was lived.',
+      },
+      {
+        q: 'What role does Santería play in Cuban death rituals?',
+        a: 'Santería, an Afro-Cuban religion, sees death as a passage watched over by orishas (saints and spirits). Its rites help honour and guide the departed spirit.',
+      },
+      {
+        q: 'Why is music part of Cuban mourning?',
+        a: 'Music celebrates the life of the person who died. Cuban tradition holds grief and joy together, using rhythm and song as acts of remembrance.',
+      },
+    ],
+    related: ['day-of-the-dead-mexico', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-turkey',
+    category: 'World Rituals',
+    title: 'Turkey: Where East and West Pray Together',
+    metaTitle: 'Grief Rituals in Turkey: Traditions of Farewell | ColorMe',
+    description:
+      'At the crossroads of East and West, Turkey honours death with Islamic tradition and Sufi wisdom. Explore Turkish mourning customs and the whirling dervishes’ view of death.',
+    keywords: [
+      'grief rituals turkey',
+      'turkish death traditions',
+      'islamic mourning',
+      'whirling dervishes death',
+      'sufi view of death',
+      'turkish funeral customs',
+    ],
+    image: '/turquia.jpeg',
+    imageAlt: 'Turkey — where East and West pray together',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Straddling two continents, Turkey is where East meets West — and where ancient mysticism meets Islamic tradition in the face of death. Here, grief is held within faith, community, and a striking Sufi vision of dying as reunion.',
+      },
+      { type: 'h2', text: 'Islamic funeral traditions' },
+      {
+        type: 'ul',
+        items: [
+          'Swift burial, usually within a day, following Islamic custom.',
+          'Ritual washing and shrouding of the body with care and dignity.',
+          'Communal funeral prayer (Salat al-Janazah).',
+          'Neighbours and family gathering to feed and support the bereaved.',
+        ],
+      },
+      { type: 'h2', text: 'The Sufi view: death as reunion' },
+      {
+        type: 'p',
+        text: 'The great Sufi poet Rumi called the day of his death his “wedding day” — the soul’s reunion with the divine. The whirling dervishes turn in a moving meditation that symbolises this letting go of the ego and union with something greater. In this view, death is not an end but a homecoming.',
+      },
+      {
+        type: 'quote',
+        text: 'Rumi called death a wedding — the soul finally returning home. Grief and longing can hold hope within them.',
+      },
+      { type: 'h2', text: 'Comfort in a larger story' },
+      {
+        type: 'p',
+        text: 'Turkey’s traditions show how faith and mysticism can frame death as reunion rather than loss. Even in grief, this larger story offers many people a source of hope and peace.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What are Turkish funeral traditions?',
+        a: 'Rooted in Islam, they include swift burial, ritual washing and shrouding of the body, communal funeral prayer, and neighbours gathering to support the bereaved.',
+      },
+      {
+        q: 'How do Sufis view death?',
+        a: 'Sufism sees death as the soul’s reunion with the divine. Rumi called his death day his “wedding day,” and the whirling dervishes symbolise this union and letting go.',
+      },
+      {
+        q: 'Can seeing death as reunion help with grief?',
+        a: 'For many, framing death as a homecoming rather than an ending brings hope and peace, allowing grief and faith to coexist.',
+      },
+    ],
+    related: ['grief-rituals-greece', 'why-we-avoid-talking-about-death'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-italy',
+    category: 'World Rituals',
+    title: 'Italy: Where Beauty Is a Form of Prayer',
+    metaTitle: 'Grief Rituals in Italy: Beauty & Remembrance | ColorMe',
+    description:
+      'In Italy, grief is woven with beauty, faith, and family. Explore Italian mourning traditions and how art, ritual, and community honour those who have died.',
+    keywords: [
+      'grief rituals italy',
+      'italian death traditions',
+      'catholic funeral italy',
+      'italian mourning customs',
+      'remembrance italy',
+      'family and grief',
+    ],
+    image: '/lucca.jpeg',
+    imageAlt: 'Italy — where beauty is a form of prayer',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In Italy, beauty and devotion are inseparable — and this is true even in grief. From candlelit churches to family gatherings around the table, Italians honour their dead with a tenderness that turns remembrance into a kind of prayer.',
+      },
+      { type: 'h2', text: 'Faith, family, and food' },
+      {
+        type: 'p',
+        text: 'Italian mourning is deeply rooted in Catholic tradition and family life. After a death, the community draws close — sharing meals, memories, and prayers. Food, so central to Italian love, becomes a way of caring for the bereaved.',
+      },
+      { type: 'h2', text: 'Traditions of remembrance' },
+      {
+        type: 'ul',
+        items: [
+          'Funeral Mass and prayers guiding the soul.',
+          'Tending graves with fresh flowers, candles, and photographs.',
+          'Commemoration of the dead, especially around All Souls’ Day.',
+          'Community and extended family gathering to support one another.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Italy, to remember beautifully — with flowers, food, and faith — is itself an act of love.',
+      },
+      { type: 'h2', text: 'Beauty as a way to grieve' },
+      {
+        type: 'p',
+        text: 'Italy reminds us that grief can be met with beauty — that tending a grave, lighting a candle, or gathering at a table can transform sorrow into connection and love made visible.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What are Italian mourning traditions?',
+        a: 'Rooted in Catholicism and family, they include funeral Mass, tending graves with flowers and candles, commemorating the dead around All Souls’ Day, and gathering as community to support the bereaved.',
+      },
+      {
+        q: 'How does food play a role in Italian grief?',
+        a: 'Food is central to Italian love and care. After a death, sharing meals becomes a way of supporting and comforting the bereaved.',
+      },
+      {
+        q: 'What can we learn from Italian remembrance?',
+        a: 'That grief can be met with beauty — tending graves, lighting candles, and gathering together turn sorrow into connection and love made visible.',
+      },
+    ],
+    related: ['grief-rituals-greece', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'mehndi-sacred-art-india',
+    category: 'World Rituals',
+    title: 'Mehndi: India’s Sacred Art Where Skin Becomes Prayer',
+    metaTitle: 'Mehndi: India’s Sacred Henna Art & Meaning | ColorMe',
+    description:
+      'Discover the spiritual meaning of mehndi, India’s sacred henna art — how these temporary designs connect body and soul, celebrate life, and mark its transitions.',
+    keywords: [
+      'mehndi meaning',
+      'henna spiritual meaning',
+      'mehndi india',
+      'sacred henna art',
+      'henna traditions',
+      'mehndi symbolism',
+    ],
+    image: '/mehndi-india.jpeg',
+    imageAlt: 'Mehndi — India’s sacred art where skin becomes prayer',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In India, the delicate red-brown patterns of mehndi are far more than decoration. This sacred art of henna turns the skin into a canvas of prayer, blessing, and meaning — a temporary beauty that speaks of life’s impermanence.',
+      },
+      { type: 'h2', text: 'More than decoration' },
+      {
+        type: 'p',
+        text: 'Applied for weddings, festivals, and rites of passage, mehndi is believed to carry blessings — of luck, protection, joy, and love. The intricate designs are a form of devotion made visible on the body.',
+      },
+      { type: 'h2', text: 'The beauty of impermanence' },
+      {
+        type: 'p',
+        text: 'Mehndi fades within weeks, and that is part of its meaning. Like life itself, its beauty is temporary — a gentle reminder to treasure the moment, since nothing stays exactly as it is.',
+      },
+      {
+        type: 'quote',
+        text: 'Mehndi teaches through beauty what grief teaches through loss: nothing is permanent, and that is what makes it precious.',
+      },
+      { type: 'h2', text: 'Art as spiritual practice' },
+      {
+        type: 'p',
+        text: 'Mehndi reminds us that art and the sacred have always been intertwined — that creating on the body, like any art, can be a form of prayer, celebration, and meaning-making. This is the same truth at the heart of art therapy.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the meaning of mehndi?',
+        a: 'Mehndi, or sacred henna art, carries blessings of luck, protection, joy, and love. Applied for weddings and rites of passage, its intricate designs are a form of devotion made visible.',
+      },
+      {
+        q: 'Why does mehndi fade?',
+        a: 'Mehndi is temporary by nature, fading within weeks. This impermanence is part of its meaning — a reminder to treasure the present, since nothing stays the same.',
+      },
+      {
+        q: 'How does mehndi relate to art therapy?',
+        a: 'Both reflect the ancient link between art and the sacred — creating as a form of prayer, celebration, and meaning-making that supports the inner life.',
+      },
+    ],
+    related: ['grief-rituals-india', 'how-art-heals-the-brain'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'melukat-bali-purification',
+    category: 'World Rituals',
+    title: 'Melukat: The Balinese Ceremony Where Water Cleanses the Soul',
+    metaTitle: 'Melukat: Bali’s Sacred Water Purification | ColorMe',
+    description:
+      'Discover Melukat, Bali’s sacred purification ceremony, where holy water washes away emotional pain and heals body and spirit — a ritual of release and renewal.',
+    keywords: [
+      'melukat bali',
+      'balinese purification ceremony',
+      'sacred water ritual',
+      'melukat meaning',
+      'bali spiritual cleansing',
+      'emotional purification ritual',
+    ],
+    image: '/melukat-bali.jpeg',
+    imageAlt: 'Melukat — the Balinese ceremony where water cleanses the soul',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In Bali, water is sacred — believed to hold the power to cleanse not only the body but the spirit. Melukat is a purification ceremony where holy spring water washes away emotional pain, negativity, and grief, leaving space for renewal.',
+      },
+      { type: 'h2', text: 'A ritual of release' },
+      {
+        type: 'p',
+        text: 'During Melukat, a person moves through a series of sacred water spouts, praying and immersing themselves as the water flows over them. Each stream is believed to carry away a layer of heaviness — pain, grief, anger, or spiritual clutter.',
+      },
+      { type: 'h2', text: 'Cleansing body and soul' },
+      {
+        type: 'ul',
+        items: [
+          'Water symbolises the washing away of emotional and spiritual burdens.',
+          'Prayer and intention turn the act into a conscious release.',
+          'The ceremony offers a sense of renewal and a fresh start.',
+          'Nature and ritual combine to soothe the nervous system.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Some grief cannot be reasoned away. It can only be released — and water has always known how to carry things away.',
+      },
+      { type: 'h2', text: 'The wisdom of ritual release' },
+      {
+        type: 'p',
+        text: 'Melukat reflects something universal: the human need to physically release what we carry inside. Whether through sacred water, movement, or making art, giving grief a bodily way out can be profoundly healing.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is Melukat?',
+        a: 'Melukat is a Balinese purification ceremony in which holy spring water is used to cleanse the body and spirit of emotional pain, negativity, and grief, offering renewal.',
+      },
+      {
+        q: 'How does the Melukat ceremony work?',
+        a: 'A person moves through sacred water spouts, praying and immersing themselves as the water flows over them, symbolically releasing layers of grief and heaviness.',
+      },
+      {
+        q: 'Why is ritual release healing?',
+        a: 'Ritual gives grief a physical way out. Whether through sacred water, movement, or art, releasing what we carry inside our bodies can be deeply soothing and healing.',
+      },
+    ],
+    related: ['grief-rituals-bali-ngaben', 'farewell-rituals'],
+  },
 ]
 
 export function getEnArticle(slug: string): EnArticle | undefined {
