@@ -390,7 +390,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="w-11 h-11 rounded-full bg-[#B2F7EF] text-black flex items-center justify-center hover:bg-[#0D9488] hover:text-white transition-colors"
+                className="w-11 h-11 rounded-full border border-black/15 text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors"
               >
                 <social.icon size={20} strokeWidth={1.5} />
               </a>
