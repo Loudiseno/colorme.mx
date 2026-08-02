@@ -4,29 +4,29 @@ import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Obra | Fotografía, pintura y técnicas mixtas',
+  title: 'Artwork | Photography, Painting & Mixed Media',
   description:
-    'La obra artística de Lou: fotografía, fotografía intervenida, pintura y técnicas mixtas. Statement, galerías, exposiciones y reconocimientos.',
-  alternates: { canonical: '/obra' },
+    "Lou's artistic work: photography, intervened photography, painting, and mixed media. Artist statement, galleries, exhibitions, and awards.",
+  alternates: { canonical: '/en/obra' },
   openGraph: {
     type: 'website',
-    locale: 'es_MX',
-    title: 'Obra | ColorMe',
+    locale: 'en_US',
+    title: 'Artwork | ColorMe',
     description:
-      'Fotografía, fotografía intervenida, pintura y técnicas mixtas — la obra artística de Lou.',
-    url: '/obra',
+      "Photography, intervened photography, painting, and mixed media — Lou's artistic work.",
+    url: '/en/obra',
   },
   robots: { index: true, follow: true },
 }
 
 // ============================================================================
-// DATOS DE LA SECCIÓN OBRA
-// (Editar aquí. Las galerías usan marcadores de posición hasta que se agreguen
-//  las fotos reales: coloca los archivos en /public y reemplaza <Placeholder />
-//  por <Image src="/tu-foto.webp" ... /> en cada galería.)
+// ARTWORK SECTION DATA (English)
+// Mirrors app/obra/page.tsx — edit both when content changes.
+// Galleries use placeholders until real photos are added: drop files in
+// /public and replace <Placeholder /> with <Image src="/your-photo.webp" ... />
 // ============================================================================
 
-const clientes = [
+const clients = [
   'Studio Ceri',
   'Scatena Inox',
   'Casa Dragones en Pujol',
@@ -35,46 +35,46 @@ const clientes = [
   'Hotel St. Regis',
 ]
 
-const exposicionesIndividuales = [
-  { title: 'Luces de existencia', place: 'Galería Aguafuerte, CDMX', date: '2016' },
-  { title: 'Reinterpretando', place: 'Restaurante Pizza Local, CDMX', date: '2017' },
-  { title: 'Memorias', place: 'Cafetería Healthy Nutrition, CDMX', date: '2018' },
+const soloExhibitions = [
+  { title: 'Luces de existencia', place: 'Galería Aguafuerte, Mexico City', date: '2016' },
+  { title: 'Reinterpretando', place: 'Restaurante Pizza Local, Mexico City', date: '2017' },
+  { title: 'Memorias', place: 'Cafetería Healthy Nutrition, Mexico City', date: '2018' },
 ]
 
-const exposicionesColectivas = [
-  { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, CDMX', date: '2015' },
-  { title: 'Amén sin tilde', place: 'Galería Fotográfica, CDMX', date: '2016' },
-  { title: 'Expo Subasta', place: 'Galería Aguafuerte, CDMX', date: '2016' },
-  { title: 'El Arca', place: 'Rio de Janeiro 9, CDMX', date: '2016' },
-  { title: 'El Arca', place: 'Plaza Tudor 275-7, CDMX', date: '2016' },
-  { title: 'El Arca', place: 'Restaurante Paris 16, CDMX', date: '2017' },
-  { title: 'Habit-Art', place: 'Corredor Cultural Roma-Condesa, CDMX', date: '2017' },
-  { title: 'Homenaje a José Luis Ruissó', place: 'Restaurante Paris 16, CDMX', date: '2017' },
+const groupExhibitions = [
+  { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, Mexico City', date: '2015' },
+  { title: 'Amén sin tilde', place: 'Galería Fotográfica, Mexico City', date: '2016' },
+  { title: 'Expo Subasta', place: 'Galería Aguafuerte, Mexico City', date: '2016' },
+  { title: 'El Arca', place: 'Rio de Janeiro 9, Mexico City', date: '2016' },
+  { title: 'El Arca', place: 'Plaza Tudor 275-7, Mexico City', date: '2016' },
+  { title: 'El Arca', place: 'Restaurante Paris 16, Mexico City', date: '2017' },
+  { title: 'Habit-Art', place: 'Corredor Cultural Roma-Condesa, Mexico City', date: '2017' },
+  { title: 'Homenaje a José Luis Ruissó', place: 'Restaurante Paris 16, Mexico City', date: '2017' },
   {
     title: 'Déjame ayudARTE',
-    place: 'Obras con causa para fundación COPARMEX, CDMX',
+    place: 'Works for a cause, COPARMEX foundation, Mexico City',
     date: '2017',
-    note: 'Reconstrucción de viviendas en México por el sismo',
+    note: 'Rebuilding homes in Mexico after the earthquake',
   },
-  { title: 'Se la echó al plato', place: 'FloraLounge, CDMX', date: '2018' },
+  { title: 'Se la echó al plato', place: 'FloraLounge, Mexico City', date: '2018' },
 ]
 
-const reconocimientos = [
+const awards = [
   {
     title: 'Captura el espíritu de la celebración',
-    place: 'Primer lugar en fotografía de paisaje y arquitectura · Olympus y Palacio de Hierro, CDMX',
+    place: 'First place, landscape & architecture photography · Olympus and Palacio de Hierro, Mexico City',
     date: '2010',
   },
 ]
 
-// Marcador de posición para una foto aún no cargada
+// Placeholder for a photo not yet uploaded
 function Placeholder({ ratio = 'aspect-[4/5]' }: { ratio?: string }) {
   return (
     <div
       className={`${ratio} w-full rounded-2xl bg-gradient-to-br from-[#B2F7EF]/30 to-[#F0F7F6] border border-[#B2F7EF]/60 flex flex-col items-center justify-center text-black/30`}
     >
       <ImageIcon size={28} strokeWidth={1.5} />
-      <span className="text-[11px] mt-2 uppercase tracking-wider">Foto próximamente</span>
+      <span className="text-[11px] mt-2 uppercase tracking-wider">Photo coming soon</span>
     </div>
   )
 }
@@ -89,7 +89,7 @@ function Gallery({ count, ratio }: { count: number; ratio?: string }) {
   )
 }
 
-// Fila editorial minimalista para exposiciones y reconocimientos
+// Minimal editorial row for exhibitions and awards
 function ExpoRow({ item }: { item: { title: string; place: string; date: string; note?: string } }) {
   return (
     <div className="group flex items-baseline justify-between gap-6 py-5 border-t border-black/10 transition-colors duration-300 hover:border-[#0D9488]">
@@ -121,80 +121,80 @@ function ExhibitionList({
   )
 }
 
-export default function ObraPage() {
+export default function ObraEnPage() {
   return (
     <>
       {/* Hero */}
       <section className="pt-28 pb-8 md:pt-36 md:pb-10 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-xs text-black/50 uppercase tracking-wider mb-3">Portafolio</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Obra</h1>
+          <p className="text-xs text-black/50 uppercase tracking-wider mb-3">Portfolio</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Artwork</h1>
           <p className="text-black/70 leading-relaxed max-w-2xl mx-auto">
-            Fotografía, fotografía intervenida, pintura y técnicas mixtas: una manera de mirar,
-            sentir y resignificar la experiencia humana a través del color.
+            Photography, intervened photography, painting, and mixed media: a way of looking,
+            feeling, and reframing the human experience through colour.
           </p>
           <Link
-            href="/en/obra"
+            href="/obra"
             className="inline-block mt-4 text-xs text-black/40 hover:text-[#0D9488] transition-colors underline underline-offset-2"
           >
-            Read in English
+            Leer en español
           </Link>
         </div>
       </section>
 
-      {/* Statement de artista */}
+      {/* Artist statement */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/10">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           <div className="max-w-md mx-auto w-full">
             <Placeholder ratio="aspect-[4/5]" />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl text-black mb-6">Statement de artista</h2>
+            <h2 className="text-3xl md:text-4xl text-black mb-6">Artist Statement</h2>
             <div className="space-y-4 text-black/75 leading-relaxed">
               <p>
-                Mi trayectoria artística es una forma de mirar, sentir, resignificar la experiencia
-                humana y compartir mi manera de ver el mundo.
+                My artistic path is a way of looking, feeling, reframing the human experience, and
+                sharing my own way of seeing the world.
               </p>
               <p>
-                La pintura y la fotografía son mis medios para expresar mi visión del mundo a través
-                del color, las emociones y las experiencias. Mi inspiración nace de la naturaleza,
-                los lugares, las personas, las culturas y la belleza de lo cotidiano, de esos
-                instantes que, aunque parezcan simples, nunca vuelven a repetirse.
+                Painting and photography are my mediums for expressing my vision of the world
+                through colour, emotion, and experience. My inspiration comes from nature, places,
+                people, cultures, and the beauty of the everyday — those moments that, however
+                simple they may seem, never repeat themselves.
               </p>
               <p>
-                Mi práctica artística se desarrolla principalmente a través de tres técnicas:
-                fotografía, fotografía intervenida y pintura. Trabajo con acuarela, óleo y acrílico,
-                así como con distintos materiales y elementos cotidianos que, al integrarse en cada
-                pieza, la transforman en una obra única que conserva una historia propia.
+                My practice unfolds mainly through three techniques: photography, intervened
+                photography, and painting. I work with watercolour, oil, and acrylic, along with
+                everyday materials and objects that, once integrated into each piece, transform it
+                into a unique work carrying its own story.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Fotografía */}
+      {/* Photography */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
               <Camera size={20} strokeWidth={1.5} />
             </span>
-            <h2 className="text-3xl md:text-4xl text-black">Fotografía</h2>
+            <h2 className="text-3xl md:text-4xl text-black">Photography</h2>
           </div>
           <div className="max-w-3xl space-y-4 text-black/75 leading-relaxed mb-6">
             <p>
-              La fotografía es mi manera de detener el tiempo. Me inspira lo cotidiano, los viajes,
-              la gente, la arquitectura, los paisajes y esos momentos reales que suceden sin
-              preparación. Busco conservar instantes que existen una sola vez y que, al ser
-              observados nuevamente, despiertan nuevas emociones y recuerdos.
+              Photography is my way of stopping time. I am inspired by the everyday, travel,
+              people, architecture, landscapes, and those real, unstaged moments. I seek to hold
+              onto instants that exist only once and, when seen again, awaken new emotions and
+              memories.
             </p>
             <p>
-              He realizado fotografía social, arquitectónica, gastronómica y de producto para
-              distintos sectores, con clientes como:
+              I have shot social, architectural, culinary, and product photography for a range of
+              clients, including:
             </p>
           </div>
           <div className="flex flex-wrap gap-2 mb-10">
-            {clientes.map((c) => (
+            {clients.map((c) => (
               <span
                 key={c}
                 className="text-sm text-black/70 border border-black/15 rounded-full px-4 py-1.5"
@@ -204,130 +204,130 @@ export default function ObraPage() {
             ))}
           </div>
 
-          {/* Subsecciones: gente, paisaje, arquitectura */}
+          {/* Subsections: people, landscape, architecture */}
           <div className="space-y-10">
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Gente</h3>
+              <h3 className="text-xl md:text-2xl text-black mb-4">People</h3>
               <Gallery count={3} />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Paisaje</h3>
+              <h3 className="text-xl md:text-2xl text-black mb-4">Landscape</h3>
               <Gallery count={3} />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Arquitectura</h3>
+              <h3 className="text-xl md:text-2xl text-black mb-4">Architecture</h3>
               <Gallery count={3} />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Fotografía intervenida */}
+      {/* Intervened photography */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
               <ImageIcon size={20} strokeWidth={1.5} />
             </span>
-            <h2 className="text-3xl md:text-4xl text-black">Fotografía intervenida</h2>
+            <h2 className="text-3xl md:text-4xl text-black">Intervened Photography</h2>
           </div>
           <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
-            Una fotografía puede reproducirse infinitas veces, pero cuando la intervengo deja de ser
-            una imagen repetible para convertirse en una pieza única. Me gusta jugar con los colores
-            y adaptar el momento a mi experiencia y a mi manera de percibirlo.
+            A photograph can be reproduced endlessly, but once I intervene it, it stops being a
+            repeatable image and becomes a one-of-a-kind piece. I like to play with colour and
+            adapt the moment to my own experience and way of perceiving it.
           </p>
           <Gallery count={3} />
         </div>
       </section>
 
-      {/* Pintura */}
+      {/* Painting */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
               <Brush size={20} strokeWidth={1.5} />
             </span>
-            <h2 className="text-3xl md:text-4xl text-black">Pintura</h2>
+            <h2 className="text-3xl md:text-4xl text-black">Painting</h2>
           </div>
           <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
-            La pintura es el espacio donde puedo alejarme de la realidad y dejar que el color, las
-            formas y las texturas hablen por sí mismas. Trabajo principalmente con acuarela, óleo y
-            acrílico, desarrollando composiciones abstractas que nacen de la emoción más que de la
-            representación. Me interesa la libertad del proceso creativo, experimentar con las capas,
-            los materiales y los contrastes, permitiendo que cada obra encuentre su propio camino
-            mientras el color se convierte en el principal protagonista.
+            Painting is the space where I can step away from reality and let colour, shape, and
+            texture speak for themselves. I work mainly with watercolour, oil, and acrylic,
+            developing abstract compositions born from emotion rather than representation. I am
+            drawn to the freedom of the creative process — experimenting with layers, materials,
+            and contrasts — letting each piece find its own path while colour becomes the main
+            protagonist.
           </p>
           <Gallery count={4} />
         </div>
       </section>
 
-      {/* Técnicas mixtas */}
+      {/* Mixed media */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
               <Layers size={20} strokeWidth={1.5} />
             </span>
-            <h2 className="text-3xl md:text-4xl text-black">Técnicas mixtas</h2>
+            <h2 className="text-3xl md:text-4xl text-black">Mixed Media</h2>
           </div>
           <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
-            Disfruto incorporar materiales cotidianos como mapas, revistas, folletos, publicidad,
-            servilletas y objetos encontrados durante mis viajes. Me interesa especialmente trabajar
-            con periódicos locales porque narran la memoria de un lugar y un momento específico. Al
-            integrarlos en la obra, esos fragmentos adquieren un nuevo significado y se convierten en
-            parte de una historia distinta.
+            I enjoy incorporating everyday materials — maps, magazines, brochures, ads, napkins,
+            and objects found during my travels. I am especially drawn to working with local
+            newspapers, since they carry the memory of a place and a specific moment. Once woven
+            into the work, these fragments take on new meaning and become part of a different
+            story.
           </p>
           <Gallery count={3} />
         </div>
       </section>
 
-      {/* Exposiciones — sección destacada */}
+      {/* Exhibitions — featured section */}
       <section className="py-16 md:py-24 bg-canvas">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-2xl mb-14 md:mb-20">
-            <p className="text-xs text-[#0D9488] uppercase tracking-[0.2em] mb-4">Trayectoria</p>
-            <h2 className="text-4xl md:text-6xl text-black mb-6 leading-[1.05]">Exposiciones</h2>
+            <p className="text-xs text-[#0D9488] uppercase tracking-[0.2em] mb-4">Trajectory</p>
+            <h2 className="text-4xl md:text-6xl text-black mb-6 leading-[1.05]">Exhibitions</h2>
             <p className="text-black/60 leading-relaxed">
-              He participado en exposiciones individuales y colectivas que dan forma a mi búsqueda de
-              conexión y reflexión, principalmente a través de la fotografía, la pintura y sus
-              intervenciones.
+              I have taken part in solo and group exhibitions that shape my ongoing search for
+              connection and reflection, mainly through photography, painting, and their
+              interventions.
             </p>
           </div>
 
           <div className="grid md:grid-cols-12 gap-x-14 gap-y-16">
-            {/* Individuales */}
+            {/* Solo */}
             <div className="md:col-span-5">
               <div className="md:sticky md:top-28">
-                <h3 className="text-2xl md:text-3xl text-black mb-2">Individuales</h3>
-                <p className="text-black/40 text-sm mb-6">Muestras en solitario</p>
+                <h3 className="text-2xl md:text-3xl text-black mb-2">Solo</h3>
+                <p className="text-black/40 text-sm mb-6">Individual shows</p>
                 <div className="mb-8 max-w-xs">
                   <Placeholder ratio="aspect-[4/5]" />
                 </div>
-                <ExhibitionList items={exposicionesIndividuales} />
+                <ExhibitionList items={soloExhibitions} />
               </div>
             </div>
 
-            {/* Colectivas */}
+            {/* Group */}
             <div className="md:col-span-7">
-              <h3 className="text-2xl md:text-3xl text-black mb-2">Colectivas</h3>
-              <p className="text-black/40 text-sm mb-6">Muestras en conjunto</p>
-              <ExhibitionList items={exposicionesColectivas} />
+              <h3 className="text-2xl md:text-3xl text-black mb-2">Group</h3>
+              <p className="text-black/40 text-sm mb-6">Collective shows</p>
+              <ExhibitionList items={groupExhibitions} />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Reconocimientos */}
+      {/* Awards */}
       <section className="py-12 md:py-16 bg-[#B2F7EF]/10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-8">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
               <Award size={20} strokeWidth={1.5} />
             </span>
-            <h2 className="text-3xl md:text-4xl text-black">Reconocimientos</h2>
+            <h2 className="text-3xl md:text-4xl text-black">Awards</h2>
           </div>
           <div className="max-w-3xl">
-            <ExhibitionList items={reconocimientos} />
+            <ExhibitionList items={awards} />
           </div>
         </div>
       </section>
@@ -335,9 +335,9 @@ export default function ObraPage() {
       {/* CTA */}
       <section className="py-14 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-2xl md:text-3xl text-black mb-3">¿Colaboraciones o adquirir obra?</h2>
+          <h2 className="text-2xl md:text-3xl text-black mb-3">Collaborations or acquiring a piece?</h2>
           <p className="text-black/70 mb-6">
-            Para exposiciones, comisiones, prensa o adquirir una pieza, escríbeme.
+            For exhibitions, commissions, press, or acquiring a piece, get in touch.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <a
@@ -346,7 +346,7 @@ export default function ObraPage() {
               rel="noopener noreferrer"
               className="bg-[#0D9488] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#0D9488]/90 transition-all"
             >
-              Escríbeme por WhatsApp
+              Message me on WhatsApp
             </a>
             <a
               href={`mailto:${siteConfig.email}`}
