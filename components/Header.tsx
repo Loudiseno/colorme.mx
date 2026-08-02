@@ -3,9 +3,10 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 
-const navigation = [
+const navigationEs = [
   { name: 'Arteterapia', href: '/arteterapia-mexico' },
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
@@ -15,9 +16,24 @@ const navigation = [
   { name: 'Blog', href: '/blog' },
 ]
 
+// En páginas /en/* el menú va en inglés y apunta a las versiones en inglés
+// cuando existen.
+const navigationEn = [
+  { name: 'Art as Therapy', href: '/arteterapia-mexico' },
+  { name: 'Grief Counseling', href: '/tanatologia-acompanamiento-duelo' },
+  { name: 'About me', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
+  { name: 'Artwork', href: '/en/obra' },
+  { name: 'Products', href: '/tienda' },
+  { name: 'Creative explorations', href: '/hoja-de-trabajo' },
+  { name: 'Blog', href: '/en/blog' },
+]
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+  const isEn = pathname?.startsWith('/en')
+  const navigation = isEn ? navigationEn : navigationEs
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
@@ -61,11 +77,11 @@ export default function Header() {
         {/* Desktop actions */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="/en/blog"
+            href={isEn ? '/blog' : '/en/blog'}
             className="text-xs font-semibold border border-black/25 rounded-full px-3 py-1 text-black/70 hover:bg-black hover:text-white hover:border-black transition-colors"
-            aria-label="English blog"
+            aria-label={isEn ? 'Blog en español' : 'English blog'}
           >
-            EN
+            {isEn ? 'ES' : 'EN'}
           </Link>
         </div>
 
@@ -101,14 +117,14 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/en/blog"
+              href={isEn ? '/blog' : '/en/blog'}
               onClick={() => setIsOpen(false)}
               className={`text-2xl font-semibold text-[#0D9488] hover:text-[#0D9488]/70 transition-all duration-300 ${
                 isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
               style={{ transitionDelay: `${navigation.length * 100}ms` }}
             >
-              English blog
+              {isEn ? 'Blog en español' : 'English blog'}
             </Link>
           </div>
         </div>

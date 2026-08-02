@@ -45,7 +45,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'how-long-does-grief-last',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'How Long Does Grief Last? An Honest Answer',
     metaTitle: 'How Long Does Grief Last? An Honest Answer | ColorMe',
     description:
@@ -125,7 +125,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'A gentler way through' },
       {
         type: 'p',
-        text: 'You do not have to talk your way through grief if words feel impossible. Art therapy offers another door — a way to give shape to what you feel when language falls short. Drawing, color, and simple creative rituals can help you process loss at your own pace, without needing to explain or justify a thing.',
+        text: 'You do not have to talk your way through grief if words feel impossible. Art as therapy offers another door — a way to give shape to what you feel when language falls short. Drawing, color, and simple creative rituals can help you process loss at your own pace, without needing to explain or justify a thing.',
       },
       {
         type: 'p',
@@ -152,7 +152,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'seven-stages-of-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'The 7 Stages of Grief: What They Really Look Like',
     metaTitle: 'The 7 Stages of Grief: What They Really Look Like | ColorMe',
     description:
@@ -226,7 +226,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'How creativity helps you move through the stages' },
       {
         type: 'p',
-        text: 'Some feelings are too big or too tangled for words. Art therapy gives grief a place to go. You do not need to know how to draw — a scribble in the color of your anger, a page for what you wish you had said, a small image of a memory. Externalising the emotion often loosens its grip and helps you move, gently, toward acceptance and meaning.',
+        text: 'Some feelings are too big or too tangled for words. Art as therapy gives grief a place to go. You do not need to know how to draw — a scribble in the color of your anger, a page for what you wish you had said, a small image of a memory. Externalising the emotion often loosens its grip and helps you move, gently, toward acceptance and meaning.',
       },
       { type: 'h2', text: 'When to reach out for support' },
       {
@@ -254,32 +254,32 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'what-is-art-therapy',
-    category: 'Art Therapy',
-    title: 'What Is Art Therapy? Benefits and How It Works',
-    metaTitle: 'What Is Art Therapy? Benefits and How It Works | ColorMe',
+    category: 'Art as Therapy',
+    title: 'What Is Art as Therapy? Benefits and How It Works',
+    metaTitle: 'What Is Art as Therapy? Benefits and How It Works | ColorMe',
     description:
-      'Art therapy uses the creative process to heal emotions — no artistic skill required. Learn what art therapy is, how a session works, and its proven benefits.',
+      'Art as therapy uses the creative process to heal emotions — no artistic skill required. Learn what art as therapy is, how a session works, and its proven benefits.',
     keywords: [
-      'what is art therapy',
-      'art therapy',
-      'art therapy benefits',
-      'how does art therapy work',
-      'art therapy for adults',
+      'what is art as therapy',
+      'art as therapy',
+      'art as therapy benefits',
+      'how does art as therapy work',
+      'art as therapy for adults',
       'creative therapy',
     ],
     image: '/arteterapia.webp',
-    imageAlt: 'What is art therapy — using the creative process to heal emotions',
+    imageAlt: 'What is art as therapy — using the creative process to heal emotions',
     datePublished: '2026-07-30',
     readingTime: '6 min read',
     content: [
       {
         type: 'p',
-        text: 'Art therapy is a form of psychotherapy that uses the creative process — drawing, painting, collage, clay, color — to explore emotions, reduce stress, and work through difficult experiences. The goal is not to make beautiful art. The goal is to make contact with what you feel.',
+        text: 'Art as therapy is a form of psychotherapy that uses the creative process — drawing, painting, collage, clay, color — to explore emotions, reduce stress, and work through difficult experiences. The goal is not to make beautiful art. The goal is to make contact with what you feel.',
       },
       { type: 'h2', text: 'You do not need to be an artist' },
       {
         type: 'p',
-        text: 'This is the first thing everyone worries about, so let us settle it: art therapy has nothing to do with talent. Stick figures, scribbles, and messy color are perfect. In fact, the “worse” the drawing, the freer it often is. You are not being judged on technique — the image is simply a bridge to your inner world.',
+        text: 'This is the first thing everyone worries about, so let us settle it: art as therapy has nothing to do with talent. Stick figures, scribbles, and messy color are perfect. In fact, the “worse” the drawing, the freer it often is. You are not being judged on technique — the image is simply a bridge to your inner world.',
       },
       { type: 'h2', text: 'Why it works when words are not enough' },
       {
@@ -303,7 +303,7 @@ export const enArticles: EnArticle[] = [
           'A reflection, where you and the therapist look at the image together and gently unpack what came up. You always stay in control of how much you share.',
         ],
       },
-      { type: 'h2', text: 'The benefits of art therapy' },
+      { type: 'h2', text: 'The benefits of art as therapy' },
       {
         type: 'ul',
         items: [
@@ -314,15 +314,15 @@ export const enArticles: EnArticle[] = [
           'Increases self-esteem through the simple act of creating something.',
         ],
       },
-      { type: 'h2', text: 'Who is art therapy for?' },
+      { type: 'h2', text: 'Who is art as therapy for?' },
       {
         type: 'p',
-        text: 'Art therapy helps children, adults, and older adults facing grief, anxiety, chronic illness, trauma, life transitions, or simply the wish to understand themselves better. It is especially valuable for people who find traditional talk therapy difficult or who feel “stuck” putting their experience into words.',
+        text: 'Art as therapy helps children, adults, and older adults facing grief, anxiety, chronic illness, trauma, life transitions, or simply the wish to understand themselves better. It is especially valuable for people who find traditional talk therapy difficult or who feel “stuck” putting their experience into words.',
       },
-      { type: 'h2', text: 'Art therapy vs. an art class' },
+      { type: 'h2', text: 'Art as therapy vs. an art class' },
       {
         type: 'p',
-        text: 'An art class teaches you to make art. Art therapy uses art to help you heal, guided by a trained therapist who holds the emotional process safely. The focus is never the final product — it is you, and what the creative process reveals and releases.',
+        text: 'An art class teaches you to make art. Art as therapy uses art to help you heal, guided by a trained therapist who holds the emotional process safely. The focus is never the final product — it is you, and what the creative process reveals and releases.',
       },
       { type: 'h2', text: 'Getting started' },
       {
@@ -332,16 +332,16 @@ export const enArticles: EnArticle[] = [
     ],
     faq: [
       {
-        q: 'Do I need to be good at art for art therapy?',
-        a: 'No. Art therapy requires zero artistic skill. Scribbles, stick figures, and abstract color are exactly right — the process matters, not the result.',
+        q: 'Do I need to be good at art for art as therapy?',
+        a: 'No. Art as therapy requires zero artistic skill. Scribbles, stick figures, and abstract color are exactly right — the process matters, not the result.',
       },
       {
-        q: 'What can art therapy help with?',
+        q: 'What can art as therapy help with?',
         a: 'It supports grief, anxiety, trauma, stress, chronic illness, life transitions, and self-understanding. It is especially helpful when feelings are hard to put into words.',
       },
       {
-        q: 'Is art therapy real therapy?',
-        a: 'Yes. Art therapy is an established form of psychotherapy delivered by trained professionals, using the creative process as the therapeutic tool.',
+        q: 'Is art as therapy real therapy?',
+        a: 'Yes. Art as therapy is an established form of psychotherapy delivered by trained professionals, using the creative process as the therapeutic tool.',
       },
     ],
     related: ['art-therapy-for-anxiety', 'art-therapy-for-cancer'],
@@ -350,27 +350,27 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'art-therapy-for-anxiety',
-    category: 'Art Therapy',
-    title: 'Art Therapy for Anxiety: How Creativity Calms the Nervous System',
-    metaTitle: 'Art Therapy for Anxiety: How Creativity Calms You | ColorMe',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy for Anxiety: How Creativity Calms the Nervous System',
+    metaTitle: 'Art as Therapy for Anxiety: How Creativity Calms You | ColorMe',
     description:
-      'Art therapy for anxiety uses simple creative practices to quiet a racing mind and regulate the nervous system. Learn how it works, plus 4 exercises to try today.',
+      'Art as therapy for anxiety uses simple creative practices to quiet a racing mind and regulate the nervous system. Learn how it works, plus 4 exercises to try today.',
     keywords: [
-      'art therapy for anxiety',
-      'art therapy anxiety',
+      'art as therapy for anxiety',
+      'art as therapy anxiety',
       'creative ways to reduce anxiety',
       'art exercises for anxiety',
       'how to calm anxiety',
-      'art therapy techniques',
+      'art as therapy techniques',
     ],
     image: '/arteterapia-ansiedad.webp',
-    imageAlt: 'Art therapy for anxiety — creativity that calms the nervous system',
+    imageAlt: 'Art as therapy for anxiety — creativity that calms the nervous system',
     datePublished: '2026-07-30',
     readingTime: '6 min read',
     content: [
       {
         type: 'p',
-        text: 'Anxiety keeps the mind sprinting into a future that has not happened yet. Art therapy does something quietly powerful: it brings you back to your hands, your breath, and this present moment. You cannot worry about tomorrow and stay fully absorbed in mixing a color at the same time.',
+        text: 'Anxiety keeps the mind sprinting into a future that has not happened yet. Art as therapy does something quietly powerful: it brings you back to your hands, your breath, and this present moment. You cannot worry about tomorrow and stay fully absorbed in mixing a color at the same time.',
       },
       { type: 'h2', text: 'Why creativity calms anxiety' },
       {
@@ -415,7 +415,7 @@ export const enArticles: EnArticle[] = [
     ],
     faq: [
       {
-        q: 'Can art therapy really help with anxiety?',
+        q: 'Can art as therapy really help with anxiety?',
         a: 'Yes. Creative, rhythmic activity calms the nervous system, interrupts anxious thought loops, and helps externalise worry, making it feel more manageable.',
       },
       {
@@ -433,7 +433,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-after-losing-a-parent',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grief After Losing a Parent: Navigating One of Life’s Deepest Losses',
     metaTitle: 'Grief After Losing a Parent: How to Cope | ColorMe',
     description:
@@ -524,34 +524,34 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'art-therapy-for-cancer',
-    category: 'Art Therapy',
-    title: 'Art Therapy for Cancer Patients: Healing Beyond the Body',
-    metaTitle: 'Art Therapy for Cancer Patients: Healing Beyond the Body | ColorMe',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy for Cancer Patients: Healing Beyond the Body',
+    metaTitle: 'Art as Therapy for Cancer Patients: Healing Beyond the Body | ColorMe',
     description:
-      'Art therapy helps cancer patients process fear, reclaim identity, and find calm during treatment. Learn the benefits and simple creative practices to try.',
+      'Art as therapy helps cancer patients process fear, reclaim identity, and find calm during treatment. Learn the benefits and simple creative practices to try.',
     keywords: [
-      'art therapy for cancer',
-      'art therapy cancer patients',
+      'art as therapy for cancer',
+      'art as therapy cancer patients',
       'creative therapy cancer',
       'coping with cancer emotionally',
-      'art therapy chemotherapy',
+      'art as therapy chemotherapy',
       'cancer emotional support',
     ],
     image: '/cancer-y-arteterapia.webp',
-    imageAlt: 'Art therapy for cancer patients — healing beyond the body',
+    imageAlt: 'Art as therapy for cancer patients — healing beyond the body',
     datePublished: '2026-07-30',
     readingTime: '6 min read',
     content: [
       {
         type: 'p',
-        text: 'A cancer diagnosis changes everything in an instant. Beyond the physical treatment, there is an emotional storm: fear, uncertainty, loss of control, and a shifting sense of who you are. Art therapy offers a space to tend to that inner world — the part of healing that scans and medications cannot reach.',
+        text: 'A cancer diagnosis changes everything in an instant. Beyond the physical treatment, there is an emotional storm: fear, uncertainty, loss of control, and a shifting sense of who you are. Art as therapy offers a space to tend to that inner world — the part of healing that scans and medications cannot reach.',
       },
       { type: 'h2', text: 'The emotional weight of cancer' },
       {
         type: 'p',
-        text: 'Patients often feel they must “stay strong” for everyone around them, leaving little room for their own fear and grief. Those unspoken emotions do not disappear — they build. Art therapy gives them a safe, private outlet, without the pressure to find the right words or protect anyone else’s feelings.',
+        text: 'Patients often feel they must “stay strong” for everyone around them, leaving little room for their own fear and grief. Those unspoken emotions do not disappear — they build. Art as therapy gives them a safe, private outlet, without the pressure to find the right words or protect anyone else’s feelings.',
       },
-      { type: 'h2', text: 'What art therapy offers during treatment' },
+      { type: 'h2', text: 'What art as therapy offers during treatment' },
       {
         type: 'ul',
         items: [
@@ -589,12 +589,12 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'Finding support' },
       {
         type: 'p',
-        text: 'You do not have to hold all of it alone. Whether through a structured art therapy process or small daily creative rituals, tending to your emotional health is part of your healing — not a luxury, and not a distraction from it.',
+        text: 'You do not have to hold all of it alone. Whether through a structured art as therapy process or small daily creative rituals, tending to your emotional health is part of your healing — not a luxury, and not a distraction from it.',
       },
     ],
     faq: [
       {
-        q: 'How does art therapy help cancer patients?',
+        q: 'How does art as therapy help cancer patients?',
         a: 'It reduces anxiety and stress, restores a sense of control, and gives patients a safe way to process fear and grief without needing words — supporting emotional wellbeing alongside medical treatment.',
       },
       {
@@ -602,7 +602,7 @@ export const enArticles: EnArticle[] = [
         a: 'No. The benefit comes from the creative process itself, not from artistic ability. Simple color, shapes, and images are enough.',
       },
       {
-        q: 'Can family members and caregivers use art therapy too?',
+        q: 'Can family members and caregivers use art as therapy too?',
         a: 'Absolutely. Caregivers carry heavy emotions of their own. Creative practices help them process fear and exhaustion and stay connected to their loved one.',
       },
     ],
@@ -612,7 +612,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'anticipatory-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Anticipatory Grief: Mourning Someone Who Is Still Here',
     metaTitle: 'Anticipatory Grief: Mourning Someone Still Here | ColorMe',
     description:
@@ -699,7 +699,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'pet-loss-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Pet Loss Grief: Why Losing a Pet Hurts So Much',
     metaTitle: 'Pet Loss Grief: Why It Hurts So Much & How to Cope | ColorMe',
     description:
@@ -776,7 +776,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'complicated-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Complicated Grief: When Grief Gets Stuck',
     metaTitle: 'Complicated Grief: Signs, Causes & When to Get Help | ColorMe',
     description:
@@ -826,7 +826,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'How support helps' },
       {
         type: 'p',
-        text: 'Complicated grief usually does not resolve on its own — but it responds well to support. Grief-focused accompaniment helps you face the loss safely, work through what is stuck, and slowly find a way to live alongside it. Art therapy can be especially helpful when the pain is too tangled or too deep for words.',
+        text: 'Complicated grief usually does not resolve on its own — but it responds well to support. Grief-focused accompaniment helps you face the loss safely, work through what is stuck, and slowly find a way to live alongside it. Art as therapy can be especially helpful when the pain is too tangled or too deep for words.',
       },
       { type: 'h2', text: 'When to reach out' },
       {
@@ -845,7 +845,7 @@ export const enArticles: EnArticle[] = [
       },
       {
         q: 'Can complicated grief be treated?',
-        a: 'Yes. Grief-focused therapy and approaches like art therapy help people process what is stuck and gradually find a way to live with the loss.',
+        a: 'Yes. Grief-focused therapy and approaches like art as therapy help people process what is stuck and gradually find a way to live with the loss.',
       },
     ],
     related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
@@ -854,27 +854,27 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'art-therapy-exercises',
-    category: 'Art Therapy',
-    title: '8 Art Therapy Exercises You Can Do at Home',
-    metaTitle: '8 Art Therapy Exercises You Can Do at Home | ColorMe',
+    category: 'Art as Therapy',
+    title: '8 Art as Therapy Exercises You Can Do at Home',
+    metaTitle: '8 Art as Therapy Exercises You Can Do at Home | ColorMe',
     description:
-      'Simple art therapy exercises to process emotions, reduce stress, and reconnect with yourself — no art skills or special supplies needed. Try them at home today.',
+      'Simple art as therapy exercises to process emotions, reduce stress, and reconnect with yourself — no art skills or special supplies needed. Try them at home today.',
     keywords: [
-      'art therapy exercises',
-      'art therapy activities',
-      'art therapy exercises at home',
-      'art therapy techniques',
+      'art as therapy exercises',
+      'art as therapy activities',
+      'art as therapy exercises at home',
+      'art as therapy techniques',
       'art journaling prompts',
       'creative exercises for emotions',
     ],
     image: '/ejercicios-arteterapia.webp',
-    imageAlt: 'Art therapy exercises you can do at home',
+    imageAlt: 'Art as therapy exercises you can do at home',
     datePublished: '2026-07-30',
     readingTime: '6 min read',
     content: [
       {
         type: 'p',
-        text: 'You do not need a studio, expensive materials, or any artistic skill to benefit from art therapy at home. A pen and paper are enough. These eight exercises help you process emotions, calm your mind, and reconnect with yourself. There is no wrong way to do them.',
+        text: 'You do not need a studio, expensive materials, or any artistic skill to benefit from art as therapy at home. A pen and paper are enough. These eight exercises help you process emotions, calm your mind, and reconnect with yourself. There is no wrong way to do them.',
       },
       { type: 'h2', text: 'Before you begin' },
       {
@@ -934,15 +934,15 @@ export const enArticles: EnArticle[] = [
     ],
     faq: [
       {
-        q: 'What supplies do I need for art therapy at home?',
+        q: 'What supplies do I need for art as therapy at home?',
         a: 'Very little — paper and a pen, pencil, or crayons are enough. The process matters far more than the materials.',
       },
       {
-        q: 'Do art therapy exercises really work?',
+        q: 'Do art as therapy exercises really work?',
         a: 'Yes. Simple creative activities help regulate the nervous system, externalise difficult emotions, and build self-awareness, even done on your own.',
       },
       {
-        q: 'Can I do art therapy exercises if I can’t draw?',
+        q: 'Can I do art as therapy exercises if I can’t draw?',
         a: 'Absolutely. These exercises need no skill. Color, scribbles, and simple shapes are exactly right.',
       },
     ],
@@ -952,34 +952,34 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'art-therapy-for-children',
-    category: 'Art Therapy',
-    title: 'Art Therapy for Children: Helping Kids Express Big Feelings',
-    metaTitle: 'Art Therapy for Children: Helping Kids Express Feelings | ColorMe',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy for Children: Helping Kids Express Big Feelings',
+    metaTitle: 'Art as Therapy for Children: Helping Kids Express Feelings | ColorMe',
     description:
-      'Children often cannot put big feelings into words — but they can draw them. Learn how art therapy helps kids process emotions, grief, and anxiety, and how to support them.',
+      'Children often cannot put big feelings into words — but they can draw them. Learn how art as therapy helps kids process emotions, grief, and anxiety, and how to support them.',
     keywords: [
-      'art therapy for children',
-      'art therapy for kids',
+      'art as therapy for children',
+      'art as therapy for kids',
       'helping children express emotions',
-      'art therapy child grief',
+      'art as therapy child grief',
       'children and anxiety art',
       'creative therapy for kids',
     ],
     image: '/arteterapia-ninos.webp',
-    imageAlt: 'Art therapy for children — helping kids express big feelings',
+    imageAlt: 'Art as therapy for children — helping kids express big feelings',
     datePublished: '2026-07-30',
     readingTime: '6 min read',
     content: [
       {
         type: 'p',
-        text: 'Children feel just as deeply as adults, but they rarely have the words to explain it. A four-year-old cannot say “I feel anxious and abandoned.” But they can draw a tiny figure alone in a big, dark space. For kids, art is a natural language — and art therapy meets them exactly where they are.',
+        text: 'Children feel just as deeply as adults, but they rarely have the words to explain it. A four-year-old cannot say “I feel anxious and abandoned.” But they can draw a tiny figure alone in a big, dark space. For kids, art is a natural language — and art as therapy meets them exactly where they are.',
       },
       { type: 'h2', text: 'Why art works so well for children' },
       {
         type: 'p',
         text: 'Play and drawing are how children naturally process the world. Through art, feelings that are too big, too scary, or too confusing to say out loud can come out safely on the page. It gives adults a window into a child’s inner world — and gives the child a sense of relief and control.',
       },
-      { type: 'h2', text: 'What art therapy can help children with' },
+      { type: 'h2', text: 'What art as therapy can help children with' },
       {
         type: 'ul',
         items: [
@@ -997,7 +997,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'How a session works' },
       {
         type: 'p',
-        text: 'In child art therapy, a trained therapist creates a safe, playful space with simple materials. The child is invited to draw, paint, or build freely. The therapist gently notices themes and feelings in the work, following the child’s lead rather than directing them. There is never pressure to explain or perform.',
+        text: 'In child art as therapy, a trained therapist creates a safe, playful space with simple materials. The child is invited to draw, paint, or build freely. The therapist gently notices themes and feelings in the work, following the child’s lead rather than directing them. There is never pressure to explain or perform.',
       },
       { type: 'h2', text: 'Simple ways parents can support at home' },
       {
@@ -1017,11 +1017,11 @@ export const enArticles: EnArticle[] = [
     ],
     faq: [
       {
-        q: 'At what age can a child start art therapy?',
-        a: 'Children as young as three or four can benefit, since drawing and play are natural ways for them to express feelings. Art therapy is adapted to each child’s age and stage.',
+        q: 'At what age can a child start art as therapy?',
+        a: 'Children as young as three or four can benefit, since drawing and play are natural ways for them to express feelings. Art as therapy is adapted to each child’s age and stage.',
       },
       {
-        q: 'How does art therapy help a grieving child?',
+        q: 'How does art as therapy help a grieving child?',
         a: 'It lets children express grief they cannot put into words, gives them a safe outlet for confusing feelings, and offers a sense of control and relief during a frightening time.',
       },
       {
@@ -1035,7 +1035,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'miscarriage-and-pregnancy-loss',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Miscarriage & Pregnancy Loss: Grieving a Baby the World Never Met',
     metaTitle: 'Miscarriage & Pregnancy Loss: Grieving Your Baby | ColorMe',
     description:
@@ -1117,7 +1117,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'what-to-say-to-someone-grieving',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'What to Say to Someone Who Is Grieving (and What Not to Say)',
     metaTitle: 'What to Say to Someone Grieving (and What Not To) | ColorMe',
     description:
@@ -1206,27 +1206,27 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'art-therapy-for-trauma',
-    category: 'Art Therapy',
-    title: 'Art Therapy for Trauma: Healing What Words Can’t Reach',
-    metaTitle: 'Art Therapy for Trauma: Healing Beyond Words | ColorMe',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy for Trauma: Healing What Words Can’t Reach',
+    metaTitle: 'Art as Therapy for Trauma: Healing Beyond Words | ColorMe',
     description:
-      'Trauma often lives beyond language, stored in the body and images. Learn how art therapy helps process trauma safely and gently, and what to expect from the work.',
+      'Trauma often lives beyond language, stored in the body and images. Learn how art as therapy helps process trauma safely and gently, and what to expect from the work.',
     keywords: [
-      'art therapy for trauma',
-      'trauma art therapy',
+      'art as therapy for trauma',
+      'trauma art as therapy',
       'healing trauma with art',
       'creative trauma therapy',
-      'art therapy PTSD',
+      'art as therapy PTSD',
       'processing trauma',
     ],
     image: '/arte-y-trauma.webp',
-    imageAlt: 'Art therapy for trauma — healing what words cannot reach',
+    imageAlt: 'Art as therapy for trauma — healing what words cannot reach',
     datePublished: '2026-07-30',
     readingTime: '6 min read',
     content: [
       {
         type: 'p',
-        text: 'Trauma is not stored the way ordinary memories are. It lives in the body, in sensations and images, often in a place words cannot easily reach. This is why talking alone sometimes is not enough — and why art therapy can be so powerful for healing trauma.',
+        text: 'Trauma is not stored the way ordinary memories are. It lives in the body, in sensations and images, often in a place words cannot easily reach. This is why talking alone sometimes is not enough — and why art as therapy can be so powerful for healing trauma.',
       },
       { type: 'h2', text: 'Why trauma resists words' },
       {
@@ -1237,7 +1237,7 @@ export const enArticles: EnArticle[] = [
         type: 'quote',
         text: 'You do not have to relive a trauma to heal it. Sometimes you only have to give it a shape.',
       },
-      { type: 'h2', text: 'How art therapy helps' },
+      { type: 'h2', text: 'How art as therapy helps' },
       {
         type: 'ul',
         items: [
@@ -1261,16 +1261,16 @@ export const enArticles: EnArticle[] = [
     ],
     faq: [
       {
-        q: 'How does art therapy help with trauma?',
+        q: 'How does art as therapy help with trauma?',
         a: 'It allows trauma stored in the body and images to be expressed without words, creates safe distance from painful memories, regulates the nervous system, and restores a sense of control.',
       },
       {
-        q: 'Do I have to talk about my trauma in art therapy?',
+        q: 'Do I have to talk about my trauma in art as therapy?',
         a: 'No. A key benefit is that you can express and process trauma through images without narrating it aloud. You always control how much you share.',
       },
       {
-        q: 'Is art therapy safe for trauma?',
-        a: 'When guided by a trained therapist who prioritises grounding and pacing, yes. Trauma-informed art therapy is designed to help wounds heal, not reopen them.',
+        q: 'Is art as therapy safe for trauma?',
+        a: 'When guided by a trained therapist who prioritises grounding and pacing, yes. Trauma-informed art as therapy is designed to help wounds heal, not reopen them.',
       },
     ],
     related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
@@ -1279,7 +1279,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'what-is-a-thanatologist',
-    category: 'Thanatology',
+    category: 'Grief Counseling',
     title: 'What Is a Thanatologist? How Grief Specialists Help',
     metaTitle: 'What Is a Thanatologist? How Grief Specialists Help | ColorMe',
     description:
@@ -1326,10 +1326,10 @@ export const enArticles: EnArticle[] = [
         type: 'p',
         text: 'You might reach out when a loss feels too heavy to carry alone, when you are supporting a dying loved one, when grief has become stuck, or when you simply want compassionate guidance through a painful transition. You do not have to be “in crisis” to deserve support.',
       },
-      { type: 'h2', text: 'Thanatology and art therapy together' },
+      { type: 'h2', text: 'Thanatology and art as therapy together' },
       {
         type: 'p',
-        text: 'Combining thanatology with art therapy is especially powerful: the thanatologist holds the grief process with expertise, while art gives you a language for feelings too big for words. Together, they offer a gentle, whole-person way through loss.',
+        text: 'Combining thanatology with art as therapy is especially powerful: the thanatologist holds the grief process with expertise, while art gives you a language for feelings too big for words. Together, they offer a gentle, whole-person way through loss.',
       },
     ],
     faq: [
@@ -1352,7 +1352,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'healing-mandalas',
-    category: 'Art Therapy',
+    category: 'Art as Therapy',
     title: 'Healing Mandalas: How Drawing Circles Calms the Mind',
     metaTitle: 'Healing Mandalas: How Drawing Circles Calms the Mind | ColorMe',
     description:
@@ -1360,7 +1360,7 @@ export const enArticles: EnArticle[] = [
     keywords: [
       'healing mandalas',
       'mandala meaning',
-      'mandala art therapy',
+      'mandala art as therapy',
       'how to draw a mandala',
       'mandalas for anxiety',
       'benefits of coloring mandalas',
@@ -1372,7 +1372,7 @@ export const enArticles: EnArticle[] = [
     content: [
       {
         type: 'p',
-        text: 'A mandala is a circular design radiating from a centre point. For thousands of years, across many cultures, mandalas have been used for meditation, prayer, and healing. In art therapy, they are a simple, powerful tool for calming the mind and returning to yourself.',
+        text: 'A mandala is a circular design radiating from a centre point. For thousands of years, across many cultures, mandalas have been used for meditation, prayer, and healing. In art as therapy, they are a simple, powerful tool for calming the mind and returning to yourself.',
       },
       { type: 'h2', text: 'What mandalas represent' },
       {
@@ -1429,7 +1429,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-and-guilt',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grief and Guilt: Making Peace with “I Should Have…”',
     metaTitle: 'Grief and Guilt: Making Peace with “I Should Have” | ColorMe',
     description:
@@ -1507,7 +1507,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-during-the-holidays',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grief During the Holidays: Surviving the Season After a Loss',
     metaTitle: 'Grief During the Holidays: Surviving the Season | ColorMe',
     description:
@@ -1580,7 +1580,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'coping-with-sudden-loss',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Coping With Sudden Loss: When Goodbye Never Came',
     metaTitle: 'Coping With Sudden Loss: When Goodbye Never Came | ColorMe',
     description:
@@ -1657,7 +1657,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'journaling-for-grief',
-    category: 'Art Therapy',
+    category: 'Art as Therapy',
     title: 'Journaling for Grief: Writing and Drawing Your Way Through Loss',
     metaTitle: 'Journaling for Grief: Writing Through Loss | ColorMe',
     description:
@@ -1735,43 +1735,43 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'art-therapy-vs-talk-therapy',
-    category: 'Art Therapy',
-    title: 'Art Therapy vs. Talk Therapy: Which Is Right for You?',
-    metaTitle: 'Art Therapy vs. Talk Therapy: Which Is Right for You? | ColorMe',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy vs. Talk Therapy: Which Is Right for You?',
+    metaTitle: 'Art as Therapy vs. Talk Therapy: Which Is Right for You? | ColorMe',
     description:
-      'Wondering whether art therapy or talk therapy suits you better? A clear comparison of how each works, their benefits, and how to choose the right approach for your needs.',
+      'Wondering whether art as therapy or talk therapy suits you better? A clear comparison of how each works, their benefits, and how to choose the right approach for your needs.',
     keywords: [
-      'art therapy vs talk therapy',
-      'difference between art therapy and talk therapy',
-      'is art therapy effective',
+      'art as therapy vs talk therapy',
+      'difference between art as therapy and talk therapy',
+      'is art as therapy effective',
       'types of therapy',
       'choosing a therapy',
-      'art therapy or counseling',
+      'art as therapy or counseling',
     ],
     image: '/arteterapia-sesion-creativa.webp',
-    imageAlt: 'Art therapy vs. talk therapy — which is right for you',
+    imageAlt: 'Art as therapy vs. talk therapy — which is right for you',
     datePublished: '2026-07-30',
     readingTime: '5 min read',
     content: [
       {
         type: 'p',
-        text: 'Talk therapy has helped millions of people — but words are not the only path to healing. For some, especially when emotions live below language, art therapy reaches places that talking cannot. So how do you know which is right for you? Often, the answer is not either/or.',
+        text: 'Talk therapy has helped millions of people — but words are not the only path to healing. For some, especially when emotions live below language, art as therapy reaches places that talking cannot. So how do you know which is right for you? Often, the answer is not either/or.',
       },
       { type: 'h2', text: 'How talk therapy works' },
       {
         type: 'p',
         text: 'Talk therapy uses conversation to explore thoughts, feelings, and patterns. It is powerful for gaining insight, understanding relationships, and working things through verbally. It works best when you can access and articulate what you feel.',
       },
-      { type: 'h2', text: 'How art therapy works' },
+      { type: 'h2', text: 'How art as therapy works' },
       {
         type: 'p',
-        text: 'Art therapy uses the creative process — drawing, color, image — guided by a trained therapist. It is especially helpful when feelings are hard to name, when talking feels blocked, or when trauma and grief live in the body more than in words. You do not need any artistic skill.',
+        text: 'Art as therapy uses the creative process — drawing, color, image — guided by a trained therapist. It is especially helpful when feelings are hard to name, when talking feels blocked, or when trauma and grief live in the body more than in words. You do not need any artistic skill.',
       },
       {
         type: 'quote',
-        text: 'Talk therapy starts with words. Art therapy starts with what has no words yet.',
+        text: 'Talk therapy starts with words. Art as therapy starts with what has no words yet.',
       },
-      { type: 'h2', text: 'Art therapy might suit you if…' },
+      { type: 'h2', text: 'Art as therapy might suit you if…' },
       {
         type: 'ul',
         items: [
@@ -1784,20 +1784,20 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'You do not have to choose' },
       {
         type: 'p',
-        text: 'Art therapy is a form of psychotherapy, not a lesser alternative to it. Many people benefit from combining approaches — talking where words help, and creating where they fall short. The best therapy is the one that meets you where you are.',
+        text: 'Art as therapy is a form of psychotherapy, not a lesser alternative to it. Many people benefit from combining approaches — talking where words help, and creating where they fall short. The best therapy is the one that meets you where you are.',
       },
     ],
     faq: [
       {
-        q: 'Is art therapy as effective as talk therapy?',
-        a: 'Yes. Art therapy is an established form of psychotherapy. For people who struggle to verbalise feelings, or who are processing trauma and grief, it can reach places talking alone cannot.',
+        q: 'Is art as therapy as effective as talk therapy?',
+        a: 'Yes. Art as therapy is an established form of psychotherapy. For people who struggle to verbalise feelings, or who are processing trauma and grief, it can reach places talking alone cannot.',
       },
       {
-        q: 'What is the main difference between art therapy and talk therapy?',
-        a: 'Talk therapy works through conversation; art therapy works through the creative process. Art therapy is especially useful when emotions are hard to put into words.',
+        q: 'What is the main difference between art as therapy and talk therapy?',
+        a: 'Talk therapy works through conversation; art as therapy works through the creative process. Art as therapy is especially useful when emotions are hard to put into words.',
       },
       {
-        q: 'Can I do both art therapy and talk therapy?',
+        q: 'Can I do both art as therapy and talk therapy?',
         a: 'Absolutely. Many people combine them — talking where it helps and creating where words fall short. They complement each other well.',
       },
     ],
@@ -1807,7 +1807,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'coping-with-loss-of-a-spouse',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Coping With the Loss of a Spouse: Life After Losing Your Partner',
     metaTitle: 'Coping With the Loss of a Spouse | ColorMe',
     description:
@@ -1885,7 +1885,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-and-relief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grief and Relief: The Feelings No One Talks About',
     metaTitle: 'Grief and Relief: The Feelings No One Talks About | ColorMe',
     description:
@@ -1957,7 +1957,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'what-is-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'What Is Grief? Understanding the Process of Loss',
     metaTitle: 'What Is Grief? Understanding the Process of Loss | ColorMe',
     description:
@@ -2011,7 +2011,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'When to reach for support' },
       {
         type: 'p',
-        text: 'If your grief feels unbearable, stuck, or is keeping you from living your life, you do not have to carry it alone. Compassionate accompaniment — through conversation or through creative expression like art therapy — can help you find your way.',
+        text: 'If your grief feels unbearable, stuck, or is keeping you from living your life, you do not have to carry it alone. Compassionate accompaniment — through conversation or through creative expression like art as therapy — can help you find your way.',
       },
     ],
     faq: [
@@ -2034,7 +2034,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'the-first-days-after-a-death',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'The First Days After Losing a Loved One',
     metaTitle: 'The First Days After Losing a Loved One | ColorMe',
     description:
@@ -2111,7 +2111,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'how-to-cope-with-losing-a-loved-one',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'How to Cope With Losing a Loved One: 12 Gentle Keys',
     metaTitle: 'How to Cope With Losing a Loved One: 12 Keys | ColorMe',
     description:
@@ -2186,7 +2186,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'disenfranchised-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Disenfranchised Grief: When Your Loss Isn’t Recognised',
     metaTitle: 'Disenfranchised Grief: When Loss Isn’t Recognised | ColorMe',
     description:
@@ -2264,7 +2264,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'death-anniversary',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'The Anniversary of a Death: How to Live and Honour the Date',
     metaTitle: 'The Anniversary of a Death: How to Honour the Date | ColorMe',
     description:
@@ -2332,7 +2332,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'difficult-anniversaries',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Difficult Anniversaries: Getting Through the Painful Dates',
     metaTitle: 'Difficult Anniversaries: Getting Through Painful Dates | ColorMe',
     description:
@@ -2400,7 +2400,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'birthday-of-someone-who-died',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'The Birthday of Someone Who Died: How to Honour the Day',
     metaTitle: 'The Birthday of Someone Who Died: How to Honour It | ColorMe',
     description:
@@ -2468,7 +2468,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'fathers-day-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Father’s Day When Your Dad Is Gone',
     metaTitle: 'Father’s Day When Your Dad Is Gone | ColorMe',
     description:
@@ -2540,7 +2540,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'rainbow-baby',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Rainbow Baby: The Light That Comes After the Storm',
     metaTitle: 'Rainbow Baby: The Light After Loss | ColorMe',
     description:
@@ -2607,7 +2607,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'caregiver-burnout',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Caregiver Burnout: When Caring for Others Consumes You',
     metaTitle: 'Caregiver Burnout: When Caring Consumes You | ColorMe',
     description:
@@ -2680,7 +2680,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'caregiver-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Caregiver Grief: The Silent Mourning of Those Who Care',
     metaTitle: 'Caregiver Grief: The Silent Mourning of Carers | ColorMe',
     description:
@@ -2747,7 +2747,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-after-divorce',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grief After Divorce: Mourning the End of a Marriage',
     metaTitle: 'Grief After Divorce: Mourning a Marriage | ColorMe',
     description:
@@ -2814,7 +2814,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-after-a-diagnosis',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grief After a Diagnosis: When Your Body Changes the Rules',
     metaTitle: 'Grief After a Diagnosis: When the Body Changes | ColorMe',
     description:
@@ -2881,7 +2881,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-and-social-media',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grief and Social Media: Mourning in a Connected World',
     metaTitle: 'Grief and Social Media: Mourning Online | ColorMe',
     description:
@@ -2948,7 +2948,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'explaining-death-to-a-child',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'How to Explain Death to a Child',
     metaTitle: 'How to Explain Death to a Child | ColorMe',
     description:
@@ -2997,7 +2997,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'When to seek support' },
       {
         type: 'p',
-        text: 'If a child seems stuck, withdrawn, or overwhelmed, art therapy and child grief support offer safe, playful ways to process a loss they cannot yet put into words.',
+        text: 'If a child seems stuck, withdrawn, or overwhelmed, art as therapy and child grief support offer safe, playful ways to process a loss they cannot yet put into words.',
       },
     ],
     faq: [
@@ -3020,7 +3020,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'why-we-avoid-talking-about-death',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Why We Avoid Talking About Death',
     metaTitle: 'Why We Avoid Talking About Death | ColorMe',
     description:
@@ -3087,7 +3087,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'menopause-and-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Menopause and Grief: The Invisible Losses',
     metaTitle: 'Menopause and Grief: The Invisible Losses | ColorMe',
     description:
@@ -3154,7 +3154,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'farewell-rituals',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Farewell Rituals: How to Create Your Own',
     metaTitle: 'Farewell Rituals: How to Create Your Own | ColorMe',
     description:
@@ -3222,7 +3222,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'supporting-someone-with-terminal-cancer',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'How to Support Someone With Terminal Cancer',
     metaTitle: 'How to Support Someone With Terminal Cancer | ColorMe',
     description:
@@ -3290,7 +3290,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'talking-to-your-children-about-cancer',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'How to Talk to Your Children About Cancer',
     metaTitle: 'How to Talk to Your Children About Cancer | ColorMe',
     description:
@@ -3334,7 +3334,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'Give feelings somewhere to go' },
       {
         type: 'p',
-        text: 'Invite your children to express their feelings through talking, drawing, or play. Keep checking in, since their questions and emotions will shift over time. If they are struggling, art therapy offers a gentle, safe outlet.',
+        text: 'Invite your children to express their feelings through talking, drawing, or play. Keep checking in, since their questions and emotions will shift over time. If they are struggling, art as therapy offers a gentle, safe outlet.',
       },
     ],
     faq: [
@@ -3348,7 +3348,7 @@ export const enArticles: EnArticle[] = [
       },
       {
         q: 'How can I help my child cope with a parent’s cancer?',
-        a: 'Keep communication open, invite feelings through talking, drawing, or play, check in regularly, and consider art therapy if they are struggling to process it.',
+        a: 'Keep communication open, invite feelings through talking, drawing, or play, check in regularly, and consider art as therapy if they are struggling to process it.',
       },
     ],
     related: ['explaining-death-to-a-child', 'art-therapy-for-children'],
@@ -3357,7 +3357,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-over-a-lost-friendship',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grieving the Loss of a Friendship',
     metaTitle: 'Grieving the Loss of a Friendship | ColorMe',
     description:
@@ -3424,7 +3424,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'migration-grief',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Migration Grief: When You Leave Your Country Behind',
     metaTitle: 'Migration Grief: When You Leave Your Country | ColorMe',
     description:
@@ -3492,7 +3492,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grieving-your-body',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'Grieving Your Body: When It’s No Longer the Same',
     metaTitle: 'Grieving Your Body: When It Changes | ColorMe',
     description:
@@ -3559,7 +3559,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'siblings-of-sick-children',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'The Siblings Who Don’t Get Sick: A Hidden Grief',
     metaTitle: 'Siblings of Sick Children: A Hidden Grief | ColorMe',
     description:
@@ -3631,7 +3631,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-after-job-loss',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'The Grief of Losing Your Job: More Than a Layoff',
     metaTitle: 'The Grief of Losing Your Job | ColorMe',
     description:
@@ -3698,7 +3698,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-of-motherhood',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'The Grief of Motherhood: The Losses No One Names',
     metaTitle: 'The Grief of Motherhood: Unnamed Losses | ColorMe',
     description:
@@ -3765,7 +3765,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-of-infertility',
-    category: 'Grief',
+    category: 'Grief Counseling',
     title: 'When Parenthood Doesn’t Come: The Grief of Infertility',
     metaTitle: 'The Grief of Infertility & Childlessness | ColorMe',
     description:
@@ -4234,7 +4234,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'how-art-heals-the-brain',
-    category: 'Art Therapy',
+    category: 'Art as Therapy',
     title: 'How Art Heals: What Happens in Your Brain When You Create',
     metaTitle: 'How Art Heals the Brain When You Create | ColorMe',
     description:
@@ -4282,7 +4282,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'Why this matters for healing' },
       {
         type: 'p',
-        text: 'Because art engages the emotional, sensory brain, it can access and process feelings that talking alone cannot — which is exactly why art therapy is so powerful for grief, anxiety, and trauma. And you need no skill to receive the benefits.',
+        text: 'Because art engages the emotional, sensory brain, it can access and process feelings that talking alone cannot — which is exactly why art as therapy is so powerful for grief, anxiety, and trauma. And you need no skill to receive the benefits.',
       },
     ],
     faq: [
@@ -4305,37 +4305,37 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'psychology-vs-art-therapy',
-    category: 'Art Therapy',
-    title: 'Psychology vs. Art Therapy: What’s the Difference?',
-    metaTitle: 'Psychology vs. Art Therapy: The Difference | ColorMe',
+    category: 'Art as Therapy',
+    title: 'Psychology vs. Art as Therapy: What’s the Difference?',
+    metaTitle: 'Psychology vs. Art as Therapy: The Difference | ColorMe',
     description:
-      'Psychology and art therapy both support mental health, but they work differently. The key differences, what each is best for, and how to choose the right one for you.',
+      'Psychology and art as therapy both support mental health, but they work differently. The key differences, what each is best for, and how to choose the right one for you.',
     keywords: [
-      'psychology vs art therapy',
-      'difference between psychology and art therapy',
-      'art therapy or psychology',
+      'psychology vs art as therapy',
+      'difference between psychology and art as therapy',
+      'art as therapy or psychology',
       'types of therapy',
       'choosing a therapist',
-      'what is art therapy',
+      'what is art as therapy',
     ],
     image: '/diferencia-psicologia-y-arteterapia.jpeg',
-    imageAlt: 'Psychology vs. art therapy — what’s the difference',
+    imageAlt: 'Psychology vs. art as therapy — what’s the difference',
     datePublished: '2026-07-31',
     readingTime: '4 min read',
     content: [
       {
         type: 'p',
-        text: 'Psychology and art therapy both support mental and emotional health, and they can work beautifully together — but they are not the same. Understanding the difference can help you choose what fits your needs.',
+        text: 'Psychology and art as therapy both support mental and emotional health, and they can work beautifully together — but they are not the same. Understanding the difference can help you choose what fits your needs.',
       },
       { type: 'h2', text: 'How psychology works' },
       {
         type: 'p',
         text: 'Traditional psychology and psychotherapy work mainly through conversation — exploring thoughts, behaviours, and patterns to gain insight and change. It is verbal, analytical, and highly effective when you can access and articulate your feelings.',
       },
-      { type: 'h2', text: 'How art therapy works' },
+      { type: 'h2', text: 'How art as therapy works' },
       {
         type: 'p',
-        text: 'Art therapy uses the creative process — image, colour, and material — guided by a trained therapist. It reaches feelings that live below language, making it especially helpful when words are hard to find, or when talking feels blocked.',
+        text: 'Art as therapy uses the creative process — image, colour, and material — guided by a trained therapist. It reaches feelings that live below language, making it especially helpful when words are hard to find, or when talking feels blocked.',
       },
       {
         type: 'quote',
@@ -4346,7 +4346,7 @@ export const enArticles: EnArticle[] = [
         type: 'ul',
         items: [
           'Choose talk-based work if you process best verbally and want analytical insight.',
-          'Choose art therapy if feelings are hard to name or talking feels stuck.',
+          'Choose art as therapy if feelings are hard to name or talking feels stuck.',
           'Many people benefit from combining both approaches.',
           'The best therapy is the one that meets you where you are.',
         ],
@@ -4354,16 +4354,16 @@ export const enArticles: EnArticle[] = [
     ],
     faq: [
       {
-        q: 'What is the difference between psychology and art therapy?',
-        a: 'Psychology works mainly through conversation and analysis, while art therapy uses the creative process to reach feelings that live below language. Both support mental health and can complement each other.',
+        q: 'What is the difference between psychology and art as therapy?',
+        a: 'Psychology works mainly through conversation and analysis, while art as therapy uses the creative process to reach feelings that live below language. Both support mental health and can complement each other.',
       },
       {
-        q: 'Is art therapy a real form of psychology?',
-        a: 'Art therapy is an established form of psychotherapy delivered by trained professionals. It uses creativity rather than conversation as its primary tool.',
+        q: 'Is art as therapy a real form of psychology?',
+        a: 'Art as therapy is an established form of psychotherapy delivered by trained professionals. It uses creativity rather than conversation as its primary tool.',
       },
       {
         q: 'Which is better for me?',
-        a: 'It depends. Talk-based work suits those who process verbally; art therapy helps when feelings are hard to name or talking feels blocked. Many people combine both.',
+        a: 'It depends. Talk-based work suits those who process verbally; art as therapy helps when feelings are hard to name or talking feels blocked. Many people combine both.',
       },
     ],
     related: ['art-therapy-vs-talk-therapy', 'what-is-art-therapy'],
@@ -4372,34 +4372,34 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'art-therapy-and-autism',
-    category: 'Art Therapy',
-    title: 'Art Therapy and Autism: When Art Opens Doors',
-    metaTitle: 'Art Therapy and Autism: When Art Opens Doors | ColorMe',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy and Autism: When Art Opens Doors',
+    metaTitle: 'Art as Therapy and Autism: When Art Opens Doors | ColorMe',
     description:
-      'For autistic children and adults, art therapy offers a space to communicate and express beyond words. How art therapy supports autism with sensory, gentle connection.',
+      'For autistic children and adults, art as therapy offers a space to communicate and express beyond words. How art as therapy supports autism with sensory, gentle connection.',
     keywords: [
-      'art therapy and autism',
-      'art therapy for autistic children',
+      'art as therapy and autism',
+      'art as therapy for autistic children',
       'autism creative therapy',
       'nonverbal expression autism',
       'autism emotional support',
-      'art therapy neurodivergent',
+      'art as therapy neurodivergent',
     ],
     image: '/mari-final.jpeg',
-    imageAlt: 'Art therapy and autism — when art opens doors',
+    imageAlt: 'Art as therapy and autism — when art opens doors',
     datePublished: '2026-07-31',
     readingTime: '5 min read',
     content: [
       {
         type: 'p',
-        text: 'For many autistic children and adults, words are not the easiest way to communicate feelings. Art therapy offers another door — a sensory, visual language that can express what speech cannot, at a pace and in a way that feels safe.',
+        text: 'For many autistic children and adults, words are not the easiest way to communicate feelings. Art as therapy offers another door — a sensory, visual language that can express what speech cannot, at a pace and in a way that feels safe.',
       },
       { type: 'h2', text: 'Communication beyond words' },
       {
         type: 'p',
-        text: 'Art therapy does not require verbal explanation. Through colour, shape, and material, an autistic person can express emotions, experiences, and inner worlds — giving both them and those around them a new way to connect.',
+        text: 'Art as therapy does not require verbal explanation. Through colour, shape, and material, an autistic person can express emotions, experiences, and inner worlds — giving both them and those around them a new way to connect.',
       },
-      { type: 'h2', text: 'How art therapy can support autism' },
+      { type: 'h2', text: 'How art as therapy can support autism' },
       {
         type: 'ul',
         items: [
@@ -4417,20 +4417,20 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'Meeting each person as an individual' },
       {
         type: 'p',
-        text: 'Every autistic person is different, so art therapy is adapted to their sensory preferences, strengths, and needs. The goal is never to “fix,” but to offer a space where they can be understood and express themselves fully.',
+        text: 'Every autistic person is different, so art as therapy is adapted to their sensory preferences, strengths, and needs. The goal is never to “fix,” but to offer a space where they can be understood and express themselves fully.',
       },
     ],
     faq: [
       {
-        q: 'How does art therapy help autistic children?',
+        q: 'How does art as therapy help autistic children?',
         a: 'It offers a non-verbal way to express feelings, provides soothing sensory engagement, supports emotional regulation, and builds connection and confidence in a safe, structured space.',
       },
       {
-        q: 'Do you need to be verbal to benefit from art therapy?',
-        a: 'No. Art therapy works through image, colour, and material rather than speech, making it especially valuable for those who find words difficult.',
+        q: 'Do you need to be verbal to benefit from art as therapy?',
+        a: 'No. Art as therapy works through image, colour, and material rather than speech, making it especially valuable for those who find words difficult.',
       },
       {
-        q: 'Is art therapy adapted to each autistic person?',
+        q: 'Is art as therapy adapted to each autistic person?',
         a: 'Yes. It is tailored to individual sensory preferences, strengths, and needs, with the goal of understanding and expression rather than “fixing.”',
       },
     ],
@@ -4440,65 +4440,65 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'art-therapy-vs-art-class',
-    category: 'Art Therapy',
-    title: 'Art Therapy vs. Art Class: What’s the Difference?',
-    metaTitle: 'Art Therapy vs. Art Class: The Difference | ColorMe',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy vs. Art Class: What’s the Difference?',
+    metaTitle: 'Art as Therapy vs. Art Class: The Difference | ColorMe',
     description:
-      'Making art to learn is not the same as making art to heal. The key differences between an art class and art therapy, and how to know which one you need.',
+      'Making art to learn is not the same as making art to heal. The key differences between an art class and art as therapy, and how to know which one you need.',
     keywords: [
-      'art therapy vs art class',
-      'difference art therapy art class',
-      'is art therapy a class',
+      'art as therapy vs art class',
+      'difference art as therapy art class',
+      'is art as therapy a class',
       'art class vs therapy',
-      'what is art therapy',
+      'what is art as therapy',
       'healing through art',
     ],
     image: '/anagaby-final.jpeg',
-    imageAlt: 'Art therapy vs. art class — what’s the difference',
+    imageAlt: 'Art as therapy vs. art class — what’s the difference',
     datePublished: '2026-07-31',
     readingTime: '4 min read',
     content: [
       {
         type: 'p',
-        text: 'Both involve paint, paper, and creativity — but an art class and art therapy are fundamentally different. One is about learning to make art; the other is about using art to heal. Knowing the difference helps you find what you are really looking for.',
+        text: 'Both involve paint, paper, and creativity — but an art class and art as therapy are fundamentally different. One is about learning to make art; the other is about using art to heal. Knowing the difference helps you find what you are really looking for.',
       },
       { type: 'h2', text: 'An art class: the product' },
       {
         type: 'p',
         text: 'An art class teaches technique and skill. The focus is the artwork itself — improving how you draw, paint, or sculpt. Success is measured by the result, and the teacher guides you toward making “better” art.',
       },
-      { type: 'h2', text: 'Art therapy: the process' },
+      { type: 'h2', text: 'Art as therapy: the process' },
       {
         type: 'p',
-        text: 'Art therapy uses creating as a path to emotional healing, guided by a trained therapist. The focus is never the final product but what the process reveals and releases. There is no skill to master and no judgement — only what the art helps you feel and understand.',
+        text: 'Art as therapy uses creating as a path to emotional healing, guided by a trained therapist. The focus is never the final product but what the process reveals and releases. There is no skill to master and no judgement — only what the art helps you feel and understand.',
       },
       {
         type: 'quote',
-        text: 'In an art class, the art is the goal. In art therapy, you are the goal.',
+        text: 'In an art class, the art is the goal. In art as therapy, you are the goal.',
       },
       { type: 'h2', text: 'Which one do you need?' },
       {
         type: 'ul',
         items: [
           'Choose an art class to build skills and enjoy making art.',
-          'Choose art therapy to process emotions, grief, or stress.',
-          'You do not need any artistic ability for art therapy.',
+          'Choose art as therapy to process emotions, grief, or stress.',
+          'You do not need any artistic ability for art as therapy.',
           'Both are valuable — they simply serve different purposes.',
         ],
       },
     ],
     faq: [
       {
-        q: 'What is the difference between art therapy and an art class?',
-        a: 'An art class teaches technique and focuses on the artwork; art therapy uses the creative process for emotional healing, guided by a trained therapist, with no focus on the result.',
+        q: 'What is the difference between art as therapy and an art class?',
+        a: 'An art class teaches technique and focuses on the artwork; art as therapy uses the creative process for emotional healing, guided by a trained therapist, with no focus on the result.',
       },
       {
-        q: 'Do I need art skills for art therapy?',
-        a: 'No. Art therapy requires no artistic ability. The benefit comes from the process, not the quality of what you make.',
+        q: 'Do I need art skills for art as therapy?',
+        a: 'No. Art as therapy requires no artistic ability. The benefit comes from the process, not the quality of what you make.',
       },
       {
         q: 'Which should I choose?',
-        a: 'Choose an art class to learn and enjoy making art; choose art therapy to process emotions, grief, or stress. They serve different purposes and both are valuable.',
+        a: 'Choose an art class to learn and enjoy making art; choose art as therapy to process emotions, grief, or stress. They serve different purposes and both are valuable.',
       },
     ],
     related: ['what-is-art-therapy', 'psychology-vs-art-therapy'],
@@ -4507,7 +4507,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'day-of-the-dead-mexico',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Day of the Dead: Where Mexico Celebrates Death With Life',
     metaTitle: 'Day of the Dead in Mexico: Traditions & Meaning | ColorMe',
     description:
@@ -4579,7 +4579,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-india',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'India: Where the Soul Walks Barefoot — Rituals of Farewell',
     metaTitle: 'Grief Rituals in India: Sacred Colours & Farewell | ColorMe',
     description:
@@ -4651,7 +4651,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-bali-ngaben',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Bali: Where Death Is Celebrated — The Ngaben Ritual',
     metaTitle: 'Bali’s Ngaben: Where Death Is Celebrated | ColorMe',
     description:
@@ -4718,7 +4718,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-malaysia',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Malaysia: The Crossroads of Three Souls',
     metaTitle: 'Grief Rituals in Malaysia: Three Traditions | ColorMe',
     description:
@@ -4784,7 +4784,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-thailand',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Thailand: The Wisdom of Letting Go With Gratitude',
     metaTitle: 'Grief Rituals in Thailand: Letting Go | ColorMe',
     description:
@@ -4851,7 +4851,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-vietnam',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Vietnam: Where Ancestors Never Truly Leave',
     metaTitle: 'Grief Rituals in Vietnam: Ancestor Worship | ColorMe',
     description:
@@ -4918,7 +4918,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-greece',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Greece: The Birthplace of Philosophy Before Death',
     metaTitle: 'Grief Rituals in Greece: Philosophy & Farewell | ColorMe',
     description:
@@ -4985,7 +4985,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-cuba',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Cuba: Where Death Dances to the Drum',
     metaTitle: 'Grief Rituals in Cuba: Santería & Farewell | ColorMe',
     description:
@@ -5052,7 +5052,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-turkey',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Turkey: Where East and West Pray Together',
     metaTitle: 'Grief Rituals in Turkey: Traditions of Farewell | ColorMe',
     description:
@@ -5119,7 +5119,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'grief-rituals-italy',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Italy: Where Beauty Is a Form of Prayer',
     metaTitle: 'Grief Rituals in Italy: Beauty & Remembrance | ColorMe',
     description:
@@ -5186,7 +5186,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'mehndi-sacred-art-india',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Mehndi: India’s Sacred Art Where Skin Becomes Prayer',
     metaTitle: 'Mehndi: India’s Sacred Henna Art & Meaning | ColorMe',
     description:
@@ -5225,7 +5225,7 @@ export const enArticles: EnArticle[] = [
       { type: 'h2', text: 'Art as spiritual practice' },
       {
         type: 'p',
-        text: 'Mehndi reminds us that art and the sacred have always been intertwined — that creating on the body, like any art, can be a form of prayer, celebration, and meaning-making. This is the same truth at the heart of art therapy.',
+        text: 'Mehndi reminds us that art and the sacred have always been intertwined — that creating on the body, like any art, can be a form of prayer, celebration, and meaning-making. This is the same truth at the heart of art as therapy.',
       },
     ],
     faq: [
@@ -5238,7 +5238,7 @@ export const enArticles: EnArticle[] = [
         a: 'Mehndi is temporary by nature, fading within weeks. This impermanence is part of its meaning — a reminder to treasure the present, since nothing stays the same.',
       },
       {
-        q: 'How does mehndi relate to art therapy?',
+        q: 'How does mehndi relate to art as therapy?',
         a: 'Both reflect the ancient link between art and the sacred — creating as a form of prayer, celebration, and meaning-making that supports the inner life.',
       },
     ],
@@ -5248,7 +5248,7 @@ export const enArticles: EnArticle[] = [
   // --------------------------------------------------------------------------
   {
     slug: 'melukat-bali-purification',
-    category: 'World Rituals',
+    category: 'Rituals and Colors of the World',
     title: 'Melukat: The Balinese Ceremony Where Water Cleanses the Soul',
     metaTitle: 'Melukat: Bali’s Sacred Water Purification | ColorMe',
     description:
