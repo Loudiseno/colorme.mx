@@ -2,11 +2,33 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
 import Image from 'next/image'
-import { ArrowRight, Calendar } from 'lucide-react'
+import { ArrowRight, Calendar, Instagram, Facebook, Youtube } from 'lucide-react'
 import { siteConfig, generateBookSchema } from '@/lib/seo'
 import Testimonials from '@/components/Testimonials'
 import ContactForm from '@/components/ContactForm'
 import BlogSection from '@/components/BlogSection'
+
+// Iconos personalizados (no disponibles en lucide)
+const TikTokIcon = ({ size = 20, strokeWidth = 1.5 }: { size?: number; strokeWidth?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+)
+
+const WhatsAppIcon = ({ size = 20, strokeWidth = 1.5 }: { size?: number; strokeWidth?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+  </svg>
+)
+
+const socialLinks = [
+  { name: 'Instagram', href: siteConfig.social.instagram, icon: Instagram },
+  { name: 'Facebook', href: siteConfig.social.facebook, icon: Facebook },
+  { name: 'TikTok', href: 'https://www.tiktok.com/@colorme_lab', icon: TikTokIcon },
+  { name: 'YouTube', href: 'https://www.youtube.com/@ColorMe-lab', icon: Youtube },
+  { name: 'WhatsApp', href: siteConfig.whatsapp, icon: WhatsAppIcon },
+]
 
 export const metadata: Metadata = {
   title: 'Arteterapia y Tanatología | Acompañamiento Emocional | ColorMe',
@@ -350,6 +372,30 @@ export default function HomePage() {
             </p>
           </div>
           <ContactForm />
+        </div>
+      </section>
+
+      {/* Redes sociales */}
+      <section className="py-10 md:py-12 bg-[#B2F7EF]/10">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-2xl md:text-3xl text-black mb-2">Sígueme en redes sociales</h2>
+          <p className="text-black/60 mb-6">
+            Acompañamiento, arte y reflexiones para tu día a día.
+          </p>
+          <div className="flex items-center justify-center gap-4">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                className="w-11 h-11 rounded-full border border-black/15 text-black flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors"
+              >
+                <social.icon size={20} strokeWidth={1.5} />
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 

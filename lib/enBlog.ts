@@ -1,30 +1,5322 @@
-// Single source of truth for the English blog index and sitemap.
-// Add an entry here each time a new English article page is created.
+// ============================================================================
+// BLOG EN INGLÉS (SEO) — CONTENIDO
+// ============================================================================
+//
+// Artículos en inglés optimizados para SEO, servidos en /en/blog/<slug>.
+// Enfoque data-driven: para agregar un artículo nuevo solo añade un objeto
+// a `enArticles`. La ruta, el sitemap, los metadatos y el schema se generan
+// solos a partir de estos datos.
+// ============================================================================
+
+export type Block =
+  | { type: 'p'; text: string }
+  | { type: 'h2'; text: string }
+  | { type: 'h3'; text: string }
+  | { type: 'ul'; items: string[] }
+  | { type: 'quote'; text: string }
+
+export interface FaqItem {
+  q: string
+  a: string
+}
 
 export interface EnArticle {
   slug: string
+  category: string
+  /** H1 en la página */
   title: string
+  /** <title> del navegador y buscadores */
+  metaTitle: string
+  /** meta description */
   description: string
+  keywords: string[]
   image: string
-  alt: string
-  category: 'Grief' | 'Art Therapy'
+  imageAlt: string
+  datePublished: string
+  dateModified?: string
+  readingTime: string
+  content: Block[]
+  faq?: FaqItem[]
+  /** slugs de otros artículos en inglés relacionados */
+  related?: string[]
 }
 
 export const enArticles: EnArticle[] = [
-  {
-    slug: 'what-is-grief',
-    title: 'What Is Grief? Understanding Loss and How to Move Through It',
-    description: 'Grief is the natural response to any meaningful loss. What it is, why it hurts so much, and how to move through it without losing yourself.',
-    image: '/el-duelo.webp',
-    alt: 'What is grief?',
-    category: 'Grief',
-  },
+  // --------------------------------------------------------------------------
   {
     slug: 'how-long-does-grief-last',
+    category: 'Grief Counseling',
     title: 'How Long Does Grief Last? An Honest Answer',
-    description: 'There is no expiration date for grief — but it does not stay this intense forever. What science says, what influences it, and signs you are moving forward.',
+    metaTitle: 'How Long Does Grief Last? An Honest Answer | ColorMe',
+    description:
+      'Grief has no expiration date, but the pain does not stay at the same intensity forever. An honest look at how long grief lasts and how it changes over time.',
+    keywords: [
+      'how long does grief last',
+      'how long does grief last after losing a loved one',
+      'grief timeline',
+      'stages of grief',
+      'grieving process',
+      'complicated grief',
+    ],
     image: '/cuanto-dura-el-duelo.webp',
-    alt: 'How long does grief last?',
-    category: 'Grief',
+    imageAlt: 'How long does grief last — the truth about the length of the grieving process',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      { type: 'p', text: '“When will this pain stop?”' },
+      {
+        type: 'p',
+        text: 'It is the question almost everyone asks while grieving. We need to believe it will not last forever. We need a light at the end of the tunnel. So let me give you an honest answer.',
+      },
+      { type: 'h2', text: 'The short answer' },
+      {
+        type: 'p',
+        text: 'There is no expiration date for grief. There is no morning when you wake up and say, “Alright, it is over.” There is no formula that says a loss takes exactly six months or a year to process.',
+      },
+      {
+        type: 'p',
+        text: 'But here is the part that matters just as much: the pain does not stay at the same intensity forever. What changes is not that you forget — it is that you learn to carry the loss differently.',
+      },
+      { type: 'h2', text: 'Why grief has no fixed timeline' },
+      {
+        type: 'p',
+        text: 'Grief is not a problem to be solved; it is a relationship that continues in a new form. Its length depends on many things: who you lost, how you lost them, the role that person played in your life, your support network, and your own history with loss.',
+      },
+      {
+        type: 'p',
+        text: 'This is why comparing your grief to someone else’s is rarely helpful. Two people can lose the same person and grieve on completely different schedules — and both are normal.',
+      },
+      { type: 'h2', text: 'What the first year often looks like' },
+      {
+        type: 'p',
+        text: 'The first year is frequently the hardest because it is full of “firsts”: the first birthday, the first holiday season, the first anniversary of the death. Each one can reopen the wound. Many people describe waves — moments of relative calm interrupted by sudden, intense pain triggered by a song, a smell, or an empty chair.',
+      },
+      {
+        type: 'p',
+        text: 'Those waves are not a sign you are going backward. They are how grief moves. Over time, the waves usually come less often and feel less overwhelming, even if they never disappear entirely.',
+      },
+      { type: 'h2', text: 'Grief changes — it does not simply “end”' },
+      {
+        type: 'quote',
+        text: 'You do not get over grief. You grow around it. Your life gets bigger, and the loss becomes one part of a fuller story.',
+      },
+      {
+        type: 'p',
+        text: 'A helpful way to picture it: imagine the grief as a ball inside a box, with a pain button on one wall. At first the ball is huge and hits the button constantly. As months pass the ball shrinks — so it hits the button less often. But when it does, it still hurts just as much. That is why grief can surprise you years later, and why that is completely normal.',
+      },
+      { type: 'h2', text: 'When it may be more than “normal” grief' },
+      {
+        type: 'p',
+        text: 'Sometimes grief gets stuck. If, many months after the loss, you notice any of the following, it may be worth reaching out for professional support:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'You feel unable to function in daily life with no easing over time.',
+          'You are avoiding all reminders of the person, or clinging so tightly you cannot move at all.',
+          'You feel persistent guilt, worthlessness, or thoughts that life is not worth living.',
+          'You are using alcohol, substances, or overwork to avoid feeling anything.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Asking for help is not a failure to grieve “correctly.” It is one of the wisest, most loving things you can do for yourself.',
+      },
+      { type: 'h2', text: 'A gentler way through' },
+      {
+        type: 'p',
+        text: 'You do not have to talk your way through grief if words feel impossible. Art as therapy offers another door — a way to give shape to what you feel when language falls short. Drawing, color, and simple creative rituals can help you process loss at your own pace, without needing to explain or justify a thing.',
+      },
+      {
+        type: 'p',
+        text: 'However long your grief lasts, you are not doing it wrong. Be patient with yourself. Healing is not forgetting — it is learning to live with love and loss in the same heart.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve for years?',
+        a: 'Yes. Grief can soften over years while still resurfacing on anniversaries, birthdays, or unexpected moments. Ongoing grief is not a sign that something is wrong with you.',
+      },
+      {
+        q: 'How long is “too long” to grieve?',
+        a: 'There is no fixed limit. What matters is not the calendar but whether the grief is easing over time and whether you can still engage with life. If it stays disabling with no relief, consider professional support.',
+      },
+      {
+        q: 'Does grief ever fully go away?',
+        a: 'Most people do not stop missing the person they lost. Instead, the pain becomes less constant and less overwhelming, and the love remains. You grow around the grief rather than erasing it.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'grief-after-losing-a-parent'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'seven-stages-of-grief',
+    category: 'Grief Counseling',
+    title: 'The 7 Stages of Grief: What They Really Look Like',
+    metaTitle: 'The 7 Stages of Grief: What They Really Look Like | ColorMe',
+    description:
+      'The 7 stages of grief explained honestly — and why grief is never a straight line. A compassionate guide to what each stage feels like and how to move through them.',
+    keywords: [
+      '7 stages of grief',
+      'seven stages of grief',
+      'stages of grief',
+      'grief stages in order',
+      'what are the stages of grief',
+      'grieving process',
+    ],
+    image: '/el-duelo.webp',
+    imageAlt: 'The 7 stages of grief and what each one really feels like',
+    datePublished: '2026-07-30',
+    readingTime: '7 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'You may have heard that grief comes in stages. It is a comforting idea — if there are steps, maybe there is a finish line. But the truth is gentler and messier than a checklist.',
+      },
+      {
+        type: 'p',
+        text: 'The stages are real, but they are not a straight staircase you climb once. They are more like weather: they come, they pass, they return. Understanding them can help you feel less alone and less “broken” when your grief does not behave the way you expected.',
+      },
+      { type: 'h2', text: 'The 7 stages of grief' },
+      { type: 'h3', text: '1. Shock' },
+      {
+        type: 'p',
+        text: 'In the first hours and days, the mind protects you with numbness. You may feel strangely calm, detached, or unable to cry. This is not coldness — it is your nervous system buffering a blow too big to absorb all at once.',
+      },
+      { type: 'h3', text: '2. Denial' },
+      {
+        type: 'p',
+        text: 'Part of you keeps expecting the person to walk through the door or call your phone. Denial is not stupidity; it is the heart taking in an unbearable reality in small, survivable doses.',
+      },
+      { type: 'h3', text: '3. Anger' },
+      {
+        type: 'p',
+        text: 'Anger can point in every direction — at doctors, at yourself, at the person who died, at God, at the unfairness of it all. It often masks a deeper pain. Anger is not a moral failing; it is grief with nowhere to go.',
+      },
+      { type: 'h3', text: '4. Bargaining' },
+      {
+        type: 'p',
+        text: 'This is the “what if” and “if only” stage. If only I had called sooner. What if we had seen another doctor. Bargaining is the mind searching for a way the outcome could have been different, trying to regain a sense of control.',
+      },
+      { type: 'h3', text: '5. Depression' },
+      {
+        type: 'p',
+        text: 'When the reality settles in, deep sadness follows. Energy drains away, the world feels grey, and even simple tasks feel enormous. This is not a disorder to rush past — it is the natural weight of love with nowhere to land.',
+      },
+      { type: 'h3', text: '6. Acceptance' },
+      {
+        type: 'p',
+        text: 'Acceptance does not mean you are “okay” with the loss or that you stop missing the person. It means you begin to accept the reality of it and to find a way to live alongside it.',
+      },
+      { type: 'h3', text: '7. Meaning' },
+      {
+        type: 'p',
+        text: 'Many people describe a final movement: finding meaning. Not a silver lining that erases the pain, but a way to carry the person forward — through memory, ritual, creativity, or how you choose to live.',
+      },
+      { type: 'h2', text: 'Why grief is not a straight line' },
+      {
+        type: 'quote',
+        text: 'You might feel acceptance on Monday and be back in anger by Thursday. That is not regression. That is grief.',
+      },
+      {
+        type: 'p',
+        text: 'You will not necessarily feel all seven stages, and rarely in order. You may skip some, revisit others, or feel two at once. There is no “right” sequence. The stages are a map to help you name your experience — not a schedule you must obey.',
+      },
+      { type: 'h2', text: 'How creativity helps you move through the stages' },
+      {
+        type: 'p',
+        text: 'Some feelings are too big or too tangled for words. Art as therapy gives grief a place to go. You do not need to know how to draw — a scribble in the color of your anger, a page for what you wish you had said, a small image of a memory. Externalising the emotion often loosens its grip and helps you move, gently, toward acceptance and meaning.',
+      },
+      { type: 'h2', text: 'When to reach out for support' },
+      {
+        type: 'p',
+        text: 'If you feel stuck in one stage for a long time, if the pain is not easing at all, or if you cannot function day to day, professional accompaniment can help. You do not have to navigate the stages alone.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What are the 7 stages of grief in order?',
+        a: 'They are commonly listed as shock, denial, anger, bargaining, depression, acceptance, and meaning. In real life they rarely happen in a neat order — you may skip, repeat, or feel several at once.',
+      },
+      {
+        q: 'Do you have to go through all seven stages?',
+        a: 'No. The stages describe common experiences, not mandatory steps. Everyone grieves differently, and skipping or revisiting stages is completely normal.',
+      },
+      {
+        q: 'What is the hardest stage of grief?',
+        a: 'It varies from person to person. For many, the depression stage feels heaviest, while others struggle most with anger or bargaining. There is no universal “worst” stage.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'grief-after-losing-a-parent'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'what-is-art-therapy',
+    category: 'Art as Therapy',
+    title: 'What Is Art as Therapy? Benefits and How It Works',
+    metaTitle: 'What Is Art as Therapy? Benefits and How It Works | ColorMe',
+    description:
+      'Art as therapy uses the creative process to heal emotions — no artistic skill required. Learn what art as therapy is, how a session works, and its proven benefits.',
+    keywords: [
+      'what is art as therapy',
+      'art as therapy',
+      'art as therapy benefits',
+      'how does art as therapy work',
+      'art as therapy for adults',
+      'creative therapy',
+    ],
+    image: '/arteterapia.webp',
+    imageAlt: 'What is art as therapy — using the creative process to heal emotions',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Art as therapy is a form of psychotherapy that uses the creative process — drawing, painting, collage, clay, color — to explore emotions, reduce stress, and work through difficult experiences. The goal is not to make beautiful art. The goal is to make contact with what you feel.',
+      },
+      { type: 'h2', text: 'You do not need to be an artist' },
+      {
+        type: 'p',
+        text: 'This is the first thing everyone worries about, so let us settle it: art as therapy has nothing to do with talent. Stick figures, scribbles, and messy color are perfect. In fact, the “worse” the drawing, the freer it often is. You are not being judged on technique — the image is simply a bridge to your inner world.',
+      },
+      { type: 'h2', text: 'Why it works when words are not enough' },
+      {
+        type: 'p',
+        text: 'Much of what we feel lives below language — in the body, in images, in sensation. Trauma and grief especially can be hard to put into words. Making art bypasses the part of the brain that edits and explains, letting buried feelings surface safely, at your own pace.',
+      },
+      {
+        type: 'quote',
+        text: 'Art gives a shape to what has no words yet. Once you can see it on the page, you can begin to work with it.',
+      },
+      { type: 'h2', text: 'What a session actually looks like' },
+      {
+        type: 'p',
+        text: 'A typical session has three gentle movements:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'A short check-in to notice how you are arriving and what you would like to explore.',
+          'A creative invitation — for example, “draw where you feel the tension in your body,” or “use color to show today’s mood.” There is no wrong response.',
+          'A reflection, where you and the therapist look at the image together and gently unpack what came up. You always stay in control of how much you share.',
+        ],
+      },
+      { type: 'h2', text: 'The benefits of art as therapy' },
+      {
+        type: 'ul',
+        items: [
+          'Lowers stress and calms the nervous system.',
+          'Helps process grief, trauma, and anxiety without needing to relive them in words.',
+          'Improves self-awareness and emotional regulation.',
+          'Rebuilds a sense of control and self-expression after a difficult time.',
+          'Increases self-esteem through the simple act of creating something.',
+        ],
+      },
+      { type: 'h2', text: 'Who is art as therapy for?' },
+      {
+        type: 'p',
+        text: 'Art as therapy helps children, adults, and older adults facing grief, anxiety, chronic illness, trauma, life transitions, or simply the wish to understand themselves better. It is especially valuable for people who find traditional talk therapy difficult or who feel “stuck” putting their experience into words.',
+      },
+      { type: 'h2', text: 'Art as therapy vs. an art class' },
+      {
+        type: 'p',
+        text: 'An art class teaches you to make art. Art as therapy uses art to help you heal, guided by a trained therapist who holds the emotional process safely. The focus is never the final product — it is you, and what the creative process reveals and releases.',
+      },
+      { type: 'h2', text: 'Getting started' },
+      {
+        type: 'p',
+        text: 'You do not need supplies, skill, or a plan. You only need willingness to show up and make a mark. If you are curious, a first orientation session is a gentle way to see how it feels.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Do I need to be good at art for art as therapy?',
+        a: 'No. Art as therapy requires zero artistic skill. Scribbles, stick figures, and abstract color are exactly right — the process matters, not the result.',
+      },
+      {
+        q: 'What can art as therapy help with?',
+        a: 'It supports grief, anxiety, trauma, stress, chronic illness, life transitions, and self-understanding. It is especially helpful when feelings are hard to put into words.',
+      },
+      {
+        q: 'Is art as therapy real therapy?',
+        a: 'Yes. Art as therapy is an established form of psychotherapy delivered by trained professionals, using the creative process as the therapeutic tool.',
+      },
+    ],
+    related: ['art-therapy-for-anxiety', 'art-therapy-for-cancer'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-for-anxiety',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy for Anxiety: How Creativity Calms the Nervous System',
+    metaTitle: 'Art as Therapy for Anxiety: How Creativity Calms You | ColorMe',
+    description:
+      'Art as therapy for anxiety uses simple creative practices to quiet a racing mind and regulate the nervous system. Learn how it works, plus 4 exercises to try today.',
+    keywords: [
+      'art as therapy for anxiety',
+      'art as therapy anxiety',
+      'creative ways to reduce anxiety',
+      'art exercises for anxiety',
+      'how to calm anxiety',
+      'art as therapy techniques',
+    ],
+    image: '/arteterapia-ansiedad.webp',
+    imageAlt: 'Art as therapy for anxiety — creativity that calms the nervous system',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Anxiety keeps the mind sprinting into a future that has not happened yet. Art as therapy does something quietly powerful: it brings you back to your hands, your breath, and this present moment. You cannot worry about tomorrow and stay fully absorbed in mixing a color at the same time.',
+      },
+      { type: 'h2', text: 'Why creativity calms anxiety' },
+      {
+        type: 'p',
+        text: 'When you make art, several things happen at once. Repetitive, rhythmic movements (shading, coloring, kneading clay) soothe the nervous system much like rocking or deep breathing. Focusing on a simple creative task interrupts the loop of anxious thoughts. And giving your worry a shape on paper makes it feel smaller and more manageable than the vague dread swirling inside.',
+      },
+      {
+        type: 'quote',
+        text: 'You cannot always think your way out of anxiety. Sometimes you have to make your way out.',
+      },
+      { type: 'h2', text: '4 simple art exercises to try today' },
+      { type: 'h3', text: '1. Scribble release' },
+      {
+        type: 'p',
+        text: 'Take a pencil and scribble hard and fast on a page for 60 seconds, letting the tension pour out through your hand. Then slow down and turn part of the scribble into a shape or image. This moves anxious energy out of the body and into something you can see.',
+      },
+      { type: 'h3', text: '2. Color your feeling' },
+      {
+        type: 'p',
+        text: 'Ask yourself: if this anxiety had a color, what would it be? Fill a page with it, using pressure and movement that match the feeling. There is nothing to “make” — you are simply giving the emotion a place to exist outside of you.',
+      },
+      { type: 'h3', text: '3. The worry container' },
+      {
+        type: 'p',
+        text: 'Draw a box, a jar, or a container of any kind. Inside it, write or draw the worries you are carrying today. Closing the lid is a symbolic way of telling your mind: these are held here for now, I can set them down.',
+      },
+      { type: 'h3', text: '4. Mindful patterns' },
+      {
+        type: 'p',
+        text: 'Draw slow, repeating patterns — small circles, waves, dots — filling a page. This meditative repetition anchors your attention and gently slows a racing mind, similar to a moving meditation.',
+      },
+      { type: 'h2', text: 'What to expect' },
+      {
+        type: 'p',
+        text: 'You may not feel instant bliss — and that is okay. The aim is not to erase anxiety but to lower its volume and remind your body that it is safe right now. Practiced regularly, even for ten minutes, these tools build a reliable way to come back to yourself.',
+      },
+      { type: 'h2', text: 'When to seek professional support' },
+      {
+        type: 'p',
+        text: 'Self-care exercises are wonderful, but they are not a replacement for help when anxiety is taking over your life. If anxiety is constant, interfering with sleep, work, or relationships, working with an art therapist gives you a safe space to explore the roots of it — not just manage the symptoms.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can art as therapy really help with anxiety?',
+        a: 'Yes. Creative, rhythmic activity calms the nervous system, interrupts anxious thought loops, and helps externalise worry, making it feel more manageable.',
+      },
+      {
+        q: 'What art is good for anxiety?',
+        a: 'Simple, repetitive, low-pressure activities work best — scribbling, coloring, drawing patterns, or working with clay. The absorption matters more than the medium.',
+      },
+      {
+        q: 'How often should I do art for anxiety?',
+        a: 'Even 10 minutes a few times a week can help. Consistency matters more than duration — a small, regular practice builds a reliable way to self-soothe.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-cancer'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-after-losing-a-parent',
+    category: 'Grief Counseling',
+    title: 'Grief After Losing a Parent: Navigating One of Life’s Deepest Losses',
+    metaTitle: 'Grief After Losing a Parent: How to Cope | ColorMe',
+    description:
+      'Losing a parent reshapes your whole world. A compassionate guide to grief after losing a mother or father, complicated relationships, and ways to cope.',
+    keywords: [
+      'grief after losing a parent',
+      'losing a parent',
+      'grief losing mother',
+      'grief losing father',
+      'coping with parent death',
+      'how to deal with losing a parent',
+    ],
+    image: '/duelo-muerte-mama.webp',
+    imageAlt: 'Grief after losing a parent — navigating one of life’s deepest losses',
+    datePublished: '2026-07-30',
+    readingTime: '7 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Losing a parent is one of the most universal and yet most under-acknowledged losses there is. People may expect you to “bounce back” quickly — after all, it is part of life. But the death of a mother or father can shake the very ground you stand on, no matter your age.',
+      },
+      { type: 'h2', text: 'Why losing a parent hits so deeply' },
+      {
+        type: 'p',
+        text: 'Your parents were, for most of your life, your first sense of home and safety. Losing them can bring a profound feeling of being unanchored — even if you are a fully grown adult with a family of your own. Many people describe suddenly feeling like an orphan, or like the generational “buffer” between them and mortality is gone.',
+      },
+      { type: 'h2', text: 'When the relationship was complicated' },
+      {
+        type: 'p',
+        text: 'Not every parent-child bond is simple. If your relationship was distant, painful, or unresolved, grief can be especially confusing. You might mourn not only the parent you lost, but the parent you never had — and the conversations that can now never happen. This grief is real and valid, even if it is tangled with relief, anger, or guilt.',
+      },
+      {
+        type: 'quote',
+        text: 'You can grieve someone who hurt you. You can miss them and be relieved at the same time. Grief holds contradictions.',
+      },
+      { type: 'h2', text: 'The secondary losses no one warns you about' },
+      {
+        type: 'p',
+        text: 'Losing a parent is rarely just one loss. It often brings a cascade of smaller ones:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'The family home, and the traditions that lived there.',
+          'Your role as someone’s child, and the unconditional support that came with it.',
+          'The keeper of family history and memories only they held.',
+          'Relationships with siblings or relatives that shift once a parent is gone.',
+        ],
+      },
+      { type: 'h2', text: 'Gentle ways to cope' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself feel whatever comes — sadness, anger, numbness, even relief. None of it is wrong.',
+          'Create small rituals: cook their recipe, visit a place they loved, light a candle on hard days.',
+          'Tell their story. Writing or making art about your parent keeps the bond alive in a new form.',
+          'Protect your energy around people who minimise your loss. You do not owe anyone a timeline.',
+        ],
+      },
+      { type: 'h2', text: 'How art can help you carry it' },
+      {
+        type: 'p',
+        text: 'When the feelings are too big or too contradictory for words, art gives them somewhere to go. A page of color for the day’s mood, a drawn letter to the parent you lost, an image of a shared memory — these creative acts help you process the loss and hold onto the love without needing to explain it to anyone.',
+      },
+      { type: 'h2', text: 'When to reach out for support' },
+      {
+        type: 'p',
+        text: 'If your grief feels frozen, if guilt or unresolved feelings weigh on you, or if you simply do not want to walk this alone, accompaniment from a grief professional can help. There is no shame in needing support to grieve one of the biggest losses a person can face.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why is losing a parent so hard even as an adult?',
+        a: 'Parents represent your earliest sense of safety and identity. Losing them can leave you feeling unanchored and confront you with your own mortality, regardless of your age.',
+      },
+      {
+        q: 'How do you grieve a parent you had a difficult relationship with?',
+        a: 'Complicated grief is valid. You may mourn both the parent you lost and the relationship you never had. Allowing contradictory feelings — grief, relief, anger, love — is part of healing.',
+      },
+      {
+        q: 'How long does grief last after losing a parent?',
+        a: 'There is no set timeline. The intense pain usually softens over the first year or two, but missing your parent — especially on anniversaries and milestones — can continue for life and is completely normal.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-for-cancer',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy for Cancer Patients: Healing Beyond the Body',
+    metaTitle: 'Art as Therapy for Cancer Patients: Healing Beyond the Body | ColorMe',
+    description:
+      'Art as therapy helps cancer patients process fear, reclaim identity, and find calm during treatment. Learn the benefits and simple creative practices to try.',
+    keywords: [
+      'art as therapy for cancer',
+      'art as therapy cancer patients',
+      'creative therapy cancer',
+      'coping with cancer emotionally',
+      'art as therapy chemotherapy',
+      'cancer emotional support',
+    ],
+    image: '/cancer-y-arteterapia.webp',
+    imageAlt: 'Art as therapy for cancer patients — healing beyond the body',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A cancer diagnosis changes everything in an instant. Beyond the physical treatment, there is an emotional storm: fear, uncertainty, loss of control, and a shifting sense of who you are. Art as therapy offers a space to tend to that inner world — the part of healing that scans and medications cannot reach.',
+      },
+      { type: 'h2', text: 'The emotional weight of cancer' },
+      {
+        type: 'p',
+        text: 'Patients often feel they must “stay strong” for everyone around them, leaving little room for their own fear and grief. Those unspoken emotions do not disappear — they build. Art as therapy gives them a safe, private outlet, without the pressure to find the right words or protect anyone else’s feelings.',
+      },
+      { type: 'h2', text: 'What art as therapy offers during treatment' },
+      {
+        type: 'ul',
+        items: [
+          'Relief from anxiety and treatment-related stress.',
+          'A sense of control and choice at a time when so much feels decided for you.',
+          'A way to process fear, anger, and grief without having to explain them.',
+          'A reconnection with identity beyond the label of “patient.”',
+          'Moments of calm, focus, and even joy during long treatment days.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You are not your diagnosis. Creativity reminds you that the person inside is still whole, still here, still you.',
+      },
+      { type: 'h2', text: 'Simple creative practices to try' },
+      {
+        type: 'ul',
+        items: [
+          'Draw or color how your body feels today — no explanation needed, just honesty on the page.',
+          'Make a “strength image”: a symbol, color, or scene that represents what keeps you going.',
+          'Keep a small visual journal through treatment, one page per session or per week.',
+          'Create something for the future — a picture of a place you want to visit or a moment you look forward to.',
+        ],
+      },
+      { type: 'h2', text: 'For caregivers and loved ones' },
+      {
+        type: 'p',
+        text: 'Cancer affects the whole family. Caregivers carry their own fear and exhaustion, often with even less permission to fall apart. The same creative practices can help partners, children, and friends process what they are living through and stay emotionally connected to the person they love.',
+      },
+      { type: 'h2', text: 'A story of resilience' },
+      {
+        type: 'p',
+        text: 'The book Indeleble was born from exactly this journey — a real story of facing cancer, transformation, and the beauty that persists in the middle of the storm. Told with watercolor illustrations, it is a companion for anyone living through a diagnosis, or walking beside someone who is.',
+      },
+      { type: 'h2', text: 'Finding support' },
+      {
+        type: 'p',
+        text: 'You do not have to hold all of it alone. Whether through a structured art as therapy process or small daily creative rituals, tending to your emotional health is part of your healing — not a luxury, and not a distraction from it.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does art as therapy help cancer patients?',
+        a: 'It reduces anxiety and stress, restores a sense of control, and gives patients a safe way to process fear and grief without needing words — supporting emotional wellbeing alongside medical treatment.',
+      },
+      {
+        q: 'Do you need art skills to benefit?',
+        a: 'No. The benefit comes from the creative process itself, not from artistic ability. Simple color, shapes, and images are enough.',
+      },
+      {
+        q: 'Can family members and caregivers use art as therapy too?',
+        a: 'Absolutely. Caregivers carry heavy emotions of their own. Creative practices help them process fear and exhaustion and stay connected to their loved one.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'anticipatory-grief',
+    category: 'Grief Counseling',
+    title: 'Anticipatory Grief: Mourning Someone Who Is Still Here',
+    metaTitle: 'Anticipatory Grief: Mourning Someone Still Here | ColorMe',
+    description:
+      'Anticipatory grief is the pain of mourning a loss before it happens. Learn what it is, why it feels so confusing, and how to cope when someone you love is dying.',
+    keywords: [
+      'anticipatory grief',
+      'grieving before death',
+      'anticipatory grief symptoms',
+      'mourning someone who is still alive',
+      'grief before a loss',
+      'terminal illness grief',
+    ],
+    image: '/duelo-anticipado.webp',
+    imageAlt: 'Anticipatory grief — mourning someone who is still here',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Grief does not always wait for death. When someone you love is seriously ill, ageing, or fading from a condition like dementia, you can begin to mourn while they are still here. This is called anticipatory grief — and it is one of the most confusing, isolating forms of loss.',
+      },
+      { type: 'h2', text: 'What is anticipatory grief?' },
+      {
+        type: 'p',
+        text: 'Anticipatory grief is the emotional response to an expected loss. You grieve the future you will not have, the decline you are watching, and the slow goodbyes along the way. It is common among caregivers, families facing a terminal diagnosis, and anyone loving someone through a long illness.',
+      },
+      { type: 'h2', text: 'Why it feels so confusing' },
+      {
+        type: 'p',
+        text: 'Part of you is still hoping, caring, and showing up each day. Another part is already aching for a loss that has not happened. You may feel guilty for grieving “too soon,” or for the exhaustion and even relief that creep in. None of this makes you a bad person. It makes you human, carrying an impossible weight.',
+      },
+      {
+        type: 'quote',
+        text: 'Anticipatory grief is love and loss happening at the same time. You are saying hello and goodbye in the same breath.',
+      },
+      { type: 'h2', text: 'What it can look like' },
+      {
+        type: 'ul',
+        items: [
+          'Waves of sadness, dread, or anxiety about what is coming.',
+          'Guilt for imagining life after the loss — or for wishing the suffering would end.',
+          'Emotional numbness or “pulling away” to protect yourself.',
+          'Exhaustion from holding hope and grief at once.',
+        ],
+      },
+      { type: 'h2', text: 'Gentle ways to cope' },
+      {
+        type: 'ul',
+        items: [
+          'Let both feelings exist: you can love someone fully and grieve them at the same time.',
+          'Say what matters now. Anticipatory grief can be an invitation to express love, forgiveness, and gratitude while there is still time.',
+          'Care for yourself too. Caregiver burnout is real — rest is not a betrayal.',
+          'Use art or writing to hold feelings too big to say out loud.',
+        ],
+      },
+      { type: 'h2', text: 'How art helps in this in-between' },
+      {
+        type: 'p',
+        text: 'When you cannot say the words — to them or to yourself — art can. A drawn letter, an image of a shared memory, a page of color for the day’s emotion: these give your anticipatory grief a safe place to live, so it does not have to be carried silently.',
+      },
+      { type: 'h2', text: 'You do not have to carry it alone' },
+      {
+        type: 'p',
+        text: 'Anticipatory grief is real grief, and it deserves support. If you are walking someone toward the end of their life, accompaniment for you matters just as much as care for them.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve before someone dies?',
+        a: 'Yes. Anticipatory grief is a well-recognised experience, especially for caregivers and families facing a terminal illness. Mourning a loss before it happens does not mean you are giving up hope.',
+      },
+      {
+        q: 'Does anticipatory grief make the loss easier later?',
+        a: 'Not necessarily. It does not “use up” your grief. After the death you may still grieve deeply — but having expressed love and said goodbye can bring some peace.',
+      },
+      {
+        q: 'Is feeling relief when someone dies wrong?',
+        a: 'No. Relief after a long illness — that their suffering is over, or that caregiving has ended — is common and human. It does not mean you loved them any less.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'grief-after-losing-a-parent'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'pet-loss-grief',
+    category: 'Grief Counseling',
+    title: 'Pet Loss Grief: Why Losing a Pet Hurts So Much',
+    metaTitle: 'Pet Loss Grief: Why It Hurts So Much & How to Cope | ColorMe',
+    description:
+      'Losing a pet is a real and profound loss. Learn why pet loss grief hurts so deeply, why your pain is valid, and gentle ways to cope and honour your companion.',
+    keywords: [
+      'pet loss grief',
+      'losing a pet',
+      'grief over pet death',
+      'how to cope with pet loss',
+      'pet loss support',
+      'mourning a pet',
+    ],
+    image: '/duelo-por-mascota.webp',
+    imageAlt: 'Pet loss grief — why losing a pet hurts so much',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'If you have lost a pet and the grief has floored you, you are not overreacting. Losing an animal companion can hurt as much as losing a person — sometimes more. Your pain is real, and it is valid.',
+      },
+      { type: 'h2', text: 'Why pet loss cuts so deep' },
+      {
+        type: 'p',
+        text: 'A pet offers something rare: unconditional love with no judgement. They are woven into the fabric of daily life — the morning greeting, the walk, the warm weight beside you. When they die, you lose not just a companion but a constant source of comfort and a witness to your everyday world.',
+      },
+      { type: 'h2', text: 'The pain of disenfranchised grief' },
+      {
+        type: 'p',
+        text: 'Part of what makes pet loss so hard is that society often minimises it. “It was just a dog.” “You can get another one.” These comments can leave you grieving in silence, feeling you have no right to hurt this much. This is called disenfranchised grief — real loss that goes unacknowledged.',
+      },
+      {
+        type: 'quote',
+        text: 'The size of your grief reflects the size of the love. There is no “just” about it.',
+      },
+      { type: 'h2', text: 'Gentle ways to cope' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself grieve fully, without apologising for it.',
+          'Create a small ritual or memorial — a photo, a paw print, a special spot.',
+          'Make art about your pet: draw a favourite memory or a portrait, however imperfect.',
+          'Talk to people who understand, and protect your energy around those who dismiss it.',
+        ],
+      },
+      { type: 'h2', text: 'Honouring the bond through art' },
+      {
+        type: 'p',
+        text: 'Creating something in memory of your pet can be deeply healing — a drawing, a page of the things you loved about them, a colour that reminds you of them. It keeps the bond alive in a new form and gives your grief a place to go.',
+      },
+      { type: 'h2', text: 'When to seek support' },
+      {
+        type: 'p',
+        text: 'If the grief feels overwhelming, or the world around you does not understand, you do not have to carry it alone. Support for pet loss is not silly — it is a compassionate response to a genuine loss.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why does losing a pet hurt so much?',
+        a: 'Pets offer unconditional love and are part of your daily routine and sense of comfort. Losing them removes a constant companion, so the grief can be as intense as losing a person.',
+      },
+      {
+        q: 'Is it normal to grieve a pet more than a person?',
+        a: 'Yes. The depth of grief reflects the bond, not the species. Intense grief over a pet is normal and valid.',
+      },
+      {
+        q: 'How long does grief over a pet last?',
+        a: 'There is no set timeline. The sharpest pain usually eases over weeks and months, but missing your companion can continue and may resurface on anniversaries.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'complicated-grief',
+    category: 'Grief Counseling',
+    title: 'Complicated Grief: When Grief Gets Stuck',
+    metaTitle: 'Complicated Grief: Signs, Causes & When to Get Help | ColorMe',
+    description:
+      'Complicated grief is when the pain of loss stays intense and disabling over time. Learn the signs, why grief gets stuck, and when to reach out for support.',
+    keywords: [
+      'complicated grief',
+      'prolonged grief disorder',
+      'signs of complicated grief',
+      'stuck in grief',
+      'grief that won’t go away',
+      'when to get help for grief',
+    ],
+    image: '/duelo-complicado.webp',
+    imageAlt: 'Complicated grief — when grief gets stuck',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Grief is painful, but for most people it slowly softens and becomes possible to live with. Sometimes, though, grief gets stuck. The pain stays as raw as day one, months or years later, and it starts to take over life. This is often called complicated grief, or prolonged grief.',
+      },
+      { type: 'h2', text: 'What is complicated grief?' },
+      {
+        type: 'p',
+        text: 'Complicated grief is a persistent, intense form of mourning that does not ease over time and significantly interferes with daily functioning. It is not a weakness or a failure to “move on” — it is a signal that the loss is too heavy to carry alone.',
+      },
+      { type: 'h2', text: 'Signs grief may be stuck' },
+      {
+        type: 'ul',
+        items: [
+          'Intense longing or preoccupation with the person that does not lessen over many months.',
+          'An inability to accept the reality of the death.',
+          'Avoiding all reminders — or being unable to do anything but focus on the loss.',
+          'Feeling that life has no meaning, or that a part of you died too.',
+          'Struggling to function at work, at home, or in relationships with no improvement.',
+        ],
+      },
+      { type: 'h2', text: 'Why grief gets stuck' },
+      {
+        type: 'p',
+        text: 'Certain losses carry a higher risk: a sudden or traumatic death, the loss of a child, a very dependent relationship, multiple losses at once, or a lack of support. Unresolved feelings — guilt, anger, things left unsaid — can also keep grief frozen in place.',
+      },
+      {
+        type: 'quote',
+        text: 'Needing help to grieve is not a sign that you loved wrong. It is a sign that you loved deeply.',
+      },
+      { type: 'h2', text: 'How support helps' },
+      {
+        type: 'p',
+        text: 'Complicated grief usually does not resolve on its own — but it responds well to support. Grief-focused accompaniment helps you face the loss safely, work through what is stuck, and slowly find a way to live alongside it. Art as therapy can be especially helpful when the pain is too tangled or too deep for words.',
+      },
+      { type: 'h2', text: 'When to reach out' },
+      {
+        type: 'p',
+        text: 'If, well after a loss, the grief is still all-consuming and life feels impossible — or if you have thoughts that you would be better off gone — please reach out to a professional. You deserve support, and healing is possible.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between normal and complicated grief?',
+        a: 'Normal grief gradually softens and becomes livable. Complicated grief stays intense and disabling over a long period and keeps interfering with daily life without easing.',
+      },
+      {
+        q: 'How long before grief is considered “complicated”?',
+        a: 'There is no exact cutoff, but grief that remains severe and disabling roughly a year or more after the loss, with no improvement, may be complicated grief worth discussing with a professional.',
+      },
+      {
+        q: 'Can complicated grief be treated?',
+        a: 'Yes. Grief-focused therapy and approaches like art as therapy help people process what is stuck and gradually find a way to live with the loss.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-exercises',
+    category: 'Art as Therapy',
+    title: '8 Art as Therapy Exercises You Can Do at Home',
+    metaTitle: '8 Art as Therapy Exercises You Can Do at Home | ColorMe',
+    description:
+      'Simple art as therapy exercises to process emotions, reduce stress, and reconnect with yourself — no art skills or special supplies needed. Try them at home today.',
+    keywords: [
+      'art as therapy exercises',
+      'art as therapy activities',
+      'art as therapy exercises at home',
+      'art as therapy techniques',
+      'art journaling prompts',
+      'creative exercises for emotions',
+    ],
+    image: '/ejercicios-arteterapia.webp',
+    imageAlt: 'Art as therapy exercises you can do at home',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'You do not need a studio, expensive materials, or any artistic skill to benefit from art as therapy at home. A pen and paper are enough. These eight exercises help you process emotions, calm your mind, and reconnect with yourself. There is no wrong way to do them.',
+      },
+      { type: 'h2', text: 'Before you begin' },
+      {
+        type: 'p',
+        text: 'Find a quiet ten minutes. Let go of making anything “good.” The goal is honesty, not beauty. If a feeling comes up, that is the exercise working.',
+      },
+      { type: 'h2', text: '8 exercises to try' },
+      { type: 'h3', text: '1. Emotion color map' },
+      {
+        type: 'p',
+        text: 'Fill a page with colors that match how you feel right now — no shapes needed, just color and movement. It gives shape to emotions that are hard to name.',
+      },
+      { type: 'h3', text: '2. Scribble and find' },
+      {
+        type: 'p',
+        text: 'Scribble freely for a minute, then look for an image hidden in the lines and bring it out. This loosens control and invites the subconscious in.',
+      },
+      { type: 'h3', text: '3. Draw your safe place' },
+      {
+        type: 'p',
+        text: 'Draw a place — real or imagined — where you feel completely safe. Return to it on hard days as a grounding anchor.',
+      },
+      { type: 'h3', text: '4. The worry container' },
+      {
+        type: 'p',
+        text: 'Draw a jar or box and place your worries inside it. Closing the lid tells your mind you can set them down for now.',
+      },
+      { type: 'h3', text: '5. A letter you will not send' },
+      {
+        type: 'p',
+        text: 'Write or draw a message to someone — living or gone — saying what you never got to say. This is powerful for grief and unfinished goodbyes.',
+      },
+      { type: 'h3', text: '6. Mandala for focus' },
+      {
+        type: 'p',
+        text: 'Draw a circle and fill it with repeating patterns from the centre outward. The rhythm quiets a racing mind, like a moving meditation.',
+      },
+      { type: 'h3', text: '7. Gratitude page' },
+      {
+        type: 'p',
+        text: 'Draw or collage small things you are grateful for today. It gently shifts attention toward what is still good.',
+      },
+      { type: 'h3', text: '8. Then and now' },
+      {
+        type: 'p',
+        text: 'Divide a page in two: how you felt before a hard event, and how you feel now. It helps you see movement and honour how far you have come.',
+      },
+      {
+        type: 'quote',
+        text: 'The page cannot judge you. That is exactly why it can hold what words cannot.',
+      },
+      { type: 'h2', text: 'When to go deeper' },
+      {
+        type: 'p',
+        text: 'These exercises are wonderful self-care, but they are not a substitute for support when you are struggling. If painful feelings surface and feel too big to hold alone, working with an art therapist gives you a safe space to explore them.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What supplies do I need for art as therapy at home?',
+        a: 'Very little — paper and a pen, pencil, or crayons are enough. The process matters far more than the materials.',
+      },
+      {
+        q: 'Do art as therapy exercises really work?',
+        a: 'Yes. Simple creative activities help regulate the nervous system, externalise difficult emotions, and build self-awareness, even done on your own.',
+      },
+      {
+        q: 'Can I do art as therapy exercises if I can’t draw?',
+        a: 'Absolutely. These exercises need no skill. Color, scribbles, and simple shapes are exactly right.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-for-children',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy for Children: Helping Kids Express Big Feelings',
+    metaTitle: 'Art as Therapy for Children: Helping Kids Express Feelings | ColorMe',
+    description:
+      'Children often cannot put big feelings into words — but they can draw them. Learn how art as therapy helps kids process emotions, grief, and anxiety, and how to support them.',
+    keywords: [
+      'art as therapy for children',
+      'art as therapy for kids',
+      'helping children express emotions',
+      'art as therapy child grief',
+      'children and anxiety art',
+      'creative therapy for kids',
+    ],
+    image: '/arteterapia-ninos.webp',
+    imageAlt: 'Art as therapy for children — helping kids express big feelings',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Children feel just as deeply as adults, but they rarely have the words to explain it. A four-year-old cannot say “I feel anxious and abandoned.” But they can draw a tiny figure alone in a big, dark space. For kids, art is a natural language — and art as therapy meets them exactly where they are.',
+      },
+      { type: 'h2', text: 'Why art works so well for children' },
+      {
+        type: 'p',
+        text: 'Play and drawing are how children naturally process the world. Through art, feelings that are too big, too scary, or too confusing to say out loud can come out safely on the page. It gives adults a window into a child’s inner world — and gives the child a sense of relief and control.',
+      },
+      { type: 'h2', text: 'What art as therapy can help children with' },
+      {
+        type: 'ul',
+        items: [
+          'Grief and loss, including the death of a loved one or a pet.',
+          'Anxiety, fears, and worries they cannot explain.',
+          'Big life changes: divorce, a new sibling, moving, or starting school.',
+          'Trauma or difficult experiences that are hard to talk about.',
+          'Building confidence, emotional vocabulary, and self-regulation.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A child may not be able to tell you what happened. But often, they can show you.',
+      },
+      { type: 'h2', text: 'How a session works' },
+      {
+        type: 'p',
+        text: 'In child art as therapy, a trained therapist creates a safe, playful space with simple materials. The child is invited to draw, paint, or build freely. The therapist gently notices themes and feelings in the work, following the child’s lead rather than directing them. There is never pressure to explain or perform.',
+      },
+      { type: 'h2', text: 'Simple ways parents can support at home' },
+      {
+        type: 'ul',
+        items: [
+          'Offer art materials and time, without correcting or judging the result.',
+          'Ask open, curious questions: “Tell me about your drawing,” instead of “What is that?”',
+          'Let them lead — do not force meaning or interpret their art for them.',
+          'Notice and name feelings gently: “It looks like this part feels stormy.”',
+        ],
+      },
+      { type: 'h2', text: 'When to seek professional support' },
+      {
+        type: 'p',
+        text: 'If a child is struggling with grief, anxiety, big behavioural changes, or a difficult experience, a professional art therapist can help them process it safely. Early support gives children tools that last a lifetime.',
+      },
+    ],
+    faq: [
+      {
+        q: 'At what age can a child start art as therapy?',
+        a: 'Children as young as three or four can benefit, since drawing and play are natural ways for them to express feelings. Art as therapy is adapted to each child’s age and stage.',
+      },
+      {
+        q: 'How does art as therapy help a grieving child?',
+        a: 'It lets children express grief they cannot put into words, gives them a safe outlet for confusing feelings, and offers a sense of control and relief during a frightening time.',
+      },
+      {
+        q: 'What can parents do at home?',
+        a: 'Provide art materials and unhurried time, ask open and curious questions, let the child lead, and gently name feelings — without judging or correcting their art.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'miscarriage-and-pregnancy-loss',
+    category: 'Grief Counseling',
+    title: 'Miscarriage & Pregnancy Loss: Grieving a Baby the World Never Met',
+    metaTitle: 'Miscarriage & Pregnancy Loss: Grieving Your Baby | ColorMe',
+    description:
+      'Miscarriage and pregnancy loss bring a real, profound grief that is too often unseen. Your baby existed and your pain is valid. Gentle guidance for grieving and healing.',
+    keywords: [
+      'miscarriage grief',
+      'pregnancy loss',
+      'grieving a miscarriage',
+      'stillbirth grief',
+      'perinatal loss',
+      'coping with pregnancy loss',
+    ],
+    image: '/duelo-perinatal.webp',
+    imageAlt: 'Miscarriage and pregnancy loss — grieving a baby the world never met',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When you lose a baby to miscarriage, stillbirth, or in the first days of life, you do not just lose a pregnancy. You lose a future — the name you imagined, the first steps, the whole life you had already begun to dream. Your baby existed, and your grief is real.',
+      },
+      { type: 'h2', text: 'A grief the world often cannot see' },
+      {
+        type: 'p',
+        text: 'Perinatal loss is one of the loneliest griefs, because others often never met your baby and may not know what to say. Some stay silent, or offer well-meaning words that wound — “at least it was early,” “you can try again.” But your bond with your baby was real from the start, and so is your loss.',
+      },
+      {
+        type: 'quote',
+        text: 'No length of pregnancy determines the size of the love — or the size of the grief.',
+      },
+      { type: 'h2', text: 'What you might be feeling' },
+      {
+        type: 'ul',
+        items: [
+          'Deep sadness and longing for the baby you will not raise.',
+          'Guilt or the endless question of whether you did something wrong (you almost certainly did not).',
+          'Anger, envy around others’ pregnancies, or fear about the future.',
+          'A sense of isolation, as if you are grieving alone.',
+        ],
+      },
+      { type: 'h2', text: 'For partners, too' },
+      {
+        type: 'p',
+        text: 'Partners grieve this loss as well, often silently while trying to be strong. There is no right way to grieve a baby, and no comparison of whose pain is greater. Both of you are allowed to mourn.',
+      },
+      { type: 'h2', text: 'Ways to honour your baby and your grief' },
+      {
+        type: 'ul',
+        items: [
+          'Name your baby, if that feels right to you.',
+          'Create something in their memory: a drawing, a small ritual, a keepsake, a candle.',
+          'Mark meaningful dates in your own way, without pressure.',
+          'Use art to express what has no words — a page of color, an image of the love you carry.',
+        ],
+      },
+      { type: 'h2', text: 'You do not have to grieve alone' },
+      {
+        type: 'p',
+        text: 'This loss deserves acknowledgement and support. If the grief feels overwhelming, or those around you cannot hold it, compassionate accompaniment can help you carry it and heal at your own pace.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve deeply after an early miscarriage?',
+        a: 'Yes. Grief is not measured by how many weeks the pregnancy lasted. The bond and the dreams were real from the beginning, so profound grief is completely valid.',
+      },
+      {
+        q: 'Was the miscarriage my fault?',
+        a: 'Almost always, no. The vast majority of miscarriages are caused by factors entirely outside your control. Guilt is common, but it does not mean you did anything wrong.',
+      },
+      {
+        q: 'How can I support my partner after pregnancy loss?',
+        a: 'Acknowledge that they are grieving too, make space for both of your feelings without comparison, and consider grieving together through ritual, conversation, or creative expression.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'what-to-say-to-someone-grieving',
+    category: 'Grief Counseling',
+    title: 'What to Say to Someone Who Is Grieving (and What Not to Say)',
+    metaTitle: 'What to Say to Someone Grieving (and What Not To) | ColorMe',
+    description:
+      'Not sure what to say to someone who is grieving? A simple, compassionate guide to words that comfort, phrases to avoid, and how to truly show up for someone in loss.',
+    keywords: [
+      'what to say to someone grieving',
+      'what to say to someone who lost a loved one',
+      'comforting words for grief',
+      'what not to say to someone grieving',
+      'how to support a grieving friend',
+      'condolence messages',
+    ],
+    image: '/como-acompanar-duelo.webp',
+    imageAlt: 'What to say to someone who is grieving',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When someone we love is grieving, we freeze. We are so afraid of saying the wrong thing that we sometimes say nothing at all. But your presence matters far more than finding perfect words. Here is how to show up.',
+      },
+      { type: 'h2', text: 'What helps to say' },
+      {
+        type: 'ul',
+        items: [
+          '“I’m so sorry. I’m here for you.”',
+          '“I don’t know what to say, but I’m not going anywhere.”',
+          '“Tell me about them.” — inviting memories is a gift.',
+          '“It’s okay to feel however you feel.”',
+          '“I’m bringing dinner on Tuesday.” — specific help beats “let me know if you need anything.”',
+        ],
+      },
+      { type: 'h2', text: 'What to avoid' },
+      {
+        type: 'ul',
+        items: [
+          '“Everything happens for a reason.”',
+          '“At least they lived a long life / at least it was quick.”',
+          '“They’re in a better place now.”',
+          '“I know exactly how you feel.”',
+          '“You need to be strong” or “It’s time to move on.”',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Grief does not need to be fixed. It needs to be witnessed.',
+      },
+      { type: 'h2', text: 'Why those phrases hurt' },
+      {
+        type: 'p',
+        text: 'Most unhelpful comments try to minimise the pain or rush the person past it. Even when kindly meant, they can leave a grieving person feeling unseen or pressured to hide what they feel. You do not need to explain the loss or find a silver lining — you just need to stay.',
+      },
+      { type: 'h2', text: 'Showing up beyond words' },
+      {
+        type: 'ul',
+        items: [
+          'Keep checking in — grief lasts long after the funeral, when others disappear.',
+          'Remember dates: anniversaries and birthdays are especially hard.',
+          'Say the person’s name. Fear of “reminding” them is a myth — they never forgot.',
+          'Offer concrete, practical help rather than putting the burden on them to ask.',
+        ],
+      },
+      { type: 'h2', text: 'When they need more support' },
+      {
+        type: 'p',
+        text: 'If someone’s grief seems to be swallowing them whole with no relief over time, gently encouraging professional support — and offering to help them find it — can be an act of deep love.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the best thing to say to someone grieving?',
+        a: 'Simple, honest presence works best: “I’m so sorry, I’m here for you.” Inviting them to talk about the person they lost, and offering specific help, means more than perfect words.',
+      },
+      {
+        q: 'What should you not say to someone grieving?',
+        a: 'Avoid phrases that minimise or rush the loss, like “everything happens for a reason,” “at least…,” “they’re in a better place,” or “it’s time to move on.”',
+      },
+      {
+        q: 'Is it okay to mention the person who died?',
+        a: 'Yes. Saying their name and sharing memories is usually comforting. The grieving person has not forgotten them — being able to talk about them often helps.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'grief-after-losing-a-parent'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-for-trauma',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy for Trauma: Healing What Words Can’t Reach',
+    metaTitle: 'Art as Therapy for Trauma: Healing Beyond Words | ColorMe',
+    description:
+      'Trauma often lives beyond language, stored in the body and images. Learn how art as therapy helps process trauma safely and gently, and what to expect from the work.',
+    keywords: [
+      'art as therapy for trauma',
+      'trauma art as therapy',
+      'healing trauma with art',
+      'creative trauma therapy',
+      'art as therapy PTSD',
+      'processing trauma',
+    ],
+    image: '/arte-y-trauma.webp',
+    imageAlt: 'Art as therapy for trauma — healing what words cannot reach',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Trauma is not stored the way ordinary memories are. It lives in the body, in sensations and images, often in a place words cannot easily reach. This is why talking alone sometimes is not enough — and why art as therapy can be so powerful for healing trauma.',
+      },
+      { type: 'h2', text: 'Why trauma resists words' },
+      {
+        type: 'p',
+        text: 'During overwhelming experiences, the brain’s language centres can go offline while sensory and emotional memory keeps recording. Later, the trauma may surface as flashbacks, tension, or dread rather than a clear story. Art offers a different route in — through image, color, and the body — allowing what is wordless to be expressed safely.',
+      },
+      {
+        type: 'quote',
+        text: 'You do not have to relive a trauma to heal it. Sometimes you only have to give it a shape.',
+      },
+      { type: 'h2', text: 'How art as therapy helps' },
+      {
+        type: 'ul',
+        items: [
+          'Lets you express the experience without having to narrate it out loud.',
+          'Creates distance and safety — the feeling goes onto the page, not back into the body.',
+          'Helps regulate the nervous system through rhythmic, grounding creativity.',
+          'Restores a sense of control and choice that trauma took away.',
+          'Rebuilds a sense of self beyond the traumatic event.',
+        ],
+      },
+      { type: 'h2', text: 'Safety comes first' },
+      {
+        type: 'p',
+        text: 'Trauma work should never be rushed. A trained art therapist moves at your pace, building safety and grounding before approaching anything painful. You are always in control of how much you explore and share. The goal is not to reopen wounds, but to help them heal.',
+      },
+      { type: 'h2', text: 'A note on doing this alone' },
+      {
+        type: 'p',
+        text: 'Gentle creative practices can support you, but trauma is best explored with professional guidance, because difficult material can surface. If you have experienced trauma, working with a therapist gives you a safe container to process it.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does art as therapy help with trauma?',
+        a: 'It allows trauma stored in the body and images to be expressed without words, creates safe distance from painful memories, regulates the nervous system, and restores a sense of control.',
+      },
+      {
+        q: 'Do I have to talk about my trauma in art as therapy?',
+        a: 'No. A key benefit is that you can express and process trauma through images without narrating it aloud. You always control how much you share.',
+      },
+      {
+        q: 'Is art as therapy safe for trauma?',
+        a: 'When guided by a trained therapist who prioritises grounding and pacing, yes. Trauma-informed art as therapy is designed to help wounds heal, not reopen them.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-anxiety'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'what-is-a-thanatologist',
+    category: 'Grief Counseling',
+    title: 'What Is a Thanatologist? How Grief Specialists Help',
+    metaTitle: 'What Is a Thanatologist? How Grief Specialists Help | ColorMe',
+    description:
+      'A thanatologist is a specialist in death, dying, and grief who accompanies people through loss. Learn what thanatology is, what a thanatologist does, and when to see one.',
+    keywords: [
+      'what is a thanatologist',
+      'thanatology',
+      'grief specialist',
+      'death and dying specialist',
+      'grief counselor',
+      'thanatologist meaning',
+    ],
+    image: '/tanatologia-acompanamiento-duelo.webp',
+    imageAlt: 'What is a thanatologist — a specialist who accompanies people through grief',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'The word “thanatologist” is unfamiliar to many people — but the work is deeply human. A thanatologist is a professional who specialises in death, dying, and grief, accompanying people through some of the hardest passages of life.',
+      },
+      { type: 'h2', text: 'What is thanatology?' },
+      {
+        type: 'p',
+        text: 'Thanatology is the study of death and the processes surrounding it — including grief, loss, and how we cope. It draws on psychology, philosophy, and the practical care of the dying and the bereaved. The name comes from Thánatos, the Greek personification of death.',
+      },
+      { type: 'h2', text: 'What does a thanatologist do?' },
+      {
+        type: 'ul',
+        items: [
+          'Accompanies people through grief after the death of a loved one.',
+          'Supports those facing a terminal diagnosis, and their families.',
+          'Helps with anticipatory grief and end-of-life processes.',
+          'Guides people through non-death losses too: divorce, illness, major life change.',
+          'Offers tools and a safe, non-judgemental space to process loss.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A thanatologist does not take the pain away. They walk beside you so you do not have to face it alone.',
+      },
+      { type: 'h2', text: 'When might you see a thanatologist?' },
+      {
+        type: 'p',
+        text: 'You might reach out when a loss feels too heavy to carry alone, when you are supporting a dying loved one, when grief has become stuck, or when you simply want compassionate guidance through a painful transition. You do not have to be “in crisis” to deserve support.',
+      },
+      { type: 'h2', text: 'Thanatology and art as therapy together' },
+      {
+        type: 'p',
+        text: 'Combining thanatology with art as therapy is especially powerful: the thanatologist holds the grief process with expertise, while art gives you a language for feelings too big for words. Together, they offer a gentle, whole-person way through loss.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What does a thanatologist do?',
+        a: 'A thanatologist specialises in death, dying, and grief. They accompany people through bereavement, terminal illness, anticipatory grief, and other losses, offering tools and a safe space to process them.',
+      },
+      {
+        q: 'What is the difference between a thanatologist and a therapist?',
+        a: 'A thanatologist focuses specifically on death, dying, and grief-related processes, while a general therapist addresses a broader range of mental-health concerns. Many people benefit from a specialist in loss.',
+      },
+      {
+        q: 'When should I see a thanatologist?',
+        a: 'Consider it when a loss feels overwhelming, when supporting a dying loved one, when grief feels stuck, or when you want compassionate guidance through any painful transition.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'how-long-does-grief-last'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'healing-mandalas',
+    category: 'Art as Therapy',
+    title: 'Healing Mandalas: How Drawing Circles Calms the Mind',
+    metaTitle: 'Healing Mandalas: How Drawing Circles Calms the Mind | ColorMe',
+    description:
+      'Mandalas are more than pretty patterns — drawing and coloring them calms anxiety and focuses the mind. Learn the meaning of healing mandalas and how to make your own.',
+    keywords: [
+      'healing mandalas',
+      'mandala meaning',
+      'mandala art as therapy',
+      'how to draw a mandala',
+      'mandalas for anxiety',
+      'benefits of coloring mandalas',
+    ],
+    image: '/mandalas-terapeuticos.webp',
+    imageAlt: 'Healing mandalas — how drawing circles calms the mind',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A mandala is a circular design radiating from a centre point. For thousands of years, across many cultures, mandalas have been used for meditation, prayer, and healing. In art as therapy, they are a simple, powerful tool for calming the mind and returning to yourself.',
+      },
+      { type: 'h2', text: 'What mandalas represent' },
+      {
+        type: 'p',
+        text: 'The word “mandala” means “circle” in Sanskrit. The circle symbolises wholeness, unity, and the cycles of life. Working from the centre outward can feel like an act of gathering yourself — of finding a still point in the middle of everything.',
+      },
+      { type: 'h2', text: 'Why they calm the mind' },
+      {
+        type: 'ul',
+        items: [
+          'The repetitive, symmetrical patterns act like a moving meditation.',
+          'Focusing on the design gently interrupts anxious thought loops.',
+          'The predictable structure feels safe and contained when life feels chaotic.',
+          'Choosing colors and patterns is soothing and quietly self-expressive.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'When the world feels scattered, a mandala gives your attention somewhere gentle to rest.',
+      },
+      { type: 'h2', text: 'How to make your own healing mandala' },
+      {
+        type: 'ul',
+        items: [
+          'Draw a dot in the centre of your page and a light circle around it.',
+          'Add simple shapes radiating outward — petals, dots, waves — repeating them around the circle.',
+          'Work slowly, letting each ring build on the last. There is no “right” design.',
+          'Add color intuitively, choosing whatever feels calming or true today.',
+        ],
+      },
+      { type: 'h2', text: 'Using mandalas in daily life' },
+      {
+        type: 'p',
+        text: 'You do not need to be an artist. Even coloring a pre-drawn mandala for ten minutes can lower stress and steady a racing mind. Keep a small mandala practice for hard days — it is a portable way to come back to calm.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the meaning of a mandala?',
+        a: 'A mandala is a circular design symbolising wholeness, unity, and the cycles of life. Across many cultures it has been used for meditation, prayer, and healing.',
+      },
+      {
+        q: 'How do mandalas help with anxiety?',
+        a: 'Drawing or coloring their repetitive, symmetrical patterns works like a moving meditation, interrupting anxious thoughts and offering a calming, contained focus.',
+      },
+      {
+        q: 'Do I need to be artistic to make a mandala?',
+        a: 'No. Simple repeated shapes from a central point are all you need, and even coloring a pre-drawn mandala provides the calming benefits.',
+      },
+    ],
+    related: ['art-therapy-for-anxiety', 'art-therapy-exercises'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-and-guilt',
+    category: 'Grief Counseling',
+    title: 'Grief and Guilt: Making Peace with “I Should Have…”',
+    metaTitle: 'Grief and Guilt: Making Peace with “I Should Have” | ColorMe',
+    description:
+      'Guilt is one of grief’s heaviest companions. Learn why we feel guilty after a loss, the forms grief guilt takes, and gentle ways to make peace and forgive yourself.',
+    keywords: [
+      'grief and guilt',
+      'guilt after death',
+      'survivor guilt',
+      'feeling guilty after loss',
+      'grief guilt',
+      'self-forgiveness grief',
+    ],
+    image: '/verguenza-duelo.webp',
+    imageAlt: 'Grief and guilt — making peace with “I should have”',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Alongside the sadness of grief often comes a quieter, sharper pain: guilt. The endless “I should have,” “if only,” and “why didn’t I.” If guilt is weighing on your grief, you are not alone — and you are not the failure your mind is telling you that you are.',
+      },
+      { type: 'h2', text: 'Why guilt and grief go together' },
+      {
+        type: 'p',
+        text: 'Guilt is often the mind’s attempt to make sense of the senseless. If we could have done something differently, then maybe the loss was preventable — and maybe the world is less random than it feels. Guilt gives us a false sense of control over something utterly out of our hands.',
+      },
+      { type: 'h2', text: 'Common forms of grief guilt' },
+      {
+        type: 'ul',
+        items: [
+          '“I should have done more” — for what you did or didn’t do before the death.',
+          'Guilt over things left unsaid, or a last conversation that went badly.',
+          'Relief guilt — feeling relief after a long illness, then guilt for the relief.',
+          'Survivor guilt — “Why them and not me?”',
+          'Guilt for laughing, healing, or living again.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You made the best decisions you could with the information, love, and strength you had at the time. That is all any of us can do.',
+      },
+      { type: 'h2', text: 'Gentle steps toward self-forgiveness' },
+      {
+        type: 'ul',
+        items: [
+          'Name the guilt out loud or on paper — unspoken, it grows in the dark.',
+          'Ask what you would say to a friend who felt this. Offer yourself the same compassion.',
+          'Separate responsibility from hindsight: you could not have known then what you know now.',
+          'Write or draw a letter to the person, saying what guilt keeps you from saying.',
+        ],
+      },
+      { type: 'h2', text: 'When guilt won’t loosen its grip' },
+      {
+        type: 'p',
+        text: 'If guilt is keeping you stuck, tormenting you, or convincing you that you do not deserve to heal, please reach out for support. Grief guilt is common and workable — you do not have to carry it as a life sentence.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why do I feel so guilty after losing someone?',
+        a: 'Guilt is often the mind’s way of seeking control over an uncontrollable loss. Believing you could have changed the outcome can feel less frightening than accepting how powerless we sometimes are.',
+      },
+      {
+        q: 'Is it normal to feel relief when someone dies?',
+        a: 'Yes, especially after a long illness or difficult relationship. Relief does not mean you did not love them, and it is nothing to be ashamed of.',
+      },
+      {
+        q: 'How do I stop feeling guilty about a loss?',
+        a: 'Name the guilt, offer yourself the compassion you’d give a friend, separate what you knew then from hindsight, and seek support if the guilt stays stuck. Self-forgiveness is a process, not a single moment.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'grief-after-losing-a-parent'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-during-the-holidays',
+    category: 'Grief Counseling',
+    title: 'Grief During the Holidays: Surviving the Season After a Loss',
+    metaTitle: 'Grief During the Holidays: Surviving the Season | ColorMe',
+    description:
+      'The holidays can be unbearable when you are grieving. Gentle, practical ways to survive Christmas and the season after a loss, honour your person, and protect your heart.',
+    keywords: [
+      'grief during the holidays',
+      'grief at christmas',
+      'first christmas after loss',
+      'holidays after death of loved one',
+      'coping with grief holidays',
+      'grief and the holiday season',
+    ],
+    image: '/hombre-en-duelo.webp',
+    imageAlt: 'Grief during the holidays — surviving the season after a loss',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When the world is lit up with celebration and togetherness, grief can feel unbearably loud. The empty chair, the traditions that now ache, the pressure to be merry — the holidays after a loss can be one of the hardest stretches of the year. Be gentle with yourself. You are allowed to do this differently.',
+      },
+      { type: 'h2', text: 'Why the holidays hurt so much' },
+      {
+        type: 'p',
+        text: 'Holidays are built around family, ritual, and memory — exactly the places your loss lives. Everything from a song to a recipe can bring a wave of grief. And the contrast between the joy around you and the pain inside you can make you feel painfully alone.',
+      },
+      { type: 'h2', text: 'Gentle ways to get through' },
+      {
+        type: 'ul',
+        items: [
+          'Give yourself permission to opt out of what feels too painful. You do not owe anyone your presence.',
+          'Decide in advance how much you can handle, and have an exit plan for gatherings.',
+          'Keep, change, or skip traditions — whatever your heart needs this year.',
+          'Include your person: light a candle, set a place, share a memory, cook their dish.',
+          'Let others help. Say yes to support and no to obligation.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You do not have to be festive to be worthy of care. Surviving the day is enough.',
+      },
+      { type: 'h2', text: 'Making space for your person' },
+      {
+        type: 'p',
+        text: 'Many people find comfort in a small ritual of remembrance: an ornament, a drawing, a letter, a moment of quiet with their name. Creating something — even a simple page of color for how you feel — can hold the grief so it does not have to be carried in silence through the celebrations.',
+      },
+      { type: 'h2', text: 'When you need more support' },
+      {
+        type: 'p',
+        text: 'If the season feels impossible, you do not have to white-knuckle through it alone. Reaching out for accompaniment during the hardest weeks of the year is a kindness to yourself, not a weakness.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do I cope with the first holiday after a loss?',
+        a: 'Lower your expectations, decide in advance what you can handle, keep or skip traditions freely, and find a small way to include your person. Surviving the day gently is enough.',
+      },
+      {
+        q: 'Is it okay to skip holiday celebrations while grieving?',
+        a: 'Yes. You are allowed to opt out of anything too painful. Protecting your heart is not selfish — it is necessary.',
+      },
+      {
+        q: 'How can I honour my loved one during the holidays?',
+        a: 'Light a candle, set a place at the table, cook their favourite dish, share memories, or create a small keepsake or drawing in their memory.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'what-to-say-to-someone-grieving'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'coping-with-sudden-loss',
+    category: 'Grief Counseling',
+    title: 'Coping With Sudden Loss: When Goodbye Never Came',
+    metaTitle: 'Coping With Sudden Loss: When Goodbye Never Came | ColorMe',
+    description:
+      'Sudden, unexpected loss carries a unique kind of shock and trauma. Understand why sudden death grief is so disorienting and find gentle ways to begin to cope.',
+    keywords: [
+      'sudden loss grief',
+      'coping with sudden death',
+      'unexpected death grief',
+      'traumatic loss',
+      'sudden death of a loved one',
+      'grief after accident',
+    ],
+    image: '/superar-perdida-ser-querido.webp',
+    imageAlt: 'Coping with sudden loss — when goodbye never came',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When someone dies suddenly — an accident, a heart attack, an overnight tragedy — the ground vanishes beneath you. There was no warning, no chance to say goodbye, no time to prepare. Sudden loss is not just grief; it is grief tangled with shock and trauma.',
+      },
+      { type: 'h2', text: 'Why sudden loss is so disorienting' },
+      {
+        type: 'p',
+        text: 'Your mind was given no time to absorb the reality, so it keeps rejecting it. You may replay the last ordinary moments, struggle to believe it is real, or feel frozen and numb. This is your nervous system trying to protect you from a blow it could not see coming.',
+      },
+      {
+        type: 'quote',
+        text: 'With sudden loss, the mind has to catch up to a reality the heart was never warned about.',
+      },
+      { type: 'h2', text: 'Common experiences' },
+      {
+        type: 'ul',
+        items: [
+          'Shock, disbelief, and a sense of unreality that can last a long time.',
+          'Intrusive thoughts or images, especially with a traumatic death.',
+          'Guilt over things left unsaid or a goodbye that never happened.',
+          'Anxiety and a new fear that catastrophe can strike anytime.',
+        ],
+      },
+      { type: 'h2', text: 'Gentle first steps' },
+      {
+        type: 'ul',
+        items: [
+          'Take it one hour at a time. You do not have to process it all at once.',
+          'Lean on practical support for daily tasks while you are in shock.',
+          'Find safe ways to say the goodbye you never got — a letter, a drawing, a spoken message.',
+          'Be patient: trauma-touched grief often takes longer to settle.',
+        ],
+      },
+      { type: 'h2', text: 'When to reach for support' },
+      {
+        type: 'p',
+        text: 'Because sudden loss can carry trauma, professional support is especially valuable. If you are haunted by intrusive images, unable to function, or stuck in shock, a grief or trauma specialist can help you find solid ground again.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why is sudden death harder to grieve?',
+        a: 'There is no time to prepare or say goodbye, so the mind struggles to accept the reality. Sudden loss often combines grief with shock and trauma, which can make it more disorienting and longer to settle.',
+      },
+      {
+        q: 'How do you cope when you didn’t get to say goodbye?',
+        a: 'Create your own goodbye in a safe way — write a letter, make a drawing, speak the words aloud, or hold a small ritual. Unsaid things can still be expressed and released.',
+      },
+      {
+        q: 'Is trauma part of sudden loss?',
+        a: 'Often, yes, especially with accidents or violent deaths. Intrusive images and heightened anxiety are common, and trauma-informed support can help significantly.',
+      },
+    ],
+    related: ['seven-stages-of-grief', 'complicated-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'journaling-for-grief',
+    category: 'Art as Therapy',
+    title: 'Journaling for Grief: Writing and Drawing Your Way Through Loss',
+    metaTitle: 'Journaling for Grief: Writing Through Loss | ColorMe',
+    description:
+      'Grief journaling gives your pain a safe place to go. Discover the benefits of journaling through loss, plus simple prompts that combine writing and art to help you heal.',
+    keywords: [
+      'journaling for grief',
+      'grief journal',
+      'grief journal prompts',
+      'writing to heal grief',
+      'expressive writing loss',
+      'art journaling grief',
+    ],
+    image: '/beneficios-del-arte.webp',
+    imageAlt: 'Journaling for grief — writing and drawing your way through loss',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Grief needs somewhere to go. When it stays locked inside, it can feel like it is swallowing you. A journal — one where you can both write and draw — offers a private, judgement-free place to pour it out, at your own pace, on your own terms.',
+      },
+      { type: 'h2', text: 'Why journaling helps you grieve' },
+      {
+        type: 'ul',
+        items: [
+          'It gives shapeless, overwhelming feelings a form you can see and hold.',
+          'It lets you say the things you cannot say out loud to anyone.',
+          'It keeps your bond with the person alive through memory and words.',
+          'It becomes a record of your healing — proof of how far you have come.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'The page asks nothing of you. It just listens.',
+      },
+      { type: 'h2', text: 'Prompts to begin' },
+      {
+        type: 'ul',
+        items: [
+          '“Today my grief feels like…” — then draw it in color, no words needed.',
+          'Write a letter to the person you lost. Tell them what you never got to say.',
+          'Describe a memory you never want to forget, in as much detail as you can.',
+          'List the small, ordinary things you miss most.',
+          '“What I need right now is…” — an act of gentle self-listening.',
+        ],
+      },
+      { type: 'h2', text: 'Combine words and art' },
+      {
+        type: 'p',
+        text: 'You do not have to choose between writing and drawing. Some feelings come out in words; others only in color, line, or image. Let your journal hold both. A page can be half letter, half scribble — whatever your grief needs that day.',
+      },
+      { type: 'h2', text: 'A gentle reminder' },
+      {
+        type: 'p',
+        text: 'There is no right way and no schedule. Skip days. Write one line. Fill ten pages. Journaling is not homework — it is a companion. And if the feelings that surface feel too heavy to hold alone, that is a sign to reach out for support, not to stop.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Does journaling really help with grief?',
+        a: 'Yes. Expressive writing and drawing help externalise overwhelming emotions, preserve memories, and track healing over time, giving grief a safe place to be felt and released.',
+      },
+      {
+        q: 'What should I write in a grief journal?',
+        a: 'Anything honest — how your grief feels today, a letter to the person you lost, memories you cherish, things you miss, or what you need right now. There is no wrong entry.',
+      },
+      {
+        q: 'How often should I journal while grieving?',
+        a: 'As often or as little as you like. One line or ten pages, daily or occasionally — there is no schedule. Let it be a companion, not a chore.',
+      },
+    ],
+    related: ['art-therapy-exercises', 'what-is-art-therapy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-vs-talk-therapy',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy vs. Talk Therapy: Which Is Right for You?',
+    metaTitle: 'Art as Therapy vs. Talk Therapy: Which Is Right for You? | ColorMe',
+    description:
+      'Wondering whether art as therapy or talk therapy suits you better? A clear comparison of how each works, their benefits, and how to choose the right approach for your needs.',
+    keywords: [
+      'art as therapy vs talk therapy',
+      'difference between art as therapy and talk therapy',
+      'is art as therapy effective',
+      'types of therapy',
+      'choosing a therapy',
+      'art as therapy or counseling',
+    ],
+    image: '/arteterapia-sesion-creativa.webp',
+    imageAlt: 'Art as therapy vs. talk therapy — which is right for you',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Talk therapy has helped millions of people — but words are not the only path to healing. For some, especially when emotions live below language, art as therapy reaches places that talking cannot. So how do you know which is right for you? Often, the answer is not either/or.',
+      },
+      { type: 'h2', text: 'How talk therapy works' },
+      {
+        type: 'p',
+        text: 'Talk therapy uses conversation to explore thoughts, feelings, and patterns. It is powerful for gaining insight, understanding relationships, and working things through verbally. It works best when you can access and articulate what you feel.',
+      },
+      { type: 'h2', text: 'How art as therapy works' },
+      {
+        type: 'p',
+        text: 'Art as therapy uses the creative process — drawing, color, image — guided by a trained therapist. It is especially helpful when feelings are hard to name, when talking feels blocked, or when trauma and grief live in the body more than in words. You do not need any artistic skill.',
+      },
+      {
+        type: 'quote',
+        text: 'Talk therapy starts with words. Art as therapy starts with what has no words yet.',
+      },
+      { type: 'h2', text: 'Art as therapy might suit you if…' },
+      {
+        type: 'ul',
+        items: [
+          'You find it hard to put your feelings into words.',
+          'You feel “stuck” or shut down in traditional talk therapy.',
+          'You are processing trauma or grief that resists language.',
+          'You are a child, or you simply think in images more than sentences.',
+        ],
+      },
+      { type: 'h2', text: 'You do not have to choose' },
+      {
+        type: 'p',
+        text: 'Art as therapy is a form of psychotherapy, not a lesser alternative to it. Many people benefit from combining approaches — talking where words help, and creating where they fall short. The best therapy is the one that meets you where you are.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is art as therapy as effective as talk therapy?',
+        a: 'Yes. Art as therapy is an established form of psychotherapy. For people who struggle to verbalise feelings, or who are processing trauma and grief, it can reach places talking alone cannot.',
+      },
+      {
+        q: 'What is the main difference between art as therapy and talk therapy?',
+        a: 'Talk therapy works through conversation; art as therapy works through the creative process. Art as therapy is especially useful when emotions are hard to put into words.',
+      },
+      {
+        q: 'Can I do both art as therapy and talk therapy?',
+        a: 'Absolutely. Many people combine them — talking where it helps and creating where words fall short. They complement each other well.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-for-trauma'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'coping-with-loss-of-a-spouse',
+    category: 'Grief Counseling',
+    title: 'Coping With the Loss of a Spouse: Life After Losing Your Partner',
+    metaTitle: 'Coping With the Loss of a Spouse | ColorMe',
+    description:
+      'Losing a spouse means losing your partner, your routines, and your imagined future. Compassionate guidance for grieving a husband or wife and rebuilding, slowly.',
+    keywords: [
+      'loss of a spouse',
+      'losing a husband',
+      'losing a wife',
+      'grieving a partner',
+      'widow grief',
+      'life after losing your spouse',
+    ],
+    image: '/como-superar-perdida.webp',
+    imageAlt: 'Coping with the loss of a spouse — life after losing your partner',
+    datePublished: '2026-07-30',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Losing a spouse is losing far more than a person. It is losing your partner in the everyday, your shared history, your plans for the future, and the person who knew you best. The grief can feel total, because your whole life was built together.',
+      },
+      { type: 'h2', text: 'Why this loss reshapes everything' },
+      {
+        type: 'p',
+        text: 'A spouse is woven into the fabric of daily life — the morning routine, the person to call with news, the other half of a thousand small decisions. When they are gone, the absence is everywhere. You may also grieve the future you had planned: the trips, the retirement, the growing old together.',
+      },
+      { type: 'h2', text: 'The many losses inside the loss' },
+      {
+        type: 'ul',
+        items: [
+          'The daily companionship and routines you shared.',
+          'Your identity as part of a couple.',
+          'Practical support — finances, chores, decisions once shared.',
+          'The future you imagined together.',
+          'Physical closeness and simply being known.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Grieving a spouse is grieving the life you built and the life you planned, all at once.',
+      },
+      { type: 'h2', text: 'Gentle ways to cope' },
+      {
+        type: 'ul',
+        items: [
+          'Take practical decisions slowly. Avoid big changes while grief is raw.',
+          'Let yourself feel the full weight — loneliness, anger, fear, and love.',
+          'Keep their memory close through rituals, photos, or creating something in their honour.',
+          'Accept help, and stay connected to people even when you want to withdraw.',
+        ],
+      },
+      { type: 'h2', text: 'Rebuilding, in your own time' },
+      {
+        type: 'p',
+        text: 'Healing does not mean forgetting or “moving on” from your partner. It means slowly learning to carry your love for them into a changed life. There is no timeline for this, and no need to rush. If the loneliness or grief feels unbearable, support can help you find your footing again.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do you cope with losing a spouse?',
+        a: 'Take practical decisions slowly, allow yourself to feel the full range of grief, keep your partner’s memory close, and lean on support. There is no timeline — be gentle with yourself.',
+      },
+      {
+        q: 'Why does losing a spouse feel so overwhelming?',
+        a: 'A spouse is part of your daily life, identity, and future plans. Losing them means grieving your shared present and the life you imagined together, all at once.',
+      },
+      {
+        q: 'Is it normal to feel lost after losing a partner?',
+        a: 'Completely. Much of your identity and routine was built together. Feeling unanchored is a natural part of this profound loss, and it can ease with time and support.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'grief-during-the-holidays'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-and-relief',
+    category: 'Grief Counseling',
+    title: 'Grief and Relief: The Feelings No One Talks About',
+    metaTitle: 'Grief and Relief: The Feelings No One Talks About | ColorMe',
+    description:
+      'Feeling relief after a death does not make you a bad person. An honest look at the messy, contradictory feelings of grief — relief, anger, numbness — and why they are normal.',
+    keywords: [
+      'grief and relief',
+      'relief after death',
+      'messy grief',
+      'contradictory grief feelings',
+      'feeling relieved after someone dies',
+      'complicated feelings grief',
+    ],
+    image: '/duelo-sucio-alivio.webp',
+    imageAlt: 'Grief and relief — the messy, contradictory feelings no one talks about',
+    datePublished: '2026-07-30',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'We are taught that grief looks like sadness and tears. But real grief is far messier than that. It can include relief, anger, numbness, even moments of laughter — sometimes all in the same hour. If your grief does not look “right,” you are not broken. You are human.',
+      },
+      { type: 'h2', text: 'The relief no one admits to' },
+      {
+        type: 'p',
+        text: 'After a long illness, a difficult relationship, or an exhausting caregiving journey, relief is common — relief that the suffering is over, that the waiting has ended, that you can breathe again. And almost always, relief comes bundled with guilt. But relief is not a betrayal of love. It is a natural response to the end of pain.',
+      },
+      {
+        type: 'quote',
+        text: 'You can be heartbroken and relieved at the same time. Grief is big enough to hold both.',
+      },
+      { type: 'h2', text: 'The other “unacceptable” feelings' },
+      {
+        type: 'ul',
+        items: [
+          'Anger — at the person, the doctors, yourself, or the unfairness of it all.',
+          'Numbness — feeling nothing when you expected to fall apart.',
+          'Guilt — for laughing, for relief, for beginning to heal.',
+          'Ambivalence — grieving someone who also hurt you.',
+        ],
+      },
+      { type: 'h2', text: 'Why the mess is normal' },
+      {
+        type: 'p',
+        text: 'Human relationships are complicated, so our grief is too. We rarely feel just one clean emotion about anyone. Allowing the full, contradictory truth of what you feel — without judging it — is not a detour from healing. It is the path.',
+      },
+      { type: 'h2', text: 'Giving the feelings somewhere to go' },
+      {
+        type: 'p',
+        text: 'Contradictory feelings are hard to say out loud. Art gives them a place to exist without needing to explain or defend them — a page of color for the tangle, an image of the relief and the sorrow side by side. And if the mess feels like too much to hold alone, support can help you make sense of it.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to feel relief when someone dies?',
+        a: 'Yes. After a long illness, caregiving, or a difficult relationship, relief is a natural response to the end of suffering. It does not mean you loved the person any less.',
+      },
+      {
+        q: 'Why do I feel numb instead of sad?',
+        a: 'Numbness is a common protective response, especially early in grief or after shock. Feeling little or nothing does not mean you did not care — it is your mind buffering the pain.',
+      },
+      {
+        q: 'Can you grieve someone who hurt you?',
+        a: 'Yes. Grief over a complicated relationship is often tangled with anger, relief, and love all at once. These contradictory feelings are normal and valid.',
+      },
+    ],
+    related: ['grief-and-guilt', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'what-is-grief',
+    category: 'Grief Counseling',
+    title: 'What Is Grief? Understanding the Process of Loss',
+    metaTitle: 'What Is Grief? Understanding the Process of Loss | ColorMe',
+    description:
+      'Grief is the natural process we go through when we lose something or someone meaningful. Understand what grief is, how it shows up, and why there is no wrong way to feel it.',
+    keywords: [
+      'what is grief',
+      'grief meaning',
+      'grieving process',
+      'understanding grief',
+      'types of grief',
+      'coping with loss',
+    ],
+    image: '/el-duelo.webp',
+    imageAlt: 'What is grief — understanding the natural process of loss',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Grief is the natural process we move through when we lose something or someone meaningful. It is not a disease or a weakness — it is the price of having loved, cared, and been attached. And it looks different for everyone.',
+      },
+      { type: 'h2', text: 'More than sadness' },
+      {
+        type: 'p',
+        text: 'We often imagine grief as only tears and sadness, but it is far wider than that. Grief can show up as anger, guilt, exhaustion, numbness, anxiety, relief, or even physical symptoms like a tight chest or no appetite. All of these belong to grief.',
+      },
+      { type: 'h2', text: 'Grief is not only about death' },
+      {
+        type: 'p',
+        text: 'We grieve many losses that are not deaths: a divorce, a diagnosis, the end of a friendship, leaving a country, losing a job, or a version of ourselves we can no longer be. Any meaningful loss can bring real grief.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'The loss of a loved one.',
+          'The end of a relationship or friendship.',
+          'A change in health, body, or ability.',
+          'The loss of a home, a job, or a way of life.',
+          'The loss of a dream or an imagined future.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Grief is love with nowhere to go. Its size is a measure of how much something mattered.',
+      },
+      { type: 'h2', text: 'There is no “right” way to grieve' },
+      {
+        type: 'p',
+        text: 'There is no correct order, no schedule, and no finish line. You may feel waves of intense pain followed by calm, only for the pain to return. This is normal. Grief is not a problem to solve but an experience to move through, at your own pace.',
+      },
+      { type: 'h2', text: 'When to reach for support' },
+      {
+        type: 'p',
+        text: 'If your grief feels unbearable, stuck, or is keeping you from living your life, you do not have to carry it alone. Compassionate accompaniment — through conversation or through creative expression like art as therapy — can help you find your way.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What exactly is grief?',
+        a: 'Grief is the natural emotional, physical, and mental response to losing something or someone meaningful. It is much broader than sadness and can include anger, guilt, numbness, and relief.',
+      },
+      {
+        q: 'Can you grieve something other than a death?',
+        a: 'Yes. Divorce, illness, job loss, moving, and the end of friendships can all bring real grief. Any significant loss can trigger the grieving process.',
+      },
+      {
+        q: 'Is there a right way to grieve?',
+        a: 'No. Grief has no fixed order or timeline. Everyone experiences it differently, and there is no wrong way to feel your loss.',
+      },
+    ],
+    related: ['how-long-does-grief-last', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'the-first-days-after-a-death',
+    category: 'Grief Counseling',
+    title: 'The First Days After Losing a Loved One',
+    metaTitle: 'The First Days After Losing a Loved One | ColorMe',
+    description:
+      'Nobody prepares you for the first days after a death. An honest space for surviving the shock, the numbness, and the silence that follows losing someone you love.',
+    keywords: [
+      'first days after a death',
+      'what to do when someone dies',
+      'surviving early grief',
+      'shock after loss',
+      'grief first week',
+      'coping right after a death',
+    ],
+    image: '/primeros-dias-despues-muerte.jpeg',
+    imageAlt: 'The first days after losing a loved one',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Nobody prepares you for the first days after a death. The world keeps moving as if nothing happened, while yours has stopped completely. If you are in those first raw days, this is a space to breathe. You do not have to be strong right now.',
+      },
+      { type: 'h2', text: 'The shock is protecting you' },
+      {
+        type: 'p',
+        text: 'In the first hours and days, many people feel strangely numb, robotic, or unable to cry. You may go through the motions of arrangements and phone calls as if watching yourself from outside. This is not coldness — it is your mind buffering a reality too big to absorb all at once.',
+      },
+      { type: 'h2', text: 'What you might feel' },
+      {
+        type: 'ul',
+        items: [
+          'Waves of disbelief — expecting them to walk back in.',
+          'Numbness, or sudden bursts of overwhelming pain.',
+          'Exhaustion, confusion, or trouble making simple decisions.',
+          'Physical symptoms: no appetite, no sleep, a heavy chest.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You do not have to understand it, accept it, or be okay. You only have to get through the next hour.',
+      },
+      { type: 'h2', text: 'Gentle things that help' },
+      {
+        type: 'ul',
+        items: [
+          'Let people help with practical tasks — food, calls, logistics.',
+          'Take it one hour at a time. Do not think about “forever” yet.',
+          'Drink water and rest when you can, even if you cannot sleep.',
+          'Say no to anything that feels like too much. There will be time.',
+        ],
+      },
+      { type: 'h2', text: 'The silence that comes later' },
+      {
+        type: 'p',
+        text: 'After the funeral, when others return to their lives, a heavier silence often settles in. This is frequently when grief hits hardest — and when support quietly disappears. If you are approaching that stage, reaching out for accompaniment can make all the difference.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why do I feel numb after a death instead of sad?',
+        a: 'Numbness is a common protective response to shock. Your mind shields you from a reality too overwhelming to absorb at once. It does not mean you did not love the person.',
+      },
+      {
+        q: 'What should I do in the first days after someone dies?',
+        a: 'Take it one hour at a time, accept practical help, rest and hydrate when you can, and say no to anything that feels like too much. There is no need to process everything immediately.',
+      },
+      {
+        q: 'When does grief hit hardest?',
+        a: 'For many people it is not the first days but the weeks after the funeral, when others return to normal life and the silence sets in. Support at that stage is especially valuable.',
+      },
+    ],
+    related: ['what-is-grief', 'how-long-does-grief-last'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'how-to-cope-with-losing-a-loved-one',
+    category: 'Grief Counseling',
+    title: 'How to Cope With Losing a Loved One: 12 Gentle Keys',
+    metaTitle: 'How to Cope With Losing a Loved One: 12 Keys | ColorMe',
+    description:
+      '12 practical, compassionate keys to move through grief and find moments of peace after losing someone you love — without rushing or forcing yourself to “move on.”',
+    keywords: [
+      'how to cope with losing a loved one',
+      'how to deal with grief',
+      'coping with loss',
+      'moving through grief',
+      'grief support tips',
+      'finding peace after loss',
+    ],
+    image: '/como-superar-perdida.webp',
+    imageAlt: 'How to cope with losing a loved one — gentle keys to move through grief',
+    datePublished: '2026-07-31',
+    readingTime: '6 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'You do not “get over” losing someone you love — you slowly learn to live with the loss. There is no formula, but there are gentle practices that help you move through grief and find moments of peace along the way. Here are twelve.',
+      },
+      { type: 'h2', text: '12 keys to move through grief' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself feel it. Suppressed grief does not disappear; it waits.',
+          'Drop the timeline. There is no schedule and no deadline for healing.',
+          'Name your emotions — sadness, anger, guilt, relief — without judging them.',
+          'Talk about the person. Saying their name keeps the bond alive.',
+          'Create small rituals: a candle, a photo, a place, a date.',
+          'Move your body gently. Grief lives in the body, not just the mind.',
+          'Protect your energy around people who minimise your loss.',
+          'Accept help, and let others show up for you.',
+          'Express what words cannot — through writing, art, or music.',
+          'Rest without guilt. Grieving is exhausting work.',
+          'Mark the hard dates in your own way, with no pressure.',
+          'Ask for support when the weight is too much to carry alone.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Healing is not forgetting. It is learning to carry your love and your loss in the same heart.',
+      },
+      { type: 'h2', text: 'Be patient with the waves' },
+      {
+        type: 'p',
+        text: 'Grief comes in waves — calm days followed by sudden, sharp pain triggered by a song or a smell. This is not going backward. Over time the waves usually come less often, even if they never fully disappear.',
+      },
+      { type: 'h2', text: 'When to seek support' },
+      {
+        type: 'p',
+        text: 'If the grief feels frozen, all-consuming, or impossible to face alone, professional accompaniment can help. Reaching out is not a failure — it is one of the kindest things you can do for yourself.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do you cope with losing a loved one?',
+        a: 'Let yourself feel the grief without a timeline, name your emotions, keep the person’s memory alive through ritual and conversation, care for your body, and lean on support. Healing means learning to live with the loss, not erasing it.',
+      },
+      {
+        q: 'How long does it take to heal from losing someone?',
+        a: 'There is no set timeline. The sharpest pain usually softens over the first year or two, but missing the person can continue for life, especially on anniversaries and milestones.',
+      },
+      {
+        q: 'Is it normal to still feel fine some days and shattered others?',
+        a: 'Completely. Grief comes in waves. Calm moments interrupted by sudden pain are a normal part of the process, not a sign you are grieving wrong.',
+      },
+    ],
+    related: ['what-is-grief', 'seven-stages-of-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'disenfranchised-grief',
+    category: 'Grief Counseling',
+    title: 'Disenfranchised Grief: When Your Loss Isn’t Recognised',
+    metaTitle: 'Disenfranchised Grief: When Loss Isn’t Recognised | ColorMe',
+    description:
+      'Disenfranchised grief is real loss that society fails to validate. Learn what it is, common examples, and why your pain is legitimate even when no one else names it.',
+    keywords: [
+      'disenfranchised grief',
+      'unrecognised grief',
+      'invisible grief',
+      'grief no one understands',
+      'unacknowledged loss',
+      'types of grief',
+    ],
+    image: '/duelos-invisibles.jpeg',
+    imageAlt: 'Disenfranchised grief — when your loss is not recognised',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Some losses come with flowers, cards, and time off work. Others are met with silence — as if they do not count. When a loss is real but society fails to acknowledge it, we call it disenfranchised grief. And it can be one of the loneliest kinds of pain.',
+      },
+      { type: 'h2', text: 'What is disenfranchised grief?' },
+      {
+        type: 'p',
+        text: 'It is grief that is not openly recognised, publicly mourned, or socially supported. Because others do not see the loss as significant, the griever is left without the validation and comfort that usually surrounds mourning.',
+      },
+      { type: 'h2', text: 'Common examples' },
+      {
+        type: 'ul',
+        items: [
+          'The death of a pet, an ex-partner, or someone you were not “supposed” to grieve.',
+          'Miscarriage, infertility, or pregnancy loss.',
+          'The loss of a friendship, or an estranged family member.',
+          'Grief over a diagnosis, addiction, or dementia in a loved one.',
+          'Non-death losses: divorce, job loss, migration, or a changed body.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A loss does not need anyone’s permission to hurt. Your grief is valid, even if no one else names it.',
+      },
+      { type: 'h2', text: 'Why it hurts extra' },
+      {
+        type: 'p',
+        text: 'When people minimise your loss — “it was just a pet,” “at least you can try again” — you can feel ashamed of your own pain, and start to hide it. That isolation adds a second wound on top of the first.',
+      },
+      { type: 'h2', text: 'How to honour your grief' },
+      {
+        type: 'ul',
+        items: [
+          'Name your loss out loud and let it be real.',
+          'Find people or spaces that do understand it.',
+          'Create your own ritual of acknowledgement.',
+          'Consider support that takes your grief seriously.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is disenfranchised grief?',
+        a: 'It is grief over a loss that society does not openly recognise or support — such as a pet, a miscarriage, a friendship, or a divorce — leaving the griever without the usual validation and comfort.',
+      },
+      {
+        q: 'Is disenfranchised grief real grief?',
+        a: 'Absolutely. The loss is real and so is the pain. The only difference is a lack of social acknowledgement, which can make it harder, not less valid.',
+      },
+      {
+        q: 'How do you cope with grief no one understands?',
+        a: 'Name the loss, seek out people or spaces that validate it, create your own rituals of acknowledgement, and consider support that takes your grief seriously.',
+      },
+    ],
+    related: ['pet-loss-grief', 'miscarriage-and-pregnancy-loss'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'death-anniversary',
+    category: 'Grief Counseling',
+    title: 'The Anniversary of a Death: How to Live and Honour the Date',
+    metaTitle: 'The Anniversary of a Death: How to Honour the Date | ColorMe',
+    description:
+      'A death anniversary can reopen grief. Gentle ways to prepare for, live through, and honour the date that marks the absence of someone you love.',
+    keywords: [
+      'death anniversary',
+      'anniversary of a death',
+      'grief anniversary',
+      'honouring a death anniversary',
+      'coping with anniversary of loss',
+      'remembering a loved one',
+    ],
+    image: '/aniversario-muerte.jpeg',
+    imageAlt: 'The anniversary of a death — how to live and honour the date',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'As the anniversary of a death approaches, grief often rises again — sometimes before you consciously remember the date. Your body and heart keep their own calendar. This is normal, and there is no wrong way to move through it.',
+      },
+      { type: 'h2', text: 'The build-up can be the hardest part' },
+      {
+        type: 'p',
+        text: 'Many people find the days leading up to an anniversary heavier than the day itself. A quiet dread, more tears, trouble sleeping — this “anniversary reaction” is your grief remembering. Naming it can take away some of its power.',
+      },
+      { type: 'h2', text: 'Ways to honour the date' },
+      {
+        type: 'ul',
+        items: [
+          'Visit a meaningful place, or a place they loved.',
+          'Cook their favourite meal or play their music.',
+          'Light a candle, write them a letter, or make art in their memory.',
+          'Gather with people who loved them and share stories.',
+          'Or spend it quietly alone — there is no obligation to mark it a certain way.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You are not “still” grieving. You are loving someone who is no longer here — and love does not expire.',
+      },
+      { type: 'h2', text: 'Plan gently, and be flexible' },
+      {
+        type: 'p',
+        text: 'It can help to decide in advance roughly how you want to spend the day, and with whom — while giving yourself full permission to change your mind. Protect your energy, and let yourself feel whatever comes.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why is a death anniversary so hard?',
+        a: 'Anniversaries reactivate grief, often before you consciously recall the date. This “anniversary reaction” — sadness, dread, poor sleep — is a normal way your grief remembers the loss.',
+      },
+      {
+        q: 'How do you honour the anniversary of a death?',
+        a: 'Visit a meaningful place, cook their favourite meal, light a candle, write a letter, make art, gather with loved ones, or spend it quietly — whatever feels right to you.',
+      },
+      {
+        q: 'Is it normal to grieve harder before the anniversary than on the day?',
+        a: 'Yes. For many people the build-up is heavier than the day itself. Naming the anniversary reaction can help lessen its intensity.',
+      },
+    ],
+    related: ['difficult-anniversaries', 'how-long-does-grief-last'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'difficult-anniversaries',
+    category: 'Grief Counseling',
+    title: 'Difficult Anniversaries: Getting Through the Painful Dates',
+    metaTitle: 'Difficult Anniversaries: Getting Through Painful Dates | ColorMe',
+    description:
+      'Birthdays, holidays, and anniversaries can turn the calendar into a minefield after a loss. Gentle strategies for getting through the dates that hurt.',
+    keywords: [
+      'difficult anniversaries grief',
+      'painful dates after loss',
+      'grief and special dates',
+      'coping with holidays after death',
+      'grief triggers dates',
+      'hard dates grieving',
+    ],
+    image: '/aniversarios-dificiles.webp',
+    imageAlt: 'Difficult anniversaries — getting through the painful dates after a loss',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'After a loss, the calendar can become a minefield. Birthdays, holidays, wedding anniversaries, the change of seasons — dates that once meant joy can now bring a wave of pain. If certain days on the calendar feel heavy, you are not alone.',
+      },
+      { type: 'h2', text: 'Why dates carry so much weight' },
+      {
+        type: 'p',
+        text: 'Special dates are woven with memory and ritual. They highlight the absence, the empty chair, the tradition that now aches. Even your body can register a date before your mind does, bringing a heaviness you cannot quite explain.',
+      },
+      { type: 'h2', text: 'Strategies that help' },
+      {
+        type: 'ul',
+        items: [
+          'Anticipate the hard dates rather than being ambushed by them.',
+          'Decide in advance what you will do — and give yourself an exit plan.',
+          'Keep, change, or skip traditions freely. Nothing is obligatory.',
+          'Include your person: a toast, a candle, a story, an empty place set with love.',
+          'Lean on people who understand, and let them support you.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You cannot avoid the date, but you can decide how to meet it — gently, and on your own terms.',
+      },
+      { type: 'h2', text: 'When the dates stay overwhelming' },
+      {
+        type: 'p',
+        text: 'If difficult dates consistently pull you under with no relief, support can help you build tools to face them. You do not have to dread the calendar forever.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why are certain dates so painful after a loss?',
+        a: 'Special dates are tied to memory and ritual, so they highlight the absence and reopen grief. Your body may even react to a date before your mind consciously recalls it.',
+      },
+      {
+        q: 'How do you get through difficult anniversaries?',
+        a: 'Anticipate them, plan gently with an exit strategy, keep or skip traditions as you wish, include your person in a meaningful way, and lean on people who understand.',
+      },
+      {
+        q: 'Should I ignore the date or mark it?',
+        a: 'Either is valid. Some people find comfort in ritual and remembrance; others prefer a quiet, low-key day. Do what feels right for you, without pressure.',
+      },
+    ],
+    related: ['death-anniversary', 'grief-during-the-holidays'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'birthday-of-someone-who-died',
+    category: 'Grief Counseling',
+    title: 'The Birthday of Someone Who Died: How to Honour the Day',
+    metaTitle: 'The Birthday of Someone Who Died: How to Honour It | ColorMe',
+    description:
+      'The birthday of someone who died can be tender and painful. Gentle ways to remember, celebrate, and honour the birthday of a person you have lost.',
+    keywords: [
+      'birthday of someone who died',
+      'deceased loved one birthday',
+      'honouring a birthday after death',
+      'grief birthday',
+      'remembering someone on their birthday',
+      'celebrating a life',
+    ],
+    image: '/cumpleanos-persona-fallecida.jpeg',
+    imageAlt: 'The birthday of someone who died — how to honour the day',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A birthday is a day made for celebrating a life. When that person is gone, the date becomes bittersweet — a tender mix of love, memory, and ache. There is no wrong way to spend it, but many people find comfort in honouring the day rather than avoiding it.',
+      },
+      { type: 'h2', text: 'Turning the day toward celebration' },
+      {
+        type: 'p',
+        text: 'A birthday can be a chance to celebrate that the person existed, rather than only mourning that they are gone. Remembering the joy they brought can sit alongside the sadness — both are welcome.',
+      },
+      { type: 'h2', text: 'Ways to honour their birthday' },
+      {
+        type: 'ul',
+        items: [
+          'Bake or buy their favourite cake and share it with loved ones.',
+          'Do something they loved, or visit a place that reminds you of them.',
+          'Write them a birthday letter, or make art in their honour.',
+          'Do a small act of kindness in their name.',
+          'Gather to share favourite memories and stories about them.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Celebrating their birthday is a way of saying: your life mattered, and it still does.',
+      },
+      { type: 'h2', text: 'Let the feelings come' },
+      {
+        type: 'p',
+        text: 'You might laugh and cry in the same hour, and that is exactly right. Give yourself permission to feel it all. If the day feels too heavy to face alone, reach out to someone who understands.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do you honour the birthday of someone who died?',
+        a: 'Celebrate that they existed: share their favourite cake, do something they loved, write them a letter, make art, perform an act of kindness in their name, or gather to share memories.',
+      },
+      {
+        q: 'Is it okay to celebrate the birthday of someone who passed away?',
+        a: 'Yes. Celebrating their birthday honours their life and keeps their memory alive. Joy and grief can coexist on the same day.',
+      },
+      {
+        q: 'What if their birthday is too painful?',
+        a: 'That is valid too. You can keep the day quiet and low-key, and lean on someone who understands. There is no obligation to mark it a certain way.',
+      },
+    ],
+    related: ['death-anniversary', 'difficult-anniversaries'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'fathers-day-grief',
+    category: 'Grief Counseling',
+    title: 'Father’s Day When Your Dad Is Gone',
+    metaTitle: 'Father’s Day When Your Dad Is Gone | ColorMe',
+    description:
+      'Father’s Day can ache when your dad has died, when the relationship was complicated, or when you longed for a father you never had. Gentle ways to get through the day.',
+    keywords: [
+      'father’s day grief',
+      'father’s day after dad died',
+      'grieving your father',
+      'father’s day without dad',
+      'complicated father relationship grief',
+      'coping father’s day',
+    ],
+    image: '/duelo-por-padre.jpeg',
+    imageAlt: 'Father’s Day when your dad is gone',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Father’s Day fills the world with cards, ads, and celebrations — and for many people, with a quiet ache. Whether your dad has died, the relationship was painful, or you longed for a father you never really had, this day can be complicated. All of it is valid.',
+      },
+      { type: 'h2', text: 'When your father has died' },
+      {
+        type: 'p',
+        text: 'If your dad is gone, Father’s Day can reopen the loss. You might miss his voice, his advice, or simply his presence. Honouring him — through a memory, a ritual, or a story — can hold both the love and the grief.',
+      },
+      { type: 'h2', text: 'When the relationship was complicated' },
+      {
+        type: 'p',
+        text: 'Not every father-child bond is simple. If yours was distant, painful, or absent, you may grieve not only the father you lost but the father you never had. That grief is real, even when it is tangled with anger or relief.',
+      },
+      {
+        type: 'quote',
+        text: 'You can grieve the dad you had and the dad you wished for. Both losses are allowed to live in you.',
+      },
+      { type: 'h2', text: 'Gentle ways through the day' },
+      {
+        type: 'ul',
+        items: [
+          'Give yourself permission to opt out of celebrations that hurt.',
+          'Honour him in your own way — his music, his food, a place he loved.',
+          'Write him a letter or make art for the things left unsaid.',
+          'Protect your energy and lean on people who understand.',
+        ],
+      },
+      { type: 'h2', text: 'You are not alone' },
+      {
+        type: 'p',
+        text: 'However you feel about your father, the ache of this day deserves compassion. If it feels too heavy, reaching out for support is a gift to yourself.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How do I cope with Father’s Day after my dad died?',
+        a: 'Give yourself permission to skip painful celebrations, honour him in your own way, express what was left unsaid through a letter or art, and lean on people who understand.',
+      },
+      {
+        q: 'Is it normal to grieve a father I had a difficult relationship with?',
+        a: 'Yes. You may grieve both the father you lost and the one you never had. Complicated grief, tangled with anger or relief, is valid.',
+      },
+      {
+        q: 'What if I never had a father figure at all?',
+        a: 'Longing for a father you never had is a real grief. Father’s Day can highlight that absence, and your feelings deserve compassion and support.',
+      },
+    ],
+    related: ['grief-after-losing-a-parent', 'difficult-anniversaries'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'rainbow-baby',
+    category: 'Grief Counseling',
+    title: 'Rainbow Baby: The Light That Comes After the Storm',
+    metaTitle: 'Rainbow Baby: The Light After Loss | ColorMe',
+    description:
+      'A rainbow baby is a child born after pregnancy or infant loss. It does not erase the grief, but it brings hope. Navigating the tender mix of joy and mourning.',
+    keywords: [
+      'rainbow baby',
+      'rainbow baby meaning',
+      'pregnancy after loss',
+      'baby after miscarriage',
+      'grief and joy pregnancy',
+      'hope after pregnancy loss',
+    ],
+    image: '/bebe-arcoiris.jpg',
+    imageAlt: 'Rainbow baby — the light that comes after the storm',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A “rainbow baby” is a baby born after the loss of a previous pregnancy or infant — the rainbow that appears after the storm. This child does not erase the one that came before, but they bring light and hope into a place that knew deep grief.',
+      },
+      { type: 'h2', text: 'Joy and grief, side by side' },
+      {
+        type: 'p',
+        text: 'A pregnancy after loss is rarely simple joy. It often carries anxiety, fear, and a bittersweet awareness of the baby who is missing. You can be overjoyed and still grieving. Both feelings are true, and both are welcome.',
+      },
+      { type: 'h2', text: 'The anxiety no one warns you about' },
+      {
+        type: 'p',
+        text: 'Many parents describe holding their breath through a rainbow pregnancy, afraid to hope, bracing for bad news. Guarding your heart is a natural response to having been hurt. Be gentle with yourself.',
+      },
+      {
+        type: 'quote',
+        text: 'A rainbow baby does not replace the storm. It reminds us that light and love can return after the rain.',
+      },
+      { type: 'h2', text: 'Honouring both babies' },
+      {
+        type: 'ul',
+        items: [
+          'Acknowledge the baby you lost — they remain part of your story.',
+          'Let yourself feel joy without guilt toward the one who is gone.',
+          'Create a small ritual that includes both babies.',
+          'Seek support if anxiety or grief feels overwhelming.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is a rainbow baby?',
+        a: 'A rainbow baby is a baby born after the loss of a previous pregnancy, stillbirth, or infant death — symbolising the rainbow that appears after a storm.',
+      },
+      {
+        q: 'Is it normal to feel anxious during a pregnancy after loss?',
+        a: 'Very. After experiencing loss, fear and guarded hope are natural. Many parents feel they are holding their breath. Support can help ease that anxiety.',
+      },
+      {
+        q: 'Can you grieve and feel joy at the same time?',
+        a: 'Yes. A rainbow baby brings joy while the grief for the baby who was lost remains. Both feelings can coexist, and both are valid.',
+      },
+    ],
+    related: ['miscarriage-and-pregnancy-loss', 'grief-of-infertility'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'caregiver-burnout',
+    category: 'Grief Counseling',
+    title: 'Caregiver Burnout: When Caring for Others Consumes You',
+    metaTitle: 'Caregiver Burnout: When Caring Consumes You | ColorMe',
+    description:
+      'Caring for a sick or dying loved one can quietly empty you. Learn the signs of caregiver burnout, why it happens, and how to care for yourself while caring for others.',
+    keywords: [
+      'caregiver burnout',
+      'caregiver syndrome',
+      'caregiver exhaustion',
+      'caring for a sick loved one',
+      'caregiver stress',
+      'caregiver self-care',
+    ],
+    image: '/sindrome-cuidador.webp',
+    imageAlt: 'Caregiver burnout — when caring for others consumes you',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When you spend your days caring for someone who is ill, ageing, or dying, it is easy to disappear. You give and give until there is nothing left for yourself. Caregiver burnout is the physical and emotional exhaustion that follows — and it is far more common than people admit.',
+      },
+      { type: 'h2', text: 'Signs of caregiver burnout' },
+      {
+        type: 'ul',
+        items: [
+          'Constant exhaustion that rest does not fix.',
+          'Irritability, resentment, or feeling numb.',
+          'Neglecting your own health, meals, or sleep.',
+          'Anxiety, sadness, or a sense of hopelessness.',
+          'Guilt for wanting a break, or for your own feelings.',
+        ],
+      },
+      { type: 'h2', text: 'Why caregivers ignore their own needs' },
+      {
+        type: 'p',
+        text: 'Love, duty, and guilt keep caregivers going long past their limits. Many feel they have no right to rest while their loved one suffers. But an empty cup cannot pour. Your wellbeing is not a betrayal of theirs.',
+      },
+      {
+        type: 'quote',
+        text: 'You cannot care for someone from an empty place. Looking after yourself is part of looking after them.',
+      },
+      { type: 'h2', text: 'Gentle ways to protect yourself' },
+      {
+        type: 'ul',
+        items: [
+          'Accept help and share the load where you can.',
+          'Protect small pockets of rest without guilt.',
+          'Let yourself feel resentment or grief — it does not make you a bad caregiver.',
+          'Seek support before you reach breaking point.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is caregiver burnout?',
+        a: 'It is the physical, emotional, and mental exhaustion that comes from caring for a sick or dying loved one, often marked by fatigue, resentment, guilt, and neglecting your own needs.',
+      },
+      {
+        q: 'Is it normal to feel resentment as a caregiver?',
+        a: 'Yes. Resentment, frustration, and grief are common and do not make you a bad person. They are signs you are carrying too much without enough support.',
+      },
+      {
+        q: 'How do caregivers avoid burnout?',
+        a: 'Accept help, share the load, protect small moments of rest without guilt, allow your feelings, and seek support before reaching breaking point.',
+      },
+    ],
+    related: ['caregiver-grief', 'anticipatory-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'caregiver-grief',
+    category: 'Grief Counseling',
+    title: 'Caregiver Grief: The Silent Mourning of Those Who Care',
+    metaTitle: 'Caregiver Grief: The Silent Mourning of Carers | ColorMe',
+    description:
+      'Caregivers grieve too — often silently, and long before and after a death. Understanding the layered grief of caring for a loved one through illness and loss.',
+    keywords: [
+      'caregiver grief',
+      'grief after caregiving ends',
+      'caregiver loss',
+      'grieving as a carer',
+      'grief after caring for someone',
+      'caregiver mourning',
+    ],
+    image: '/duelo-del-cuidador.jpeg',
+    imageAlt: 'Caregiver grief — the silent mourning of those who care',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Caregivers carry a grief that few people see. They mourn while their loved one is still alive, and again — differently — when they are gone. This layered, often silent grief deserves to be named and honoured.',
+      },
+      { type: 'h2', text: 'Grief that starts before the death' },
+      {
+        type: 'p',
+        text: 'Watching someone you love decline is its own grief. You mourn the person they used to be, the future you imagined, and the relationship as it once was — all while still caring for them each day. This is anticipatory grief woven into daily life.',
+      },
+      { type: 'h2', text: 'The grief after caregiving ends' },
+      {
+        type: 'p',
+        text: 'When a loved one dies, caregivers often feel not only sorrow but a strange emptiness. The role that filled every hour is suddenly gone, along with the person. Relief, guilt about that relief, and a loss of identity can all follow.',
+      },
+      {
+        type: 'quote',
+        text: 'You did not just lose a person. You lost a role, a routine, and a purpose that shaped your days.',
+      },
+      { type: 'h2', text: 'Being gentle with yourself' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself grieve both the person and the caregiving role.',
+          'Allow relief without judging yourself for it.',
+          'Rebuild slowly — you may need to rediscover who you are now.',
+          'Seek support; caregiver grief is real and can be heavy.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Do caregivers grieve differently?',
+        a: 'Yes. Caregivers often grieve twice — first while watching a loved one decline, and again after the death, when the caregiving role and its purpose also disappear.',
+      },
+      {
+        q: 'Why do I feel empty after caregiving ends?',
+        a: 'Caregiving fills your time, identity, and sense of purpose. When it ends, losing that role alongside the person can leave a profound emptiness. This is a normal part of caregiver grief.',
+      },
+      {
+        q: 'Is relief after a loved one dies normal for caregivers?',
+        a: 'Completely. Relief that their suffering — and the exhausting caregiving — has ended is human and common. It does not mean you loved them any less.',
+      },
+    ],
+    related: ['caregiver-burnout', 'anticipatory-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-after-divorce',
+    category: 'Grief Counseling',
+    title: 'Grief After Divorce: Mourning the End of a Marriage',
+    metaTitle: 'Grief After Divorce: Mourning a Marriage | ColorMe',
+    description:
+      'Divorce is a death of sorts — the end of a shared life and an imagined future. Why grief after divorce is real, and how to move through it toward healing.',
+    keywords: [
+      'grief after divorce',
+      'divorce grief',
+      'mourning a marriage',
+      'coping with divorce emotionally',
+      'end of relationship grief',
+      'healing after divorce',
+    ],
+    image: '/duelo-por-divorcio.jpeg',
+    imageAlt: 'Grief after divorce — mourning the end of a marriage',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When a marriage ends, something dies — even if both people are still alive. Divorce is a genuine loss: of a partner, a shared daily life, and the future you had planned together. The grief that follows is real, even when the divorce is the right decision.',
+      },
+      { type: 'h2', text: 'Why divorce brings grief' },
+      {
+        type: 'p',
+        text: 'You are not only losing a relationship. You may be grieving your identity as part of a couple, your home, your routines, mutual friends, and the family life you imagined. Divorce touches nearly every part of your world at once.',
+      },
+      { type: 'h2', text: 'The complicated feelings' },
+      {
+        type: 'ul',
+        items: [
+          'Sadness and loneliness, even if you wanted the divorce.',
+          'Relief, and then guilt about feeling relieved.',
+          'Anger, betrayal, or failure.',
+          'Fear about the future and starting over.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You can be certain the marriage needed to end and still grieve everything it was — and everything it was supposed to be.',
+      },
+      { type: 'h2', text: 'Moving through it' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve without rushing to “be fine.” Lean on support, avoid major decisions while the pain is raw, and give yourself time to rebuild a new sense of self. Creative expression can help hold feelings that are hard to say aloud.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve after a divorce?',
+        a: 'Yes. Divorce is a real loss — of a partner, a shared life, and an imagined future — so grief is a normal response, even when the divorce is the right choice.',
+      },
+      {
+        q: 'Why do I feel sad if I wanted the divorce?',
+        a: 'You can want a marriage to end and still grieve what it was and what you hoped it would be. Relief and sadness often coexist.',
+      },
+      {
+        q: 'How long does grief after divorce last?',
+        a: 'There is no fixed timeline. The intensity usually eases over months as you rebuild, but healing happens at its own pace. Support can help.',
+      },
+    ],
+    related: ['what-is-grief', 'coping-with-loss-of-a-spouse'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-after-a-diagnosis',
+    category: 'Grief Counseling',
+    title: 'Grief After a Diagnosis: When Your Body Changes the Rules',
+    metaTitle: 'Grief After a Diagnosis: When the Body Changes | ColorMe',
+    description:
+      'A serious diagnosis can bring real grief — for your health, your independence, and the future you planned. How to navigate the grief that follows illness.',
+    keywords: [
+      'grief after diagnosis',
+      'grief chronic illness',
+      'illness grief',
+      'coping with a diagnosis',
+      'grieving your health',
+      'emotional impact of illness',
+    ],
+    image: '/hombre-en-duelo.webp',
+    imageAlt: 'Grief after a diagnosis — when your body changes the rules',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'A serious diagnosis does not only change your body — it can shatter the future you assumed you had. The grief that follows is real, even though no one has died. You are mourning your health, your certainty, and the life you thought lay ahead.',
+      },
+      { type: 'h2', text: 'What you might be grieving' },
+      {
+        type: 'ul',
+        items: [
+          'The healthy body and independence you had.',
+          'Plans and dreams that now feel uncertain.',
+          'Your sense of identity beyond being a “patient.”',
+          'A feeling of safety and control over your own future.',
+        ],
+      },
+      { type: 'h2', text: 'The waves of illness grief' },
+      {
+        type: 'p',
+        text: 'Grief after a diagnosis often comes in waves — shock, denial, anger, fear, and sadness that resurface with each new change, test, or treatment. This is a normal response to an ongoing loss, not a lack of “positivity.”',
+      },
+      {
+        type: 'quote',
+        text: 'You are allowed to grieve your health and still fight for it. Hope and grief can live together.',
+      },
+      { type: 'h2', text: 'Caring for the emotional weight' },
+      {
+        type: 'p',
+        text: 'Tending to your emotional health is part of your care, not a distraction from it. Talking, writing, or making art about what you are living through can ease the burden. And you do not have to face it alone.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can you grieve a diagnosis even if no one died?',
+        a: 'Yes. A serious diagnosis brings real grief — for your health, independence, and the future you imagined. This kind of non-death loss is valid and common.',
+      },
+      {
+        q: 'Why does grief keep returning with a chronic illness?',
+        a: 'Illness brings ongoing losses, so grief resurfaces with each new change, test, or limitation. This wave-like pattern is a normal response, not weakness.',
+      },
+      {
+        q: 'How can I cope emotionally with a diagnosis?',
+        a: 'Allow yourself to grieve, express your feelings through talking, writing, or art, and seek support. Emotional care is part of your overall healing.',
+      },
+    ],
+    related: ['art-therapy-for-cancer', 'grieving-your-body'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-and-social-media',
+    category: 'Grief Counseling',
+    title: 'Grief and Social Media: Mourning in a Connected World',
+    metaTitle: 'Grief and Social Media: Mourning Online | ColorMe',
+    description:
+      'Social media has changed how we grieve — from memorial profiles to painful reminders. How to navigate loss, comparison, and digital ghosts in a connected world.',
+    keywords: [
+      'grief and social media',
+      'grieving online',
+      'social media after death',
+      'digital grief',
+      'memorial profiles',
+      'grief comparison social media',
+    ],
+    image: '/duelo-en-redes.jpeg',
+    imageAlt: 'Grief and social media — mourning in a connected world',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Social media has quietly reshaped how we grieve. A loved one’s profile lives on, memories resurface without warning, and the whole world seems to mourn — or move on — in public. This new landscape can bring comfort and pain in equal measure.',
+      },
+      { type: 'h2', text: 'When the feed reopens the wound' },
+      {
+        type: 'p',
+        text: 'A “memory” notification, a birthday reminder for someone who died, or an old photo appearing unexpectedly can ambush you with grief. These digital echoes can feel like both a gift and a fresh cut.',
+      },
+      { type: 'h2', text: 'The pressure of public grief' },
+      {
+        type: 'p',
+        text: 'Social media can make grief feel like a performance — how much to post, when it is “too soon” to smile again, comparing your mourning to others’. Remember: your grief is yours, and it owes no one a public timeline.',
+      },
+      {
+        type: 'quote',
+        text: 'You do not have to grieve online, or on anyone else’s schedule. Private grief is just as real.',
+      },
+      { type: 'h2', text: 'Protecting yourself online' },
+      {
+        type: 'ul',
+        items: [
+          'Adjust memory and notification settings if they hurt.',
+          'Mute or take breaks from feeds that deepen comparison.',
+          'Use memorial features intentionally, if they bring comfort.',
+          'Curate what you see toward what genuinely helps you heal.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'How does social media affect grief?',
+        a: 'It can both comfort and hurt — memorial profiles and shared memories keep a bond alive, while unexpected reminders and public pressure can reopen the wound or fuel comparison.',
+      },
+      {
+        q: 'Should I post about my grief online?',
+        a: 'Only if it helps you. There is no obligation to grieve publicly or on any timeline. Private grief is just as valid as public mourning.',
+      },
+      {
+        q: 'How do I handle painful reminders on social media?',
+        a: 'Adjust memory and notification settings, mute or take breaks from painful feeds, and curate your online space toward what genuinely supports your healing.',
+      },
+    ],
+    related: ['what-to-say-to-someone-grieving', 'how-long-does-grief-last'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'explaining-death-to-a-child',
+    category: 'Grief Counseling',
+    title: 'How to Explain Death to a Child',
+    metaTitle: 'How to Explain Death to a Child | ColorMe',
+    description:
+      'Talking to a child about death is one of the hardest conversations. How to explain death honestly, gently, and in age-appropriate ways that help a child grieve.',
+    keywords: [
+      'how to explain death to a child',
+      'talking to children about death',
+      'helping a child grieve',
+      'children and death',
+      'explaining loss to kids',
+      'child grief',
+    ],
+    image: '/explicar-muerte-nino.webp',
+    imageAlt: 'How to explain death to a child',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Explaining death to a child is one of the hardest conversations a parent can face. Our instinct is to protect them from pain — but children cope best with honesty, delivered gently and in words they can understand.',
+      },
+      { type: 'h2', text: 'Use clear, simple words' },
+      {
+        type: 'p',
+        text: 'Avoid euphemisms like “went to sleep,” “passed away,” or “we lost them” — young children take language literally and can become confused or frightened. It is kinder to use the real words: “died,” “death,” and to explain that the body stopped working and will not come back.',
+      },
+      { type: 'h2', text: 'Match the explanation to their age' },
+      {
+        type: 'ul',
+        items: [
+          'Young children need short, concrete, repeated explanations.',
+          'They may ask the same questions again and again — that is how they process.',
+          'Older children can handle more detail and may hide big feelings.',
+          'Reassure them the death was not their fault and that they are safe and loved.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Children do not need perfect words. They need honesty, reassurance, and permission to feel.',
+      },
+      { type: 'h2', text: 'Let them grieve their own way' },
+      {
+        type: 'p',
+        text: 'Children often grieve in bursts — crying one moment, playing the next. This is healthy. Invite them to express feelings through talking, drawing, or play, and let them see that the adults around them are sad too. Grief shared is grief made bearable.',
+      },
+      { type: 'h2', text: 'When to seek support' },
+      {
+        type: 'p',
+        text: 'If a child seems stuck, withdrawn, or overwhelmed, art as therapy and child grief support offer safe, playful ways to process a loss they cannot yet put into words.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What words should I use to explain death to a child?',
+        a: 'Use clear, honest language like “died” and “death,” and explain that the body stopped working and will not come back. Avoid euphemisms like “went to sleep,” which can confuse or frighten young children.',
+      },
+      {
+        q: 'Why does my child keep asking the same questions about death?',
+        a: 'Repetition is how children process difficult information. Answering patiently each time helps them slowly understand and feel secure.',
+      },
+      {
+        q: 'Is it okay to cry in front of my child?',
+        a: 'Yes. Seeing adults grieve teaches children that sadness is normal and safe to express. It helps them feel less alone in their own feelings.',
+      },
+    ],
+    related: ['art-therapy-for-children', 'what-to-say-to-someone-grieving'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'why-we-avoid-talking-about-death',
+    category: 'Grief Counseling',
+    title: 'Why We Avoid Talking About Death',
+    metaTitle: 'Why We Avoid Talking About Death | ColorMe',
+    description:
+      'Death is the one destiny we all share, yet we avoid naming it. Why talking about death is so uncomfortable, and why opening the conversation can bring peace.',
+    keywords: [
+      'talking about death',
+      'why we fear death',
+      'death taboo',
+      'death anxiety',
+      'discussing mortality',
+      'accepting death',
+    ],
+    image: '/hablar-de-la-muerte.webp',
+    imageAlt: 'Why we avoid talking about death',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Death is the one destiny every human being shares — and yet it may be the hardest thing for us to talk about. We whisper around it, soften it with euphemisms, and change the subject. Why does the most universal experience make us so uncomfortable?',
+      },
+      { type: 'h2', text: 'Fear of the unknown' },
+      {
+        type: 'p',
+        text: 'Death is the ultimate uncertainty. We cannot control it, predict it, or fully understand it. Avoiding the topic can feel like a way to keep it at a distance — as if not naming it might keep it away.',
+      },
+      { type: 'h2', text: 'A culture that hides death' },
+      {
+        type: 'p',
+        text: 'Modern life keeps death out of sight — in hospitals and behind closed doors — so most of us grow up with little exposure to it. Without practice, the conversation feels foreign and frightening. Other cultures, which integrate death into daily life and ritual, often carry less of this dread.',
+      },
+      {
+        type: 'quote',
+        text: 'Talking about death does not bring it closer. It helps us live more fully while we are here.',
+      },
+      { type: 'h2', text: 'Why the conversation matters' },
+      {
+        type: 'p',
+        text: 'Naming death allows us to prepare, to say what matters, and to support one another in grief. Families who talk openly about death often navigate loss with more peace. Avoiding the subject does not protect us — it leaves us alone with our fear.',
+      },
+      { type: 'h2', text: 'Beginning gently' },
+      {
+        type: 'p',
+        text: 'You do not have to solve your relationship with mortality in one conversation. Small, honest openings — with loved ones, or with a professional — can slowly turn dread into acceptance.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why is it so hard to talk about death?',
+        a: 'Death represents the ultimate unknown, and modern culture keeps it hidden, so most people have little practice discussing it. Avoidance feels like a way to keep the fear at a distance.',
+      },
+      {
+        q: 'Does talking about death make it more frightening?',
+        a: 'Usually the opposite. Naming death openly tends to reduce anxiety, helps us prepare and connect, and allows us to live more fully.',
+      },
+      {
+        q: 'How do I start a conversation about death?',
+        a: 'Begin small and honestly with a trusted person or professional. You do not need to resolve everything at once — gentle, repeated openings ease the discomfort over time.',
+      },
+    ],
+    related: ['what-is-a-thanatologist', 'what-is-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'menopause-and-grief',
+    category: 'Grief Counseling',
+    title: 'Menopause and Grief: The Invisible Losses',
+    metaTitle: 'Menopause and Grief: The Invisible Losses | ColorMe',
+    description:
+      'Menopause is not only a physical transition — it carries real, often invisible grief. Understanding the losses of this stage and how to move through them with compassion.',
+    keywords: [
+      'menopause and grief',
+      'menopause emotional',
+      'grief during menopause',
+      'midlife loss',
+      'menopause identity',
+      'menopause mental health',
+    ],
+    image: '/menopausia-yduelo.jpeg',
+    imageAlt: 'Menopause and grief — the invisible losses',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Menopause is usually talked about in terms of hot flashes and hormones. But for many women it is also a profound emotional passage — one that carries real, often unspoken grief. Naming those losses is the first step to moving through them.',
+      },
+      { type: 'h2', text: 'The losses no one names' },
+      {
+        type: 'ul',
+        items: [
+          'The end of fertility, and the door it closes — even for those who did not want more children.',
+          'A changing body and a shifting sense of identity.',
+          'The passing of youth and how the world sees you.',
+          'A reckoning with time, ageing, and what comes next.',
+        ],
+      },
+      { type: 'h2', text: 'Grief tangled with hormones' },
+      {
+        type: 'p',
+        text: 'Hormonal changes can intensify emotions, making sadness and anxiety feel bigger and harder to place. The grief is real, and it is not “just hormones.” It deserves acknowledgement, not dismissal.',
+      },
+      {
+        type: 'quote',
+        text: 'This is not only an ending. It can also be a threshold — but you are allowed to grieve what you leave behind.',
+      },
+      { type: 'h2', text: 'Moving through with compassion' },
+      {
+        type: 'p',
+        text: 'Allow yourself to mourn the chapter that is closing while making space for the one beginning. Creative expression, connection with others in the same passage, and support can help you meet this transition with more gentleness.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can menopause cause grief?',
+        a: 'Yes. Beyond physical symptoms, menopause can bring grief over the end of fertility, a changing body, shifting identity, and the passing of youth. These losses are real and valid.',
+      },
+      {
+        q: 'Is emotional intensity during menopause normal?',
+        a: 'Very. Hormonal changes can amplify sadness and anxiety. The grief is genuine and deserves acknowledgement, not dismissal as “just hormones.”',
+      },
+      {
+        q: 'How can I cope with grief during menopause?',
+        a: 'Acknowledge the losses, allow yourself to mourn while embracing the new chapter, connect with others going through it, and seek support if the feelings become heavy.',
+      },
+    ],
+    related: ['grieving-your-body', 'fear-of-getting-older'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'farewell-rituals',
+    category: 'Grief Counseling',
+    title: 'Farewell Rituals: How to Create Your Own',
+    metaTitle: 'Farewell Rituals: How to Create Your Own | ColorMe',
+    description:
+      'Rituals help us grieve, remember, and say goodbye. How to create your own meaningful farewell ritual to honour someone or something you have lost.',
+    keywords: [
+      'farewell rituals',
+      'grief rituals',
+      'creating a ritual for the dead',
+      'memorial ritual ideas',
+      'saying goodbye ritual',
+      'honouring a loss',
+    ],
+    image: '/rituales-despedida.webp',
+    imageAlt: 'Farewell rituals — how to create your own',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Across every culture and century, humans have used rituals to grieve. A ritual gives shape to what feels shapeless, marks a moment, and helps the heart do what the mind cannot force. And you do not need a religion or a tradition to create one — you can make your own.',
+      },
+      { type: 'h2', text: 'Why rituals help us grieve' },
+      {
+        type: 'p',
+        text: 'Rituals turn abstract grief into something we can see, touch, and do. They give us a container for overwhelming emotion, a way to say goodbye, and a sense of meaning and agency when everything feels out of control.',
+      },
+      { type: 'h2', text: 'Ideas for your own farewell ritual' },
+      {
+        type: 'ul',
+        items: [
+          'Write a letter to the person and read it aloud, burn it, or keep it.',
+          'Light a candle on meaningful dates and sit quietly with your memories.',
+          'Plant something living — a tree or flowers — in their memory.',
+          'Create art, a memory box, or a small altar with photos and objects.',
+          'Release something symbolic: flowers on water, a note, a moment of silence.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A ritual does not have to make sense to anyone else. It only has to mean something to you.',
+      },
+      { type: 'h2', text: 'Make it yours' },
+      {
+        type: 'p',
+        text: 'The most powerful rituals are personal. Choose actions, objects, and words that reflect your bond and your beliefs. Repeat it, adapt it, or do it once — there is no right way, only what brings you comfort and connection.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why are rituals important in grief?',
+        a: 'Rituals give shape to overwhelming emotion, create a way to say goodbye, and restore a sense of meaning and agency when grief feels out of control.',
+      },
+      {
+        q: 'How do I create my own farewell ritual?',
+        a: 'Choose personal actions and objects — a letter, a candle, planting something, art, or releasing something symbolic — that reflect your bond and beliefs. It only needs to be meaningful to you.',
+      },
+      {
+        q: 'Do I need a religion to hold a grief ritual?',
+        a: 'No. Rituals can be entirely personal and secular. What matters is the meaning and comfort they bring you, not any particular tradition.',
+      },
+    ],
+    related: ['death-anniversary', 'journaling-for-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'supporting-someone-with-terminal-cancer',
+    category: 'Grief Counseling',
+    title: 'How to Support Someone With Terminal Cancer',
+    metaTitle: 'How to Support Someone With Terminal Cancer | ColorMe',
+    description:
+      'Being present for a loved one with terminal cancer is tender and hard. How to accompany them with honesty and love, and care for yourself through it.',
+    keywords: [
+      'supporting someone with terminal cancer',
+      'accompanying a dying loved one',
+      'terminal illness support',
+      'what to say to a dying person',
+      'end of life support',
+      'caring for a terminally ill loved one',
+    ],
+    image: '/como-acompanar-cancer-terminal.jpeg',
+    imageAlt: 'How to support someone with terminal cancer',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Accompanying a loved one through terminal cancer is one of the most tender and difficult things you will ever do. There are no perfect words and no way to fix it — but your steady presence is worth more than any solution.',
+      },
+      { type: 'h2', text: 'Presence over answers' },
+      {
+        type: 'p',
+        text: 'You do not need to say the right thing. Often the greatest gift is simply being there — sitting in silence, holding a hand, listening without trying to cheer them up or fix their fear. Let them lead the conversation.',
+      },
+      { type: 'h2', text: 'How to show up' },
+      {
+        type: 'ul',
+        items: [
+          'Follow their pace — talk about death, or about ordinary life, as they wish.',
+          'Keep treating them as a whole person, not only a patient.',
+          'Offer specific, practical help rather than “let me know if you need anything.”',
+          'Allow honest conversations, including fears and goodbyes.',
+          'Create small moments of normalcy, laughter, and beauty.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You cannot take away the fear or the illness. But you can make sure they do not face it alone.',
+      },
+      { type: 'h2', text: 'Care for yourself too' },
+      {
+        type: 'p',
+        text: 'Accompanying someone toward the end of life is exhausting and grief-filled. Your anticipatory grief is real. Rest, accept support, and give yourself permission to feel — you cannot pour from an empty cup.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What do you say to someone with terminal cancer?',
+        a: 'You do not need perfect words. Being present, listening, and following their lead matters more. Honest, gentle conversation — including about their fears — is often more comforting than forced positivity.',
+      },
+      {
+        q: 'How can I support a dying loved one?',
+        a: 'Offer steady presence, keep treating them as a whole person, provide specific practical help, allow honest conversations, and create small moments of normalcy and connection.',
+      },
+      {
+        q: 'How do I cope with my own grief while caring for them?',
+        a: 'Recognise your anticipatory grief as real, rest, accept help, and give yourself permission to feel. Supporting your own wellbeing helps you keep showing up.',
+      },
+    ],
+    related: ['anticipatory-grief', 'caregiver-burnout'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'talking-to-your-children-about-cancer',
+    category: 'Grief Counseling',
+    title: 'How to Talk to Your Children About Cancer',
+    metaTitle: 'How to Talk to Your Children About Cancer | ColorMe',
+    description:
+      'Telling your children about a cancer diagnosis is daunting. How to share the news honestly and age-appropriately, and help your kids cope with their feelings.',
+    keywords: [
+      'talking to children about cancer',
+      'telling kids about cancer diagnosis',
+      'explaining cancer to children',
+      'helping children cope with parent’s cancer',
+      'family cancer conversation',
+      'children and illness',
+    ],
+    image: '/como-hablar-con-hijos-sobre-cancer.jpeg',
+    imageAlt: 'How to talk to your children about cancer',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Telling your children that you — or someone they love — has cancer is a conversation no parent wants to have. But children usually sense when something is wrong, and honesty, told with love, helps them feel safe and included rather than frightened and alone.',
+      },
+      { type: 'h2', text: 'Be honest, in words they understand' },
+      {
+        type: 'p',
+        text: 'Use the real word, “cancer,” and simple, age-appropriate explanations. Children fill silence with imagination, often fearing something worse than the truth. Clear, calm honesty is more reassuring than secrecy.',
+      },
+      { type: 'h2', text: 'What children need to hear' },
+      {
+        type: 'ul',
+        items: [
+          'That it is not their fault, and cancer is not their doing.',
+          'That they cannot “catch” it, and they will always be cared for.',
+          'What might change day to day — treatments, tiredness, hospital visits.',
+          'That it is okay to feel scared, sad, or angry, and to ask questions.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Children can cope with hard truths far better than with frightening silence.',
+      },
+      { type: 'h2', text: 'Give feelings somewhere to go' },
+      {
+        type: 'p',
+        text: 'Invite your children to express their feelings through talking, drawing, or play. Keep checking in, since their questions and emotions will shift over time. If they are struggling, art as therapy offers a gentle, safe outlet.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Should I tell my children about a cancer diagnosis?',
+        a: 'Yes. Children usually sense when something is wrong, and honest, age-appropriate information helps them feel safe and included rather than frightened by secrecy.',
+      },
+      {
+        q: 'What do children need to hear about cancer?',
+        a: 'That it is not their fault, they cannot catch it, they will be cared for, what may change day to day, and that all their feelings and questions are welcome.',
+      },
+      {
+        q: 'How can I help my child cope with a parent’s cancer?',
+        a: 'Keep communication open, invite feelings through talking, drawing, or play, check in regularly, and consider art as therapy if they are struggling to process it.',
+      },
+    ],
+    related: ['explaining-death-to-a-child', 'art-therapy-for-children'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-over-a-lost-friendship',
+    category: 'Grief Counseling',
+    title: 'Grieving the Loss of a Friendship',
+    metaTitle: 'Grieving the Loss of a Friendship | ColorMe',
+    description:
+      'The end of a friendship can hurt as much as a breakup, yet it is rarely acknowledged. Why grief over a lost friendship is real, and how to move through it.',
+    keywords: [
+      'grief over lost friendship',
+      'losing a friend',
+      'friendship breakup',
+      'end of a friendship grief',
+      'friend estrangement',
+      'coping with losing a friend',
+    ],
+    image: '/duelo-amistad-perdida.jpeg',
+    imageAlt: 'Grieving the loss of a friendship',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'The end of a close friendship can hurt as deeply as a romantic breakup — sometimes more. Yet there are no cards, no rituals, and little acknowledgement for this kind of loss. If you are grieving a friendship, your pain is real and it deserves to be named.',
+      },
+      { type: 'h2', text: 'Why losing a friend hurts so much' },
+      {
+        type: 'p',
+        text: 'Friends are the family we choose. A close friend holds our history, our secrets, and our sense of belonging. When that bond ends — through conflict, drifting apart, betrayal, or life changes — we lose a witness to our life and a piece of our identity.',
+      },
+      { type: 'h2', text: 'A grief that is rarely acknowledged' },
+      {
+        type: 'p',
+        text: 'Because society does not treat friendship breakups as “real” losses, you may feel you have no right to grieve. That lack of validation can make it lonelier. But love and loss do not only live in romantic or family bonds.',
+      },
+      {
+        type: 'quote',
+        text: 'You are allowed to grieve a friendship as deeply as you loved it.',
+      },
+      { type: 'h2', text: 'Moving through the loss' },
+      {
+        type: 'ul',
+        items: [
+          'Let yourself grieve without minimising it.',
+          'Honour what the friendship gave you, even if it ended painfully.',
+          'Accept that some friendships are for a season, not forever.',
+          'Express the unsaid through writing or art, and lean on other connections.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve the end of a friendship?',
+        a: 'Yes. Losing a close friend can hurt as much as a romantic breakup. Friendships hold our history and belonging, so their loss brings real, valid grief.',
+      },
+      {
+        q: 'Why does losing a friend feel so lonely?',
+        a: 'Society rarely acknowledges friendship breakups as real losses, so the grief often goes unvalidated. That lack of recognition can make it especially isolating.',
+      },
+      {
+        q: 'How do I cope with losing a friendship?',
+        a: 'Allow yourself to grieve, honour what the friendship gave you, accept that some friendships are for a season, and express your feelings through writing, art, or other connections.',
+      },
+    ],
+    related: ['disenfranchised-grief', 'what-is-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'migration-grief',
+    category: 'Grief Counseling',
+    title: 'Migration Grief: When You Leave Your Country Behind',
+    metaTitle: 'Migration Grief: When You Leave Your Country | ColorMe',
+    description:
+      'Leaving your country brings a grief few people name — for home, language, belonging, and the self you left behind. Understanding and moving through migration grief.',
+    keywords: [
+      'migration grief',
+      'immigrant grief',
+      'homesickness',
+      'grief leaving your country',
+      'cultural grief',
+      'adapting to a new country',
+    ],
+    image: '/duelo-migratorio.jpeg',
+    imageAlt: 'Migration grief — when you leave your country behind',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Leaving your country — whether by choice or necessity — sets off a grief that few people name. You may have gained new opportunities, and still mourn everything you left behind: home, language, belonging, and a version of yourself that only existed there.',
+      },
+      { type: 'h2', text: 'The many losses of migrating' },
+      {
+        type: 'ul',
+        items: [
+          'Family, friends, and the daily closeness of loved ones.',
+          'Your native language and the ease of being fully understood.',
+          'Familiar streets, food, smells, and a sense of belonging.',
+          'Status, profession, or identity that did not travel with you.',
+          'The self you were “at home,” now reshaped by a new place.',
+        ],
+      },
+      { type: 'h2', text: 'Grief tangled with gratitude' },
+      {
+        type: 'p',
+        text: 'Migration grief is complicated because it often sits beside gratitude and hope. You can be thankful for a new life and still ache for the old one. Both are true, and neither cancels the other.',
+      },
+      {
+        type: 'quote',
+        text: 'You can build a new home and still grieve the one you left. Belonging in two places sometimes means grieving in two places.',
+      },
+      { type: 'h2', text: 'Moving through it' },
+      {
+        type: 'p',
+        text: 'Honour what you left behind rather than pushing it away. Keep meaningful traditions, connect with others who understand, and give yourself time to adapt. Creative expression can help hold the complex feelings of living between two worlds.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is migration grief?',
+        a: 'It is the grief that comes from leaving your country — mourning home, language, belonging, relationships, and the identity you had there, even when the move brings new opportunities.',
+      },
+      {
+        q: 'Is it normal to feel sad after moving abroad even if life is better?',
+        a: 'Yes. Gratitude and grief can coexist. You can be thankful for a new life while still aching for what you left behind.',
+      },
+      {
+        q: 'How do I cope with homesickness and migration grief?',
+        a: 'Honour what you left behind, keep meaningful traditions, connect with others who understand, allow time to adapt, and express your feelings creatively or with support.',
+      },
+    ],
+    related: ['what-is-grief', 'disenfranchised-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grieving-your-body',
+    category: 'Grief Counseling',
+    title: 'Grieving Your Body: When It’s No Longer the Same',
+    metaTitle: 'Grieving Your Body: When It Changes | ColorMe',
+    description:
+      'Illness, ageing, injury, or change can leave you grieving the body you used to have. How to process the loss and make peace with a body that has changed.',
+    keywords: [
+      'grieving your body',
+      'body grief',
+      'grief chronic illness body',
+      'body image after illness',
+      'making peace with your body',
+      'body changes grief',
+    ],
+    image: '/duelo-por-tu-cuerpo.jpeg',
+    imageAlt: 'Grieving your body — when it is no longer the same',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When your body changes — through illness, injury, ageing, surgery, or time — you can find yourself grieving the body you used to have. This grief is real, even though no one has died. You are mourning a version of yourself, and the ease you once took for granted.',
+      },
+      { type: 'h2', text: 'A loss that lives in the mirror' },
+      {
+        type: 'p',
+        text: 'Unlike other losses, this one is always with you. Every reflection, every limitation, every reminder of what your body could once do can reopen the grief. It is a loss you carry, not one you leave behind.',
+      },
+      { type: 'h2', text: 'What you might grieve' },
+      {
+        type: 'ul',
+        items: [
+          'Abilities, strength, or energy you have lost.',
+          'How you used to look, and how the world responded to you.',
+          'Freedom, independence, or spontaneity.',
+          'The trust and safety you once felt in your own body.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Making peace with a changed body does not mean loving every part of it. It means learning to live in it with less war.',
+      },
+      { type: 'h2', text: 'Toward acceptance' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve without shame or forced positivity. Slowly, you can build a new relationship with your body — one based on care rather than comparison. Creative expression can help you process what is hard to say and find gratitude alongside the grief.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can you grieve your own body?',
+        a: 'Yes. Illness, ageing, injury, or change can bring real grief for the body and abilities you used to have. Mourning a changed body is valid, even though no one has died.',
+      },
+      {
+        q: 'Why does body grief keep coming back?',
+        a: 'Unlike other losses, your body is always with you. Each reflection or limitation can reopen the grief, making it an ongoing rather than one-time experience.',
+      },
+      {
+        q: 'How do I make peace with a changed body?',
+        a: 'Grieve without shame, avoid forced positivity, and slowly build a relationship based on care rather than comparison. Creative expression and support can help.',
+      },
+    ],
+    related: ['grief-after-a-diagnosis', 'menopause-and-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'siblings-of-sick-children',
+    category: 'Grief Counseling',
+    title: 'The Siblings Who Don’t Get Sick: A Hidden Grief',
+    metaTitle: 'Siblings of Sick Children: A Hidden Grief | ColorMe',
+    description:
+      'When one child is seriously ill, their healthy siblings carry an invisible grief. How to recognise and support the quiet needs of the brothers and sisters.',
+    keywords: [
+      'siblings of sick children',
+      'healthy sibling grief',
+      'siblings of chronically ill children',
+      'invisible grief children',
+      'supporting siblings',
+      'family illness siblings',
+    ],
+    image: '/hermanos-de-ninos-enfermos.jpeg',
+    imageAlt: 'The siblings who do not get sick — a hidden grief',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'When a child is seriously ill, all eyes turn — understandably — to them. But their healthy brothers and sisters carry a quiet, often invisible grief of their own. They love their sibling, worry about them, and at the same time miss the attention, normalcy, and family they used to have.',
+      },
+      { type: 'h2', text: 'The grief no one sees' },
+      {
+        type: 'p',
+        text: 'Healthy siblings often become “the easy one” — the child who must not add to the family’s burden. They may feel guilty for wanting attention, scared about their sibling, and lonely in a home organised around illness. These feelings rarely get spoken aloud.',
+      },
+      { type: 'h2', text: 'What they may be feeling' },
+      {
+        type: 'ul',
+        items: [
+          'Guilt for being healthy, or for their own needs.',
+          'Fear about their sibling, and about the future.',
+          'Jealousy of the attention their sibling receives — followed by more guilt.',
+          'Loneliness, and a sense that their feelings do not matter.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A child does not have to be sick to be struggling. The healthy sibling needs care too.',
+      },
+      { type: 'h2', text: 'How to support them' },
+      {
+        type: 'ul',
+        items: [
+          'Name their feelings and reassure them all emotions are okay.',
+          'Carve out one-on-one time, however small.',
+          'Keep them informed in age-appropriate ways.',
+          'Offer creative outlets — art and play — to express what they cannot say.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Do siblings of sick children experience grief?',
+        a: 'Yes. Healthy siblings often carry an invisible grief — worry, guilt, jealousy, and loneliness — as family life reorganises around their ill brother or sister.',
+      },
+      {
+        q: 'Why do healthy siblings feel guilty?',
+        a: 'They may feel guilty for being well, for wanting attention, or for feeling jealous. They often try to be “no trouble,” hiding their own needs.',
+      },
+      {
+        q: 'How can I support a healthy sibling?',
+        a: 'Acknowledge their feelings, give them one-on-one time, keep them informed age-appropriately, and offer creative outlets like art and play to express what they cannot put into words.',
+      },
+    ],
+    related: ['art-therapy-for-children', 'explaining-death-to-a-child'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-after-job-loss',
+    category: 'Grief Counseling',
+    title: 'The Grief of Losing Your Job: More Than a Layoff',
+    metaTitle: 'The Grief of Losing Your Job | ColorMe',
+    description:
+      'Losing a job means losing identity, structure, and purpose — not just income. Why job loss brings real grief, and how to move through it with compassion.',
+    keywords: [
+      'grief job loss',
+      'losing your job grief',
+      'unemployment emotional impact',
+      'layoff grief',
+      'job loss identity',
+      'coping with losing a job',
+    ],
+    image: '/duelo-por-perdida-empleo.jpeg',
+    imageAlt: 'The grief of losing your job — more than a layoff',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Losing a job is often treated as a practical problem — update the résumé, start applying. But beneath the logistics is a genuine grief. Work gives us identity, structure, purpose, and belonging. When it disappears, so does a large part of how we understand ourselves.',
+      },
+      { type: 'h2', text: 'What you are really losing' },
+      {
+        type: 'ul',
+        items: [
+          'Identity — the answer to “what do you do?”',
+          'Daily structure and a sense of purpose.',
+          'Community and belonging with colleagues.',
+          'Security, and confidence in the future.',
+        ],
+      },
+      { type: 'h2', text: 'The feelings that come with it' },
+      {
+        type: 'p',
+        text: 'Shock, shame, anger, anxiety, and a blow to self-worth are all common. You may feel you have lost not just a role but a part of who you are. This is grief, and it deserves the same compassion as any other loss.',
+      },
+      {
+        type: 'quote',
+        text: 'You lost a job, not your worth. Your value was never only what you produced.',
+      },
+      { type: 'h2', text: 'Moving forward gently' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve before rushing into the next thing. Keep some structure in your days, lean on support, and separate your self-worth from your job title. In time, this loss can also become an opening.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve after losing a job?',
+        a: 'Yes. A job provides identity, structure, purpose, and belonging. Losing it brings real grief that goes far beyond the loss of income.',
+      },
+      {
+        q: 'Why does losing a job hurt my sense of self?',
+        a: 'Work is deeply tied to identity and status. When it ends, it can feel like losing part of who you are, which is why job loss can shake your self-worth.',
+      },
+      {
+        q: 'How do I cope with the grief of unemployment?',
+        a: 'Let yourself grieve before rushing ahead, keep some daily structure, lean on support, and remember your worth is not defined by your job title.',
+      },
+    ],
+    related: ['what-is-grief', 'grief-after-divorce'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-of-motherhood',
+    category: 'Grief Counseling',
+    title: 'The Grief of Motherhood: The Losses No One Names',
+    metaTitle: 'The Grief of Motherhood: Unnamed Losses | ColorMe',
+    description:
+      'Motherhood brings joy — and quiet, unspoken losses. The grief of the self, freedom, and identity that can accompany becoming a mother, and why it is valid.',
+    keywords: [
+      'grief of motherhood',
+      'matrescence',
+      'losing yourself in motherhood',
+      'motherhood identity loss',
+      'new mother grief',
+      'maternal ambivalence',
+    ],
+    image: '/duelo-maternidad.jpeg',
+    imageAlt: 'The grief of motherhood — the losses no one names',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Motherhood is celebrated as pure joy — and it is profound. But alongside the love, many mothers carry a quiet grief that no one warned them about: for the self, the freedom, and the life they had before. Naming this grief does not make you a bad mother. It makes you honest.',
+      },
+      { type: 'h2', text: 'The self that changes forever' },
+      {
+        type: 'p',
+        text: 'Becoming a mother — sometimes called matrescence — transforms your identity as profoundly as adolescence. You may grieve the woman you were, your spontaneity, your body, your career rhythm, and the relationship you had with your partner before.',
+      },
+      { type: 'h2', text: 'The losses no one names' },
+      {
+        type: 'ul',
+        items: [
+          'Freedom, sleep, and time that is truly your own.',
+          'A previous sense of identity and independence.',
+          'Career momentum or ambitions on hold.',
+          'The couple you were before becoming parents.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You can love your child with your whole heart and still grieve the life you had before. Both are true.',
+      },
+      { type: 'h2', text: 'Holding love and grief together' },
+      {
+        type: 'p',
+        text: 'This grief does not compete with your love — it lives alongside it. Allow yourself to feel it without guilt, connect with other mothers who understand, and seek support. Making space for the loss helps you show up more fully for the joy.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is it normal to grieve after becoming a mother?',
+        a: 'Yes. Motherhood transforms your identity and brings real losses — of freedom, self, and your former life — alongside the love. This grief is common and valid.',
+      },
+      {
+        q: 'Does grieving my old life mean I regret having children?',
+        a: 'No. You can deeply love your child and still grieve the life and self you had before. Love and grief coexist; one does not cancel the other.',
+      },
+      {
+        q: 'What is matrescence?',
+        a: 'Matrescence is the profound identity transition of becoming a mother — as significant as adolescence — which can carry both joy and grief.',
+      },
+    ],
+    related: ['grief-of-infertility', 'grieving-your-body'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-of-infertility',
+    category: 'Grief Counseling',
+    title: 'When Parenthood Doesn’t Come: The Grief of Infertility',
+    metaTitle: 'The Grief of Infertility & Childlessness | ColorMe',
+    description:
+      'Infertility brings a grief with no funeral and no condolences, but very real pain. Understanding the loss of the parenthood that never came, and how to cope.',
+    keywords: [
+      'grief of infertility',
+      'infertility grief',
+      'childlessness grief',
+      'coping with infertility',
+      'grief no children',
+      'involuntary childlessness',
+    ],
+    image: '/duelo-invisible-infertilidad.jpeg',
+    imageAlt: 'When parenthood does not come — the grief of infertility',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Infertility carries a grief with no funeral, no flowers, and no condolences — but the pain is very real. It is the grief of a child who was hoped for and never came, of a future imagined and slowly let go. This loss deserves to be named.',
+      },
+      { type: 'h2', text: 'Grieving something that never was' },
+      {
+        type: 'p',
+        text: 'How do you mourn someone who never existed? You grieve the dream, the imagined faces, the role of parent you longed to hold. It is an ambiguous loss — ongoing, without a clear ending — which can make it especially hard to move through.',
+      },
+      { type: 'h2', text: 'The layers of infertility grief' },
+      {
+        type: 'ul',
+        items: [
+          'Monthly cycles of hope and loss.',
+          'Painful reminders — pregnancy announcements, baby showers, questions.',
+          'Grief over your body, and a sense of betrayal by it.',
+          'Isolation, because so few people acknowledge this loss.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You are allowed to grieve the child who never came. Their absence is a real presence in your life.',
+      },
+      { type: 'h2', text: 'Caring for yourself through it' },
+      {
+        type: 'p',
+        text: 'Let your grief be real, protect yourself around painful reminders, and connect with others who understand this specific pain. Creative expression and support can help you carry a loss the world so often overlooks.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Is infertility a form of grief?',
+        a: 'Yes. Infertility brings real grief — for the child who was hoped for, the imagined future, and the role of parent. It is an ambiguous, ongoing loss that deserves acknowledgement.',
+      },
+      {
+        q: 'Why is infertility grief so hard?',
+        a: 'It lacks a clear ending or social recognition, involves repeated cycles of hope and loss, and is surrounded by painful reminders, which can make it isolating.',
+      },
+      {
+        q: 'How do I cope with the grief of not being able to have children?',
+        a: 'Allow the grief to be real, protect yourself around painful triggers, connect with others who understand, and seek support or creative outlets to process the loss.',
+      },
+    ],
+    related: ['miscarriage-and-pregnancy-loss', 'disenfranchised-grief'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'fear-of-getting-older',
+    category: 'Emotions',
+    title: 'The Fear of Getting Older: When Birthdays Hurt',
+    metaTitle: 'The Fear of Getting Older: When Birthdays Hurt | ColorMe',
+    description:
+      'For some, birthdays bring anxiety instead of joy. Understanding the fear of ageing, the grief hidden inside it, and how to meet each year with more peace.',
+    keywords: [
+      'fear of getting older',
+      'ageing anxiety',
+      'birthday anxiety',
+      'fear of ageing',
+      'midlife fears',
+      'accepting getting older',
+    ],
+    image: '/miedo-a-cumplir-anos.jpeg',
+    imageAlt: 'The fear of getting older — when birthdays hurt',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'For many people, birthdays are not simple celebrations but quiet sources of anxiety. Each year can feel like a countdown, a reminder of time passing and of everything not yet done. If birthdays bring you more dread than joy, there is a real grief hiding underneath.',
+      },
+      { type: 'h2', text: 'What the fear is really about' },
+      {
+        type: 'p',
+        text: 'The fear of ageing is often less about a number and more about what it represents: lost time, unfulfilled dreams, changing appearance, and the awareness of our own mortality. It can stir grief for the younger self and the futures that did not happen.',
+      },
+      { type: 'h2', text: 'The grief inside the fear' },
+      {
+        type: 'ul',
+        items: [
+          'Mourning goals or milestones not yet reached.',
+          'Grieving a changing body and appearance.',
+          'Facing the passage of time and lost opportunities.',
+          'Confronting mortality and the unknown ahead.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Ageing is not only loss. It is also depth, freedom, and the chance to become more yourself.',
+      },
+      { type: 'h2', text: 'Meeting each year more gently' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve what has passed while noticing what each year also brings. Focus on meaning rather than milestones, and let go of comparison. If birthday anxiety runs deep, support can help you meet ageing with more peace.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why do I feel anxious about getting older?',
+        a: 'The fear of ageing often reflects deeper concerns — lost time, unfulfilled dreams, a changing body, and awareness of mortality. Underneath it is frequently a real grief.',
+      },
+      {
+        q: 'Why do birthdays make me sad instead of happy?',
+        a: 'Birthdays can highlight the passage of time and the gap between where you are and where you hoped to be, stirring grief for the younger self and unrealised futures.',
+      },
+      {
+        q: 'How can I feel more at peace with ageing?',
+        a: 'Grieve what has passed while noticing what each year brings, focus on meaning over milestones, let go of comparison, and seek support if the anxiety runs deep.',
+      },
+    ],
+    related: ['menopause-and-grief', 'difficult-anniversaries'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'sadness-as-a-teacher',
+    category: 'Emotions',
+    title: 'Sadness Didn’t Come to Destroy You',
+    metaTitle: 'Sadness Didn’t Come to Destroy You | ColorMe',
+    description:
+      'We treat sadness as an enemy to escape. But sadness is a messenger, not a threat. Learning to sit with sadness instead of fleeing it — and what it has to teach.',
+    keywords: [
+      'sadness as a teacher',
+      'sitting with sadness',
+      'why do i feel sad',
+      'embracing sadness',
+      'emotional acceptance',
+      'sadness vs depression',
+    ],
+    image: '/tristeza.webp',
+    imageAlt: 'Sadness didn’t come to destroy you — sadness as a teacher',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'We are taught to fear sadness — to fix it, numb it, or escape it as fast as possible. But sadness is not your enemy. It is a messenger, arriving to tell you that something matters, something hurts, or something needs your attention.',
+      },
+      { type: 'h2', text: 'Sadness is not depression' },
+      {
+        type: 'p',
+        text: 'Sadness is a healthy, passing emotion in response to loss or disappointment. Depression is heavier and more persistent. Allowing yourself to feel sadness — rather than suppressing it — can actually protect you from getting stuck.',
+      },
+      { type: 'h2', text: 'What happens when we run from it' },
+      {
+        type: 'p',
+        text: 'The more we flee sadness, the louder it becomes. Suppressed emotions do not disappear; they resurface as anxiety, irritability, exhaustion, or numbness. Paradoxically, letting yourself be sad is often the fastest way through it.',
+      },
+      {
+        type: 'quote',
+        text: 'Sadness is not a sign that something is wrong with you. It is a sign that something mattered.',
+      },
+      { type: 'h2', text: 'Learning to sit with it' },
+      {
+        type: 'ul',
+        items: [
+          'Let it be there without rushing to fix it.',
+          'Ask what it is trying to tell you.',
+          'Express it — through tears, words, movement, or art.',
+          'Trust that emotions, when felt, move through and pass.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Is sadness a bad emotion?',
+        a: 'No. Sadness is a healthy, natural response to loss or disappointment. It is a messenger pointing to what matters, not a flaw to eliminate.',
+      },
+      {
+        q: 'What is the difference between sadness and depression?',
+        a: 'Sadness is a passing emotion tied to a cause; depression is heavier and more persistent, affecting daily functioning. Allowing sadness can help prevent getting stuck.',
+      },
+      {
+        q: 'Why should I let myself feel sad?',
+        a: 'Suppressed sadness resurfaces as anxiety, irritability, or numbness. Feeling it fully is often the fastest way for the emotion to move through and pass.',
+      },
+    ],
+    related: ['emotional-numbness', 'why-cant-i-cry'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'shame-and-grief',
+    category: 'Emotions',
+    title: 'Shame: The Emotion That Makes You Hide',
+    metaTitle: 'Shame: The Emotion That Makes You Hide | ColorMe',
+    description:
+      'Shame silences grief and makes us hide what we feel for fear of judgement. Understanding shame, how it silences mourning, and how to bring it into the light.',
+    keywords: [
+      'shame and grief',
+      'shame emotion',
+      'hidden grief shame',
+      'overcoming shame',
+      'guilt vs shame',
+      'emotional shame',
+    ],
+    image: '/verguenza-duelo.webp',
+    imageAlt: 'Shame — the emotion that makes you hide',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Shame is the emotion that whispers, “if they really knew you, they would turn away.” It makes us hide — our grief, our struggles, our true selves — for fear of being judged. And in grief, shame can be one of the quietest, most isolating forces of all.',
+      },
+      { type: 'h2', text: 'Guilt says “I did something bad.” Shame says “I am bad.”' },
+      {
+        type: 'p',
+        text: 'That is the crucial difference. Guilt is about behaviour; shame is about identity. Shame convinces us that something is fundamentally wrong with us — which is why it makes us want to disappear rather than reach out.',
+      },
+      { type: 'h2', text: 'How shame silences grief' },
+      {
+        type: 'p',
+        text: 'We feel ashamed of grieving “too much,” “too long,” or “the wrong way.” Ashamed of relief, of anger, of still not being okay. So we hide our pain behind “I’m fine” — and grief in hiding cannot heal.',
+      },
+      {
+        type: 'quote',
+        text: 'Shame cannot survive being spoken. The moment you share it with someone safe, it begins to lose its grip.',
+      },
+      { type: 'h2', text: 'Bringing it into the light' },
+      {
+        type: 'ul',
+        items: [
+          'Name the shame — silence is what feeds it.',
+          'Share it with someone safe and compassionate.',
+          'Speak to yourself as you would to a dear friend.',
+          'Express what you hide through writing or art, where nothing is judged.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between guilt and shame?',
+        a: 'Guilt says “I did something bad” and focuses on behaviour; shame says “I am bad” and attacks identity. Shame makes us want to hide rather than reach out.',
+      },
+      {
+        q: 'How does shame affect grief?',
+        a: 'Shame makes people feel they are grieving “wrong” or “too much,” so they hide their pain behind “I’m fine.” Grief kept in hiding cannot heal.',
+      },
+      {
+        q: 'How do you overcome shame?',
+        a: 'Shame cannot survive being spoken. Naming it, sharing it with someone safe, practising self-compassion, and expressing it through art all loosen its grip.',
+      },
+    ],
+    related: ['grief-and-guilt', 'why-cant-i-cry'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'why-cant-i-cry',
+    category: 'Emotions',
+    title: 'Why Can’t I Cry? Grief Without Tears',
+    metaTitle: 'Why Can’t I Cry? Grief Without Tears | ColorMe',
+    description:
+      'Not crying after a loss does not mean you do not care. Why some people grieve without tears, what blocks them, and how to process pain that will not release.',
+    keywords: [
+      'why can’t i cry',
+      'grief without tears',
+      'can’t cry after death',
+      'inability to cry',
+      'numb grief',
+      'processing grief without crying',
+    ],
+    image: '/porque-no-puedo-llorar.webp',
+    imageAlt: 'Why can’t I cry — grief without tears',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'You have lost someone, and everyone around you is crying — but your eyes stay dry. You wonder if something is wrong with you, if you are cold, if you even loved them enough. Please hear this: not crying does not mean you are not grieving.',
+      },
+      { type: 'h2', text: 'Grief without tears is still grief' },
+      {
+        type: 'p',
+        text: 'People grieve in wildly different ways. Some sob; others go quiet, busy, or numb. Tears are one expression of grief, not the measure of it. Your pain is real whether or not it comes out through your eyes.',
+      },
+      { type: 'h2', text: 'Why the tears may not come' },
+      {
+        type: 'ul',
+        items: [
+          'Shock and numbness are protecting you from a blow too big to feel yet.',
+          'You learned, somewhere, that crying was unsafe or not allowed.',
+          'You are in “survival mode,” holding everything together for others.',
+          'Your grief is coming out sideways — as anger, tension, or exhaustion.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Tears are not the price of admission to grief. Your love and your loss are valid without them.',
+      },
+      { type: 'h2', text: 'Letting the feeling find a way out' },
+      {
+        type: 'p',
+        text: 'You do not have to force tears. But you can give grief other exits — writing, movement, music, or art. Sometimes, when we stop demanding tears and simply make space, they arrive on their own. And if the numbness stays heavy, support can help.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Why can’t I cry after a loss?',
+        a: 'Shock, numbness, learned emotional suppression, or being in survival mode can all block tears. It does not mean you are not grieving or did not care.',
+      },
+      {
+        q: 'Is it normal to grieve without crying?',
+        a: 'Yes. People grieve in many ways — some cry, others go quiet or numb. Tears are one expression of grief, not a measure of it.',
+      },
+      {
+        q: 'How can I process grief if I can’t cry?',
+        a: 'Give grief other outlets — writing, movement, music, or art. Making space without forcing tears often helps the feeling find its way out.',
+      },
+    ],
+    related: ['emotional-numbness', 'sadness-as-a-teacher'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'losing-faith-spiritual-grief',
+    category: 'Emotions',
+    title: 'When You Lose Your Faith: Spiritual Grief',
+    metaTitle: 'When You Lose Your Faith: Spiritual Grief | ColorMe',
+    description:
+      'Losing your faith is a real loss — of meaning, community, and certainty. Understanding spiritual grief and how to move through a crisis of belief with compassion.',
+    keywords: [
+      'losing faith grief',
+      'spiritual grief',
+      'crisis of faith',
+      'loss of belief',
+      'religious deconstruction grief',
+      'losing religion',
+    ],
+    image: '/perder-la-fe.webp',
+    imageAlt: 'When you lose your faith — spiritual grief',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Losing your faith — whether slowly or in a sudden crisis — is a profound loss, even though nothing physical has died. When belief that once anchored your life falls away, you can be left grieving meaning, community, and certainty all at once.',
+      },
+      { type: 'h2', text: 'A loss that is rarely recognised' },
+      {
+        type: 'p',
+        text: 'Spiritual grief is often invisible. Others may not understand it, or may try to argue you back into belief. But letting go of faith can mean losing your framework for right and wrong, your sense of an afterlife, and the community that came with it.',
+      },
+      { type: 'h2', text: 'What you may be grieving' },
+      {
+        type: 'ul',
+        items: [
+          'A sense of meaning and cosmic order.',
+          'Comfort in the face of death and suffering.',
+          'Belonging to a faith community.',
+          'The version of yourself that believed.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A crisis of faith is not a failure. It can be the painful beginning of a more honest search for meaning.',
+      },
+      { type: 'h2', text: 'Moving through spiritual grief' },
+      {
+        type: 'p',
+        text: 'Allow yourself to grieve what belief gave you, even as you question it. Look for new sources of meaning, connection, and awe. This is disorienting territory, and you do not have to walk it alone — compassionate support can help you find your footing.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Can losing your faith cause grief?',
+        a: 'Yes. Losing faith means losing meaning, comfort, community, and certainty. It is a real, often invisible grief, even though nothing physical has died.',
+      },
+      {
+        q: 'Why does a crisis of faith feel so disorienting?',
+        a: 'Faith often provides a framework for meaning, morality, death, and belonging. When it falls away, many parts of life feel unanchored at once.',
+      },
+      {
+        q: 'How do I cope with losing my religion?',
+        a: 'Allow yourself to grieve what belief gave you, seek new sources of meaning and connection, and lean on compassionate support as you find your footing.',
+      },
+    ],
+    related: ['what-is-grief', 'why-we-avoid-talking-about-death'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'emotional-numbness',
+    category: 'Emotions',
+    title: 'I Feel Nothing: When Emotions Shut Down',
+    metaTitle: 'I Feel Nothing: When Emotions Shut Down | ColorMe',
+    description:
+      'Emotional numbness is not the absence of feeling but a shield against it. Why we go numb, what it protects us from, and how to gently reconnect with what we feel.',
+    keywords: [
+      'emotional numbness',
+      'i feel nothing',
+      'emotional shutdown',
+      'feeling numb',
+      'disconnected from emotions',
+      'reconnecting with feelings',
+    ],
+    image: '/bloqueo-emocional-no-siento-nada.jpeg',
+    imageAlt: 'I feel nothing — when emotions shut down',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: '“I feel nothing.” It can be one of the most unsettling experiences — a flatness where emotion should be, a sense of watching your life from behind glass. Emotional numbness is not the absence of feeling. It is a shield your mind builds to protect you from feeling too much.',
+      },
+      { type: 'h2', text: 'Numbness is protection, not coldness' },
+      {
+        type: 'p',
+        text: 'When pain, grief, or stress become overwhelming, the mind can turn the volume down on all emotion to keep you functioning. It is a survival response — but when it lingers, it can leave you disconnected from joy as well as pain.',
+      },
+      { type: 'h2', text: 'What numbness can look like' },
+      {
+        type: 'ul',
+        items: [
+          'Feeling flat, empty, or “switched off.”',
+          'Watching yourself as if from outside.',
+          'Struggling to feel joy, sadness, or connection.',
+          'Going through the motions without really being present.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You are not broken or cold. You are protected. And protection, when you are ready, can gently loosen.',
+      },
+      { type: 'h2', text: 'Reconnecting, gently' },
+      {
+        type: 'p',
+        text: 'You cannot force feeling to return, but you can invite it — through the body, the senses, and creativity. Movement, music, and art can reach emotions that words cannot. If numbness persists or worries you, support can help you thaw safely, at your own pace.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is emotional numbness?',
+        a: 'It is a protective shutting-down of emotion when feelings become overwhelming. Rather than an absence of feeling, it is a shield the mind builds to help you cope.',
+      },
+      {
+        q: 'Why do I feel numb after a loss or stress?',
+        a: 'When pain or stress become too much, the mind turns down all emotion to keep you functioning. It is a normal survival response, though it can linger.',
+      },
+      {
+        q: 'How do I reconnect with my emotions?',
+        a: 'Invite feeling gently through the body and senses — movement, music, and art can reach emotions words cannot. If numbness persists, seek support to thaw safely.',
+      },
+    ],
+    related: ['why-cant-i-cry', 'sadness-as-a-teacher'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'how-art-heals-the-brain',
+    category: 'Art as Therapy',
+    title: 'How Art Heals: What Happens in Your Brain When You Create',
+    metaTitle: 'How Art Heals the Brain When You Create | ColorMe',
+    description:
+      'The neuroscience behind why making art reduces stress and boosts wellbeing. What happens in your brain when you create — and why you don’t need to be an artist.',
+    keywords: [
+      'how art heals the brain',
+      'art and the brain',
+      'neuroscience of art',
+      'art reduces stress',
+      'benefits of making art',
+      'creativity and mental health',
+    ],
+    image: '/beneficios-del-arte.webp',
+    imageAlt: 'How art heals — what happens in your brain when you create',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'The urge to make art is as old as humanity. It turns out there is real science behind why creating feels so good and helps us heal. When you make art, measurable things happen in your brain and body — and none of it depends on talent.',
+      },
+      { type: 'h2', text: 'Art lowers stress' },
+      {
+        type: 'p',
+        text: 'Studies show that even a short time spent making art can reduce cortisol, the body’s main stress hormone. The focused, absorbing nature of creating shifts the nervous system out of “fight or flight” and into a calmer state.',
+      },
+      { type: 'h2', text: 'It activates reward and flow' },
+      {
+        type: 'p',
+        text: 'Creating art releases dopamine, linked to motivation and pleasure, and can induce “flow” — that absorbing state where time falls away and worry quiets. This is one reason art feels meditative and restorative.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Reduces stress and calms the nervous system.',
+          'Releases dopamine and boosts mood.',
+          'Engages both logical and emotional parts of the brain.',
+          'Helps process emotions that words cannot reach.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'You do not create art to be good at it. You create because of what it does to you while you make it.',
+      },
+      { type: 'h2', text: 'Why this matters for healing' },
+      {
+        type: 'p',
+        text: 'Because art engages the emotional, sensory brain, it can access and process feelings that talking alone cannot — which is exactly why art as therapy is so powerful for grief, anxiety, and trauma. And you need no skill to receive the benefits.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does making art affect the brain?',
+        a: 'Making art lowers cortisol (a stress hormone), releases dopamine linked to pleasure and motivation, and can induce a calming “flow” state, while engaging both emotional and logical parts of the brain.',
+      },
+      {
+        q: 'Do you need to be talented for art to help?',
+        a: 'No. The healing benefits come from the process of creating, not the quality of the result. No artistic skill is required.',
+      },
+      {
+        q: 'Why does art help with emotions?',
+        a: 'Art engages the emotional, sensory brain, allowing it to access and process feelings that words alone cannot reach — which is why it helps with grief, anxiety, and trauma.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'art-therapy-exercises'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'psychology-vs-art-therapy',
+    category: 'Art as Therapy',
+    title: 'Psychology vs. Art as Therapy: What’s the Difference?',
+    metaTitle: 'Psychology vs. Art as Therapy: The Difference | ColorMe',
+    description:
+      'Psychology and art as therapy both support mental health, but they work differently. The key differences, what each is best for, and how to choose the right one for you.',
+    keywords: [
+      'psychology vs art as therapy',
+      'difference between psychology and art as therapy',
+      'art as therapy or psychology',
+      'types of therapy',
+      'choosing a therapist',
+      'what is art as therapy',
+    ],
+    image: '/diferencia-psicologia-y-arteterapia.jpeg',
+    imageAlt: 'Psychology vs. art as therapy — what’s the difference',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Psychology and art as therapy both support mental and emotional health, and they can work beautifully together — but they are not the same. Understanding the difference can help you choose what fits your needs.',
+      },
+      { type: 'h2', text: 'How psychology works' },
+      {
+        type: 'p',
+        text: 'Traditional psychology and psychotherapy work mainly through conversation — exploring thoughts, behaviours, and patterns to gain insight and change. It is verbal, analytical, and highly effective when you can access and articulate your feelings.',
+      },
+      { type: 'h2', text: 'How art as therapy works' },
+      {
+        type: 'p',
+        text: 'Art as therapy uses the creative process — image, colour, and material — guided by a trained therapist. It reaches feelings that live below language, making it especially helpful when words are hard to find, or when talking feels blocked.',
+      },
+      {
+        type: 'quote',
+        text: 'One begins with words. The other begins with what has no words yet.',
+      },
+      { type: 'h2', text: 'Which do you need?' },
+      {
+        type: 'ul',
+        items: [
+          'Choose talk-based work if you process best verbally and want analytical insight.',
+          'Choose art as therapy if feelings are hard to name or talking feels stuck.',
+          'Many people benefit from combining both approaches.',
+          'The best therapy is the one that meets you where you are.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between psychology and art as therapy?',
+        a: 'Psychology works mainly through conversation and analysis, while art as therapy uses the creative process to reach feelings that live below language. Both support mental health and can complement each other.',
+      },
+      {
+        q: 'Is art as therapy a real form of psychology?',
+        a: 'Art as therapy is an established form of psychotherapy delivered by trained professionals. It uses creativity rather than conversation as its primary tool.',
+      },
+      {
+        q: 'Which is better for me?',
+        a: 'It depends. Talk-based work suits those who process verbally; art as therapy helps when feelings are hard to name or talking feels blocked. Many people combine both.',
+      },
+    ],
+    related: ['art-therapy-vs-talk-therapy', 'what-is-art-therapy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-and-autism',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy and Autism: When Art Opens Doors',
+    metaTitle: 'Art as Therapy and Autism: When Art Opens Doors | ColorMe',
+    description:
+      'For autistic children and adults, art as therapy offers a space to communicate and express beyond words. How art as therapy supports autism with sensory, gentle connection.',
+    keywords: [
+      'art as therapy and autism',
+      'art as therapy for autistic children',
+      'autism creative therapy',
+      'nonverbal expression autism',
+      'autism emotional support',
+      'art as therapy neurodivergent',
+    ],
+    image: '/mari-final.jpeg',
+    imageAlt: 'Art as therapy and autism — when art opens doors',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'For many autistic children and adults, words are not the easiest way to communicate feelings. Art as therapy offers another door — a sensory, visual language that can express what speech cannot, at a pace and in a way that feels safe.',
+      },
+      { type: 'h2', text: 'Communication beyond words' },
+      {
+        type: 'p',
+        text: 'Art as therapy does not require verbal explanation. Through colour, shape, and material, an autistic person can express emotions, experiences, and inner worlds — giving both them and those around them a new way to connect.',
+      },
+      { type: 'h2', text: 'How art as therapy can support autism' },
+      {
+        type: 'ul',
+        items: [
+          'A non-verbal channel for expressing feelings and needs.',
+          'Sensory engagement that can be soothing and regulating.',
+          'A predictable, safe space with gentle structure.',
+          'Support for emotional regulation and self-understanding.',
+          'Building confidence and connection at the person’s own pace.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'When words are hard, art can become a bridge — from the inner world to the people who love them.',
+      },
+      { type: 'h2', text: 'Meeting each person as an individual' },
+      {
+        type: 'p',
+        text: 'Every autistic person is different, so art as therapy is adapted to their sensory preferences, strengths, and needs. The goal is never to “fix,” but to offer a space where they can be understood and express themselves fully.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does art as therapy help autistic children?',
+        a: 'It offers a non-verbal way to express feelings, provides soothing sensory engagement, supports emotional regulation, and builds connection and confidence in a safe, structured space.',
+      },
+      {
+        q: 'Do you need to be verbal to benefit from art as therapy?',
+        a: 'No. Art as therapy works through image, colour, and material rather than speech, making it especially valuable for those who find words difficult.',
+      },
+      {
+        q: 'Is art as therapy adapted to each autistic person?',
+        a: 'Yes. It is tailored to individual sensory preferences, strengths, and needs, with the goal of understanding and expression rather than “fixing.”',
+      },
+    ],
+    related: ['art-therapy-for-children', 'what-is-art-therapy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'art-therapy-vs-art-class',
+    category: 'Art as Therapy',
+    title: 'Art as Therapy vs. Art Class: What’s the Difference?',
+    metaTitle: 'Art as Therapy vs. Art Class: The Difference | ColorMe',
+    description:
+      'Making art to learn is not the same as making art to heal. The key differences between an art class and art as therapy, and how to know which one you need.',
+    keywords: [
+      'art as therapy vs art class',
+      'difference art as therapy art class',
+      'is art as therapy a class',
+      'art class vs therapy',
+      'what is art as therapy',
+      'healing through art',
+    ],
+    image: '/anagaby-final.jpeg',
+    imageAlt: 'Art as therapy vs. art class — what’s the difference',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Both involve paint, paper, and creativity — but an art class and art as therapy are fundamentally different. One is about learning to make art; the other is about using art to heal. Knowing the difference helps you find what you are really looking for.',
+      },
+      { type: 'h2', text: 'An art class: the product' },
+      {
+        type: 'p',
+        text: 'An art class teaches technique and skill. The focus is the artwork itself — improving how you draw, paint, or sculpt. Success is measured by the result, and the teacher guides you toward making “better” art.',
+      },
+      { type: 'h2', text: 'Art as therapy: the process' },
+      {
+        type: 'p',
+        text: 'Art as therapy uses creating as a path to emotional healing, guided by a trained therapist. The focus is never the final product but what the process reveals and releases. There is no skill to master and no judgement — only what the art helps you feel and understand.',
+      },
+      {
+        type: 'quote',
+        text: 'In an art class, the art is the goal. In art as therapy, you are the goal.',
+      },
+      { type: 'h2', text: 'Which one do you need?' },
+      {
+        type: 'ul',
+        items: [
+          'Choose an art class to build skills and enjoy making art.',
+          'Choose art as therapy to process emotions, grief, or stress.',
+          'You do not need any artistic ability for art as therapy.',
+          'Both are valuable — they simply serve different purposes.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between art as therapy and an art class?',
+        a: 'An art class teaches technique and focuses on the artwork; art as therapy uses the creative process for emotional healing, guided by a trained therapist, with no focus on the result.',
+      },
+      {
+        q: 'Do I need art skills for art as therapy?',
+        a: 'No. Art as therapy requires no artistic ability. The benefit comes from the process, not the quality of what you make.',
+      },
+      {
+        q: 'Which should I choose?',
+        a: 'Choose an art class to learn and enjoy making art; choose art as therapy to process emotions, grief, or stress. They serve different purposes and both are valuable.',
+      },
+    ],
+    related: ['what-is-art-therapy', 'psychology-vs-art-therapy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'day-of-the-dead-mexico',
+    category: 'Rituals and Colors of the World',
+    title: 'Day of the Dead: Where Mexico Celebrates Death With Life',
+    metaTitle: 'Day of the Dead in Mexico: Traditions & Meaning | ColorMe',
+    description:
+      'Discover Día de Muertos, Mexico’s Day of the Dead — the ofrenda, marigolds, and the joyful tradition of honouring those who have died by welcoming them back with life.',
+    keywords: [
+      'day of the dead',
+      'dia de muertos',
+      'mexican day of the dead traditions',
+      'ofrenda meaning',
+      'day of the dead altar',
+      'mexico death traditions',
+    ],
+    image: '/dia-de-muerto.jpeg',
+    imageAlt: 'Day of the Dead — where Mexico celebrates death with life',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In much of the world, death is met with silence and black. In Mexico, it is met with marigolds, candles, music, and the favourite foods of those who have died. Día de Muertos — the Day of the Dead — is one of the most beautiful ways any culture has found to hold grief and love together.',
+      },
+      { type: 'h2', text: 'A celebration, not a mourning' },
+      {
+        type: 'p',
+        text: 'On the 1st and 2nd of November, families welcome the souls of their loved ones back for a brief, joyful reunion. Rather than dwelling on loss, the tradition celebrates that the dead are never truly gone as long as they are remembered.',
+      },
+      { type: 'h2', text: 'The ofrenda: an altar of memory' },
+      {
+        type: 'p',
+        text: 'At the heart of the celebration is the ofrenda, a home altar built to guide and welcome the departed:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Marigolds (cempasúchil), whose scent and colour guide the souls home.',
+          'Photos of the departed, at the centre of the altar.',
+          'Their favourite foods, drinks, and belongings.',
+          'Candles, water, salt, and pan de muerto (bread of the dead).',
+          'Papel picado and sugar skulls, symbols of the fragility and sweetness of life.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Mexico, the dead are not mourned in silence but welcomed back with everything they loved in life.',
+      },
+      { type: 'h2', text: 'What the world can learn from it' },
+      {
+        type: 'p',
+        text: 'Día de Muertos offers a healthier relationship with death: one that keeps bonds alive through memory and ritual, and lets grief and joy exist side by side. Building an ofrenda for your own loved one can be a deeply healing act, wherever you live.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the Day of the Dead?',
+        a: 'Día de Muertos is a Mexican tradition on 1–2 November when families welcome back the souls of loved ones with altars, marigolds, food, and celebration, honouring them with joy rather than only sorrow.',
+      },
+      {
+        q: 'What is an ofrenda?',
+        a: 'An ofrenda is a home altar built for the Day of the Dead with marigolds, photos, candles, favourite foods, and symbolic objects to guide and welcome the departed souls.',
+      },
+      {
+        q: 'Can I build an ofrenda for my own loved one?',
+        a: 'Yes. Creating an altar with photos, marigolds, candles, and their favourite things can be a healing ritual of remembrance, wherever you live.',
+      },
+    ],
+    related: ['farewell-rituals', 'grief-rituals-india'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-india',
+    category: 'Rituals and Colors of the World',
+    title: 'India: Where the Soul Walks Barefoot — Rituals of Farewell',
+    metaTitle: 'Grief Rituals in India: Sacred Colours & Farewell | ColorMe',
+    description:
+      'Explore India’s spiritual approach to death — Hindu rituals, sacred colours, cremation by the Ganges, and the belief in the soul’s continuing journey.',
+    keywords: [
+      'grief rituals india',
+      'hindu death rituals',
+      'indian mourning traditions',
+      'death in hinduism',
+      'sacred colours india',
+      'ganges cremation',
+    ],
+    image: '/ofrendas-india.jpeg',
+    imageAlt: 'India — where the soul walks barefoot, rituals of farewell',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'India is often called the spiritual heart of the world, and nowhere is that clearer than in how it meets death. Here, death is not an ending but a passage — one stop in the soul’s long journey through many lives.',
+      },
+      { type: 'h2', text: 'Death as transition, not termination' },
+      {
+        type: 'p',
+        text: 'In Hindu belief, the soul (atman) is eternal and moves through cycles of birth, death, and rebirth (samsara) until it reaches liberation (moksha). Death is mourned, but also understood as a natural doorway rather than a final wall.',
+      },
+      { type: 'h2', text: 'Rituals of farewell' },
+      {
+        type: 'ul',
+        items: [
+          'Cremation, which frees the soul from the body, often by sacred rivers like the Ganges.',
+          'Antyesti, the last rites performed by family with deep devotion.',
+          'A mourning period during which the community surrounds the bereaved.',
+          'Prayers and offerings to help the soul on its onward journey.',
+        ],
+      },
+      { type: 'h2', text: 'The language of sacred colours' },
+      {
+        type: 'p',
+        text: 'Colour carries deep meaning in India. White is traditionally worn in mourning, symbolising purity and the soul’s release. Saffron represents the sacred and the search for the divine, while other colours weave through rituals as prayers made visible.',
+      },
+      {
+        type: 'quote',
+        text: 'In India, grief is held within a vast belief that the soul never truly ends — it simply walks on.',
+      },
+      { type: 'h2', text: 'A wider perspective on loss' },
+      {
+        type: 'p',
+        text: 'India’s traditions remind us that how a culture views death shapes how it grieves. Seeing death as part of a larger journey can soften its finality — a perspective that many find comforting, whatever their own beliefs.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How is death viewed in Hinduism?',
+        a: 'Death is seen as a transition, not an ending. The eternal soul moves through cycles of birth, death, and rebirth until it reaches liberation (moksha).',
+      },
+      {
+        q: 'What colour represents mourning in India?',
+        a: 'White is traditionally worn in mourning, symbolising purity and the soul’s release. Saffron represents the sacred and spiritual search.',
+      },
+      {
+        q: 'Why is cremation important in Indian tradition?',
+        a: 'Cremation is believed to free the soul from the body so it can continue its journey. It is often performed by sacred rivers such as the Ganges.',
+      },
+    ],
+    related: ['day-of-the-dead-mexico', 'mehndi-sacred-art-india'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-bali-ngaben',
+    category: 'Rituals and Colors of the World',
+    title: 'Bali: Where Death Is Celebrated — The Ngaben Ritual',
+    metaTitle: 'Bali’s Ngaben: Where Death Is Celebrated | ColorMe',
+    description:
+      'In Bali, death is not wept but released. Discover the Ngaben cremation ceremony and the colours of the soul in one of the world’s most vivid farewell traditions.',
+    keywords: [
+      'ngaben bali',
+      'balinese death ritual',
+      'bali cremation ceremony',
+      'grief rituals bali',
+      'balinese hinduism death',
+      'colours of the soul bali',
+    ],
+    image: '/melukat-bali.jpeg',
+    imageAlt: 'Bali — where death is celebrated, the Ngaben ritual',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'On the island of Bali, death is met not with quiet sorrow but with colour, music, and celebration. The Balinese teach something radical: death is not to be wept over, but released — a joyful liberation of the soul.',
+      },
+      { type: 'h2', text: 'The Ngaben ceremony' },
+      {
+        type: 'p',
+        text: 'Ngaben is the Balinese cremation ritual, a vibrant ceremony that frees the soul from the body so it can continue toward reincarnation or union with the divine. The body is carried in a towering, ornate structure, often shaped like a bull or temple, and cremated in a public celebration of the soul’s release.',
+      },
+      { type: 'h2', text: 'Why it is a celebration' },
+      {
+        type: 'ul',
+        items: [
+          'Grief is expressed, but excessive weeping is discouraged — it is believed to hold the soul back.',
+          'The ceremony returns the body to the elements and frees the spirit.',
+          'Community gathers with music, offerings, and colour.',
+          'Death is seen as a natural, necessary step in the soul’s journey.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Bali, holding on too tightly can trap the soul. Love is shown by letting it go.',
+      },
+      { type: 'h2', text: 'A different relationship with letting go' },
+      {
+        type: 'p',
+        text: 'The Balinese approach invites a gentle question for all of us: what would it mean to grieve with celebration as well as sorrow, and to see letting go as an act of love rather than loss?',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is Ngaben?',
+        a: 'Ngaben is the Balinese cremation ceremony that frees the soul from the body so it can continue toward reincarnation or union with the divine. It is a colourful, communal celebration.',
+      },
+      {
+        q: 'Why do the Balinese celebrate death?',
+        a: 'Balinese Hinduism sees death as a natural step in the soul’s journey. Excessive weeping is believed to hold the soul back, so death is honoured with celebration and release.',
+      },
+      {
+        q: 'What can we learn from Balinese death rituals?',
+        a: 'They invite us to see letting go as an act of love, and to hold grief and celebration together rather than treating death as only loss.',
+      },
+    ],
+    related: ['melukat-bali-purification', 'day-of-the-dead-mexico'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-malaysia',
+    category: 'Rituals and Colors of the World',
+    title: 'Malaysia: The Crossroads of Three Souls',
+    metaTitle: 'Grief Rituals in Malaysia: Three Traditions | ColorMe',
+    description:
+      'Malaysia blends Malay, Chinese, and Indian traditions. Explore how three spiritual cultures honour death and grief side by side, and the wisdom of mourning in community.',
+    keywords: [
+      'grief rituals malaysia',
+      'malaysian death traditions',
+      'malay chinese indian funerals',
+      'multicultural mourning',
+      'death customs malaysia',
+      'community grief',
+    ],
+    image: '/malasia.jpeg',
+    imageAlt: 'Malaysia — the crossroads of three souls',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Few places hold as many ways of meeting death as Malaysia, where Malay, Chinese, and Indian cultures live side by side. Here, three great spiritual traditions honour the dead in their own ways — and all share one truth: grief is carried in community.',
+      },
+      { type: 'h2', text: 'Three traditions, one country' },
+      {
+        type: 'ul',
+        items: [
+          'Malay Muslim rites: swift burial, prayer, and simplicity, trusting the soul to God.',
+          'Chinese traditions: honouring ancestors with offerings, incense, and remembrance rituals.',
+          'Indian Hindu rites: cremation and prayers to free the soul for its onward journey.',
+        ],
+      },
+      { type: 'h2', text: 'Grief held by the community' },
+      {
+        type: 'p',
+        text: 'Across all three cultures, mourning is never done alone. Neighbours, extended family, and the wider community gather to cook, pray, sit, and share the weight of loss. No one is left to grieve in isolation.',
+      },
+      {
+        type: 'quote',
+        text: 'Malaysia’s deepest lesson is simple: grief was never meant to be carried alone.',
+      },
+      { type: 'h2', text: 'The wisdom of shared mourning' },
+      {
+        type: 'p',
+        text: 'In many modern societies, the bereaved are quickly left alone after the funeral. Malaysia’s traditions remind us how much healing lives in community — in being surrounded, fed, and accompanied through the hardest days.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How is death honoured in Malaysia?',
+        a: 'Malaysia blends Malay Muslim, Chinese, and Indian Hindu traditions, each with its own rites — from swift Muslim burial to ancestral offerings to Hindu cremation — all held within community.',
+      },
+      {
+        q: 'What do Malaysian death traditions have in common?',
+        a: 'Across all three cultures, grief is carried collectively. Community and extended family gather to support the bereaved so no one mourns alone.',
+      },
+      {
+        q: 'What can we learn from communal mourning?',
+        a: 'That healing is supported by being surrounded and accompanied. Community care through the hardest days eases the isolation grief often brings.',
+      },
+    ],
+    related: ['grief-rituals-india', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-thailand',
+    category: 'Rituals and Colors of the World',
+    title: 'Thailand: The Wisdom of Letting Go With Gratitude',
+    metaTitle: 'Grief Rituals in Thailand: Letting Go | ColorMe',
+    description:
+      'In Thailand, Buddhist tradition meets death with calm and gratitude. Explore Thai funeral customs and the serene wisdom of impermanence and letting go.',
+    keywords: [
+      'grief rituals thailand',
+      'thai buddhist funeral',
+      'death in buddhism',
+      'impermanence letting go',
+      'thai mourning traditions',
+      'buddhist grief',
+    ],
+    image: '/thailand-rituals.jpeg',
+    imageAlt: 'Thailand — the wisdom of letting go with gratitude',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Known as the land of smiles, Thailand meets death with a serenity that can surprise outsiders. Rooted in Buddhism, Thai tradition sees death not as a catastrophe but as a natural part of impermanence — met, as much as possible, with calm and gratitude.',
+      },
+      { type: 'h2', text: 'Impermanence at the heart of it' },
+      {
+        type: 'p',
+        text: 'Buddhism teaches that everything is impermanent (anicca), including life itself. Accepting this truth does not erase grief, but it softens the shock of death and helps mourners find peace in the natural order of things.',
+      },
+      { type: 'h2', text: 'Thai funeral customs' },
+      {
+        type: 'ul',
+        items: [
+          'Multi-day ceremonies with monks chanting to guide the deceased.',
+          'Merit-making — good deeds and offerings dedicated to the departed.',
+          'Cremation, releasing the body and honouring impermanence.',
+          'White worn as the colour of mourning and purity.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'To let go with gratitude is not to stop loving. It is to thank what was, and release what must move on.',
+      },
+      { type: 'h2', text: 'Gratitude alongside grief' },
+      {
+        type: 'p',
+        text: 'Perhaps the deepest lesson of Thai tradition is that we can meet loss with thankfulness for what we were given, rather than only bitterness for what was taken. Gratitude and grief can share the same heart.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How does Buddhism view death?',
+        a: 'Buddhism sees death as a natural part of impermanence (anicca). Accepting that everything changes helps soften the shock of loss and find peace.',
+      },
+      {
+        q: 'What are Thai funeral customs?',
+        a: 'They often include multi-day ceremonies with chanting monks, merit-making dedicated to the deceased, cremation, and white worn as the colour of mourning.',
+      },
+      {
+        q: 'What does “letting go with gratitude” mean?',
+        a: 'It means honouring and thanking what a person or experience gave you while releasing them — holding gratitude and grief together rather than only loss.',
+      },
+    ],
+    related: ['grief-rituals-vietnam', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-vietnam',
+    category: 'Rituals and Colors of the World',
+    title: 'Vietnam: Where Ancestors Never Truly Leave',
+    metaTitle: 'Grief Rituals in Vietnam: Ancestor Worship | ColorMe',
+    description:
+      'In Vietnam, death does not break the bond — it deepens it. Discover ancestor worship, the family altar, and the wisdom of keeping loved ones present after death.',
+    keywords: [
+      'grief rituals vietnam',
+      'vietnamese ancestor worship',
+      'family altar vietnam',
+      'death traditions vietnam',
+      'honouring ancestors',
+      'vietnamese mourning',
+    ],
+    image: '/vietnam-olores.jpeg',
+    imageAlt: 'Vietnam — where ancestors never truly leave',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In Vietnam, death does not sever the bond between the living and the dead — it transforms it. Through ancestor worship, loved ones remain a present, honoured part of the family long after they have died.',
+      },
+      { type: 'h2', text: 'The family altar' },
+      {
+        type: 'p',
+        text: 'Most Vietnamese homes keep an ancestor altar, often in a place of honour. Here, families offer incense, food, and flowers, share news, and mark death anniversaries. The departed are not gone — they are consulted, remembered, and cared for.',
+      },
+      { type: 'h2', text: 'A continuing relationship' },
+      {
+        type: 'ul',
+        items: [
+          'Death anniversaries are marked with gatherings and offerings.',
+          'Ancestors are believed to watch over and guide the living.',
+          'Major family events are shared with the departed at the altar.',
+          'Remembering is a duty of love passed down the generations.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Vietnam, to remember is to keep someone alive. The dead remain part of the family they loved.',
+      },
+      { type: 'h2', text: 'The comfort of continued bonds' },
+      {
+        type: 'p',
+        text: 'Modern grief psychology increasingly recognises what Vietnam has always known: maintaining a continuing bond with those who have died — through ritual and remembrance — can be deeply healing, not a failure to “move on.”',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is ancestor worship in Vietnam?',
+        a: 'It is the practice of honouring deceased family members through a home altar with incense, food, and offerings, keeping them present and cared for as part of the family.',
+      },
+      {
+        q: 'Why do Vietnamese families keep an ancestor altar?',
+        a: 'The altar maintains a continuing bond with the departed, who are believed to watch over and guide the living. Remembering them is a duty of love.',
+      },
+      {
+        q: 'Is keeping a bond with the dead healthy?',
+        a: 'Yes. Modern grief research supports “continuing bonds” — staying connected to loved ones through ritual and memory can be healing, not a failure to move on.',
+      },
+    ],
+    related: ['grief-rituals-thailand', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-greece',
+    category: 'Rituals and Colors of the World',
+    title: 'Greece: The Birthplace of Philosophy Before Death',
+    metaTitle: 'Grief Rituals in Greece: Philosophy & Farewell | ColorMe',
+    description:
+      'From ancient philosophers to Orthodox tradition, Greece has long contemplated death. Explore Greek mourning customs and the wisdom of facing mortality with meaning.',
+    keywords: [
+      'grief rituals greece',
+      'greek death traditions',
+      'greek orthodox funeral',
+      'ancient greek views on death',
+      'greek mourning customs',
+      'philosophy of death',
+    ],
+    image: '/grecia-athenas.jpeg',
+    imageAlt: 'Greece — the birthplace of philosophy before death',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Long before modern psychology, the ancient Greeks were asking the deepest questions about death and how to live in its shadow. Greece gave the world philosophy — and much of that philosophy was a way of making peace with mortality.',
+      },
+      { type: 'h2', text: 'Ancient wisdom on mortality' },
+      {
+        type: 'p',
+        text: 'Greek thinkers taught that contemplating death is not morbid but freeing. To remember that life is finite is to value it more, to live with intention, and to loosen the grip of fear. This is one of philosophy’s oldest gifts.',
+      },
+      { type: 'h2', text: 'Orthodox mourning traditions' },
+      {
+        type: 'ul',
+        items: [
+          'Memorial services held at set intervals after a death, keeping the bond alive.',
+          'Kollyva — sweetened wheat shared in remembrance, symbolising eternal life.',
+          'Black worn during an extended mourning period.',
+          'Community gathering to support and accompany the bereaved.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'To reflect on death is not to darken life, but to remember how precious it is.',
+      },
+      { type: 'h2', text: 'Meaning in the face of loss' },
+      {
+        type: 'p',
+        text: 'Greece’s enduring lesson is that meeting mortality with reflection — rather than avoidance — can bring depth and peace. Facing death honestly is not despair; it can be the beginning of living more fully.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How did the ancient Greeks view death?',
+        a: 'Greek philosophers saw contemplating death as freeing rather than morbid — a way to value life, live with intention, and loosen the fear of dying.',
+      },
+      {
+        q: 'What are Greek Orthodox mourning traditions?',
+        a: 'They include memorial services at set intervals, sharing kollyva (sweetened wheat) in remembrance, wearing black during mourning, and gathering as a community to support the bereaved.',
+      },
+      {
+        q: 'Can thinking about death help us?',
+        a: 'Yes. Reflecting on mortality can deepen appreciation for life and bring peace, helping us live more intentionally rather than in avoidance.',
+      },
+    ],
+    related: ['why-we-avoid-talking-about-death', 'grief-rituals-italy'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-cuba',
+    category: 'Rituals and Colors of the World',
+    title: 'Cuba: Where Death Dances to the Drum',
+    metaTitle: 'Grief Rituals in Cuba: Santería & Farewell | ColorMe',
+    description:
+      'In Cuba, grief and celebration intertwine. Explore Cuban mourning traditions, the influence of Santería, and how music and faith honour those who have died.',
+    keywords: [
+      'grief rituals cuba',
+      'cuban death traditions',
+      'santeria death',
+      'cuban funeral customs',
+      'afro-cuban mourning',
+      'music and grief',
+    ],
+    image: '/cuban-flag.jpeg',
+    imageAlt: 'Cuba — where death dances to the drum',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In Cuba, even grief carries the rhythm of the drum. A blend of Catholic and African traditions has created a culture where death is honoured with faith, music, and a fierce celebration of the life that was lived.',
+      },
+      { type: 'h2', text: 'A blend of two worlds' },
+      {
+        type: 'p',
+        text: 'Cuban spirituality weaves together Catholicism and Santería, an Afro-Cuban religion brought by enslaved Africans. This fusion shapes how many Cubans understand death — as a passage watched over by saints and spirits (orishas), and a moment for both mourning and honouring.',
+      },
+      { type: 'h2', text: 'Rituals of farewell' },
+      {
+        type: 'ul',
+        items: [
+          'Wakes (velorios) where family and friends gather through the night.',
+          'Prayer, music, and storytelling that celebrate the person’s life.',
+          'Santería rites honouring the orishas and guiding the spirit.',
+          'Strong community presence, so no one grieves alone.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Cuba, honouring the dead means celebrating that they lived — with faith, memory, and music.',
+      },
+      { type: 'h2', text: 'Celebrating a life' },
+      {
+        type: 'p',
+        text: 'Cuban tradition holds grief and joy together, insisting that mourning a person and celebrating their life are not opposites. Music, faith, and community turn the hardest days into a shared act of remembrance.',
+      },
+    ],
+    faq: [
+      {
+        q: 'How is death honoured in Cuba?',
+        a: 'Cuban traditions blend Catholicism and Santería, honouring the dead through wakes, prayer, music, storytelling, and community — mourning while celebrating the life that was lived.',
+      },
+      {
+        q: 'What role does Santería play in Cuban death rituals?',
+        a: 'Santería, an Afro-Cuban religion, sees death as a passage watched over by orishas (saints and spirits). Its rites help honour and guide the departed spirit.',
+      },
+      {
+        q: 'Why is music part of Cuban mourning?',
+        a: 'Music celebrates the life of the person who died. Cuban tradition holds grief and joy together, using rhythm and song as acts of remembrance.',
+      },
+    ],
+    related: ['day-of-the-dead-mexico', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-turkey',
+    category: 'Rituals and Colors of the World',
+    title: 'Turkey: Where East and West Pray Together',
+    metaTitle: 'Grief Rituals in Turkey: Traditions of Farewell | ColorMe',
+    description:
+      'At the crossroads of East and West, Turkey honours death with Islamic tradition and Sufi wisdom. Explore Turkish mourning customs and the whirling dervishes’ view of death.',
+    keywords: [
+      'grief rituals turkey',
+      'turkish death traditions',
+      'islamic mourning',
+      'whirling dervishes death',
+      'sufi view of death',
+      'turkish funeral customs',
+    ],
+    image: '/turquia.jpeg',
+    imageAlt: 'Turkey — where East and West pray together',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'Straddling two continents, Turkey is where East meets West — and where ancient mysticism meets Islamic tradition in the face of death. Here, grief is held within faith, community, and a striking Sufi vision of dying as reunion.',
+      },
+      { type: 'h2', text: 'Islamic funeral traditions' },
+      {
+        type: 'ul',
+        items: [
+          'Swift burial, usually within a day, following Islamic custom.',
+          'Ritual washing and shrouding of the body with care and dignity.',
+          'Communal funeral prayer (Salat al-Janazah).',
+          'Neighbours and family gathering to feed and support the bereaved.',
+        ],
+      },
+      { type: 'h2', text: 'The Sufi view: death as reunion' },
+      {
+        type: 'p',
+        text: 'The great Sufi poet Rumi called the day of his death his “wedding day” — the soul’s reunion with the divine. The whirling dervishes turn in a moving meditation that symbolises this letting go of the ego and union with something greater. In this view, death is not an end but a homecoming.',
+      },
+      {
+        type: 'quote',
+        text: 'Rumi called death a wedding — the soul finally returning home. Grief and longing can hold hope within them.',
+      },
+      { type: 'h2', text: 'Comfort in a larger story' },
+      {
+        type: 'p',
+        text: 'Turkey’s traditions show how faith and mysticism can frame death as reunion rather than loss. Even in grief, this larger story offers many people a source of hope and peace.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What are Turkish funeral traditions?',
+        a: 'Rooted in Islam, they include swift burial, ritual washing and shrouding of the body, communal funeral prayer, and neighbours gathering to support the bereaved.',
+      },
+      {
+        q: 'How do Sufis view death?',
+        a: 'Sufism sees death as the soul’s reunion with the divine. Rumi called his death day his “wedding day,” and the whirling dervishes symbolise this union and letting go.',
+      },
+      {
+        q: 'Can seeing death as reunion help with grief?',
+        a: 'For many, framing death as a homecoming rather than an ending brings hope and peace, allowing grief and faith to coexist.',
+      },
+    ],
+    related: ['grief-rituals-greece', 'why-we-avoid-talking-about-death'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'grief-rituals-italy',
+    category: 'Rituals and Colors of the World',
+    title: 'Italy: Where Beauty Is a Form of Prayer',
+    metaTitle: 'Grief Rituals in Italy: Beauty & Remembrance | ColorMe',
+    description:
+      'In Italy, grief is woven with beauty, faith, and family. Explore Italian mourning traditions and how art, ritual, and community honour those who have died.',
+    keywords: [
+      'grief rituals italy',
+      'italian death traditions',
+      'catholic funeral italy',
+      'italian mourning customs',
+      'remembrance italy',
+      'family and grief',
+    ],
+    image: '/lucca.jpeg',
+    imageAlt: 'Italy — where beauty is a form of prayer',
+    datePublished: '2026-07-31',
+    readingTime: '5 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In Italy, beauty and devotion are inseparable — and this is true even in grief. From candlelit churches to family gatherings around the table, Italians honour their dead with a tenderness that turns remembrance into a kind of prayer.',
+      },
+      { type: 'h2', text: 'Faith, family, and food' },
+      {
+        type: 'p',
+        text: 'Italian mourning is deeply rooted in Catholic tradition and family life. After a death, the community draws close — sharing meals, memories, and prayers. Food, so central to Italian love, becomes a way of caring for the bereaved.',
+      },
+      { type: 'h2', text: 'Traditions of remembrance' },
+      {
+        type: 'ul',
+        items: [
+          'Funeral Mass and prayers guiding the soul.',
+          'Tending graves with fresh flowers, candles, and photographs.',
+          'Commemoration of the dead, especially around All Souls’ Day.',
+          'Community and extended family gathering to support one another.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In Italy, to remember beautifully — with flowers, food, and faith — is itself an act of love.',
+      },
+      { type: 'h2', text: 'Beauty as a way to grieve' },
+      {
+        type: 'p',
+        text: 'Italy reminds us that grief can be met with beauty — that tending a grave, lighting a candle, or gathering at a table can transform sorrow into connection and love made visible.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What are Italian mourning traditions?',
+        a: 'Rooted in Catholicism and family, they include funeral Mass, tending graves with flowers and candles, commemorating the dead around All Souls’ Day, and gathering as community to support the bereaved.',
+      },
+      {
+        q: 'How does food play a role in Italian grief?',
+        a: 'Food is central to Italian love and care. After a death, sharing meals becomes a way of supporting and comforting the bereaved.',
+      },
+      {
+        q: 'What can we learn from Italian remembrance?',
+        a: 'That grief can be met with beauty — tending graves, lighting candles, and gathering together turn sorrow into connection and love made visible.',
+      },
+    ],
+    related: ['grief-rituals-greece', 'farewell-rituals'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'mehndi-sacred-art-india',
+    category: 'Rituals and Colors of the World',
+    title: 'Mehndi: India’s Sacred Art Where Skin Becomes Prayer',
+    metaTitle: 'Mehndi: India’s Sacred Henna Art & Meaning | ColorMe',
+    description:
+      'Discover the spiritual meaning of mehndi, India’s sacred henna art — how these temporary designs connect body and soul, celebrate life, and mark its transitions.',
+    keywords: [
+      'mehndi meaning',
+      'henna spiritual meaning',
+      'mehndi india',
+      'sacred henna art',
+      'henna traditions',
+      'mehndi symbolism',
+    ],
+    image: '/mehndi-india.jpeg',
+    imageAlt: 'Mehndi — India’s sacred art where skin becomes prayer',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In India, the delicate red-brown patterns of mehndi are far more than decoration. This sacred art of henna turns the skin into a canvas of prayer, blessing, and meaning — a temporary beauty that speaks of life’s impermanence.',
+      },
+      { type: 'h2', text: 'More than decoration' },
+      {
+        type: 'p',
+        text: 'Applied for weddings, festivals, and rites of passage, mehndi is believed to carry blessings — of luck, protection, joy, and love. The intricate designs are a form of devotion made visible on the body.',
+      },
+      { type: 'h2', text: 'The beauty of impermanence' },
+      {
+        type: 'p',
+        text: 'Mehndi fades within weeks, and that is part of its meaning. Like life itself, its beauty is temporary — a gentle reminder to treasure the moment, since nothing stays exactly as it is.',
+      },
+      {
+        type: 'quote',
+        text: 'Mehndi teaches through beauty what grief teaches through loss: nothing is permanent, and that is what makes it precious.',
+      },
+      { type: 'h2', text: 'Art as spiritual practice' },
+      {
+        type: 'p',
+        text: 'Mehndi reminds us that art and the sacred have always been intertwined — that creating on the body, like any art, can be a form of prayer, celebration, and meaning-making. This is the same truth at the heart of art as therapy.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the meaning of mehndi?',
+        a: 'Mehndi, or sacred henna art, carries blessings of luck, protection, joy, and love. Applied for weddings and rites of passage, its intricate designs are a form of devotion made visible.',
+      },
+      {
+        q: 'Why does mehndi fade?',
+        a: 'Mehndi is temporary by nature, fading within weeks. This impermanence is part of its meaning — a reminder to treasure the present, since nothing stays the same.',
+      },
+      {
+        q: 'How does mehndi relate to art as therapy?',
+        a: 'Both reflect the ancient link between art and the sacred — creating as a form of prayer, celebration, and meaning-making that supports the inner life.',
+      },
+    ],
+    related: ['grief-rituals-india', 'how-art-heals-the-brain'],
+  },
+
+  // --------------------------------------------------------------------------
+  {
+    slug: 'melukat-bali-purification',
+    category: 'Rituals and Colors of the World',
+    title: 'Melukat: The Balinese Ceremony Where Water Cleanses the Soul',
+    metaTitle: 'Melukat: Bali’s Sacred Water Purification | ColorMe',
+    description:
+      'Discover Melukat, Bali’s sacred purification ceremony, where holy water washes away emotional pain and heals body and spirit — a ritual of release and renewal.',
+    keywords: [
+      'melukat bali',
+      'balinese purification ceremony',
+      'sacred water ritual',
+      'melukat meaning',
+      'bali spiritual cleansing',
+      'emotional purification ritual',
+    ],
+    image: '/melukat-bali.jpeg',
+    imageAlt: 'Melukat — the Balinese ceremony where water cleanses the soul',
+    datePublished: '2026-07-31',
+    readingTime: '4 min read',
+    content: [
+      {
+        type: 'p',
+        text: 'In Bali, water is sacred — believed to hold the power to cleanse not only the body but the spirit. Melukat is a purification ceremony where holy spring water washes away emotional pain, negativity, and grief, leaving space for renewal.',
+      },
+      { type: 'h2', text: 'A ritual of release' },
+      {
+        type: 'p',
+        text: 'During Melukat, a person moves through a series of sacred water spouts, praying and immersing themselves as the water flows over them. Each stream is believed to carry away a layer of heaviness — pain, grief, anger, or spiritual clutter.',
+      },
+      { type: 'h2', text: 'Cleansing body and soul' },
+      {
+        type: 'ul',
+        items: [
+          'Water symbolises the washing away of emotional and spiritual burdens.',
+          'Prayer and intention turn the act into a conscious release.',
+          'The ceremony offers a sense of renewal and a fresh start.',
+          'Nature and ritual combine to soothe the nervous system.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Some grief cannot be reasoned away. It can only be released — and water has always known how to carry things away.',
+      },
+      { type: 'h2', text: 'The wisdom of ritual release' },
+      {
+        type: 'p',
+        text: 'Melukat reflects something universal: the human need to physically release what we carry inside. Whether through sacred water, movement, or making art, giving grief a bodily way out can be profoundly healing.',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is Melukat?',
+        a: 'Melukat is a Balinese purification ceremony in which holy spring water is used to cleanse the body and spirit of emotional pain, negativity, and grief, offering renewal.',
+      },
+      {
+        q: 'How does the Melukat ceremony work?',
+        a: 'A person moves through sacred water spouts, praying and immersing themselves as the water flows over them, symbolically releasing layers of grief and heaviness.',
+      },
+      {
+        q: 'Why is ritual release healing?',
+        a: 'Ritual gives grief a physical way out. Whether through sacred water, movement, or art, releasing what we carry inside our bodies can be deeply soothing and healing.',
+      },
+    ],
+    related: ['grief-rituals-bali-ngaben', 'farewell-rituals'],
   },
 ]
+
+export function getEnArticle(slug: string): EnArticle | undefined {
+  return enArticles.find((a) => a.slug === slug)
+}
+
+export function allEnSlugs(): string[] {
+  return enArticles.map((a) => a.slug)
+}

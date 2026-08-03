@@ -8,6 +8,7 @@ import EmailGateModal from '@/components/EmailGateModal';
 export default function WorksheetPage() {
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     age: '',
     gender: '',
     griefOrGoal: '',
@@ -43,6 +44,18 @@ export default function WorksheetPage() {
         ctx.fillStyle = 'white';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
+    }
+  }, []);
+
+  // Prefill email if the visitor already left it (email gate modal)
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('colorme_recursos_email');
+      if (saved) {
+        setFormData(prev => ({ ...prev, email: saved }));
+      }
+    } catch {
+      // localStorage no disponible
     }
   }, []);
 
@@ -245,25 +258,34 @@ export default function WorksheetPage() {
     setIsGenerating(true);
 
     try {
-      // Send email notification
-      await fetch('/api/worksheet', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      // Import PDF generation dynamically (client-side only)
-      const { generateWorksheetPDF } = await import('@/lib/generatePDF');
-
-      // Match exercises based on user input
+      // Match exercises based on user input (antes de enviar, para incluirlos en el correo)
       const exercises = matchExercises(
         formData.emotion,
         formData.griefOrGoal,
         parseInt(formData.age) || 25,
         1 // Get only 1 most relevant exercise
       );
+
+      // Persist email so el modal no lo vuelve a pedir y queda vinculado
+      try {
+        if (formData.email) {
+          localStorage.setItem('colorme_recursos_email', formData.email.trim());
+        }
+      } catch {
+        // localStorage no disponible
+      }
+
+      // Send email notification to Lou with the email + generated exercise(s)
+      await fetch('/api/worksheet', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ...formData, exercises }),
+      });
+
+      // Import PDF generation dynamically (client-side only)
+      const { generateWorksheetPDF } = await import('@/lib/generatePDF');
 
       // Generate and download PDF
       await generateWorksheetPDF(formData, exercises);
@@ -331,6 +353,23 @@ export default function WorksheetPage() {
                   onChange={handleChange}
                   className="form-input-full"
                   placeholder="Escribe tu nombre"
+                />
+              </div>
+
+              {/* Email Field */}
+              <div>
+                <label htmlFor="email" className="block text-base font-semibold text-black mb-2">
+                  Tu correo electrónico <span className="text-coral">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="form-input-full"
+                  placeholder="Para enviarte tu ejercicio"
                 />
               </div>
 
