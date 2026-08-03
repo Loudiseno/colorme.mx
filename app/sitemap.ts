@@ -171,8 +171,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: highPrioritySlugs.has(slug) ? 0.8 : 0.7,
   }))
 
-  // English blog
+  // English site
   const enBlogIndex: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/en`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/en/art-as-therapy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/grief-counseling`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/en/shop`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/en/blog`,
       lastModified: new Date(),

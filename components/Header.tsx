@@ -19,12 +19,11 @@ const navigationEs = [
 // En páginas /en/* el menú va en inglés y apunta a las versiones en inglés
 // cuando existen.
 const navigationEn = [
-  { name: 'Art as Therapy', href: '/arteterapia-mexico' },
-  { name: 'Grief Counseling', href: '/tanatologia-acompanamiento-duelo' },
-  { name: 'About me', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
+  { name: 'Art as Therapy', href: '/en/art-as-therapy' },
+  { name: 'Grief Counseling', href: '/en/grief-counseling' },
+  { name: 'About me', href: '/en/about' },
   { name: 'Artwork', href: '/en/obra' },
-  { name: 'Products', href: '/tienda' },
-  { name: 'Creative explorations', href: '/hoja-de-trabajo' },
+  { name: 'Books', href: '/en/shop' },
   { name: 'Blog', href: '/en/blog' },
 ]
 
@@ -50,7 +49,7 @@ export default function Header() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="hover:opacity-80 transition-opacity">
+        <Link href={isEn ? '/en' : '/'} className="hover:opacity-80 transition-opacity">
           <Image
             src="/COLORME_logo-19-768x141.webp"
             alt="ColorMe"
