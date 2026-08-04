@@ -76,8 +76,31 @@ const soloExhibitions = [
       ],
     },
   },
-  { title: 'Reinterpretando', place: 'Restaurante Pizza Local, Mexico City', date: '2017' },
-  { title: 'Memorias', place: 'Cafetería Healthy Nutrition, Mexico City', date: '2018' },
+  {
+    title: 'Reinterpretando',
+    place: 'Restaurante Pizza Local, Mexico City',
+    date: '2017',
+    detail: {
+      statement: [
+        'We become the places we visit, the food we taste, the people we love. This show speaks of some of those moments: it is a physical representation of pieces of my memory.',
+        'The works allude to instants, landscapes, people and objects that inspired me, that stopped me to be admired and remembered. I take a kind of mental photograph and translate it into the colours I assigned to it, with the magic I felt, so I can live those moments again countless times.',
+        'The exhibition brings together my three great passions: travel, photography and painting. The paintings reduce places to their essence through the abstraction of colour; the photographs play with the contrast of black and white, intervened with acrylics, holo or watercolour.',
+        'Both outcomes emphasise how important it is to understand the nuances of our existence, the lights and shadows that together created a work of art we call life. They invite you to see through my eyes, understanding the value in the fact that every person has a unique and valid way of interpreting the universe.',
+      ],
+    },
+  },
+  {
+    title: 'Memorias',
+    place: 'Cafetería Healthy Nutrition, Mexico City',
+    date: '2018',
+    detail: {
+      statement: [
+        'Memory. 1. n. The capacity to recall facts or experiences from the past.',
+        'And in the end that is what we are: what we taste, live, feel, enjoy, come to know and experience. Those instants that stay in our mind forever, the memories that shape our path.',
+        'This exhibition gathers some of my memories, rendered through different techniques: photography, painting, and photography intervened with paint. It is my work —my aura— that speaks better than my words: it is the inside of my soul.',
+      ],
+    },
+  },
 ]
 
 const groupExhibitions = [

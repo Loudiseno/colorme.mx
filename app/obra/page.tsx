@@ -76,8 +76,31 @@ const exposicionesIndividuales = [
       ],
     },
   },
-  { title: 'Reinterpretando', place: 'Restaurante Pizza Local, CDMX', date: '2017' },
-  { title: 'Memorias', place: 'Cafetería Healthy Nutrition, CDMX', date: '2018' },
+  {
+    title: 'Reinterpretando',
+    place: 'Restaurante Pizza Local, CDMX',
+    date: '2017',
+    detail: {
+      statement: [
+        'Nos convertimos en los lugares que visitamos, la comida que probamos, las personas que amamos. Esta muestra habla de algunos de esos momentos: es una representación física de piezas de mi memoria.',
+        'Las obras aluden a instantes, paisajes, personas y objetos que me inspiraron, que me detuvieron para ser admirados y recordados. Hago una especie de fotografía mental y la traduzco a los colores que yo les asigné, con la magia que sentí, para volver a vivirlos un sinfín de veces.',
+        'La exposición reúne mis tres grandes pasiones: los viajes, la fotografía y la pintura. Las obras pictóricas reducen los lugares a su esencia por medio de la abstracción de colores; las fotográficas juegan con el contraste del blanco y negro, intervenido con acrílicos, holo o acuarela.',
+        'Ambos resultados enfatizan la importancia de comprender los matices de nuestra existencia, los claros y oscuros que en conjunto crearon una obra de arte que llamamos vida. Te invitan a ver a través de mis ojos, comprendiendo el valor de que cada persona tiene una forma única y válida de interpretar el universo.',
+      ],
+    },
+  },
+  {
+    title: 'Memorias',
+    place: 'Cafetería Healthy Nutrition, CDMX',
+    date: '2018',
+    detail: {
+      statement: [
+        'Memoria. 1. f. Capacidad para recordar hechos o experiencias del pasado.',
+        'Y al final eso somos: lo que probamos, vivimos, sentimos, disfrutamos, conocemos y experimentamos. Esos instantes que se quedan para siempre en nuestra mente, los recuerdos que van formando nuestro camino.',
+        'La exposición recopila algunas de mis memorias representadas mediante diferentes técnicas: fotografía, pintura y fotografía intervenida con pintura. Es mi obra —mi aura— la que habla mejor que mis palabras: es el interior de mi alma.',
+      ],
+    },
+  },
 ]
 
 const exposicionesColectivas = [

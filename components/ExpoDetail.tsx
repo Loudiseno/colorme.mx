@@ -8,8 +8,9 @@ export interface ExpoDetailData {
   title: string
   place: string
   date: string
-  image: string
-  imageAlt: string
+  /** Opcional: si no hay foto, el statement ocupa todo el ancho */
+  image?: string
+  imageAlt?: string
   /** Párrafos del statement de la exposición */
   statement: string[]
 }
@@ -54,18 +55,20 @@ export default function ExpoDetail({ expo, onClose, closeLabel = 'Cerrar' }: Exp
           <X size={22} />
         </button>
 
-        <div className="grid md:grid-cols-2">
+        <div className={expo.image ? 'grid md:grid-cols-2' : ''}>
           {/* Imagen */}
-          <div className="relative bg-gray-100 min-h-[280px] md:min-h-[520px]">
-            <Image
-              src={expo.image}
-              alt={expo.imageAlt}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
-              className="object-cover"
-            />
-          </div>
+          {expo.image && (
+            <div className="relative bg-gray-100 min-h-[280px] md:min-h-[520px]">
+              <Image
+                src={expo.image}
+                alt={expo.imageAlt ?? expo.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+                className="object-cover"
+              />
+            </div>
+          )}
 
           {/* Texto */}
           <div className="p-8 md:p-10 flex flex-col justify-center">

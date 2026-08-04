@@ -11,8 +11,8 @@ export interface ExhibitionItem {
   note?: string
   /** Si existe, la fila es clicable y abre el detalle */
   detail?: {
-    image: string
-    imageAlt: string
+    image?: string
+    imageAlt?: string
     statement: string[]
   }
 }
