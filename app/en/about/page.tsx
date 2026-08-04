@@ -87,10 +87,10 @@ export default function EnAboutPage() {
             </p>
             <ul>
               <li><strong>India</strong> — Traditional techniques and their connection to spirituality. Mandala making.</li>
-              <li><strong>Tailandia</strong> — Meditative art and contemplative practices.</li>
-              <li><strong>Malasia</strong> — A fusion of Asian artistic traditions such as batik.</li>
+              <li><strong>Thailand</strong> — Meditative art and contemplative practices.</li>
+              <li><strong>Malaysia</strong> — A fusion of Asian artistic traditions such as batik.</li>
               <li><strong>Bali</strong> — Balinese artistic traditions and their connection to emotion, along with breathwork (conscious breathing techniques for emotional regulation and releasing tension).</li>
-              <li><strong>México</strong> — Palliative care (Universidad Anáhuac) and Facing emotional burnout through compassion (Elisabeth Kübler-Ross Foundation).</li>
+              <li><strong>Mexico</strong> — Palliative care (Universidad Anáhuac) and Facing emotional burnout through compassion (Elisabeth Kübler-Ross Foundation).</li>
             </ul>
           </div>
         </section>

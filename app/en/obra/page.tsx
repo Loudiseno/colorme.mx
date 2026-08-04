@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
+import ObraCarousel from '@/components/ObraCarousel'
 
 export const metadata: Metadata = {
   title: 'Artwork | Photography, Painting & Mixed Media',
@@ -25,6 +26,21 @@ export const metadata: Metadata = {
 // Galleries use placeholders until real photos are added: drop files in
 // /public and replace <Placeholder /> with <Image src="/your-photo.webp" ... />
 // ============================================================================
+
+// Intervened photography (numeric order 1-11)
+const intervenedPhotography = [
+  { src: '/foto intervenida 1.jpg', alt: 'Intervened photography 1 — artwork by Lou' },
+  { src: '/foto intervenida 2.jpg', alt: 'Intervened photography 2 — artwork by Lou' },
+  { src: '/foto intervenida 3.jpg', alt: 'Intervened photography 3 — artwork by Lou' },
+  { src: '/foto intervenida 4.jpg', alt: 'Intervened photography 4 — artwork by Lou' },
+  { src: '/foto intervenida 5.jpg', alt: 'Intervened photography 5 — artwork by Lou' },
+  { src: '/foto intervenida 6.jpg', alt: 'Intervened photography 6 — artwork by Lou' },
+  { src: '/foto intervenida 7.jpg', alt: 'Intervened photography 7 — artwork by Lou' },
+  { src: '/foto intervenida 8.jpg', alt: 'Intervened photography 8 — artwork by Lou' },
+  { src: '/foto intervenida 9.jpg', alt: 'Intervened photography 9 — artwork by Lou' },
+  { src: '/foto intervenida 10.jpg', alt: 'Intervened photography 10 — artwork by Lou' },
+  { src: '/foto intervenida 11.jpg', alt: 'Intervened photography 11 — artwork by Lou' },
+]
 
 const clients = [
   'Studio Ceri',
@@ -236,7 +252,7 @@ export default function ObraEnPage() {
             repeatable image and becomes a one-of-a-kind piece. I like to play with colour and
             adapt the moment to my own experience and way of perceiving it.
           </p>
-          <Gallery count={3} />
+          <ObraCarousel images={intervenedPhotography} prevLabel="Previous" nextLabel="Next" />
         </div>
       </section>
 

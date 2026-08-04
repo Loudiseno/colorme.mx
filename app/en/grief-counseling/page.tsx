@@ -8,7 +8,7 @@ import { siteConfig, generateServiceSchema, generateBreadcrumbSchema } from '@/l
 export const metadata: Metadata = {
   title: 'Grief Counseling | Support Through Loss and Change',
   description:
-    'Professional grief counseling for loss, grief and change. Online grief support sessions. Enfoque humano y compasivo para resignificar lo vivido.',
+    'Professional grief counseling for loss, grief and change. Online grief support sessions. A human, compassionate approach to finding new meaning.',
   keywords: [
     'grief counseling',
     'grief support',
@@ -51,7 +51,7 @@ const typesOfLoss = [
   },
   {
     icon: '/Frame-22.webp',
-    title: 'Salud',
+    title: 'Health',
     description: 'Physical, mental or emotional change: a medical diagnosis, chronic illness, disability, infertility, pregnancy or perinatal loss, or cognitive decline.',
   },
   {
@@ -61,7 +61,7 @@ const typesOfLoss = [
   },
   {
     icon: '/Frame-28.webp',
-    title: 'Ambiguas',
+    title: 'Ambiguous',
     description: 'Losses without clear closure or with limited social recognition: disappearances, migration grief, miscarriage, unacknowledged relationships.',
   },
 ]

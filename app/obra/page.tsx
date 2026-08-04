@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
+import ObraCarousel from '@/components/ObraCarousel'
 
 export const metadata: Metadata = {
   title: 'Obra | Fotografía, pintura y técnicas mixtas',
@@ -25,6 +26,21 @@ export const metadata: Metadata = {
 //  las fotos reales: coloca los archivos en /public y reemplaza <Placeholder />
 //  por <Image src="/tu-foto.webp" ... /> en cada galería.)
 // ============================================================================
+
+// Fotografía intervenida (orden numérico 1-11)
+const fotoIntervenida = [
+  { src: '/foto intervenida 1.jpg', alt: 'Fotografía intervenida 1 — obra de Lou' },
+  { src: '/foto intervenida 2.jpg', alt: 'Fotografía intervenida 2 — obra de Lou' },
+  { src: '/foto intervenida 3.jpg', alt: 'Fotografía intervenida 3 — obra de Lou' },
+  { src: '/foto intervenida 4.jpg', alt: 'Fotografía intervenida 4 — obra de Lou' },
+  { src: '/foto intervenida 5.jpg', alt: 'Fotografía intervenida 5 — obra de Lou' },
+  { src: '/foto intervenida 6.jpg', alt: 'Fotografía intervenida 6 — obra de Lou' },
+  { src: '/foto intervenida 7.jpg', alt: 'Fotografía intervenida 7 — obra de Lou' },
+  { src: '/foto intervenida 8.jpg', alt: 'Fotografía intervenida 8 — obra de Lou' },
+  { src: '/foto intervenida 9.jpg', alt: 'Fotografía intervenida 9 — obra de Lou' },
+  { src: '/foto intervenida 10.jpg', alt: 'Fotografía intervenida 10 — obra de Lou' },
+  { src: '/foto intervenida 11.jpg', alt: 'Fotografía intervenida 11 — obra de Lou' },
+]
 
 const clientes = [
   'Studio Ceri',
@@ -236,7 +252,7 @@ export default function ObraPage() {
             una imagen repetible para convertirse en una pieza única. Me gusta jugar con los colores
             y adaptar el momento a mi experiencia y a mi manera de percibirlo.
           </p>
-          <Gallery count={3} />
+          <ObraCarousel images={fotoIntervenida} />
         </div>
       </section>
 
