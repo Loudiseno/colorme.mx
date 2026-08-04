@@ -25,8 +25,8 @@ export const metadata: Metadata = {
 // ============================================================================
 // ARTWORK SECTION DATA (English)
 // Mirrors app/obra/page.tsx — edit both when content changes.
-// Galleries use placeholders until real photos are added: drop files in
-// /public and replace <Placeholder /> with <Image src="/your-photo.webp" ... />
+// To add photos: drop the files in /public (no spaces or accents in the name)
+// and add them to the matching array.
 // ============================================================================
 
 // Intervened photography (numeric order 1-11)

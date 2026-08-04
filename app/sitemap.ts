@@ -160,6 +160,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/en/art-as-therapy',
     '/en/grief-counseling',
     '/en/shop',
+    '/en/faq',
     '/en/blog',
   ].map((path) => ({
     url: `${baseUrl}${path}`,

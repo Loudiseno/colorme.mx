@@ -24,9 +24,9 @@ export const metadata: Metadata = {
 
 // ============================================================================
 // DATOS DE LA SECCIÓN OBRA
-// (Editar aquí. Las galerías usan marcadores de posición hasta que se agreguen
-//  las fotos reales: coloca los archivos en /public y reemplaza <Placeholder />
-//  por <Image src="/tu-foto.webp" ... /> en cada galería.)
+// Para añadir fotos: coloca los archivos en /public (nombres sin espacios ni
+// acentos) y agrégalos al arreglo correspondiente. Mantener en paralelo con
+// app/en/obra/page.tsx.
 // ============================================================================
 
 // Fotografía intervenida (orden numérico 1-11)
