@@ -74,6 +74,48 @@ const soloExhibitions = [
       'Tones are the soul of places: they hold their spirit, they tell you stories, they are the living trace of what happens there, reflections that come together to create a whole.',
       'The aim of this project is to reduce the places I have visited and photographed to their essence, through the abstraction of the colours perceived, to set their existence down on a canvas.',
     ],
+    works: [
+      {
+        title: 'Ventana Azul',
+        location: 'Gozo (Malta)',
+        technique: 'Mixed media on MDF over the newspaper «L-Orizzont» of the Republic of Malta, 2015',
+      },
+      {
+        title: 'Susurros',
+        location: 'Garfagnana, Toscana (Italy)',
+        technique: 'Mixed media on MDF over the newspaper «La Nazione», Centenary special edition, Italy, 1959',
+        dimensions: '86 × 66 cm',
+      },
+      {
+        title: 'Caminos',
+        location: 'To be confirmed',
+        technique: 'Mixed media',
+      },
+      {
+        title: 'La Tregua',
+        location: 'Puerto Escondido, Oaxaca (Mexico)',
+        technique: 'Mixed media on MDF over the newspaper «Excélsior» of Mexico City, 1990',
+        dimensions: '86 × 66 cm',
+      },
+      {
+        title: 'Melancolía',
+        location: 'Mahahual, Quintana Roo (Mexico)',
+        technique: 'Mixed media on canvas',
+        dimensions: '90.5 × 70 cm',
+      },
+      {
+        title: 'Ecos de ocaso',
+        location: 'Progreso, Mérida (Mexico)',
+        technique: 'Mixed media on MDF',
+        dimensions: '59.5 × 50.5 cm',
+      },
+      {
+        title: 'A lo alto',
+        location: 'Mexico City',
+        technique: 'Mixed media on canvas',
+        dimensions: '90.5 × 70 cm',
+      },
+    ],
   },
   {
     title: 'Reinterpretando',
@@ -328,7 +370,7 @@ export default function ObraEnPage() {
             <p className="text-black/40 text-sm mb-8">Individual shows</p>
             <ExpoCards
               items={soloExhibitions}
-              labels={{ view: 'View exhibition', close: 'Close', prev: 'Previous', next: 'Next', soon: 'Photo coming soon' }}
+              labels={{ view: 'View exhibition', close: 'Close', prev: 'Previous', next: 'Next', soon: 'Photo coming soon', reference: 'Reference photograph' }}
             />
           </div>
 

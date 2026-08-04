@@ -15,6 +15,23 @@ export interface ExpoCardItem {
   statement: string[]
   /** Fotos adicionales que se muestran dentro del detalle */
   gallery?: { src: string; alt: string }[]
+  /** Obras de la exposición: cuadro + fotografía de referencia */
+  works?: ExpoWork[]
+}
+
+export interface ExpoWork {
+  /** Nombre de la obra */
+  title: string
+  /** Lugar donde fue tomada la fotografía de referencia */
+  location: string
+  /** Material y técnica */
+  technique: string
+  /** Medidas, si se conocen */
+  dimensions?: string
+  /** Imagen del cuadro */
+  image?: string
+  /** Fotografía que sirvió de referencia */
+  reference?: string
 }
 
 interface ExpoCardsProps {
@@ -25,6 +42,7 @@ interface ExpoCardsProps {
     prev: string
     next: string
     soon: string
+    reference: string
   }
 }
 
@@ -34,6 +52,7 @@ const defaultLabels = {
   prev: 'Anterior',
   next: 'Siguiente',
   soon: 'Foto próximamente',
+  reference: 'Fotografía de referencia',
 }
 
 export default function ExpoCards({ items, labels = defaultLabels }: ExpoCardsProps) {
@@ -46,6 +65,10 @@ export default function ExpoCards({ items, labels = defaultLabels }: ExpoCardsPr
     ? [
         ...(expo.cover ? [{ src: expo.cover, alt: expo.coverAlt ?? expo.title }] : []),
         ...(expo.gallery ?? []),
+        ...(expo.works ?? []).flatMap((w) => [
+          ...(w.image ? [{ src: w.image, alt: `${w.title} — ${w.technique}` }] : []),
+          ...(w.reference ? [{ src: w.reference, alt: `Referencia — ${w.location}` }] : []),
+        ]),
       ]
     : []
 
@@ -146,7 +169,76 @@ export default function ExpoCards({ items, labels = defaultLabels }: ExpoCardsPr
                 ))}
               </div>
 
-              {photos.length > 0 && (
+              {expo.works && expo.works.length > 0 && (
+                <div className="space-y-8 border-t border-black/10 pt-8">
+                  {expo.works.map((w) => {
+                    const workIdx = w.image ? photos.findIndex((ph) => ph.src === w.image) : -1
+                    const refIdx = w.reference ? photos.findIndex((ph) => ph.src === w.reference) : -1
+                    return (
+                      <div key={w.title} className="grid sm:grid-cols-[1.4fr_1fr] gap-5 items-start">
+                        {/* Cuadro */}
+                        <div>
+                          {w.image ? (
+                            <button
+                              type="button"
+                              onClick={() => workIdx >= 0 && setZoom(workIdx)}
+                              className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-100 cursor-zoom-in group block"
+                            >
+                              <Image
+                                src={w.image}
+                                alt={`${w.title} — ${w.technique}`}
+                                fill
+                                sizes="(max-width: 640px) 100vw, 55vw"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                              />
+                            </button>
+                          ) : (
+                            <div className="w-full aspect-[4/3] rounded-xl bg-gradient-to-br from-[#B2F7EF]/30 to-[#F0F7F6] flex flex-col items-center justify-center text-black/30">
+                              <ImageIcon size={24} strokeWidth={1.5} />
+                              <span className="text-[11px] mt-2 uppercase tracking-wider">{labels.soon}</span>
+                            </div>
+                          )}
+                          <h5 className="text-lg text-black mt-3 leading-snug">{w.title}</h5>
+                          <p className="text-black/70 text-sm mt-1 leading-snug">{w.technique}</p>
+                          {w.dimensions && (
+                            <p className="text-black/40 text-sm mt-0.5 tabular-nums">{w.dimensions}</p>
+                          )}
+                        </div>
+
+                        {/* Fotografía de referencia */}
+                        <div>
+                          {w.reference ? (
+                            <button
+                              type="button"
+                              onClick={() => refIdx >= 0 && setZoom(refIdx)}
+                              className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-100 cursor-zoom-in group block"
+                            >
+                              <Image
+                                src={w.reference}
+                                alt={`Fotografía de referencia — ${w.location}`}
+                                fill
+                                sizes="(max-width: 640px) 100vw, 35vw"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                              />
+                            </button>
+                          ) : (
+                            <div className="w-full aspect-[4/3] rounded-xl bg-gradient-to-br from-[#B2F7EF]/20 to-[#F0F7F6] flex flex-col items-center justify-center text-black/30">
+                              <ImageIcon size={22} strokeWidth={1.5} />
+                              <span className="text-[11px] mt-2 uppercase tracking-wider">{labels.soon}</span>
+                            </div>
+                          )}
+                          <p className="text-[11px] text-[#0D9488] uppercase tracking-wider mt-3">
+                            {labels.reference}
+                          </p>
+                          <p className="text-black/70 text-sm leading-snug">{w.location}</p>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              )}
+
+              {!expo.works && photos.length > 0 && (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {photos.map((ph, i) => (
                     <button

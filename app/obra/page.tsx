@@ -74,6 +74,48 @@ const exposicionesIndividuales = [
       'Las tonalidades son el alma de los lugares: guardan su espíritu, te cuentan historias, son la huella viva de lo que ahí sucede, reflejos que se unen para crear un todo.',
       'La finalidad de este proyecto es reducir a su esencia los lugares que he visitado y fotografiado, por medio de la abstracción de los colores percibidos, para plasmar en un lienzo su existencia.',
     ],
+    works: [
+      {
+        title: 'Ventana Azul',
+        location: 'Gozo (Malta)',
+        technique: 'Técnica mixta sobre MDF en periódico «L-Orizzont» de la República de Malta, 2015',
+      },
+      {
+        title: 'Susurros',
+        location: 'Garfagnana, Toscana (Italia)',
+        technique: 'Técnica mixta sobre MDF en periódico «La Nazione», número especial de Centenario, Italia, 1959',
+        dimensions: '86 × 66 cm',
+      },
+      {
+        title: 'Caminos',
+        location: 'Por confirmar',
+        technique: 'Técnica mixta',
+      },
+      {
+        title: 'La Tregua',
+        location: 'Puerto Escondido, Oaxaca (México)',
+        technique: 'Técnica mixta sobre MDF en periódico «Excélsior» de la Ciudad de México, 1990',
+        dimensions: '86 × 66 cm',
+      },
+      {
+        title: 'Melancolía',
+        location: 'Mahahual, Quintana Roo (México)',
+        technique: 'Técnica mixta sobre lienzo',
+        dimensions: '90.5 × 70 cm',
+      },
+      {
+        title: 'Ecos de ocaso',
+        location: 'Progreso, Mérida (México)',
+        technique: 'Técnica mixta sobre MDF',
+        dimensions: '59.5 × 50.5 cm',
+      },
+      {
+        title: 'A lo alto',
+        location: 'Ciudad de México',
+        technique: 'Técnica mixta sobre lienzo',
+        dimensions: '90.5 × 70 cm',
+      },
+    ],
   },
   {
     title: 'Reinterpretando',
