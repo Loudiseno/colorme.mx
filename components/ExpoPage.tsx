@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
+import WorkGallery from '@/components/WorkGallery'
 import type { Expo } from '@/lib/exposiciones'
 
 interface ExpoPageProps {
@@ -9,91 +10,77 @@ interface ExpoPageProps {
   labels: {
     back: string
     works: string
+    close: string
+    prev: string
+    next: string
   }
 }
 
-// Página de una exposición: portada, statement y obras en grande.
+// Página de exposición: la obra manda, el texto acompaña.
 export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
   return (
-    <article className="pt-28 pb-16 md:pt-36 md:pb-20">
-      <div className="max-w-4xl mx-auto px-6">
+    <article className="pt-28 pb-24 md:pt-36 md:pb-32 bg-white">
+      {/* Volver */}
+      <div className="max-w-5xl mx-auto px-6">
         <Link
           href={backHref}
-          className="inline-flex items-center gap-2 text-black hover:text-black/70 transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-sm text-black/50 hover:text-black transition-colors"
         >
-          <ArrowLeft size={18} />
+          <ArrowLeft size={16} />
           {labels.back}
         </Link>
+      </div>
 
-        {/* Encabezado */}
-        <header className="mb-10">
-          <p className="text-xs text-[#0D9488] uppercase tracking-[0.2em] mb-3">{expo.date}</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-3 leading-tight">
-            {expo.title}
-          </h1>
-          <p className="text-black/50">{expo.place}</p>
-        </header>
+      {/* Título */}
+      <header className="max-w-5xl mx-auto px-6 mt-12 md:mt-16">
+        <p className="text-xs text-black/40 uppercase tracking-[0.25em] mb-5">{expo.date}</p>
+        <h1 className="text-5xl md:text-7xl text-black leading-[1.02] mb-5">{expo.title}</h1>
+        <p className="text-black/50">{expo.place}</p>
+      </header>
 
-        {/* Portada */}
-        {expo.cover && (
-          <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden bg-gray-100 mb-10">
-            <Image
-              src={expo.cover}
-              alt={expo.coverAlt ?? expo.title}
-              fill
-              sizes="(max-width: 768px) 100vw, 896px"
-              priority
-              className="object-cover"
-            />
-          </div>
-        )}
+      {/* Portada a lo ancho */}
+      {expo.cover && (
+        <div className="max-w-6xl mx-auto px-6 mt-14 md:mt-20">
+          <Image
+            src={expo.cover}
+            alt={expo.coverAlt ?? expo.title}
+            width={1800}
+            height={1200}
+            sizes="(max-width: 1152px) 100vw, 1152px"
+            priority
+            className="w-full h-auto"
+          />
+        </div>
+      )}
 
-        {/* Statement */}
-        <div className="space-y-5 text-lg text-black/75 leading-relaxed mb-16">
+      {/* Statement — columna angosta para lectura cómoda */}
+      <div className="max-w-2xl mx-auto px-6 mt-16 md:mt-24">
+        <div className="space-y-6 text-lg md:text-xl text-black/75 leading-relaxed">
           {expo.statement.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
         </div>
       </div>
 
-      {/* Obras — a lo ancho, en grande */}
+      {/* Obras */}
       {expo.works && expo.works.length > 0 && (
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl text-black mb-10 text-center">{labels.works}</h2>
-          <div className="space-y-16">
-            {expo.works.map((w) => (
-              <figure key={w.title + (w.image ?? '')}>
-                {w.image && (
-                  <div className="relative w-full bg-[#F8F6F3] rounded-2xl overflow-hidden">
-                    <Image
-                      src={w.image}
-                      alt={`${w.title} — ${w.technique}`}
-                      width={1400}
-                      height={1000}
-                      sizes="(max-width: 1024px) 100vw, 1024px"
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                )}
-                <figcaption className="mt-5 text-center max-w-2xl mx-auto">
-                  <h3 className="font-display text-2xl text-black leading-snug">{w.title}</h3>
-                  <p className="text-black/70 mt-2 leading-snug">{w.technique}</p>
-                  {w.dimensions && (
-                    <p className="text-black/40 text-sm mt-1 tabular-nums">{w.dimensions}</p>
-                  )}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
+        <section className="max-w-5xl mx-auto px-6 mt-24 md:mt-36">
+          <h2 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-14 md:mb-20">
+            {labels.works}
+          </h2>
+          <WorkGallery
+            works={expo.works}
+            labels={{ close: labels.close, prev: labels.prev, next: labels.next }}
+          />
+        </section>
       )}
 
-      <div className="max-w-4xl mx-auto px-6 mt-16 text-center">
+      <div className="max-w-5xl mx-auto px-6 mt-24 md:mt-32 pt-10 border-t border-black/10">
         <Link
           href={backHref}
-          className="inline-flex items-center gap-2 text-[#0D9488] hover:text-[#0D9488]/70 transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-black/50 hover:text-black transition-colors"
         >
-          <ArrowLeft size={18} />
+          <ArrowLeft size={16} />
           {labels.back}
         </Link>
       </div>

@@ -264,17 +264,17 @@ export default function ObraPage() {
           </div>
 
           {/* Subsecciones: gente, paisaje, arquitectura */}
-          <div className="space-y-10">
+          <div className="space-y-16 md:space-y-20">
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Gente</h3>
+              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Gente</h3>
               <Gallery count={3} />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Paisaje</h3>
+              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Paisaje</h3>
               <ObraCarousel images={fotoPaisaje} />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Producto</h3>
+              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Producto</h3>
               <ObraCarousel images={fotoProducto} />
             </div>
           </div>

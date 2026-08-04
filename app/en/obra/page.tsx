@@ -264,17 +264,17 @@ export default function ObraEnPage() {
           </div>
 
           {/* Subsections: people, landscape, architecture */}
-          <div className="space-y-10">
+          <div className="space-y-16 md:space-y-20">
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">People</h3>
+              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">People</h3>
               <Gallery count={3} />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Landscape</h3>
+              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Landscape</h3>
               <ObraCarousel images={landscapePhotography} prevLabel="Previous" nextLabel="Next" closeLabel="Close" />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Product</h3>
+              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Product</h3>
               <ObraCarousel images={productPhotography} prevLabel="Previous" nextLabel="Next" closeLabel="Close" />
             </div>
           </div>

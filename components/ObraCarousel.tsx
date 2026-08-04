@@ -70,7 +70,7 @@ export default function ObraCarousel({
     <div className="relative">
       <div
         ref={scrollRef}
-        className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide scroll-smooth snap-x snap-mandatory"
+        className="flex gap-6 md:gap-8 overflow-x-auto pb-2 scrollbar-hide scroll-smooth snap-x snap-mandatory"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {images.map((img, i) => (
@@ -79,18 +79,18 @@ export default function ObraCarousel({
               type="button"
               onClick={() => setLightboxIndex(i)}
               aria-label={img.alt}
-              className="group relative block w-full aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 cursor-zoom-in"
+              className="group relative block w-full aspect-[4/5] overflow-hidden bg-[#F8F6F3] cursor-zoom-in"
             >
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
                 sizes="(max-width: 640px) 85vw, (max-width: 1024px) 48vw, 32vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </button>
             {img.caption && (
-              <p className="mt-2 text-right text-xs text-black/40 leading-snug whitespace-pre-line">
+              <p className="mt-3 text-right text-xs text-black/40 leading-relaxed whitespace-pre-line">
                 {img.caption}
               </p>
             )}
@@ -98,17 +98,17 @@ export default function ObraCarousel({
         ))}
       </div>
 
-      <div className="flex justify-end gap-2 mt-2">
+      <div className="flex justify-end gap-2 mt-6">
         <button
           onClick={() => scroll('left')}
-          className="p-2 rounded-full border border-[#B2F7EF] hover:bg-[#B2F7EF]/20 transition-all"
+          className="p-2 rounded-full border border-black/10 text-black/50 hover:border-black hover:text-black transition-all"
           aria-label={prevLabel}
         >
           <ChevronLeft size={20} />
         </button>
         <button
           onClick={() => scroll('right')}
-          className="p-2 rounded-full border border-[#B2F7EF] hover:bg-[#B2F7EF]/20 transition-all"
+          className="p-2 rounded-full border border-black/10 text-black/50 hover:border-black hover:text-black transition-all"
           aria-label={nextLabel}
         >
           <ChevronRight size={20} />
