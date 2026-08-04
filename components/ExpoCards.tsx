@@ -156,6 +156,24 @@ export default function ExpoCards({ items, labels = defaultLabels }: ExpoCardsPr
               <X size={22} />
             </button>
 
+            {/* Imagen principal de la exposición */}
+            {expo.cover && (
+              <button
+                type="button"
+                onClick={() => setZoom(0)}
+                className="relative block w-full aspect-[16/9] bg-gray-100 overflow-hidden rounded-t-3xl cursor-zoom-in group"
+              >
+                <Image
+                  src={expo.cover}
+                  alt={expo.coverAlt ?? expo.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 900px"
+                  priority
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </button>
+            )}
+
             <div className="p-8 md:p-10">
               <p className="text-xs text-[#0D9488] uppercase tracking-[0.2em] mb-3">{expo.date}</p>
               <h3 className="font-display text-3xl md:text-4xl text-black mb-1 leading-tight">
@@ -170,69 +188,72 @@ export default function ExpoCards({ items, labels = defaultLabels }: ExpoCardsPr
               </div>
 
               {expo.works && expo.works.length > 0 && (
-                <div className="space-y-8 border-t border-black/10 pt-8">
+                <div className="space-y-14 border-t border-black/10 pt-10">
                   {expo.works.map((w) => {
                     const workIdx = w.image ? photos.findIndex((ph) => ph.src === w.image) : -1
                     const refIdx = w.reference ? photos.findIndex((ph) => ph.src === w.reference) : -1
                     return (
-                      <div key={w.title} className="grid sm:grid-cols-[1.4fr_1fr] gap-5 items-start">
-                        {/* Cuadro */}
-                        <div>
-                          {w.image ? (
-                            <button
-                              type="button"
-                              onClick={() => workIdx >= 0 && setZoom(workIdx)}
-                              className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-100 cursor-zoom-in group block"
-                            >
-                              <Image
-                                src={w.image}
-                                alt={`${w.title} — ${w.technique}`}
-                                fill
-                                sizes="(max-width: 640px) 100vw, 55vw"
-                                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                              />
-                            </button>
-                          ) : (
-                            <div className="w-full aspect-[4/3] rounded-xl bg-gradient-to-br from-[#B2F7EF]/30 to-[#F0F7F6] flex flex-col items-center justify-center text-black/30">
-                              <ImageIcon size={24} strokeWidth={1.5} />
-                              <span className="text-[11px] mt-2 uppercase tracking-wider">{labels.soon}</span>
-                            </div>
-                          )}
-                          <h5 className="text-lg text-black mt-3 leading-snug">{w.title}</h5>
-                          <p className="text-black/70 text-sm mt-1 leading-snug">{w.technique}</p>
+                      <figure key={w.title} className="text-center">
+                        {/* La obra: protagonista */}
+                        {w.image ? (
+                          <button
+                            type="button"
+                            onClick={() => workIdx >= 0 && setZoom(workIdx)}
+                            className="relative block w-full max-w-2xl mx-auto rounded-xl overflow-hidden bg-gray-100 cursor-zoom-in group"
+                            style={{ aspectRatio: '4 / 3' }}
+                          >
+                            <Image
+                              src={w.image}
+                              alt={`${w.title} — ${w.technique}`}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 672px"
+                              className="object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                            />
+                          </button>
+                        ) : (
+                          <div className="w-full max-w-2xl mx-auto aspect-[4/3] rounded-xl bg-gradient-to-br from-[#B2F7EF]/30 to-[#F0F7F6] flex flex-col items-center justify-center text-black/30">
+                            <ImageIcon size={24} strokeWidth={1.5} />
+                            <span className="text-[11px] mt-2 uppercase tracking-wider">{labels.soon}</span>
+                          </div>
+                        )}
+
+                        <figcaption className="mt-4">
+                          <h5 className="font-display text-xl text-black leading-snug">{w.title}</h5>
+                          <p className="text-black/70 text-sm mt-1 leading-snug max-w-xl mx-auto">
+                            {w.technique}
+                          </p>
                           {w.dimensions && (
                             <p className="text-black/40 text-sm mt-0.5 tabular-nums">{w.dimensions}</p>
                           )}
-                        </div>
+                        </figcaption>
 
-                        {/* Fotografía de referencia */}
-                        <div>
+                        {/* Fotografía de referencia: pequeña y centrada */}
+                        <div className="mt-5 flex flex-col items-center">
+                          <p className="text-[11px] text-[#0D9488] uppercase tracking-[0.18em] mb-2">
+                            {labels.reference}
+                          </p>
                           {w.reference ? (
                             <button
                               type="button"
                               onClick={() => refIdx >= 0 && setZoom(refIdx)}
-                              className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-gray-100 cursor-zoom-in group block"
+                              className="relative w-32 h-24 sm:w-40 sm:h-28 rounded-lg overflow-hidden bg-gray-100 cursor-zoom-in group ring-1 ring-black/10"
                             >
                               <Image
                                 src={w.reference}
-                                alt={`Fotografía de referencia — ${w.location}`}
+                                alt={`${labels.reference} — ${w.location}`}
                                 fill
-                                sizes="(max-width: 640px) 100vw, 35vw"
+                                sizes="160px"
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                               />
                             </button>
                           ) : (
-                            <div className="w-full aspect-[4/3] rounded-xl bg-gradient-to-br from-[#B2F7EF]/20 to-[#F0F7F6] flex flex-col items-center justify-center text-black/30">
-                              <ImageIcon size={22} strokeWidth={1.5} />
-                              <span className="text-[11px] mt-2 uppercase tracking-wider">{labels.soon}</span>
+                            <div className="w-32 h-24 sm:w-40 sm:h-28 rounded-lg bg-gradient-to-br from-[#B2F7EF]/20 to-[#F0F7F6] flex items-center justify-center text-black/30">
+                              <ImageIcon size={18} strokeWidth={1.5} />
                             </div>
                           )}
-                          <p className="text-[11px] text-[#0D9488] uppercase tracking-wider mt-3">
-                            {labels.reference}
-                          </p>
-                          <p className="text-black/70 text-sm leading-snug">{w.location}</p>
+                          <p className="text-black/60 text-sm mt-2">{w.location}</p>
                         </div>
-                      </div>
+                      </figure>
                     )
                   })}
                 </div>
