@@ -54,6 +54,61 @@ const fotoProducto = [
   { src: '/foto-producto-5.jpeg', alt: 'Fotografía de producto 5 — obra de Lou' },
 ]
 
+const fotoPaisaje = [
+  {
+    src: '/paisaje-1-cdmx.jpeg',
+    alt: 'Paisaje 1 — obra de Lou',
+    caption: 'Ciudad de México',
+  },
+  {
+    src: '/paisaje-2-progreso.png',
+    alt: 'Paisaje 2 — obra de Lou',
+    caption: 'Progreso',
+  },
+  {
+    src: '/paisaje-3-progreso.jpeg',
+    alt: 'Paisaje 3 — obra de Lou',
+    caption: 'Progreso',
+  },
+  {
+    src: '/paisaje-4-lucca.jpeg',
+    alt: 'Paisaje 4 — obra de Lou',
+    caption: 'Lucca, Italia',
+  },
+  {
+    src: '/paisaje-5-puebla.jpeg',
+    alt: 'Paisaje 5 — obra de Lou',
+    caption: 'Puebla',
+  },
+  {
+    src: '/paisaje-6-siena.jpeg',
+    alt: 'Paisaje 6 — obra de Lou',
+    caption: 'Siena, Italia',
+  },
+  {
+    src: '/paisaje-7-malta.jpeg',
+    alt: 'Paisaje 7 — obra de Lou',
+    caption: 'Malta',
+  },
+  {
+    src: '/paisaje-8-cielo.jpeg',
+    alt: 'Paisaje 8 — obra de Lou',
+  },
+]
+
+const tecnicasMixtas = [
+  {
+    src: '/mixta-vuela.jpeg',
+    alt: 'Vuela — técnica mixta',
+    caption: 'Vuela\nTécnica mixta · 60 × 90 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
+  },
+  {
+    src: '/mixta-old-brandy.jpeg',
+    alt: 'Old Brandy — técnica mixta',
+    caption: 'Old Brandy\nTécnica mixta · 90 × 60 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
+  },
+]
+
 const clientes = [
   'Studio Ceri',
   'Scatena Inox',
@@ -202,7 +257,7 @@ export default function ObraPage() {
             </div>
             <div>
               <h3 className="text-xl md:text-2xl text-black mb-4">Paisaje</h3>
-              <Gallery count={3} />
+              <ObraCarousel images={fotoPaisaje} />
             </div>
             <div>
               <h3 className="text-xl md:text-2xl text-black mb-4">Producto</h3>
@@ -268,7 +323,7 @@ export default function ObraPage() {
             integrarlos en la obra, esos fragmentos adquieren un nuevo significado y se convierten en
             parte de una historia distinta.
           </p>
-          <Gallery count={3} />
+          <ObraCarousel images={tecnicasMixtas} />
         </div>
       </section>
 

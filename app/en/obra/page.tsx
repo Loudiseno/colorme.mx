@@ -54,6 +54,61 @@ const productPhotography = [
   { src: '/foto-producto-5.jpeg', alt: 'Product photography 5 — artwork by Lou' },
 ]
 
+const landscapePhotography = [
+  {
+    src: '/paisaje-1-cdmx.jpeg',
+    alt: 'Landscape 1 — artwork by Lou',
+    caption: 'Mexico City',
+  },
+  {
+    src: '/paisaje-2-progreso.png',
+    alt: 'Landscape 2 — artwork by Lou',
+    caption: 'Progreso',
+  },
+  {
+    src: '/paisaje-3-progreso.jpeg',
+    alt: 'Landscape 3 — artwork by Lou',
+    caption: 'Progreso',
+  },
+  {
+    src: '/paisaje-4-lucca.jpeg',
+    alt: 'Landscape 4 — artwork by Lou',
+    caption: 'Lucca, Italy',
+  },
+  {
+    src: '/paisaje-5-puebla.jpeg',
+    alt: 'Landscape 5 — artwork by Lou',
+    caption: 'Puebla',
+  },
+  {
+    src: '/paisaje-6-siena.jpeg',
+    alt: 'Landscape 6 — artwork by Lou',
+    caption: 'Siena, Italy',
+  },
+  {
+    src: '/paisaje-7-malta.jpeg',
+    alt: 'Landscape 7 — artwork by Lou',
+    caption: 'Malta',
+  },
+  {
+    src: '/paisaje-8-cielo.jpeg',
+    alt: 'Landscape 8 — artwork by Lou',
+  },
+]
+
+const mixedMedia = [
+  {
+    src: '/mixta-vuela.jpeg',
+    alt: 'Vuela — mixed media',
+    caption: 'Vuela\nMixed media · 60 × 90 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
+  },
+  {
+    src: '/mixta-old-brandy.jpeg',
+    alt: 'Old Brandy — mixed media',
+    caption: 'Old Brandy\nMixed media · 90 × 60 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
+  },
+]
+
 const clients = [
   'Studio Ceri',
   'Scatena Inox',
@@ -202,7 +257,7 @@ export default function ObraEnPage() {
             </div>
             <div>
               <h3 className="text-xl md:text-2xl text-black mb-4">Landscape</h3>
-              <Gallery count={3} />
+              <ObraCarousel images={landscapePhotography} prevLabel="Previous" nextLabel="Next" closeLabel="Close" />
             </div>
             <div>
               <h3 className="text-xl md:text-2xl text-black mb-4">Product</h3>
@@ -267,7 +322,7 @@ export default function ObraEnPage() {
             into the work, these fragments take on new meaning and become part of a different
             story.
           </p>
-          <Gallery count={3} />
+          <ObraCarousel images={mixedMedia} prevLabel="Previous" nextLabel="Next" closeLabel="Close" />
         </div>
       </section>
 

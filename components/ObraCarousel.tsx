@@ -7,6 +7,8 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 export interface ObraImage {
   src: string
   alt: string
+  /** Pie de foto: lugar o ficha técnica, en gris y alineado a la derecha */
+  caption?: string
 }
 
 interface ObraCarouselProps {
@@ -72,21 +74,27 @@ export default function ObraCarousel({
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {images.map((img, i) => (
-          <button
-            key={img.src}
-            type="button"
-            onClick={() => setLightboxIndex(i)}
-            aria-label={img.alt}
-            className="group relative flex-shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 snap-start cursor-zoom-in"
-          >
-            <Image
-              src={img.src}
-              alt={img.alt}
-              fill
-              sizes="(max-width: 640px) 85vw, (max-width: 1024px) 48vw, 32vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </button>
+          <div key={img.src} className="flex-shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] snap-start">
+            <button
+              type="button"
+              onClick={() => setLightboxIndex(i)}
+              aria-label={img.alt}
+              className="group relative block w-full aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 cursor-zoom-in"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                sizes="(max-width: 640px) 85vw, (max-width: 1024px) 48vw, 32vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </button>
+            {img.caption && (
+              <p className="mt-2 text-right text-xs text-black/40 leading-snug whitespace-pre-line">
+                {img.caption}
+              </p>
+            )}
+          </div>
         ))}
       </div>
 
