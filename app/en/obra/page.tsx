@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
+import ExhibitionList from '@/components/ExhibitionList'
 
 export const metadata: Metadata = {
   title: 'Artwork | Photography, Painting & Mixed Media',
@@ -61,7 +62,20 @@ const clients = [
 ]
 
 const soloExhibitions = [
-  { title: 'Luces de existencia', place: 'Galería Aguafuerte, Mexico City', date: '2016' },
+  {
+    title: 'Luces de existencia',
+    place: 'Galería Aguafuerte, Mexico City',
+    date: '2016',
+    detail: {
+      image: '/expo-luces-de-existencia.jpg',
+      imageAlt: 'Lights of Existence — solo exhibition at Galería Aguafuerte, Mexico City',
+      statement: [
+        'This series grew out of the stir that colour in landscapes provokes in me. When you take them in, you carry away the image and the mood of the place.',
+        'Tones are the soul of places: they tell you stories, they are the evidence of what happens, they are reflections that create a whole.',
+        'The aim of this project is to reduce the places I have visited and photographed to their essence, through the abstraction of the colours perceived in that moment, to set their existence down on a canvas.',
+      ],
+    },
+  },
   { title: 'Reinterpretando', place: 'Restaurante Pizza Local, Mexico City', date: '2017' },
   { title: 'Memorias', place: 'Cafetería Healthy Nutrition, Mexico City', date: '2018' },
 ]
@@ -109,38 +123,6 @@ function Gallery({ count, ratio }: { count: number; ratio?: string }) {
     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
       {Array.from({ length: count }).map((_, i) => (
         <Placeholder key={i} ratio={ratio} />
-      ))}
-    </div>
-  )
-}
-
-// Minimal editorial row for exhibitions and awards
-function ExpoRow({ item }: { item: { title: string; place: string; date: string; note?: string } }) {
-  return (
-    <div className="group flex items-baseline justify-between gap-6 py-5 border-t border-black/10 transition-colors duration-300 hover:border-[#0D9488]">
-      <div className="min-w-0">
-        <p className="text-lg md:text-xl text-black leading-snug transition-colors duration-300 group-hover:text-[#0D9488]">
-          {item.title}
-        </p>
-        <p className="text-black/50 text-sm mt-1">{item.place}</p>
-        {item.note && <p className="text-black/40 text-sm italic mt-1">{item.note}</p>}
-      </div>
-      <span className="shrink-0 text-sm text-black/40 tabular-nums whitespace-nowrap tracking-wide">
-        {item.date}
-      </span>
-    </div>
-  )
-}
-
-function ExhibitionList({
-  items,
-}: {
-  items: { title: string; place: string; date: string; note?: string }[]
-}) {
-  return (
-    <div className="border-b border-black/10">
-      {items.map((e, i) => (
-        <ExpoRow key={i} item={e} />
       ))}
     </div>
   )
@@ -332,7 +314,7 @@ export default function ObraEnPage() {
                 <div className="mb-8 max-w-xs">
                   <Placeholder ratio="aspect-[4/5]" />
                 </div>
-                <ExhibitionList items={soloExhibitions} />
+                <ExhibitionList items={soloExhibitions} closeLabel="Close" />
               </div>
             </div>
 
@@ -340,7 +322,7 @@ export default function ObraEnPage() {
             <div className="md:col-span-7">
               <h3 className="text-2xl md:text-3xl text-black mb-2">Group</h3>
               <p className="text-black/40 text-sm mb-6">Collective shows</p>
-              <ExhibitionList items={groupExhibitions} />
+              <ExhibitionList items={groupExhibitions} closeLabel="Close" />
             </div>
           </div>
         </div>
@@ -356,7 +338,7 @@ export default function ObraEnPage() {
             <h2 className="text-3xl md:text-4xl text-black">Awards</h2>
           </div>
           <div className="max-w-3xl">
-            <ExhibitionList items={awards} />
+            <ExhibitionList items={awards} closeLabel="Close" />
           </div>
         </div>
       </section>

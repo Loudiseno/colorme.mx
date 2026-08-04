@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
+import ExhibitionList from '@/components/ExhibitionList'
 
 export const metadata: Metadata = {
   title: 'Obra | Fotografía, pintura y técnicas mixtas',
@@ -61,7 +62,20 @@ const clientes = [
 ]
 
 const exposicionesIndividuales = [
-  { title: 'Luces de existencia', place: 'Galería Aguafuerte, CDMX', date: '2016' },
+  {
+    title: 'Luces de existencia',
+    place: 'Galería Aguafuerte, CDMX',
+    date: '2016',
+    detail: {
+      image: '/expo-luces-de-existencia.jpg',
+      imageAlt: 'Luces de existencia — exposición individual en Galería Aguafuerte, CDMX',
+      statement: [
+        'Esta serie surge a partir de la agitación que me provocan los colores en los paisajes. Cuando uno los percibe, se lleva consigo la imagen y el estado de ánimo del sitio.',
+        'Las tonalidades son el alma de los lugares: te cuentan historias, son la evidencia de lo que sucede, son reflejos que crean un todo.',
+        'La finalidad de este proyecto es reducir a su esencia los lugares que he visitado y fotografiado, por medio de la abstracción de los colores percibidos en ese momento, para plasmar en un lienzo su existencia.',
+      ],
+    },
+  },
   { title: 'Reinterpretando', place: 'Restaurante Pizza Local, CDMX', date: '2017' },
   { title: 'Memorias', place: 'Cafetería Healthy Nutrition, CDMX', date: '2018' },
 ]
@@ -109,38 +123,6 @@ function Gallery({ count, ratio }: { count: number; ratio?: string }) {
     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
       {Array.from({ length: count }).map((_, i) => (
         <Placeholder key={i} ratio={ratio} />
-      ))}
-    </div>
-  )
-}
-
-// Fila editorial minimalista para exposiciones y reconocimientos
-function ExpoRow({ item }: { item: { title: string; place: string; date: string; note?: string } }) {
-  return (
-    <div className="group flex items-baseline justify-between gap-6 py-5 border-t border-black/10 transition-colors duration-300 hover:border-[#0D9488]">
-      <div className="min-w-0">
-        <p className="text-lg md:text-xl text-black leading-snug transition-colors duration-300 group-hover:text-[#0D9488]">
-          {item.title}
-        </p>
-        <p className="text-black/50 text-sm mt-1">{item.place}</p>
-        {item.note && <p className="text-black/40 text-sm italic mt-1">{item.note}</p>}
-      </div>
-      <span className="shrink-0 text-sm text-black/40 tabular-nums whitespace-nowrap tracking-wide">
-        {item.date}
-      </span>
-    </div>
-  )
-}
-
-function ExhibitionList({
-  items,
-}: {
-  items: { title: string; place: string; date: string; note?: string }[]
-}) {
-  return (
-    <div className="border-b border-black/10">
-      {items.map((e, i) => (
-        <ExpoRow key={i} item={e} />
       ))}
     </div>
   )
