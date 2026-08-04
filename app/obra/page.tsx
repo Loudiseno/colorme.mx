@@ -79,6 +79,7 @@ const exposicionesIndividuales = [
         title: 'Ventana Azul',
         location: 'Gozo (Malta)',
         technique: 'Técnica mixta sobre MDF en periódico «L-Orizzont» de la República de Malta, 2015',
+        dimensions: '86 × 66 cm',
         image: '/luces-ventana-azul.jpeg',
         reference: '/luces-ventana-azul-ref.png',
       },
