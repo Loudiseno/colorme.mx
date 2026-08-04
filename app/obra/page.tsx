@@ -389,10 +389,6 @@ export default function ObraPage() {
               <Gallery count={3} />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl text-black mb-4">Arquitectura</h3>
-              <Gallery count={3} />
-            </div>
-            <div>
               <h3 className="text-xl md:text-2xl text-black mb-4">Producto</h3>
               <ObraCarousel images={fotoProducto} />
             </div>
@@ -476,7 +472,7 @@ export default function ObraPage() {
           {/* Individuales — tarjetas con portada */}
           <div className="mb-16">
             <h3 className="text-2xl md:text-3xl text-black mb-2">Individuales</h3>
-            <p className="text-black/40 text-sm mb-8">Muestras en solitario</p>
+            <p className="text-black/40 text-sm mb-8">Exposiciones individuales</p>
             <ExpoCards items={exposicionesIndividuales} />
           </div>
 

@@ -12,7 +12,7 @@ const navEs = [
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Obra', href: '/obra' },
   { name: 'Productos', href: '/tienda' },
-  { name: 'Exploraciones creativas', href: '/hoja-de-trabajo' },
+  { name: 'Creatividad', href: '/hoja-de-trabajo' },
   { name: 'Blog', href: '/blog' },
 ]
 

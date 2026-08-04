@@ -108,7 +108,7 @@ export default function ExpoCards({ items, labels = defaultLabels }: ExpoCardsPr
             onClick={() => setOpenIndex(i)}
             className="group text-left rounded-2xl overflow-hidden border border-[#B2F7EF] hover:border-black transition-all bg-white flex flex-col"
           >
-            <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden">
+            <div className="relative w-full shrink-0 aspect-[4/3] bg-gray-100 overflow-hidden">
               {item.cover ? (
                 <Image
                   src={item.cover}
