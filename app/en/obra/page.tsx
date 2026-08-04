@@ -320,12 +320,12 @@ export default function ObraEnPage() {
             <h2 className="text-3xl md:text-4xl text-black">Painting</h2>
           </div>
           <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
-            Painting is the space where I can step away from reality and let colour, shape, and
-            texture speak for themselves. I work mainly with watercolour, oil, and acrylic,
-            developing abstract compositions born from emotion rather than representation. I am
-            drawn to the freedom of the creative process — experimenting with layers, materials,
-            and contrasts — letting each piece find its own path while colour becomes the main
-            protagonist.
+            Painting is the space where I explore a different way of understanding and
+            expressing the human experience. I work mainly with watercolour, oil and acrylic,
+            developing compositions in which colour, shape and texture become a language of their
+            own. I am drawn to the freedom of the creative process — experimenting with layers,
+            materials and contrasts — letting each piece find its own path. Through colour and form
+            I seek to express my way of experiencing, feeling and interpreting the world.
           </p>
           <Gallery count={4} />
         </div>

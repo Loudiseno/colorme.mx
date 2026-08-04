@@ -320,12 +320,13 @@ export default function ObraPage() {
             <h2 className="text-3xl md:text-4xl text-black">Pintura</h2>
           </div>
           <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
-            La pintura es el espacio donde puedo alejarme de la realidad y dejar que el color, las
-            formas y las texturas hablen por sí mismas. Trabajo principalmente con acuarela, óleo y
-            acrílico, desarrollando composiciones abstractas que nacen de la emoción más que de la
-            representación. Me interesa la libertad del proceso creativo, experimentar con las capas,
-            los materiales y los contrastes, permitiendo que cada obra encuentre su propio camino
-            mientras el color se convierte en el principal protagonista.
+            La pintura es el espacio donde exploro una manera distinta de comprender y
+            expresar la experiencia humana. Trabajo principalmente con acuarela, óleo y acrílico,
+            desarrollando composiciones en las que el color, las formas y las texturas se convierten
+            en un lenguaje propio. Me interesa la libertad del proceso creativo, experimentar con las
+            capas, los materiales y los contrastes, permitiendo que cada obra encuentre su propio
+            camino. A través del color y las formas busco expresar mi manera de experimentar, sentir
+            e interpretar el mundo.
           </p>
           <Gallery count={4} />
         </div>
