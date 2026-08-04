@@ -4,6 +4,7 @@ import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
 import ExhibitionList from '@/components/ExhibitionList'
+import ExpoCards from '@/components/ExpoCards'
 
 export const metadata: Metadata = {
   title: 'Artwork | Photography, Painting & Mixed Media',
@@ -66,40 +67,33 @@ const soloExhibitions = [
     title: 'Luces de existencia',
     place: 'Galería Aguafuerte, Mexico City',
     date: '2016',
-    detail: {
-      image: '/expo-luces-de-existencia.jpg',
-      imageAlt: 'Lights of Existence — solo exhibition at Galería Aguafuerte, Mexico City',
-      statement: [
-        'This series grew out of the stir that colour in landscapes provokes in me. When you take them in, you carry away the image and the mood of the place.',
-        'Tones are the soul of places: they tell you stories, they are the evidence of what happens, they are reflections that create a whole.',
-        'The aim of this project is to reduce the places I have visited and photographed to their essence, through the abstraction of the colours perceived in that moment, to set their existence down on a canvas.',
-      ],
-    },
+    cover: '/expo-luces-de-existencia.jpg',
+    coverAlt: 'Luces de existencia — solo exhibition at Galería Aguafuerte, Mexico City',
+    statement: [
+      'This series grew out of the stir that colour in landscapes provokes in me.',
+      'Tones are the soul of places: they hold their spirit, they tell you stories, they are the living trace of what happens there, reflections that come together to create a whole.',
+      'The aim of this project is to reduce the places I have visited and photographed to their essence, through the abstraction of the colours perceived, to set their existence down on a canvas.',
+    ],
   },
   {
     title: 'Reinterpretando',
     place: 'Restaurante Pizza Local, Mexico City',
     date: '2017',
-    detail: {
-      statement: [
-        'We become the places we visit, the food we taste, the people we love. This show speaks of some of those moments: it is a physical representation of pieces of my memory.',
-        'The works allude to instants, landscapes, people and objects that inspired me, that stopped me to be admired and remembered. I take a kind of mental photograph and translate it into the colours I assigned to it, with the magic I felt, so I can live those moments again countless times.',
-        'The exhibition brings together my three great passions: travel, photography and painting. The paintings reduce places to their essence through the abstraction of colour; the photographs play with the contrast of black and white, intervened with acrylics, holo or watercolour.',
-        'Both outcomes emphasise how important it is to understand the nuances of our existence, the lights and shadows that together created a work of art we call life. They invite you to see through my eyes, understanding the value in the fact that every person has a unique and valid way of interpreting the universe.',
-      ],
-    },
+    statement: [
+      'We become the places we visit, the food we taste, the people we love. This show speaks of some of those moments: it is a physical representation of pieces of my memory.',
+      'The works allude to instants, landscapes, people and objects that inspired me, that stopped me to be admired and remembered. I take a kind of mental photograph and translate it into the colours I assigned to it, with the magic I felt, so I can live those moments again countless times.',
+      'Both outcomes emphasise how important it is to understand the nuances of our existence, the lights and shadows that together created a work of art we call life. They invite you to see through my eyes, understanding the value in the fact that every person has a unique and valid way of interpreting the universe.',
+    ],
   },
   {
     title: 'Memorias',
     place: 'Cafetería Healthy Nutrition, Mexico City',
     date: '2018',
-    detail: {
-      statement: [
-        'Memory. 1. n. The capacity to recall facts or experiences from the past.',
-        'And in the end that is what we are: what we taste, live, feel, enjoy, come to know and experience. Those instants that stay in our mind forever, the memories that shape our path.',
-        'This exhibition gathers some of my memories, rendered through different techniques: photography, painting, and photography intervened with paint. It is my work —my aura— that speaks better than my words: it is the inside of my soul.',
-      ],
-    },
+    statement: [
+      'Memory. 1. n. The capacity to recall facts or experiences from the past.',
+      'And in the end that is what we are: what we taste, live, feel, enjoy, come to know and experience. Those instants that stay in our mind forever, the memories that shape our path.',
+      'This exhibition gathers some of my memories, rendered through different techniques: photography, painting, and photography intervened with paint. It is my work —my aura— that speaks better than my words: it is the inside of my soul.',
+    ],
   },
 ]
 
@@ -328,25 +322,21 @@ export default function ObraEnPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-12 gap-x-14 gap-y-16">
-            {/* Solo */}
-            <div className="md:col-span-5">
-              <div className="md:sticky md:top-28">
-                <h3 className="text-2xl md:text-3xl text-black mb-2">Solo</h3>
-                <p className="text-black/40 text-sm mb-6">Individual shows</p>
-                <div className="mb-8 max-w-xs">
-                  <Placeholder ratio="aspect-[4/5]" />
-                </div>
-                <ExhibitionList items={soloExhibitions} closeLabel="Close" />
-              </div>
-            </div>
+          {/* Solo — cards with cover */}
+          <div className="mb-16">
+            <h3 className="text-2xl md:text-3xl text-black mb-2">Solo</h3>
+            <p className="text-black/40 text-sm mb-8">Individual shows</p>
+            <ExpoCards
+              items={soloExhibitions}
+              labels={{ view: 'View exhibition', close: 'Close', prev: 'Previous', next: 'Next', soon: 'Photo coming soon' }}
+            />
+          </div>
 
-            {/* Group */}
-            <div className="md:col-span-7">
-              <h3 className="text-2xl md:text-3xl text-black mb-2">Group</h3>
-              <p className="text-black/40 text-sm mb-6">Collective shows</p>
-              <ExhibitionList items={groupExhibitions} closeLabel="Close" />
-            </div>
+          {/* Group */}
+          <div>
+            <h3 className="text-2xl md:text-3xl text-black mb-2">Group</h3>
+            <p className="text-black/40 text-sm mb-6">Collective shows</p>
+            <ExhibitionList items={groupExhibitions} closeLabel="Close" />
           </div>
         </div>
       </section>

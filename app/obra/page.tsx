@@ -4,6 +4,7 @@ import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
 import ExhibitionList from '@/components/ExhibitionList'
+import ExpoCards from '@/components/ExpoCards'
 
 export const metadata: Metadata = {
   title: 'Obra | Fotografía, pintura y técnicas mixtas',
@@ -66,40 +67,33 @@ const exposicionesIndividuales = [
     title: 'Luces de existencia',
     place: 'Galería Aguafuerte, CDMX',
     date: '2016',
-    detail: {
-      image: '/expo-luces-de-existencia.jpg',
-      imageAlt: 'Luces de existencia — exposición individual en Galería Aguafuerte, CDMX',
-      statement: [
-        'Esta serie surge a partir de la agitación que me provocan los colores en los paisajes. Cuando uno los percibe, se lleva consigo la imagen y el estado de ánimo del sitio.',
-        'Las tonalidades son el alma de los lugares: te cuentan historias, son la evidencia de lo que sucede, son reflejos que crean un todo.',
-        'La finalidad de este proyecto es reducir a su esencia los lugares que he visitado y fotografiado, por medio de la abstracción de los colores percibidos en ese momento, para plasmar en un lienzo su existencia.',
-      ],
-    },
+    cover: '/expo-luces-de-existencia.jpg',
+    coverAlt: 'Luces de existencia — exposición individual en Galería Aguafuerte, CDMX',
+    statement: [
+      'Esta serie surge a partir de la agitación que me provocan los colores en los paisajes.',
+      'Las tonalidades son el alma de los lugares: guardan su espíritu, te cuentan historias, son la huella viva de lo que ahí sucede, reflejos que se unen para crear un todo.',
+      'La finalidad de este proyecto es reducir a su esencia los lugares que he visitado y fotografiado, por medio de la abstracción de los colores percibidos, para plasmar en un lienzo su existencia.',
+    ],
   },
   {
     title: 'Reinterpretando',
     place: 'Restaurante Pizza Local, CDMX',
     date: '2017',
-    detail: {
-      statement: [
-        'Nos convertimos en los lugares que visitamos, la comida que probamos, las personas que amamos. Esta muestra habla de algunos de esos momentos: es una representación física de piezas de mi memoria.',
-        'Las obras aluden a instantes, paisajes, personas y objetos que me inspiraron, que me detuvieron para ser admirados y recordados. Hago una especie de fotografía mental y la traduzco a los colores que yo les asigné, con la magia que sentí, para volver a vivirlos un sinfín de veces.',
-        'La exposición reúne mis tres grandes pasiones: los viajes, la fotografía y la pintura. Las obras pictóricas reducen los lugares a su esencia por medio de la abstracción de colores; las fotográficas juegan con el contraste del blanco y negro, intervenido con acrílicos, holo o acuarela.',
-        'Ambos resultados enfatizan la importancia de comprender los matices de nuestra existencia, los claros y oscuros que en conjunto crearon una obra de arte que llamamos vida. Te invitan a ver a través de mis ojos, comprendiendo el valor de que cada persona tiene una forma única y válida de interpretar el universo.',
-      ],
-    },
+    statement: [
+      'Nos convertimos en los lugares que visitamos, la comida que probamos, las personas que amamos. Esta muestra habla de algunos de esos momentos: es una representación física de piezas de mi memoria.',
+      'Las obras aluden a instantes, paisajes, personas y objetos que me inspiraron, que me detuvieron para ser admirados y recordados. Hago una especie de fotografía mental y la traduzco a los colores que yo les asigné, con la magia que sentí, para volver a vivirlos un sinfín de veces.',
+      'Ambos resultados enfatizan la importancia de comprender los matices de nuestra existencia, los claros y oscuros que en conjunto crearon una obra de arte que llamamos vida. Te invitan a ver a través de mis ojos, comprendiendo el valor de que cada persona tiene una forma única y válida de interpretar el universo.',
+    ],
   },
   {
     title: 'Memorias',
     place: 'Cafetería Healthy Nutrition, CDMX',
     date: '2018',
-    detail: {
-      statement: [
-        'Memoria. 1. f. Capacidad para recordar hechos o experiencias del pasado.',
-        'Y al final eso somos: lo que probamos, vivimos, sentimos, disfrutamos, conocemos y experimentamos. Esos instantes que se quedan para siempre en nuestra mente, los recuerdos que van formando nuestro camino.',
-        'La exposición recopila algunas de mis memorias representadas mediante diferentes técnicas: fotografía, pintura y fotografía intervenida con pintura. Es mi obra —mi aura— la que habla mejor que mis palabras: es el interior de mi alma.',
-      ],
-    },
+    statement: [
+      'Memoria. 1. f. Capacidad para recordar hechos o experiencias del pasado.',
+      'Y al final eso somos: lo que probamos, vivimos, sentimos, disfrutamos, conocemos y experimentamos. Esos instantes que se quedan para siempre en nuestra mente, los recuerdos que van formando nuestro camino.',
+      'La exposición recopila algunas de mis memorias representadas mediante diferentes técnicas: fotografía, pintura y fotografía intervenida con pintura. Es mi obra —mi aura— la que habla mejor que mis palabras: es el interior de mi alma.',
+    ],
   },
 ]
 
@@ -328,25 +322,18 @@ export default function ObraPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-12 gap-x-14 gap-y-16">
-            {/* Individuales */}
-            <div className="md:col-span-5">
-              <div className="md:sticky md:top-28">
-                <h3 className="text-2xl md:text-3xl text-black mb-2">Individuales</h3>
-                <p className="text-black/40 text-sm mb-6">Muestras en solitario</p>
-                <div className="mb-8 max-w-xs">
-                  <Placeholder ratio="aspect-[4/5]" />
-                </div>
-                <ExhibitionList items={exposicionesIndividuales} />
-              </div>
-            </div>
+          {/* Individuales — tarjetas con portada */}
+          <div className="mb-16">
+            <h3 className="text-2xl md:text-3xl text-black mb-2">Individuales</h3>
+            <p className="text-black/40 text-sm mb-8">Muestras en solitario</p>
+            <ExpoCards items={exposicionesIndividuales} />
+          </div>
 
-            {/* Colectivas */}
-            <div className="md:col-span-7">
-              <h3 className="text-2xl md:text-3xl text-black mb-2">Colectivas</h3>
-              <p className="text-black/40 text-sm mb-6">Muestras en conjunto</p>
-              <ExhibitionList items={exposicionesColectivas} />
-            </div>
+          {/* Colectivas */}
+          <div>
+            <h3 className="text-2xl md:text-3xl text-black mb-2">Colectivas</h3>
+            <p className="text-black/40 text-sm mb-6">Muestras en conjunto</p>
+            <ExhibitionList items={exposicionesColectivas} />
           </div>
         </div>
       </section>
