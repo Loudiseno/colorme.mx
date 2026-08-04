@@ -93,6 +93,7 @@ const fotoPaisaje = [
   {
     src: '/paisaje-8-cielo.jpeg',
     alt: 'Paisaje 8 — obra de Lou',
+    caption: 'Yucatán',
   },
 ]
 
@@ -106,6 +107,19 @@ const tecnicasMixtas = [
     src: '/mixta-old-brandy.jpeg',
     alt: 'Old Brandy — técnica mixta',
     caption: 'Old Brandy\nTécnica mixta · 90 × 60 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
+  },
+]
+
+const pinturas = [
+  {
+    src: '/pintura-azul.jpeg',
+    alt: 'Azul — acrílico',
+    caption: 'Azul\nAcrílico · 80 × 80 cm',
+  },
+  {
+    src: '/pintura-despues-de-ti.jpeg',
+    alt: 'Después de ti — acrílico',
+    caption: 'Después de ti\nAcrílico · 120 × 90 cm',
   },
 ]
 
@@ -303,7 +317,7 @@ export default function ObraPage() {
             camino. A través del color y las formas busco expresar mi manera de experimentar, sentir
             e interpretar el mundo.
           </p>
-          <Gallery count={4} />
+          <ObraCarousel images={pinturas} />
         </div>
       </section>
 

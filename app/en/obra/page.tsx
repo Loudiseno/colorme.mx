@@ -93,6 +93,7 @@ const landscapePhotography = [
   {
     src: '/paisaje-8-cielo.jpeg',
     alt: 'Landscape 8 — artwork by Lou',
+    caption: 'Yucatán',
   },
 ]
 
@@ -106,6 +107,19 @@ const mixedMedia = [
     src: '/mixta-old-brandy.jpeg',
     alt: 'Old Brandy — mixed media',
     caption: 'Old Brandy\nMixed media · 90 × 60 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
+  },
+]
+
+const paintings = [
+  {
+    src: '/pintura-azul.jpeg',
+    alt: 'Azul — acrylic',
+    caption: 'Azul\nAcrylic · 80 × 80 cm',
+  },
+  {
+    src: '/pintura-despues-de-ti.jpeg',
+    alt: 'Después de ti — acrylic',
+    caption: 'Después de ti\nAcrylic · 120 × 90 cm',
   },
 ]
 
@@ -302,7 +316,7 @@ export default function ObraEnPage() {
             materials and contrasts — letting each piece find its own path. Through colour and form
             I seek to express my way of experiencing, feeling and interpreting the world.
           </p>
-          <Gallery count={4} />
+          <ObraCarousel images={paintings} prevLabel="Previous" nextLabel="Next" closeLabel="Close" />
         </div>
       </section>
 
