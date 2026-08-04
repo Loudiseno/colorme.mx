@@ -4,28 +4,13 @@ import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, Instagram, Facebook, BookOpen, Youtube } from 'lucide-react'
-import { siteConfig } from '@/lib/seo'
-
-// Custom TikTok icon (not available in lucide)
-const TikTokIcon = ({ size = 18, strokeWidth = 1.5 }: { size?: number; strokeWidth?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
-    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
-  </svg>
-)
-
-// Custom WhatsApp icon
-const WhatsAppIcon = ({ size = 18, strokeWidth = 1.5 }: { size?: number; strokeWidth?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
-    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
-  </svg>
-)
+import { Menu, X } from 'lucide-react'
 
 const navEs = [
   { name: 'Arteterapia', href: '/arteterapia-mexico' },
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
+  { name: 'Obra', href: '/obra' },
   { name: 'Productos', href: '/tienda' },
   { name: 'Exploraciones creativas', href: '/hoja-de-trabajo' },
   { name: 'Blog', href: '/blog' },
@@ -35,17 +20,9 @@ const navEn = [
   { name: 'Art as Therapy', href: '/en/art-as-therapy' },
   { name: 'Grief Counseling', href: '/en/grief-counseling' },
   { name: 'About', href: '/en/about' },
+  { name: 'Artwork', href: '/en/obra' },
   { name: 'Shop', href: '/en/shop' },
   { name: 'Blog', href: '/en/blog' },
-]
-
-const socials = [
-  { name: 'Instagram', href: siteConfig.social.instagram, icon: Instagram },
-  { name: 'Facebook', href: siteConfig.social.facebook, icon: Facebook },
-  { name: 'TikTok', href: 'https://www.tiktok.com/@colorme_lab', icon: TikTokIcon },
-  { name: 'YouTube', href: 'https://www.youtube.com/channel/UCrrqPOjutqfK3G_t0f2lbjA', icon: Youtube },
-  { name: 'WhatsApp', href: 'https://wa.me/529992472678', icon: WhatsAppIcon },
-  { name: 'Amazon', href: siteConfig.book.amazonEs, icon: BookOpen },
 ]
 
 export default function Header() {
@@ -111,20 +88,8 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Social Icons + Language - Desktop */}
+        {/* Language - Desktop */}
         <div className="hidden md:flex items-center gap-3">
-          {socials.map((social) => (
-            <a
-              key={social.name}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black/70 hover:text-black transition-colors duration-300"
-              aria-label={social.name}
-            >
-              <social.icon size={18} strokeWidth={1.5} />
-            </a>
-          ))}
           <LangToggle className="ml-1" />
         </div>
 
@@ -160,23 +125,6 @@ export default function Header() {
               </Link>
             ))}
             <LangToggle />
-            <div className="flex items-center gap-6 mt-4">
-              {socials.map((social, index) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`text-black/70 hover:text-black transition-all duration-300 ${
-                    isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-                  }`}
-                  style={{ transitionDelay: `${(navigation.length + index) * 100}ms` }}
-                  aria-label={social.name}
-                >
-                  <social.icon size={24} strokeWidth={1.5} />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
       </nav>

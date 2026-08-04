@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   alternates: { canonical: '/en/shop' },
 }
 
-const PACKAGE_PRICE = 850
+const PACKAGE_PRICE = 900
 const PACKAGE_BOOK_JOURNAL_PAYHIP = 'https://payhip.com/b/br6z2'
 const whatsappPackage = `${siteConfig.whatsapp}?text=${encodeURIComponent(
-  'Hi Lou, I\'d like to book the package: "The Art of Dwelling in Your Grief" journal + 1 individual session ($850). Could you share the details?'
+  'Hi Lou, I\'d like to book the package: "The Art of Dwelling in Your Grief" journal + 1 individual session ($900). Could you share the details?'
 )}`
 
 const journalIncludes = [
