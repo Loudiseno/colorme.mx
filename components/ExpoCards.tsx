@@ -225,34 +225,33 @@ export default function ExpoCards({ items, labels = defaultLabels }: ExpoCardsPr
                           {w.dimensions && (
                             <p className="text-black/40 text-sm mt-0.5 tabular-nums">{w.dimensions}</p>
                           )}
+                          {!w.reference && (
+                            <p className="text-black/50 text-sm mt-1">{w.location}</p>
+                          )}
                         </figcaption>
 
                         {/* Fotografía de referencia: pequeña y centrada */}
+                        {w.reference && (
                         <div className="mt-5 flex flex-col items-center">
                           <p className="text-[11px] text-[#0D9488] uppercase tracking-[0.18em] mb-2">
                             {labels.reference}
                           </p>
-                          {w.reference ? (
-                            <button
-                              type="button"
-                              onClick={() => refIdx >= 0 && setZoom(refIdx)}
-                              className="relative w-32 h-24 sm:w-40 sm:h-28 rounded-lg overflow-hidden bg-gray-100 cursor-zoom-in group ring-1 ring-black/10"
-                            >
-                              <Image
-                                src={w.reference}
-                                alt={`${labels.reference} — ${w.location}`}
-                                fill
-                                sizes="160px"
-                                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                              />
-                            </button>
-                          ) : (
-                            <div className="w-32 h-24 sm:w-40 sm:h-28 rounded-lg bg-gradient-to-br from-[#B2F7EF]/20 to-[#F0F7F6] flex items-center justify-center text-black/30">
-                              <ImageIcon size={18} strokeWidth={1.5} />
-                            </div>
-                          )}
+                          <button
+                            type="button"
+                            onClick={() => refIdx >= 0 && setZoom(refIdx)}
+                            className="relative w-32 h-24 sm:w-40 sm:h-28 rounded-lg overflow-hidden bg-gray-100 cursor-zoom-in group ring-1 ring-black/10"
+                          >
+                            <Image
+                              src={w.reference}
+                              alt={`${labels.reference} — ${w.location}`}
+                              fill
+                              sizes="160px"
+                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                          </button>
                           <p className="text-black/60 text-sm mt-2">{w.location}</p>
                         </div>
+                        )}
                       </figure>
                     )
                   })}
