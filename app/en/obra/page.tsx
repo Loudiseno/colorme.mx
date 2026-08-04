@@ -198,6 +198,52 @@ const soloExhibitions = [
       'And in the end that is what we are: what we taste, live, feel, enjoy, come to know and experience. Those instants that stay in our mind forever, the memories that shape our path.',
       'This exhibition gathers some of my memories, rendered through different techniques: photography, painting, and photography intervened with paint. It is my work —my aura— that speaks better than my words: it is the inside of my soul.',
     ],
+    cover: '/memorias-expo.jpeg',
+    coverAlt: 'Memorias — solo exhibition',
+    works: [
+      {
+        title: 'La Habana, Cuba',
+        location: 'La Habana, Cuba',
+        technique: 'Photography',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-la-habana.jpeg',
+      },
+      {
+        title: 'Cuba',
+        location: 'Cuba',
+        technique: 'Photography',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-cuba.jpeg',
+      },
+      {
+        title: 'Gozo, Malta',
+        location: 'Gozo, Malta',
+        technique: 'Photography',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-gozo.jpeg',
+      },
+      {
+        title: 'Malta',
+        location: 'Malta',
+        technique: 'Photography',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-malta.jpeg',
+      },
+      {
+        title: 'Portofino, Italy',
+        location: 'Portofino, Italy',
+        technique: 'Photography',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-portofino.jpeg',
+      },
+      {
+        title: 'Mexico City',
+        location: 'Mexico City',
+        technique: 'Photography',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-cdmx.jpeg',
+      },
+    ],
   },
 ]
 

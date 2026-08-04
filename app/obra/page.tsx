@@ -198,6 +198,52 @@ const exposicionesIndividuales = [
       'Y al final eso somos: lo que probamos, vivimos, sentimos, disfrutamos, conocemos y experimentamos. Esos instantes que se quedan para siempre en nuestra mente, los recuerdos que van formando nuestro camino.',
       'La exposición recopila algunas de mis memorias representadas mediante diferentes técnicas: fotografía, pintura y fotografía intervenida con pintura. Es mi obra —mi aura— la que habla mejor que mis palabras: es el interior de mi alma.',
     ],
+    cover: '/memorias-expo.jpeg',
+    coverAlt: 'Memorias — exposición individual',
+    works: [
+      {
+        title: 'La Habana, Cuba',
+        location: 'La Habana, Cuba',
+        technique: 'Fotografía',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-la-habana.jpeg',
+      },
+      {
+        title: 'Cuba',
+        location: 'Cuba',
+        technique: 'Fotografía',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-cuba.jpeg',
+      },
+      {
+        title: 'Gozo, Malta',
+        location: 'Gozo, Malta',
+        technique: 'Fotografía',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-gozo.jpeg',
+      },
+      {
+        title: 'Malta',
+        location: 'Malta',
+        technique: 'Fotografía',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-malta.jpeg',
+      },
+      {
+        title: 'Portofino, Italia',
+        location: 'Portofino, Italia',
+        technique: 'Fotografía',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-portofino.jpeg',
+      },
+      {
+        title: 'Ciudad de México',
+        location: 'Ciudad de México',
+        technique: 'Fotografía',
+        dimensions: '90 × 60 cm',
+        image: '/memorias-cdmx.jpeg',
+      },
+    ],
   },
 ]
 
