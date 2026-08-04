@@ -1,8 +1,8 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 
 export interface ObraImage {
   src: string
@@ -14,15 +14,19 @@ interface ObraCarouselProps {
   /** Texto de accesibilidad para los botones (ES por defecto) */
   prevLabel?: string
   nextLabel?: string
+  closeLabel?: string
 }
 
-// Carrusel horizontal con flechas para las galerías de Obra.
+// Carrusel horizontal con flechas y visor a pantalla completa al hacer clic.
 export default function ObraCarousel({
   images,
   prevLabel = 'Anterior',
   nextLabel = 'Siguiente',
+  closeLabel = 'Cerrar',
 }: ObraCarouselProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+  const isOpen = lightboxIndex !== null
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -34,6 +38,30 @@ export default function ObraCarousel({
     }
   }
 
+  const showPrev = useCallback(() => {
+    setLightboxIndex((i) => (i === null ? i : (i - 1 + images.length) % images.length))
+  }, [images.length])
+
+  const showNext = useCallback(() => {
+    setLightboxIndex((i) => (i === null ? i : (i + 1) % images.length))
+  }, [images.length])
+
+  // Teclado: Esc cierra, flechas navegan
+  useEffect(() => {
+    if (!isOpen) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setLightboxIndex(null)
+      if (e.key === 'ArrowLeft') showPrev()
+      if (e.key === 'ArrowRight') showNext()
+    }
+    window.addEventListener('keydown', onKey)
+    document.body.style.overflow = 'hidden'
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      document.body.style.overflow = ''
+    }
+  }, [isOpen, showPrev, showNext])
+
   if (!images.length) return null
 
   return (
@@ -43,19 +71,22 @@ export default function ObraCarousel({
         className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide scroll-smooth snap-x snap-mandatory"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        {images.map((img) => (
-          <div
+        {images.map((img, i) => (
+          <button
             key={img.src}
-            className="relative flex-shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 snap-start"
+            type="button"
+            onClick={() => setLightboxIndex(i)}
+            aria-label={img.alt}
+            className="group relative flex-shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] aspect-[4/5] rounded-2xl overflow-hidden bg-gray-100 snap-start cursor-zoom-in"
           >
             <Image
               src={img.src}
               alt={img.alt}
               fill
               sizes="(max-width: 640px) 85vw, (max-width: 1024px) 48vw, 32vw"
-              className="object-cover"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
-          </div>
+          </button>
         ))}
       </div>
 
@@ -75,6 +106,62 @@ export default function ObraCarousel({
           <ChevronRight size={20} />
         </button>
       </div>
+
+      {/* Visor a pantalla completa */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 animate-fade-in"
+          onClick={() => setLightboxIndex(null)}
+        >
+          <button
+            onClick={() => setLightboxIndex(null)}
+            aria-label={closeLabel}
+            className="absolute top-4 right-4 z-10 p-2 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+          >
+            <X size={28} />
+          </button>
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation()
+              showPrev()
+            }}
+            aria-label={prevLabel}
+            className="absolute left-2 md:left-6 z-10 p-3 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+          >
+            <ChevronLeft size={32} />
+          </button>
+
+          <div
+            className="relative w-full h-full max-w-6xl max-h-[88vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={images[lightboxIndex].src}
+              alt={images[lightboxIndex].alt}
+              fill
+              sizes="100vw"
+              priority
+              className="object-contain"
+            />
+          </div>
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation()
+              showNext()
+            }}
+            aria-label={nextLabel}
+            className="absolute right-2 md:right-6 z-10 p-3 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+          >
+            <ChevronRight size={32} />
+          </button>
+
+          <span className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/60 text-sm tabular-nums">
+            {lightboxIndex + 1} / {images.length}
+          </span>
+        </div>
+      )}
     </div>
   )
 }

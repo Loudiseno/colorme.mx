@@ -29,17 +29,26 @@ export const metadata: Metadata = {
 
 // Intervened photography (numeric order 1-11)
 const intervenedPhotography = [
-  { src: '/foto intervenida 1.jpg', alt: 'Intervened photography 1 — artwork by Lou' },
-  { src: '/foto intervenida 2.jpg', alt: 'Intervened photography 2 — artwork by Lou' },
-  { src: '/foto intervenida 3.jpg', alt: 'Intervened photography 3 — artwork by Lou' },
-  { src: '/foto intervenida 4.jpg', alt: 'Intervened photography 4 — artwork by Lou' },
-  { src: '/foto intervenida 5.jpg', alt: 'Intervened photography 5 — artwork by Lou' },
-  { src: '/foto intervenida 6.jpg', alt: 'Intervened photography 6 — artwork by Lou' },
-  { src: '/foto intervenida 7.jpg', alt: 'Intervened photography 7 — artwork by Lou' },
-  { src: '/foto intervenida 8.jpg', alt: 'Intervened photography 8 — artwork by Lou' },
-  { src: '/foto intervenida 9.jpg', alt: 'Intervened photography 9 — artwork by Lou' },
-  { src: '/foto intervenida 10.jpg', alt: 'Intervened photography 10 — artwork by Lou' },
-  { src: '/foto intervenida 11.jpg', alt: 'Intervened photography 11 — artwork by Lou' },
+  { src: '/foto-intervenida-1.jpg', alt: 'Intervened photography 1 — artwork by Lou' },
+  { src: '/foto-intervenida-2.jpg', alt: 'Intervened photography 2 — artwork by Lou' },
+  { src: '/foto-intervenida-3.jpg', alt: 'Intervened photography 3 — artwork by Lou' },
+  { src: '/foto-intervenida-4.jpg', alt: 'Intervened photography 4 — artwork by Lou' },
+  { src: '/foto-intervenida-5.jpg', alt: 'Intervened photography 5 — artwork by Lou' },
+  { src: '/foto-intervenida-6.jpg', alt: 'Intervened photography 6 — artwork by Lou' },
+  { src: '/foto-intervenida-7.jpg', alt: 'Intervened photography 7 — artwork by Lou' },
+  { src: '/foto-intervenida-8.jpg', alt: 'Intervened photography 8 — artwork by Lou' },
+  { src: '/foto-intervenida-9.jpg', alt: 'Intervened photography 9 — artwork by Lou' },
+  { src: '/foto-intervenida-10.jpg', alt: 'Intervened photography 10 — artwork by Lou' },
+  { src: '/foto-intervenida-11.jpg', alt: 'Intervened photography 11 — artwork by Lou' },
+]
+
+// Product photography (numeric order 1-5)
+const productPhotography = [
+  { src: '/foto-producto-1.jpeg', alt: 'Product photography 1 — artwork by Lou' },
+  { src: '/foto-producto-2.jpeg', alt: 'Product photography 2 — artwork by Lou' },
+  { src: '/foto-producto-3.jpeg', alt: 'Product photography 3 — artwork by Lou' },
+  { src: '/foto-producto-4.jpeg', alt: 'Product photography 4 — artwork by Lou' },
+  { src: '/foto-producto-5.jpeg', alt: 'Product photography 5 — artwork by Lou' },
 ]
 
 const clients = [
@@ -233,6 +242,10 @@ export default function ObraEnPage() {
             <div>
               <h3 className="text-xl md:text-2xl text-black mb-4">Architecture</h3>
               <Gallery count={3} />
+            </div>
+            <div>
+              <h3 className="text-xl md:text-2xl text-black mb-4">Product</h3>
+              <ObraCarousel images={productPhotography} prevLabel="Previous" nextLabel="Next" closeLabel="Close" />
             </div>
           </div>
         </div>

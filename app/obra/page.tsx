@@ -29,17 +29,26 @@ export const metadata: Metadata = {
 
 // Fotografía intervenida (orden numérico 1-11)
 const fotoIntervenida = [
-  { src: '/foto intervenida 1.jpg', alt: 'Fotografía intervenida 1 — obra de Lou' },
-  { src: '/foto intervenida 2.jpg', alt: 'Fotografía intervenida 2 — obra de Lou' },
-  { src: '/foto intervenida 3.jpg', alt: 'Fotografía intervenida 3 — obra de Lou' },
-  { src: '/foto intervenida 4.jpg', alt: 'Fotografía intervenida 4 — obra de Lou' },
-  { src: '/foto intervenida 5.jpg', alt: 'Fotografía intervenida 5 — obra de Lou' },
-  { src: '/foto intervenida 6.jpg', alt: 'Fotografía intervenida 6 — obra de Lou' },
-  { src: '/foto intervenida 7.jpg', alt: 'Fotografía intervenida 7 — obra de Lou' },
-  { src: '/foto intervenida 8.jpg', alt: 'Fotografía intervenida 8 — obra de Lou' },
-  { src: '/foto intervenida 9.jpg', alt: 'Fotografía intervenida 9 — obra de Lou' },
-  { src: '/foto intervenida 10.jpg', alt: 'Fotografía intervenida 10 — obra de Lou' },
-  { src: '/foto intervenida 11.jpg', alt: 'Fotografía intervenida 11 — obra de Lou' },
+  { src: '/foto-intervenida-1.jpg', alt: 'Fotografía intervenida 1 — obra de Lou' },
+  { src: '/foto-intervenida-2.jpg', alt: 'Fotografía intervenida 2 — obra de Lou' },
+  { src: '/foto-intervenida-3.jpg', alt: 'Fotografía intervenida 3 — obra de Lou' },
+  { src: '/foto-intervenida-4.jpg', alt: 'Fotografía intervenida 4 — obra de Lou' },
+  { src: '/foto-intervenida-5.jpg', alt: 'Fotografía intervenida 5 — obra de Lou' },
+  { src: '/foto-intervenida-6.jpg', alt: 'Fotografía intervenida 6 — obra de Lou' },
+  { src: '/foto-intervenida-7.jpg', alt: 'Fotografía intervenida 7 — obra de Lou' },
+  { src: '/foto-intervenida-8.jpg', alt: 'Fotografía intervenida 8 — obra de Lou' },
+  { src: '/foto-intervenida-9.jpg', alt: 'Fotografía intervenida 9 — obra de Lou' },
+  { src: '/foto-intervenida-10.jpg', alt: 'Fotografía intervenida 10 — obra de Lou' },
+  { src: '/foto-intervenida-11.jpg', alt: 'Fotografía intervenida 11 — obra de Lou' },
+]
+
+// Fotografía de producto (orden numérico 1-5)
+const fotoProducto = [
+  { src: '/foto-producto-1.jpeg', alt: 'Fotografía de producto 1 — obra de Lou' },
+  { src: '/foto-producto-2.jpeg', alt: 'Fotografía de producto 2 — obra de Lou' },
+  { src: '/foto-producto-3.jpeg', alt: 'Fotografía de producto 3 — obra de Lou' },
+  { src: '/foto-producto-4.jpeg', alt: 'Fotografía de producto 4 — obra de Lou' },
+  { src: '/foto-producto-5.jpeg', alt: 'Fotografía de producto 5 — obra de Lou' },
 ]
 
 const clientes = [
@@ -233,6 +242,10 @@ export default function ObraPage() {
             <div>
               <h3 className="text-xl md:text-2xl text-black mb-4">Arquitectura</h3>
               <Gallery count={3} />
+            </div>
+            <div>
+              <h3 className="text-xl md:text-2xl text-black mb-4">Producto</h3>
+              <ObraCarousel images={fotoProducto} />
             </div>
           </div>
         </div>
