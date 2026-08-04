@@ -46,8 +46,8 @@ const intervenedPhotography = [
 // Product photography (numeric order 1-5)
 const productPhotography = [
   { src: '/foto-producto-1.jpeg', alt: 'Product photography 1 — artwork by Lou' },
-  { src: '/foto-producto-2.jpeg', alt: 'Product photography 2 — artwork by Lou' },
   { src: '/foto-producto-3.jpeg', alt: 'Product photography 3 — artwork by Lou' },
+  { src: '/foto-producto-2.jpeg', alt: 'Product photography 2 — artwork by Lou' },
   { src: '/foto-producto-4.jpeg', alt: 'Product photography 4 — artwork by Lou' },
   { src: '/foto-producto-5.jpeg', alt: 'Product photography 5 — artwork by Lou' },
 ]

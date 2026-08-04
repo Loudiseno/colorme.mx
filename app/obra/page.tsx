@@ -46,8 +46,8 @@ const fotoIntervenida = [
 // Fotografía de producto (orden numérico 1-5)
 const fotoProducto = [
   { src: '/foto-producto-1.jpeg', alt: 'Fotografía de producto 1 — obra de Lou' },
-  { src: '/foto-producto-2.jpeg', alt: 'Fotografía de producto 2 — obra de Lou' },
   { src: '/foto-producto-3.jpeg', alt: 'Fotografía de producto 3 — obra de Lou' },
+  { src: '/foto-producto-2.jpeg', alt: 'Fotografía de producto 2 — obra de Lou' },
   { src: '/foto-producto-4.jpeg', alt: 'Fotografía de producto 4 — obra de Lou' },
   { src: '/foto-producto-5.jpeg', alt: 'Fotografía de producto 5 — obra de Lou' },
 ]
