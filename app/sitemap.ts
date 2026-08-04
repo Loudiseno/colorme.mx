@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/seo'
 import { enArticles } from '@/lib/enBlog'
+import { allExpoSlugs } from '@/lib/exposiciones'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
@@ -177,6 +178,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  // Páginas de exposición (ES e inglés)
+  const expoRoutes: MetadataRoute.Sitemap = allExpoSlugs().flatMap((slug) => [
+    { url: `${baseUrl}/obra/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/en/obra/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+  ])
+
   // High-priority articles for indexing
   const highPrioritySlugs = new Set([
     'duelo-perdida', 'cuanto-dura-el-duelo', 'duelo-complicado', 'duelo-anticipado',
@@ -195,5 +202,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: highPrioritySlugs.has(slug) ? 0.8 : 0.7,
   }))
 
-  return [...coreRoutes, ...enRoutes, ...enBlogRoutes, ...blogRoutes]
+  return [...coreRoutes, ...enRoutes, ...enBlogRoutes, ...blogRoutes, ...expoRoutes]
 }

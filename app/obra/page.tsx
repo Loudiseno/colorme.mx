@@ -5,6 +5,7 @@ import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
 import ExhibitionList from '@/components/ExhibitionList'
 import ExpoCards from '@/components/ExpoCards'
+import { exposicionesEs } from '@/lib/exposiciones'
 
 export const metadata: Metadata = {
   title: 'Obra | Fotografía, pintura y técnicas mixtas',
@@ -60,191 +61,6 @@ const clientes = [
   'Quintonil',
   'Garum',
   'Hotel St. Regis',
-]
-
-const exposicionesIndividuales = [
-  {
-    title: 'Luces de existencia',
-    place: 'Galería Aguafuerte, CDMX',
-    date: '2016',
-    cover: '/expo-luces-de-existencia.jpg',
-    coverAlt: 'Luces de existencia — exposición individual en Galería Aguafuerte, CDMX',
-    statement: [
-      'Esta serie surge a partir de la agitación que me provocan los colores en los paisajes.',
-      'Las tonalidades son el alma de los lugares: guardan su espíritu, te cuentan historias, son la huella viva de lo que ahí sucede, reflejos que se unen para crear un todo.',
-      'La finalidad de este proyecto es reducir a su esencia los lugares que he visitado y fotografiado, por medio de la abstracción de los colores percibidos, para plasmar en un lienzo su existencia.',
-    ],
-    works: [
-      {
-        title: 'Ventana Azul',
-        location: 'Gozo (Malta)',
-        technique: 'Técnica mixta sobre MDF en periódico «L-Orizzont» de la República de Malta, 2015',
-        dimensions: '86 × 66 cm',
-        image: '/luces-ventana-azul.jpeg',
-        reference: '/luces-ventana-azul-ref.png',
-      },
-      {
-        title: 'Susurros',
-        location: 'Garfagnana, Toscana (Italia)',
-        technique: 'Técnica mixta sobre MDF en periódico «La Nazione», número especial de Centenario, Italia, 1959',
-        dimensions: '86 × 66 cm',
-        image: '/luces-susurros.jpeg',
-        reference: '/luces-susurros-ref.png',
-      },
-      {
-        title: 'Caminos',
-        location: 'Acapulco, Guerrero (México)',
-        technique: 'Técnica mixta sobre lienzo',
-        dimensions: '90 × 70.5 cm',
-        image: '/luces-caminos.jpeg',
-        reference: '/luces-caminos-ref.png',
-      },
-      {
-        title: 'La Tregua',
-        location: 'Puerto Escondido, Oaxaca (México)',
-        technique: 'Técnica mixta sobre MDF en periódico «Excélsior» de la Ciudad de México, 1990',
-        dimensions: '86 × 66 cm',
-        image: '/luces-la-tregua.jpeg',
-        reference: '/luces-la-tregua-ref.png',
-      },
-      {
-        title: 'Melancolía',
-        location: 'Mahahual, Quintana Roo (México)',
-        technique: 'Técnica mixta sobre lienzo',
-        dimensions: '90.5 × 70 cm',
-        image: '/luces-melancolia.jpeg',
-        reference: '/luces-melancolia-ref.png',
-      },
-      {
-        title: 'Ecos de ocaso',
-        location: 'Progreso, Mérida (México)',
-        technique: 'Técnica mixta sobre MDF',
-        dimensions: '59.5 × 50.5 cm',
-        image: '/luces-ecos-de-ocaso.jpeg',
-        reference: '/luces-ecos-de-ocaso-ref.png',
-      },
-      {
-        title: 'A lo alto',
-        location: 'Ciudad de México',
-        technique: 'Técnica mixta sobre lienzo',
-        dimensions: '90.5 × 70 cm',
-        image: '/luces-a-lo-alto.jpeg',
-        reference: '/luces-a-lo-alto-ref.png',
-      },
-    ],
-  },
-  {
-    title: 'Reinterpretando',
-    place: 'Restaurante Pizza Local, CDMX',
-    date: '2017',
-    statement: [
-      'Nos convertimos en los lugares que visitamos, la comida que probamos, las personas que amamos. Esta muestra habla de algunos de esos momentos: es una representación física de piezas de mi memoria.',
-      'Las obras aluden a instantes, paisajes, personas y objetos que me inspiraron, que me detuvieron para ser admirados y recordados. Hago una especie de fotografía mental y la traduzco a los colores que yo les asigné, con la magia que sentí, para volver a vivirlos un sinfín de veces.',
-      'Ambos resultados enfatizan la importancia de comprender los matices de nuestra existencia, los claros y oscuros que en conjunto crearon una obra de arte que llamamos vida. Te invitan a ver a través de mis ojos, comprendiendo el valor de que cada persona tiene una forma única y válida de interpretar el universo.',
-    ],
-    cover: '/reinterpretando-expo.jpeg',
-    coverAlt: 'Reinterpretando — exposición individual',
-    works: [
-      {
-        title: 'La Habana, Cuba',
-        location: 'La Habana, Cuba',
-        technique: 'Fotografía intervenida con acuarela y acrílico',
-        dimensions: '90 × 60 cm',
-        image: '/reinterpretando-cuba.jpeg',
-      },
-      {
-        title: 'Florencia, Italia',
-        location: 'Florencia, Italia',
-        technique: 'Fotografía intervenida con acuarela y acrílico',
-        dimensions: '90 × 60 cm',
-        image: '/reinterpretando-firenze.jpeg',
-      },
-      {
-        title: 'Lucca, Italia',
-        location: 'Lucca, Italia',
-        technique: 'Fotografía intervenida con acuarela y acrílico',
-        dimensions: '90 × 60 cm',
-        image: '/reinterpretando-lucca.jpeg',
-      },
-      {
-        title: 'Gozo, Malta',
-        location: 'Gozo, Malta',
-        technique: 'Fotografía intervenida con acuarela y acrílico',
-        dimensions: '90 × 60 cm',
-        image: '/reinterpretando-malta.jpeg',
-      },
-      {
-        title: 'Progreso, México',
-        location: 'Progreso, México',
-        technique: 'Fotografía intervenida con acuarela y acrílico',
-        dimensions: '90 × 60 cm',
-        image: '/reinterpretando-progreso.jpeg',
-      },
-      {
-        title: 'Valle de Bravo, México',
-        location: 'Valle de Bravo, México',
-        technique: 'Fotografía intervenida con acuarela y acrílico',
-        dimensions: '90 × 60 cm',
-        image: '/reinterpretando-valle-de-bravo.jpeg',
-      },
-    ],
-  },
-  {
-    title: 'Memorias',
-    place: 'Cafetería Healthy Nutrition, CDMX',
-    date: '2018',
-    statement: [
-      'Memoria. 1. f. Capacidad para recordar hechos o experiencias del pasado.',
-      'Y al final eso somos: lo que probamos, vivimos, sentimos, disfrutamos, conocemos y experimentamos. Esos instantes que se quedan para siempre en nuestra mente, los recuerdos que van formando nuestro camino.',
-      'La exposición recopila algunas de mis memorias representadas mediante diferentes técnicas: fotografía, pintura y fotografía intervenida con pintura. Es mi obra —mi aura— la que habla mejor que mis palabras: es el interior de mi alma.',
-    ],
-    cover: '/memorias-expo.jpeg',
-    coverAlt: 'Memorias — exposición individual',
-    works: [
-      {
-        title: 'La Habana, Cuba',
-        location: 'La Habana, Cuba',
-        technique: 'Fotografía',
-        dimensions: '90 × 60 cm',
-        image: '/memorias-la-habana.jpeg',
-      },
-      {
-        title: 'Cuba',
-        location: 'Cuba',
-        technique: 'Fotografía',
-        dimensions: '90 × 60 cm',
-        image: '/memorias-cuba.jpeg',
-      },
-      {
-        title: 'Gozo, Malta',
-        location: 'Gozo, Malta',
-        technique: 'Fotografía',
-        dimensions: '90 × 60 cm',
-        image: '/memorias-gozo.jpeg',
-      },
-      {
-        title: 'Malta',
-        location: 'Malta',
-        technique: 'Fotografía',
-        dimensions: '90 × 60 cm',
-        image: '/memorias-malta.jpeg',
-      },
-      {
-        title: 'Portofino, Italia',
-        location: 'Portofino, Italia',
-        technique: 'Fotografía',
-        dimensions: '90 × 60 cm',
-        image: '/memorias-portofino.jpeg',
-      },
-      {
-        title: 'Ciudad de México',
-        location: 'Ciudad de México',
-        technique: 'Fotografía',
-        dimensions: '90 × 60 cm',
-        image: '/memorias-cdmx.jpeg',
-      },
-    ],
-  },
 ]
 
 const exposicionesColectivas = [
@@ -473,7 +289,7 @@ export default function ObraPage() {
           <div className="mb-16">
             <h3 className="text-2xl md:text-3xl text-black mb-2">Individuales</h3>
             <p className="text-black/40 text-sm mb-8">Exposiciones individuales</p>
-            <ExpoCards items={exposicionesIndividuales} />
+            <ExpoCards items={exposicionesEs} basePath="/obra" />
           </div>
 
           {/* Colectivas */}
