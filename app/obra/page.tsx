@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
+import { Camera, Brush, Layers, Droplets, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
 import ExhibitionList from '@/components/ExhibitionList'
@@ -107,6 +107,34 @@ const tecnicasMixtas = [
     src: '/mixta-old-brandy.jpeg',
     alt: 'Old Brandy — técnica mixta',
     caption: 'Old Brandy\nTécnica mixta · 90 × 60 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
+  },
+]
+
+const acuarelas = [
+  {
+    src: '/acuarela-mariposa.jpg',
+    alt: 'Mariposa — acuarela',
+    caption: 'Mariposa\nAcuarela · 14.8 × 21 cm',
+  },
+  {
+    src: '/acuarela-flamingo.jpg',
+    alt: 'Flamingo — acuarela',
+    caption: 'Flamingo\nAcuarela · 14.8 × 21 cm',
+  },
+  {
+    src: '/acuarela-fe.jpg',
+    alt: 'Fe — acuarela',
+    caption: 'Fe\nAcuarela · Tamaño carta, 21.6 × 27.9 cm',
+  },
+  {
+    src: '/acuarela-ballena.jpg',
+    alt: 'Ballena — acuarela',
+    caption: 'Ballena\nAcuarela · 21 × 14.8 cm',
+  },
+  {
+    src: '/acuarela-llueve.jpg',
+    alt: 'Llueve — acuarela, ilustración del libro Indeleble',
+    caption: 'Llueve\nAcuarela\nIlustración del libro «Indeleble»',
   },
 ]
 
@@ -338,6 +366,24 @@ export default function ObraPage() {
             parte de una historia distinta.
           </p>
           <ObraCarousel images={tecnicasMixtas} />
+        </div>
+      </section>
+
+      {/* Acuarela */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
+              <Droplets size={20} strokeWidth={1.5} />
+            </span>
+            <h2 className="text-3xl md:text-4xl text-black">Acuarela</h2>
+          </div>
+          <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
+            La acuarela me obliga a soltar el control: el agua decide tanto como la mano. Trabajo
+            con lavados transparentes y línea de tinta, en formatos pequeños que se sienten cercanos,
+            casi de cuaderno. De aquí nacieron también las ilustraciones de mi libro «Indeleble».
+          </p>
+          <ObraCarousel images={acuarelas} />
         </div>
       </section>
 

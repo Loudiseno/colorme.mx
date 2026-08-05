@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
+import { Camera, Brush, Layers, Droplets, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
 import ExhibitionList from '@/components/ExhibitionList'
@@ -107,6 +107,34 @@ const mixedMedia = [
     src: '/mixta-old-brandy.jpeg',
     alt: 'Old Brandy — mixed media',
     caption: 'Old Brandy\nMixed media · 90 × 60 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
+  },
+]
+
+const watercolors = [
+  {
+    src: '/acuarela-mariposa.jpg',
+    alt: 'Mariposa — watercolor',
+    caption: 'Mariposa\nWatercolor · 14.8 × 21 cm',
+  },
+  {
+    src: '/acuarela-flamingo.jpg',
+    alt: 'Flamingo — watercolor',
+    caption: 'Flamingo\nWatercolor · 14.8 × 21 cm',
+  },
+  {
+    src: '/acuarela-fe.jpg',
+    alt: 'Fe — watercolor',
+    caption: 'Fe\nWatercolor · Letter size, 21.6 × 27.9 cm',
+  },
+  {
+    src: '/acuarela-ballena.jpg',
+    alt: 'Ballena — watercolor',
+    caption: 'Ballena\nWatercolor · 21 × 14.8 cm',
+  },
+  {
+    src: '/acuarela-llueve.jpg',
+    alt: 'Llueve — watercolor, illustration from the book Indeleble',
+    caption: 'Llueve\nWatercolor\nIllustration from the book «Indeleble»',
   },
 ]
 
@@ -337,6 +365,24 @@ export default function ObraEnPage() {
             story.
           </p>
           <ObraCarousel images={mixedMedia} prevLabel="Previous" nextLabel="Next" closeLabel="Close" />
+        </div>
+      </section>
+
+      {/* Watercolor */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
+              <Droplets size={20} strokeWidth={1.5} />
+            </span>
+            <h2 className="text-3xl md:text-4xl text-black">Watercolor</h2>
+          </div>
+          <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
+            Watercolor forces me to let go of control: the water decides as much as the hand. I work
+            with transparent washes and ink line, in small formats that feel close at hand, almost
+            like a sketchbook. The illustrations for my book &laquo;Indeleble&raquo; were born here too.
+          </p>
+          <ObraCarousel images={watercolors} prevLabel="Previous" nextLabel="Next" closeLabel="Close" />
         </div>
       </section>
 
