@@ -58,17 +58,17 @@ const fotoPaisaje = [
   {
     src: '/paisaje-1-cdmx.jpeg',
     alt: 'Paisaje 1 — obra de Lou',
-    caption: 'Ciudad de México',
+    caption: 'Ciudad de México, México',
   },
   {
     src: '/paisaje-2-progreso.png',
     alt: 'Paisaje 2 — obra de Lou',
-    caption: 'Progreso',
+    caption: 'Progreso, México',
   },
   {
     src: '/paisaje-3-progreso.jpeg',
     alt: 'Paisaje 3 — obra de Lou',
-    caption: 'Progreso',
+    caption: 'Progreso, México',
   },
   {
     src: '/paisaje-4-lucca.jpeg',
@@ -78,7 +78,7 @@ const fotoPaisaje = [
   {
     src: '/paisaje-5-puebla.jpeg',
     alt: 'Paisaje 5 — obra de Lou',
-    caption: 'Puebla',
+    caption: 'Puebla, México',
   },
   {
     src: '/paisaje-6-siena.jpeg',
@@ -93,7 +93,7 @@ const fotoPaisaje = [
   {
     src: '/paisaje-8-cielo.jpeg',
     alt: 'Paisaje 8 — obra de Lou',
-    caption: 'Yucatán',
+    caption: 'Yucatán, México',
   },
 ]
 

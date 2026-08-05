@@ -74,7 +74,7 @@ export default function ObraCarousel({
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {images.map((img, i) => (
-          <div key={img.src} className="flex-shrink-0 w-[85%] sm:w-[48%] lg:w-[32%] snap-start">
+          <div key={img.src} className="flex-shrink-0 w-[68%] sm:w-[38%] lg:w-[25%] snap-start">
             <button
               type="button"
               onClick={() => setLightboxIndex(i)}
@@ -85,7 +85,7 @@ export default function ObraCarousel({
                 src={img.src}
                 alt={img.alt}
                 fill
-                sizes="(max-width: 640px) 85vw, (max-width: 1024px) 48vw, 32vw"
+                sizes="(max-width: 640px) 68vw, (max-width: 1024px) 38vw, 25vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </button>

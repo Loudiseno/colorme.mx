@@ -7,12 +7,18 @@ import type { ExpoWork } from '@/lib/exposiciones'
 
 interface WorkGalleryProps {
   works: ExpoWork[]
-  labels?: { close: string; prev: string; next: string }
+  labels?: { close: string; prev: string; next: string; reference: string }
 }
 
-const defaults = { close: 'Cerrar', prev: 'Anterior', next: 'Siguiente' }
+const defaults = {
+  close: 'Cerrar',
+  prev: 'Anterior',
+  next: 'Siguiente',
+  reference: 'Fotografía de referencia',
+}
 
-// Galería de obras: imagen sin recorte, sin marcos, con ficha discreta.
+// Galería en cuadrícula: obras a un tamaño contenido, ficha discreta
+// y la fotografía de referencia junto a cada pieza.
 export default function WorkGallery({ works, labels = defaults }: WorkGalleryProps) {
   const shown = works.filter((w) => w.image)
   const [zoom, setZoom] = useState<number | null>(null)
@@ -45,9 +51,9 @@ export default function WorkGallery({ works, labels = defaults }: WorkGalleryPro
 
   return (
     <>
-      <div className="space-y-24 md:space-y-32">
+      <div className="grid sm:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-12 md:gap-y-16">
         {shown.map((w, i) => (
-          <figure key={w.image}>
+          <figure key={w.image} className="flex flex-col">
             <button
               type="button"
               onClick={() => setZoom(i)}
@@ -57,22 +63,39 @@ export default function WorkGallery({ works, labels = defaults }: WorkGalleryPro
               <Image
                 src={w.image!}
                 alt={`${w.title} — ${w.technique}`}
-                width={1600}
-                height={1200}
-                sizes="(max-width: 1024px) 100vw, 1024px"
+                width={1200}
+                height={900}
+                sizes="(max-width: 640px) 90vw, 440px"
                 className="w-full h-auto transition-opacity duration-300 group-hover:opacity-90"
               />
             </button>
 
             {/* Ficha: discreta, jerarquía clara, alineada a la derecha */}
-            <figcaption className="mt-4 text-right">
-              <p className="text-base text-black leading-snug">{w.title}</p>
+            <figcaption className="mt-3 text-right">
+              <p className="text-sm text-black leading-snug">{w.title}</p>
               <p className="text-xs text-black/40 mt-1 leading-relaxed">
                 {w.technique}
                 {w.dimensions ? ` · ${w.dimensions}` : ''}
               </p>
               {w.location && w.location !== w.title && (
                 <p className="text-xs text-black/40 leading-relaxed">{w.location}</p>
+              )}
+
+              {/* Fotografía de referencia: pequeña, al pie de la ficha */}
+              {w.reference && (
+                <div className="mt-4 flex justify-end items-center gap-3">
+                  <span className="text-[10px] uppercase tracking-[0.18em] text-black/30">
+                    {labels.reference}
+                  </span>
+                  <Image
+                    src={w.reference}
+                    alt={`${labels.reference}: ${w.location}`}
+                    width={320}
+                    height={240}
+                    sizes="88px"
+                    className="w-[88px] h-auto"
+                  />
+                </div>
               )}
             </figcaption>
           </figure>
@@ -110,7 +133,7 @@ export default function WorkGallery({ works, labels = defaults }: WorkGalleryPro
             className="relative w-full max-w-6xl flex flex-col items-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative w-full h-[80vh]">
+            <div className="relative w-full h-[74vh]">
               <Image
                 src={shown[zoom].image!}
                 alt={shown[zoom].title}
@@ -120,11 +143,29 @@ export default function WorkGallery({ works, labels = defaults }: WorkGalleryPro
                 className="object-contain"
               />
             </div>
-            <figcaption className="mt-4 text-center text-white/60 text-xs leading-relaxed">
-              <span className="text-white/90 text-sm">{shown[zoom].title}</span>
-              <br />
-              {shown[zoom].technique}
-              {shown[zoom].dimensions ? ` · ${shown[zoom].dimensions}` : ''}
+            <figcaption className="mt-4 flex items-center gap-4 text-center text-white/60 text-xs leading-relaxed">
+              {shown[zoom].reference && (
+                <Image
+                  src={shown[zoom].reference!}
+                  alt={`${labels.reference}: ${shown[zoom].location}`}
+                  width={320}
+                  height={240}
+                  sizes="72px"
+                  className="w-[72px] h-auto opacity-70"
+                />
+              )}
+              <span className="text-left">
+                <span className="text-white/90 text-sm">{shown[zoom].title}</span>
+                <br />
+                {shown[zoom].technique}
+                {shown[zoom].dimensions ? ` · ${shown[zoom].dimensions}` : ''}
+                {shown[zoom].location ? (
+                  <>
+                    <br />
+                    {shown[zoom].location}
+                  </>
+                ) : null}
+              </span>
             </figcaption>
           </figure>
 

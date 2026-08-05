@@ -13,14 +13,14 @@ interface ExpoPageProps {
     close: string
     prev: string
     next: string
+    reference: string
   }
 }
 
-// Página de exposición: la obra manda, el texto acompaña.
+// Exposición: portada moderada junto al texto, y las obras en cuadrícula.
 export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
   return (
-    <article className="pt-28 pb-24 md:pt-36 md:pb-32 bg-white">
-      {/* Volver */}
+    <article className="pt-28 pb-24 md:pt-36 md:pb-28 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <Link
           href={backHref}
@@ -29,60 +29,65 @@ export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
           <ArrowLeft size={16} />
           {labels.back}
         </Link>
-      </div>
 
-      {/* Título */}
-      <header className="max-w-5xl mx-auto px-6 mt-12 md:mt-16">
-        <p className="text-xs text-black/40 uppercase tracking-[0.25em] mb-5">{expo.date}</p>
-        <h1 className="text-5xl md:text-7xl text-black leading-[1.02] mb-5">{expo.title}</h1>
-        <p className="text-black/50">{expo.place}</p>
-      </header>
+        {/* Encabezado */}
+        <header className="mt-10 md:mt-14">
+          <p className="text-xs text-black/40 uppercase tracking-[0.25em] mb-4">{expo.date}</p>
+          <h1 className="text-4xl md:text-5xl text-black leading-tight mb-3">{expo.title}</h1>
+          <p className="text-black/50">{expo.place}</p>
+        </header>
 
-      {/* Portada a lo ancho */}
-      {expo.cover && (
-        <div className="max-w-6xl mx-auto px-6 mt-14 md:mt-20">
-          <Image
-            src={expo.cover}
-            alt={expo.coverAlt ?? expo.title}
-            width={1800}
-            height={1200}
-            sizes="(max-width: 1152px) 100vw, 1152px"
-            priority
-            className="w-full h-auto"
-          />
+        {/* Portada + statement, lado a lado */}
+        <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+          {expo.cover && (
+            <div className="md:col-span-5">
+              <Image
+                src={expo.cover}
+                alt={expo.coverAlt ?? expo.title}
+                width={900}
+                height={700}
+                sizes="(max-width: 768px) 100vw, 420px"
+                priority
+                className="w-full h-auto"
+              />
+            </div>
+          )}
+          <div className={expo.cover ? 'md:col-span-7' : 'md:col-span-12 max-w-2xl'}>
+            <div className="space-y-4 text-black/75 leading-relaxed">
+              {expo.statement.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          </div>
         </div>
-      )}
 
-      {/* Statement — columna angosta para lectura cómoda */}
-      <div className="max-w-2xl mx-auto px-6 mt-16 md:mt-24">
-        <div className="space-y-6 text-lg md:text-xl text-black/75 leading-relaxed">
-          {expo.statement.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+        {/* Obras en cuadrícula */}
+        {expo.works && expo.works.length > 0 && (
+          <section className="mt-20 md:mt-28">
+            <h2 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-8">
+              {labels.works}
+            </h2>
+            <WorkGallery
+              works={expo.works}
+              labels={{
+                close: labels.close,
+                prev: labels.prev,
+                next: labels.next,
+                reference: labels.reference,
+              }}
+            />
+          </section>
+        )}
+
+        <div className="mt-20 md:mt-24 pt-8 border-t border-black/10">
+          <Link
+            href={backHref}
+            className="inline-flex items-center gap-2 text-sm text-black/50 hover:text-black transition-colors"
+          >
+            <ArrowLeft size={16} />
+            {labels.back}
+          </Link>
         </div>
-      </div>
-
-      {/* Obras */}
-      {expo.works && expo.works.length > 0 && (
-        <section className="max-w-5xl mx-auto px-6 mt-24 md:mt-36">
-          <h2 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-14 md:mb-20">
-            {labels.works}
-          </h2>
-          <WorkGallery
-            works={expo.works}
-            labels={{ close: labels.close, prev: labels.prev, next: labels.next }}
-          />
-        </section>
-      )}
-
-      <div className="max-w-5xl mx-auto px-6 mt-24 md:mt-32 pt-10 border-t border-black/10">
-        <Link
-          href={backHref}
-          className="inline-flex items-center gap-2 text-sm text-black/50 hover:text-black transition-colors"
-        >
-          <ArrowLeft size={16} />
-          {labels.back}
-        </Link>
       </div>
     </article>
   )

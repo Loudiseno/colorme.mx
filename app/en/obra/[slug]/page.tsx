@@ -32,5 +32,18 @@ export default async function Page({ params }: Props) {
   const { slug } = await params
   const expo = getExpo(slug, true)
   if (!expo) notFound()
-  return <ExpoPage expo={expo} backHref="/en/obra" labels={{ back: 'Back to Artwork', works: 'Works', close: 'Close', prev: 'Previous', next: 'Next' }} />
+  return (
+    <ExpoPage
+      expo={expo}
+      backHref="/en/obra"
+      labels={{
+        back: 'Back to Artwork',
+        works: 'Works',
+        close: 'Close',
+        prev: 'Previous',
+        next: 'Next',
+        reference: 'Reference photograph',
+      }}
+    />
+  )
 }
