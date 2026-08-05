@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Camera, Brush, Layers, Droplets, ImageIcon, Award } from 'lucide-react'
+import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
 import ExhibitionList from '@/components/ExhibitionList'
@@ -54,100 +54,99 @@ const fotoProducto = [
   { src: '/foto-producto-5.jpeg', alt: 'Fotografía de producto 5 — obra de Lou' },
 ]
 
-const fotoPaisaje = [
-  {
-    src: '/paisaje-1-cdmx.jpeg',
-    alt: 'Paisaje 1 — obra de Lou',
-    caption: 'Ciudad de México, México',
-  },
-  {
-    src: '/paisaje-2-progreso.png',
-    alt: 'Paisaje 2 — obra de Lou',
-    caption: 'Progreso, México',
-  },
-  {
-    src: '/paisaje-3-progreso.jpeg',
-    alt: 'Paisaje 3 — obra de Lou',
-    caption: 'Progreso, México',
-  },
-  {
-    src: '/paisaje-4-lucca.jpeg',
-    alt: 'Paisaje 4 — obra de Lou',
-    caption: 'Lucca, Italia',
-  },
-  {
-    src: '/paisaje-5-puebla.jpeg',
-    alt: 'Paisaje 5 — obra de Lou',
-    caption: 'Puebla, México',
-  },
-  {
-    src: '/paisaje-6-siena.jpeg',
-    alt: 'Paisaje 6 — obra de Lou',
-    caption: 'Siena, Italia',
-  },
-  {
-    src: '/paisaje-7-malta.jpeg',
-    alt: 'Paisaje 7 — obra de Lou',
-    caption: 'Malta',
-  },
-  {
-    src: '/paisaje-8-cielo.jpeg',
-    alt: 'Paisaje 8 — obra de Lou',
-    caption: 'Yucatán, México',
-  },
+// Lugares — el pie de foto indica siempre «Ciudad, País»
+const fotoLugares = [
+  { src: '/lugares-ciudad-de-mexico.jpeg', alt: 'Ciudad de México — fotografía de Lou', caption: 'Ciudad de México, México' },
+  { src: '/lugares-progreso-1.png', alt: 'Progreso — fotografía de Lou', caption: 'Progreso, México' },
+  { src: '/lugares-la-puerta-cuba.jpeg', alt: 'La puerta — fotografía de Lou', caption: 'Cuba' },
+  { src: '/lugares-progreso-2.jpeg', alt: 'Progreso — fotografía de Lou', caption: 'Progreso, México' },
+  { src: '/lugares-lucca.jpeg', alt: 'Lucca — fotografía de Lou', caption: 'Lucca, Italia' },
+  { src: '/lugares-puebla.jpeg', alt: 'Puebla — fotografía de Lou', caption: 'Puebla, México' },
+  { src: '/lugares-siena.jpeg', alt: 'Siena — fotografía de Lou', caption: 'Siena, Italia' },
+  { src: '/lugares-malta.jpeg', alt: 'Malta — fotografía de Lou', caption: 'Malta' },
+  { src: '/lugares-yucatan.jpeg', alt: 'Yucatán — fotografía de Lou', caption: 'Yucatán, México' },
+  { src: '/lugares-la-puerta-azul-malta.jpeg', alt: 'La puerta azul — fotografía de Lou', caption: 'Malta' },
+  { src: '/lugares-malecon-la-habana.jpeg', alt: 'Malecón — fotografía de Lou', caption: 'La Habana, Cuba' },
+  { src: '/lugares-atardecer-trinidad.jpeg', alt: 'Atardecer — fotografía de Lou', caption: 'Trinidad, Cuba' },
+  { src: '/lugares-baja-california.jpeg', alt: 'Algo en el naranja — fotografía de Lou', caption: 'Baja California, México' },
+  { src: '/lugares-cisterna-basilica-estambul.jpeg', alt: 'Cisterna Basílica — fotografía de Lou', caption: 'Estambul, Turquía' },
+  { src: '/lugares-capadocia.jpeg', alt: 'Morning — fotografía de Lou', caption: 'Capadocia, Turquía' },
+  { src: '/lugares-meteora.jpeg', alt: 'Monasterios — fotografía de Lou', caption: 'Meteora, Grecia' },
+  { src: '/lugares-moulin-rouge-amsterdam.jpeg', alt: 'Moulin Rouge — fotografía de Lou', caption: 'Ámsterdam, Países Bajos' },
+  { src: '/lugares-reflejos-amsterdam.jpeg', alt: 'Reflejos — fotografía de Lou', caption: 'Ámsterdam, Países Bajos' },
+  { src: '/lugares-colonia.jpeg', alt: 'Para siempre — fotografía de Lou', caption: 'Colonia, Alemania' },
+  { src: '/lugares-ponte-del-diavolo-lanzo.jpeg', alt: 'Ponte del Diavolo — fotografía de Lou', caption: 'Lanzo, Italia' },
+  { src: '/lugares-vietnam.jpeg', alt: 'La ciudad de las luces — fotografía de Lou', caption: 'Vietnam' },
+  { src: '/lugares-tailandia.jpeg', alt: 'Naranja — fotografía de Lou', caption: 'Tailandia' },
+  { src: '/lugares-miami.jpeg', alt: 'Fuegos artificiales — fotografía de Lou', caption: 'Miami, Estados Unidos' },
+]
+
+// Gente
+const fotoGente = [
+  { src: '/gente-smile-bali.jpeg', alt: 'Smile — fotografía de Lou', caption: 'Bali, Indonesia' },
+  { src: '/gente-ceremonia-bali.jpeg', alt: 'Ceremonia — fotografía de Lou', caption: 'Bali, Indonesia' },
+  { src: '/gente-ellas-nusa-penida.jpeg', alt: 'Ellas — fotografía de Lou', caption: 'Nusa Penida, Indonesia' },
+  { src: '/gente-oaxaquena-oaxaca.jpeg', alt: 'Oaxaqueña — fotografía de Lou', caption: 'Oaxaca, México' },
 ]
 
 const tecnicasMixtas = [
   {
     src: '/mixta-vuela.jpeg',
     alt: 'Vuela — técnica mixta',
-    caption: 'Vuela\nTécnica mixta · 60 × 90 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
+    caption: 'Vuela\nTécnica mixta\n60 × 90 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
   },
   {
     src: '/mixta-old-brandy.jpeg',
     alt: 'Old Brandy — técnica mixta',
-    caption: 'Old Brandy\nTécnica mixta · 90 × 60 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
+    caption: 'Old Brandy\nTécnica mixta\n90 × 60 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
   },
 ]
 
-const acuarelas = [
+const pinturas = [
   {
     src: '/acuarela-mariposa.jpg',
     alt: 'Mariposa — acuarela',
-    caption: 'Mariposa\nAcuarela · 14.8 × 21 cm',
+    caption: 'Mariposa\nAcuarela\n14.8 × 21 cm',
   },
   {
     src: '/acuarela-flamingo.jpg',
     alt: 'Flamingo — acuarela',
-    caption: 'Flamingo\nAcuarela · 14.8 × 21 cm',
-  },
-  {
-    src: '/acuarela-fe.jpg',
-    alt: 'Fe — acuarela',
-    caption: 'Fe\nAcuarela · Tamaño carta, 21.6 × 27.9 cm',
-  },
-  {
-    src: '/acuarela-ballena.jpg',
-    alt: 'Ballena — acuarela',
-    caption: 'Ballena\nAcuarela · 21 × 14.8 cm',
+    caption: 'Flamingo\nAcuarela\n14.8 × 21 cm',
   },
   {
     src: '/acuarela-llueve.jpg',
     alt: 'Llueve — acuarela, ilustración del libro Indeleble',
     caption: 'Llueve\nAcuarela\nIlustración del libro «Indeleble»',
   },
-]
-
-const pinturas = [
+  {
+    src: '/acuarela-fe.jpg',
+    alt: 'Fe — acuarela',
+    caption: 'Fe\nAcuarela\n21.6 × 27.9 cm',
+  },
+  {
+    src: '/acuarela-ballena.jpg',
+    alt: 'Ballena — acuarela',
+    caption: 'Ballena\nAcuarela\n21 × 14.8 cm',
+  },
   {
     src: '/pintura-azul.jpeg',
     alt: 'Azul — acrílico',
-    caption: 'Azul\nAcrílico · 80 × 80 cm',
+    caption: 'Azul\nAcrílico\n80 × 80 cm',
   },
   {
     src: '/pintura-despues-de-ti.jpeg',
     alt: 'Después de ti — acrílico',
-    caption: 'Después de ti\nAcrílico · 120 × 90 cm',
+    caption: 'Después de ti\nAcrílico\n120 × 90 cm',
+  },
+  {
+    src: '/pintura-rastros.jpeg',
+    alt: 'Rastros — acrílico',
+    caption: 'Rastros\nAcrílico\n120 × 60 cm',
+  },
+  {
+    src: '/pintura-matices.jpeg',
+    alt: 'Matices — acrílico',
+    caption: 'Matices\nAcrílico\n120 × 60 cm',
   },
 ]
 
@@ -212,7 +211,7 @@ export default function ObraPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-8 md:pt-36 md:pb-10 bg-white">
+      <section className="pt-24 pb-6 md:pt-28 md:pb-8 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-xs text-black/50 uppercase tracking-wider mb-3">Portafolio</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Obra</h1>
@@ -230,8 +229,8 @@ export default function ObraPage() {
       </section>
 
       {/* Statement de artista */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/10">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
           <div className="max-w-md mx-auto w-full">
             <Placeholder ratio="aspect-[4/5]" />
           </div>
@@ -260,7 +259,7 @@ export default function ObraPage() {
       </section>
 
       {/* Fotografía */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
@@ -280,7 +279,7 @@ export default function ObraPage() {
               distintos sectores, con clientes como:
             </p>
           </div>
-          <div className="flex flex-wrap gap-2 mb-10">
+          <div className="flex flex-wrap gap-2 mb-8">
             {clientes.map((c) => (
               <span
                 key={c}
@@ -291,15 +290,15 @@ export default function ObraPage() {
             ))}
           </div>
 
-          {/* Subsecciones: gente, paisaje, arquitectura */}
-          <div className="space-y-16 md:space-y-20">
+          {/* Subsecciones: gente, lugares, producto */}
+          <div className="space-y-10 md:space-y-12">
             <div>
               <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Gente</h3>
-              <Gallery count={3} />
+              <ObraCarousel images={fotoGente} />
             </div>
             <div>
-              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Paisaje</h3>
-              <ObraCarousel images={fotoPaisaje} />
+              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Lugares</h3>
+              <ObraCarousel images={fotoLugares} />
             </div>
             <div>
               <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Producto</h3>
@@ -310,7 +309,7 @@ export default function ObraPage() {
       </section>
 
       {/* Fotografía intervenida */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/10">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
@@ -318,7 +317,7 @@ export default function ObraPage() {
             </span>
             <h2 className="text-3xl md:text-4xl text-black">Fotografía intervenida</h2>
           </div>
-          <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
+          <p className="max-w-3xl text-black/75 leading-relaxed mb-6">
             Una fotografía puede reproducirse infinitas veces, pero cuando la intervengo deja de ser
             una imagen repetible para convertirse en una pieza única. Me gusta jugar con los colores
             y adaptar el momento a mi experiencia y a mi manera de percibirlo.
@@ -328,7 +327,7 @@ export default function ObraPage() {
       </section>
 
       {/* Pintura */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
@@ -336,7 +335,7 @@ export default function ObraPage() {
             </span>
             <h2 className="text-3xl md:text-4xl text-black">Pintura</h2>
           </div>
-          <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
+          <p className="max-w-3xl text-black/75 leading-relaxed mb-6">
             La pintura es el espacio donde exploro una manera distinta de comprender y
             expresar la experiencia humana. Trabajo principalmente con acuarela, óleo y acrílico,
             desarrollando composiciones en las que el color, las formas y las texturas se convierten
@@ -350,7 +349,7 @@ export default function ObraPage() {
       </section>
 
       {/* Técnicas mixtas */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/10">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
@@ -358,7 +357,7 @@ export default function ObraPage() {
             </span>
             <h2 className="text-3xl md:text-4xl text-black">Técnicas mixtas</h2>
           </div>
-          <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
+          <p className="max-w-3xl text-black/75 leading-relaxed mb-6">
             Disfruto incorporar materiales cotidianos como mapas, revistas, folletos, publicidad,
             servilletas y objetos encontrados durante mis viajes. Me interesa especialmente trabajar
             con periódicos locales porque narran la memoria de un lugar y un momento específico. Al
@@ -369,26 +368,9 @@ export default function ObraPage() {
         </div>
       </section>
 
-      {/* Acuarela */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
-              <Droplets size={20} strokeWidth={1.5} />
-            </span>
-            <h2 className="text-3xl md:text-4xl text-black">Acuarela</h2>
-          </div>
-          <p className="max-w-3xl text-black/75 leading-relaxed mb-8">
-            La acuarela me obliga a soltar el control: el agua decide tanto como la mano. Trabajo
-            con lavados transparentes y línea de tinta, en formatos pequeños que se sienten cercanos,
-            casi de cuaderno. De aquí nacieron también las ilustraciones de mi libro «Indeleble».
-          </p>
-          <ObraCarousel images={acuarelas} />
-        </div>
-      </section>
 
       {/* Exposiciones — sección destacada */}
-      <section className="py-16 md:py-24 bg-canvas">
+      <section className="py-10 md:py-14 bg-canvas">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-2xl mb-14 md:mb-20">
             <p className="text-xs text-[#0D9488] uppercase tracking-[0.2em] mb-4">Trayectoria</p>
@@ -417,7 +399,7 @@ export default function ObraPage() {
       </section>
 
       {/* Reconocimientos */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/10">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-8">
             <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
@@ -432,7 +414,7 @@ export default function ObraPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-14 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl text-black mb-3">¿Colaboraciones o adquirir obra?</h2>
           <p className="text-black/70 mb-6">

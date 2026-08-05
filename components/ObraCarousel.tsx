@@ -70,11 +70,11 @@ export default function ObraCarousel({
     <div className="relative">
       <div
         ref={scrollRef}
-        className="flex gap-6 md:gap-8 overflow-x-auto pb-2 scrollbar-hide scroll-smooth snap-x snap-mandatory"
+        className="flex gap-4 md:gap-6 overflow-x-auto pb-2 scrollbar-hide scroll-smooth snap-x snap-mandatory"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {images.map((img, i) => (
-          <div key={img.src} className="flex-shrink-0 w-[68%] sm:w-[38%] lg:w-[25%] snap-start">
+          <div key={img.src} className="flex-shrink-0 w-[68%] sm:w-[38%] lg:w-[23%] snap-start">
             <button
               type="button"
               onClick={() => setLightboxIndex(i)}
@@ -85,7 +85,7 @@ export default function ObraCarousel({
                 src={img.src}
                 alt={img.alt}
                 fill
-                sizes="(max-width: 640px) 68vw, (max-width: 1024px) 38vw, 25vw"
+                sizes="(max-width: 640px) 68vw, (max-width: 1024px) 38vw, 23vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </button>
@@ -98,7 +98,7 @@ export default function ObraCarousel({
         ))}
       </div>
 
-      <div className="flex justify-end gap-2 mt-6">
+      <div className="flex justify-end gap-2 mt-4">
         <button
           onClick={() => scroll('left')}
           className="p-2 rounded-full border border-black/10 text-black/50 hover:border-black hover:text-black transition-all"
