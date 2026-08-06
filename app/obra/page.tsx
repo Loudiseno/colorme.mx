@@ -45,7 +45,13 @@ const clientes = [
 const exposicionesColectivas = [
   { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, CDMX', date: '2015' },
   { title: 'Amén sin tilde', place: 'Galería Fotográfica, CDMX', date: '2016' },
-  { title: 'XI Subasta de Arte', place: 'Galería Aguafuerte, CDMX', date: '2016' },
+  {
+    title: 'XI Subasta de Arte',
+    place: 'Galería Aguafuerte, CDMX',
+    date: '2016',
+    poster: '/expo-xi-subasta-de-arte.jpeg',
+    posterAlt: 'Cartel de la XI Subasta de Arte, Galería Aguafuerte',
+  },
   { title: 'El Arca', place: 'Rio de Janeiro 9, CDMX', date: '2016' },
   { title: 'El Arca', place: 'Plaza Tudor 275-7, CDMX', date: '2016' },
   { title: 'El Arca', place: 'Restaurante Paris 16, CDMX', date: '2017' },

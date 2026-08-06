@@ -45,7 +45,13 @@ const clients = [
 const groupExhibitions = [
   { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, Mexico City', date: '2015' },
   { title: 'Amén sin tilde', place: 'Galería Fotográfica, Mexico City', date: '2016' },
-  { title: 'XI Subasta de Arte', place: 'Galería Aguafuerte, Mexico City', date: '2016' },
+  {
+    title: 'XI Subasta de Arte',
+    place: 'Galería Aguafuerte, Mexico City',
+    date: '2016',
+    poster: '/expo-xi-subasta-de-arte.jpeg',
+    posterAlt: 'Poster for the XI Subasta de Arte, Galería Aguafuerte',
+  },
   { title: 'El Arca', place: 'Rio de Janeiro 9, Mexico City', date: '2016' },
   { title: 'El Arca', place: 'Plaza Tudor 275-7, Mexico City', date: '2016' },
   { title: 'El Arca', place: 'Restaurante Paris 16, Mexico City', date: '2017' },
