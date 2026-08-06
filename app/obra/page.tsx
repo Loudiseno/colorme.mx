@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
-import ObraCarousel from '@/components/ObraCarousel'
+import Image from 'next/image'
+import ObraPreview from '@/components/ObraPreview'
+import { lugares, gente, intervenida, producto, pinturas, mixtas, localize, localizePieces } from '@/lib/obra'
 import ExhibitionList from '@/components/ExhibitionList'
 import ExpoCards from '@/components/ExpoCards'
 import ImageCopyright from '@/components/ImageCopyright'
@@ -31,126 +33,6 @@ export const metadata: Metadata = {
 // app/en/obra/page.tsx.
 // ============================================================================
 
-// Fotografía intervenida (orden numérico 1-11)
-const fotoIntervenida = [
-  { src: '/foto-intervenida-1.jpg', alt: 'Fotografía intervenida 1 — obra de Lou' },
-  { src: '/foto-intervenida-2.jpg', alt: 'Fotografía intervenida 2 — obra de Lou' },
-  { src: '/foto-intervenida-3.jpg', alt: 'Fotografía intervenida 3 — obra de Lou' },
-  { src: '/foto-intervenida-4.jpg', alt: 'Fotografía intervenida 4 — obra de Lou' },
-  { src: '/foto-intervenida-5.jpg', alt: 'Fotografía intervenida 5 — obra de Lou' },
-  { src: '/foto-intervenida-6.jpg', alt: 'Fotografía intervenida 6 — obra de Lou' },
-  { src: '/foto-intervenida-7.jpg', alt: 'Fotografía intervenida 7 — obra de Lou' },
-  { src: '/foto-intervenida-8.jpg', alt: 'Fotografía intervenida 8 — obra de Lou' },
-  { src: '/foto-intervenida-9.jpg', alt: 'Fotografía intervenida 9 — obra de Lou' },
-  { src: '/foto-intervenida-10.jpg', alt: 'Fotografía intervenida 10 — obra de Lou' },
-  { src: '/foto-intervenida-11.jpg', alt: 'Fotografía intervenida 11 — obra de Lou' },
-]
-
-// Fotografía de producto (orden numérico 1-5)
-const fotoProducto = [
-  { src: '/foto-producto-1.jpeg', alt: 'Fotografía de producto 1 — obra de Lou' },
-  { src: '/foto-producto-3.jpeg', alt: 'Fotografía de producto 3 — obra de Lou' },
-  { src: '/foto-producto-2.jpeg', alt: 'Fotografía de producto 2 — obra de Lou' },
-  { src: '/foto-producto-4.jpeg', alt: 'Fotografía de producto 4 — obra de Lou' },
-  { src: '/foto-producto-5.jpeg', alt: 'Fotografía de producto 5 — obra de Lou' },
-]
-
-// Lugares — el pie de foto indica siempre «Ciudad, País»
-const fotoLugares = [
-  { src: '/lugares-ciudad-de-mexico.jpeg', alt: 'Ciudad de México — fotografía de Lou', caption: 'Ciudad de México, México' },
-  { src: '/lugares-progreso-1.png', alt: 'Progreso — fotografía de Lou', caption: 'Progreso, México' },
-  { src: '/lugares-la-puerta-cuba.jpeg', alt: 'La puerta — fotografía de Lou', caption: 'Cuba' },
-  { src: '/lugares-progreso-2.jpeg', alt: 'Progreso — fotografía de Lou', caption: 'Progreso, México' },
-  { src: '/lugares-lucca.jpeg', alt: 'Lucca — fotografía de Lou', caption: 'Lucca, Italia' },
-  { src: '/lugares-puebla.jpeg', alt: 'Puebla — fotografía de Lou', caption: 'Puebla, México' },
-  { src: '/lugares-siena.jpeg', alt: 'Siena — fotografía de Lou', caption: 'Siena, Italia' },
-  { src: '/lugares-malta.jpeg', alt: 'Malta — fotografía de Lou', caption: 'Malta' },
-  { src: '/lugares-yucatan.jpeg', alt: 'Yucatán — fotografía de Lou', caption: 'Yucatán, México' },
-  { src: '/lugares-la-puerta-azul-malta.jpeg', alt: 'La puerta azul — fotografía de Lou', caption: 'Malta' },
-  { src: '/lugares-malecon-la-habana.jpeg', alt: 'Malecón — fotografía de Lou', caption: 'La Habana, Cuba' },
-  { src: '/lugares-atardecer-trinidad.jpeg', alt: 'Atardecer — fotografía de Lou', caption: 'Trinidad, Cuba' },
-  { src: '/lugares-baja-california.jpeg', alt: 'Algo en el naranja — fotografía de Lou', caption: 'Baja California, México' },
-  { src: '/lugares-cisterna-basilica-estambul.jpeg', alt: 'Cisterna Basílica — fotografía de Lou', caption: 'Estambul, Turquía' },
-  { src: '/lugares-capadocia.jpeg', alt: 'Morning — fotografía de Lou', caption: 'Capadocia, Turquía' },
-  { src: '/lugares-meteora.jpeg', alt: 'Monasterios — fotografía de Lou', caption: 'Meteora, Grecia' },
-  { src: '/lugares-moulin-rouge-amsterdam.jpeg', alt: 'Moulin Rouge — fotografía de Lou', caption: 'Ámsterdam, Países Bajos' },
-  { src: '/lugares-reflejos-amsterdam.jpeg', alt: 'Reflejos — fotografía de Lou', caption: 'Ámsterdam, Países Bajos' },
-  { src: '/lugares-colonia.jpeg', alt: 'Para siempre — fotografía de Lou', caption: 'Colonia, Alemania' },
-  { src: '/lugares-ponte-del-diavolo-lanzo.jpeg', alt: 'Ponte del Diavolo — fotografía de Lou', caption: 'Lanzo, Italia' },
-  { src: '/lugares-vietnam.jpeg', alt: 'La ciudad de las luces — fotografía de Lou', caption: 'Vietnam' },
-  { src: '/lugares-tailandia.jpeg', alt: 'Naranja — fotografía de Lou', caption: 'Tailandia' },
-  { src: '/lugares-miami.jpeg', alt: 'Fuegos artificiales — fotografía de Lou', caption: 'Miami, Estados Unidos' },
-]
-
-// Gente
-const fotoGente = [
-  { src: '/gente-smile-bali.jpeg', alt: 'Smile — fotografía de Lou', caption: 'Bali, Indonesia' },
-  { src: '/gente-ceremonia-bali.jpeg', alt: 'Ceremonia — fotografía de Lou', caption: 'Bali, Indonesia' },
-  { src: '/gente-ellas-nusa-penida.jpeg', alt: 'Ellas — fotografía de Lou', caption: 'Nusa Penida, Indonesia' },
-  { src: '/gente-oaxaquena-oaxaca.jpeg', alt: 'Oaxaqueña — fotografía de Lou', caption: 'Oaxaca, México' },
-]
-
-const tecnicasMixtas = [
-  {
-    src: '/mixta-vuela.jpeg',
-    alt: 'Vuela — técnica mixta',
-    caption: 'Vuela\nTécnica mixta\n60 × 90 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
-  },
-  {
-    src: '/mixta-old-brandy.jpeg',
-    alt: 'Old Brandy — técnica mixta',
-    caption: 'Old Brandy\nTécnica mixta\n90 × 60 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
-  },
-]
-
-const pinturas = [
-  {
-    src: '/acuarela-mariposa.jpg',
-    alt: 'Mariposa — acuarela',
-    caption: 'Mariposa\nAcuarela\n14.8 × 21 cm',
-  },
-  {
-    src: '/acuarela-flamingo.jpg',
-    alt: 'Flamingo — acuarela',
-    caption: 'Flamingo\nAcuarela\n14.8 × 21 cm',
-  },
-  {
-    src: '/acuarela-llueve.jpg',
-    alt: 'Llueve — acuarela, ilustración del libro Indeleble',
-    caption: 'Llueve\nAcuarela\nIlustración del libro «Indeleble»',
-  },
-  {
-    src: '/acuarela-fe.jpg',
-    alt: 'Fe — acuarela',
-    caption: 'Fe\nAcuarela\n21.6 × 27.9 cm',
-  },
-  {
-    src: '/acuarela-ballena.jpg',
-    alt: 'Ballena — acuarela',
-    caption: 'Ballena\nAcuarela\n21 × 14.8 cm',
-  },
-  {
-    src: '/pintura-azul.jpeg',
-    alt: 'Azul — acrílico',
-    caption: 'Azul\nAcrílico\n80 × 80 cm',
-  },
-  {
-    src: '/pintura-despues-de-ti.jpeg',
-    alt: 'Después de ti — acrílico',
-    caption: 'Después de ti\nAcrílico\n120 × 90 cm',
-  },
-  {
-    src: '/pintura-rastros.jpeg',
-    alt: 'Rastros — acrílico',
-    caption: 'Rastros\nAcrílico\n120 × 60 cm',
-  },
-  {
-    src: '/pintura-matices.jpeg',
-    alt: 'Matices — acrílico',
-    caption: 'Matices\nAcrílico\n120 × 60 cm',
-  },
-]
-
 const clientes = [
   'Studio Ceri',
   'Scatena Inox',
@@ -163,7 +45,7 @@ const clientes = [
 const exposicionesColectivas = [
   { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, CDMX', date: '2015' },
   { title: 'Amén sin tilde', place: 'Galería Fotográfica, CDMX', date: '2016' },
-  { title: 'Expo Subasta', place: 'Galería Aguafuerte, CDMX', date: '2016' },
+  { title: 'XI Subasta de Arte', place: 'Galería Aguafuerte, CDMX', date: '2016' },
   { title: 'El Arca', place: 'Rio de Janeiro 9, CDMX', date: '2016' },
   { title: 'El Arca', place: 'Plaza Tudor 275-7, CDMX', date: '2016' },
   { title: 'El Arca', place: 'Restaurante Paris 16, CDMX', date: '2017' },
@@ -185,28 +67,6 @@ const reconocimientos = [
     date: '2010',
   },
 ]
-
-// Marcador de posición para una foto aún no cargada
-function Placeholder({ ratio = 'aspect-[4/5]' }: { ratio?: string }) {
-  return (
-    <div
-      className={`${ratio} w-full rounded-2xl bg-gradient-to-br from-[#B2F7EF]/30 to-[#F0F7F6] border border-[#B2F7EF]/60 flex flex-col items-center justify-center text-black/30`}
-    >
-      <ImageIcon size={28} strokeWidth={1.5} />
-      <span className="text-[11px] mt-2 uppercase tracking-wider">Foto próximamente</span>
-    </div>
-  )
-}
-
-function Gallery({ count, ratio }: { count: number; ratio?: string }) {
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-      {Array.from({ length: count }).map((_, i) => (
-        <Placeholder key={i} ratio={ratio} />
-      ))}
-    </div>
-  )
-}
 
 export default function ObraPage() {
   return (
@@ -232,8 +92,16 @@ export default function ObraPage() {
       {/* Statement de artista */}
       <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-          <div className="max-w-md mx-auto w-full">
-            <Placeholder ratio="aspect-[4/5]" />
+          <div className="max-w-sm mx-auto w-full">
+            <Image
+              src="/sobre-la-artista.jpeg"
+              alt="Lourdes Pérez, autora de la obra"
+              width={1000}
+              height={1250}
+              sizes="(max-width: 768px) 90vw, 384px"
+              priority
+              className="w-full h-auto"
+            />
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl text-black mb-6">Statement de artista</h2>
@@ -295,15 +163,15 @@ export default function ObraPage() {
           <div className="space-y-10 md:space-y-12">
             <div>
               <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Gente</h3>
-              <ObraCarousel images={fotoGente} />
+              <ObraPreview images={localize(gente)} href="/obra/galeria/gente" moreLabel="Ver más" />
             </div>
             <div>
               <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Lugares</h3>
-              <ObraCarousel images={fotoLugares} />
+              <ObraPreview images={localize(lugares)} href="/obra/galeria/lugares" moreLabel="Ver más" />
             </div>
             <div>
               <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Producto</h3>
-              <ObraCarousel images={fotoProducto} />
+              <ObraPreview images={localizePieces(producto)} href="/obra/galeria/producto" moreLabel="Ver más" />
             </div>
           </div>
         </div>
@@ -323,7 +191,7 @@ export default function ObraPage() {
             una imagen repetible para convertirse en una pieza única. Me gusta jugar con los colores
             y adaptar el momento a mi experiencia y a mi manera de percibirlo.
           </p>
-          <ObraCarousel images={fotoIntervenida} />
+          <ObraPreview images={localizePieces(intervenida)} href="/obra/galeria/intervenida" moreLabel="Ver más" />
         </div>
       </section>
 
@@ -345,7 +213,7 @@ export default function ObraPage() {
             camino. A través del color y las formas busco expresar mi manera de experimentar, sentir
             e interpretar el mundo.
           </p>
-          <ObraCarousel images={pinturas} />
+          <ObraPreview images={localizePieces(pinturas)} href="/obra/galeria/pintura" moreLabel="Ver más" />
         </div>
       </section>
 
@@ -365,10 +233,9 @@ export default function ObraPage() {
             integrarlos en la obra, esos fragmentos adquieren un nuevo significado y se convierten en
             parte de una historia distinta.
           </p>
-          <ObraCarousel images={tecnicasMixtas} />
+          <ObraPreview images={localizePieces(mixtas)} href="/obra/galeria/tecnicas-mixtas" moreLabel="Ver más" />
         </div>
       </section>
-
 
       {/* Exposiciones — sección destacada */}
       <section className="py-10 md:py-14 bg-canvas">

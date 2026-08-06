@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/seo'
 import { enArticles } from '@/lib/enBlog'
+import { allGaleriaSlugs } from '@/lib/obraGalerias'
 import { allExpoSlugs } from '@/lib/exposiciones'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -202,5 +203,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: highPrioritySlugs.has(slug) ? 0.8 : 0.7,
   }))
 
-  return [...coreRoutes, ...enRoutes, ...enBlogRoutes, ...blogRoutes, ...expoRoutes]
+  const galeriaRoutes: MetadataRoute.Sitemap = allGaleriaSlugs().flatMap((slug) => [
+    { url: `${baseUrl}/obra/galeria/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/en/obra/galeria/${slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+  ])
+
+  return [...coreRoutes, ...enRoutes, ...enBlogRoutes, ...blogRoutes, ...expoRoutes, ...galeriaRoutes]
 }
