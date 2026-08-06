@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppPopup from '@/components/WhatsAppPopup'
+import ImageProtection from '@/components/ImageProtection'
 import { siteConfig, generateBusinessSchema, generatePersonSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
@@ -111,6 +112,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-cream text-ink">
+        <ImageProtection />
         <Header />
         <main>{children}</main>
         <Footer />

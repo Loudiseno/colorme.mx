@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
 import WorkGallery from '@/components/WorkGallery'
+import ImageCopyright from '@/components/ImageCopyright'
 import type { Expo } from '@/lib/exposiciones'
 
 interface ExpoPageProps {
@@ -20,7 +21,7 @@ interface ExpoPageProps {
 // Exposición: portada moderada junto al texto, y las obras en cuadrícula.
 export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
   return (
-    <article className="pt-28 pb-24 md:pt-36 md:pb-28 bg-white">
+    <article className="pt-24 pb-10 md:pt-28 md:pb-12 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <Link
           href={backHref}
@@ -38,7 +39,7 @@ export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
         </header>
 
         {/* Portada + statement, lado a lado */}
-        <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+        <div className="mt-8 md:mt-10 grid md:grid-cols-12 gap-8 md:gap-12 items-start">
           {expo.cover && (
             <div className="md:col-span-5">
               <Image
@@ -63,7 +64,7 @@ export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
 
         {/* Obras en cuadrícula */}
         {expo.works && expo.works.length > 0 && (
-          <section className="mt-20 md:mt-28">
+          <section className="mt-14 md:mt-20">
             <h2 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-8">
               {labels.works}
             </h2>
@@ -79,7 +80,7 @@ export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
           </section>
         )}
 
-        <div className="mt-20 md:mt-24 pt-8 border-t border-black/10">
+        <div className="mt-14 md:mt-16 pt-6 border-t border-black/10">
           <Link
             href={backHref}
             className="inline-flex items-center gap-2 text-sm text-black/50 hover:text-black transition-colors"
@@ -89,6 +90,8 @@ export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
           </Link>
         </div>
       </div>
+
+      <ImageCopyright en={backHref.startsWith('/en')} />
     </article>
   )
 }

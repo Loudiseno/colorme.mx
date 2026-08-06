@@ -412,3 +412,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
   }
 }
+
+/* Protección de imágenes: sin arrastrar, sin selección y sin el menú de
+   pulsación larga en iOS. Complementa a components/ImageProtection.tsx. */
+img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none;
+}

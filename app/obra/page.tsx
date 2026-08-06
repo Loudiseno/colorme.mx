@@ -5,6 +5,7 @@ import { siteConfig } from '@/lib/seo'
 import ObraCarousel from '@/components/ObraCarousel'
 import ExhibitionList from '@/components/ExhibitionList'
 import ExpoCards from '@/components/ExpoCards'
+import ImageCopyright from '@/components/ImageCopyright'
 import { exposicionesEs } from '@/lib/exposiciones'
 
 export const metadata: Metadata = {
@@ -438,6 +439,7 @@ export default function ObraPage() {
           </div>
         </div>
       </section>
+      <ImageCopyright />
     </>
   )
 }
