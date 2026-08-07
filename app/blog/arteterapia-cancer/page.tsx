@@ -319,7 +319,7 @@ export default function ArticuloArteterapiaCancer() {
         {/* Author */}
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su experiencia personal con la enfermedad la llevó a dedicarse a acompañar a otras personas en sus procesos de sanación. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble", un testimonio de transformación y resiliencia donde comparte su historia de atravesar el cáncer y reconstruirse a través del arte.
+            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su experiencia personal con la enfermedad la llevó a dedicarse a acompañar a otras personas en sus procesos de sanación. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble", un testimonio de transformación y resiliencia donde comparte su historia de atravesar el cáncer y reconstruirse a través del arte.
           </p>
         </div>
 

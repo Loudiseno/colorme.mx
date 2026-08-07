@@ -74,7 +74,7 @@ export default function TiendaPage() {
                   <p>
                     Creado por Lou Pérez, una especialista certificada en tanatología, cuya
                     formación integra técnicas de arteterapia y otros enfoques aprendidos en
-                    México, Bali, Tailandia, Malasia e India, este diario te guía en cuatro
+                    México, Bali, Tailandia, Malasia, India y Reino Unido, este diario te guía en cuatro
                     momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar
                     tu vida e integrar lo vivido como parte de tu historia.
                   </p>

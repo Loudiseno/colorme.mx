@@ -104,7 +104,7 @@ export default function HomePage() {
                       Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
                     </p>
                     <p className="text-black/70 leading-relaxed">
-                      La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia e India.
+                      La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido.
                     </p>
                   </div>
                 </div>

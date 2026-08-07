@@ -23,7 +23,7 @@ export default function EnAboutPage() {
                 <strong>Art therapist, grief counselor, designer, artist and cancer survivor.</strong>
               </p>
               <p className="text-lg text-black/70 leading-relaxed">
-                Creativity has always been my way of connecting with the world. My own losses led me to accompany others through change and transformation — through listening, through art, or a blend of both. My training integrates techniques from Mexico, Bali, Thailand, Malaysia and India.
+                Creativity has always been my way of connecting with the world. My own losses led me to accompany others through change and transformation — through listening, through art, or a blend of both. My training integrates techniques from Mexico, Bali, Thailand, Malaysia, India and the United Kingdom.
               </p>
             </div>
             <div className="order-1 md:order-2">
@@ -90,6 +90,7 @@ export default function EnAboutPage() {
               <li><strong>Thailand</strong> — Meditative art and contemplative practices.</li>
               <li><strong>Malaysia</strong> — A fusion of Asian artistic traditions such as batik.</li>
               <li><strong>Bali</strong> — Balinese artistic traditions and their connection to emotion, along with breathwork (conscious breathing techniques for emotional regulation and releasing tension).</li>
+              <li><strong>United Kingdom</strong> — The Science of Trauma &amp; the Body.</li>
               <li><strong>Mexico</strong> — Palliative care (Universidad Anáhuac) and Facing emotional burnout through compassion (Elisabeth Kübler-Ross Foundation).</li>
             </ul>
           </div>

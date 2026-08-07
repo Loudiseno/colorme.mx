@@ -23,7 +23,7 @@ export default function SobreMi() {
                 <strong>Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.</strong>
               </p>
               <p className="text-lg text-black/70 leading-relaxed">
-                La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia e India.
+                La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido.
               </p>
             </div>
             <div className="order-1 md:order-2">
@@ -90,6 +90,7 @@ export default function SobreMi() {
               <li><strong>Tailandia</strong> — Arte meditativo y prácticas contemplativas.</li>
               <li><strong>Malasia</strong> — Fusión de tradiciones artísticas asiáticas como el batik.</li>
               <li><strong>Bali</strong> — Tradiciones artísticas balinesas y su conexión con las emociones, así como breathwork (técnicas de respiración consciente para la regulación emocional y liberación de tensiones).</li>
+              <li><strong>Reino Unido</strong> — The Science of Trauma &amp; the Body.</li>
               <li><strong>México</strong> — Cuidados paliativos (Universidad Anáhuac) y Cómo afrontar el desgaste emocional desde el uso de la compasión (Fundación Elisabeth Kübler-Ross).</li>
             </ul>
           </div>

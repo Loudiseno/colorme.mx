@@ -72,7 +72,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           </ul>
 
           <p>
-            Mi formación como arteterapeuta integra técnicas de distintas tradiciones: México, Bali, Tailandia, Malasia e India. Eso significa que trabajo con una paleta muy amplia de recursos expresivos, adaptados a cada persona y a cada momento del proceso.
+            Mi formación como arteterapeuta integra técnicas de distintas tradiciones: México, Bali, Tailandia, Malasia, India y Reino Unido. Eso significa que trabajo con una paleta muy amplia de recursos expresivos, adaptados a cada persona y a cada momento del proceso.
           </p>
 
           <p>
@@ -193,7 +193,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
 
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia e India. Es autora de "Indeleble".
+            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
           </p>
         </div>
 
