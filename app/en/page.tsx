@@ -104,7 +104,7 @@ export default function EnHomePage() {
                       Art therapist, grief counselor, designer, artist and cancer survivor.
                     </p>
                     <p className="text-black/70 leading-relaxed">
-                      Creativity has always been my way of connecting with the world. My own losses led me to accompany others through change and transformation — through listening, through art, or a blend of both. My training integrates techniques from Mexico, Bali, Thailand, Malaysia, India and the United Kingdom.
+                      Creativity has always been my way of connecting with the world. My own losses led me to accompany others through change and transformation — through listening, through art, or a blend of both. My training integrates techniques from Mexico, Bali, Thailand, Malaysia, India and United Kingdom.
                     </p>
                   </div>
                 </div>

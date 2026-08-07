@@ -65,7 +65,7 @@ export default function EnShopPage() {
                   <p>
                     Created by Lou Pérez, a certified grief counselor whose training integrates
                     art-based techniques and other approaches learned in Mexico, Bali, Thailand,
-                    Malaysia, India and the United Kingdom, this journal guides you through four moments: recognizing
+                    Malaysia, India and United Kingdom, this journal guides you through four moments: recognizing
                     what you lost, making room for your emotions, reorganizing your life, and
                     integrating what you&apos;ve lived as part of your story.
                   </p>
