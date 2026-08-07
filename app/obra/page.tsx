@@ -50,7 +50,7 @@ const exposicionesColectivas = [
     title: 'XI Subasta de Arte',
     place: 'Galería Aguafuerte, CDMX',
     date: '2016',
-    poster: '/expo-xi-subasta-de-arte.jpeg',
+    poster: '/exposicion-xi-subasta-de-arte-galeria-aguafuerte.jpeg',
     posterAlt: 'Cartel de la XI Subasta de Arte, Galería Aguafuerte',
   },
   { title: 'El Arca', place: 'Rio de Janeiro 9, CDMX', date: '2016' },
@@ -107,8 +107,8 @@ export default function ObraPage() {
           </div>
           <div className="order-1 md:order-3 max-w-sm w-full md:ml-auto">
             <Image
-              src="/sobre-la-artista.jpeg"
-              alt="Lourdes Pérez, autora de la obra"
+              src="/lourdes-perez-artista-arteterapeuta-colorme.jpeg"
+              alt="Lourdes Pérez, arteterapeuta, tanatóloga y artista, autora de la obra de ColorMe"
               width={1000}
               height={1250}
               sizes="(max-width: 768px) 90vw, 384px"

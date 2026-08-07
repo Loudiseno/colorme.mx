@@ -50,7 +50,7 @@ const groupExhibitions = [
     title: 'XI Subasta de Arte',
     place: 'Galería Aguafuerte, Mexico City',
     date: '2016',
-    poster: '/expo-xi-subasta-de-arte.jpeg',
+    poster: '/exposicion-xi-subasta-de-arte-galeria-aguafuerte.jpeg',
     posterAlt: 'Poster for the XI Subasta de Arte, Galería Aguafuerte',
   },
   { title: 'El Arca', place: 'Rio de Janeiro 9, Mexico City', date: '2016' },
@@ -107,8 +107,8 @@ export default function ObraEnPage() {
           </div>
           <div className="order-1 md:order-3 max-w-sm w-full md:ml-auto">
             <Image
-              src="/sobre-la-artista.jpeg"
-              alt="Lourdes Pérez, author of the work"
+              src="/lourdes-perez-artista-arteterapeuta-colorme.jpeg"
+              alt="Lourdes Pérez, art-as-therapy practitioner, grief counselor and artist behind the work at ColorMe"
               width={1000}
               height={1250}
               sizes="(max-width: 768px) 90vw, 384px"
