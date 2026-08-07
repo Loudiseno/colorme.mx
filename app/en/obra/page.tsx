@@ -4,7 +4,6 @@ import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import Image from 'next/image'
 import ObraPreview from '@/components/ObraPreview'
-import PageHero from '@/components/PageHero'
 import { lugares, gente, intervenida, producto, pinturas, mixtas, localize, localizePieces } from '@/lib/obra'
 import ExhibitionList from '@/components/ExhibitionList'
 import ExpoCards from '@/components/ExpoCards'
@@ -79,23 +78,14 @@ const awards = [
 export default function ObraEnPage() {
   return (
     <>
-      <PageHero title="Artwork" />
-
       {/* Artist statement */}
-      <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-          <div className="max-w-sm mx-auto w-full">
-            <Image
-              src="/sobre-la-artista.jpeg"
-              alt="Lourdes Pérez, author of the work"
-              width={1000}
-              height={1250}
-              sizes="(max-width: 768px) 90vw, 384px"
-              priority
-              className="w-full h-auto"
-            />
-          </div>
-          <div>
+      <section className="pt-28 pb-8 md:pt-32 md:pb-10 bg-[#B2F7EF]/10">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+          <div className="order-2">
+            <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
+              <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
+              <h1 className="text-4xl md:text-5xl text-black relative z-10">Artwork</h1>
+            </div>
             <div className="space-y-4 text-black/75 leading-relaxed">
               <p>
                 My artistic path is a way of looking, feeling, reframing the human experience, and
@@ -114,6 +104,17 @@ export default function ObraEnPage() {
                 into a unique work carrying its own story.
               </p>
             </div>
+          </div>
+          <div className="order-1 md:order-3 max-w-sm w-full md:ml-auto">
+            <Image
+              src="/sobre-la-artista.jpeg"
+              alt="Lourdes Pérez, author of the work"
+              width={1000}
+              height={1250}
+              sizes="(max-width: 768px) 90vw, 384px"
+              priority
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>

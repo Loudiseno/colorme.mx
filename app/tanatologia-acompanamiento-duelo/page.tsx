@@ -170,9 +170,10 @@ export default function TanatologiaPage() {
       {/* Quote Section */}
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="text-2xl md:text-3xl text-black leading-relaxed">
-            «El duelo no solo es despedir, es soltar, transformar y seguir adelante con amor.» Lou
-          </p>
+          <blockquote className="text-lg md:text-xl text-black/70 italic leading-relaxed font-light">
+            «El duelo no solo es despedir, es soltar, transformar y seguir adelante con amor.»
+            <footer className="mt-2 text-sm not-italic text-black/40">Lou</footer>
+          </blockquote>
         </div>
       </section>
 

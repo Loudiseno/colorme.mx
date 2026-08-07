@@ -36,16 +36,6 @@ export default function ExhibitionList({ items, closeLabel }: ExhibitionListProp
         {items.map((item, i) => {
           const content = (
             <>
-              {item.poster && (
-                <Image
-                  src={item.poster}
-                  alt={item.posterAlt ?? item.title}
-                  width={480}
-                  height={640}
-                  sizes="72px"
-                  className="shrink-0 w-[72px] h-auto self-center"
-                />
-              )}
               <div className="min-w-0 text-left">
                 <p className="text-lg md:text-xl text-black leading-snug transition-colors duration-300 group-hover:text-[#0D9488]">
                   {item.title}
@@ -58,6 +48,16 @@ export default function ExhibitionList({ items, closeLabel }: ExhibitionListProp
                 </p>
                 <p className="text-black/50 text-sm mt-1">{item.place}</p>
                 {item.note && <p className="text-black/40 text-sm italic mt-1">{item.note}</p>}
+                {item.poster && (
+                  <Image
+                    src={item.poster}
+                    alt={item.posterAlt ?? item.title}
+                    width={480}
+                    height={640}
+                    sizes="120px"
+                    className="mt-3 w-[120px] h-auto"
+                  />
+                )}
               </div>
               <span className="shrink-0 text-sm text-black/40 tabular-nums whitespace-nowrap tracking-wide">
                 {item.date}
@@ -66,7 +66,7 @@ export default function ExhibitionList({ items, closeLabel }: ExhibitionListProp
           )
 
           const rowClass =
-            'group w-full flex items-center justify-between gap-5 py-5 border-t border-black/10 transition-colors duration-300 hover:border-[#0D9488]'
+            'group w-full flex items-baseline justify-between gap-6 py-5 border-t border-black/10 transition-colors duration-300 hover:border-[#0D9488]'
 
           if (!item.detail) {
             return (

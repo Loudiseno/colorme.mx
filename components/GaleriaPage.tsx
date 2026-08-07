@@ -3,7 +3,7 @@ import { ArrowLeft } from 'lucide-react'
 import ObraGallery from '@/components/ObraGallery'
 import ObraCTA from '@/components/ObraCTA'
 import ImageCopyright from '@/components/ImageCopyright'
-import { getGaleria, galeriaGroups } from '@/lib/obraGalerias'
+import { getGaleria } from '@/lib/obraGalerias'
 
 interface GaleriaPageProps {
   slug: string
@@ -16,8 +16,7 @@ export default function GaleriaPage({ slug, en = false }: GaleriaPageProps) {
   if (!g) return null
 
   const backHref = en ? '/en/obra' : '/obra'
-  const groups = galeriaGroups(slug, en)
-  const images = groups ? undefined : g.images(en)
+  const images = g.images(en)
   const labels = en
     ? { close: 'Close', prev: 'Previous', next: 'Next' }
     : { close: 'Cerrar', prev: 'Anterior', next: 'Siguiente' }
@@ -40,7 +39,7 @@ export default function GaleriaPage({ slug, en = false }: GaleriaPageProps) {
           <p className="max-w-2xl text-black/70 leading-relaxed">{en ? g.introEn : g.intro}</p>
         </header>
 
-        <ObraGallery images={images} groups={groups} labels={labels} />
+        <ObraGallery images={images} labels={labels} />
 
         <div className="mt-12 md:mt-16 pt-6 border-t border-black/10">
           <Link

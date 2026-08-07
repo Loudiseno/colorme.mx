@@ -157,8 +157,8 @@ export default function ArteterapiaPage() {
       {/* Quote Section */}
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <blockquote className="text-2xl md:text-3xl text-black leading-relaxed">
-            "Explorar lo que sentimos, desde lo que creamos."
+          <blockquote className="text-lg md:text-xl text-black/70 italic leading-relaxed font-light">
+            «Explorar lo que sentimos, desde lo que creamos.»
           </blockquote>
         </div>
       </section>

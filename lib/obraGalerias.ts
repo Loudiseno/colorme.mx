@@ -7,7 +7,6 @@ import {
   mixtas,
   localize,
   localizePieces,
-  groupByCountry,
 } from '@/lib/obra'
 
 export interface GaleriaDef {
@@ -16,8 +15,6 @@ export interface GaleriaDef {
   titleEn: string
   intro: string
   introEn: string
-  /** Sólo la galería de lugares se agrupa en columnas por país */
-  grouped?: boolean
   images: (en: boolean) => { src: string; alt: string; caption?: string }[]
 }
 
@@ -26,9 +23,8 @@ export const galerias: GaleriaDef[] = [
     slug: 'lugares',
     title: 'Lugares',
     titleEn: 'Places',
-    intro: 'Fotografías reunidas por país, en el orden en que las fui encontrando.',
-    introEn: 'Photographs gathered by country, in the order I came across them.',
-    grouped: true,
+    intro: 'Fotografías de los lugares que me he ido encontrando en el camino.',
+    introEn: 'Photographs of the places I have come across along the way.',
     images: (en) => localize(lugares, en),
   },
   {
@@ -81,14 +77,3 @@ export function allGaleriaSlugs() {
   return galerias.map((g) => g.slug)
 }
 
-export function galeriaGroups(slug: string, en: boolean) {
-  if (slug !== 'lugares') return undefined
-  return groupByCountry(lugares, en).map((g) => ({
-    title: g.country,
-    items: g.items.map((p) => ({
-      src: p.src,
-      alt: p.alt,
-      caption: en ? p.captionEn : p.caption,
-    })),
-  }))
-}
