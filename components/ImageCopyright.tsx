@@ -13,8 +13,8 @@ export default function ImageCopyright({ en = false }: { en?: boolean }) {
           {en ? (
             <>
               All images on this site are protected by copyright. Their reproduction, whether total
-              or partial, and any editing or personal or commercial use without written permission
-              is prohibited.{' '}
+              or partial, any editing, and any personal or commercial use &mdash; in digital,
+              printed, or any other medium &mdash; is prohibited without written permission.{' '}
               <a
                 href={`mailto:${siteConfig.email}`}
                 className="underline underline-offset-2 hover:text-black/70 transition-colors"
@@ -26,7 +26,8 @@ export default function ImageCopyright({ en = false }: { en?: boolean }) {
             <>
               Todas las im&aacute;genes de este sitio est&aacute;n protegidas por derecho de autor.
               Queda prohibida su reproducci&oacute;n, total o parcial, su edici&oacute;n y cualquier
-              uso personal o comercial sin autorizaci&oacute;n por escrito.{' '}
+              uso personal o comercial, en medios digitales, impresos o de cualquier otra
+              naturaleza, sin autorizaci&oacute;n por escrito.{' '}
               <a
                 href={`mailto:${siteConfig.email}`}
                 className="underline underline-offset-2 hover:text-black/70 transition-colors"
