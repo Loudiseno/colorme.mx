@@ -170,8 +170,13 @@ export interface ObraPiece {
   captionEn?: string
 }
 
-// Las seis primeras vienen de la exposición individual Reinterpretando.
+// Las once numeradas van primero; las de Reinterpretando cierran la sección.
 export const intervenida: ObraPiece[] = [
+  ...Array.from({ length: 11 }, (_, i) => ({
+    src: `/foto-intervenida-${i + 1}.jpg`,
+    alt: `Fotografía intervenida ${i + 1} — obra de Lou`,
+    altEn: `Intervened photography ${i + 1} — artwork by Lou`,
+  })),
   {
     src: '/reinterpretando-cuba.jpeg',
     alt: 'La Habana, Cuba — fotografía intervenida',
@@ -214,11 +219,6 @@ export const intervenida: ObraPiece[] = [
     caption: 'Valle de Bravo, México\nFotografía intervenida con acuarela\n90 × 60 cm',
     captionEn: 'Valle de Bravo, Mexico\nPhotograph intervened with watercolour\n90 × 60 cm',
   },
-  ...Array.from({ length: 11 }, (_, i) => ({
-    src: `/foto-intervenida-${i + 1}.jpg`,
-    alt: `Fotografía intervenida ${i + 1} — obra de Lou`,
-    altEn: `Intervened photography ${i + 1} — artwork by Lou`,
-  })),
 ]
 
 export const producto: ObraPiece[] = [1, 3, 2, 4, 5].map((n) => ({
@@ -236,11 +236,11 @@ export const pinturas: ObraPiece[] = [
     captionEn: 'Azul\nAcrylic\n80 × 80 cm',
   },
   {
-    src: '/acuarela-flamingo.jpg',
-    alt: 'Flamingo — acuarela',
-    altEn: 'Flamingo — watercolor',
-    caption: 'Flamingo\nAcuarela\n14.8 × 21 cm',
-    captionEn: 'Flamingo\nWatercolor\n14.8 × 21 cm',
+    src: '/acuarela-llueve.jpg',
+    alt: 'Llueve — acuarela, ilustración del libro Indeleble',
+    altEn: 'Llueve — watercolor, illustration from the book Indeleble',
+    caption: 'Llueve\nAcuarela\n21.6 × 27.9 cm\nIlustración del libro «Indeleble»',
+    captionEn: 'Llueve\nWatercolor\n21.6 × 27.9 cm\nIllustration from the book «Indeleble»',
   },
   {
     src: '/pintura-rastros.jpeg',
@@ -257,11 +257,11 @@ export const pinturas: ObraPiece[] = [
     captionEn: 'Mariposa\nWatercolor\n14.8 × 21 cm',
   },
   {
-    src: '/acuarela-llueve.jpg',
-    alt: 'Llueve — acuarela, ilustración del libro Indeleble',
-    altEn: 'Llueve — watercolor, illustration from the book Indeleble',
-    caption: 'Llueve\nAcuarela\n21.6 × 27.9 cm\nIlustración del libro «Indeleble»',
-    captionEn: 'Llueve\nWatercolor\n21.6 × 27.9 cm\nIllustration from the book «Indeleble»',
+    src: '/acuarela-flamingo.jpg',
+    alt: 'Flamingo — acuarela',
+    altEn: 'Flamingo — watercolor',
+    caption: 'Flamingo\nAcuarela\n14.8 × 21 cm',
+    captionEn: 'Flamingo\nWatercolor\n14.8 × 21 cm',
   },
   {
     src: '/acuarela-fe.jpg',
