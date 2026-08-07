@@ -214,7 +214,7 @@ export default function DiadelPadreDuelo() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si este día activa algo en ti — una pérdida, una relación complicada, un duelo que no sabías que cargabas — estoy aquí para acompañarte.
+            Si este día activa algo en ti, ya sea una pérdida, una relación complicada o un duelo que no sabías que cargabas, estoy aquí para acompañarte.
           </p>
           <a
             href={siteConfig.calendly}

@@ -49,7 +49,7 @@ export default function SobreMi() {
               Hace algunos años, mi vida cambió cuando recibí un diagnóstico de cáncer. Me encontré frente a la incertidumbre más profunda que había experimentado.
             </p>
             <p>
-              Durante el tratamiento, descubrí que el arte —que siempre había sido parte de mi vida como diseñadora y artista— se convertía en un refugio y lenguaje para lo que no podía expresar con palabras, una forma de atravesar mis emociones y reconectarme conmigo misma.
+              Durante el tratamiento, descubrí que el arte, que siempre había sido parte de mi vida como diseñadora y artista, se convertía en un refugio y lenguaje para lo que no podía expresar con palabras, una forma de atravesar mis emociones y reconectarme conmigo misma.
             </p>
             <p>
               Al comenzar el camino de la recuperación, supe que quería dedicarme a acompañar a otras personas en sus diferentes procesos mediante la escucha y el arte. Soy autora de Indeleble (actualmente disponible en Amazon en inglés y español), una obra que narra mi proceso oncológico y la transformación personal que surgió a partir de él.
@@ -123,7 +123,7 @@ export default function SobreMi() {
                     Crees que eres invencible, hasta que un diagnóstico lo cambia todo. Cuando el cáncer llega sin avisar, los sueños se detienen y la incertidumbre se apodera de ti.
                   </p>
                   <p className="text-black/70">
-                    Pero en medio del miedo, también surge algo más: la fuerza para afrontar lo impensable y la capacidad de sanar —no solo el cuerpo, sino el alma.
+                    Pero en medio del miedo, también surge algo más: la fuerza para afrontar lo impensable y la capacidad de sanar, no solo el cuerpo, sino el alma.
                   </p>
                   <p className="text-black/70">
                     Una historia honesta sobre la vida, la transformación personal y la belleza que persiste en el caos.

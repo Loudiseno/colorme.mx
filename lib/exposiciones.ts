@@ -161,7 +161,7 @@ export const exposicionesEs: Expo[] = [
     statement: [
       'Memoria. 1. f. Capacidad para recordar hechos o experiencias del pasado.',
       'Y al final eso somos: lo que probamos, vivimos, sentimos, disfrutamos, conocemos y experimentamos. Esos instantes que se quedan para siempre en nuestra mente, los recuerdos que van formando nuestro camino.',
-      'La exposición recopila algunas de mis memorias representadas mediante diferentes técnicas: fotografía, pintura y fotografía intervenida con pintura. Es mi obra —mi aura— la que habla mejor que mis palabras: es el interior de mi alma.',
+      'La exposición recopila algunas de mis memorias representadas mediante diferentes técnicas: fotografía, pintura y fotografía intervenida con pintura. Es mi obra, mi aura, la que habla mejor que mis palabras: es el interior de mi alma.',
     ],
     cover: '/memorias-expo.jpeg',
     coverAlt: 'Memorias — exposición individual',

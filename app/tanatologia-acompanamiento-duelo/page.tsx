@@ -189,7 +189,7 @@ export default function TanatologiaPage() {
                 El duelo es una respuesta natural ante la pérdida. Es un proceso emocional, físico y psicológico que nos permite afrontar, procesar y adaptarnos a una nueva realidad.
               </p>
               <p>
-                No sigue un camino lineal ni tiene un tiempo definido: cada persona lo vive de manera única. Puede estar acompañado de muchas emociones como tristeza, enojo, confusión, culpa o incluso alivio —todas válidas.
+                No sigue un camino lineal ni tiene un tiempo definido: cada persona lo vive de manera única. Puede estar acompañado de muchas emociones como tristeza, enojo, confusión, culpa o incluso alivio, todas válidas.
               </p>
               <p>
                 Reconocer lo que sentimos es el primer paso para transformar el dolor en sanación y bienestar emocional.

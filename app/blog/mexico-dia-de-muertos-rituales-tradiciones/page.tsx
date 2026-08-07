@@ -56,7 +56,7 @@ export default function MexicoDiaDeMuertosPage() {
           </p>
 
           <p>
-            Esta forma de relacionarnos con la muerte viene de muy lejos. Nuestros antepasados —mexicas, mayas, zapotecas, purépechas— creían que morir no era desaparecer. Era transformarse. Pasar a otro estado. Continuar existiendo en otro plano.
+            Esta forma de relacionarnos con la muerte viene de muy lejos. Nuestros antepasados, mexicas, mayas, zapotecas y purépechas, creían que morir no era desaparecer. Era transformarse. Pasar a otro estado. Continuar existiendo en otro plano.
           </p>
 
           <p>
