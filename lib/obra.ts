@@ -229,11 +229,11 @@ export const producto: ObraPiece[] = [1, 3, 2, 4, 5].map((n) => ({
 
 export const pinturas: ObraPiece[] = [
   {
-    src: '/acuarela-mariposa.jpg',
-    alt: 'Mariposa — acuarela',
-    altEn: 'Mariposa — watercolor',
-    caption: 'Mariposa\nAcuarela\n14.8 × 21 cm',
-    captionEn: 'Mariposa\nWatercolor\n14.8 × 21 cm',
+    src: '/pintura-azul.jpeg',
+    alt: 'Azul — acrílico',
+    altEn: 'Azul — acrylic',
+    caption: 'Azul\nAcrílico\n80 × 80 cm',
+    captionEn: 'Azul\nAcrylic\n80 × 80 cm',
   },
   {
     src: '/acuarela-flamingo.jpg',
@@ -243,11 +243,25 @@ export const pinturas: ObraPiece[] = [
     captionEn: 'Flamingo\nWatercolor\n14.8 × 21 cm',
   },
   {
+    src: '/pintura-rastros.jpeg',
+    alt: 'Rastros — acrílico',
+    altEn: 'Rastros — acrylic',
+    caption: 'Rastros\nAcrílico\n120 × 60 cm',
+    captionEn: 'Rastros\nAcrylic\n120 × 60 cm',
+  },
+  {
+    src: '/acuarela-mariposa.jpg',
+    alt: 'Mariposa — acuarela',
+    altEn: 'Mariposa — watercolor',
+    caption: 'Mariposa\nAcuarela\n14.8 × 21 cm',
+    captionEn: 'Mariposa\nWatercolor\n14.8 × 21 cm',
+  },
+  {
     src: '/acuarela-llueve.jpg',
     alt: 'Llueve — acuarela, ilustración del libro Indeleble',
     altEn: 'Llueve — watercolor, illustration from the book Indeleble',
-    caption: 'Llueve\nAcuarela\nIlustración del libro «Indeleble»',
-    captionEn: 'Llueve\nWatercolor\nIllustration from the book «Indeleble»',
+    caption: 'Llueve\nAcuarela\n21.6 × 27.9 cm\nIlustración del libro «Indeleble»',
+    captionEn: 'Llueve\nWatercolor\n21.6 × 27.9 cm\nIllustration from the book «Indeleble»',
   },
   {
     src: '/acuarela-fe.jpg',
@@ -264,25 +278,11 @@ export const pinturas: ObraPiece[] = [
     captionEn: 'Ballena\nWatercolor\n21 × 14.8 cm',
   },
   {
-    src: '/pintura-azul.jpeg',
-    alt: 'Azul — acrílico',
-    altEn: 'Azul — acrylic',
-    caption: 'Azul\nAcrílico\n80 × 80 cm',
-    captionEn: 'Azul\nAcrylic\n80 × 80 cm',
-  },
-  {
     src: '/pintura-despues-de-ti.jpeg',
     alt: 'Después de ti — acrílico',
     altEn: 'Después de ti — acrylic',
     caption: 'Después de ti\nAcrílico\n120 × 90 cm',
     captionEn: 'Después de ti\nAcrylic\n120 × 90 cm',
-  },
-  {
-    src: '/pintura-rastros.jpeg',
-    alt: 'Rastros — acrílico',
-    altEn: 'Rastros — acrylic',
-    caption: 'Rastros\nAcrílico\n120 × 60 cm',
-    captionEn: 'Rastros\nAcrylic\n120 × 60 cm',
   },
   {
     src: '/pintura-matices.jpeg',
