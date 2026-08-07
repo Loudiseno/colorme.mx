@@ -51,7 +51,7 @@ export default function EnHomePage() {
       />
 
       {/* Hero: Intro + About Lou */}
-      <section className="pt-28 pb-4 md:pt-36 md:pb-6 bg-white" id="about">
+      <section className="pt-28 pb-6 md:pt-32 md:pb-8 bg-white" id="about">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: Practice Introduction */}
@@ -181,7 +181,7 @@ export default function EnHomePage() {
       </section>
 
       {/* Session Types */}
-      <section className="py-10 md:py-12 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl text-black mb-10 text-center">Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -245,7 +245,7 @@ export default function EnHomePage() {
       </section>
 
       {/* Productos */}
-      <section className="py-10 md:py-12 bg-white" id="books">
+      <section className="py-8 md:py-10 bg-white" id="books">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl text-black mb-10 text-center">Books</h2>
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
@@ -363,7 +363,7 @@ export default function EnHomePage() {
       <EnBlogSection />
 
       {/* Contact Section */}
-      <section className="py-10 md:py-12" id="contact">
+      <section className="py-8 md:py-10" id="contact">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl text-black mb-4">Get in touch</h2>
@@ -376,7 +376,7 @@ export default function EnHomePage() {
       </section>
 
       {/* Redes sociales */}
-      <section className="py-10 md:py-12 bg-[#B2F7EF]/10">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl text-black mb-2">Follow me on social media</h2>
           <p className="text-black/60 mb-6">
@@ -400,7 +400,7 @@ export default function EnHomePage() {
       </section>
 
       {/* FAQ Link */}
-      <section className="py-10 md:py-12 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl text-black mb-4">
             Questions?

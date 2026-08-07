@@ -421,3 +421,18 @@ img {
   user-select: none;
   -webkit-user-select: none;
 }
+
+/* Al detectar Impr Pant las imágenes se ocultan un instante. */
+.screen-capture-guard img {
+  visibility: hidden;
+}
+
+/* Al imprimir o guardar como PDF no sale ninguna imagen. */
+@media print {
+  img,
+  picture,
+  figure,
+  svg {
+    display: none !important;
+  }
+}

@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ'
 
 export default function PreguntasFrecuentesPage() {
   return (
-    <main className="pt-28 pb-16 md:pt-36 md:pb-20">
+    <main className="pt-28 pb-6 md:pt-32 md:pb-8">
       <div className="max-w-3xl mx-auto px-6">
         <Link
           href="/"

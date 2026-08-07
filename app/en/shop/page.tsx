@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import PageHero from '@/components/PageHero'
 import Image from 'next/image'
 import { Sparkles } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
@@ -34,16 +35,7 @@ const journalGallery = [
 export default function EnShopPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-28 pb-8 md:pt-36 md:pb-10 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Shop</h1>
-          <p className="text-black/70 leading-relaxed max-w-2xl mx-auto">
-            Resources created from grief counseling and art as therapy to support your
-            process — at your own pace, wherever you are.
-          </p>
-        </div>
-      </section>
+      <PageHero title="Shop" subtitle="Resources created from grief counseling and art as therapy to support your process — at your own pace, wherever you are." />
 
       {/* Journal */}
       <section className="py-6 md:py-8 bg-[#B2F7EF]/5" id="journal">
@@ -111,7 +103,7 @@ export default function EnShopPage() {
       </section>
 
       {/* Packages */}
-      <section className="py-10 md:py-12 bg-white" id="packages">
+      <section className="py-8 md:py-10 bg-white" id="packages">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-10 text-center">Packages</h2>
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
@@ -159,7 +151,7 @@ export default function EnShopPage() {
       </section>
 
       {/* Indeleble */}
-      <section className="py-10 md:py-12 bg-[#B2F7EF]/5" id="indeleble">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5" id="indeleble">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-0 items-stretch rounded-3xl overflow-hidden border border-[#B2F7EF] bg-white">
             <div className="bg-white p-8 md:p-12 flex items-center justify-center">
@@ -201,7 +193,7 @@ export default function EnShopPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-10 md:py-12 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl text-black mb-4">Not sure where to start?</h2>
           <p className="text-black/70 mb-8 leading-relaxed">

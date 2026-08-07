@@ -33,7 +33,7 @@ const featuredArticles = [
 
 export default function BlogSection() {
   return (
-    <section className="py-10 md:py-12 bg-white" id="blog">
+    <section className="py-8 md:py-10 bg-white" id="blog">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-10">
           <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-4 relative">

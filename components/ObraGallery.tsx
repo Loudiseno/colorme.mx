@@ -24,6 +24,13 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
   // Índice global: el visor recorre todas las fotos, agrupadas o no.
   const flat: ObraImage[] = groups ? groups.flatMap((g) => g.items) : (images ?? [])
   const [zoom, setZoom] = useState<number | null>(null)
+  // Con ?ids=1 en la URL aparece el nombre de archivo bajo cada foto, para
+  // poder señalar exactamente cuál conservar o quitar. No se ve en la web normal.
+  const [showIds, setShowIds] = useState(false)
+
+  useEffect(() => {
+    setShowIds(new URLSearchParams(window.location.search).get('ids') === '1')
+  }, [])
 
   const prev = useCallback(
     () => setZoom((z) => (z === null ? z : (z - 1 + flat.length) % flat.length)),
@@ -72,6 +79,11 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
         <figcaption className="mt-2 text-right text-xs text-black/40 leading-relaxed whitespace-pre-line">
           {img.caption}
         </figcaption>
+      )}
+      {showIds && (
+        <p className="mt-1 text-right text-[10px] text-[#0D9488] font-mono break-all">
+          {img.src.replace('/', '')}
+        </p>
       )}
     </figure>
   )

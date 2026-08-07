@@ -118,7 +118,7 @@ export default function TanatologiaPage() {
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-12 md:pt-40 md:pb-16 bg-white">
+      <section className="pt-28 pb-6 md:pt-32 md:pb-8 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -177,7 +177,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Sanar tras una pérdida */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
             ¿Qué es la Tanatología?
@@ -208,7 +208,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Types of Loss */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
@@ -241,7 +241,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* How can tanatología help */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
             ¿Cómo te puede ayudar la Tanatología?
@@ -298,7 +298,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Process */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
             ¿Cómo es mi proceso de acompañamiento en sesión?
@@ -315,7 +315,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-10 text-center">
             Tipos de sesiones
@@ -340,7 +340,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* Combined approach */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-6">
             Tanatología y arteterapia: un enfoque integrador
@@ -370,7 +370,7 @@ export default function TanatologiaPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl text-black mb-4">
             No tienes que atravesar esto solo/a

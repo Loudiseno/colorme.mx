@@ -105,7 +105,7 @@ export default function ArteterapiaPage() {
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-12 md:pt-40 md:pb-16 bg-white">
+      <section className="pt-28 pb-6 md:pt-32 md:pb-8 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -164,7 +164,7 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* What it helps with */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
@@ -194,7 +194,7 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* Benefits */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
             Beneficios de la Arteterapia
@@ -213,7 +213,7 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* Testimonios Gallery */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
@@ -263,7 +263,7 @@ export default function ArteterapiaPage() {
       </section>
 
       {/* How it works */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
             ¿Qué sucede durante una sesión de Arteterapia?
@@ -293,7 +293,7 @@ export default function ArteterapiaPage() {
 
 
 {/* CTA */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl text-black mb-4">
             ¿Listo/a para comenzar?

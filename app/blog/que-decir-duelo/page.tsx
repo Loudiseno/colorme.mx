@@ -7,7 +7,7 @@ import RelatedArticles from '@/components/RelatedArticles'
 
 export default function QueDecirDueloPage() {
   return (
-    <article className="pt-32 pb-16 md:pt-40 md:pb-20 bg-white">
+    <article className="pt-28 pb-6 md:pt-32 md:pb-8 bg-white">
       <div className="max-w-3xl mx-auto px-6">
         <Link
           href="/blog"

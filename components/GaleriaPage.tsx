@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import ObraGallery from '@/components/ObraGallery'
+import ObraCTA from '@/components/ObraCTA'
 import ImageCopyright from '@/components/ImageCopyright'
 import { getGaleria, galeriaGroups } from '@/lib/obraGalerias'
 
@@ -22,7 +23,7 @@ export default function GaleriaPage({ slug, en = false }: GaleriaPageProps) {
     : { close: 'Cerrar', prev: 'Anterior', next: 'Siguiente' }
 
   return (
-    <article className="pt-24 pb-10 md:pt-28 md:pb-12 bg-white">
+    <article className="pt-28 pb-6 md:pt-32 md:pb-8 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <Link
           href={backHref}
@@ -52,6 +53,7 @@ export default function GaleriaPage({ slug, en = false }: GaleriaPageProps) {
         </div>
       </div>
 
+      <ObraCTA en={en} />
       <ImageCopyright en={en} />
     </article>
   )

@@ -47,7 +47,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section className="py-12 md:py-16 bg-white" id="faq">
+    <section className="py-8 md:py-10 bg-white" id="faq">
       {/* FAQ Schema for SEO */}
       <Script
         id="faq-schema"

@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/seo'
 
 export default function ArticuloDueloEnfermedad() {
   return (
-    <article className="pt-28 pb-16 md:pt-36 md:pb-20">
+    <article className="pt-28 pb-6 md:pt-32 md:pb-8">
       <div className="max-w-3xl mx-auto px-6">
         {/* Back link */}
         <Link

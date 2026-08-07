@@ -118,7 +118,7 @@ export default function GriefCounselingPage() {
       />
 
       {/* Hero */}
-      <section className="pt-32 pb-12 md:pt-40 md:pb-16 bg-white">
+      <section className="pt-28 pb-6 md:pt-32 md:pb-8 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -177,7 +177,7 @@ export default function GriefCounselingPage() {
       </section>
 
       {/* Healing after a loss */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
             What is grief counseling?
@@ -208,7 +208,7 @@ export default function GriefCounselingPage() {
       </section>
 
       {/* Types of Loss */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
@@ -241,7 +241,7 @@ export default function GriefCounselingPage() {
       </section>
 
       {/* How can grief counseling help */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
             How can grief counseling help you?
@@ -298,7 +298,7 @@ export default function GriefCounselingPage() {
       </section>
 
       {/* Process */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
             What does a session look like?
@@ -315,7 +315,7 @@ export default function GriefCounselingPage() {
       </section>
 
       {/* Session Types */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-10 text-center">
             Tipos de sesiones
@@ -340,7 +340,7 @@ export default function GriefCounselingPage() {
       </section>
 
       {/* Combined approach */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-8 md:py-10 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-6">
             Grief counseling and art as therapy: an integrated approach
@@ -366,7 +366,7 @@ export default function GriefCounselingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-16 bg-[#B2F7EF]/5">
+      <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl text-black mb-4">
             You don't have to go through this alone

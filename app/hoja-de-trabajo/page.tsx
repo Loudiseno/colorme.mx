@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import PageHero from '@/components/PageHero'
 import { matchExercises } from '@/lib/artTherapyExercises';
 import Image from 'next/image';
 import EmailGateModal from '@/components/EmailGateModal';
@@ -314,17 +315,7 @@ export default function WorksheetPage() {
       {/* Email requerido para acceder a los recursos gratis */}
       <EmailGateModal />
 
-      {/* Hero Section */}
-      <section className="bg-[#B2F7EF]/10 py-10">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl text-black mb-4">
-            Exploraciones creativas
-          </h1>
-          <p className="text-lg text-black/80 max-w-2xl mx-auto">
-            Dos ejercicios diseñados para ayudarte a explorar y expresar lo que sientes.
-          </p>
-        </div>
-      </section>
+      <PageHero title="Exploraciones creativas" subtitle="Dos ejercicios diseñados para ayudarte a explorar y expresar lo que sientes." tint />
 
       {/* Exercise 1: Form-based personalized exercise */}
       <section className="py-10">

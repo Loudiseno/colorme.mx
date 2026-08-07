@@ -4,9 +4,11 @@ import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import Image from 'next/image'
 import ObraPreview from '@/components/ObraPreview'
+import PageHero from '@/components/PageHero'
 import { lugares, gente, intervenida, producto, pinturas, mixtas, localize, localizePieces } from '@/lib/obra'
 import ExhibitionList from '@/components/ExhibitionList'
 import ExpoCards from '@/components/ExpoCards'
+import ObraCTA from '@/components/ObraCTA'
 import ImageCopyright from '@/components/ImageCopyright'
 import { exposicionesEn } from '@/lib/exposiciones'
 
@@ -77,23 +79,7 @@ const awards = [
 export default function ObraEnPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-24 pb-6 md:pt-28 md:pb-8 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-xs text-black/50 uppercase tracking-wider mb-3">Portfolio</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">Artwork</h1>
-          <p className="text-black/70 leading-relaxed max-w-2xl mx-auto">
-            Photography, intervened photography, painting, and mixed media: a way of looking,
-            feeling, and reframing the human experience through colour.
-          </p>
-          <Link
-            href="/obra"
-            className="inline-block mt-4 text-xs text-black/40 hover:text-[#0D9488] transition-colors underline underline-offset-2"
-          >
-            Leer en español
-          </Link>
-        </div>
-      </section>
+      <PageHero title="Artwork" />
 
       {/* Artist statement */}
       <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
@@ -110,7 +96,6 @@ export default function ObraEnPage() {
             />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl text-black mb-6">Artist Statement</h2>
             <div className="space-y-4 text-black/75 leading-relaxed">
               <p>
                 My artistic path is a way of looking, feeling, reframing the human experience, and
@@ -168,12 +153,12 @@ export default function ObraEnPage() {
           {/* Subsections: people, landscape, architecture */}
           <div className="space-y-10 md:space-y-12">
             <div>
-              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">People</h3>
-              <ObraPreview images={localize(gente, true)} href="/en/obra/galeria/gente" moreLabel="See more" />
-            </div>
-            <div>
               <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Places</h3>
               <ObraPreview images={localize(lugares, true)} href="/en/obra/galeria/lugares" moreLabel="See more" />
+            </div>
+            <div>
+              <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">People</h3>
+              <ObraPreview images={localize(gente, true)} href="/en/obra/galeria/gente" moreLabel="See more" />
             </div>
             <div>
               <h3 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-6">Product</h3>
@@ -243,7 +228,7 @@ export default function ObraEnPage() {
       </section>
 
       {/* Exhibitions — featured section */}
-      <section className="py-10 md:py-14 bg-canvas">
+      <section className="py-8 md:py-10 bg-canvas">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-2xl mb-14 md:mb-20">
             <p className="text-xs text-[#0D9488] uppercase tracking-[0.2em] mb-4">Trajectory</p>
@@ -286,31 +271,7 @@ export default function ObraEnPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-10 bg-white">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-2xl md:text-3xl text-black mb-3">Collaborations or acquiring a piece?</h2>
-          <p className="text-black/70 mb-6">
-            For exhibitions, commissions, press, or acquiring a piece, get in touch.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <a
-              href={siteConfig.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#0D9488] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#0D9488]/90 transition-all"
-            >
-              Message me on WhatsApp
-            </a>
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="bg-white text-black px-6 py-2.5 rounded-full text-sm font-medium border border-black/10 hover:bg-[#B2F7EF]/20 transition-all"
-            >
-              {siteConfig.email}
-            </a>
-          </div>
-        </div>
-      </section>
+      <ObraCTA en />
       <ImageCopyright en />
     </>
   )

@@ -143,7 +143,7 @@ export default async function EnArticlePage({ params }: Props) {
     .filter((a): a is EnArticle => Boolean(a))
 
   return (
-    <article lang="en" className="pt-28 pb-16 md:pt-36 md:pb-20">
+    <article lang="en" className="pt-28 pb-6 md:pt-32 md:pb-8">
       <Script
         id="article-schema"
         type="application/ld+json"
