@@ -9,6 +9,8 @@ export interface ObraImage {
   alt: string
   /** Pie de foto: lugar o ficha técnica, en gris y alineado a la derecha */
   caption?: string
+  /** Encuadre cuando la foto se recorta, p. ej. 'top' o '50% 65%' */
+  focus?: string
 }
 
 interface ObraCarouselProps {

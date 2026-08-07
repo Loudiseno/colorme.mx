@@ -14,6 +14,8 @@ export interface ObraPhoto {
   /** País, para agrupar la galería de lugares en columnas */
   country: string
   countryEn: string
+  /** Encuadre cuando la foto se recorta, p. ej. 'top' o '50% 65%' */
+  focus?: string
 }
 
 export const lugares: ObraPhoto[] = [
@@ -88,51 +90,49 @@ export const lugares: ObraPhoto[] = [
 
 export const gente: ObraPhoto[] = [
   { src: '/gente-ellas-nusa-penida.jpeg', alt: 'Nusa Penida, Indonesia — fotografía de Lou', caption: 'Nusa Penida, Indonesia', captionEn: 'Nusa Penida, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
-  { src: '/gente-bali-2.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
-  { src: '/gente-india-3.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-vietnam-2.jpeg', alt: 'Vietnam — fotografía de Lou', caption: 'Vietnam', captionEn: 'Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
-  { src: '/gente-vietnam-8.jpeg', alt: 'Vietnam — fotografía de Lou', caption: 'Vietnam', captionEn: 'Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
-  { src: '/gente-india-7.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-10.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
+  { src: '/gente-bali-2.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia', focus: 'top' },
+  { src: '/gente-vietnam-2.jpeg', alt: 'Hoi An, Vietnam — fotografía de Lou', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam', focus: '50% 65%' },
+  { src: '/gente-india-3.jpeg', alt: 'Mumbai, India — fotografía de Lou', caption: 'Mumbai, India', captionEn: 'Mumbai, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-vietnam-8.jpeg', alt: 'Hoi An, Vietnam — fotografía de Lou', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/gente-india-7.jpeg', alt: 'Jaipur, India — fotografía de Lou', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-bali-4.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
+  { src: '/gente-india-2.jpeg', alt: 'Mumbai, India — fotografía de Lou', caption: 'Mumbai, India', captionEn: 'Mumbai, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-11.jpeg', alt: 'Jaipur, India — fotografía de Lou', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-12.jpeg', alt: 'Jaipur, India — fotografía de Lou', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-17.jpeg', alt: 'Rishikesh, India — fotografía de Lou', caption: 'Rishikesh, India', captionEn: 'Rishikesh, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-19.jpeg', alt: 'Delhi, India — fotografía de Lou', caption: 'Delhi, India', captionEn: 'Delhi, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-9.jpeg', alt: 'Jaipur, India — fotografía de Lou', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-tailandia-1.jpeg', alt: 'Damnoen Saduak, Tailandia — fotografía de Lou', caption: 'Damnoen Saduak, Tailandia', captionEn: 'Damnoen Saduak, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/gente-tailandia-6.jpeg', alt: 'Damnoen Saduak, Tailandia — fotografía de Lou', caption: 'Damnoen Saduak, Tailandia', captionEn: 'Damnoen Saduak, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/gente-vietnam-1.jpeg', alt: 'Da Nang, Vietnam — fotografía de Lou', caption: 'Da Nang, Vietnam', captionEn: 'Da Nang, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/gente-vietnam-4.jpeg', alt: 'Hoi An, Vietnam — fotografía de Lou', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/gente-india-10.jpeg', alt: 'Jaipur, India — fotografía de Lou', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
   { src: '/gente-bali-1.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
   { src: '/gente-bali-3.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
-  { src: '/gente-bali-4.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
-  { src: '/gente-bali-5.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
   { src: '/gente-bali-6.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
-  { src: '/gente-bali-7.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
-  { src: '/gente-india-1.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-11.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-12.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-13.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-14.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-15.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-16.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-17.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-18.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-19.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-2.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-20.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-4.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-5.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-6.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-8.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-india-9.jpeg', alt: 'India — fotografía de Lou', caption: 'India', captionEn: 'India', country: 'India', countryEn: 'India' },
-  { src: '/gente-malasia-1.jpeg', alt: 'Malasia — fotografía de Lou', caption: 'Malasia', captionEn: 'Malaysia', country: 'Malasia', countryEn: 'Malaysia' },
+  { src: '/gente-india-1.jpeg', alt: 'Mumbai, India — fotografía de Lou', caption: 'Mumbai, India', captionEn: 'Mumbai, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-16.jpeg', alt: 'Rishikesh, India — fotografía de Lou', caption: 'Rishikesh, India', captionEn: 'Rishikesh, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-18.jpeg', alt: 'Rishikesh, India — fotografía de Lou', caption: 'Rishikesh, India', captionEn: 'Rishikesh, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-20.jpeg', alt: 'Agra, India — fotografía de Lou', caption: 'Agra, India', captionEn: 'Agra, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-4.jpeg', alt: 'Pune, India — fotografía de Lou', caption: 'Pune, India', captionEn: 'Pune, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-5.jpeg', alt: 'Jaipur, India — fotografía de Lou', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-6.jpeg', alt: 'Mumbai, India — fotografía de Lou', caption: 'Mumbai, India', captionEn: 'Mumbai, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-india-8.jpeg', alt: 'Mumbai, India — fotografía de Lou', caption: 'Mumbai, India', captionEn: 'Mumbai, India', country: 'India', countryEn: 'India' },
   { src: '/gente-oaxaquena-oaxaca.jpeg', alt: 'Oaxaca, México — fotografía de Lou', caption: 'Oaxaca, México', captionEn: 'Oaxaca, Mexico', country: 'México', countryEn: 'Mexico' },
-  { src: '/gente-tailandia-1.jpeg', alt: 'Tailandia — fotografía de Lou', caption: 'Tailandia', captionEn: 'Thailand', country: 'Tailandia', countryEn: 'Thailand' },
-  { src: '/gente-tailandia-2.jpeg', alt: 'Tailandia — fotografía de Lou', caption: 'Tailandia', captionEn: 'Thailand', country: 'Tailandia', countryEn: 'Thailand' },
-  { src: '/gente-tailandia-3.jpeg', alt: 'Tailandia — fotografía de Lou', caption: 'Tailandia', captionEn: 'Thailand', country: 'Tailandia', countryEn: 'Thailand' },
-  { src: '/gente-tailandia-4.jpeg', alt: 'Tailandia — fotografía de Lou', caption: 'Tailandia', captionEn: 'Thailand', country: 'Tailandia', countryEn: 'Thailand' },
-  { src: '/gente-tailandia-5.jpeg', alt: 'Tailandia — fotografía de Lou', caption: 'Tailandia', captionEn: 'Thailand', country: 'Tailandia', countryEn: 'Thailand' },
-  { src: '/gente-tailandia-6.jpeg', alt: 'Tailandia — fotografía de Lou', caption: 'Tailandia', captionEn: 'Thailand', country: 'Tailandia', countryEn: 'Thailand' },
-  { src: '/gente-tailandia-7.jpeg', alt: 'Tailandia — fotografía de Lou', caption: 'Tailandia', captionEn: 'Thailand', country: 'Tailandia', countryEn: 'Thailand' },
-  { src: '/gente-turquia-1.jpeg', alt: 'Turquía — fotografía de Lou', caption: 'Turquía', captionEn: 'Turkey', country: 'Turquía', countryEn: 'Turkey' },
-  { src: '/gente-vietnam-1.jpeg', alt: 'Vietnam — fotografía de Lou', caption: 'Vietnam', captionEn: 'Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
-  { src: '/gente-vietnam-3.jpeg', alt: 'Vietnam — fotografía de Lou', caption: 'Vietnam', captionEn: 'Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
-  { src: '/gente-vietnam-4.jpeg', alt: 'Vietnam — fotografía de Lou', caption: 'Vietnam', captionEn: 'Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
-  { src: '/gente-vietnam-5.jpeg', alt: 'Vietnam — fotografía de Lou', caption: 'Vietnam', captionEn: 'Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
-  { src: '/gente-vietnam-6.jpeg', alt: 'Vietnam — fotografía de Lou', caption: 'Vietnam', captionEn: 'Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
-  { src: '/gente-vietnam-7.jpeg', alt: 'Vietnam — fotografía de Lou', caption: 'Vietnam', captionEn: 'Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/gente-tailandia-3.jpeg', alt: 'Khlong Damnoen Saduak, Tailandia — fotografía de Lou', caption: 'Khlong Damnoen Saduak, Tailandia', captionEn: 'Khlong Damnoen Saduak, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/gente-tailandia-4.jpeg', alt: 'Khlong Damnoen Saduak, Tailandia — fotografía de Lou', caption: 'Khlong Damnoen Saduak, Tailandia', captionEn: 'Khlong Damnoen Saduak, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/gente-tailandia-5.jpeg', alt: 'Damnoen Saduak, Tailandia — fotografía de Lou', caption: 'Damnoen Saduak, Tailandia', captionEn: 'Damnoen Saduak, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/gente-tailandia-7.jpeg', alt: 'Bangkok, Tailandia — fotografía de Lou', caption: 'Bangkok, Tailandia', captionEn: 'Bangkok, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/gente-vietnam-3.jpeg', alt: 'Hoi An, Vietnam — fotografía de Lou', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/gente-vietnam-6.jpeg', alt: 'Hoi An, Vietnam — fotografía de Lou', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/gente-vietnam-7.jpeg', alt: 'Hoi An, Vietnam — fotografía de Lou', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/gente-turquia-1.jpeg', alt: 'Fatih, Turquía — fotografía de Lou', caption: 'Fatih, Turquía', captionEn: 'Fatih, Turkey', country: 'Turquía', countryEn: 'Turkey' },
+  { src: '/gente-bali-5.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
+  { src: '/gente-bali-7.jpeg', alt: 'Bali, Indonesia — fotografía de Lou', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
+  { src: '/gente-india-13.jpeg', alt: 'Jaipur, India — fotografía de Lou', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-vietnam-5.jpeg', alt: 'Khlong Damnoen Saduak, Tailandia — fotografía de Lou', caption: 'Khlong Damnoen Saduak, Tailandia', captionEn: 'Khlong Damnoen Saduak, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/gente-india-14.jpeg', alt: 'Jaipur, India — fotografía de Lou', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
+  { src: '/gente-malasia-1.jpeg', alt: 'George Town, Malasia — fotografía de Lou', caption: 'George Town, Malasia', captionEn: 'George Town, Malaysia', country: 'Malasia', countryEn: 'Malaysia' },
 ]
 
 /** Traduce las fotos al idioma pedido, para pasarlas a los carruseles. */
@@ -141,6 +141,7 @@ export function localize(photos: ObraPhoto[], en = false) {
     src: p.src,
     alt: p.alt,
     caption: en ? p.captionEn : p.caption,
+    focus: p.focus,
   }))
 }
 
@@ -169,11 +170,56 @@ export interface ObraPiece {
   captionEn?: string
 }
 
-export const intervenida: ObraPiece[] = Array.from({ length: 11 }, (_, i) => ({
-  src: `/foto-intervenida-${i + 1}.jpg`,
-  alt: `Fotografía intervenida ${i + 1} — obra de Lou`,
-  altEn: `Intervened photography ${i + 1} — artwork by Lou`,
-}))
+// Las seis primeras vienen de la exposición individual Reinterpretando.
+export const intervenida: ObraPiece[] = [
+  {
+    src: '/reinterpretando-cuba.jpeg',
+    alt: 'La Habana, Cuba — fotografía intervenida',
+    altEn: 'Havana, Cuba — intervened photography',
+    caption: 'La Habana, Cuba\nFotografía intervenida con acuarela\n90 × 60 cm',
+    captionEn: 'Havana, Cuba\nPhotograph intervened with watercolour\n90 × 60 cm',
+  },
+  {
+    src: '/reinterpretando-firenze.jpeg',
+    alt: 'Florencia, Italia — fotografía intervenida',
+    altEn: 'Florence, Italy — intervened photography',
+    caption: 'Florencia, Italia\nFotografía intervenida con acuarela\n90 × 60 cm',
+    captionEn: 'Florence, Italy\nPhotograph intervened with watercolour\n90 × 60 cm',
+  },
+  {
+    src: '/reinterpretando-lucca.jpeg',
+    alt: 'Lucca, Italia — fotografía intervenida',
+    altEn: 'Lucca, Italy — intervened photography',
+    caption: 'Lucca, Italia\nFotografía intervenida con acuarela\n90 × 60 cm',
+    captionEn: 'Lucca, Italy\nPhotograph intervened with watercolour\n90 × 60 cm',
+  },
+  {
+    src: '/reinterpretando-malta.jpeg',
+    alt: 'Gozo, Malta — fotografía intervenida',
+    altEn: 'Gozo, Malta — intervened photography',
+    caption: 'Gozo, Malta\nFotografía intervenida con acuarela\n90 × 60 cm',
+    captionEn: 'Gozo, Malta\nPhotograph intervened with watercolour\n90 × 60 cm',
+  },
+  {
+    src: '/reinterpretando-progreso.jpeg',
+    alt: 'Progreso, México — fotografía intervenida',
+    altEn: 'Progreso, Mexico — intervened photography',
+    caption: 'Progreso, México\nFotografía intervenida con acuarela\n90 × 60 cm',
+    captionEn: 'Progreso, Mexico\nPhotograph intervened with watercolour\n90 × 60 cm',
+  },
+  {
+    src: '/reinterpretando-valle-de-bravo.jpeg',
+    alt: 'Valle de Bravo, México — fotografía intervenida',
+    altEn: 'Valle de Bravo, Mexico — intervened photography',
+    caption: 'Valle de Bravo, México\nFotografía intervenida con acuarela\n90 × 60 cm',
+    captionEn: 'Valle de Bravo, Mexico\nPhotograph intervened with watercolour\n90 × 60 cm',
+  },
+  ...Array.from({ length: 11 }, (_, i) => ({
+    src: `/foto-intervenida-${i + 1}.jpg`,
+    alt: `Fotografía intervenida ${i + 1} — obra de Lou`,
+    altEn: `Intervened photography ${i + 1} — artwork by Lou`,
+  })),
+]
 
 export const producto: ObraPiece[] = [1, 3, 2, 4, 5].map((n) => ({
   src: `/foto-producto-${n}.jpeg`,

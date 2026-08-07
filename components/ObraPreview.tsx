@@ -26,6 +26,7 @@ export default function ObraPreview({ images, href, moreLabel }: ObraPreviewProp
                 alt={img.alt}
                 fill
                 sizes="(max-width: 1024px) 45vw, 23vw"
+                style={img.focus ? { objectPosition: img.focus } : undefined}
                 className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </div>

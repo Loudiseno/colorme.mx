@@ -31,8 +31,8 @@ export const galerias: GaleriaDef[] = [
     slug: 'gente',
     title: 'Gente',
     titleEn: 'People',
-    intro: 'Retratos y escenas de las personas que me he encontrado en el camino.',
-    introEn: 'Portraits and scenes of the people I have met along the way.',
+    intro: 'Miradas y sonrisas con las que he coincidido. Encuentros de un instante que, sin palabras y sin volver a repetirse, dejaron algo.',
+    introEn: 'Glances and smiles I have crossed paths with. Encounters that lasted an instant and, without a word and never repeated, left something behind.',
     images: (en) => localize(gente, en),
   },
   {
