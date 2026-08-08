@@ -47,32 +47,32 @@ const benefits = [
 
 const helpsWith = [
   {
-    icon: '/Frame-21.webp',
+    icon: '/icono-colorme-corazon.webp',
     title: 'Duelo',
     description: 'Creamos un espacio seguro para procesar la ausencia, expresar el dolor y transitar las emociones de la pérdida.'
   },
   {
-    icon: '/Frame-23-1.webp',
+    icon: '/icono-colorme-estrella.webp',
     title: 'Autoconocimiento',
     description: 'Exploramos tus emociones, patrones y creencias para reconectar contigo mismo y fortalecer tu bienestar interior.'
   },
   {
-    icon: '/Frame-20-1.webp',
+    icon: '/icono-colorme-arcoiris.webp',
     title: 'Cambios y transiciones de vida',
     description: 'Te acompaño a adaptarte al cambio y encontrar nuevas formas de avanzar.'
   },
   {
-    icon: '/Frame-24-1.webp',
+    icon: '/icono-colorme-nube-de-lluvia.webp',
     title: 'Enfermedades y diagnósticos',
     description: 'Abordamos el impacto del diagnóstico, los tratamientos y la incertidumbre validando cada emoción para procesar el dolor y recuperar tu sentido de control.'
   },
   {
-    icon: '/Frame-22.webp',
+    icon: '/icono-colorme-rayo.webp',
     title: 'Ansiedad y estrés',
     description: 'Liberamos la tensión acumulada y recuperamos la calma a través de la reconexión creativa y la regulación emocional.'
   },
   {
-    icon: '/Frame-29.webp',
+    icon: '/icono-colorme-esfera.webp',
     title: 'Autoestima',
     description: 'Un proceso para volver a ti: recupera tu centro, reconoce tu valor y reconecta con la confianza para habitar tu propia vida.'
   },

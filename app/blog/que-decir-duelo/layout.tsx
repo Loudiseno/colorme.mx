@@ -59,7 +59,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               name: siteConfig.name,
               logo: {
                 '@type': 'ImageObject',
-                url: `${siteConfig.url}/COLORME_logonegro.webp`,
+                url: `${siteConfig.url}/logo-colorme-negro.webp`,
               },
             },
             mainEntityOfPage: {

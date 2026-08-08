@@ -66,7 +66,7 @@ export default function Footer() {
           <div>
             <Link href={homeHref} className="inline-block">
               <Image
-                src="/COLORME_logo-19-768x141.webp"
+                src="/logo-colorme.webp"
                 alt="ColorMe"
                 width={140}
                 height={26}

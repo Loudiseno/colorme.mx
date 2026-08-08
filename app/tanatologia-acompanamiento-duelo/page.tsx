@@ -35,32 +35,32 @@ export const metadata: Metadata = {
 
 const typesOfLoss = [
   {
-    icon: '/Frame-21-2.webp',
+    icon: '/icono-colorme-corazon-latido.webp',
     title: 'Relacionales',
     description: 'Pérdida de vínculos significativos: muerte de un ser querido, muerte de una mascota, ruptura de pareja, divorcio o distanciamiento familiar.',
   },
   {
-    icon: '/Frame-23-1.webp',
+    icon: '/icono-colorme-estrella.webp',
     title: 'Intrapersonales',
     description: 'Pérdida de identidad, sentido o propósito: crisis existencial, cambio de carrera o rol, sensación de fracaso, pérdida de proyectos o sueños.',
   },
   {
-    icon: '/Frame-29.webp',
+    icon: '/icono-colorme-esfera.webp',
     title: 'Materiales',
     description: 'Pérdida de bienes o estabilidad: dificultades económicas, pérdida de empleo, pérdida del hogar u objetos con valor emocional.',
   },
   {
-    icon: '/Frame-22.webp',
+    icon: '/icono-colorme-rayo.webp',
     title: 'Salud',
     description: 'Cambios físicos, mentales o emocionales: diagnóstico médico, enfermedad crónica, discapacidad, infertilidad, pérdidas gestacionales o perinatales o deterioro cognitivo.',
   },
   {
-    icon: '/Frame-30.webp',
+    icon: '/icono-colorme-destellos.webp',
     title: 'Evolutivas',
     description: 'Transiciones propias del ciclo de vida: envejecimiento, jubilación, nido vacío, cierre de etapas, mudanzas significativas o cambio de país.',
   },
   {
-    icon: '/Frame-28.webp',
+    icon: '/icono-colorme-sendero-de-estrellas.webp',
     title: 'Ambiguas',
     description: 'Pérdidas sin cierre claro o con reconocimiento social limitado: desapariciones, duelo migratorio, aborto, relaciones no visibles.',
   },

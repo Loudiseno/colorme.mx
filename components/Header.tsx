@@ -66,7 +66,7 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <Link href={homeHref} className="hover:opacity-80 transition-opacity">
           <Image
-            src="/COLORME_logo-19-768x141.webp"
+            src="/logo-colorme.webp"
             alt="ColorMe"
             width={150}
             height={28}

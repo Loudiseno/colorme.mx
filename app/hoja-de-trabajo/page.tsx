@@ -169,10 +169,10 @@ export default function WorksheetPage() {
       const pageHeight = 297; // A4 height in mm
       const margin = 20;
 
-      // Load and add COLORME_logonegro.png logo at top center
+      // Load and add logo-colorme-negro.png logo at top center
       let logoY = 15;
       try {
-        const logoResponse = await fetch('/COLORME_logonegro.png');
+        const logoResponse = await fetch('/logo-colorme-negro.png');
         const logoBlob = await logoResponse.blob();
         const logoDataUrl = await new Promise<string>((resolve) => {
           const reader = new FileReader();

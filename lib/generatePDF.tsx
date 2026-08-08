@@ -154,7 +154,7 @@ const WorksheetDocument = ({ data, exercises }: { data: WorksheetData; exercises
         {/* Header with Logo */}
         <View style={styles.header}>
           <Image
-            src="/COLORME_logonegro.png"
+            src="/logo-colorme-negro.png"
             style={styles.logo}
           />
           <Text style={styles.title}>Ejercicios Personalizados</Text>

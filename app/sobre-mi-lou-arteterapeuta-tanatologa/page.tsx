@@ -29,7 +29,7 @@ export default function SobreMi() {
             <div className="order-1 md:order-2">
               <div className="bg-white rounded-3xl p-6 border border-[#B2F7EF]">
                 <Image
-                  src="/Lou_hobbies.webp"
+                  src="/lourdes-perez-arteterapeuta-tanatologa-aficiones.webp"
                   alt="Lou - Arteterapeuta, Tanatóloga, Artista, Fotógrafa, Diseñadora, Viajera y más"
                   width={500}
                   height={488}

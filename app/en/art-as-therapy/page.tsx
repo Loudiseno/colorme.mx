@@ -47,32 +47,32 @@ const benefits = [
 
 const helpsWith = [
   {
-    icon: '/Frame-21.webp',
+    icon: '/icono-colorme-corazon.webp',
     title: 'Duelo',
     description: 'We create a safe space to process absence, express pain and move through the emotions of loss.'
   },
   {
-    icon: '/Frame-23-1.webp',
+    icon: '/icono-colorme-estrella.webp',
     title: 'Self-knowledge',
     description: 'We explore your emotions, patterns and beliefs to reconnect with yourself and strengthen your inner wellbeing.'
   },
   {
-    icon: '/Frame-20-1.webp',
+    icon: '/icono-colorme-arcoiris.webp',
     title: 'Life changes and transitions',
     description: 'I support you in adapting to change and finding new ways forward.'
   },
   {
-    icon: '/Frame-24-1.webp',
+    icon: '/icono-colorme-nube-de-lluvia.webp',
     title: 'Illness and diagnosis',
     description: 'We address the impact of a diagnosis, treatment and uncertainty — validating every emotion so you can process the pain and regain a sense of control.'
   },
   {
-    icon: '/Frame-22.webp',
+    icon: '/icono-colorme-rayo.webp',
     title: 'Anxiety and stress',
     description: 'We release accumulated tension and recover calm through creative reconnection and emotional regulation.'
   },
   {
-    icon: '/Frame-29.webp',
+    icon: '/icono-colorme-esfera.webp',
     title: 'Autoestima',
     description: 'A process of returning to yourself: recover your center, recognize your worth and reconnect with the confidence to inhabit your own life.'
   },
