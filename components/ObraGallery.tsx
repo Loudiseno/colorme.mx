@@ -27,9 +27,14 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
   // Con ?ids=1 en la URL aparece el nombre de archivo bajo cada foto, para
   // poder señalar exactamente cuál conservar o quitar. No se ve en la web normal.
   const [showIds, setShowIds] = useState(false)
+  const [columnas, setColumnas] = useState(3)
 
   useEffect(() => {
     setShowIds(new URLSearchParams(window.location.search).get('ids') === '1')
+    const medir = () => setColumnas(window.innerWidth >= 1024 ? 3 : 2)
+    medir()
+    window.addEventListener('resize', medir)
+    return () => window.removeEventListener('resize', medir)
   }, [])
 
   const prev = useCallback(
@@ -88,12 +93,18 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
     </figure>
   )
 
+  // Mosaico sin huecos: las fotos se reparten una a una entre las columnas,
+  // así la primera fila se lee de izquierda a derecha y las columnas crecen
+  // parejas aunque las fotos tengan alturas distintas.
+  const enColumnas = Array.from({ length: columnas }, (_, c) =>
+    flat.map((img, i) => ({ img, i })).filter(({ i }) => i % columnas === c)
+  )
+
   let cursor = -1
 
   return (
     <>
       {groups ? (
-        // Una columna vertical por país; las columnas fluyen sin cortar grupos.
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-8 md:gap-10">
           {groups.map((g) => (
             <section key={g.title} className="break-inside-avoid mb-10 md:mb-12">
@@ -108,9 +119,13 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
           ))}
         </div>
       ) : (
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start">
-          {flat.map((img, i) => (
-            <Photo key={img.src} img={img} index={i} />
+        <div className="flex gap-6 md:gap-8 items-start">
+          {enColumnas.map((columna, c) => (
+            <div key={c} className="flex-1 min-w-0 space-y-6 md:space-y-8">
+              {columna.map(({ img, i }) => (
+                <Photo key={img.src} img={img} index={i} />
+              ))}
+            </div>
           ))}
         </div>
       )}
