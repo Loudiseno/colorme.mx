@@ -191,6 +191,8 @@ export interface ObraPiece {
   altEn: string
   caption?: string
   captionEn?: string
+  /** Encuadre cuando la obra se recorta, p. ej. 'right' o '50% 65%' */
+  focus?: string
 }
 
 // Las once numeradas van primero; las de Reinterpretando cierran la sección.
@@ -334,13 +336,6 @@ export const mixtas: ObraPiece[] = [
       'Old Brandy\nMixed media\n90 × 60 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
   },
   {
-    src: '/tecnica-mixta-obra-llavero-toscano.jpeg',
-    alt: 'Llavero Toscano, técnica mixta, obra de Lourdes Pérez',
-    altEn: 'Llavero Toscano, mixed media, artwork by Lourdes Pérez',
-    caption: 'Llavero Toscano\nTécnica mixta\n80 × 120 cm',
-    captionEn: 'Llavero Toscano\nMixed media\n80 × 120 cm',
-  },
-  {
     src: '/tecnica-mixta-obra-vuela.jpeg',
     alt: 'Vuela, técnica mixta, obra de Lourdes Pérez',
     altEn: 'Vuela, mixed media, artwork by Lourdes Pérez',
@@ -348,6 +343,14 @@ export const mixtas: ObraPiece[] = [
       'Vuela\nTécnica mixta\n60 × 90 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
     captionEn:
       'Vuela\nMixed media\n60 × 90 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
+    focus: 'right',
+  },
+  {
+    src: '/tecnica-mixta-obra-llavero-toscano.jpeg',
+    alt: 'Llavero Toscano, técnica mixta, obra de Lourdes Pérez',
+    altEn: 'Llavero Toscano, mixed media, artwork by Lourdes Pérez',
+    caption: 'Llavero Toscano\nTécnica mixta\n80 × 120 cm',
+    captionEn: 'Llavero Toscano\nMixed media\n80 × 120 cm',
   },
   {
     src: '/tecnica-mixta-obra-bee.jpeg',
@@ -399,5 +402,6 @@ export function localizePieces(pieces: ObraPiece[], en = false) {
     src: p.src,
     alt: en ? p.altEn : p.alt,
     caption: en ? p.captionEn : p.caption,
+    focus: p.focus,
   }))
 }
