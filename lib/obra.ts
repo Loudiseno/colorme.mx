@@ -334,6 +334,22 @@ export const mixtas: ObraPiece[] = [
       'Old Brandy\nMixed media\n90 × 60 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
   },
   {
+    src: '/tecnica-mixta-obra-llavero-toscano.jpeg',
+    alt: 'Llavero Toscano, técnica mixta, obra de Lourdes Pérez',
+    altEn: 'Llavero Toscano, mixed media, artwork by Lourdes Pérez',
+    caption: 'Llavero Toscano\nTécnica mixta\n80 × 120 cm',
+    captionEn: 'Llavero Toscano\nMixed media\n80 × 120 cm',
+  },
+  {
+    src: '/tecnica-mixta-obra-vuela.jpeg',
+    alt: 'Vuela, técnica mixta, obra de Lourdes Pérez',
+    altEn: 'Vuela, mixed media, artwork by Lourdes Pérez',
+    caption:
+      'Vuela\nTécnica mixta\n60 × 90 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
+    captionEn:
+      'Vuela\nMixed media\n60 × 90 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
+  },
+  {
     src: '/tecnica-mixta-obra-bee.jpeg',
     alt: 'Manchester Bee, técnica mixta sobre mapa original de la Ordnance Survey (Reino Unido), obra de Lourdes Pérez',
     altEn: 'Manchester Bee, mixed media on an original Ordnance Survey map (United Kingdom), artwork by Lourdes Pérez',
@@ -374,15 +390,6 @@ export const mixtas: ObraPiece[] = [
     altEn: 'El Taxi, mixed media on an original Ordnance Survey map (United Kingdom), artwork by Lourdes Pérez',
     caption: 'El Taxi\nTécnica mixta sobre mapa original de la Ordnance Survey (Reino Unido)\n65 × 76 cm',
     captionEn: 'El Taxi\nMixed media on an original Ordnance Survey map (United Kingdom)\n65 × 76 cm',
-  },
-  {
-    src: '/tecnica-mixta-obra-vuela.jpeg',
-    alt: 'Vuela, técnica mixta, obra de Lourdes Pérez',
-    altEn: 'Vuela, mixed media, artwork by Lourdes Pérez',
-    caption:
-      'Vuela\nTécnica mixta\n60 × 90 cm\nPeriódico «La Nazione», número especial de Centenario, Italia, 1959',
-    captionEn:
-      'Vuela\nMixed media\n60 × 90 cm\nNewspaper «La Nazione», Centenary special edition, Italy, 1959',
   },
 ]
 
