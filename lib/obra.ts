@@ -91,6 +91,22 @@ export const lugares: ObraPhoto[] = [
   { src: '/fotografia-hoi-an-vietnam-bandera.jpeg', alt: 'Fotografía de Hoi An, Vietnam, por Lourdes Pérez', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
   { src: '/fotografia-hoi-an-vietnam-barcos.jpeg', alt: 'Fotografía de Hoi An, Vietnam, por Lourdes Pérez', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
   { src: '/fotografia-hoi-an-vietnam-comida.jpeg', alt: 'Fotografía de Hoi An, Vietnam, por Lourdes Pérez', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/fotografia-amsterdam-paises-bajos-5.jpeg', alt: 'Fotografía de Ámsterdam, Países Bajos, por Lourdes Pérez', caption: 'Ámsterdam, Países Bajos', captionEn: 'Amsterdam, Netherlands', country: 'Países Bajos', countryEn: 'Netherlands' },
+  { src: '/fotografia-bacalar-mexico.jpeg', alt: 'Fotografía de Bacalar, México, por Lourdes Pérez', caption: 'Bacalar, México', captionEn: 'Bacalar, Mexico', country: 'México', countryEn: 'Mexico' },
+  { src: '/fotografia-baja-california-sur-mexico-2.jpeg', alt: 'Fotografía de Baja California Sur, México, por Lourdes Pérez', caption: 'Baja California Sur, México', captionEn: 'Baja California Sur, Mexico', country: 'México', countryEn: 'Mexico' },
+  { src: '/fotografia-balandra-mexico.jpeg', alt: 'Fotografía de Balandra, México, por Lourdes Pérez', caption: 'Balandra, México', captionEn: 'Balandra, Mexico', country: 'México', countryEn: 'Mexico' },
+  { src: '/fotografia-bali-indonesia.jpeg', alt: 'Fotografía de Bali, Indonesia, por Lourdes Pérez', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
+  { src: '/fotografia-bangkok-tailandia-3.jpeg', alt: 'Fotografía de Bangkok, Tailandia, por Lourdes Pérez', caption: 'Bangkok, Tailandia', captionEn: 'Bangkok, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/fotografia-bangkok-tailandia-4.jpeg', alt: 'Fotografía de Bangkok, Tailandia, por Lourdes Pérez', caption: 'Bangkok, Tailandia', captionEn: 'Bangkok, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/fotografia-batu-caves-malasia.jpeg', alt: 'Fotografía de Batu Caves, Malasia, por Lourdes Pérez', caption: 'Batu Caves, Malasia', captionEn: 'Batu Caves, Malaysia', country: 'Malasia', countryEn: 'Malaysia' },
+  { src: '/fotografia-jaipur-india-4.jpeg', alt: 'Fotografía de Jaipur, India, por Lourdes Pérez', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
+  { src: '/fotografia-kuala-lumpur-malasia-2.jpeg', alt: 'Fotografía de Kuala Lumpur, Malasia, por Lourdes Pérez', caption: 'Kuala Lumpur, Malasia', captionEn: 'Kuala Lumpur, Malaysia', country: 'Malasia', countryEn: 'Malaysia' },
+  { src: '/fotografia-marple-reino-unido.jpeg', alt: 'Fotografía de Marple, Reino Unido, por Lourdes Pérez', caption: 'Marple, Reino Unido', captionEn: 'Marple, United Kingdom', country: 'Reino Unido', countryEn: 'United Kingdom' },
+  { src: '/fotografia-milan-italia.jpeg', alt: 'Fotografía de Milán, Italia, por Lourdes Pérez', caption: 'Milán, Italia', captionEn: 'Milan, Italy', country: 'Italia', countryEn: 'Italy' },
+  { src: '/fotografia-nusa-penida-indonesia-2.jpeg', alt: 'Fotografía de Nusa Penida, Indonesia, por Lourdes Pérez', caption: 'Nusa Penida, Indonesia', captionEn: 'Nusa Penida, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
+  { src: '/fotografia-tulum-mexico-2.jpeg', alt: 'Fotografía de Tulum, México, por Lourdes Pérez', caption: 'Tulum, México', captionEn: 'Tulum, Mexico', country: 'México', countryEn: 'Mexico' },
+  { src: '/fotografia-gozo-malta.jpeg', alt: 'Fotografía de Gozo, Malta, por Lourdes Pérez', caption: 'Gozo, Malta', captionEn: 'Gozo, Malta', country: 'Malta', countryEn: 'Malta' },
+  { src: '/fotografia-madrid-espana.jpeg', alt: 'Fotografía de Madrid, España, por Lourdes Pérez', caption: 'Madrid, España', captionEn: 'Madrid, Spain', country: 'España', countryEn: 'Spain' },
 ]
 
 export const gente: ObraPhoto[] = [
@@ -139,6 +155,9 @@ export const gente: ObraPhoto[] = [
   { src: '/retrato-khlong-damnoen-saduak-tailandia-3.jpeg', alt: 'Retrato de Khlong Damnoen Saduak, Tailandia, por Lourdes Pérez', caption: 'Khlong Damnoen Saduak, Tailandia', captionEn: 'Khlong Damnoen Saduak, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
   { src: '/retrato-jaipur-india-8.jpeg', alt: 'Retrato de Jaipur, India, por Lourdes Pérez', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
   { src: '/retrato-george-town-malasia.jpeg', alt: 'Retrato de George Town, Malasia, por Lourdes Pérez', caption: 'George Town, Malasia', captionEn: 'George Town, Malaysia', country: 'Malasia', countryEn: 'Malaysia' },
+  { src: '/retrato-bali-indonesia-8.jpeg', alt: 'Retrato de Bali, Indonesia, por Lourdes Pérez', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
+  { src: '/retrato-guerrero-mexico.jpeg', alt: 'Retrato de Guerrero, México, por Lourdes Pérez', caption: 'Guerrero, México', captionEn: 'Guerrero, Mexico', country: 'México', countryEn: 'Mexico' },
+  { src: '/retrato-jaipur-india-9.jpeg', alt: 'Retrato de Jaipur, India, por Lourdes Pérez', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
 ]
 
 /** Traduce las fotos al idioma pedido, para pasarlas a los carruseles. */
@@ -300,6 +319,34 @@ export const pinturas: ObraPiece[] = [
 ]
 
 export const mixtas: ObraPiece[] = [
+  {
+    src: '/tecnica-mixta-bee-mapa-ordnance-survey.jpeg',
+    alt: 'Bee, técnica mixta sobre mapa de la Ordnance Survey, por Lourdes Pérez',
+    altEn: 'Bee, mixed media on an Ordnance Survey map, by Lourdes Pérez',
+    caption: 'Bee\nTécnica mixta sobre mapa original de la Ordnance Survey (Reino Unido)\n65 × 76 cm',
+    captionEn: 'Bee\nMixed media on an original Ordnance Survey map (United Kingdom)\n65 × 76 cm',
+  },
+  {
+    src: '/tecnica-mixta-cup-of-tea-mapa-ordnance-survey.jpeg',
+    alt: 'Cup of Tea, técnica mixta sobre mapa de la Ordnance Survey, por Lourdes Pérez',
+    altEn: 'Cup of Tea, mixed media on an Ordnance Survey map, by Lourdes Pérez',
+    caption: 'Cup of Tea\nTécnica mixta sobre mapa original de la Ordnance Survey (Reino Unido)\n65 × 76 cm',
+    captionEn: 'Cup of Tea\nMixed media on an original Ordnance Survey map (United Kingdom)\n65 × 76 cm',
+  },
+  {
+    src: '/tecnica-mixta-coming-home-mapa-ordnance-survey.jpeg',
+    alt: 'Coming Home, técnica mixta sobre mapa de la Ordnance Survey, por Lourdes Pérez',
+    altEn: 'Coming Home, mixed media on an Ordnance Survey map, by Lourdes Pérez',
+    caption: 'Coming Home\nTécnica mixta sobre mapa original de la Ordnance Survey (Reino Unido)\n65 × 76 cm',
+    captionEn: 'Coming Home\nMixed media on an original Ordnance Survey map (United Kingdom)\n65 × 76 cm',
+  },
+  {
+    src: '/tecnica-mixta-el-taxi-mapa-ordnance-survey.jpeg',
+    alt: 'El Taxi, técnica mixta sobre mapa de la Ordnance Survey, por Lourdes Pérez',
+    altEn: 'El Taxi, mixed media on an Ordnance Survey map, by Lourdes Pérez',
+    caption: 'El Taxi\nTécnica mixta sobre mapa original de la Ordnance Survey (Reino Unido)\n65 × 76 cm',
+    captionEn: 'El Taxi\nMixed media on an original Ordnance Survey map (United Kingdom)\n65 × 76 cm',
+  },
   {
     src: '/tecnica-mixta-alright-mapa-ordnance-survey.jpeg',
     alt: 'Alright — técnica mixta sobre mapa original de la Ordnance Survey, por Lourdes Pérez',

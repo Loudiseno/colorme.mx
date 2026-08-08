@@ -108,11 +108,9 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
           ))}
         </div>
       ) : (
-        <div className="columns-2 lg:columns-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start">
           {flat.map((img, i) => (
-            <div key={img.src} className="break-inside-avoid mb-6 md:mb-8">
-              <Photo img={img} index={i} />
-            </div>
+            <Photo key={img.src} img={img} index={i} />
           ))}
         </div>
       )}
