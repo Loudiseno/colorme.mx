@@ -88,7 +88,7 @@ const process = [
 const sessionTypes = [
   { icon: '/columpio.webp', title: 'Individual sessions', description: 'Personalized sessions at your own pace and needs, with close emotional support.' },
   { icon: '/corazon.webp', title: 'Group sessions', description: 'Safe gatherings to create, share and heal collectively, working on themes of common interest.' },
-  { icon: '/adolecente hombre.webp', title: 'Workshops for organizations', description: 'Emotional wellbeing programs tailored to each group&rsquo;s objectives.' },
+  { icon: '/adolecente-hombre.webp', title: 'Workshops for organizations', description: 'Emotional wellbeing programs tailored to each group&rsquo;s objectives.' },
 ]
 
 export default function GriefCounselingPage() {
