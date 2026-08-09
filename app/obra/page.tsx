@@ -34,14 +34,10 @@ export const metadata: Metadata = {
 // app/en/obra/page.tsx.
 // ============================================================================
 
-const clientes = [
-  'Studio Ceri',
-  'Scatena Inox',
-  'Casa Dragones en Pujol',
-  'Quintonil',
-  'Garum',
-  'Hotel St. Regis',
-]
+const clientes = ['Studio Ceri', 'Scatena Inox', 'Casa Dragones']
+
+/** Sedes de las sesiones, que no son clientes */
+const sedes = ['Pujol', 'Quintonil', 'Garum', 'Hotel St. Regis']
 
 const exposicionesColectivas = [
   { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, CDMX', date: '2015' },
@@ -140,7 +136,7 @@ export default function ObraPage() {
               distintos sectores, con clientes como:
             </p>
           </div>
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap gap-2 mb-4">
             {clientes.map((c) => (
               <span
                 key={c}
@@ -150,6 +146,10 @@ export default function ObraPage() {
               </span>
             ))}
           </div>
+          <p className="max-w-3xl text-black/60 leading-relaxed mb-8">
+            Algunas de esas sesiones se realizaron en {sedes.slice(0, -1).join(', ')} y el{' '}
+            {sedes[sedes.length - 1]}.
+          </p>
 
           {/* Subsecciones: gente, lugares, producto */}
           <div className="space-y-10 md:space-y-12">

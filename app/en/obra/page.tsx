@@ -34,14 +34,10 @@ export const metadata: Metadata = {
 // and add them to the matching array.
 // ============================================================================
 
-const clients = [
-  'Studio Ceri',
-  'Scatena Inox',
-  'Casa Dragones en Pujol',
-  'Quintonil',
-  'Garum',
-  'Hotel St. Regis',
-]
+const clients = ['Studio Ceri', 'Scatena Inox', 'Casa Dragones']
+
+/** Venues where the shoots took place, not clients */
+const venues = ['Pujol', 'Quintonil', 'Garum', 'Hotel St. Regis']
 
 const groupExhibitions = [
   { title: 'Secretos escondidos', place: 'Galería Saúl Serrano, Mexico City', date: '2015' },
@@ -140,7 +136,7 @@ export default function ObraEnPage() {
               clients, including:
             </p>
           </div>
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap gap-2 mb-4">
             {clients.map((c) => (
               <span
                 key={c}
@@ -150,6 +146,10 @@ export default function ObraEnPage() {
               </span>
             ))}
           </div>
+          <p className="max-w-3xl text-black/60 leading-relaxed mb-8">
+            Some of those shoots took place at {venues.slice(0, -1).join(', ')} and the{' '}
+            {venues[venues.length - 1]}.
+          </p>
 
           {/* Subsections: people, landscape, architecture */}
           <div className="space-y-10 md:space-y-12">
