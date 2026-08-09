@@ -27,9 +27,14 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
   // Con ?ids=1 en la URL aparece el nombre de archivo bajo cada foto, para
   // poder señalar exactamente cuál conservar o quitar. No se ve en la web normal.
   const [showIds, setShowIds] = useState(false)
+  const [columnas, setColumnas] = useState(3)
 
   useEffect(() => {
     setShowIds(new URLSearchParams(window.location.search).get('ids') === '1')
+    const medir = () => setColumnas(window.innerWidth >= 1024 ? 3 : 2)
+    medir()
+    window.addEventListener('resize', medir)
+    return () => window.removeEventListener('resize', medir)
   }, [])
 
   const prev = useCallback(
@@ -88,6 +93,14 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
     </figure>
   )
 
+  // Las columnas CSS llenan la primera de arriba abajo antes de pasar a la
+  // siguiente, así que la foto 30 acababa apareciendo más alta que la 10.
+  // Repartiéndolas una a una, la primera fila es 1, 2 y 3, y la jerarquía
+  // baja por filas sin que aparezcan huecos entre fotos.
+  const enColumnas = Array.from({ length: columnas }, (_, c) =>
+    flat.map((img, i) => ({ img, i })).filter(({ i }) => i % columnas === c)
+  )
+
   let cursor = -1
 
   return (
@@ -107,12 +120,12 @@ export default function ObraGallery({ images, groups, labels = defaults }: ObraG
           ))}
         </div>
       ) : (
-        // Mosaico: cada columna se llena de arriba abajo, así el orden
-        // se sigue leyendo verticalmente y no quedan huecos entre fotos.
-        <div className="columns-2 lg:columns-3 gap-6 md:gap-8">
-          {flat.map((img, i) => (
-            <div key={img.src} className="break-inside-avoid mb-6 md:mb-8">
-              <Photo img={img} index={i} />
+        <div className="flex gap-6 md:gap-8 items-start">
+          {enColumnas.map((columna, c) => (
+            <div key={c} className="flex-1 min-w-0 space-y-6 md:space-y-8">
+              {columna.map(({ img, i }) => (
+                <Photo key={img.src} img={img} index={i} />
+              ))}
             </div>
           ))}
         </div>
