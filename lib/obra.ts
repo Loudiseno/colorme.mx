@@ -48,6 +48,8 @@ export const lugares: ObraPhoto[] = [
   { src: '/fotografia-lugar-baja-california-mexico.jpeg', alt: 'Fotografía de Baja California, México, por Lourdes Pérez', caption: 'Baja California, México', captionEn: 'Baja California, Mexico', country: 'México', countryEn: 'Mexico' },
   { src: '/fotografia-lugar-bangkok-tailandia-2.jpeg', alt: 'Fotografía de Bangkok, Tailandia, por Lourdes Pérez', caption: 'Bangkok, Tailandia', captionEn: 'Bangkok, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
   { src: '/fotografia-lugar-ciudad-de-mexico-mexico-2.jpeg', alt: 'Fotografía de Ciudad de México, México, por Lourdes Pérez', caption: 'Ciudad de México, México', captionEn: 'Mexico City, Mexico', country: 'México', countryEn: 'Mexico' },
+  { src: '/fotografia-lugar-bangkok-tailandia-3.jpeg', alt: 'Fotografía de Bangkok, Tailandia, por Lourdes Pérez', caption: 'Bangkok, Tailandia', captionEn: 'Bangkok, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
+  { src: '/fotografia-lugar-bali-indonesia.jpeg', alt: 'Fotografía de Bali, Indonesia, por Lourdes Pérez', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
   { src: '/fotografia-lugar-edimburgo-reino-unido.jpeg', alt: 'Fotografía de Edimburgo, Reino Unido, por Lourdes Pérez', caption: 'Edimburgo, Reino Unido', captionEn: 'Edinburgh, United Kingdom', country: 'Reino Unido', countryEn: 'United Kingdom' },
   { src: '/fotografia-lugar-estambul-turquia-3.jpeg', alt: 'Fotografía de Estambul, Turquía, por Lourdes Pérez', caption: 'Estambul, Turquía', captionEn: 'Istanbul, Turkey', country: 'Turquía', countryEn: 'Turkey' },
   { src: '/fotografia-lugar-estambul-turquia-4.jpeg', alt: 'Fotografía de Estambul, Turquía, por Lourdes Pérez', caption: 'Estambul, Turquía', captionEn: 'Istanbul, Turkey', country: 'Turquía', countryEn: 'Turkey' },
@@ -79,6 +81,8 @@ export const lugares: ObraPhoto[] = [
   { src: '/fotografia-lugar-bangkok-tailandia-4.jpeg', alt: 'Fotografía de Bangkok, Tailandia, por Lourdes Pérez', caption: 'Bangkok, Tailandia', captionEn: 'Bangkok, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
   { src: '/fotografia-lugar-hoi-an-vietnam-4.jpeg', alt: 'Fotografía de Hoi An, Vietnam, por Lourdes Pérez', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
   { src: '/fotografia-lugar-hoi-an-vietnam-6.jpeg', alt: 'Fotografía de Hoi An, Vietnam, por Lourdes Pérez', caption: 'Hoi An, Vietnam', captionEn: 'Hoi An, Vietnam', country: 'Vietnam', countryEn: 'Vietnam' },
+  { src: '/fotografia-lugar-tulum-mexico-2.jpeg', alt: 'Fotografía de Tulum, México, por Lourdes Pérez', caption: 'Tulum, México', captionEn: 'Tulum, Mexico', country: 'México', countryEn: 'Mexico' },
+  { src: '/fotografia-lugar-nusa-penida-indonesia-2.jpeg', alt: 'Fotografía de Nusa Penida, Indonesia, por Lourdes Pérez', caption: 'Nusa Penida, Indonesia', captionEn: 'Nusa Penida, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
   { src: '/fotografia-lugar-amsterdam-paises-bajos-5.jpeg', alt: 'Fotografía de Ámsterdam, Países Bajos, por Lourdes Pérez', caption: 'Ámsterdam, Países Bajos', captionEn: 'Amsterdam, Netherlands', country: 'Países Bajos', countryEn: 'Netherlands' },
   { src: '/fotografia-lugar-baja-california-sur-mexico-2.jpeg', alt: 'Fotografía de Baja California Sur, México, por Lourdes Pérez', caption: 'Baja California Sur, México', captionEn: 'Baja California Sur, Mexico', country: 'México', countryEn: 'Mexico' },
   { src: '/fotografia-lugar-balandra-mexico.jpeg', alt: 'Fotografía de Balandra, México, por Lourdes Pérez', caption: 'Balandra, México', captionEn: 'Balandra, Mexico', country: 'México', countryEn: 'Mexico' },
@@ -102,10 +106,6 @@ export const lugares: ObraPhoto[] = [
   { src: '/fotografia-lugar-siena-italia.jpeg', alt: 'Fotografía de Siena, Italia, por Lourdes Pérez', caption: 'Siena, Italia', captionEn: 'Siena, Italy', country: 'Italia', countryEn: 'Italy' },
   { src: '/fotografia-lugar-uxmal-mexico.jpeg', alt: 'Fotografía de Uxmal, México, por Lourdes Pérez', caption: 'Uxmal, México', captionEn: 'Uxmal, Mexico', country: 'México', countryEn: 'Mexico' },
   { src: '/fotografia-lugar-yucatan-mexico.jpeg', alt: 'Fotografía de Yucatán, México, por Lourdes Pérez', caption: 'Yucatán, México', captionEn: 'Yucatan, Mexico', country: 'México', countryEn: 'Mexico' },
-  { src: '/fotografia-lugar-bali-indonesia.jpeg', alt: 'Fotografía de Bali, Indonesia, por Lourdes Pérez', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
-  { src: '/fotografia-lugar-bangkok-tailandia-3.jpeg', alt: 'Fotografía de Bangkok, Tailandia, por Lourdes Pérez', caption: 'Bangkok, Tailandia', captionEn: 'Bangkok, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
-  { src: '/fotografia-lugar-nusa-penida-indonesia-2.jpeg', alt: 'Fotografía de Nusa Penida, Indonesia, por Lourdes Pérez', caption: 'Nusa Penida, Indonesia', captionEn: 'Nusa Penida, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
-  { src: '/fotografia-lugar-tulum-mexico-2.jpeg', alt: 'Fotografía de Tulum, México, por Lourdes Pérez', caption: 'Tulum, México', captionEn: 'Tulum, Mexico', country: 'México', countryEn: 'Mexico' },
 ]
 
 export const gente: ObraPhoto[] = [
