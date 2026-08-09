@@ -3,8 +3,7 @@ import {
   gente,
   intervenida,
   producto,
-  pinturas,
-  mixtas,
+  pintura,
   localize,
   localizePieces,
 } from '@/lib/obra'
@@ -55,17 +54,9 @@ export const galerias: GaleriaDef[] = [
     slug: 'pintura',
     title: 'Pintura',
     titleEn: 'Painting',
-    intro: 'Acuarela, óleo y acrílico: el color y las formas como lenguaje propio.',
-    introEn: 'Watercolor, oil, and acrylic: color and shape as a language of their own.',
-    images: (en) => localizePieces(pinturas, en),
-  },
-  {
-    slug: 'tecnicas-mixtas',
-    title: 'Técnicas mixtas',
-    titleEn: 'Mixed media',
-    intro: 'Periódicos, mapas y objetos encontrados integrados en la obra.',
-    introEn: 'Newspapers, maps, and found objects woven into the work.',
-    images: (en) => localizePieces(mixtas, en),
+    intro: 'Acuarela, óleo y acrílico, junto con periódicos y objetos encontrados en el camino.',
+    introEn: 'Watercolour, oil, and acrylic, alongside newspapers and objects found along the way.',
+    images: (en) => localizePieces(pintura, en),
   },
 ]
 

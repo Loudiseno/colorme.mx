@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
+import { Camera, Brush, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import Image from 'next/image'
 import ObraPreview from '@/components/ObraPreview'
-import { lugares, gente, intervenida, producto, pinturas, mixtas, localize, localizePieces } from '@/lib/obra'
+import { lugares, gente, intervenida, producto, pintura, localize, localizePieces } from '@/lib/obra'
 import ExhibitionList from '@/components/ExhibitionList'
 import ExpoCards from '@/components/ExpoCards'
 import ObraCTA from '@/components/ObraCTA'
@@ -196,36 +196,22 @@ export default function ObraPage() {
             </span>
             <h2 className="text-3xl md:text-4xl text-black">Pintura</h2>
           </div>
-          <p className="max-w-3xl text-black/75 leading-relaxed mb-6">
-            La pintura es el espacio donde exploro una manera distinta de comprender y
-            expresar la experiencia humana. Trabajo principalmente con acuarela, óleo y acrílico,
-            desarrollando composiciones en las que el color, las formas y las texturas se convierten
-            en un lenguaje propio. Me interesa la libertad del proceso creativo, experimentar con las
-            capas, los materiales y los contrastes, permitiendo que cada obra encuentre su propio
-            camino. A través del color y las formas busco expresar mi manera de experimentar, sentir
-            e interpretar el mundo.
-          </p>
-          <ObraPreview images={localizePieces(pinturas)} href="/obra/galeria/pintura" moreLabel="Ver más" />
-        </div>
-      </section>
-
-      {/* Técnicas mixtas */}
-      <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
-              <Layers size={20} strokeWidth={1.5} />
-            </span>
-            <h2 className="text-3xl md:text-4xl text-black">Técnicas mixtas</h2>
+          <div className="max-w-3xl space-y-4 text-black/75 leading-relaxed mb-6">
+            <p>
+              A través de la pintura exploro, siento y expreso mi manera de ver el mundo. Trabajo
+              con acuarela, óleo y acrílico, experimentando con el color, las formas, las texturas
+              y las posibilidades que ofrece cada material. Disfruto la libertad del proceso
+              creativo, trabajar con capas, materiales y contrastes, y permitir que cada obra
+              encuentre su propio camino.
+            </p>
+            <p>
+              También incorporo elementos cotidianos y objetos encontrados durante mis viajes,
+              especialmente periódicos locales, que conservan la memoria de un lugar y un momento
+              específico. Al integrarlos en la obra, cobran un nuevo sentido y se convierten en
+              parte de una nueva historia.
+            </p>
           </div>
-          <p className="max-w-3xl text-black/75 leading-relaxed mb-6">
-            Disfruto incorporar materiales cotidianos como mapas, revistas, folletos, publicidad,
-            servilletas y objetos encontrados durante mis viajes. Me interesa especialmente trabajar
-            con periódicos locales porque narran la memoria de un lugar y un momento específico. Al
-            integrarlos en la obra, esos fragmentos adquieren un nuevo significado y se convierten en
-            parte de una historia distinta.
-          </p>
-          <ObraPreview images={localizePieces(mixtas)} href="/obra/galeria/tecnicas-mixtas" moreLabel="Ver más" />
+          <ObraPreview images={localizePieces(pintura)} href="/obra/galeria/pintura" moreLabel="Ver más" />
         </div>
       </section>
 

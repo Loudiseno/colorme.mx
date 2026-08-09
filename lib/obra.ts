@@ -1,3 +1,5 @@
+import { exposicionesEs, exposicionesEn } from '@/lib/exposiciones'
+
 // ============================================================================
 // OBRA — fuente única de las galerías de fotografía (ES / EN)
 // Generado a partir de los archivos de /public. El pie de foto siempre indica
@@ -394,6 +396,26 @@ export const mixtas: ObraPiece[] = [
     caption: 'El Taxi\nTécnica mixta sobre mapa original de la Ordnance Survey (Reino Unido)\n65 × 76 cm',
     captionEn: 'El Taxi\nMixed media on an original Ordnance Survey map (United Kingdom)\n65 × 76 cm',
   },
+]
+
+/**
+ * Pintura reúne, en este orden, la técnica mixta, las pinturas de estudio y
+ * las obras de la exposición Luces de existencia.
+ */
+export const pintura: ObraPiece[] = [
+  ...mixtas,
+  ...pinturas,
+  ...exposicionesEs[0].works!.map((w, i) => {
+    const en = exposicionesEn[0].works![i]
+    const ficha = (o: typeof w) => `${o.title}\n${o.technique}${o.dimensions ? `\n${o.dimensions}` : ''}`
+    return {
+      src: w.image!,
+      alt: `${w.title}, ${w.technique}, obra de Lourdes Pérez`,
+      altEn: `${en.title}, ${en.technique}, artwork by Lourdes Pérez`,
+      caption: ficha(w),
+      captionEn: ficha(en),
+    }
+  }),
 ]
 
 /** Adapta las piezas al idioma pedido. */

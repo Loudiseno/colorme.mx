@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Camera, Brush, Layers, ImageIcon, Award } from 'lucide-react'
+import { Camera, Brush, ImageIcon, Award } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
 import Image from 'next/image'
 import ObraPreview from '@/components/ObraPreview'
-import { lugares, gente, intervenida, producto, pinturas, mixtas, localize, localizePieces } from '@/lib/obra'
+import { lugares, gente, intervenida, producto, pintura, localize, localizePieces } from '@/lib/obra'
 import ExhibitionList from '@/components/ExhibitionList'
 import ExpoCards from '@/components/ExpoCards'
 import ObraCTA from '@/components/ObraCTA'
@@ -196,35 +196,21 @@ export default function ObraEnPage() {
             </span>
             <h2 className="text-3xl md:text-4xl text-black">Painting</h2>
           </div>
-          <p className="max-w-3xl text-black/75 leading-relaxed mb-6">
-            Painting is the space where I explore a different way of understanding and
-            expressing the human experience. I work mainly with watercolour, oil and acrylic,
-            developing compositions in which colour, shape and texture become a language of their
-            own. I am drawn to the freedom of the creative process — experimenting with layers,
-            materials and contrasts — letting each piece find its own path. Through colour and form
-            I seek to express my way of experiencing, feeling and interpreting the world.
-          </p>
-          <ObraPreview images={localizePieces(pinturas, true)} href="/en/obra/galeria/pintura" moreLabel="See more" />
-        </div>
-      </section>
-
-      {/* Mixed media */}
-      <section className="py-8 md:py-10 bg-[#B2F7EF]/10">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="w-10 h-10 rounded-xl bg-[#B2F7EF] flex items-center justify-center text-black">
-              <Layers size={20} strokeWidth={1.5} />
-            </span>
-            <h2 className="text-3xl md:text-4xl text-black">Mixed Media</h2>
+          <div className="max-w-3xl space-y-4 text-black/75 leading-relaxed mb-6">
+            <p>
+              Through painting I explore, feel, and express my way of seeing the world. I work with
+              watercolour, oil, and acrylic, experimenting with colour, shape, texture, and the
+              possibilities each material offers. I enjoy the freedom of the creative process,
+              working with layers, materials, and contrasts, and letting each piece find its own
+              way.
+            </p>
+            <p>
+              I also incorporate everyday elements and objects found during my travels, especially
+              local newspapers, which hold the memory of a place and a specific moment. Once woven
+              into the work, they take on new meaning and become part of a new story.
+            </p>
           </div>
-          <p className="max-w-3xl text-black/75 leading-relaxed mb-6">
-            I enjoy incorporating everyday materials — maps, magazines, brochures, ads, napkins,
-            and objects found during my travels. I am especially drawn to working with local
-            newspapers, since they carry the memory of a place and a specific moment. Once woven
-            into the work, these fragments take on new meaning and become part of a different
-            story.
-          </p>
-          <ObraPreview images={localizePieces(mixtas, true)} href="/en/obra/galeria/tecnicas-mixtas" moreLabel="See more" />
+          <ObraPreview images={localizePieces(pintura, true)} href="/en/obra/galeria/pintura" moreLabel="See more" />
         </div>
       </section>
 
