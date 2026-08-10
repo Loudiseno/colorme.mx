@@ -158,6 +158,7 @@ export const gente: ObraPhoto[] = [
   { src: '/fotografia-gente-jaipur-india-8.jpeg', alt: 'Retrato de Jaipur, India, por Lourdes Pérez', caption: 'Jaipur, India', captionEn: 'Jaipur, India', country: 'India', countryEn: 'India' },
   { src: '/fotografia-gente-george-town-malasia.jpeg', alt: 'Retrato de George Town, Malasia, por Lourdes Pérez', caption: 'George Town, Malasia', captionEn: 'George Town, Malaysia', country: 'Malasia', countryEn: 'Malaysia' },
   { src: '/fotografia-gente-bali-indonesia-8.jpeg', alt: 'Retrato de Bali, Indonesia, por Lourdes Pérez', caption: 'Bali, Indonesia', captionEn: 'Bali, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
+  { src: '/fotografia-gente-damnoen-saduak-tailandia-4.jpeg', alt: 'Retrato de Damnoen Saduak, Tailandia, por Lourdes Pérez', caption: 'Damnoen Saduak, Tailandia', captionEn: 'Damnoen Saduak, Thailand', country: 'Tailandia', countryEn: 'Thailand' },
 ]
 
 /** Traduce las fotos al idioma pedido, para pasarlas a los carruseles. */
