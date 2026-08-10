@@ -22,6 +22,8 @@ export interface Expo {
   coverAlt?: string
   statement: string[]
   works?: ExpoWork[]
+  /** Fotografías del montaje, no obras */
+  views?: { src: string; alt: string }[]
 }
 
 export const exposicionesEs: Expo[] = [
@@ -165,6 +167,10 @@ export const exposicionesEs: Expo[] = [
     ],
     cover: '/exposicion-memorias-portada.jpeg',
     coverAlt: 'Memorias — exposición individual',
+    views: [
+      { src: '/exposicion-memorias-montaje-1.jpeg', alt: 'Montaje de la exposición Memorias' },
+      { src: '/exposicion-memorias-montaje-2.jpeg', alt: 'Montaje de la exposición Memorias' },
+    ],
     works: [
       {
         title: 'La Habana, Cuba',
@@ -353,6 +359,10 @@ export const exposicionesEn: Expo[] = [
     ],
     cover: '/exposicion-memorias-portada.jpeg',
     coverAlt: 'Memorias — solo exhibition',
+    views: [
+      { src: '/exposicion-memorias-montaje-1.jpeg', alt: 'Installation view of the exhibition Memorias' },
+      { src: '/exposicion-memorias-montaje-2.jpeg', alt: 'Installation view of the exhibition Memorias' },
+    ],
     works: [
       {
         title: 'La Habana, Cuba',

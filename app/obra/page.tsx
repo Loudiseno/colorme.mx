@@ -52,7 +52,13 @@ const exposicionesColectivas = [
   { title: 'El Arca', place: 'Rio de Janeiro 9, CDMX', date: '2016' },
   { title: 'El Arca', place: 'Plaza Tudor 275-7, CDMX', date: '2016' },
   { title: 'El Arca', place: 'Restaurante Paris 16, CDMX', date: '2017' },
-  { title: 'Habit-Art', place: 'Corredor Cultural Roma-Condesa, CDMX', date: '2017' },
+  {
+    title: 'Habit-Art',
+    place: 'Corredor Cultural Roma-Condesa, CDMX',
+    date: '2017',
+    poster: '/exposicion-habit-art-corredor-roma-condesa.jpeg',
+    posterAlt: 'Cartel de Habit-Art, Corredor Cultural Roma-Condesa',
+  },
   { title: 'Homenaje a José Luis Ruissó', place: 'Restaurante Paris 16, CDMX', date: '2017' },
   {
     title: 'Déjame ayudARTE',

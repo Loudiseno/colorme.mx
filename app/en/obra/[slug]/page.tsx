@@ -39,6 +39,7 @@ export default async function Page({ params }: Props) {
       labels={{
         back: 'Back to Artwork',
         works: 'Works',
+        views: 'Installation',
         close: 'Close',
         prev: 'Previous',
         next: 'Next',

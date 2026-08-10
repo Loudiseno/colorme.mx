@@ -12,6 +12,7 @@ interface ExpoPageProps {
   labels: {
     back: string
     works: string
+    views: string
     close: string
     prev: string
     next: string
@@ -78,6 +79,27 @@ export default function ExpoPage({ expo, backHref, labels }: ExpoPageProps) {
                 reference: labels.reference,
               }}
             />
+          </section>
+        )}
+
+        {expo.views && expo.views.length > 0 && (
+          <section className="mt-14 md:mt-20">
+            <h2 className="text-xs text-black/40 uppercase tracking-[0.25em] mb-8">
+              {labels.views}
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
+              {expo.views.map((v) => (
+                <Image
+                  key={v.src}
+                  src={v.src}
+                  alt={v.alt}
+                  width={1200}
+                  height={900}
+                  sizes="(max-width: 640px) 90vw, 460px"
+                  className="w-full h-auto"
+                />
+              ))}
+            </div>
           </section>
         )}
 

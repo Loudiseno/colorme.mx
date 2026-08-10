@@ -106,6 +106,7 @@ export const lugares: ObraPhoto[] = [
   { src: '/fotografia-lugar-florencia-italia.jpeg', alt: 'Fotografía de Florencia, Italia, por Lourdes Pérez', caption: 'Florencia, Italia', captionEn: 'Florence, Italy', country: 'Italia', countryEn: 'Italy' },
   { src: '/fotografia-lugar-hidalgo-mexico.jpeg', alt: 'Fotografía de Hidalgo, México, por Lourdes Pérez', caption: 'Hidalgo, México', captionEn: 'Hidalgo, Mexico', country: 'México', countryEn: 'Mexico' },
   { src: '/fotografia-lugar-siena-italia.jpeg', alt: 'Fotografía de Siena, Italia, por Lourdes Pérez', caption: 'Siena, Italia', captionEn: 'Siena, Italy', country: 'Italia', countryEn: 'Italy' },
+  { src: '/fotografia-lugar-broken-beach-indonesia.jpeg', alt: 'Fotografía de Broken Beach, Nusa Penida, Indonesia, por Lourdes Pérez', caption: 'Broken Beach, Indonesia', captionEn: 'Broken Beach, Indonesia', country: 'Indonesia', countryEn: 'Indonesia' },
   { src: '/fotografia-lugar-uxmal-mexico.jpeg', alt: 'Fotografía de Uxmal, México, por Lourdes Pérez', caption: 'Uxmal, México', captionEn: 'Uxmal, Mexico', country: 'México', countryEn: 'Mexico' },
   { src: '/fotografia-lugar-yucatan-mexico.jpeg', alt: 'Fotografía de Yucatán, México, por Lourdes Pérez', caption: 'Yucatán, México', captionEn: 'Yucatan, Mexico', country: 'México', countryEn: 'Mexico' },
 ]
