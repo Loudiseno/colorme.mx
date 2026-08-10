@@ -398,16 +398,12 @@ export const mixtas: ObraPiece[] = [
   },
 ]
 
-/**
- * Pintura reúne, en este orden, la técnica mixta, las pinturas de estudio y
- * las obras de la exposición Luces de existencia.
- */
-export const pintura: ObraPiece[] = [
-  ...mixtas,
-  ...pinturas,
-  ...exposicionesEs[0].works!.map((w, i) => {
-    const en = exposicionesEn[0].works![i]
-    const ficha = (o: typeof w) => `${o.title}\n${o.technique}${o.dimensions ? `\n${o.dimensions}` : ''}`
+/** Convierte las obras de una exposición en piezas de galería. */
+function deExposicion(indice: number): ObraPiece[] {
+  return exposicionesEs[indice].works!.map((w, i) => {
+    const en = exposicionesEn[indice].works![i]
+    const ficha = (o: typeof w) =>
+      `${o.title}\n${o.technique}${o.dimensions ? `\n${o.dimensions}` : ''}`
     return {
       src: w.image!,
       alt: `${w.title}, ${w.technique}, obra de Lourdes Pérez`,
@@ -415,7 +411,18 @@ export const pintura: ObraPiece[] = [
       caption: ficha(w),
       captionEn: ficha(en),
     }
-  }),
+  })
+}
+
+/**
+ * Pintura reúne, en este orden, la técnica mixta, las pinturas de estudio y
+ * las obras de las exposiciones Luces de existencia y Reinterpretando.
+ */
+export const pintura: ObraPiece[] = [
+  ...mixtas,
+  ...pinturas,
+  ...deExposicion(0),
+  ...deExposicion(1),
 ]
 
 /** Adapta las piezas al idioma pedido. */
