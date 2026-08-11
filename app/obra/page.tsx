@@ -90,20 +90,23 @@ export default function ObraPage() {
             </div>
             <div className="space-y-4 text-black/75 leading-relaxed">
               <p>
-                Mi trayectoria artística es una forma de mirar, sentir, resignificar la experiencia
-                humana y compartir mi manera de ver el mundo.
+                Mi forma de crear nace de mi manera de percibir el mundo: de detenerme en aquello
+                que me conmueve, me transforma y permanece en mí. A través del arte exploro y
+                resignifico esas experiencias para compartir mi mirada.
               </p>
               <p>
-                La pintura y la fotografía son mis medios para expresar mi visión del mundo a través
-                del color, las emociones y las experiencias. Mi inspiración nace de la naturaleza,
-                los lugares, las personas, las culturas y la belleza de lo cotidiano, de esos
-                instantes que, aunque parezcan simples, nunca vuelven a repetirse.
+                La pintura y la fotografía son mis medios para expresar mi visión a través del
+                color, las emociones y las experiencias. Mi inspiración nace de la naturaleza, los
+                lugares, las personas, las culturas y la belleza de lo cotidiano, de esos instantes
+                que muchas veces pasan desapercibidos o que damos por hecho, sin detenernos a
+                reconocer todo lo que contienen.
               </p>
               <p>
-                Mi práctica artística se desarrolla principalmente a través de tres técnicas:
-                fotografía, fotografía intervenida y pintura. Trabajo con acuarela, óleo y acrílico,
-                así como con distintos materiales y elementos cotidianos que, al integrarse en cada
-                pieza, la transforman en una obra única que conserva una historia propia.
+                Trabajo principalmente con fotografía, pintura y técnicas mixtas. Utilizo acuarela,
+                óleo y acrílico, así como distintos materiales y elementos cotidianos encontrados
+                durante mis viajes, como periódicos locales que conservan la memoria de un lugar y
+                un momento específico. Al integrarlos en cada pieza, adquieren un nuevo sentido y se
+                convierten en parte de una nueva historia.
               </p>
             </div>
           </div>

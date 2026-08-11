@@ -90,20 +90,22 @@ export default function ObraEnPage() {
             </div>
             <div className="space-y-4 text-black/75 leading-relaxed">
               <p>
-                My artistic path is a way of looking, feeling, reframing the human experience, and
-                sharing my own way of seeing the world.
+                The way I create comes from the way I perceive the world: from pausing on what
+                moves me, changes me, and stays with me. Through art I explore and reframe those
+                experiences in order to share how I see.
               </p>
               <p>
-                Painting and photography are my mediums for expressing my vision of the world
-                through colour, emotion, and experience. My inspiration comes from nature, places,
-                people, cultures, and the beauty of the everyday — those moments that, however
-                simple they may seem, never repeat themselves.
+                Painting and photography are my mediums for expressing that vision through colour,
+                emotion, and experience. My inspiration comes from nature, places, people, cultures,
+                and the beauty of the everyday — those instants that often go unnoticed, or that we
+                take for granted without stopping to recognise everything they hold.
               </p>
               <p>
-                My practice unfolds mainly through three techniques: photography, intervened
-                photography, and painting. I work with watercolour, oil, and acrylic, along with
-                everyday materials and objects that, once integrated into each piece, transform it
-                into a unique work carrying its own story.
+                I work mainly with photography, painting, and mixed media. I use watercolour, oil,
+                and acrylic, along with different materials and everyday objects found during my
+                travels, such as local newspapers that hold the memory of a place and a specific
+                moment. Once integrated into each piece, they take on new meaning and become part of
+                a new story.
               </p>
             </div>
           </div>
