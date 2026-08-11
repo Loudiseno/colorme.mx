@@ -95,18 +95,15 @@ export default function ObraPage() {
                 resignifico esas experiencias para compartir mi mirada.
               </p>
               <p>
-                La pintura y la fotografía son mis medios para expresar mi visión a través del
-                color, las emociones y las experiencias. Mi inspiración nace de la naturaleza, los
-                lugares, las personas, las culturas y la belleza de lo cotidiano, de esos instantes
-                que muchas veces pasan desapercibidos o que damos por hecho, sin detenernos a
-                reconocer todo lo que contienen.
+                Me inspiran la naturaleza, los lugares, las personas, las culturas y la belleza de
+                lo cotidiano: esos instantes que muchas veces pasan desapercibidos o que damos por
+                hecho, sin reparar en todo lo que contienen.
               </p>
               <p>
                 Trabajo principalmente con fotografía, pintura y técnicas mixtas. Utilizo acuarela,
-                óleo y acrílico, así como distintos materiales y elementos cotidianos encontrados
-                durante mis viajes, como periódicos locales que conservan la memoria de un lugar y
-                un momento específico. Al integrarlos en cada pieza, adquieren un nuevo sentido y se
-                convierten en parte de una nueva historia.
+                óleo y acrílico, además de materiales y objetos cotidianos que encuentro en mis
+                viajes. El color, la textura y la emoción son el lenguaje con el que cada pieza
+                cuenta lo que vi.
               </p>
             </div>
           </div>

@@ -95,17 +95,14 @@ export default function ObraEnPage() {
                 experiences in order to share how I see.
               </p>
               <p>
-                Painting and photography are my mediums for expressing that vision through colour,
-                emotion, and experience. My inspiration comes from nature, places, people, cultures,
-                and the beauty of the everyday — those instants that often go unnoticed, or that we
-                take for granted without stopping to recognise everything they hold.
+                I am drawn to nature, places, people, cultures, and the beauty of the everyday:
+                those instants that often go unnoticed, or that we take for granted without
+                registering everything they hold.
               </p>
               <p>
                 I work mainly with photography, painting, and mixed media. I use watercolour, oil,
-                and acrylic, along with different materials and everyday objects found during my
-                travels, such as local newspapers that hold the memory of a place and a specific
-                moment. Once integrated into each piece, they take on new meaning and become part of
-                a new story.
+                and acrylic, along with everyday materials and objects I find on my travels. Colour,
+                texture, and emotion are the language each piece uses to tell what I saw.
               </p>
             </div>
           </div>
