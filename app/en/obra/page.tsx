@@ -102,7 +102,7 @@ export default function ObraEnPage() {
               <p>
                 I work mainly with photography, painting, and mixed media. I use watercolour, oil,
                 and acrylic, along with everyday materials and objects I find on my travels. Colour,
-                texture, and emotion are the language each piece uses to tell what I saw.
+                texture, and emotion are my language.
               </p>
             </div>
           </div>
