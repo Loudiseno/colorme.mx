@@ -102,7 +102,7 @@ export default function ObraPage() {
               <p>
                 Trabajo principalmente con fotografía, pintura y técnicas mixtas. Utilizo acuarela,
                 óleo y acrílico, además de materiales y objetos cotidianos que encuentro en mis
-                viajes. El color, la textura y la emoción son mi lenguaje.
+                viajes. El color, la textura y la emoción son el lenguaje de cada pieza.
               </p>
             </div>
           </div>
