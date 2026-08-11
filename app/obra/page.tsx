@@ -90,9 +90,9 @@ export default function ObraPage() {
             </div>
             <div className="space-y-4 text-black/75 leading-relaxed">
               <p>
-                Mi forma de crear nace de mi manera de percibir el mundo: de detenerme en aquello
-                que me conmueve, me transforma y permanece en mí. A través del arte exploro y
-                resignifico esas experiencias para compartir mi mirada.
+                Percibir el mundo es el punto de partida de mi obra: detenerme en aquello que me
+                conmueve, me transforma y permanece en mí. A través del arte exploro y resignifico
+                esas experiencias para compartir mi mirada.
               </p>
               <p>
                 Me inspiran la naturaleza, los lugares, las personas, las culturas y la belleza de
@@ -151,7 +151,7 @@ export default function ObraPage() {
               </span>
             ))}
           </div>
-          <p className="max-w-3xl text-black/60 leading-relaxed mb-8">
+          <p className="max-w-3xl text-sm text-black/50 leading-relaxed mb-8">
             Algunas de esas sesiones se realizaron en {sedes.slice(0, -1).join(', ')} y el{' '}
             {sedes[sedes.length - 1]}.
           </p>

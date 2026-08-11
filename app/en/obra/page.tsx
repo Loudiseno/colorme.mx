@@ -90,9 +90,9 @@ export default function ObraEnPage() {
             </div>
             <div className="space-y-4 text-black/75 leading-relaxed">
               <p>
-                The way I create comes from the way I perceive the world: from pausing on what
-                moves me, changes me, and stays with me. Through art I explore and reframe those
-                experiences in order to share how I see.
+                Perceiving the world is where my work begins: pausing on what moves me, changes
+                me, and stays with me. Through art I explore and reframe those experiences in order
+                to share how I see.
               </p>
               <p>
                 I am drawn to nature, places, people, cultures, and the beauty of the everyday:
@@ -151,7 +151,7 @@ export default function ObraEnPage() {
               </span>
             ))}
           </div>
-          <p className="max-w-3xl text-black/60 leading-relaxed mb-8">
+          <p className="max-w-3xl text-sm text-black/50 leading-relaxed mb-8">
             Some of those shoots took place at {venues.slice(0, -1).join(', ')} and the{' '}
             {venues[venues.length - 1]}.
           </p>
