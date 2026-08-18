@@ -91,7 +91,8 @@ export default function EnAboutPage() {
               <li><strong>Malaysia</strong> — A fusion of Asian artistic traditions such as batik.</li>
               <li><strong>Bali</strong> — Balinese artistic traditions and their connection to emotion, along with breathwork (conscious breathing techniques for emotional regulation and releasing tension).</li>
               <li><strong>United Kingdom</strong> — The Science of Trauma &amp; the Body.</li>
-              <li><strong>Mexico</strong> — Palliative care (Universidad Anáhuac) and Facing emotional burnout through compassion (Elisabeth Kübler-Ross Foundation).</li>
+              <li><strong>Mexico</strong> — Palliative care (Universidad Anáhuac).</li>
+              <li><strong>Mexico</strong> — Facing emotional burnout through compassion (Elisabeth Kübler-Ross Foundation).</li>
             </ul>
           </div>
         </section>
