@@ -1,3 +1,5 @@
+import { siteConfig } from '@/lib/seo'
+
 // ============================================================================
 // PANEL DE REDES SOCIALES Y LIBROS — DATOS
 // ============================================================================
@@ -191,7 +193,7 @@ export const books: BookChannel[] = [
     name: 'Indeleble — Español',
     format: 'Digital / Impreso',
     platform: 'Amazon',
-    url: 'https://www.amazon.com.mx/dp/B0F2MYQHHZ',
+    url: siteConfig.book.amazonEs,
     color: '#FF9900',
     history: [
       { week: '2026-06-01', units: 3, revenueMXN: 210 },
@@ -209,7 +211,7 @@ export const books: BookChannel[] = [
     name: 'Indeleble — Inglés',
     format: 'Digital',
     platform: 'Amazon',
-    url: 'https://www.amazon.com.mx/dp/B0F4KNJZ6B',
+    url: siteConfig.book.amazonEn,
     color: '#146EB4',
     history: [
       { week: '2026-06-01', units: 1, revenueMXN: 80 },

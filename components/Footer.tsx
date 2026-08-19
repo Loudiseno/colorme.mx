@@ -38,19 +38,21 @@ const navEn = [
   { name: 'Blog', href: '/en/blog' },
 ]
 
-const socials = [
+/** El enlace de Amazon apunta a la edición del idioma que se está leyendo. */
+const socialesDe = (isEn: boolean) => [
   { name: 'Instagram', href: siteConfig.social.instagram, icon: Instagram },
   { name: 'Facebook', href: siteConfig.social.facebook, icon: Facebook },
   { name: 'TikTok', href: 'https://www.tiktok.com/@colorme_lab', icon: TikTokIcon },
   { name: 'YouTube', href: 'https://www.youtube.com/channel/UCrrqPOjutqfK3G_t0f2lbjA', icon: Youtube },
   { name: 'WhatsApp', href: 'https://wa.me/529992472678', icon: WhatsAppIcon },
-  { name: 'Amazon', href: siteConfig.book.amazonEs, icon: BookOpen },
+  { name: 'Amazon', href: isEn ? siteConfig.book.amazonEn : siteConfig.book.amazonEs, icon: BookOpen },
 ]
 
 export default function Footer() {
   const pathname = usePathname()
   const isEn = pathname?.startsWith('/en') ?? false
   const navigation = isEn ? navEn : navEs
+  const socials = socialesDe(isEn)
   const homeHref = isEn ? '/en' : '/'
   const aboutTitle = isEn ? 'About' : 'Acerca de'
   const contactTitle = isEn ? 'Contact' : 'Contacto'
