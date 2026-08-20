@@ -105,22 +105,22 @@ export default function SobreMi() {
               Comparto mi testimonio y mi trabajo en pláticas, talleres y master class sobre el cáncer, la pérdida y el duelo:
             </p>
             <ul>
-              <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos», plática y taller.</li>
-              <li><strong>Oncoayuda</strong>, 2021 — Plática de concientización.</li>
-              <li><strong>Toca Fest Week de Grupo Surman</strong>, 2021 — Plática de concientización.</li>
-              <li><strong>UFC Gym México</strong>, 2019 — Plática de concientización sobre el cáncer.</li>
+              <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos». Plática de tanatología: duelo, pérdidas y acompañamiento, para pacientes y familias, y sesión grupal de arteterapia.</li>
+              <li><strong>Oncoayuda A.C.</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
+              <li><strong>Toca Fest Week de Grupo Surman</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
+              <li><strong>UFC Gym México</strong>, 2019 — Plática testimonial y de concientización sobre el cáncer.</li>
             </ul>
             <p>
               Master class:
             </p>
             <ul>
-              <li>«El arte de habitar tu duelo».</li>
+              <li>«El arte de habitar tu duelo», 2025 y 2026.</li>
             </ul>
             <p>
               Episodios de podcast:
             </p>
             <ul>
-              <li>«La pérdida de un hijo», 2026 — con un testimonio.</li>
+              <li>«La pérdida de un hijo», 2026.</li>
               <li>«Duelos invisibles», 2026 — con El Buzón de Mamá.</li>
             </ul>
           </div>

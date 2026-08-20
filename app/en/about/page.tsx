@@ -105,22 +105,22 @@ export default function EnAboutPage() {
               I share my story and my work through talks, workshops and master classes on cancer, loss and grief:
             </p>
             <ul>
-              <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths), talk and workshop.</li>
-              <li><strong>Oncoayuda</strong>, 2021 — Awareness talk.</li>
-              <li><strong>Toca Fest Week, Grupo Surman</strong>, 2021 — Awareness talk.</li>
-              <li><strong>UFC Gym México</strong>, 2019 — Cancer awareness talk.</li>
+              <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths). Grief counseling talk on grief, loss and accompaniment, for patients and families, plus a group art-as-therapy session.</li>
+              <li><strong>Oncoayuda A.C.</strong>, 2021 — Testimonial and cancer awareness talk.</li>
+              <li><strong>Toca Fest Week, Grupo Surman</strong>, 2021 — Testimonial and cancer awareness talk.</li>
+              <li><strong>UFC Gym México</strong>, 2019 — Testimonial and cancer awareness talk.</li>
             </ul>
             <p>
               Master classes:
             </p>
             <ul>
-              <li>&laquo;El arte de habitar tu duelo&raquo; (The art of inhabiting your grief).</li>
+              <li>&laquo;El arte de habitar tu duelo&raquo; (The art of inhabiting your grief), 2025 and 2026.</li>
             </ul>
             <p>
               Podcast episodes:
             </p>
             <ul>
-              <li>&laquo;La pérdida de un hijo&raquo; (Losing a Child), 2026 — with a personal testimony.</li>
+              <li>&laquo;La pérdida de un hijo&raquo; (Losing a Child), 2026.</li>
               <li>&laquo;Duelos invisibles&raquo; (Invisible Grief), 2026 — with El Buzón de Mamá.</li>
             </ul>
           </div>
