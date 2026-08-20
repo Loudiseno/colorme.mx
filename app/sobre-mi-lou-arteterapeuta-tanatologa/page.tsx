@@ -97,6 +97,30 @@ export default function SobreMi() {
           </div>
         </section>
 
+        {/* Talks & outreach */}
+        <section className="mb-16">
+          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Pláticas y divulgación</h2>
+          <div className="prose prose-lg max-w-none text-black/70">
+            <p>
+              Comparto mi testimonio y mi trabajo en pláticas, talleres y espacios de divulgación, junto a organizaciones que acompañan a personas en procesos de enfermedad, pérdida y duelo:
+            </p>
+            <ul>
+              <li><strong>FUNAET A.C.</strong> — «Cerrando ciclos, abriendo caminos», plática y taller.</li>
+              <li><strong>UFC Gym México</strong> — Plática de testimonio y concientización sobre el cáncer.</li>
+              <li><strong>Oncoayuda</strong> — Mensaje testimonial.</li>
+              <li><strong>Tocafest Week</strong> — Testimonio.</li>
+              <li><strong>Grupo Surman</strong> — Testimonio.</li>
+            </ul>
+            <p>
+              También he participado como invitada en podcast sobre duelo y pérdida:
+            </p>
+            <ul>
+              <li>«Duelos invisibles»</li>
+              <li>«La pérdida de un hijo»</li>
+            </ul>
+          </div>
+        </section>
+
         {/* Previous Career Section */}
         <section className="mb-16">
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Trayectoria profesional</h2>
