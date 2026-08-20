@@ -102,17 +102,16 @@ export default function SobreMi() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Pláticas y divulgación</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Comparto mi testimonio y mi trabajo en pláticas, talleres y espacios de divulgación, con organizaciones, empresas y comunidades que buscan abrir la conversación sobre el cáncer, la pérdida y el duelo:
+              Comparto mi testimonio y mi trabajo en pláticas y talleres sobre el cáncer, la pérdida y el duelo:
             </p>
             <ul>
-              <li><strong>FUNAET A.C.</strong> — «Cerrando ciclos, abriendo caminos», plática y taller.</li>
-              <li><strong>UFC Gym México</strong>, 2019 — Plática de concientización sobre el cáncer a partir de mi testimonio.</li>
-              <li><strong>Oncoayuda</strong>, 2021 — Participación.</li>
-              <li><strong>Toca Fest Week</strong>, 2021 — Participación.</li>
-              <li><strong>Grupo Surman</strong> — Participación.</li>
+              <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos», plática y taller.</li>
+              <li><strong>Oncoayuda</strong>, 2021 — Plática de concientización.</li>
+              <li><strong>Toca Fest Week de Grupo Surman</strong>, 2021 — Plática de concientización.</li>
+              <li><strong>UFC Gym México</strong>, 2019 — Plática de concientización sobre el cáncer.</li>
             </ul>
             <p>
-              También produzco episodios de podcast sobre duelo y pérdida:
+              Episodios de podcast:
             </p>
             <ul>
               <li>«La pérdida de un hijo», 2026 — con un testimonio.</li>

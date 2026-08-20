@@ -102,17 +102,16 @@ export default function EnAboutPage() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Talks and outreach</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              I share my story and my work through talks, workshops and outreach, with organizations, companies and communities working to open up the conversation about cancer, loss and grief:
+              I share my story and my work through talks and workshops on cancer, loss and grief:
             </p>
             <ul>
-              <li><strong>FUNAET A.C.</strong> — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths), talk and workshop.</li>
-              <li><strong>UFC Gym México</strong>, 2019 — Cancer awareness talk drawn from my own story.</li>
-              <li><strong>Oncoayuda</strong>, 2021 — Participation.</li>
-              <li><strong>Toca Fest Week</strong>, 2021 — Participation.</li>
-              <li><strong>Grupo Surman</strong> — Participation.</li>
+              <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths), talk and workshop.</li>
+              <li><strong>Oncoayuda</strong>, 2021 — Awareness talk.</li>
+              <li><strong>Toca Fest Week, Grupo Surman</strong>, 2021 — Awareness talk.</li>
+              <li><strong>UFC Gym México</strong>, 2019 — Cancer awareness talk.</li>
             </ul>
             <p>
-              I also produce podcast episodes on grief and loss:
+              Podcast episodes:
             </p>
             <ul>
               <li>&laquo;La pérdida de un hijo&raquo; (Losing a Child), 2026 — with a personal testimony.</li>
