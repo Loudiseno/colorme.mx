@@ -102,21 +102,21 @@ export default function EnAboutPage() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Talks and outreach</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              I share my story and my work through talks, workshops and outreach, alongside organizations that support people facing illness, loss and grief:
+              I share my story and my work through talks, workshops and outreach, with organizations, companies and communities working to open up the conversation about cancer, loss and grief:
             </p>
             <ul>
               <li><strong>FUNAET A.C.</strong> — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths), talk and workshop.</li>
-              <li><strong>UFC Gym México</strong> — Talk on my own story and cancer awareness.</li>
-              <li><strong>Oncoayuda</strong> — Testimonial message.</li>
-              <li><strong>Tocafest Week</strong> — Testimonial.</li>
-              <li><strong>Grupo Surman</strong> — Testimonial.</li>
+              <li><strong>UFC Gym México</strong>, 2019 — Cancer awareness talk drawn from my own story.</li>
+              <li><strong>Oncoayuda</strong>, 2021 — Participation.</li>
+              <li><strong>Toca Fest Week</strong>, 2021 — Participation.</li>
+              <li><strong>Grupo Surman</strong> — Participation.</li>
             </ul>
             <p>
-              I have also been a guest on podcasts about grief and loss:
+              I also produce podcast episodes on grief and loss:
             </p>
             <ul>
-              <li>&laquo;Duelos invisibles&raquo; (Invisible Grief)</li>
-              <li>&laquo;La pérdida de un hijo&raquo; (Losing a Child)</li>
+              <li>&laquo;La pérdida de un hijo&raquo; (Losing a Child), 2026 — with a personal testimony.</li>
+              <li>&laquo;Duelos invisibles&raquo; (Invisible Grief), 2026 — with El Buzón de Mamá.</li>
             </ul>
           </div>
         </section>

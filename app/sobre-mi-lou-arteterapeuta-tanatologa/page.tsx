@@ -102,21 +102,21 @@ export default function SobreMi() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Pláticas y divulgación</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Comparto mi testimonio y mi trabajo en pláticas, talleres y espacios de divulgación, junto a organizaciones que acompañan a personas en procesos de enfermedad, pérdida y duelo:
+              Comparto mi testimonio y mi trabajo en pláticas, talleres y espacios de divulgación, con organizaciones, empresas y comunidades que buscan abrir la conversación sobre el cáncer, la pérdida y el duelo:
             </p>
             <ul>
               <li><strong>FUNAET A.C.</strong> — «Cerrando ciclos, abriendo caminos», plática y taller.</li>
-              <li><strong>UFC Gym México</strong> — Plática de testimonio y concientización sobre el cáncer.</li>
-              <li><strong>Oncoayuda</strong> — Mensaje testimonial.</li>
-              <li><strong>Tocafest Week</strong> — Testimonio.</li>
-              <li><strong>Grupo Surman</strong> — Testimonio.</li>
+              <li><strong>UFC Gym México</strong>, 2019 — Plática de concientización sobre el cáncer a partir de mi testimonio.</li>
+              <li><strong>Oncoayuda</strong>, 2021 — Participación.</li>
+              <li><strong>Toca Fest Week</strong>, 2021 — Participación.</li>
+              <li><strong>Grupo Surman</strong> — Participación.</li>
             </ul>
             <p>
-              También he participado como invitada en podcast sobre duelo y pérdida:
+              También produzco episodios de podcast sobre duelo y pérdida:
             </p>
             <ul>
-              <li>«Duelos invisibles»</li>
-              <li>«La pérdida de un hijo»</li>
+              <li>«La pérdida de un hijo», 2026 — con un testimonio.</li>
+              <li>«Duelos invisibles», 2026 — con El Buzón de Mamá.</li>
             </ul>
           </div>
         </section>
