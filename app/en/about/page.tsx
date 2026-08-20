@@ -102,13 +102,19 @@ export default function EnAboutPage() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Talks and outreach</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              I share my story and my work through talks and workshops on cancer, loss and grief:
+              I share my story and my work through talks, workshops and master classes on cancer, loss and grief:
             </p>
             <ul>
               <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths), talk and workshop.</li>
               <li><strong>Oncoayuda</strong>, 2021 — Awareness talk.</li>
               <li><strong>Toca Fest Week, Grupo Surman</strong>, 2021 — Awareness talk.</li>
               <li><strong>UFC Gym México</strong>, 2019 — Cancer awareness talk.</li>
+            </ul>
+            <p>
+              Master classes:
+            </p>
+            <ul>
+              <li>&laquo;El arte de habitar tu duelo&raquo; (The art of inhabiting your grief).</li>
             </ul>
             <p>
               Podcast episodes:
