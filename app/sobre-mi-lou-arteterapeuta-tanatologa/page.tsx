@@ -99,10 +99,13 @@ export default function SobreMi() {
 
         {/* Talks & outreach */}
         <section className="mb-16">
-          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Pláticas y divulgación</h2>
+          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Colaboraciones y participaciones</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Comparto mi testimonio y mi trabajo en pláticas, talleres y master class sobre el cáncer, la pérdida y el duelo:
+              Participo y colaboro en distintos espacios a través de pláticas, talleres, masterclasses, podcasts y conversaciones en torno al arte, las emociones, el duelo, la experiencia humana y otros temas que invitan a conectar, reflexionar y crear.
+            </p>
+            <p>
+              Pláticas y talleres:
             </p>
             <ul>
               <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos». Plática de tanatología: duelo, pérdidas y acompañamiento, para pacientes y familias, y sesión grupal de arteterapia.</li>
@@ -111,10 +114,10 @@ export default function SobreMi() {
               <li><strong>UFC Gym México</strong>, 2019 — Plática testimonial y de concientización sobre el cáncer.</li>
             </ul>
             <p>
-              Master class:
+              Masterclass:
             </p>
             <ul>
-              <li>«El arte de habitar tu duelo», 2025 y 2026.</li>
+              <li>«El arte de habitar tu duelo», 2025–2026 — Un espacio para comprender y reflexionar sobre el duelo, acompañado de una experiencia de arteterapia.</li>
             </ul>
             <p>
               Episodios de podcast:

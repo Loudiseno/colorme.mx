@@ -99,10 +99,13 @@ export default function EnAboutPage() {
 
         {/* Talks & outreach */}
         <section className="mb-16">
-          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Talks and outreach</h2>
+          <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Collaborations and appearances</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              I share my story and my work through talks, workshops and master classes on cancer, loss and grief:
+              I take part and collaborate in a range of spaces through talks, workshops, masterclasses, podcasts and conversations around art, emotions, grief, the human experience and other subjects that invite us to connect, reflect and create.
+            </p>
+            <p>
+              Talks and workshops:
             </p>
             <ul>
               <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths). Grief counseling talk on grief, loss and accompaniment, for patients and families, plus a group art-as-therapy session.</li>
@@ -111,10 +114,10 @@ export default function EnAboutPage() {
               <li><strong>UFC Gym México</strong>, 2019 — Testimonial and cancer awareness talk.</li>
             </ul>
             <p>
-              Master classes:
+              Masterclass:
             </p>
             <ul>
-              <li>&laquo;El arte de habitar tu duelo&raquo; (The art of inhabiting your grief), 2025 and 2026.</li>
+              <li>&laquo;El arte de habitar tu duelo&raquo; (The art of inhabiting your grief), 2025&ndash;2026 — A space to understand and reflect on grief, alongside an art-as-therapy experience.</li>
             </ul>
             <p>
               Podcast episodes:
