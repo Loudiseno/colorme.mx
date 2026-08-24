@@ -91,8 +91,13 @@ export default function SobreMi() {
               <li><strong>Malasia</strong> — Fusión de tradiciones artísticas asiáticas como el batik.</li>
               <li><strong>Bali</strong> — Tradiciones artísticas balinesas y su conexión con las emociones, así como breathwork (técnicas de respiración consciente para la regulación emocional y liberación de tensiones).</li>
               <li><strong>Reino Unido</strong> — The Science of Trauma &amp; the Body.</li>
-              <li><strong>México</strong> — Cuidados paliativos (Universidad Anáhuac).</li>
-              <li><strong>México</strong> — Cómo afrontar el desgaste emocional desde el uso de la compasión (Fundación Elisabeth Kübler-Ross).</li>
+              <li>
+                <strong>México</strong>
+                <ul>
+                  <li>Cuidados paliativos (Universidad Anáhuac).</li>
+                  <li>Cómo afrontar el desgaste emocional desde el uso de la compasión (Fundación Elisabeth Kübler-Ross).</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </section>
