@@ -258,7 +258,7 @@ export default function TanatologiaPage() {
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Canaliza emociones complejas o bloqueadas, facilitando una gestión emocional saludable.</span>
+              <span className="text-black/80">Canaliza emociones complejas o bloqueadas, para que el dolor encuentre una forma de expresarse.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -276,13 +276,13 @@ export default function TanatologiaPage() {
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Resignifica lo vivido para acompañarte en un proceso de reconstrucción personal basado en la aceptación y la honestidad.</span>
+              <span className="text-black/80">Acompaña tu adaptación a una nueva realidad, en la que lo cotidiano vuelve a encontrar su lugar.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Honra lo perdido, permitiéndote integrar la ausencia en tu historia de vida sin quedar atrapado en el dolor.</span>
+              <span className="text-black/80">Honra lo perdido, permitiéndote integrar la ausencia en tu historia de vida y sostener el vínculo desde otro lugar.</span>
             </div>
           </div>
           <div className="text-center">

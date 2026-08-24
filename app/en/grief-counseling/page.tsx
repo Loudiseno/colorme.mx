@@ -257,7 +257,7 @@ export default function GriefCounselingPage() {
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Channels complex or blocked emotions, supporting healthy emotional processing.</span>
+              <span className="text-black/80">Channels complex or blocked emotions, so that pain can find a way to be expressed.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -275,13 +275,13 @@ export default function GriefCounselingPage() {
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Gives new meaning to what you lived, supporting personal rebuilding grounded in acceptance and honesty.</span>
+              <span className="text-black/80">Supports your adaptation to a new reality, where everyday life finds its place again.</span>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-[#B2F7EF] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Check className="text-black" size={14} />
               </div>
-              <span className="text-black/80">Honors what was lost, letting you integrate the absence into your life story without staying trapped in the pain.</span>
+              <span className="text-black/80">Honors what was lost, letting you integrate the absence into your life story and hold the bond from a different place.</span>
             </div>
           </div>
           <div className="text-center">
