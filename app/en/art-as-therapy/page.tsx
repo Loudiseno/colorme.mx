@@ -48,33 +48,33 @@ const benefits = [
 const helpsWith = [
   {
     icon: '/icono-colorme-corazon.webp',
-    title: 'Duelo',
-    description: 'We create a safe space to process absence, express pain and move through the emotions of loss.'
+    title: 'Grief',
+    description: 'A safe space to accept the loss, give new meaning to the absence and express the emotions that arise.'
   },
   {
     icon: '/icono-colorme-estrella.webp',
     title: 'Self-knowledge',
-    description: 'We explore your emotions, patterns and beliefs to reconnect with yourself and strengthen your inner wellbeing.'
+    description: 'Exploring emotions, patterns and beliefs to understand what you feel and go deeper into your own experience.'
   },
   {
     icon: '/icono-colorme-arcoiris.webp',
-    title: 'Life changes and transitions',
-    description: 'I support you in adapting to change and finding new ways forward.'
+    title: 'Change and transitions',
+    description: 'Accompanying the processes that transform your life and exploring new perspectives on what you are going through.'
   },
   {
     icon: '/icono-colorme-nube-de-lluvia.webp',
     title: 'Illness and diagnosis',
-    description: 'We address the impact of a diagnosis, treatment and uncertainty — validating every emotion so you can process the pain and regain a sense of control.'
+    description: 'Accompanying the impact of a diagnosis, the course of the illness and the life that is rebuilt from that experience.'
   },
   {
     icon: '/icono-colorme-rayo.webp',
     title: 'Anxiety and stress',
-    description: 'We release accumulated tension and recover calm through creative reconnection and emotional regulation.'
+    description: 'Expressing and releasing built-up tension to make room for calm and wellbeing.'
   },
   {
     icon: '/icono-colorme-esfera.webp',
-    title: 'Autoestima',
-    description: 'A process of returning to yourself: recover your center, recognize your worth and reconnect with the confidence to inhabit your own life.'
+    title: 'Self-esteem',
+    description: 'Recognizing your worth, strengthening your confidence and working from a kind view of who you are and your story.'
   },
 ]
 

@@ -49,32 +49,32 @@ const helpsWith = [
   {
     icon: '/icono-colorme-corazon.webp',
     title: 'Duelo',
-    description: 'Creamos un espacio seguro para procesar la ausencia, expresar el dolor y transitar las emociones de la pérdida.'
+    description: 'Un espacio seguro para aceptar la pérdida, resignificar la ausencia y expresar las emociones que surgen.'
   },
   {
     icon: '/icono-colorme-estrella.webp',
     title: 'Autoconocimiento',
-    description: 'Exploramos tus emociones, patrones y creencias para reconectar contigo mismo y fortalecer tu bienestar interior.'
+    description: 'Explorar emociones, patrones y creencias para comprender lo que sientes y profundizar en tu propia experiencia.'
   },
   {
     icon: '/icono-colorme-arcoiris.webp',
-    title: 'Cambios y transiciones de vida',
-    description: 'Te acompaño a adaptarte al cambio y encontrar nuevas formas de avanzar.'
+    title: 'Cambios y transiciones',
+    description: 'Acompañar los procesos que transforman tu vida y explorar nuevas perspectivas frente a lo que estás viviendo.'
   },
   {
     icon: '/icono-colorme-nube-de-lluvia.webp',
     title: 'Enfermedades y diagnósticos',
-    description: 'Abordamos el impacto del diagnóstico, los tratamientos y la incertidumbre validando cada emoción para procesar el dolor y recuperar tu sentido de control.'
+    description: 'Acompañar el impacto del diagnóstico, el proceso de enfermedad y la vida que se reconstruye a partir de esta experiencia.'
   },
   {
     icon: '/icono-colorme-rayo.webp',
     title: 'Ansiedad y estrés',
-    description: 'Liberamos la tensión acumulada y recuperamos la calma a través de la reconexión creativa y la regulación emocional.'
+    description: 'Expresar y liberar la tensión acumulada para favorecer la calma y el bienestar.'
   },
   {
     icon: '/icono-colorme-esfera.webp',
     title: 'Autoestima',
-    description: 'Un proceso para volver a ti: recupera tu centro, reconoce tu valor y reconecta con la confianza para habitar tu propia vida.'
+    description: 'Reconocer tu valor, fortalecer la confianza en ti y trabajar desde una mirada amable hacia quien eres y tu historia.'
   },
 ]
 
