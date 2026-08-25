@@ -49,7 +49,7 @@ const helpsWith = [
   {
     icon: '/icono-colorme-corazon.webp',
     title: 'Duelo',
-    description: 'Un espacio seguro para aceptar la pérdida, resignificar la ausencia y expresar las emociones que surgen.'
+    description: 'Aceptar la pérdida, resignificar la ausencia y expresar las emociones que surgen, en un espacio seguro.'
   },
   {
     icon: '/icono-colorme-estrella.webp',

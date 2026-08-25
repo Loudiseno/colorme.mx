@@ -49,7 +49,7 @@ const helpsWith = [
   {
     icon: '/icono-colorme-corazon.webp',
     title: 'Grief',
-    description: 'A safe space to accept the loss, give new meaning to the absence and express the emotions that arise.'
+    description: 'Accepting the loss, giving new meaning to the absence and expressing the emotions that arise, in a safe space.'
   },
   {
     icon: '/icono-colorme-estrella.webp',
