@@ -83,7 +83,7 @@ export default function SobreMi() {
 
             <h3 className="text-black">Otros estudios y prácticas</h3>
             <p>
-              He tenido el privilegio de estudiar y practicar diversas técnicas en diferentes partes del mundo, enriqueciendo mi práctica con perspectivas multiculturales:
+              He tenido el privilegio de estudiar y practicar diversas técnicas alrededor del mundo, que enriquecen mi trabajo con perspectivas multiculturales:
             </p>
             <ul>
               <li><strong>India</strong> — Técnicas tradicionales y su conexión con la espiritualidad. Creación de mandalas.</li>
