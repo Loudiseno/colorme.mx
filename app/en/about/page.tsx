@@ -46,7 +46,7 @@ export default function EnAboutPage() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">My story</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Some years ago my life changed when I received a cancer diagnosis. I found myself facing the deepest uncertainty I had ever experienced.
+              Some years ago my life changed when I received a cancer diagnosis. I found myself facing a deep uncertainty.
             </p>
             <p>
               During treatment I discovered that art — always part of my life as a designer and artist — became a refuge and a language for what I could not put into words, a way to move through my emotions and reconnect with myself.
@@ -63,7 +63,7 @@ export default function EnAboutPage() {
           <div className="prose prose-lg max-w-none text-black/70">
             <h3 className="text-black">Grief counseling</h3>
             <p>
-              I certified as a grief counselor at Universidad Iberoamericana, one of Mexico's most respected institutions. This allows me to accompany people through loss, grief and the confrontation with death from a professional, deeply human approach.
+              I certified as a grief counselor at Universidad Iberoamericana. This allows me to accompany people through loss, grief and the confrontation with death from a professional, deeply human approach.
             </p>
 
             <h3 className="text-black">Art as therapy</h3>
@@ -83,7 +83,7 @@ export default function EnAboutPage() {
 
             <h3 className="text-black">Other studies and practices</h3>
             <p>
-              I have had the privilege of studying and practicing different techniques around the world, enriching my work with multicultural perspectives:
+              Over the years I have explored and studied different practices and approaches in different parts of the world, bringing those experiences into my personal and professional path:
             </p>
             <ul>
               <li><strong>India</strong> — Traditional techniques and their connection to spirituality. Mandala making.</li>

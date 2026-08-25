@@ -46,7 +46,7 @@ export default function SobreMi() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Mi historia</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Hace algunos años, mi vida cambió cuando recibí un diagnóstico de cáncer. Me encontré frente a la incertidumbre más profunda que había experimentado.
+              Hace algunos años, mi vida cambió cuando recibí un diagnóstico de cáncer. Me encontré frente a una profunda incertidumbre.
             </p>
             <p>
               Durante el tratamiento, descubrí que el arte, que siempre había sido parte de mi vida como diseñadora y artista, se convertía en un refugio y lenguaje para lo que no podía expresar con palabras, una forma de atravesar mis emociones y reconectarme conmigo misma.
@@ -63,7 +63,7 @@ export default function SobreMi() {
           <div className="prose prose-lg max-w-none text-black/70">
             <h3 className="text-black">Tanatología</h3>
             <p>
-              Me certifiqué como tanatóloga en la Universidad Iberoamericana, una de las instituciones más reconocidas en México. La tanatología me permite acompañar a personas en procesos de pérdida, duelo y confrontación con la muerte desde un enfoque profesional y humano.
+              Me certifiqué como tanatóloga en la Universidad Iberoamericana. La tanatología me permite acompañar a personas en procesos de pérdida, duelo y confrontación con la muerte desde un enfoque profesional y humano.
             </p>
 
             <h3 className="text-black">Arteterapia</h3>
@@ -83,7 +83,7 @@ export default function SobreMi() {
 
             <h3 className="text-black">Otros estudios y prácticas</h3>
             <p>
-              He tenido el privilegio de estudiar y practicar diversas técnicas alrededor del mundo, que enriquecen mi trabajo con perspectivas multiculturales:
+              A lo largo de los años he explorado y estudiado distintas prácticas y enfoques en diferentes lugares del mundo, incorporando estas experiencias a mi camino personal y profesional:
             </p>
             <ul>
               <li><strong>India</strong> — Técnicas tradicionales y su conexión con la espiritualidad. Creación de mandalas.</li>
