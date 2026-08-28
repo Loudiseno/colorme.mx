@@ -39,7 +39,7 @@ export const faqs = [
   {
     question: '¿Este acompañamiento es un tratamiento clínico o de diagnóstico?',
     answer:
-      'No. El acompañamiento que ofrezco no es un tratamiento clínico, médico ni psiquiátrico. Mi práctica no realiza diagnósticos, evaluaciones de trastornos mentales, mediciones psicológicas estandarizadas ni prescripción de medicamentos.',
+      'No. El acompañamiento que ofrezco no es un tratamiento clínico ni médico, no diagnostica ni sustituye la atención psicológica o psiquiátrica. No realizo diagnósticos, evaluaciones de trastornos mentales, mediciones psicológicas estandarizadas ni prescripción de medicamentos.',
   },
 ]
 

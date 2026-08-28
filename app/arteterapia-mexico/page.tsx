@@ -190,6 +190,9 @@ export default function ArteterapiaPage() {
               </div>
             ))}
           </div>
+          <p className="max-w-3xl mx-auto mt-8 text-sm text-black/50 leading-relaxed text-center">
+            No es un tratamiento clínico ni médico, no diagnostica ni sustituye la atención psicológica o psiquiátrica.
+          </p>
         </div>
       </section>
 

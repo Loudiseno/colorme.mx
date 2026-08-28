@@ -190,6 +190,9 @@ export default function ArtAsTherapyPage() {
               </div>
             ))}
           </div>
+          <p className="max-w-3xl mx-auto mt-8 text-sm text-black/50 leading-relaxed text-center">
+            This is not a clinical or medical treatment; it does not diagnose and does not replace psychological or psychiatric care.
+          </p>
         </div>
       </section>
 
