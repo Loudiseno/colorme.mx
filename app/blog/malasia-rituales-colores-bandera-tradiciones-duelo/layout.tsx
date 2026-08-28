@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Malasia, el cruce de tres almas: rituales, colores sagrados y la sabiduría de despedirse en comunidad',
   description: 'Malasia es el país donde tres culturas espirituales conviven en armonía. Descubre sus rituales y la forma única en que honran a quienes parten.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/malasia-rituales-colores-bandera-tradiciones-duelo`,
 }

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Aniversarios difíciles: cómo atravesar las fechas dolorosas',
   description: 'Para los días que el calendario convierte en momentos de dolor.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/aniversarios-dificiles`,
 }

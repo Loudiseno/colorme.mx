@@ -21,7 +21,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Duelos invisibles: las pérdidas que nadie reconoce pero que duelen igual',
   description: 'Los duelos desautorizados son pérdidas reales que la sociedad no valida. Tu dolor es legítimo aunque nadie lo nombre.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelos-invisibles-desautorizados`,
   inLanguage: 'es-MX',

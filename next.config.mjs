@@ -9,7 +9,13 @@ const nextConfig = {
   // Enforce consistent URLs without trailing slash
   trailingSlash: false,
   images: {
-    formats: ['image/avif', 'image/webp'],
+    // Solo WebP: con AVIF activado Vercel genera (y cobra) dos transformaciones
+    // por cada ancho de cada imagen. La diferencia visual es imperceptible.
+    formats: ['image/webp'],
+    // El contenedor más ancho del sitio es max-w-6xl (1152 px), así que los
+    // anchos de 2048 y 3840 nunca se aprovechan y sí se cobran.
+    deviceSizes: [640, 828, 1080, 1200, 1920],
+    imageSizes: [96, 256, 384],
     minimumCacheTTL: 31536000,
     remotePatterns: [
       {

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: '10 ejercicios de arteterapia que puedes hacer en casa',
   description: 'Ejercicios creativos para procesar emociones sin necesidad de saber dibujar.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/ejercicios-arteterapia`,
 }

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Menopausia y Duelo: Cómo Transitar el Fin de una Etapa con Compasión',
   description: 'La menopausia también es un duelo. Aprende a transitar esta etapa.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/menopausia-y-duelo`,
 }

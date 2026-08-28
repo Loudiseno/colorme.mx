@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Arte y trauma: cómo el proceso creativo ayuda a sanar',
   description: 'Por qué el arte funciona para procesar experiencias traumáticas.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/arte-trauma`,
 }

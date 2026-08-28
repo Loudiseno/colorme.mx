@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Cómo superar la pérdida de un ser querido: 12 claves prácticas',
   description: '12 claves para atravesar el duelo por la muerte de un ser querido y encontrar momentos de paz.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/como-superar-la-perdida-de-un-ser-querido`,
 }

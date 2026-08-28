@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Vietnam, la tierra donde los ancestros nunca se van: rituales, colores y la sabiduría de recordar',
   description: 'Descubre el culto a los ancestros en Vietnam y la forma profunda en que honran a quienes aman.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/vietnam-rituales-colores-bandera-duelo-ancestros`,
 }

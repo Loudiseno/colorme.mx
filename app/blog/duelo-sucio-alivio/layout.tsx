@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'El duelo sucio: cuando te sientes aliviado de que alguien murió',
   description: 'Sentir alivio después de una muerte no te hace mala persona. Descubre por qué aparece el alivio en el duelo y cómo procesar estas emociones.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-sucio-alivio`,
 }

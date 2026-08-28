@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'El Duelo del Cuidador: Cuando Cuidar a Otro También te Rompe por Dentro',
   description: 'El duelo del cuidador es real. Descubre cómo sanar ese dolor silencioso.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-del-cuidador`,
 }

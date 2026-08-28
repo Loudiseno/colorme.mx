@@ -21,7 +21,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Bebé arcoíris: la luz que llega después de la tormenta',
   description: 'El bebé arcoíris es el que nace después de una pérdida gestacional. Un embarazo lleno de emociones encontradas.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/bebe-arcoiris`,
   inLanguage: 'es-MX',

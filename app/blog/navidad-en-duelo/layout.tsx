@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Navidad en Duelo: Cómo Sobrevivir las Fiestas Cuando el Corazón Está de Luto',
   description: 'Cómo sobrevivir la Navidad cuando estás en duelo.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/navidad-en-duelo`,
 }

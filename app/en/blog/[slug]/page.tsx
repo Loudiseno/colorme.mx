@@ -102,7 +102,7 @@ function buildSchemas(article: EnArticle) {
     inLanguage: 'en',
     datePublished: article.datePublished,
     dateModified: article.dateModified ?? article.datePublished,
-    author: { '@type': 'Person', name: 'Lou', url: siteConfig.url },
+    author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
     publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
     mainEntityOfPage: url,
   }
@@ -179,7 +179,7 @@ export default async function EnArticlePage({ params }: Props) {
             {article.title}
           </h1>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-black/60 text-sm">
-            <span>By Lou · Art Therapist &amp; Grief Counselor</span>
+            <span>By Lourdes Pérez · Art Therapist &amp; Grief Counselor</span>
             <span className="inline-flex items-center gap-1">
               <Clock size={14} /> {article.readingTime}
             </span>

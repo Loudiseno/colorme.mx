@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Día de Muertos en México: la fiesta donde la muerte se celebra con vida',
   description: 'Descubre la tradición mexicana del Día de Muertos y cómo México celebra la memoria de quienes ya no están.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/mexico-dia-de-muertos-rituales-tradiciones`,
 }

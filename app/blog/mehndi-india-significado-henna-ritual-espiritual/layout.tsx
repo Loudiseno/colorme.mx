@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Mehndi, el arte sagrado de la India donde la piel se convierte en oración',
   description: 'Descubre el arte ancestral de la henna en India y su profundo significado espiritual.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/mehndi-india-significado-henna-ritual-espiritual`,
 }

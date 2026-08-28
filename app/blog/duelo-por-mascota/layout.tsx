@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Duelo por mascota: por qué tu dolor es real y cómo atravesarlo',
   description: 'El duelo por mascota es válido y real. Descubre cómo atravesar la pérdida de tu compañero animal, manejar la culpa y honrar su memoria.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-por-mascota`,
 }

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: '¿Por qué no puedo llorar? El duelo seco y sin lágrimas',
   description: 'No llorar no significa que no amas. Descubre por qué algunas personas no pueden llorar en el duelo y qué formas alternativas existen para procesar el dolor.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/por-que-no-puedo-llorar`,
 }

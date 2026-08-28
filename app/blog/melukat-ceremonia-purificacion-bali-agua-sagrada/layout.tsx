@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Melukat, la ceremonia balinesa donde el agua limpia el dolor del alma',
   description: 'Descubre el ritual balinés de purificación con agua sagrada.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/melukat-ceremonia-purificacion-bali-agua-sagrada`,
 }

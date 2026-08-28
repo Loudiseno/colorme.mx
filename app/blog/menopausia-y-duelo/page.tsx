@@ -20,7 +20,7 @@ export default function ArticuloMenopausiaYDuelo() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Menopausia y Duelo: Cómo Transitar el Fin de una Etapa con Compasión
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">

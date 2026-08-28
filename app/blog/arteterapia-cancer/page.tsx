@@ -25,7 +25,7 @@ export default function ArticuloArteterapiaCancer() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Arteterapia para pacientes con cáncer: cómo el arte puede acompañarte durante el tratamiento
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta, Tanatóloga y Sobreviviente de Cáncer</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta, Tanatóloga y Sobreviviente de Cáncer</p>
         </header>
 
         {/* Featured Image */}

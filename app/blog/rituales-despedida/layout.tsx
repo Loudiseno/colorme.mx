@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Rituales de despedida: cómo crear el tuyo',
   description: 'Cómo crear rituales significativos para honrar a quien ya no está.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/rituales-despedida`,
 }

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós',
   description: 'India es el corazón espiritual del planeta. Descubre sus rituales hindúes y los colores sagrados de su bandera.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/india-rituales-colores-bandera-espiritualidad-duelo`,
 }

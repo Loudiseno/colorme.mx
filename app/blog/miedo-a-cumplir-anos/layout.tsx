@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'Article',
   headline: 'Miedo a cumplir años: cuando los cumpleaños duelen',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/miedo-a-cumplir-anos`,
 }

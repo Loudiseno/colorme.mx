@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Cómo el arte sana: lo que sucede en tu cerebro cuando creas',
   description: 'La neurociencia detrás de por qué crear arte reduce el estrés y mejora el bienestar.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/beneficios-arte`,
 }

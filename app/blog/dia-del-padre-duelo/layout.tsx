@@ -24,7 +24,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Día del Padre cuando tu papá ya no está (o cuando la relación nunca fue lo que esperabas)',
   description: 'Cómo transitar el Día del Padre en duelo: cuando tu papá murió, cuando la relación era complicada, o cuando extrañas al padre que nunca tuviste.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/dia-del-padre-duelo`,
   image: `${siteConfig.url}/duelo-por-padre.jpeg`,

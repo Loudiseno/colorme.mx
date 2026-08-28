@@ -22,7 +22,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Diferencia entre arteterapia y clase de arte',
   description: 'No es lo mismo crear para aprender que crear para sanar.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/diferencia-arteterapia-clase-de-arte`,
 }

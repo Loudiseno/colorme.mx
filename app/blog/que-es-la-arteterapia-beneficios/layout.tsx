@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: '¿Qué es la Arteterapia?',
   description: 'Descubre qué es la arteterapia, cómo funciona, sus beneficios y para quién es.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/que-es-la-arteterapia-beneficios`,
 }

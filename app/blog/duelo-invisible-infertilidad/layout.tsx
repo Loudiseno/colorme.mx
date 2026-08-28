@@ -21,7 +21,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'El duelo invisible: cuando la maternidad o paternidad no llega',
   description: 'El duelo por no poder tener hijos es una de las pérdidas más invisibles. Sin funeral, sin condolencias, pero con un dolor real.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-invisible-infertilidad`,
   inLanguage: 'es-MX',

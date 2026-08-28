@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Cómo atravesar la muerte de tu mamá',
   description: 'Un espacio honesto para quienes perdieron a la primera persona que los amó.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/muerte-mama`,
 }

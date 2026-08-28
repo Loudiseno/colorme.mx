@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: '¿Cuánto dura el duelo?',
   description: 'No hay fecha de expiración para el duelo, pero el dolor no dura para siempre con la misma intensidad.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/cuanto-dura-el-duelo`,
 }

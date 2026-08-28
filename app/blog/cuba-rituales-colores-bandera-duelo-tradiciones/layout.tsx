@@ -22,7 +22,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Cuba, la isla donde la muerte baila al son de la vida',
   description: 'Descubre los rituales cubanos de duelo y la santería.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/cuba-rituales-colores-bandera-duelo-tradiciones`,
 }

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Arteterapia y Cáncer: Sanación a Través del Arte',
   description: 'Cómo la arteterapia ayuda a pacientes con cáncer a procesar emociones, reducir estrés y encontrar bienestar.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/arteterapia-cancer`,
 }

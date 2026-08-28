@@ -22,7 +22,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Cómo acompañar a alguien con cáncer terminal',
   description: 'Cómo acompañar a un ser querido con cáncer terminal.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/como-acompanar-cancer-terminal`,
 }

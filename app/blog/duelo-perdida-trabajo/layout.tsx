@@ -21,7 +21,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'El duelo por perder tu trabajo: más que un despido',
   description: 'Perder el trabajo es perder identidad, propósito y estructura. Aprende a atravesar el duelo laboral con herramientas reales.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-perdida-trabajo`,
   inLanguage: 'es-MX',

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Bali, la isla donde la muerte se celebra: el ritual del Ngaben y los colores del alma',
   description: 'Descubre el ritual del Ngaben, los colores sagrados y la espiritualidad cotidiana de Bali.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/bali-ritual-ngaben-colores-del-alma`,
 }

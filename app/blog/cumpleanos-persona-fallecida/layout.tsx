@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'El Cumpleaños de Alguien que Ya No Está: Cómo Enfrentar Esa Fecha',
   description: 'Cómo enfrentar el cumpleaños de una persona fallecida y honrar su memoria.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/cumpleanos-persona-fallecida`,
 }

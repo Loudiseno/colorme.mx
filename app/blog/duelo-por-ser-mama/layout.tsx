@@ -21,7 +21,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Duelo por ser mamá: las pérdidas que nadie nombra dentro de la maternidad',
   description: 'La maternidad trae alegría, pero también pérdidas silenciosas de identidad, libertad y relaciones.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-por-ser-mama`,
   inLanguage: 'es-MX',

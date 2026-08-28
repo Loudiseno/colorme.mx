@@ -22,7 +22,7 @@ export default function ArticuloNavidadEnDuelo() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Navidad en Duelo: Cómo Sobrevivir las Fiestas Cuando el Corazón Está de Luto
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
         </header>
 
         {/* Featured Image */}

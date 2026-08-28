@@ -23,7 +23,7 @@ export default function ArticuloEjerciciosArteterapia() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             10 ejercicios de arteterapia que puedes hacer en casa
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">

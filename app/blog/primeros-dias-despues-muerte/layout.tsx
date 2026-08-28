@@ -21,7 +21,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Los primeros días después de la muerte de un ser querido',
   description: 'Nadie te prepara para los primeros días después de una pérdida. Un espacio honesto para sobrevivir el shock, las decisiones y el silencio que viene después.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/primeros-dias-despues-muerte`,
   inLanguage: 'es-MX',

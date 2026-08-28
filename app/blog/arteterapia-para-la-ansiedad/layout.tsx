@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Arteterapia para la ansiedad: cómo el arte puede ayudarte',
   description: 'Descubre cómo la arteterapia puede ayudarte a manejar la ansiedad. Una forma de expresión cuando las palabras no alcanzan.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/arteterapia-para-la-ansiedad`,
 }

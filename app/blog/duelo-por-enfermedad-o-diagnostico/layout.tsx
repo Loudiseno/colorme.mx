@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Cuando el cuerpo cambia las reglas: Navegar el duelo por enfermedad o diagnóstico',
   description: 'Cuando recibes un diagnóstico médico, algo cambia para siempre. Descubre cómo transitar el duelo por enfermedad, sus múltiples capas de pérdida y herramientas para el camino.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-por-enfermedad-o-diagnostico`,
 }

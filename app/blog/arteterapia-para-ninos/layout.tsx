@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Arteterapia para niños: de 3 a 12 años',
   description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones, con actividades por edades y señales de que tu hijo podría beneficiarse.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/arteterapia-para-ninos`,
 }

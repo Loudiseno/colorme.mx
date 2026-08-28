@@ -22,7 +22,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Turquía, la tierra donde oriente y occidente rezan juntos',
   description: 'Descubre los rituales turcos de duelo.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/turquia-rituales-colores-bandera-duelo-tradiciones`,
 }

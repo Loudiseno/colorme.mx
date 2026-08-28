@@ -22,7 +22,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Grecia, la cuna donde el mar guarda la memoria del alma',
   description: 'Descubre los rituales griegos de duelo y cómo Grecia honra la memoria.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/grecia-rituales-colores-bandera-duelo-islas-meteora`,
 }

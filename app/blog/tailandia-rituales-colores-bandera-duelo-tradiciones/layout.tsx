@@ -22,7 +22,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Tailandia, la tierra de la sonrisa eterna: rituales, colores sagrados y la sabiduría de soltar con gratitud',
   description: 'En Tailandia la espiritualidad se respira en cada gesto. Descubre los rituales tailandeses y la forma serena en que honran la vida y la muerte.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/tailandia-rituales-colores-bandera-duelo-tradiciones`,
 }

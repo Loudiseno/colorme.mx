@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Duelo y Redes Sociales: Cuando el Mundo Digital Complica el Proceso de Despedida',
   description: 'Cómo las redes sociales afectan el proceso de duelo.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-y-redes-sociales`,
 }

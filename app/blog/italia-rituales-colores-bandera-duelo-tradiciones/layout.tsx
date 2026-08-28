@@ -22,7 +22,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Italia, la tierra donde la belleza es una forma de rezar',
   description: 'Descubre los rituales italianos de duelo.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/italia-rituales-colores-bandera-duelo-tradiciones`,
 }

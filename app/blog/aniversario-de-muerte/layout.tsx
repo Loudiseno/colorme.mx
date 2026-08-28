@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'El Aniversario de una Muerte: Por Qué Duele Tanto y Cómo Honrar Ese Día',
   description: 'Aprende a transitar el aniversario de muerte de un ser querido.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/aniversario-de-muerte`,
 }

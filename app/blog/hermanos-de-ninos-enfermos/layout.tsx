@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'Article',
   headline: 'Los hermanos que no enferman: el duelo invisible de los niños sanos',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/hermanos-de-ninos-enfermos`,
 }

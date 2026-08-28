@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     'terapia grupal',
     'talleres arteterapia',
   ],
-  authors: [{ name: 'Lourdes', url: siteConfig.url }],
-  creator: 'Lourdes',
+  authors: [{ name: 'Lourdes Pérez', url: siteConfig.url }],
+  creator: 'Lourdes Pérez',
   publisher: siteConfig.name,
   formatDetection: {
     email: true,

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Mandalas terapéuticos: qué son y cómo crearlos',
   description: 'Crea mandalas y descubre sus beneficios para la salud mental.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/mandalas-terapeuticos`,
 }

@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: '¿Qué es un tanatólogo? Funciones, beneficios y cuándo consultar',
   description: 'Descubre qué es un tanatólogo, cuáles son sus funciones, tipos de pérdidas que atiende, diferencia con el psicólogo y beneficios del acompañamiento tanatológico.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/que-es-un-tanatologo`,
 }

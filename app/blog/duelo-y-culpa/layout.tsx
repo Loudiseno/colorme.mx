@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Culpa y Duelo: Por Qué Nos Sentimos Culpables Después de una Pérdida',
   description: 'Descubre por qué nos sentimos culpables después de una pérdida.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-y-culpa`,
 }

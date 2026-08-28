@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'Article',
   headline: 'Duelo por la pérdida de una amistad',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-amistad-perdida`,
 }

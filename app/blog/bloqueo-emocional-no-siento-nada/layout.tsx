@@ -21,7 +21,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'No siento nada: cuando las emociones se apagan',
   description: 'Cuando las emociones se apagan y no puedes sentir nada. Qué es el bloqueo emocional, por qué ocurre y cómo empezar a reconectarte.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/bloqueo-emocional-no-siento-nada`,
   inLanguage: 'es-MX',

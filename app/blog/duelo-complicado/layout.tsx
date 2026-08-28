@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Duelo complicado: qué es y cuándo buscar ayuda',
   description: 'Cómo identificar cuando el duelo necesita atención profesional.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-complicado`,
 }

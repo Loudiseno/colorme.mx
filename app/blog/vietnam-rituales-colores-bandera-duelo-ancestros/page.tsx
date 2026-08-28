@@ -22,7 +22,7 @@ export default function VietnamRitualesPage() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Vietnam, la tierra donde los ancestros nunca se van: rituales, colores y la sabiduría de recordar
           </h1>
-          <p className="text-black/60 italic">Por Lourdes | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">

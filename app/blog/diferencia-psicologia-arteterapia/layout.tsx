@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Psicología y Arteterapia: ¿En Qué se Diferencian y Cuándo Elegir Cada Una?',
   description: 'Conoce las diferencias entre psicología y arteterapia.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/diferencia-psicologia-arteterapia`,
 }

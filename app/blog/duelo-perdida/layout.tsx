@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Duelo y Pérdida: Cómo Transitar el Proceso de Duelo',
   description: 'Aprende a transitar el dolor y cuándo buscar acompañamiento profesional.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-perdida`,
 }

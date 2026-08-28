@@ -26,7 +26,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Duelo anticipado: qué es y cómo manejarlo',
   description: 'El duelo anticipado es el dolor de perder a alguien que todavía está aquí. Descubre qué es, sus etapas y cómo atravesar este proceso.',
-  author: { '@type': 'Person', name: 'Lourdes', url: siteConfig.url },
+  author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/duelo-anticipado`,
 }
