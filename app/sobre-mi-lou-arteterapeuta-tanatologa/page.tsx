@@ -20,7 +20,7 @@ export default function SobreMi() {
                 </h1>
               </div>
               <p className="text-lg text-black leading-relaxed mb-4">
-                <strong>Tanatóloga, arteterapeuta, diseñadora, artista y sobreviviente de cáncer.</strong>
+                <strong>Tanatóloga y facilitadora de arte como terapia, diseñadora, artista y sobreviviente de cáncer.</strong>
               </p>
               <p className="text-lg text-black/70 leading-relaxed">
                 La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido.
@@ -30,7 +30,7 @@ export default function SobreMi() {
               <div className="bg-white rounded-3xl p-6 border border-[#B2F7EF]">
                 <Image
                   src="/lourdes-perez-arteterapeuta-tanatologa-aficiones.webp"
-                  alt="Lou - Tanatóloga, Arteterapeuta, Artista, Fotógrafa, Diseñadora, Viajera y más"
+                  alt="Lou - Tanatóloga, facilitadora de arte como terapia, Artista, Fotógrafa, Diseñadora, Viajera y más"
                   width={500}
                   height={488}
                   priority

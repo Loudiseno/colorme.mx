@@ -23,7 +23,7 @@ export default function GreciaRitualesPage() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Grecia, la cuna donde el mar guarda la memoria del alma: rituales, colores sagrados y la sabiduría de honrar a los que se fueron
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">

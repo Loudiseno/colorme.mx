@@ -25,7 +25,7 @@ export default function QueDecirDueloPage() {
             Qué decir (y qué NO decir) a alguien en duelo
           </h1>
           <p className="text-black/60">
-            Por Lourdes Pérez | Tanatóloga y Arteterapeuta
+            Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia
           </p>
         </header>
 

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Lou — Tanatóloga y Arteterapeuta | ColorMe',
+  title: 'Lou — Tanatóloga y facilitadora de arte como terapia | ColorMe',
   description: 'Acompañamiento emocional con tanatología y arte como terapia. Sesión de orientación gratuita.',
   robots: { index: false, follow: false },
 }
@@ -70,7 +70,7 @@ export default function LinksPage() {
           <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-[#B2F7EF]">
             <Image
               src="/lou-arteterapeuta-tanatologa-mexico.jpg"
-              alt="Lou — Tanatóloga y Arteterapeuta"
+              alt="Lou — Tanatóloga y facilitadora de arte como terapia"
               width={96}
               height={96}
               className="w-full h-full object-cover"
@@ -79,7 +79,7 @@ export default function LinksPage() {
           </div>
           <h1 className="text-xl font-semibold text-[#1C1C28] mb-1">Lou</h1>
           <p className="text-sm text-[#1C1C28]/60 max-w-xs">
-            Arteterapeuta · Tanatóloga · Acompaño duelos y procesos emocionales desde el arte
+            Tanatóloga · Facilitadora de arte como terapia · Acompaño duelos y procesos emocionales desde el arte
           </p>
         </div>
 

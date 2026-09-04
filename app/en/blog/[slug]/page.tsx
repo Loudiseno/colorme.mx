@@ -179,7 +179,7 @@ export default async function EnArticlePage({ params }: Props) {
             {article.title}
           </h1>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-black/60 text-sm">
-            <span>By Lourdes Pérez · Grief Counselor &amp; Art Therapist</span>
+            <span>By Lourdes Pérez · Grief Counselor &amp; Art-as-Therapy Facilitator</span>
             <span className="inline-flex items-center gap-1">
               <Clock size={14} /> {article.readingTime}
             </span>

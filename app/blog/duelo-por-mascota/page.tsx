@@ -25,7 +25,7 @@ export default function ArticuloDueloMascota() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Duelo por mascota: por qué tu dolor es real y cómo atravesarlo
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         {/* Featured Image */}

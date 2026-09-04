@@ -81,8 +81,8 @@ export function generatePersonSchema() {
     '@type': 'Person',
     '@id': `${siteConfig.url}/#person`,
     name: 'Lourdes Pérez',
-    jobTitle: ['Tanatóloga', 'Arteterapeuta', 'Diseñadora', 'Fotógrafa'],
-    description: 'Diseñadora, artista, fotógrafa y tanatóloga. Acompaño a personas en procesos de duelo, cambio o cierre, creando espacios seguros para habitar lo que sienten.',
+    jobTitle: ['Tanatóloga', 'Facilitadora de arte como terapia', 'Diseñadora', 'Fotógrafa'],
+    description: 'Tanatóloga, facilitadora de arte como terapia, diseñadora, artista y fotógrafa. Acompaño a personas en procesos de duelo, cambio o cierre, creando espacios seguros para habitar lo que sienten.',
     url: siteConfig.url,
     sameAs: [siteConfig.social.instagram, siteConfig.social.facebook],
     worksFor: {

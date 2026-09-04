@@ -20,7 +20,7 @@ export default function ArticuloDueloYCulpa() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Culpa y Duelo: Por Qué Nos Sentimos Culpables Después de una Pérdida
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -136,10 +136,10 @@ export default function ArticuloDueloYCulpa() {
             Escribirle a quien perdiste. Decirle todo lo que quedó pendiente: lo que lamentas, lo que no pudiste decir, las disculpas que nunca llegaron. No para recibir una respuesta -sino para dar salida a lo que llevas dentro. Esta carta es tuya; nadie más necesita leerla.
           </p>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">El arte como terapia: un lenguaje para lo que no tiene palabras</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">La arteterapia: un lenguaje para lo que no tiene palabras</h3>
 
           <p>
-            A veces la culpa vive en capas tan profundas que las palabras no alcanzan. El trabajo expresivo -pintar, modelar, collage- permite que esas emociones encuentren una salida sin necesidad de verbalizarlas primero. En arte como terapia, la imagen puede decir lo que la voz todavía no puede.
+            A veces la culpa vive en capas tan profundas que las palabras no alcanzan. El trabajo expresivo -pintar, modelar, collage- permite que esas emociones encuentren una salida sin necesidad de verbalizarlas primero. En arteterapia, la imagen puede decir lo que la voz todavía no puede.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Cuestionar la narrativa de la culpa</h3>
@@ -206,7 +206,7 @@ export default function ArticuloDueloYCulpa() {
 
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es tanatóloga, arteterapeuta, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
+            Lourdes es tanatóloga y facilitadora de arte como terapia, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
           </p>
         </div>
 

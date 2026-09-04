@@ -86,7 +86,7 @@ export default function EnHomePage() {
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
                       src="/lou-arteterapeuta-tanatologa-mexico.webp"
-                      alt="Lou — grief counselor and art therapist"
+                      alt="Lou — grief counselor and art-as-therapy facilitator"
                       width={600}
                       height={450}
                       priority
@@ -101,7 +101,7 @@ export default function EnHomePage() {
                       </h2>
                     </div>
                     <p className="text-black font-bold mb-4">
-                      Grief counselor, art therapist, designer, artist and cancer survivor.
+                      Grief counselor and art-as-therapy facilitator, designer, artist and cancer survivor.
                     </p>
                     <p className="text-black/70 leading-relaxed">
                       Creativity has always been my way of connecting with the world. My own losses led me to accompany others through change and transformation — through listening, through art, or a blend of both. My training integrates techniques from Mexico, Bali, Thailand, Malaysia, India and United Kingdom.

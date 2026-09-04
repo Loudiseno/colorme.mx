@@ -22,7 +22,7 @@ export default function BaliRitualesPage() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Bali, la isla donde la muerte se celebra: el ritual del Ngaben y los colores del alma
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">

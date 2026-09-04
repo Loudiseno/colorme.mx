@@ -20,7 +20,7 @@ export default function ArticuloDueloPorDivorcio() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             El Duelo por Divorcio: Un Dolor Real que Merece ser Reconocido
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -135,7 +135,7 @@ export default function ArticuloDueloPorDivorcio() {
           </p>
 
           <p>
-            En el arte como terapia, este proceso de redescubrimiento de la identidad puede tener un acompañamiento muy poderoso. A través del arte, podemos explorar quiénes éramos antes, qué dejamos ir en la relación, y qué queremos recuperar o construir de nuevo. No desde las palabras -que a veces se quedan cortas frente a estas preguntas- sino desde la imagen, el color, la forma.
+            En la arteterapia, este proceso de redescubrimiento de la identidad puede tener un acompañamiento muy poderoso. A través del arte, podemos explorar quiénes éramos antes, qué dejamos ir en la relación, y qué queremos recuperar o construir de nuevo. No desde las palabras -que a veces se quedan cortas frente a estas preguntas- sino desde la imagen, el color, la forma.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo procesar el duelo por divorcio</h2>
@@ -206,8 +206,8 @@ export default function ArticuloDueloPorDivorcio() {
           </p>
 
           <p>
-            <strong>¿El arte como terapia puede ayudar con el duelo por divorcio?</strong><br />
-            El arte como terapia es una herramienta especialmente útil en este proceso porque permite trabajar con dimensiones del duelo que son difíciles de poner en palabras: la identidad, los recuerdos, el cuerpo, las emociones ambivalentes. A través del arte, puedes explorar quién eras en esa relación, qué partes de ti quieres recuperar, y quién quieres ser ahora.
+            <strong>¿La arteterapia puede ayudar con el duelo por divorcio?</strong><br />
+            La arteterapia es una herramienta especialmente útil en este proceso porque permite trabajar con dimensiones del duelo que son difíciles de poner en palabras: la identidad, los recuerdos, el cuerpo, las emociones ambivalentes. A través del arte, puedes explorar quién eras en esa relación, qué partes de ti quieres recuperar, y quién quieres ser ahora.
           </p>
         </div>
 
@@ -223,7 +223,7 @@ export default function ArticuloDueloPorDivorcio() {
 
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es tanatóloga, arteterapeuta, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
+            Lourdes es tanatóloga y facilitadora de arte como terapia, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
           </p>
         </div>
 

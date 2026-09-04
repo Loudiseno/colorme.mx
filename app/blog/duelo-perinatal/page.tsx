@@ -25,7 +25,7 @@ export default function DueloPerinatallPage() {
             Duelo perinatal: el dolor que la sociedad no ve
           </h1>
           <p className="text-black/60">
-            Por Lourdes Pérez | Tanatóloga y Arteterapeuta
+            Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia
           </p>
         </header>
 

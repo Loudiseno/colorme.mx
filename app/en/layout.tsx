@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     default: 'Grief Counseling & Art as Therapy | ColorMe',
     template: '%s | ColorMe',
   },
-  description: 'Emotional support through grief counseling and art as therapy. Gentle, one-on-one online sessions with Lou — grief counselor and art therapist. First session free.',
+  description: 'Emotional support through grief counseling and art as therapy. Gentle, one-on-one online sessions with Lou — grief counselor and art-as-therapy facilitator. First session free.',
   alternates: {
     canonical: '/en',
     languages: {

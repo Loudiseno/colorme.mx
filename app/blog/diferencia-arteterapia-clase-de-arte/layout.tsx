@@ -3,15 +3,15 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Diferencia entre arte como terapia y clase de arte',
-  description: 'Conoce las diferencias clave entre arte como terapia y una clase de arte. No necesitas saber dibujar para hacer arte como terapia.',
-  keywords: ['arte como terapia', 'clase de arte', 'diferencia arte como terapia', 'terapia artística', 'proceso terapéutico'],
+  title: 'Diferencia entre arteterapia y clase de arte',
+  description: 'Conoce las diferencias clave entre arteterapia y una clase de arte. No necesitas saber dibujar para hacer arteterapia.',
+  keywords: ['arteterapia', 'clase de arte', 'diferencia arteterapia', 'terapia artística', 'proceso terapéutico'],
   alternates: {
     canonical: '/blog/diferencia-arteterapia-clase-de-arte',
   },
   openGraph: {
     type: 'article',
-    title: 'Diferencia entre arte como terapia y clase de arte | ColorMe',
+    title: 'Diferencia entre arteterapia y clase de arte | ColorMe',
     description: 'No es lo mismo crear para aprender que crear para sanar.',
     url: '/blog/diferencia-arteterapia-clase-de-arte',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Diferencia entre arte como terapia y clase de arte',
+  headline: 'Diferencia entre arteterapia y clase de arte',
   description: 'No es lo mismo crear para aprender que crear para sanar.',
   author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },

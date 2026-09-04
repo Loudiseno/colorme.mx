@@ -22,7 +22,7 @@ export default function ArticuloAniversarioDeMuerte() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             El Aniversario de una Muerte: Por Qué Duele Tanto y Cómo Honrar Ese Día
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         {/* Featured Image */}
@@ -107,7 +107,7 @@ export default function ArticuloAniversarioDeMuerte() {
             <li><strong>Visitar un lugar significativo</strong> que compartieron: ese café, ese parque, esa playa, esa ciudad que tanto amaban.</li>
             <li><strong>Preparar su platillo favorito</strong> y comerlo pensando en él o en ella, con sus canciones de fondo.</li>
             <li><strong>Escribirle una carta</strong>. Dile todo lo que necesitas decirle. Lo que quedó pendiente, lo que has aprendido desde que se fue, cómo te está cambiando su ausencia.</li>
-            <li><strong>Crear algo con tus manos</strong>: una pintura, un collage, un bordado, un jardín. El arte como terapia nos enseña que hacer con las manos sana lo que las palabras no alcanzan.</li>
+            <li><strong>Crear algo con tus manos</strong>: una pintura, un collage, un bordado, un jardín. La arteterapia nos enseña que hacer con las manos sana lo que las palabras no alcanzan.</li>
             <li><strong>Reunirte con quienes también la extrañan</strong>, no para fingir que están bien, sino para recordarla juntos, reírse de las anécdotas, llorar si es necesario.</li>
             <li><strong>Hacer algo que esa persona hubiera amado</strong> o que nunca pudo hacer: ver esa película, escuchar ese concierto, visitar ese lugar que tenían pendiente.</li>
             <li><strong>Tomarte el día libre</strong> si puedes. El aniversario merece atención, no ignorarse entre juntas y pendientes.</li>
@@ -207,7 +207,7 @@ export default function ArticuloAniversarioDeMuerte() {
         {/* Author */}
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es tanatóloga, arteterapeuta, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
+            Lourdes es tanatóloga y facilitadora de arte como terapia, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
           </p>
         </div>
 

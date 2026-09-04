@@ -20,7 +20,7 @@ export default function EnAboutPage() {
                 </h1>
               </div>
               <p className="text-lg text-black leading-relaxed mb-4">
-                <strong>Grief counselor, art therapist, designer, artist and cancer survivor.</strong>
+                <strong>Grief counselor and art-as-therapy facilitator, designer, artist and cancer survivor.</strong>
               </p>
               <p className="text-lg text-black/70 leading-relaxed">
                 Creativity has always been my way of connecting with the world. My own losses led me to accompany others through change and transformation — through listening, through art, or a blend of both. My training integrates techniques from Mexico, Bali, Thailand, Malaysia, India and United Kingdom.
@@ -30,7 +30,7 @@ export default function EnAboutPage() {
               <div className="bg-white rounded-3xl p-6 border border-[#B2F7EF]">
                 <Image
                   src="/lourdes-perez-arteterapeuta-tanatologa-aficiones.webp"
-                  alt="Lou — grief counselor, art therapist, artist, photographer, designer, traveler and more"
+                  alt="Lou — grief counselor, art-as-therapy facilitator, artist, photographer, designer, traveler and more"
                   width={500}
                   height={488}
                   priority
@@ -68,7 +68,7 @@ export default function EnAboutPage() {
 
             <h3 className="text-black">Art as therapy</h3>
             <p>
-              I have trained through a range of international courses and approaches: a course as an art therapy practitioner, a specialization in Expressive Arts for Working with Children, and studies in Bali where I deepened practices such as Steiner's Mythical Creatures, wet-on-wet, the expressive line and the abstract family portrait, in a setting that honors ancestral traditions of wellbeing.
+              I have trained through a range of international courses and approaches: a course as an art-as-therapy facilitator, a specialization in Expressive Arts for Working with Children, and studies in Bali where I deepened practices such as Steiner's Mythical Creatures, wet-on-wet, the expressive line and the abstract family portrait, in a setting that honors ancestral traditions of wellbeing.
             </p>
 
             <h3 className="text-black">Reiki</h3>

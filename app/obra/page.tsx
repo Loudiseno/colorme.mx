@@ -109,7 +109,7 @@ export default function ObraPage() {
           <div className="order-1 md:order-3 max-w-sm w-full md:ml-auto">
             <Image
               src="/lourdes-perez-artista-arteterapeuta-colorme.jpeg"
-              alt="Lourdes Pérez, tanatóloga, arteterapeuta y artista, autora de la obra de ColorMe"
+              alt="Lourdes Pérez, tanatóloga, facilitadora de arte como terapia y artista, autora de la obra de ColorMe"
               width={1000}
               height={1250}
               sizes="(max-width: 768px) 90vw, 384px"

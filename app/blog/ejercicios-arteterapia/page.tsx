@@ -19,17 +19,17 @@ export default function ArticuloEjerciciosArteterapia() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTE COMO TERAPIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTETERAPIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            10 ejercicios de arte como terapia que puedes hacer en casa
+            10 ejercicios de arteterapia que puedes hacer en casa
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/ejercicios-arteterapia.webp"
-            alt="Ejercicios de arte como terapia para hacer en casa."
+            alt="Ejercicios de arteterapia para hacer en casa."
             width={300}
             height={200}
             priority
@@ -43,11 +43,11 @@ export default function ArticuloEjerciciosArteterapia() {
           </p>
 
           <p>
-            Es lo primero que dice casi todo el mundo cuando escucha la palabra arte como terapia.
+            Es lo primero que dice casi todo el mundo cuando escucha la palabra arteterapia.
           </p>
 
           <p>
-            La realidad es diferente: el arte como terapia no se trata de crear obras de arte. Se trata de usar la expresión creativa como un puente hacia tus emociones. No importa cómo quede el resultado. Lo que importa es lo que sientes mientras lo haces y lo que descubres sobre ti en el proceso.
+            La realidad es diferente: la arteterapia no se trata de crear obras de arte. Se trata de usar la expresión creativa como un puente hacia tus emociones. No importa cómo quede el resultado. Lo que importa es lo que sientes mientras lo haces y lo que descubres sobre ti en el proceso.
           </p>
 
           <p>
@@ -340,7 +340,7 @@ export default function ArticuloEjerciciosArteterapia() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Agenda tu sesión de orientación gratuita</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si quieres explorar el arte como terapia para procesar tus emociones, puedo acompañarte.
+            Si quieres explorar la arteterapia para procesar tus emociones, puedo acompañarte.
           </p>
           <a
             href={siteConfig.calendly}

@@ -25,7 +25,7 @@ export default function ExplicarMuerteNinoPage() {
             Cómo explicar la muerte a un niño
           </h1>
           <p className="text-black/60">
-            Por Lourdes Pérez | Tanatóloga y Arteterapeuta
+            Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia
           </p>
         </header>
 

@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'Cómo el arte sana: lo que sucede en tu cerebro cuando creas | ColorMe',
   description: 'La neurociencia detrás de por qué crear arte reduce el estrés y mejora el bienestar.',
-  keywords: ['beneficios del arte', 'arte como terapia', 'arte y cerebro', 'arte reduce estrés', 'neurociencia del arte', 'crear arte bienestar'],
+  keywords: ['beneficios del arte', 'arteterapia', 'arte y cerebro', 'arte reduce estrés', 'neurociencia del arte', 'crear arte bienestar'],
   alternates: {
     canonical: '/blog/beneficios-arte',
   },

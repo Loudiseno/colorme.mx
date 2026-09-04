@@ -19,11 +19,11 @@ export default function ArticuloBeneficiosArte() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTE COMO TERAPIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTETERAPIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Cómo el arte sana: lo que sucede en tu cerebro cuando creas
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">

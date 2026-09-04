@@ -19,11 +19,11 @@ export default function ArticuloMandalasTerapeuticos() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTE COMO TERAPIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTETERAPIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Mandalas terapéuticos: qué son y cómo crearlos
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -155,7 +155,7 @@ export default function ArticuloMandalasTerapeuticos() {
           </p>
 
           <p className="italic text-black/60 mt-8">
-            En ColorMe uso los mandalas como una de las herramientas principales en mis sesiones de arte como terapia. Si quieres explorar esta práctica conmigo, ya sea para el manejo del estrés, el procesamiento del duelo o simplemente para reconectarte contigo mismo, estoy aquí para acompañarte.
+            En ColorMe uso los mandalas como una de las herramientas principales en mis sesiones de arteterapia. Si quieres explorar esta práctica conmigo, ya sea para el manejo del estrés, el procesamiento del duelo o simplemente para reconectarte contigo mismo, estoy aquí para acompañarte.
           </p>
         </div>
 

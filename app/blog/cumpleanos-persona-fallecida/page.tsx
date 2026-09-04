@@ -22,7 +22,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             El Cumpleaños de Alguien que Ya No Está: Cómo Enfrentar Esa Fecha con el Corazón Abierto
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         {/* Featured Image */}
@@ -73,7 +73,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Honrar su memoria: crear rituales de cumpleaños llenos de significado</h2>
 
           <p>
-            Uno de los aprendizajes más poderosos que me han dado el trabajo tanatológico y el arte como terapia es este: los rituales son puentes. Nos conectan con quienes ya no están de una manera que las palabras solas no logran.
+            Uno de los aprendizajes más poderosos que me han dado el trabajo tanatológico y la arteterapia es este: los rituales son puentes. Nos conectan con quienes ya no están de una manera que las palabras solas no logran.
           </p>
 
           <p>
@@ -88,7 +88,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
             <li><strong>Preparar o comer su platillo favorito</strong>. La comida tiene una conexión profunda con la memoria y el afecto. Cocinar lo que a esa persona le encantaba es un acto de amor concreto.</li>
             <li><strong>Escuchar su música</strong>. Arma una lista de reproducción con las canciones que amaba y déjate llevar por los recuerdos que despiertan.</li>
             <li><strong>Hacer un álbum o collage de fotos</strong>. Reúne imágenes de diferentes épocas de su vida y permítete recordar con todos los sentidos.</li>
-            <li><strong>Encender una vela y escribirle</strong>. Cuéntale cómo va tu vida, qué ha cambiado, qué extrañas, qué aprendiste de ella. Las cartas son un recurso poderoso en arte como terapia para mantener el vínculo.</li>
+            <li><strong>Encender una vela y escribirle</strong>. Cuéntale cómo va tu vida, qué ha cambiado, qué extrañas, qué aprendiste de ella. Las cartas son un recurso poderoso en arteterapia para mantener el vínculo.</li>
             <li><strong>Hacer algo que ella hubiera querido hacer</strong>: ese viaje pendiente, esa actividad que siempre mencionaba, ese lugar que nunca visitaron juntos.</li>
             <li><strong>Reunirte con quienes también la querían</strong> -hijos, amigos, hermanos- no para llorar obligatoriamente, sino para compartir recuerdos y mantener viva su historia.</li>
             <li><strong>Donar o hacer una buena acción en su nombre</strong>. Ayudar a alguien como un acto de amor dedicado a quien ya no está puede ser profundamente sanador.</li>
@@ -185,7 +185,7 @@ export default function ArticuloCumpleanosPersonaFallecida() {
         {/* Author */}
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es tanatóloga, arteterapeuta, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
+            Lourdes es tanatóloga y facilitadora de arte como terapia, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
           </p>
         </div>
 

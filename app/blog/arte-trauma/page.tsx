@@ -19,11 +19,11 @@ export default function ArticuloArteTrauma() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTE COMO TERAPIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTETERAPIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Arte y trauma: cómo el proceso creativo ayuda a sanar
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -71,7 +71,7 @@ export default function ArticuloArteTrauma() {
           </p>
 
           <p>
-            En arte como terapia, no juzgamos lo que sale. Lo observamos con curiosidad, lo acompañamos, y dejamos que cuente su historia a su propio ritmo.
+            En arteterapia, no juzgamos lo que sale. Lo observamos con curiosidad, lo acompañamos, y dejamos que cuente su historia a su propio ritmo.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo funciona el arte en el procesamiento del trauma</h2>
@@ -107,7 +107,7 @@ export default function ArticuloArteTrauma() {
           </p>
 
           <p>
-            En arte como terapia informada por trauma, trabajamos con lo que está presente ahora, no con la reconstrucción detallada del pasado. El objetivo no es recordar todo, sino integrar lo que quedó fragmentado y recuperar la sensación de seguridad en el presente.
+            En arteterapia informada por trauma, trabajamos con lo que está presente ahora, no con la reconstrucción detallada del pasado. El objetivo no es recordar todo, sino integrar lo que quedó fragmentado y recuperar la sensación de seguridad en el presente.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El arte no reemplaza, complementa</h2>

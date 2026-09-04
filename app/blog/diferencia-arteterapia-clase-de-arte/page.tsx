@@ -19,17 +19,17 @@ export default function DiferenciaArteterapiaPage() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTE COMO TERAPIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTETERAPIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Diferencia entre arte como terapia y clase de arte: no es lo mismo crear para aprender que crear para sanar
+            Diferencia entre arteterapia y clase de arte: no es lo mismo crear para aprender que crear para sanar
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/anagaby-final.jpeg"
-            alt="Diferencia entre arte como terapia y clase de arte"
+            alt="Diferencia entre arteterapia y clase de arte"
             width={300}
             height={200}
             priority
@@ -41,7 +41,7 @@ export default function DiferenciaArteterapiaPage() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Una confusión muy común</h2>
 
           <p className="text-xl leading-relaxed">
-            Cuando hablo de lo que hago, muchas personas asumen que doy clases de pintura o que enseño técnicas artísticas. Y aunque el arte como terapia usa materiales como pinceles, pinturas, arcilla o colores, no tiene nada que ver con una clase de arte tradicional.
+            Cuando hablo de lo que hago, muchas personas asumen que doy clases de pintura o que enseño técnicas artísticas. Y aunque la arteterapia usa materiales como pinceles, pinturas, arcilla o colores, no tiene nada que ver con una clase de arte tradicional.
           </p>
 
           <p>
@@ -58,30 +58,30 @@ export default function DiferenciaArteterapiaPage() {
             En una clase de arte el enfoque está en el resultado. Se busca que la obra quede bien, que demuestre el dominio de la técnica. Hay una forma correcta de hacer las cosas. Se evalúa la calidad artística.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Qué es una sesión de arte como terapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Qué es una sesión de arteterapia</h2>
 
           <p>
-            El arte como terapia es una forma de acompañamiento terapéutico que usa la creación artística como medio de expresión y comunicación. El arte no es el fin, es el camino. Lo que importa no es la obra que resulta, sino lo que sucede mientras se crea.
+            La arteterapia es una forma de acompañamiento terapéutico que usa la creación artística como medio de expresión y comunicación. El arte no es el fin, es el camino. Lo que importa no es la obra que resulta, sino lo que sucede mientras se crea.
           </p>
 
           <p>
-            En una sesión de arte como terapia el enfoque está en el proceso. No hay una forma correcta de hacer las cosas. No se enseña técnica. No se corrige. La persona crea desde su propia expresión, sin reglas que seguir.
+            En una sesión de arteterapia el enfoque está en el proceso. No hay una forma correcta de hacer las cosas. No se enseña técnica. No se corrige. La persona crea desde su propia expresión, sin reglas que seguir.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Se necesita saber dibujar para hacer arte como terapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Se necesita saber dibujar para hacer arteterapia?</h2>
 
           <p>
-            No. Esta es una de las preguntas más frecuentes, y la respuesta es un rotundo no. En arte como terapia no se necesitan conocimientos artísticos previos. No importa si nunca tomaste una clase de dibujo, si no sabes mezclar colores, si sientes que no tienes talento para el arte.
+            No. Esta es una de las preguntas más frecuentes, y la respuesta es un rotundo no. En arteterapia no se necesitan conocimientos artísticos previos. No importa si nunca tomaste una clase de dibujo, si no sabes mezclar colores, si sientes que no tienes talento para el arte.
           </p>
 
           <p>
             Lo que se pide es disposición a explorar, a jugar con los materiales, a permitir que algo se exprese a través de las manos.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cuándo considerar el arte como terapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cuándo considerar la arteterapia</h2>
 
           <p>
-            El arte como terapia puede ser una buena opción cuando tienes dificultad para expresar lo que sientes con palabras, estás atravesando un momento difícil como duelos, crisis o transiciones, quieres conocerte mejor, buscas una forma de terapia que no dependa solo de la conversación.
+            La arteterapia puede ser una buena opción cuando tienes dificultad para expresar lo que sientes con palabras, estás atravesando un momento difícil como duelos, crisis o transiciones, quieres conocerte mejor, buscas una forma de terapia que no dependa solo de la conversación.
           </p>
 
           <p>
@@ -90,7 +90,7 @@ export default function DiferenciaArteterapiaPage() {
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">¿Quieres explorar el arte como terapia?</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">¿Quieres explorar la arteterapia?</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
             Si estás buscando un espacio donde el arte te ayude a conectar contigo, agenda una sesión de orientación gratuita.
           </p>

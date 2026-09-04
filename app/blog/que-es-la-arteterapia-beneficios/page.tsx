@@ -21,18 +21,18 @@ export default function ArticuloArteterapia() {
 
         {/* Header */}
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">Arte como terapia</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            ¿Qué es el arte como terapia? Descubre la terapia creativa que sana emociones
+            ¿Qué es la arteterapia? Descubre la terapia creativa que sana emociones
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y facilitadora de arte como terapia</p>
         </header>
 
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/arteterapia.webp"
-            alt="Manos de niño con pintura de colores - Arte como terapia"
+            alt="Manos de niño con pintura de colores - Arteterapia"
             width={300}
             height={200}
             priority
@@ -51,39 +51,39 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            Si alguna vez te has sentido así -atrapado entre lo que sientes y lo que puedes expresar- quiero que sepas que no estás solo. Y quiero contarte sobre una herramienta que puede ayudarte a tender un puente entre esas dos orillas: el arte como terapia.
+            Si alguna vez te has sentido así -atrapado entre lo que sientes y lo que puedes expresar- quiero que sepas que no estás solo. Y quiero contarte sobre una herramienta que puede ayudarte a tender un puente entre esas dos orillas: la arteterapia.
           </p>
 
           <p>
             No, no necesitas saber dibujar. No necesitas ser artista. Solo necesitas estar dispuesto a explorar.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué es exactamente el arte como terapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué es exactamente la arteterapia?</h2>
 
           <p>
-            El arte como terapia es una forma de acompañamiento terapéutico que utiliza el proceso creativo como vehículo para la expresión emocional, el autoconocimiento y la sanación. A través del dibujo, la pintura, el collage, el modelado con arcilla y otras técnicas artísticas, puedes explorar y comunicar experiencias que a veces resultan difíciles -o incluso imposibles- de poner en palabras.
+            La arteterapia es una forma de acompañamiento terapéutico que utiliza el proceso creativo como vehículo para la expresión emocional, el autoconocimiento y la sanación. A través del dibujo, la pintura, el collage, el modelado con arcilla y otras técnicas artísticas, puedes explorar y comunicar experiencias que a veces resultan difíciles -o incluso imposibles- de poner en palabras.
           </p>
 
           <p>
-            En arte como terapia, <strong>no importa cómo se ve lo que creas</strong>. No estamos buscando hacer una obra de arte bonita ni técnicamente perfecta. El foco está en el proceso, no en el resultado. Lo que importa es lo que surge mientras creas: las emociones que emergen, los pensamientos que aparecen, los descubrimientos que haces sobre ti mismo.
+            En arteterapia, <strong>no importa cómo se ve lo que creas</strong>. No estamos buscando hacer una obra de arte bonita ni técnicamente perfecta. El foco está en el proceso, no en el resultado. Lo que importa es lo que surge mientras creas: las emociones que emergen, los pensamientos que aparecen, los descubrimientos que haces sobre ti mismo.
           </p>
 
           <p>
-            La historia del arte como terapia es fascinante. Aunque el arte siempre ha tenido un papel sanador en las culturas humanas, fue Adrian Hill, un artista británico, quien formalizó el concepto durante la Segunda Guerra Mundial. Mientras se recuperaba de tuberculosis en un hospital, Hill descubrió que pintar le ayudaba a procesar sus emociones y sobrellevar la enfermedad. Comenzó a compartir esta práctica con otros pacientes -muchos de ellos soldados traumatizados por la guerra- y observó cómo el arte les permitía expresar lo que las palabras no podían.
+            La historia de la arteterapia es fascinante. Aunque el arte siempre ha tenido un papel sanador en las culturas humanas, fue Adrian Hill, un artista británico, quien formalizó el concepto durante la Segunda Guerra Mundial. Mientras se recuperaba de tuberculosis en un hospital, Hill descubrió que pintar le ayudaba a procesar sus emociones y sobrellevar la enfermedad. Comenzó a compartir esta práctica con otros pacientes -muchos de ellos soldados traumatizados por la guerra- y observó cómo el arte les permitía expresar lo que las palabras no podían.
           </p>
 
           <p>
-            Desde entonces, el arte como terapia se ha desarrollado como una disciplina profesional con fundamentos en la psicología, el arte y la neurociencia. Hoy sabemos que la expresión creativa activa áreas del cerebro relacionadas con la regulación emocional, la memoria y la resiliencia.
+            Desde entonces, la arteterapia se ha desarrollado como una disciplina profesional con fundamentos en la psicología, el arte y la neurociencia. Hoy sabemos que la expresión creativa activa áreas del cerebro relacionadas con la regulación emocional, la memoria y la resiliencia.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Para quién es el arte como terapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Para quién es la arteterapia?</h2>
 
           <p>
-            Una de las preguntas que más escucho es: "¿El arte como terapia es para mí?" La respuesta corta es: probablemente sí. El arte como terapia puede beneficiar a prácticamente cualquier persona que esté buscando una forma diferente de conectar consigo misma.
+            Una de las preguntas que más escucho es: "¿La arteterapia es para mí?" La respuesta corta es: probablemente sí. La arteterapia puede beneficiar a prácticamente cualquier persona que esté buscando una forma diferente de conectar consigo misma.
           </p>
 
           <p>
-            Dicho esto, hay algunas situaciones donde el arte como terapia resulta especialmente valiosa:
+            Dicho esto, hay algunas situaciones donde la arteterapia resulta especialmente valiosa:
           </p>
 
           <p>
@@ -99,25 +99,25 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>Quienes enfrentan enfermedades crónicas o graves.</strong> Un diagnóstico de enfermedad puede generar un torbellino de emociones: miedo, enojo, tristeza, incertidumbre. El arte como terapia ofrece un espacio para procesar todo eso, para recuperar un sentido de control cuando el cuerpo se siente fuera de control.
+            <strong>Quienes enfrentan enfermedades crónicas o graves.</strong> Un diagnóstico de enfermedad puede generar un torbellino de emociones: miedo, enojo, tristeza, incertidumbre. La arteterapia ofrece un espacio para procesar todo eso, para recuperar un sentido de control cuando el cuerpo se siente fuera de control.
           </p>
 
           <p>
-            <strong>Personas que buscan autoconocimiento y crecimiento personal.</strong> No necesitas estar en crisis para beneficiarte del arte como terapia. Muchas personas la utilizan como una herramienta de exploración personal, una forma de conocerse más profundamente y de cultivar su bienestar emocional.
+            <strong>Personas que buscan autoconocimiento y crecimiento personal.</strong> No necesitas estar en crisis para beneficiarte de la arteterapia. Muchas personas la utilizan como una herramienta de exploración personal, una forma de conocerse más profundamente y de cultivar su bienestar emocional.
           </p>
 
           <p>
-            <strong>Quienes tienen dificultad para expresarse verbalmente.</strong> Ya sea por personalidad, por cultura, por experiencias pasadas o simplemente porque las palabras no son tu medio natural, el arte como terapia te ofrece otra vía de expresión.
+            <strong>Quienes tienen dificultad para expresarse verbalmente.</strong> Ya sea por personalidad, por cultura, por experiencias pasadas o simplemente porque las palabras no son tu medio natural, la arteterapia te ofrece otra vía de expresión.
           </p>
 
           <p>
-            Y quiero repetirlo porque es importante: <strong>no necesitas saber dibujar, pintar ni tener ninguna habilidad artística</strong>. En mis sesiones he acompañado a personas que no habían tocado un pincel desde la primaria, y han tenido experiencias profundamente significativas. El arte en arte como terapia no se juzga por su estética, sino por lo que te permite explorar y expresar.
+            Y quiero repetirlo porque es importante: <strong>no necesitas saber dibujar, pintar ni tener ninguna habilidad artística</strong>. En mis sesiones he acompañado a personas que no habían tocado un pincel desde la primaria, y han tenido experiencias profundamente significativas. El arte en arteterapia no se juzga por su estética, sino por lo que te permite explorar y expresar.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los beneficios del arte como terapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los beneficios de la arteterapia</h2>
 
           <p>
-            A lo largo de mis años de práctica, he sido testigo de transformaciones que me siguen conmoviendo. Pero más allá de mi experiencia personal, la investigación científica respalda los beneficios del arte como terapia:
+            A lo largo de mis años de práctica, he sido testigo de transformaciones que me siguen conmoviendo. Pero más allá de mi experiencia personal, la investigación científica respalda los beneficios de la arteterapia:
           </p>
 
           <p>
@@ -125,7 +125,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>Reduce el estrés y la ansiedad.</strong> Múltiples estudios han demostrado que el proceso creativo disminuye los niveles de cortisol en el cuerpo. Un estudio de la American Art Therapy Association encontró que el 75% de los participantes reportaron una reducción significativa del estrés después de sesiones de arte como terapia.
+            <strong>Reduce el estrés y la ansiedad.</strong> Múltiples estudios han demostrado que el proceso creativo disminuye los niveles de cortisol en el cuerpo. Un estudio de la American Art Therapy Association encontró que el 75% de los participantes reportaron una reducción significativa del estrés después de sesiones de arteterapia.
           </p>
 
           <p>
@@ -145,17 +145,17 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>Conecta mente y cuerpo.</strong> El arte como terapia es una práctica encarnada: involucra tus manos, tu vista, tu postura, tu respiración. Esta conexión mente-cuerpo puede ser especialmente sanadora para quienes tienden a vivir "de la cabeza para arriba".
+            <strong>Conecta mente y cuerpo.</strong> La arteterapia es una práctica encarnada: involucra tus manos, tu vista, tu postura, tu respiración. Esta conexión mente-cuerpo puede ser especialmente sanadora para quienes tienden a vivir "de la cabeza para arriba".
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cómo es una sesión de arte como terapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cómo es una sesión de arteterapia?</h2>
 
           <p>
             Entiendo que dar el primer paso puede generar nervios. No saber qué esperar hace todo más difícil. Por eso quiero describir cómo son las sesiones conmigo, para que puedas imaginarte en ese espacio.
           </p>
 
           <p>
-            <strong>La primera consulta es gratuita y dura 30 minutos.</strong> Es una conversación breve donde me cuentas qué te trae, qué estás buscando, y juntos exploramos si el arte como terapia es el camino adecuado para ti. No hay presión ni compromiso. Es simplemente un espacio para conocernos.
+            <strong>La primera consulta es gratuita y dura 30 minutos.</strong> Es una conversación breve donde me cuentas qué te trae, qué estás buscando, y juntos exploramos si la arteterapia es el camino adecuado para ti. No hay presión ni compromiso. Es simplemente un espacio para conocernos.
           </p>
 
           <p>
@@ -178,7 +178,7 @@ export default function ArticuloArteterapia() {
             <strong>Lo que sucede en la sesión es confidencial.</strong> Este es un espacio seguro donde puedes expresarte sin miedo al juicio. Todo lo que compartas queda entre nosotros.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arte como terapia vs otras terapias: ¿cuál elegir?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia vs otras terapias: ¿cuál elegir?</h2>
 
           <p>
             Esta es otra pregunta frecuente, y la respuesta es: depende de ti y de lo que necesites.
@@ -189,7 +189,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            El arte como terapia, en cambio, trabaja con imágenes, colores, texturas y formas. Es especialmente útil cuando:
+            La arteterapia, en cambio, trabaja con imágenes, colores, texturas y formas. Es especialmente útil cuando:
           </p>
 
           <ul className="list-disc ml-6 space-y-2">
@@ -201,18 +201,18 @@ export default function ArticuloArteterapia() {
           </ul>
 
           <p>
-            <strong>Lo importante: no tienes que elegir una u otra.</strong> Muchas personas combinan arte como terapia con terapia verbal, y los dos procesos se enriquecen mutuamente. Lo que descubres en arte como terapia puede alimentar tus sesiones de psicoterapia, y viceversa.
+            <strong>Lo importante: no tienes que elegir una u otra.</strong> Muchas personas combinan arteterapia con terapia verbal, y los dos procesos se enriquecen mutuamente. Lo que descubres en arteterapia puede alimentar tus sesiones de psicoterapia, y viceversa.
           </p>
 
           <p>
-            En mi práctica, también integro el arte como terapia con la tanatología cuando es apropiado. Si estás atravesando un proceso de duelo o pérdida, podemos trabajar tanto con la palabra como con el arte, según lo que necesites en cada momento.
+            En mi práctica, también integro la arteterapia con la tanatología cuando es apropiado. Si estás atravesando un proceso de duelo o pérdida, podemos trabajar tanto con la palabra como con el arte, según lo que necesites en cada momento.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes sobre el arte como terapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes sobre la arteterapia</h2>
 
           <p>
             <strong>¿De verdad no necesito saber dibujar?</strong><br />
-            De verdad. El arte como terapia no es una clase de arte. No hay "bien" ni "mal", no hay calificaciones, no hay expectativas técnicas. Lo único que necesitas es disposición para explorar.
+            De verdad. La arteterapia no es una clase de arte. No hay "bien" ni "mal", no hay calificaciones, no hay expectativas técnicas. Lo único que necesitas es disposición para explorar.
           </p>
 
           <p>
@@ -221,7 +221,7 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>¿El arte como terapia funciona online?</strong><br />
+            <strong>¿La arteterapia funciona online?</strong><br />
             Sí. Las sesiones online pueden ser igual de efectivas que las presenciales. Trabajamos con materiales que tengas en casa (cosas simples: papel, lápices de colores, revistas viejas) y el proceso es el mismo. La pantalla no impide la conexión.
           </p>
 
@@ -231,19 +231,19 @@ export default function ArticuloArteterapia() {
           </p>
 
           <p>
-            <strong>¿Puedo hacer arte como terapia si ya estoy en otro tipo de terapia?</strong><br />
-            Por supuesto. El arte como terapia complementa otros procesos terapéuticos. El acompañamiento que ofrezco no es un tratamiento clínico, médico ni psiquiátrico. Mi práctica no realiza diagnósticos, evaluaciones de trastornos mentales, mediciones psicológicas estandarizadas ni prescripción de medicamentos.
+            <strong>¿Puedo hacer arteterapia si ya estoy en otro tipo de terapia?</strong><br />
+            Por supuesto. La arteterapia complementa otros procesos terapéuticos. El acompañamiento que ofrezco no es un tratamiento clínico, médico ni psiquiátrico. Mi práctica no realiza diagnósticos, evaluaciones de trastornos mentales, mediciones psicológicas estandarizadas ni prescripción de medicamentos.
           </p>
 
           <p>
-            <strong>¿Es lo mismo arte como terapia que pintar para relajarme en casa?</strong><br />
-            No exactamente. Pintar en casa puede ser relajante y valioso, pero el arte como terapia incluye el acompañamiento de un profesional capacitado que te ayuda a explorar lo que surge, a hacer conexiones y a profundizar en tu proceso. Es la diferencia entre escribir un diario y trabajar con un terapeuta.
+            <strong>¿Es lo mismo arteterapia que pintar para relajarme en casa?</strong><br />
+            No exactamente. Pintar en casa puede ser relajante y valioso, pero la arteterapia incluye el acompañamiento de un profesional capacitado que te ayuda a explorar lo que surge, a hacer conexiones y a profundizar en tu proceso. Es la diferencia entre escribir un diario y trabajar con un terapeuta.
           </p>
         </div>
 
         {/* CTA */}
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
-          <h3 className="text-2xl text-black mb-4 font-semibold">¿Te gustaría explorar el arte como terapia?</h3>
+          <h3 className="text-2xl text-black mb-4 font-semibold">¿Te gustaría explorar la arteterapia?</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
             Si algo de lo que leíste resonó contigo, te invito a dar el primer paso. Agenda una consulta gratuita de 30 minutos donde podemos conversar sobre lo que estás buscando.
           </p>
@@ -260,7 +260,7 @@ export default function ArticuloArteterapia() {
         {/* Author */}
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es tanatóloga, arteterapeuta, diseñadora y fotógrafa. Después de atravesar su propio proceso de sanación a través del arte, se dedica a acompañar a otras personas en sus caminos de transformación. Es autora del libro "Indeleble", donde comparte su historia de resiliencia.
+            Lourdes es tanatóloga y facilitadora de arte como terapia, diseñadora y fotógrafa. Después de atravesar su propio proceso de sanación a través del arte, se dedica a acompañar a otras personas en sus caminos de transformación. Es autora del libro "Indeleble", donde comparte su historia de resiliencia.
           </p>
         </div>
 
