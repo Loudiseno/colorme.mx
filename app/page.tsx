@@ -101,7 +101,7 @@ export default function HomePage() {
                       </h2>
                     </div>
                     <p className="text-black font-bold mb-4">
-                      Tanatóloga y facilitadora de arte como terapia, diseñadora, artista y sobreviviente de cáncer.
+                      Tanatóloga, facilitadora de arte como terapia, diseñadora gráfica, artista y sobreviviente de cáncer.
                     </p>
                     <p className="text-black/70 leading-relaxed">
                       La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido.

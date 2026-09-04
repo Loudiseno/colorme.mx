@@ -6,19 +6,21 @@ import { ArrowLeft, Check, Calendar } from 'lucide-react'
 import { siteConfig, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Arte como terapia en México - Terapia a través del Arte',
+  title: 'Arte como terapia en México | Arteterapia y expresión creativa',
   description:
-    'Acompañamiento emocional a través del arte para explorar y procesar emociones. Sesiones de arte como terapia individuales y grupales, presenciales y online en México.',
+    'Acompañamiento emocional a través del arte, también conocido como arteterapia, para explorar y procesar emociones. Sesiones individuales y grupales, presenciales y online en México.',
   keywords: [
     'arte como terapia',
+    'arteterapia',
+    'arteterapia México',
     'arte terapia México',
     'terapia con arte',
     'arte como terapia online',
-    'arte como terapia presencial',
+    'arteterapia online',
     'expresión artística terapéutica',
     'terapia creativa',
-    'arte como terapia para duelo',
-    'arte como terapia para ansiedad',
+    'arteterapia para duelo',
+    'arteterapia para ansiedad',
   ],
   alternates: {
     canonical: '/arteterapia-mexico',
@@ -81,6 +83,7 @@ const helpsWith = [
 export default function ArteterapiaPage() {
   const serviceSchema = generateServiceSchema({
     name: 'Arte como terapia',
+    alternateName: 'Arteterapia',
     description:
       'Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones. Sesiones individuales y grupales.',
     url: `${siteConfig.url}/arteterapia-mexico`,
@@ -129,6 +132,9 @@ export default function ArteterapiaPage() {
                   No se requiere experiencia artística ni se busca un resultado estético; el valor está en la libertad de crear y lo que surge del proceso.
                 </p>
               </div>
+              <p className="mt-4 text-sm text-black/50 leading-relaxed">
+                También se le conoce como arteterapia.
+              </p>
               <div className="mt-6">
                 <a
                   href="https://wa.me/529992472678"

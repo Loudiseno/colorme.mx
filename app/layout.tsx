@@ -15,8 +15,10 @@ export const metadata: Metadata = {
   },
   description: 'Acompañamiento emocional con tanatología y arte como terapia para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
   keywords: [
-    'arte como terapia',
     'tanatología',
+    'arte como terapia',
+    'arteterapia',
+    'arteterapia México',
     'duelo',
     'terapia de duelo',
     'acompañamiento emocional',

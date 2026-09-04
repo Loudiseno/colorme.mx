@@ -47,7 +47,8 @@ export function generateBusinessSchema() {
       '@type': 'Country',
       name: 'México',
     },
-    serviceType: ['Arte como terapia', 'Tanatología', 'Terapia de duelo', 'Acompañamiento emocional'],
+    // 'Arteterapia' es el sinónimo por el que la gente busca en México.
+    serviceType: ['Tanatología', 'Arte como terapia', 'Arteterapia', 'Terapia de duelo', 'Acompañamiento emocional'],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Servicios de ColorMe',
@@ -82,7 +83,7 @@ export function generatePersonSchema() {
     '@id': `${siteConfig.url}/#person`,
     name: 'Lourdes Pérez',
     jobTitle: ['Tanatóloga', 'Facilitadora de arte como terapia', 'Diseñadora', 'Fotógrafa'],
-    description: 'Tanatóloga, facilitadora de arte como terapia, diseñadora, artista y fotógrafa. Acompaño a personas en procesos de duelo, cambio o cierre, creando espacios seguros para habitar lo que sienten.',
+    description: 'Tanatóloga, facilitadora de arte como terapia, diseñadora gráfica, artista y fotógrafa. Acompaño a personas en procesos de duelo, cambio o cierre, creando espacios seguros para habitar lo que sienten.',
     url: siteConfig.url,
     sameAs: [siteConfig.social.instagram, siteConfig.social.facebook],
     worksFor: {
@@ -153,11 +154,14 @@ export function generateServiceSchema(service: {
   name: string
   description: string
   url: string
+  /** Sinónimo por el que también se busca el servicio, p. ej. «arteterapia». */
+  alternateName?: string
 }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: service.name,
+    ...(service.alternateName ? { alternateName: service.alternateName } : {}),
     description: service.description,
     url: service.url,
     provider: {
