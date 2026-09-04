@@ -50,7 +50,7 @@ export default function EnBlogPage() {
             <h1 className="text-4xl md:text-5xl text-black relative z-10">Between the Lines</h1>
           </div>
           <p className="text-black/70 max-w-2xl mx-auto text-base leading-relaxed">
-            Reflections, information, and tools on art as therapy, grief counseling, and the world of
+            Reflections, information, and tools on grief counseling, art as therapy, and the world of
             emotions. A place to explore life, loss, self-discovery, and creativity through art,
             color, and rituals from around the world.
           </p>

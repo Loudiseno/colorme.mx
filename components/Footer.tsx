@@ -22,8 +22,8 @@ const WhatsAppIcon = ({ size = 16, strokeWidth = 1.5 }: { size?: number; strokeW
 )
 
 const navEs = [
-  { name: 'Arteterapia', href: '/arteterapia-mexico' },
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
+  { name: 'Arte como terapia', href: '/arteterapia-mexico' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Mi libro', href: '/#indeleble' },
   { name: 'Productos', href: '/tienda' },
@@ -31,8 +31,8 @@ const navEs = [
 ]
 
 const navEn = [
-  { name: 'Art as Therapy', href: '/en/art-as-therapy' },
   { name: 'Grief Counseling', href: '/en/grief-counseling' },
+  { name: 'Art as Therapy', href: '/en/art-as-therapy' },
   { name: 'About', href: '/en/about' },
   { name: 'Shop', href: '/en/shop' },
   { name: 'Blog', href: '/en/blog' },
@@ -58,7 +58,7 @@ export default function Footer() {
   const contactTitle = isEn ? 'Contact' : 'Contacto'
   const tagline = isEn
     ? 'Emotional support through art as therapy and grief counseling.'
-    : 'Acompañamiento emocional a través de arteterapia y tanatología.'
+    : 'Acompañamiento emocional a través de tanatología y arte como terapia.'
 
   return (
     <footer className="bg-[#B2F7EF] pt-12 pb-6">

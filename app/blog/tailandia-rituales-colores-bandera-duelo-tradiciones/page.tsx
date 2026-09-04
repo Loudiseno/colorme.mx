@@ -23,7 +23,7 @@ export default function TailandiaRitualesPage() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Tailandia, la tierra de la sonrisa eterna: rituales, colores sagrados y la sabiduría de soltar con gratitud
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -142,7 +142,7 @@ export default function TailandiaRitualesPage() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">¿Estás atravesando un duelo?</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si necesitas acompañamiento desde una mirada cálida, cercana y respetuosa de tu propio ritmo, estoy aquí para ti. En ColorMe acompaño procesos de sanación desde la tanatología y la arteterapia.
+            Si necesitas acompañamiento desde una mirada cálida, cercana y respetuosa de tu propio ritmo, estoy aquí para ti. En ColorMe acompaño procesos de sanación desde la tanatología y el arte como terapia.
           </p>
           <a
             href={siteConfig.calendly}

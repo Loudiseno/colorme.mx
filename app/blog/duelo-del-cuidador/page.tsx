@@ -20,7 +20,7 @@ export default function ArticuloDueloDelCuidador() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             El Duelo del Cuidador: Cuando Cuidar a Otro También te Rompe por Dentro
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -170,14 +170,14 @@ export default function ArticuloDueloDelCuidador() {
             <strong>Permítete sentir sin juzgarte.</strong> El enojo, el resentimiento, el agotamiento, el deseo de escapar... todo eso puede coexistir con el amor profundo que sientes. No te definen como cuidador ni como persona.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo la arteterapia puede acompañar al cuidador</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo el arte como terapia puede acompañar al cuidador</h2>
 
           <p>
             En mi práctica, acompañar a cuidadores es uno de los procesos que más me conmueve y que más claramente me muestra el poder del arte como lenguaje terapéutico.
           </p>
 
           <p>
-            El cuidador típicamente llega con muy poco espacio para sí mismo. Está acostumbrado a posponer sus propias emociones, a no tomarlas "tan en serio". El espacio de arteterapia le dice lo contrario: aquí tú eres el centro. Lo que sientes importa. Lo que necesitas expresar tiene un lugar.
+            El cuidador típicamente llega con muy poco espacio para sí mismo. Está acostumbrado a posponer sus propias emociones, a no tomarlas "tan en serio". El espacio de arte como terapia le dice lo contrario: aquí tú eres el centro. Lo que sientes importa. Lo que necesitas expresar tiene un lugar.
           </p>
 
           <p>
@@ -185,7 +185,7 @@ export default function ArticuloDueloDelCuidador() {
           </p>
 
           <p>
-            También hay algo muy particular en la arteterapia para el duelo anticipatorio: crear algo -una imagen, un collage, un mandala- puede ser una forma de honrar la relación y a la persona amada mientras todavía está presente. Es una manera de estar con ellas de forma diferente, de dejar una huella del amor en algo tangible.
+            También hay algo muy particular en el arte como terapia para el duelo anticipatorio: crear algo -una imagen, un collage, un mandala- puede ser una forma de honrar la relación y a la persona amada mientras todavía está presente. Es una manera de estar con ellas de forma diferente, de dejar una huella del amor en algo tangible.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes del cuidador</h2>
@@ -212,7 +212,7 @@ export default function ArticuloDueloDelCuidador() {
 
           <p>
             <strong>¿Dónde puedo encontrar apoyo como cuidador?</strong><br />
-            Existen grupos de apoyo para cuidadores -presenciales y en línea- que pueden ser muy valiosos porque conectan con personas que entienden desde adentro lo que estás viviendo. La terapia individual (ya sea verbal o arteterapia) también puede ofrecer un espacio personalizado para tu proceso. Y si la enfermedad de tu ser querido está siendo acompañada por un equipo de cuidados paliativos, ese equipo generalmente también tiene recursos de apoyo para la familia.
+            Existen grupos de apoyo para cuidadores -presenciales y en línea- que pueden ser muy valiosos porque conectan con personas que entienden desde adentro lo que estás viviendo. La terapia individual (ya sea verbal o arte como terapia) también puede ofrecer un espacio personalizado para tu proceso. Y si la enfermedad de tu ser querido está siendo acompañada por un equipo de cuidados paliativos, ese equipo generalmente también tiene recursos de apoyo para la familia.
           </p>
 
           <p>
@@ -233,7 +233,7 @@ export default function ArticuloDueloDelCuidador() {
 
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
+            Lourdes es tanatóloga, arteterapeuta, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
           </p>
         </div>
 

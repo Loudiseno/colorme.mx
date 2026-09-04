@@ -20,7 +20,7 @@ export default function SobreMi() {
                 </h1>
               </div>
               <p className="text-lg text-black leading-relaxed mb-4">
-                <strong>Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.</strong>
+                <strong>Tanatóloga, arteterapeuta, diseñadora, artista y sobreviviente de cáncer.</strong>
               </p>
               <p className="text-lg text-black/70 leading-relaxed">
                 La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido.
@@ -30,7 +30,7 @@ export default function SobreMi() {
               <div className="bg-white rounded-3xl p-6 border border-[#B2F7EF]">
                 <Image
                   src="/lourdes-perez-arteterapeuta-tanatologa-aficiones.webp"
-                  alt="Lou - Arteterapeuta, Tanatóloga, Artista, Fotógrafa, Diseñadora, Viajera y más"
+                  alt="Lou - Tanatóloga, Arteterapeuta, Artista, Fotógrafa, Diseñadora, Viajera y más"
                   width={500}
                   height={488}
                   priority
@@ -66,9 +66,9 @@ export default function SobreMi() {
               Me certifiqué como tanatóloga en la Universidad Iberoamericana. La tanatología me permite acompañar a personas en procesos de pérdida, duelo y confrontación con la muerte desde un enfoque profesional y humano.
             </p>
 
-            <h3 className="text-black">Arteterapia</h3>
+            <h3 className="text-black">Arte como terapia</h3>
             <p>
-              Cuento con diferentes cursos y enfoques internacionales: realicé un curso de Terapeuta de Arteterapia, tengo una especialización en Artes Expresivas para el Acompañamiento a Infancias, así como estudios en Bali donde profundicé en prácticas como las Criaturas Míticas de Steiner, el wet-on-wet, la línea expresiva y el retrato familiar abstracto, en un entorno que honra las tradiciones ancestrales de bienestar.
+              Cuento con diferentes cursos y enfoques internacionales: realicé un curso de Terapeuta en Arte como terapia, tengo una especialización en Artes Expresivas para el Acompañamiento a Infancias, así como estudios en Bali donde profundicé en prácticas como las Criaturas Míticas de Steiner, el wet-on-wet, la línea expresiva y el retrato familiar abstracto, en un entorno que honra las tradiciones ancestrales de bienestar.
             </p>
 
             <h3 className="text-black">Reiki</h3>
@@ -113,7 +113,7 @@ export default function SobreMi() {
               Pláticas y talleres:
             </p>
             <ul>
-              <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos». Plática de tanatología: duelo, pérdidas y acompañamiento, para pacientes y familias, y sesión grupal de arteterapia.</li>
+              <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos». Plática de tanatología: duelo, pérdidas y acompañamiento, para pacientes y familias, y sesión grupal de arte como terapia.</li>
               <li><strong>Oncoayuda A.C.</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
               <li><strong>Toca Fest Week de Grupo Surman</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
               <li><strong>UFC Gym México</strong>, 2019 — Plática testimonial y de concientización sobre el cáncer.</li>
@@ -122,7 +122,7 @@ export default function SobreMi() {
               Masterclass:
             </p>
             <ul>
-              <li>«El arte de habitar tu duelo», 2025–2026 — Un espacio para comprender y reflexionar sobre el duelo, acompañado de una experiencia de arteterapia.</li>
+              <li>«El arte de habitar tu duelo», 2025–2026 — Un espacio para comprender y reflexionar sobre el duelo, acompañado de una experiencia de arte como terapia.</li>
             </ul>
             <p>
               Episodios de podcast:
@@ -139,7 +139,7 @@ export default function SobreMi() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Trayectoria profesional</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Antes de dedicarme a la arteterapia y la tanatología, tuve una exitosa carrera en el mundo creativo y empresarial. Trabajé como diseñadora gráfica, fotógrafa profesional, directora de marca y especialista en branding y comunicación.
+              Antes de dedicarme a la tanatología y el arte como terapia, tuve una exitosa carrera en el mundo creativo y empresarial. Trabajé como diseñadora gráfica, fotógrafa profesional, directora de marca y especialista en branding y comunicación.
             </p>
             <p>
               He colaborado con corporativos como Grupo Carso, agencias de medios y startups como Rappi y E1, así como con marcas y agencias reconocidas internacionalmente: Saks Fifth Avenue, WPP, Havas, IPG, Publicis, Kellogg's, Jose Cuervo, Unilever, Nestlé, Heineken, PepsiCo, Adidas, Oscar de la Renta, Lanvin, Cushnie et Ochs y Fashion's Night Out, entre otros.

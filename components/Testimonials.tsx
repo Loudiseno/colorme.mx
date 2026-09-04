@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     quote:
-      'No sabía qué esperar de la arteterapia, pero fue liberador. Pude conectar conmigo de una forma que no había experimentado antes.',
+      'No sabía qué esperar del arte como terapia, pero fue liberador. Pude conectar conmigo de una forma que no había experimentado antes.',
     name: 'David Juárez',
     role: 'Emprendedor',
   },

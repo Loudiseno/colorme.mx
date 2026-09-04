@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'India, el país donde el alma camina descalza: rituales, colores sagrados y la sabiduría del adiós',
   description: 'India es el corazón espiritual del planeta. Descubre sus rituales hindúes, los colores sagrados de su bandera y la forma profunda en que su pueblo honra la vida y la muerte.',
-  keywords: ['rituales India', 'espiritualidad hindú', 'duelo en India', 'colores bandera India', 'Varanasi Ganges', 'tradiciones hindúes', 'tanatología', 'arteterapia'],
+  keywords: ['rituales India', 'espiritualidad hindú', 'duelo en India', 'colores bandera India', 'Varanasi Ganges', 'tradiciones hindúes', 'tanatología', 'arte como terapia'],
   alternates: {
     canonical: '/blog/india-rituales-colores-bandera-espiritualidad-duelo',
   },

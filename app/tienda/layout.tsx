@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Productos | El Arte de Habitar tu Duelo, Indeleble y Paquetes | ColorMe',
   description: 'Recursos para acompañar tu proceso: El arte de habitar tu duelo (diario terapéutico en PDF), el libro Indeleble en español e inglés, y paquete de diario + 2 consultas individuales.',
-  keywords: ['el arte de habitar tu duelo', 'diario de duelo', 'diario terapéutico', 'libro Indeleble', 'arteterapia', 'tanatología', 'recursos para el duelo', 'consultas de duelo'],
+  keywords: ['el arte de habitar tu duelo', 'diario de duelo', 'diario terapéutico', 'libro Indeleble', 'arte como terapia', 'tanatología', 'recursos para el duelo', 'consultas de duelo'],
   alternates: {
     canonical: '/tienda',
   },

@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'Tailandia, la tierra de la sonrisa eterna: rituales, colores sagrados y la sabiduría de soltar con gratitud',
   description: 'En Tailandia la espiritualidad se respira en cada gesto. Descubre los rituales tailandeses, los colores sagrados de su bandera y la forma serena en que su pueblo honra la vida y la muerte.',
-  keywords: ['rituales Tailandia', 'espiritualidad budista', 'duelo en Tailandia', 'rituales del mundo', 'colores bandera Tailandia', 'budismo theravada', 'islas Tailandia', 'templos tailandeses', 'tanatología', 'arteterapia'],
+  keywords: ['rituales Tailandia', 'espiritualidad budista', 'duelo en Tailandia', 'rituales del mundo', 'colores bandera Tailandia', 'budismo theravada', 'islas Tailandia', 'templos tailandeses', 'tanatología', 'arte como terapia'],
   alternates: {
     canonical: '/blog/tailandia-rituales-colores-bandera-duelo-tradiciones',
   },

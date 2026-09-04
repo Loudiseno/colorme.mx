@@ -22,7 +22,7 @@ export default function MehndiIndiaPage() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Mehndi, el arte sagrado de la India donde la piel se convierte en oración
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">

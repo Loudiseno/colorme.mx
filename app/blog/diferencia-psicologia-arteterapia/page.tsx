@@ -16,15 +16,15 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Arte como terapia</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Psicología y Arteterapia: ¿En Qué se Diferencian y Cuándo Elegir Cada Una?
+            Psicología y Arte como terapia: ¿En Qué se Diferencian y Cuándo Elegir Cada Una?
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
-          <Image src="/diferencia-psicologia-y-arteterapia.jpeg" alt="Diferencia entre psicología y arteterapia" width={300} height={200} className="w-full h-auto" />
+          <Image src="/diferencia-psicologia-y-arteterapia.jpeg" alt="Diferencia entre psicología y arte como terapia" width={300} height={200} className="w-full h-auto" />
         </div>
 
         <div className="prose prose-lg max-w-none text-black/80">
@@ -33,7 +33,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           </p>
 
           <p>
-            Y si además alguien te menciona la arteterapia, la confusión puede crecer. ¿Qué es exactamente? ¿Es lo mismo que ir a un taller de manualidades? ¿O es una especie de psicología disfrazada con pinturas?
+            Y si además alguien te menciona el arte como terapia, la confusión puede crecer. ¿Qué es exactamente? ¿Es lo mismo que ir a un taller de manualidades? ¿O es una especie de psicología disfrazada con pinturas?
           </p>
 
           <p>
@@ -57,17 +57,17 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Qué hace un arteterapeuta y en qué se diferencia?</h2>
 
           <p>
-            La arteterapia es una disciplina de acompañamiento que utiliza el proceso creativo -pintura, dibujo, collage, arcilla, escritura creativa, entre otros- como lenguaje principal para explorar el mundo emocional y promover el bienestar.
+            El arte como terapia es una disciplina de acompañamiento que utiliza el proceso creativo -pintura, dibujo, collage, arcilla, escritura creativa, entre otros- como lenguaje principal para explorar el mundo emocional y promover el bienestar.
           </p>
 
           <p>
-            La diferencia fundamental no es que "en psicología hablas y en arteterapia pintas". Es mucho más profunda:
+            La diferencia fundamental no es que "en psicología hablas y en arte como terapia pintas". Es mucho más profunda:
           </p>
 
           <ul className="list-disc ml-6 space-y-2">
             <li>En psicoterapia, el lenguaje verbal es el medio central para acceder a la experiencia interna.</li>
-            <li>En arteterapia, el proceso creativo es el medio. Las imágenes, los colores y las texturas comunican lo que las palabras aún no pueden nombrar.</li>
-            <li>La arteterapia trabaja con la experiencia sensorial y corporal, no solo con el pensamiento.</li>
+            <li>En arte como terapia, el proceso creativo es el medio. Las imágenes, los colores y las texturas comunican lo que las palabras aún no pueden nombrar.</li>
+            <li>El arte como terapia trabaja con la experiencia sensorial y corporal, no solo con el pensamiento.</li>
             <li>No se realizan diagnósticos clínicos, ni evaluaciones psicológicas estandarizadas, ni prescripción de medicamentos.</li>
           </ul>
 
@@ -79,33 +79,33 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
             Como sobreviviente de cáncer que ha atravesado sus propios procesos de duelo, pérdida y reconstrucción de identidad, también traigo algo que los libros no enseñan: sé desde adentro lo que se siente cuando el cuerpo te traiciona, cuando la vida se reorganiza sin pedirte permiso. Eso informa mi manera de acompañar.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los mitos más comunes sobre la arteterapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Los mitos más comunes sobre el arte como terapia</h2>
 
           <p>
             Antes de hablar de cuándo elegir cada disciplina, quiero desmentir algunos malentendidos que escucho constantemente:
           </p>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Mito 1: "La arteterapia es para niños"</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Mito 1: "El arte como terapia es para niños"</h3>
           <p>
             Completamente falso. Trabajo con adultos de todas las edades: personas en duelo, sobrevivientes de enfermedades graves, personas en transiciones de vida, profesionistas con burnout, cuidadores agotados. El arte no tiene edad. La expresión creativa es una necesidad humana que persiste toda la vida.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Mito 2: "Tienes que saber dibujar o pintar"</h3>
           <p>
-            En arteterapia no importa el resultado estético, importa el proceso. Muchas de las personas más transformadas que he acompañado se presentaron diciéndome "es que yo no sé ni hacer un palito". Lo que creamos en sesión no va a una galería; va a nuestro interior.
+            En arte como terapia no importa el resultado estético, importa el proceso. Muchas de las personas más transformadas que he acompañado se presentaron diciéndome "es que yo no sé ni hacer un palito". Lo que creamos en sesión no va a una galería; va a nuestro interior.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Mito 3: "Es solo relajación, no es terapia de verdad"</h3>
           <p>
-            Este es quizás el mito más persistente. La arteterapia tiene fundamentos sólidos en neurociencia, psicología del desarrollo y trauma. Diversos estudios documentan sus efectos en la reducción de estrés, el procesamiento de trauma y el bienestar en pacientes oncológicos. Relajarse puede ser un efecto secundario bienvenido, pero el proceso va mucho más allá.
+            Este es quizás el mito más persistente. El arte como terapia tiene fundamentos sólidos en neurociencia, psicología del desarrollo y trauma. Diversos estudios documentan sus efectos en la reducción de estrés, el procesamiento de trauma y el bienestar en pacientes oncológicos. Relajarse puede ser un efecto secundario bienvenido, pero el proceso va mucho más allá.
           </p>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Mito 4: "Si ya voy con un psicólogo, no necesito arteterapia"</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Mito 4: "Si ya voy con un psicólogo, no necesito arte como terapia"</h3>
           <p>
-            Las dos disciplinas no se excluyen, se complementan. Muchas personas hacen psicoterapia y arteterapia al mismo tiempo, y reportan que lo que exploran en una enriquece la otra. Los registros no compiten; se dialogan.
+            Las dos disciplinas no se excluyen, se complementan. Muchas personas hacen psicoterapia y arte como terapia al mismo tiempo, y reportan que lo que exploran en una enriquece la otra. Los registros no compiten; se dialogan.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cuándo elegir psicología y cuándo arteterapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cuándo elegir psicología y cuándo arte como terapia?</h2>
 
           <p>
             Esta orientación no es absoluta -cada persona es única- pero puede ayudarte a decidir:
@@ -123,7 +123,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           </ul>
 
           <p>
-            <strong>Considera arteterapia cuando:</strong>
+            <strong>Considera arte como terapia cuando:</strong>
           </p>
           <ul className="list-disc ml-6 space-y-2">
             <li>Sientes que las palabras no alcanzan para expresar lo que vives.</li>
@@ -137,7 +137,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo se complementan: el valor de integrar ambas</h2>
 
           <p>
-            En mi práctica he visto una y otra vez cómo la arteterapia puede abrir puertas que la psicoterapia verbal, por sí sola, no encontraba. El trauma, por ejemplo, a menudo se almacena en el cuerpo y en imágenes, no en narrativas verbales ordenadas. La neurociencia nos enseña que las memorias traumáticas se procesan de manera diferente a los recuerdos ordinarios. El arte puede acceder a esas capas que la conversación no siempre alcanza.
+            En mi práctica he visto una y otra vez cómo el arte como terapia puede abrir puertas que la psicoterapia verbal, por sí sola, no encontraba. El trauma, por ejemplo, a menudo se almacena en el cuerpo y en imágenes, no en narrativas verbales ordenadas. La neurociencia nos enseña que las memorias traumáticas se procesan de manera diferente a los recuerdos ordinarios. El arte puede acceder a esas capas que la conversación no siempre alcanza.
           </p>
 
           <p>
@@ -145,7 +145,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           </p>
 
           <p>
-            Por eso, si tienes la posibilidad, no te plantees la pregunta como "¿psicología o arteterapia?" sino como "¿qué combinación de acompañamiento necesito en este momento de mi vida?"
+            Por eso, si tienes la posibilidad, no te plantees la pregunta como "¿psicología o arte como terapia?" sino como "¿qué combinación de acompañamiento necesito en este momento de mi vida?"
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes</h2>
@@ -156,27 +156,27 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
           </p>
 
           <p>
-            <strong>¿Puedo ir a arteterapia si tengo ansiedad o depresión diagnosticada?</strong><br />
-            Sí, y puede ser muy beneficioso como complemento a tu tratamiento principal. Es importante que tu psicólogo o psiquiatra esté al tanto, y que la arteterapia no reemplace el acompañamiento clínico que tu condición requiere.
+            <strong>¿Puedo ir a arte como terapia si tengo ansiedad o depresión diagnosticada?</strong><br />
+            Sí, y puede ser muy beneficioso como complemento a tu tratamiento principal. Es importante que tu psicólogo o psiquiatra esté al tanto, y que el arte como terapia no reemplace el acompañamiento clínico que tu condición requiere.
           </p>
 
           <p>
-            <strong>¿La arteterapia sirve para el duelo?</strong><br />
+            <strong>¿El arte como terapia sirve para el duelo?</strong><br />
             Es una de las aplicaciones donde más claramente se observan sus beneficios. El duelo tiene dimensiones que difícilmente caben en palabras: la ausencia que se siente en el cuerpo, los recuerdos que aparecen como imágenes, las emociones que se contradicen. El arte puede contener todo eso.
           </p>
 
           <p>
-            <strong>¿En qué se parece la arteterapia a la psicología?</strong><br />
+            <strong>¿En qué se parece el arte como terapia a la psicología?</strong><br />
             Ambas buscan el bienestar emocional de la persona. Ambas crean un espacio seguro, confidencial y de escucha. Ambas trabajan con la experiencia interna. La diferencia principal está en el medio: verbal versus creativo.
           </p>
 
           <p>
-            <strong>¿Puedo hacer arteterapia sin haber ido nunca al psicólogo?</strong><br />
-            Por supuesto. La arteterapia no requiere experiencia previa en psicoterapia. Muchas personas llegan directamente, sin ningún tipo de acompañamiento emocional anterior, y el proceso es igualmente valioso.
+            <strong>¿Puedo hacer arte como terapia sin haber ido nunca al psicólogo?</strong><br />
+            Por supuesto. El arte como terapia no requiere experiencia previa en psicoterapia. Muchas personas llegan directamente, sin ningún tipo de acompañamiento emocional anterior, y el proceso es igualmente valioso.
           </p>
 
           <p>
-            <strong>¿La arteterapia online funciona igual que presencial?</strong><br />
+            <strong>¿El arte como terapia online funciona igual que presencial?</strong><br />
             En su mayor parte, sí. El proceso creativo y la reflexión que lo acompaña pueden darse con la misma profundidad en formato online. Los materiales se adaptan a lo que tengas en casa. La pantalla no impide la conexión ni el proceso terapéutico.
           </p>
         </div>
@@ -184,7 +184,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">¿No sabes por dónde empezar?</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si después de leer esto sigues sin saber si la arteterapia es para ti, una conversación de 30 minutos puede aclararlo. La primera consulta es gratuita y sin compromiso.
+            Si después de leer esto sigues sin saber si el arte como terapia es para ti, una conversación de 30 minutos puede aclararlo. La primera consulta es gratuita y sin compromiso.
           </p>
           <a href={siteConfig.calendly} target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-[#B2F7EF] text-black rounded-full font-medium hover:bg-[#B2F7EF]/80 transition-all">
             Agenda tu primera consulta gratuita
@@ -193,7 +193,7 @@ export default function ArticuloDiferenciaPsicologiaArteterapia() {
 
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
+            Lourdes es tanatóloga, arteterapeuta, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
           </p>
         </div>
 

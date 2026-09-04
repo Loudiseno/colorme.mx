@@ -7,8 +7,8 @@ import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 const navEs = [
-  { name: 'Arteterapia', href: '/arteterapia-mexico' },
   { name: 'Tanatología', href: '/tanatologia-acompanamiento-duelo' },
+  { name: 'Arte como terapia', href: '/arteterapia-mexico' },
   { name: 'Sobre mí', href: '/sobre-mi-lou-arteterapeuta-tanatologa' },
   { name: 'Obra', href: '/obra' },
   { name: 'Productos', href: '/tienda' },
@@ -17,8 +17,8 @@ const navEs = [
 ]
 
 const navEn = [
-  { name: 'Art as Therapy', href: '/en/art-as-therapy' },
   { name: 'Grief Counseling', href: '/en/grief-counseling' },
+  { name: 'Art as Therapy', href: '/en/art-as-therapy' },
   { name: 'About', href: '/en/about' },
   { name: 'Artwork', href: '/en/obra' },
   { name: 'Shop', href: '/en/shop' },

@@ -10,12 +10,12 @@ import { siteConfig, generateBusinessSchema, generatePersonSchema } from '@/lib/
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Arteterapia y Tanatología | Acompañamiento Emocional | ColorMe',
+    default: 'Tanatología y Arte como terapia | Acompañamiento Emocional | ColorMe',
     template: '%s | ColorMe',
   },
-  description: 'Acompañamiento emocional con arteterapia y tanatología para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
+  description: 'Acompañamiento emocional con tanatología y arte como terapia para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
   keywords: [
-    'arteterapia',
+    'arte como terapia',
     'tanatología',
     'duelo',
     'terapia de duelo',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     'duelo por muerte',
     'duelo por pérdida',
     'terapia grupal',
-    'talleres arteterapia',
+    'talleres arte como terapia',
   ],
   authors: [{ name: 'Lourdes Pérez', url: siteConfig.url }],
   creator: 'Lourdes Pérez',
@@ -51,21 +51,21 @@ export const metadata: Metadata = {
     locale: 'es_MX',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: 'Arteterapia y Tanatología | Acompañamiento Emocional | ColorMe',
-    description: 'Acompañamiento emocional con arteterapia y tanatología para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
+    title: 'Tanatología y Arte como terapia | Acompañamiento Emocional | ColorMe',
+    description: 'Acompañamiento emocional con tanatología y arte como terapia para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'ColorMe - Arteterapia y Tanatología - Acompañamiento emocional para sanar duelos',
+        alt: 'ColorMe - Tanatología y Arte como terapia - Acompañamiento emocional para sanar duelos',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Arteterapia y Tanatología | Acompañamiento Emocional | ColorMe',
-    description: 'Acompañamiento emocional con arteterapia y tanatología para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
+    title: 'Tanatología y Arte como terapia | Acompañamiento Emocional | ColorMe',
+    description: 'Acompañamiento emocional con tanatología y arte como terapia para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
     images: ['/og-image.jpg'],
   },
   robots: {

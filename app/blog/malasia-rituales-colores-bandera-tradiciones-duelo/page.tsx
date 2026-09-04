@@ -22,7 +22,7 @@ export default function MalasiaRitualesPage() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Malasia, el cruce de tres almas: rituales, colores sagrados y la sabiduría de despedirse en comunidad
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">

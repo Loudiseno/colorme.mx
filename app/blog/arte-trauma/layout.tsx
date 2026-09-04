@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'Arte y trauma: cómo el proceso creativo ayuda a sanar | ColorMe',
   description: 'Por qué el arte funciona para procesar experiencias traumáticas.',
-  keywords: ['arte y trauma', 'arteterapia trauma', 'sanar trauma con arte', 'proceso creativo sanación', 'trauma y creatividad'],
+  keywords: ['arte y trauma', 'arte como terapia trauma', 'sanar trauma con arte', 'proceso creativo sanación', 'trauma y creatividad'],
   alternates: {
     canonical: '/blog/arte-trauma',
   },

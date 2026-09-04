@@ -20,7 +20,7 @@ export default function EnAboutPage() {
                 </h1>
               </div>
               <p className="text-lg text-black leading-relaxed mb-4">
-                <strong>Art therapist, grief counselor, designer, artist and cancer survivor.</strong>
+                <strong>Grief counselor, art therapist, designer, artist and cancer survivor.</strong>
               </p>
               <p className="text-lg text-black/70 leading-relaxed">
                 Creativity has always been my way of connecting with the world. My own losses led me to accompany others through change and transformation — through listening, through art, or a blend of both. My training integrates techniques from Mexico, Bali, Thailand, Malaysia, India and United Kingdom.
@@ -30,7 +30,7 @@ export default function EnAboutPage() {
               <div className="bg-white rounded-3xl p-6 border border-[#B2F7EF]">
                 <Image
                   src="/lourdes-perez-arteterapeuta-tanatologa-aficiones.webp"
-                  alt="Lou — art therapist, grief counselor, artist, photographer, designer, traveler and more"
+                  alt="Lou — grief counselor, art therapist, artist, photographer, designer, traveler and more"
                   width={500}
                   height={488}
                   priority
@@ -139,7 +139,7 @@ export default function EnAboutPage() {
           <h2 className="text-3xl text-black mb-6 uppercase tracking-wide">Professional background</h2>
           <div className="prose prose-lg max-w-none text-black/70">
             <p>
-              Before devoting myself to art as therapy and grief counseling, I had a successful career in the creative and business world, working as a graphic designer, professional photographer, brand director and branding and communications specialist.
+              Before devoting myself to grief counseling and art as therapy, I had a successful career in the creative and business world, working as a graphic designer, professional photographer, brand director and branding and communications specialist.
             </p>
             <p>
               I have collaborated with corporations such as Grupo Carso, media agencies and startups like Rappi and E1, as well as internationally recognized brands and agencies: Saks Fifth Avenue, WPP, Havas, IPG, Publicis, Kellogg's, Jose Cuervo, Unilever, Nestlé, Heineken, PepsiCo, Adidas, Oscar de la Renta, Lanvin, Cushnie et Ochs and Fashion's Night Out, among others.

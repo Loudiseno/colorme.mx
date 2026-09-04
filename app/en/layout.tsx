@@ -3,10 +3,10 @@ import SetHtmlLang from '@/components/SetHtmlLang'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Art as Therapy & Grief Counseling | ColorMe',
+    default: 'Grief Counseling & Art as Therapy | ColorMe',
     template: '%s | ColorMe',
   },
-  description: 'Emotional support through art as therapy and grief counseling. Gentle, one-on-one online sessions with Lou — art therapist and grief counselor. First session free.',
+  description: 'Emotional support through grief counseling and art as therapy. Gentle, one-on-one online sessions with Lou — grief counselor and art therapist. First session free.',
   alternates: {
     canonical: '/en',
     languages: {
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: '/en',
     siteName: 'ColorMe',
-    title: 'Art as Therapy & Grief Counseling | ColorMe',
-    description: 'Emotional support through art as therapy and grief counseling. Online sessions with Lou.',
+    title: 'Grief Counseling & Art as Therapy | ColorMe',
+    description: 'Emotional support through grief counseling and art as therapy. Online sessions with Lou.',
   },
 }
 

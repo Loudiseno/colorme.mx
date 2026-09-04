@@ -18,17 +18,17 @@ export default function ArteterapiaAutismoPage() {
         </Link>
 
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTETERAPIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTE COMO TERAPIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Arteterapia y autismo: cuando el arte abre caminos que las palabras no encuentran
+            Arte como terapia y autismo: cuando el arte abre caminos que las palabras no encuentran
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/mari-final.jpeg"
-            alt="Arteterapia y autismo - Arte como comunicación"
+            alt="Arte como terapia y autismo - Arte como comunicación"
             width={300}
             height={200}
             priority
@@ -42,7 +42,7 @@ export default function ArteterapiaAutismoPage() {
           </p>
 
           <p>
-            La arteterapia ofrece otro camino. Un espacio donde la comunicación puede suceder a través de colores, texturas, formas, movimientos. Donde no hace falta encontrar la palabra exacta para decir lo que sientes, porque el material lo dice por ti.
+            El arte como terapia ofrece otro camino. Un espacio donde la comunicación puede suceder a través de colores, texturas, formas, movimientos. Donde no hace falta encontrar la palabra exacta para decir lo que sientes, porque el material lo dice por ti.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Por qué el arte conecta con niños con autismo</h2>
@@ -52,10 +52,10 @@ export default function ArteterapiaAutismoPage() {
           </p>
 
           <p>
-            El arte funciona porque habla otro idioma. No depende del lenguaje verbal, que puede ser precisamente el área donde el niño tiene más dificultades. En cambio, usa imágenes, sensaciones, movimientos. Muchos niños con autismo tienen fortalezas visuales notables, y la arteterapia aprovecha esas fortalezas en lugar de insistir en las áreas de mayor dificultad.
+            El arte funciona porque habla otro idioma. No depende del lenguaje verbal, que puede ser precisamente el área donde el niño tiene más dificultades. En cambio, usa imágenes, sensaciones, movimientos. Muchos niños con autismo tienen fortalezas visuales notables, y el arte como terapia aprovecha esas fortalezas en lugar de insistir en las áreas de mayor dificultad.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Beneficios de la arteterapia en niños con TEA</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Beneficios del arte como terapia en niños con TEA</h2>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Comunicación no verbal</h3>
 
@@ -72,7 +72,7 @@ export default function ArteterapiaAutismoPage() {
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Exploración sensorial en un entorno seguro</h3>
 
           <p>
-            Muchos niños con autismo tienen particularidades sensoriales. La arteterapia ofrece un espacio controlado para explorar diferentes materiales. La suavidad de la acuarela, la resistencia de la arcilla, la textura del papel de lija: cada material ofrece una experiencia sensorial distinta.
+            Muchos niños con autismo tienen particularidades sensoriales. El arte como terapia ofrece un espacio controlado para explorar diferentes materiales. La suavidad de la acuarela, la resistencia de la arcilla, la textura del papel de lija: cada material ofrece una experiencia sensorial distinta.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Desarrollo de habilidades sociales</h3>
@@ -87,7 +87,7 @@ export default function ArteterapiaAutismoPage() {
             Los materiales artísticos tienen su propia realidad física. La torre de bloques se cae, la pintura se escurre, el dibujo no queda como se imaginaba. Aprender a trabajar con estas limitaciones fortalece la capacidad de tolerar la frustración.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo funciona una sesión de arteterapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Cómo funciona una sesión de arte como terapia</h2>
 
           <p>
             El entorno se prepara considerando las necesidades sensoriales del niño. Iluminación, sonidos, organización del espacio: todo se cuida para crear un ambiente predecible y seguro.
@@ -100,24 +100,24 @@ export default function ArteterapiaAutismoPage() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Qué pueden observar los padres con el tiempo</h2>
 
           <p>
-            La arteterapia no produce cambios de un día para otro. Es un proceso que requiere constancia. Lo que los padres suelen observar gradualmente incluye mayor disposición a explorar materiales nuevos, momentos de conexión durante la creación, uso espontáneo del arte como comunicación, y mayor capacidad de permanecer en una actividad.
+            El arte como terapia no produce cambios de un día para otro. Es un proceso que requiere constancia. Lo que los padres suelen observar gradualmente incluye mayor disposición a explorar materiales nuevos, momentos de conexión durante la creación, uso espontáneo del arte como comunicación, y mayor capacidad de permanecer en una actividad.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que hace diferente a la arteterapia de una clase de arte</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que hace diferente al arte como terapia de una clase de arte</h2>
 
           <p>
-            En una clase de arte, el objetivo es aprender técnicas y crear productos artísticos. En arteterapia, el objetivo es terapéutico: usar el proceso creativo como herramienta para trabajar objetivos específicos relacionados con la comunicación, la regulación emocional, las habilidades sociales o el procesamiento sensorial.
+            En una clase de arte, el objetivo es aprender técnicas y crear productos artísticos. En arte como terapia, el objetivo es terapéutico: usar el proceso creativo como herramienta para trabajar objetivos específicos relacionados con la comunicación, la regulación emocional, las habilidades sociales o el procesamiento sensorial.
           </p>
 
           <p>
-            La arteterapia ofrece a los niños con autismo un espacio donde pueden comunicarse, regularse y expresarse sin depender exclusivamente del lenguaje verbal. Aprovecha sus fortalezas visuales y sensoriales, respeta su ritmo, y trabaja desde donde el niño está.
+            El arte como terapia ofrece a los niños con autismo un espacio donde pueden comunicarse, regularse y expresarse sin depender exclusivamente del lenguaje verbal. Aprovecha sus fortalezas visuales y sensoriales, respeta su ritmo, y trabaja desde donde el niño está.
           </p>
         </div>
 
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">¿Tienes un hijo con autismo?</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si quieres explorar si la arteterapia podría ayudarlo, estoy aquí para orientarte. Agenda una sesión de orientación gratuita.
+            Si quieres explorar si el arte como terapia podría ayudarlo, estoy aquí para orientarte. Agenda una sesión de orientación gratuita.
           </p>
           <a
             href={siteConfig.calendly}

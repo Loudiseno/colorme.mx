@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Lou — Arteterapeuta y Tanatóloga | ColorMe',
-  description: 'Acompañamiento emocional con arteterapia y tanatología. Sesión de orientación gratuita.',
+  title: 'Lou — Tanatóloga y Arteterapeuta | ColorMe',
+  description: 'Acompañamiento emocional con tanatología y arte como terapia. Sesión de orientación gratuita.',
   robots: { index: false, follow: false },
 }
 
@@ -25,7 +25,7 @@ const links = [
     primary: false,
   },
   {
-    label: 'Arteterapia — qué es y cómo funciona',
+    label: 'Arte como terapia — qué es y cómo funciona',
     description: 'Cómo el arte sana lo que las palabras no alcanzan',
     href: `${siteConfig.url}/arteterapia-mexico`,
     external: true,
@@ -70,7 +70,7 @@ export default function LinksPage() {
           <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-[#B2F7EF]">
             <Image
               src="/lou-arteterapeuta-tanatologa-mexico.jpg"
-              alt="Lou — Arteterapeuta y Tanatóloga"
+              alt="Lou — Tanatóloga y Arteterapeuta"
               width={96}
               height={96}
               className="w-full h-full object-cover"

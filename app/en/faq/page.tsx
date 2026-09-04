@@ -10,7 +10,7 @@ const faqs = [
   {
     question: 'What kind of sessions do you offer?',
     answer:
-      'I offer individual sessions, group sessions and workshops in both art as therapy and grief counseling, adapted to what you need. All sessions are available online.',
+      'I offer individual sessions, group sessions and workshops in both grief counseling and art as therapy, adapted to what you need. All sessions are available online.',
   },
   {
     question: 'How long are the sessions?',
@@ -18,7 +18,7 @@ const faqs = [
       'The first orientation session is free and lasts 30 minutes. Regular individual sessions last 50 minutes. For group sessions or workshops, the length is set according to the specific goals of the group.',
   },
   {
-    question: 'Do I have to choose between art as therapy and grief counseling?',
+    question: 'Do I have to choose between grief counseling and art as therapy?',
     answer:
       'Not necessarily. Some people work only through art, others through words. In many cases we bring both together. We decide it between us, based on what you are going through and what best fits your process.',
   },
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'Can I combine these sessions with other therapies or medical treatment?',
     answer:
-      'Yes, absolutely. This space is complementary, not exclusive. Art as therapy and grief counseling can be a great support alongside any medical, psychological or spiritual process you are already following.',
+      'Yes, absolutely. This space is complementary, not exclusive. Grief counseling and art as therapy can be a great support alongside any medical, psychological or spiritual process you are already following.',
   },
   {
     question: 'How can I book a session?',

@@ -28,7 +28,7 @@ export default function PoliticaDePrivacidad() {
           <h2 className="text-3xl text-black mt-8 mb-4">AVISO DE PRIVACIDAD INTEGRAL</h2>
 
           <p>
-            ColorMe.mx, proyecto de acompañamiento emocional, arteterapia y tanatología (en adelante "ColorMe"), es responsable del uso y protección de los datos personales de las personas usuarias de este sitio web y de sus servicios, y al respecto informa lo siguiente, en cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y su reglamento.
+            ColorMe.mx, proyecto de acompañamiento emocional, tanatología y arte como terapia (en adelante "ColorMe"), es responsable del uso y protección de los datos personales de las personas usuarias de este sitio web y de sus servicios, y al respecto informa lo siguiente, en cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y su reglamento.
           </p>
 
           <h3 className="text-2xl text-black mt-8 mb-4">1. Datos personales que se recaban</h3>
@@ -44,7 +44,7 @@ export default function PoliticaDePrivacidad() {
           </ul>
 
           <p className="mt-4">
-            ColorMe sí recaba y trata datos personales sensibles, de conformidad con la legislación aplicable, cuando estos son necesarios para brindar adecuadamente los servicios de acompañamiento emocional, arteterapia y tanatología. Esta información puede incluir datos relacionados con el estado emocional, antecedentes relevantes del proceso de duelo y otros elementos necesarios para la correcta integración de un expediente clínico, el cual se maneja bajo estricta confidencialidad y con fines exclusivamente terapéuticos.
+            ColorMe sí recaba y trata datos personales sensibles, de conformidad con la legislación aplicable, cuando estos son necesarios para brindar adecuadamente los servicios de acompañamiento emocional, tanatología y arte como terapia. Esta información puede incluir datos relacionados con el estado emocional, antecedentes relevantes del proceso de duelo y otros elementos necesarios para la correcta integración de un expediente clínico, el cual se maneja bajo estricta confidencialidad y con fines exclusivamente terapéuticos.
           </p>
 
           <h3 className="text-2xl text-black mt-8 mb-4">2. Finalidades del tratamiento de datos</h3>
@@ -63,7 +63,7 @@ export default function PoliticaDePrivacidad() {
 
           <h3 className="text-2xl text-black mt-8 mb-4">3. Uso de material visual y procesos creativos</h3>
           <p>
-            Durante las sesiones de arteterapia o talleres creativos pueden generarse dibujos, obras visuales, fotografías de materiales o resultados creativos.
+            Durante las sesiones de arte como terapia o talleres creativos pueden generarse dibujos, obras visuales, fotografías de materiales o resultados creativos.
           </p>
           <p>
             Dicho material podrá ser compartido en redes sociales, sitio web u otras plataformas digitales únicamente con fines informativos, educativos o inspiradores, bajo las siguientes condiciones:

@@ -20,7 +20,7 @@ export default function ArticuloMenopausiaYDuelo() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Menopausia y Duelo: Cómo Transitar el Fin de una Etapa con Compasión
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -102,14 +102,14 @@ export default function ArticuloMenopausiaYDuelo() {
             No todo es pérdida. Muchas mujeres también experimentan -a veces con culpa- una sensación de alivio: el fin de los ciclos menstruales, la liberación de ciertos miedos reproductivos, la sensación de que llegan a una etapa más libre. Ese alivio también tiene lugar. No lo traiciones.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">La arteterapia como herramienta para este tránsito</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El arte como terapia en este tránsito</h2>
 
           <p>
             Cuando el lenguaje no alcanza para describir lo que estamos viviendo -y en la menopausia muchas veces no alcanza- el arte puede ser un puente extraordinario hacia nuestro mundo interior.
           </p>
 
           <p>
-            En el proceso de arteterapia, no se trata de crear obras maestras. Se trata de dar forma a lo que sientes: el caos, la melancolía, la transformación, la incertidumbre. Pintar, modelar, hacer collage con imágenes que resonan contigo, escribir sin censura. Cada una de estas acciones activa en el cerebro vías distintas a las del pensamiento racional, permitiendo que emerja lo que normalmente queda guardado.
+            En el proceso de arte como terapia, no se trata de crear obras maestras. Se trata de dar forma a lo que sientes: el caos, la melancolía, la transformación, la incertidumbre. Pintar, modelar, hacer collage con imágenes que resonan contigo, escribir sin censura. Cada una de estas acciones activa en el cerebro vías distintas a las del pensamiento racional, permitiendo que emerja lo que normalmente queda guardado.
           </p>
 
           <p>
@@ -165,9 +165,9 @@ export default function ArticuloMenopausiaYDuelo() {
             </div>
 
             <div>
-              <p className="font-semibold text-black">¿Puedo hacer arteterapia si nunca he hecho arte antes?</p>
+              <p className="font-semibold text-black">¿Puedo hacer arte como terapia si nunca he hecho arte antes?</p>
               <p>
-                Sí, y es precisamente para ti. La arteterapia no requiere habilidades artísticas previas. El proceso creativo en un contexto terapéutico tiene objetivos muy diferentes a producir "buen arte". Lo que importa es el proceso, no el resultado.
+                Sí, y es precisamente para ti. El arte como terapia no requiere habilidades artísticas previas. El proceso creativo en un contexto terapéutico tiene objetivos muy diferentes a producir "buen arte". Lo que importa es el proceso, no el resultado.
               </p>
             </div>
 
@@ -190,7 +190,7 @@ export default function ArticuloMenopausiaYDuelo() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">Este tránsito merece acompañamiento</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Si estás atravesando la menopausia y sientes que hay algo más que síntomas físicos, que hay un duelo que necesita espacio, estoy aquí para acompañarte con arteterapia y tanatología.
+            Si estás atravesando la menopausia y sientes que hay algo más que síntomas físicos, que hay un duelo que necesita espacio, estoy aquí para acompañarte con tanatología y arte como terapia.
           </p>
           <a href={siteConfig.calendly} target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-[#B2F7EF] text-black rounded-full font-medium hover:bg-[#B2F7EF]/80 transition-all">
             Agenda tu primera consulta gratuita
@@ -199,7 +199,7 @@ export default function ArticuloMenopausiaYDuelo() {
 
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
+            Lourdes es tanatóloga, arteterapeuta, diseñadora, fotógrafa y sobreviviente de cáncer. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble".
           </p>
         </div>
 

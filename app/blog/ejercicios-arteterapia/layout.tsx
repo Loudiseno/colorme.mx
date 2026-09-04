@@ -3,15 +3,15 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: '10 ejercicios de arteterapia que puedes hacer en casa | ColorMe',
+  title: '10 ejercicios de arte como terapia que puedes hacer en casa | ColorMe',
   description: 'Ejercicios creativos para procesar emociones sin necesidad de saber dibujar.',
-  keywords: ['ejercicios de arteterapia', 'arteterapia en casa', 'técnicas de arteterapia', 'arte y emociones', 'mandalas terapéuticos', 'expresión creativa'],
+  keywords: ['ejercicios de arte como terapia', 'arte como terapia en casa', 'técnicas de arte como terapia', 'arte y emociones', 'mandalas terapéuticos', 'expresión creativa'],
   alternates: {
     canonical: '/blog/ejercicios-arteterapia',
   },
   openGraph: {
     type: 'article',
-    title: '10 ejercicios de arteterapia que puedes hacer en casa | ColorMe',
+    title: '10 ejercicios de arte como terapia que puedes hacer en casa | ColorMe',
     description: 'Ejercicios creativos para procesar emociones sin necesidad de saber dibujar.',
     url: '/blog/ejercicios-arteterapia',
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: '10 ejercicios de arteterapia que puedes hacer en casa',
+  headline: '10 ejercicios de arte como terapia que puedes hacer en casa',
   description: 'Ejercicios creativos para procesar emociones sin necesidad de saber dibujar.',
   author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },

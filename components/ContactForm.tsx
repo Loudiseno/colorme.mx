@@ -141,7 +141,7 @@ export default function ContactForm() {
           ¿Qué tipo de acompañamiento buscas? *
         </label>
         <div className="flex flex-wrap gap-3">
-          {['Arteterapia', 'Tanatología', 'Ambas'].map((option) => (
+          {['Arte como terapia', 'Tanatología', 'Ambas'].map((option) => (
             <label
               key={option}
               className={`flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-all duration-300 border ${

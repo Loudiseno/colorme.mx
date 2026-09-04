@@ -54,17 +54,17 @@ const tanatologiaArticles: Article[] = [
 ]
 
 const arteterapiaArticles: Article[] = [
-  { href: '/blog/que-es-la-arteterapia-beneficios', image: '/arteterapia.webp', alt: '¿Qué es la arteterapia?', title: '¿Qué es la arteterapia?', description: 'Descubre cómo el arte ayuda a explorar y procesar emociones.' },
-  { href: '/blog/arteterapia-cancer', image: '/cancer-y-arteterapia.webp', alt: 'Arteterapia para pacientes con cáncer', title: 'Arteterapia para pacientes con cáncer', description: 'El arte como acompañamiento durante el tratamiento oncológico.' },
-  { href: '/blog/ejercicios-arteterapia', image: '/ejercicios-arteterapia.webp', alt: 'Ejercicios de arteterapia', title: 'Ejercicios de arteterapia', description: 'Técnicas creativas que puedes hacer en casa.' },
+  { href: '/blog/que-es-la-arteterapia-beneficios', image: '/arteterapia.webp', alt: '¿Qué es el arte como terapia?', title: '¿Qué es el arte como terapia?', description: 'Descubre cómo el arte ayuda a explorar y procesar emociones.' },
+  { href: '/blog/arteterapia-cancer', image: '/cancer-y-arteterapia.webp', alt: 'Arte como terapia para pacientes con cáncer', title: 'Arte como terapia para pacientes con cáncer', description: 'El arte como acompañamiento durante el tratamiento oncológico.' },
+  { href: '/blog/ejercicios-arteterapia', image: '/ejercicios-arteterapia.webp', alt: 'Ejercicios de arte como terapia', title: 'Ejercicios de arte como terapia', description: 'Técnicas creativas que puedes hacer en casa.' },
   { href: '/blog/beneficios-arte', image: '/beneficios-del-arte.webp', alt: 'Beneficios del arte', title: 'Beneficios del arte', description: 'Cómo el arte mejora tu bienestar emocional.' },
   { href: '/blog/mandalas-terapeuticos', image: '/mandalas-terapeuticos.webp', alt: 'Mandalas terapéuticos', title: 'Mandalas terapéuticos', description: 'El poder sanador de colorear mandalas.' },
   { href: '/blog/arte-trauma', image: '/arte-y-trauma.webp', alt: 'Arte y trauma', title: 'Arte y trauma', description: 'Cómo el arte ayuda a procesar experiencias difíciles.' },
-  { href: '/blog/arteterapia-para-ninos', image: '/arteterapia-ninos.webp', alt: 'Arteterapia para niños', title: 'Arteterapia para niños', description: 'Por edades para acompañar a los más pequeños.' },
-  { href: '/blog/arteterapia-para-la-ansiedad', image: '/arteterapia-ansiedad.webp', alt: 'Arteterapia para la ansiedad', title: 'Arteterapia para la ansiedad', description: 'Cómo el arte te ayuda a manejar la ansiedad.' },
-  { href: '/blog/diferencia-psicologia-arteterapia', image: '/diferencia-psicologia-y-arteterapia.jpeg', alt: 'Diferencia psicología y arteterapia', title: 'Diferencia entre psicología y arteterapia', description: '¿Cuál es la diferencia y cuál necesitas?' },
-  { href: '/blog/arteterapia-y-autismo', image: '/mari-final.jpeg', alt: 'Arteterapia y autismo', title: 'Arteterapia y autismo', description: 'Cómo el arte apoya a personas con autismo.' },
-  { href: '/blog/diferencia-arteterapia-clase-de-arte', image: '/anagaby-final.jpeg', alt: 'Arteterapia vs clase de arte', title: 'Arteterapia vs clase de arte', description: 'No es lo mismo crear que sanar con el arte.' },
+  { href: '/blog/arteterapia-para-ninos', image: '/arteterapia-ninos.webp', alt: 'Arte como terapia para niños', title: 'Arte como terapia para niños', description: 'Por edades para acompañar a los más pequeños.' },
+  { href: '/blog/arteterapia-para-la-ansiedad', image: '/arteterapia-ansiedad.webp', alt: 'Arte como terapia para la ansiedad', title: 'Arte como terapia para la ansiedad', description: 'Cómo el arte te ayuda a manejar la ansiedad.' },
+  { href: '/blog/diferencia-psicologia-arteterapia', image: '/diferencia-psicologia-y-arteterapia.jpeg', alt: 'Diferencia psicología y arte como terapia', title: 'Diferencia entre psicología y arte como terapia', description: '¿Cuál es la diferencia y cuál necesitas?' },
+  { href: '/blog/arteterapia-y-autismo', image: '/mari-final.jpeg', alt: 'Arte como terapia y autismo', title: 'Arte como terapia y autismo', description: 'Cómo el arte apoya a personas con autismo.' },
+  { href: '/blog/diferencia-arteterapia-clase-de-arte', image: '/anagaby-final.jpeg', alt: 'Arte como terapia vs clase de arte', title: 'Arte como terapia vs clase de arte', description: 'No es lo mismo crear que sanar con el arte.' },
 ]
 
 const emocionesArticles: Article[] = [

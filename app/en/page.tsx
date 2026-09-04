@@ -31,8 +31,8 @@ const socialLinks = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Art as Therapy & Grief Counseling | Emotional Support | ColorMe',
-  description: 'Emotional support through art as therapy and grief counseling to heal grief, move through change and work with your emotions. First session free.',
+  title: 'Grief Counseling & Art as Therapy | Emotional Support | ColorMe',
+  description: 'Emotional support through grief counseling and art as therapy to heal grief, move through change and work with your emotions. First session free.',
   alternates: {
     canonical: '/en',
   },
@@ -57,14 +57,14 @@ export default function EnHomePage() {
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
-                Art as Therapy &amp; Grief Counseling
+                Grief Counseling &amp; Art as Therapy
               </h1>
               <p className="text-lg md:text-xl text-black/60 tracking-widest mb-6">
                 CREATE.FEEL.TRANSFORM
               </p>
               <div className="space-y-4 text-black/70 leading-relaxed mb-8">
                 <p>
-                  ColorMe is a space for professional support through grief, loss, reconnection and personal transformation using art as therapy and grief counseling with a somatic approach.
+                  ColorMe is a space for professional support through grief, loss, reconnection and personal transformation using grief counseling and art as therapy with a somatic approach.
                 </p>
               </div>
               <div>
@@ -86,7 +86,7 @@ export default function EnHomePage() {
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
                       src="/lou-arteterapeuta-tanatologa-mexico.webp"
-                      alt="Lou — art therapist and grief counselor"
+                      alt="Lou — grief counselor and art therapist"
                       width={600}
                       height={450}
                       priority
@@ -101,7 +101,7 @@ export default function EnHomePage() {
                       </h2>
                     </div>
                     <p className="text-black font-bold mb-4">
-                      Art therapist, grief counselor, designer, artist and cancer survivor.
+                      Grief counselor, art therapist, designer, artist and cancer survivor.
                     </p>
                     <p className="text-black/70 leading-relaxed">
                       Creativity has always been my way of connecting with the world. My own losses led me to accompany others through change and transformation — through listening, through art, or a blend of both. My training integrates techniques from Mexico, Bali, Thailand, Malaysia, India and United Kingdom.
@@ -127,7 +127,7 @@ export default function EnHomePage() {
       <section className="pt-2 pb-10 md:pt-3 md:pb-12 bg-[#B2F7EF]/5" id="services">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Arteterapia */}
+            {/* Arte como terapia */}
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
@@ -300,7 +300,7 @@ export default function EnHomePage() {
                 Grief isn&apos;t overcome. It&apos;s inhabited.
               </p>
               <p className="text-sm text-black/60 mb-4 text-center leading-snug">
-                A guided journal for grief and transformation (art as therapy and grief counseling)
+                A guided journal for grief and transformation (grief counseling and art as therapy)
               </p>
               <ul className="space-y-2 mb-6 flex-1">
                 <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">

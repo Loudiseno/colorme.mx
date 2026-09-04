@@ -1,7 +1,7 @@
 // Site-wide SEO configuration
 export const siteConfig = {
   name: 'ColorMe',
-  description: 'Acompañamiento para sanar el duelo y transformar tus emociones a través de la arteterapia y la tanatología. Sesiones individuales, grupales y talleres en México.',
+  description: 'Acompañamiento para sanar el duelo y transformar tus emociones a través de la tanatología y el arte como terapia. Sesiones individuales, grupales y talleres en México.',
   url: 'https://www.colorme.mx',
   author: 'Lourdes Pérez',
   locale: 'es_MX',
@@ -47,7 +47,7 @@ export function generateBusinessSchema() {
       '@type': 'Country',
       name: 'México',
     },
-    serviceType: ['Arteterapia', 'Tanatología', 'Terapia de duelo', 'Acompañamiento emocional'],
+    serviceType: ['Arte como terapia', 'Tanatología', 'Terapia de duelo', 'Acompañamiento emocional'],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Servicios de ColorMe',
@@ -56,7 +56,7 @@ export function generateBusinessSchema() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Arteterapia',
+            name: 'Arte como terapia',
             description: 'Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones.',
           },
         },

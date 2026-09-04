@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'Mandalas terapéuticos: qué son y cómo crearlos | ColorMe',
   description: 'Crea mandalas y descubre sus beneficios para la salud mental.',
-  keywords: ['mandalas terapéuticos', 'cómo hacer mandalas', 'mandalas para la ansiedad', 'beneficios de colorear mandalas', 'arteterapia mandalas'],
+  keywords: ['mandalas terapéuticos', 'cómo hacer mandalas', 'mandalas para la ansiedad', 'beneficios de colorear mandalas', 'arte como terapia mandalas'],
   alternates: {
     canonical: '/blog/mandalas-terapeuticos',
   },

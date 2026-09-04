@@ -3,16 +3,16 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Arteterapia y Cáncer | Sanación a Través del Arte',
-  description: 'Cómo la arteterapia ayuda a pacientes con cáncer a procesar emociones, reducir estrés y encontrar bienestar durante el tratamiento oncológico.',
-  keywords: ['arteterapia cáncer', 'terapia arte cáncer', 'arteterapia oncología', 'sanación cáncer', 'bienestar emocional cáncer', 'terapia creativa oncológica'],
+  title: 'Arte como terapia y Cáncer | Sanación a Través del Arte',
+  description: 'Cómo el arte como terapia ayuda a pacientes con cáncer a procesar emociones, reducir estrés y encontrar bienestar durante el tratamiento oncológico.',
+  keywords: ['arte como terapia cáncer', 'terapia arte cáncer', 'arte como terapia oncología', 'sanación cáncer', 'bienestar emocional cáncer', 'terapia creativa oncológica'],
   alternates: {
     canonical: '/blog/arteterapia-cancer',
   },
   openGraph: {
     type: 'article',
-    title: 'Arteterapia y Cáncer | Sanación a Través del Arte | ColorMe',
-    description: 'Cómo la arteterapia ayuda a pacientes con cáncer a procesar emociones, reducir estrés y encontrar bienestar.',
+    title: 'Arte como terapia y Cáncer | Sanación a Través del Arte | ColorMe',
+    description: 'Cómo el arte como terapia ayuda a pacientes con cáncer a procesar emociones, reducir estrés y encontrar bienestar.',
     url: '/blog/arteterapia-cancer',
   },
   robots: {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Arteterapia y Cáncer: Sanación a Través del Arte',
-  description: 'Cómo la arteterapia ayuda a pacientes con cáncer a procesar emociones, reducir estrés y encontrar bienestar.',
+  headline: 'Arte como terapia y Cáncer: Sanación a Través del Arte',
+  description: 'Cómo el arte como terapia ayuda a pacientes con cáncer a procesar emociones, reducir estrés y encontrar bienestar.',
   author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/arteterapia-cancer`,

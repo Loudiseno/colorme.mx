@@ -267,7 +267,7 @@ export const weeklyReports: WeeklyReport[] = [
     week: '2026-07-20',
     wins: [
       'TikTok fue el motor de la semana: +138 seguidores y 3,120 interacciones (el mejor dato del mes).',
-      'Instagram cruzó los 1,287 seguidores; los reels de ejercicios de arteterapia siguen siendo lo más guardado.',
+      'Instagram cruzó los 1,287 seguidores; los reels de ejercicios de arte como terapia siguen siendo lo más guardado.',
       'Payhip llegó a 10 ventas y $1,500 MXN, su mejor semana.',
     ],
     misses: [

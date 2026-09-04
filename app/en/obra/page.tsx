@@ -109,7 +109,7 @@ export default function ObraEnPage() {
           <div className="order-1 md:order-3 max-w-sm w-full md:ml-auto">
             <Image
               src="/lourdes-perez-artista-arteterapeuta-colorme.jpeg"
-              alt="Lourdes Pérez, art-as-therapy practitioner, grief counselor and artist behind the work at ColorMe"
+              alt="Lourdes Pérez, grief counselor, art-as-therapy practitioner and artist behind the work at ColorMe"
               width={1000}
               height={1250}
               sizes="(max-width: 768px) 90vw, 384px"

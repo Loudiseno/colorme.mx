@@ -3,16 +3,16 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Arteterapia y Autismo: Cuando el Arte Abre Caminos',
-  description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse, regularse y expresarse sin depender exclusivamente del lenguaje verbal.',
-  keywords: ['arteterapia autismo', 'TEA arteterapia', 'terapia arte niños autismo', 'comunicación no verbal autismo', 'regulación emocional autismo'],
+  title: 'Arte como terapia y Autismo: Cuando el Arte Abre Caminos',
+  description: 'El arte como terapia ofrece a niños con autismo un espacio donde pueden comunicarse, regularse y expresarse sin depender exclusivamente del lenguaje verbal.',
+  keywords: ['arte como terapia autismo', 'TEA arte como terapia', 'terapia arte niños autismo', 'comunicación no verbal autismo', 'regulación emocional autismo'],
   alternates: {
     canonical: '/blog/arteterapia-y-autismo',
   },
   openGraph: {
     type: 'article',
-    title: 'Arteterapia y Autismo: Cuando el Arte Abre Caminos | ColorMe',
-    description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
+    title: 'Arte como terapia y Autismo: Cuando el Arte Abre Caminos | ColorMe',
+    description: 'El arte como terapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
     url: '/blog/arteterapia-y-autismo',
   },
   robots: {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Arteterapia y autismo: cuando el arte abre caminos que las palabras no encuentran',
-  description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
+  headline: 'Arte como terapia y autismo: cuando el arte abre caminos que las palabras no encuentran',
+  description: 'El arte como terapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
   author: { '@type': 'Person', name: 'Lourdes Pérez', url: siteConfig.url },
   publisher: { '@type': 'Organization', name: 'ColorMe', url: siteConfig.url },
   mainEntityOfPage: `${siteConfig.url}/blog/arteterapia-y-autismo`,

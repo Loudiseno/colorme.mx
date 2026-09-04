@@ -9,7 +9,7 @@ export const faqs = [
   {
     question: '¿Qué tipo de sesiones ofreces?',
     answer:
-      'Ofrezco sesiones individuales, grupales y talleres tanto de arteterapia como de tanatología, adaptadas a tus necesidades. Todas las sesiones están disponibles en modalidad presencial u online.',
+      'Ofrezco sesiones individuales, grupales y talleres de tanatología y de arte como terapia, adaptadas a tus necesidades. Todas las sesiones están disponibles en modalidad presencial u online.',
   },
   {
     question: '¿Qué duración tienen las sesiones?',
@@ -17,19 +17,19 @@ export const faqs = [
       'La primera sesión de orientación es gratuita y dura 30 minutos. Las sesiones individuales regulares tienen una duración de 50 minutos. Para sesiones grupales o talleres, la duración se define según los objetivos específicos del grupo.',
   },
   {
-    question: '¿Tengo que elegir entre arteterapia o tanatología?',
+    question: '¿Tengo que elegir entre tanatología o arte como terapia?',
     answer:
       'No necesariamente. Algunas personas trabajan solo desde el arte, otras desde la palabra. En muchos casos, integramos ambas formas de acompañamiento. Lo decidimos juntos en función de lo que estás atravesando y lo que mejor se adapte a tu proceso.',
   },
   {
-    question: '¿Necesito saber dibujar para hacer arteterapia?',
+    question: '¿Necesito saber dibujar para hacer arte como terapia?',
     answer:
-      'No, no necesitas ninguna experiencia artística previa. En arteterapia no importa el resultado estético ni la técnica. Se trata de expresar y explorar emociones, no de crear arte "bonito". El foco está en lo que surge durante el proceso, no en cómo se ve el resultado.',
+      'No, no necesitas ninguna experiencia artística previa. En arte como terapia no importa el resultado estético ni la técnica. Se trata de expresar y explorar emociones, no de crear arte "bonito". El foco está en lo que surge durante el proceso, no en cómo se ve el resultado.',
   },
   {
     question: '¿Puedo combinar estas sesiones con otras terapias o tratamientos médicos?',
     answer:
-      'Sí, absolutamente. Este espacio es complementario, no excluyente. La arteterapia y la tanatología pueden ser un gran apoyo junto a procesos médicos, psicológicos o espirituales que ya estés llevando.',
+      'Sí, absolutamente. Este espacio es complementario, no excluyente. La tanatología y el arte como terapia pueden ser un gran apoyo junto a procesos médicos, psicológicos o espirituales que ya estés llevando.',
   },
   {
     question: '¿Cómo puedo agendar una sesión?',

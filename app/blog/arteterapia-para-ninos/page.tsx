@@ -21,18 +21,18 @@ export default function ArticuloArteterapiaNinos() {
 
         {/* Header */}
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTETERAPIA</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">ARTE COMO TERAPIA</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Arteterapia para niños: de 3 a 12 años
+            Arte como terapia para niños: de 3 a 12 años
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/arteterapia-ninos.webp"
-            alt="Arteterapia para niños - Expresión emocional a través del arte"
+            alt="Arte como terapia para niños - Expresión emocional a través del arte"
             width={300}
             height={200}
             priority
@@ -44,20 +44,20 @@ export default function ArticuloArteterapiaNinos() {
         <div className="prose prose-lg max-w-none text-black/80">
 
           <p>
-            La <strong>arteterapia para niños</strong> es una herramienta poderosa que les permite expresar lo que sienten cuando las palabras no alcanzan. Pintar, modelar, dibujar o crear collages se convierte en un lenguaje propio donde pueden mostrar su mundo interno de manera natural. A diferencia de los adultos, los niños no necesitan &quot;aprender&quot; a crear: ya lo hacen de forma instintiva. Lo que necesitan es un espacio seguro donde esa creatividad sea respetada y acompañada.
+            La <strong>arte como terapia para niños</strong> es una herramienta poderosa que les permite expresar lo que sienten cuando las palabras no alcanzan. Pintar, modelar, dibujar o crear collages se convierte en un lenguaje propio donde pueden mostrar su mundo interno de manera natural. A diferencia de los adultos, los niños no necesitan &quot;aprender&quot; a crear: ya lo hacen de forma instintiva. Lo que necesitan es un espacio seguro donde esa creatividad sea respetada y acompañada.
           </p>
 
           <p>
-            En este artículo te comparto cómo funciona la arteterapia según la edad de tu hijo, qué actividades son más adecuadas para cada etapa y cómo puede beneficiarle en su desarrollo emocional.
+            En este artículo te comparto cómo funciona el arte como terapia según la edad de tu hijo, qué actividades son más adecuadas para cada etapa y cómo puede beneficiarle en su desarrollo emocional.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Por qué funciona la arteterapia en niños?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Por qué funciona el arte como terapia en niños?</h2>
 
           <p>
             Los niños no siempre pueden decir con palabras lo que les pasa. A veces ni siquiera saben exactamente qué sienten. Pero cuando les das un papel y colores, o plastilina, o materiales para construir algo, pueden mostrar lo que está dentro de ellos sin necesidad de explicarlo verbalmente.
           </p>
 
-          <p>La arteterapia funciona porque:</p>
+          <p>El arte como terapia funciona porque:</p>
           <ul className="list-disc pl-6 space-y-2">
             <li><strong>Es su lenguaje natural.</strong> El juego y la creación son las formas principales de expresión en la infancia.</li>
             <li><strong>No hay forma correcta o incorrecta de hacerlo.</strong> No se evalúa el resultado estético, lo que elimina la presión de &quot;hacerlo bien&quot;.</li>
@@ -65,7 +65,7 @@ export default function ArticuloArteterapiaNinos() {
             <li><strong>El proceso importa más que el producto.</strong> Lo terapéutico está en crear, no en lo que queda al final.</li>
           </ul>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Beneficios observados en niños que participan en arteterapia</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Beneficios observados en niños que participan en arte como terapia</h3>
           <ul className="list-disc pl-6 space-y-2">
             <li>Mayor capacidad para identificar y expresar emociones.</li>
             <li>Reducción de ansiedad y estrés.</li>
@@ -75,10 +75,10 @@ export default function ArticuloArteterapiaNinos() {
             <li>Fortalecimiento de la motricidad fina.</li>
           </ul>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia de 3 a 5 años: el mundo del juego y los sentidos</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arte como terapia de 3 a 5 años: el mundo del juego y los sentidos</h2>
 
           <p>
-            En esta etapa, los niños están descubriendo el mundo a través de sus sentidos. Tocar, oler, ver, mezclar: todo es exploración. La arteterapia en preescolares se basa principalmente en experiencias sensoriales y en el juego libre.
+            En esta etapa, los niños están descubriendo el mundo a través de sus sentidos. Tocar, oler, ver, mezclar: todo es exploración. El arte como terapia en preescolares se basa principalmente en experiencias sensoriales y en el juego libre.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Características de esta edad</h3>
@@ -103,7 +103,7 @@ export default function ArticuloArteterapiaNinos() {
           <p><strong>Garabateo libre con música</strong></p>
           <p>Poner música y dejar que dibujen lo que la música les hace sentir. No hay instrucciones, solo movimiento y color.</p>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que trabaja la arteterapia a esta edad</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que trabaja el arte como terapia a esta edad</h3>
           <ul className="list-disc pl-6 space-y-2">
             <li>Expresión emocional básica (alegría, enojo, miedo).</li>
             <li>Tolerancia a la frustración (cuando algo no sale como esperaban).</li>
@@ -111,10 +111,10 @@ export default function ArticuloArteterapiaNinos() {
             <li>Habilidades sociales básicas (compartir materiales, respetar turnos).</li>
           </ul>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia de 6 a 8 años: explorando emociones con más detalle</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arte como terapia de 6 a 8 años: explorando emociones con más detalle</h2>
 
           <p>
-            Entre los 6 y los 8 años, los niños ya tienen mayor dominio del lenguaje y pueden empezar a reflexionar sobre lo que crean. La arteterapia en esta etapa combina la creación libre con momentos de conversación sobre las obras.
+            Entre los 6 y los 8 años, los niños ya tienen mayor dominio del lenguaje y pueden empezar a reflexionar sobre lo que crean. El arte como terapia en esta etapa combina la creación libre con momentos de conversación sobre las obras.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Características de esta edad</h3>
@@ -142,7 +142,7 @@ export default function ArticuloArteterapiaNinos() {
           <p><strong>Cajas de emociones</strong></p>
           <p>Decorar una caja que represente una emoción específica (la caja de la tristeza, la caja de la alegría, la caja de los miedos) y decidir qué cosas simbólicas irían dentro.</p>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que trabaja la arteterapia a esta edad</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que trabaja el arte como terapia a esta edad</h3>
           <ul className="list-disc pl-6 space-y-2">
             <li>Identificación y vocabulario emocional.</li>
             <li>Autoconcepto y autoestima.</li>
@@ -150,10 +150,10 @@ export default function ArticuloArteterapiaNinos() {
             <li>Resolución de conflictos a través de la reflexión.</li>
           </ul>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia de 9 a 12 años: mayor complejidad y autoconocimiento</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arte como terapia de 9 a 12 años: mayor complejidad y autoconocimiento</h2>
 
           <p>
-            En esta etapa, los niños están desarrollando un pensamiento más complejo y una identidad más definida. La arteterapia puede abordar temas más profundos y utilizar técnicas que requieren mayor planificación.
+            En esta etapa, los niños están desarrollando un pensamiento más complejo y una identidad más definida. El arte como terapia puede abordar temas más profundos y utilizar técnicas que requieren mayor planificación.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Características de esta edad</h3>
@@ -181,7 +181,7 @@ export default function ArticuloArteterapiaNinos() {
           <p><strong>Creación de historias ilustradas</strong></p>
           <p>Inventar una historia con personajes y situaciones que, aunque ficticias, pueden reflejar aspectos de su propia vida. Ilustrarla les permite procesar mientras crean.</p>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que trabaja la arteterapia a esta edad</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Lo que trabaja el arte como terapia a esta edad</h3>
           <ul className="list-disc pl-6 space-y-2">
             <li>Autoconocimiento más profundo.</li>
             <li>Gestión de la presión social y académica.</li>
@@ -190,10 +190,10 @@ export default function ArticuloArteterapiaNinos() {
             <li>Expresión de temas que pueden resultarles difíciles de hablar.</li>
           </ul>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Señales de que tu hijo podría beneficiarse de arteterapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Señales de que tu hijo podría beneficiarse de arte como terapia</h2>
 
           <p>
-            La arteterapia no es solo para niños con diagnósticos específicos. Cualquier niño puede beneficiarse de un espacio creativo y seguro. Sin embargo, hay situaciones donde puede ser especialmente útil:
+            El arte como terapia no es solo para niños con diagnósticos específicos. Cualquier niño puede beneficiarse de un espacio creativo y seguro. Sin embargo, hay situaciones donde puede ser especialmente útil:
           </p>
 
           <ul className="list-disc pl-6 space-y-2">
@@ -206,22 +206,22 @@ export default function ArticuloArteterapiaNinos() {
             <li><strong>Niños con dificultades en el lenguaje o la comunicación.</strong> Retrasos del lenguaje, timidez extrema, trastorno del espectro autista, TDAH.</li>
           </ul>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que no es arteterapia</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Lo que no es arte como terapia</h2>
 
-          <p>Es importante distinguir la arteterapia de otras actividades artísticas:</p>
+          <p>Es importante distinguir el arte como terapia de otras actividades artísticas:</p>
 
           <p><strong>No es una clase de arte.</strong></p>
-          <p>En una clase de arte el objetivo es aprender técnicas y mejorar habilidades artísticas. En arteterapia el objetivo es la expresión emocional y el bienestar. No se evalúa ni se corrige el resultado.</p>
+          <p>En una clase de arte el objetivo es aprender técnicas y mejorar habilidades artísticas. En arte como terapia el objetivo es la expresión emocional y el bienestar. No se evalúa ni se corrige el resultado.</p>
 
           <p><strong>No es manualidades con fines decorativos.</strong></p>
-          <p>Aunque las actividades pueden parecer similares, en arteterapia el foco está en el proceso interno del niño, no en producir algo bonito para llevar a casa.</p>
+          <p>Aunque las actividades pueden parecer similares, en arte como terapia el foco está en el proceso interno del niño, no en producir algo bonito para llevar a casa.</p>
 
           <p><strong>No es solo &quot;pintar para relajarse&quot;.</strong></p>
-          <p>La arteterapia implica un acompañamiento profesional que observa, contiene y facilita el proceso. No es lo mismo que darle materiales a un niño y dejarlo crear solo.</p>
+          <p>El arte como terapia implica un acompañamiento profesional que observa, contiene y facilita el proceso. No es lo mismo que darle materiales a un niño y dejarlo crear solo.</p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">El papel de los padres en el proceso</h2>
 
-          <p>Si decides que tu hijo participe en sesiones de arteterapia, tu rol como padre o madre es importante:</p>
+          <p>Si decides que tu hijo participe en sesiones de arte como terapia, tu rol como padre o madre es importante:</p>
 
           <p><strong>Respeta el proceso.</strong></p>
           <p>Es posible que tu hijo no quiera contarte todo lo que hizo o habló en la sesión. Eso está bien. El espacio terapéutico es suyo.</p>
@@ -240,17 +240,17 @@ export default function ArticuloArteterapiaNinos() {
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas frecuentes</h2>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">¿A partir de qué edad puede un niño participar en arteterapia?</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">¿A partir de qué edad puede un niño participar en arte como terapia?</h3>
           <p>
             Generalmente desde los 3 años, cuando ya tienen cierta capacidad de manipular materiales y de sostener la atención por períodos breves. Las sesiones se adaptan a la edad y las necesidades de cada niño.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">¿Mi hijo necesita saber dibujar o tener habilidades artísticas?</h3>
           <p>
-            No. La arteterapia no requiere ninguna habilidad previa. Lo importante es el proceso de crear, no el resultado. Cualquier niño puede participar independientemente de su nivel artístico.
+            No. El arte como terapia no requiere ninguna habilidad previa. Lo importante es el proceso de crear, no el resultado. Cualquier niño puede participar independientemente de su nivel artístico.
           </p>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">¿Cuánto dura una sesión de arteterapia para niños?</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">¿Cuánto dura una sesión de arte como terapia para niños?</h3>
           <p>
             Depende de la edad. Para niños pequeños (3-5 años) las sesiones suelen durar entre 30 y 45 minutos. Para niños mayores (6-12 años) pueden extenderse a 50 o 60 minutos.
           </p>
@@ -260,9 +260,9 @@ export default function ArticuloArteterapiaNinos() {
             No hay un número fijo. Depende de lo que se esté trabajando, de las necesidades del niño y de su ritmo. Algunos niños se benefician de procesos cortos; otros necesitan acompañamiento más prolongado.
           </p>
 
-          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">¿Puedo hacer arteterapia con mi hijo en casa?</h3>
+          <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">¿Puedo hacer arte como terapia con mi hijo en casa?</h3>
           <p>
-            Puedes ofrecer actividades artísticas en casa que favorezcan la expresión emocional, pero la arteterapia como tal requiere de un profesional formado que sepa acompañar el proceso. Las actividades en casa son un complemento, no un sustituto.
+            Puedes ofrecer actividades artísticas en casa que favorezcan la expresión emocional, pero el arte como terapia requiere de un profesional formado que sepa acompañar el proceso. Las actividades en casa son un complemento, no un sustituto.
           </p>
 
           <p className="italic text-black/60 mt-8">

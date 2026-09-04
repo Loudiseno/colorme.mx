@@ -6,27 +6,27 @@ import { ArrowLeft, Check, Calendar } from 'lucide-react'
 import { siteConfig, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Arteterapia en México - Terapia a través del Arte',
+  title: 'Arte como terapia en México - Terapia a través del Arte',
   description:
-    'Acompañamiento emocional a través del arte para explorar y procesar emociones. Sesiones de arteterapia individuales y grupales, presenciales y online en México.',
+    'Acompañamiento emocional a través del arte para explorar y procesar emociones. Sesiones de arte como terapia individuales y grupales, presenciales y online en México.',
   keywords: [
-    'arteterapia',
+    'arte como terapia',
     'arte terapia México',
     'terapia con arte',
-    'arteterapia online',
-    'arteterapia presencial',
+    'arte como terapia online',
+    'arte como terapia presencial',
     'expresión artística terapéutica',
     'terapia creativa',
-    'arteterapia para duelo',
-    'arteterapia para ansiedad',
+    'arte como terapia para duelo',
+    'arte como terapia para ansiedad',
   ],
   alternates: {
     canonical: '/arteterapia-mexico',
   },
   openGraph: {
-    title: 'Arteterapia en México - Exploración a través del Arte',
+    title: 'Arte como terapia en México - Exploración a través del Arte',
     description:
-      'Explora y procesa emociones a través del arte. Sesiones de arteterapia individuales y grupales.',
+      'Explora y procesa emociones a través del arte. Sesiones de arte como terapia individuales y grupales.',
     url: `${siteConfig.url}/arteterapia-mexico`,
   },
 }
@@ -80,7 +80,7 @@ const helpsWith = [
 
 export default function ArteterapiaPage() {
   const serviceSchema = generateServiceSchema({
-    name: 'Arteterapia',
+    name: 'Arte como terapia',
     description:
       'Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones. Sesiones individuales y grupales.',
     url: `${siteConfig.url}/arteterapia-mexico`,
@@ -88,7 +88,7 @@ export default function ArteterapiaPage() {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Inicio', url: siteConfig.url },
-    { name: 'Arteterapia', url: `${siteConfig.url}/arteterapia-mexico` },
+    { name: 'Arte como terapia', url: `${siteConfig.url}/arteterapia-mexico` },
   ])
 
   return (
@@ -112,7 +112,7 @@ export default function ArteterapiaPage() {
               <div className="inline-block bg-[#B2F7EF] px-8 py-3 rounded-xl mb-6 relative">
                 <div className="absolute inset-0 bg-[#B2F7EF] opacity-40 rounded-xl blur-sm"></div>
                 <h1 className="text-4xl md:text-5xl text-black relative z-10">
-                  Arteterapia
+                  Arte como terapia
                 </h1>
               </div>
               <p className="text-lg text-black leading-relaxed mb-4">
@@ -143,7 +143,7 @@ export default function ArteterapiaPage() {
             <div className="relative flex justify-center">
               <Image
                 src="/arteterapia-sesion-creativa.webp"
-                alt="Sesión de arteterapia - expresión creativa"
+                alt="Sesión de arte como terapia - expresión creativa"
                 width={400}
                 height={400}
                 priority
@@ -168,7 +168,7 @@ export default function ArteterapiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              ¿En qué situaciones puede ayudarte la Arteterapia?
+              ¿En qué situaciones puede ayudarte el arte como terapia?
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -200,7 +200,7 @@ export default function ArteterapiaPage() {
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8 text-center">
-            Beneficios de la Arteterapia
+            Beneficios del arte como terapia
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {benefits.map((benefit, index) => (
@@ -269,13 +269,13 @@ export default function ArteterapiaPage() {
       <section className="py-8 md:py-10 bg-[#B2F7EF]/5">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-8">
-            ¿Qué sucede durante una sesión de Arteterapia?
+            ¿Qué sucede durante una sesión de Arte como terapia?
           </h2>
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
               <h3 className="text-xl text-black mb-2">1. Llamada inicial</h3>
               <p className="text-black/70">
-                Conversación en línea gratuita de 30 minutos para conocernos, escucharte y comprender tu momento y explorar si la arteterapia es el camino adecuado para tu proceso.
+                Conversación en línea gratuita de 30 minutos para conocernos, escucharte y comprender tu momento y explorar si el arte como terapia es el camino adecuado para tu proceso.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
@@ -287,7 +287,7 @@ export default function ArteterapiaPage() {
             <div className="bg-white rounded-2xl p-6 border border-[#B2F7EF]">
               <h3 className="text-xl text-black mb-2">3. Sesiones personalizadas</h3>
               <p className="text-black/70">
-                Espacios de 50 minutos creados para ti, donde mediante dinámicas de arteterapia podrás expresar, explorar y trabajar tu proceso de manera acompañada.
+                Espacios de 50 minutos creados para ti, donde mediante dinámicas de arte como terapia podrás expresar, explorar y trabajar tu proceso de manera acompañada.
               </p>
             </div>
           </div>

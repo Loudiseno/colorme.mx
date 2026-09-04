@@ -33,7 +33,7 @@ const galeriaDiario = [
 export default function TiendaPage() {
   return (
     <>
-      <PageHero title="Productos" subtitle="Recursos creados desde la tanatología y la arteterapia para acompañarte en tu proceso, a tu ritmo y desde donde estés." />
+      <PageHero title="Productos" subtitle="Recursos creados desde la tanatología y el arte como terapia para acompañarte en tu proceso, a tu ritmo y desde donde estés." />
 
       {/* Diario: El arte de habitar tu duelo */}
       <section className="py-6 md:py-8 bg-[#B2F7EF]/5" id="diario">
@@ -73,7 +73,7 @@ export default function TiendaPage() {
                   </p>
                   <p>
                     Creado por Lou Pérez, una especialista certificada en tanatología, cuya
-                    formación integra técnicas de arteterapia y otros enfoques aprendidos en
+                    formación integra técnicas de arte como terapia y otros enfoques aprendidos en
                     México, Bali, Tailandia, Malasia, India y Reino Unido, este diario te guía en cuatro
                     momentos: reconocer lo que perdiste, dar espacio a tus emociones, reorganizar
                     tu vida e integrar lo vivido como parte de tu historia.

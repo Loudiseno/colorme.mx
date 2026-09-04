@@ -279,37 +279,37 @@ const arteterapiaArticles = [
   {
     href: '/blog/que-es-la-arteterapia-beneficios',
     image: '/arteterapia.webp',
-    title: '¿Qué es la arteterapia?',
+    title: '¿Qué es el arte como terapia?',
     description: 'Descubre cómo el arte ayuda a explorar y procesar emociones.',
-    alt: '¿Qué es la arteterapia?',
+    alt: '¿Qué es el arte como terapia?',
   },
   {
     href: '/blog/arteterapia-cancer',
     image: '/cancer-y-arteterapia.webp',
-    title: 'Arteterapia para pacientes con cáncer',
+    title: 'Arte como terapia para pacientes con cáncer',
     description: 'El arte como acompañamiento durante el tratamiento oncológico.',
-    alt: 'Arteterapia para pacientes con cáncer',
+    alt: 'Arte como terapia para pacientes con cáncer',
   },
   {
     href: '/blog/arteterapia-para-ninos',
     image: '/arteterapia-ninos.webp',
-    title: 'Arteterapia para niños: por edades',
-    description: 'Descubre cómo la arteterapia ayuda a los niños a expresar emociones según su edad.',
-    alt: 'Arteterapia para niños',
+    title: 'Arte como terapia para niños: por edades',
+    description: 'Descubre cómo el arte como terapia ayuda a los niños a expresar emociones según su edad.',
+    alt: 'Arte como terapia para niños',
   },
   {
     href: '/blog/arteterapia-para-la-ansiedad',
     image: '/arteterapia-ansiedad.webp',
-    title: 'Arteterapia para la ansiedad',
+    title: 'Arte como terapia para la ansiedad',
     description: 'Cómo el arte puede ayudarte a manejar la ansiedad cuando las palabras no alcanzan.',
-    alt: 'Arteterapia para la ansiedad',
+    alt: 'Arte como terapia para la ansiedad',
   },
   {
     href: '/blog/ejercicios-arteterapia',
     image: '/ejercicios-arteterapia.webp',
-    title: '10 ejercicios de arteterapia que puedes hacer en casa',
+    title: '10 ejercicios de arte como terapia que puedes hacer en casa',
     description: 'Ejercicios creativos para procesar emociones sin necesidad de saber dibujar.',
-    alt: 'Ejercicios de arteterapia',
+    alt: 'Ejercicios de arte como terapia',
   },
   {
     href: '/blog/beneficios-arte',
@@ -335,23 +335,23 @@ const arteterapiaArticles = [
   {
     href: '/blog/diferencia-psicologia-arteterapia',
     image: '/diferencia-psicologia-y-arteterapia.jpeg',
-    title: 'Diferencia entre psicología y arteterapia',
+    title: 'Diferencia entre psicología y arte como terapia',
     description: '¿Cuál es la diferencia y cuál necesitas?',
-    alt: 'Diferencia psicología y arteterapia',
+    alt: 'Diferencia psicología y arte como terapia',
   },
   {
     href: '/blog/arteterapia-y-autismo',
     image: '/mari-final.jpeg',
-    title: 'Arteterapia y autismo: cuando el arte abre caminos',
-    description: 'La arteterapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
-    alt: 'Arteterapia y autismo',
+    title: 'Arte como terapia y autismo: cuando el arte abre caminos',
+    description: 'El arte como terapia ofrece a niños con autismo un espacio donde pueden comunicarse y expresarse.',
+    alt: 'Arte como terapia y autismo',
   },
   {
     href: '/blog/diferencia-arteterapia-clase-de-arte',
     image: '/anagaby-final.jpeg',
-    title: 'Diferencia entre arteterapia y clase de arte',
+    title: 'Diferencia entre arte como terapia y clase de arte',
     description: 'No es lo mismo crear para aprender que crear para sanar. Conoce las diferencias clave.',
-    alt: 'Diferencia arteterapia y clase de arte',
+    alt: 'Diferencia arte como terapia y clase de arte',
   },
 ]
 
@@ -524,7 +524,7 @@ export default function BlogPage() {
             <h1 className="text-4xl md:text-5xl text-black relative z-10">Entre líneas</h1>
           </div>
           <p className="text-black/70 max-w-2xl mx-auto text-base leading-relaxed">
-            Reflexiones, información y herramientas sobre arteterapia, tanatología y el universo de las emociones. Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad a través del arte, los colores y rituales del mundo.
+            Reflexiones, información y herramientas sobre tanatología, arte como terapia y el universo de las emociones. Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad a través del arte, los colores y rituales del mundo.
           </p>
         </div>
 
@@ -589,7 +589,7 @@ export default function BlogPage() {
         ) : (
           <>
             <BlogCarousel title="Tanatología" articles={tanatologiaArticles} />
-            <BlogCarousel title="Arteterapia" articles={arteterapiaArticles} />
+            <BlogCarousel title="Arte como terapia" articles={arteterapiaArticles} />
             <BlogCarousel title="Emociones" articles={emocionesArticles} />
             <BlogCarousel title="Rituales y colores del mundo" articles={ritualesArticles} />
           </>

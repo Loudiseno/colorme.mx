@@ -21,18 +21,18 @@ export default function ArticuloArteterapiaCancer() {
 
         {/* Header */}
         <header className="mb-8">
-          <span className="text-xs text-black font-medium uppercase tracking-wider">Arteterapia</span>
+          <span className="text-xs text-black font-medium uppercase tracking-wider">Arte como terapia</span>
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
-            Arteterapia para pacientes con cáncer: cómo el arte puede acompañarte durante el tratamiento
+            Arte como terapia para pacientes con cáncer: cómo el arte puede acompañarte durante el tratamiento
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta, Tanatóloga y Sobreviviente de Cáncer</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga, Arteterapeuta y Sobreviviente de Cáncer</p>
         </header>
 
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden">
           <Image
             src="/cancer-y-arteterapia.webp"
-            alt="Grupo de arteterapia trabajando juntos"
+            alt="Grupo de arte como terapia trabajando juntos"
             width={300}
             height={200}
             priority
@@ -89,11 +89,11 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            La arteterapia ofrece un espacio diferente. Un lugar donde no tienes que explicar nada, donde no tienes que ser fuerte ni optimista, donde puedes depositar todo lo que sientes sin necesidad de ordenarlo primero. Los colores, las formas, las texturas pueden contener lo que las palabras no pueden.
+            El arte como terapia ofrece un espacio diferente. Un lugar donde no tienes que explicar nada, donde no tienes que ser fuerte ni optimista, donde puedes depositar todo lo que sientes sin necesidad de ordenarlo primero. Los colores, las formas, las texturas pueden contener lo que las palabras no pueden.
           </p>
 
           <p>
-            No es magia. No es una cura milagrosa. Pero la evidencia científica muestra que la arteterapia puede tener efectos reales y medibles en pacientes oncológicos:
+            No es magia. No es una cura milagrosa. Pero la evidencia científica muestra que el arte como terapia puede tener efectos reales y medibles en pacientes oncológicos:
           </p>
 
           <ul className="list-disc ml-6 space-y-2">
@@ -105,7 +105,7 @@ export default function ArticuloArteterapiaCancer() {
           </ul>
 
           <p>
-            Un metanálisis publicado en la revista <em>Support Care Cancer</em> revisó múltiples estudios y concluyó que la arteterapia puede tener efectos beneficiosos significativos en el bienestar psicológico de los pacientes con cáncer. No reemplaza el tratamiento médico, pero lo complementa de una manera profunda.
+            Un metanálisis publicado en la revista <em>Support Care Cancer</em> revisó múltiples estudios y concluyó que el arte como terapia puede tener efectos beneficiosos significativos en el bienestar psicológico de los pacientes con cáncer. No reemplaza el tratamiento médico, pero lo complementa de una manera profunda.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Mi historia: del diagnóstico al arte, del arte a la sanación</h2>
@@ -146,10 +146,10 @@ export default function ArticuloArteterapiaCancer() {
             Me formé como arteterapeuta y como tanatóloga, complementando mi práctica con estudios en diversos países: México, donde me certifiqué en la Universidad Iberoamericana; Bali, donde profundicé en prácticas artísticas ancestrales y técnicas de respiración consciente; India, donde me certifiqué en Reiki en Rishikesh; Tailandia, donde exploré el arte meditativo; y Malasia, donde aprendí sobre fusiones artísticas asiáticas. Escribí un libro, <em>Indeleble</em>, donde cuento mi historia con la esperanza de que pueda resonar con otros. Y hoy, cada vez que me siento frente a alguien que está atravesando un diagnóstico oncológico, lo hago desde un lugar de profunda comprensión. Porque yo estuve ahí. Sé lo que se siente.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿En qué momento del proceso oncológico puede ayudar la arteterapia?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿En qué momento del proceso oncológico puede ayudar el arte como terapia?</h2>
 
           <p>
-            Una de las cosas hermosas de la arteterapia es que puede adaptarse a cualquier etapa del camino. No hay un momento "correcto" para empezar.
+            Una de las cosas hermosas del arte como terapia es que puede adaptarse a cualquier etapa del camino. No hay un momento "correcto" para empezar.
           </p>
 
           <h3 className="text-xl md:text-2xl text-black font-semibold mt-6 mb-3">Durante el diagnóstico</h3>
@@ -159,7 +159,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            En esta etapa, la arteterapia puede ayudarte a:
+            En esta etapa, el arte como terapia puede ayudarte a:
           </p>
 
           <ul className="list-disc ml-6 space-y-2">
@@ -176,7 +176,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            En esta etapa, la arteterapia puede:
+            En esta etapa, el arte como terapia puede:
           </p>
 
           <ul className="list-disc ml-6 space-y-2">
@@ -194,7 +194,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            En esta etapa, la arteterapia puede ayudarte a:
+            En esta etapa, el arte como terapia puede ayudarte a:
           </p>
 
           <ul className="list-disc ml-6 space-y-2">
@@ -212,10 +212,10 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            La arteterapia también puede ser un recurso valioso para los cuidadores, un lugar donde pueden atender sus propias emociones sin sentir que le están quitando espacio al paciente.
+            El arte como terapia también puede ser un recurso valioso para los cuidadores, un lugar donde pueden atender sus propias emociones sin sentir que le están quitando espacio al paciente.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cómo son las sesiones de arteterapia oncológica?</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">¿Cómo son las sesiones de arte como terapia oncológica?</h2>
 
           <p>
             Quiero que sepas exactamente qué esperar, porque entiendo que cuando estás lidiando con un tratamiento de cáncer, la incertidumbre es lo último que necesitas.
@@ -242,10 +242,10 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            <strong>La primera consulta es gratuita.</strong> Dura 30 minutos y es simplemente para conocernos, para que me cuentes qué estás atravesando y para explorar juntos si la arteterapia puede ser útil para ti. Sin presión, sin compromiso.
+            <strong>La primera consulta es gratuita.</strong> Dura 30 minutos y es simplemente para conocernos, para que me cuentes qué estás atravesando y para explorar juntos si el arte como terapia puede ser útil para ti. Sin presión, sin compromiso.
           </p>
 
-          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Arteterapia y tanatología: un enfoque integral</h2>
+          <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Tanatología y arte como terapia: un enfoque integral</h2>
 
           <p>
             Hay algo de lo que no se habla mucho, pero que está presente en la experiencia de casi todos los pacientes con cáncer: la confrontación con la propia mortalidad.
@@ -256,7 +256,7 @@ export default function ArticuloArteterapiaCancer() {
           </p>
 
           <p>
-            Por eso, en mi práctica, integro la arteterapia con la tanatología cuando es necesario. La tanatología es la disciplina que acompaña los procesos de pérdida, duelo y muerte. No se trata de rendirse ni de perder la esperanza; se trata de poder mirar esos miedos de frente, de darles espacio, de no cargar con ellos en silencio.
+            Por eso, en mi práctica, integro el arte como terapia con la tanatología cuando es necesario. La tanatología es la disciplina que acompaña los procesos de pérdida, duelo y muerte. No se trata de rendirse ni de perder la esperanza; se trata de poder mirar esos miedos de frente, de darles espacio, de no cargar con ellos en silencio.
           </p>
 
           <p>
@@ -270,8 +270,8 @@ export default function ArticuloArteterapiaCancer() {
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">Preguntas que quizás te estás haciendo</h2>
 
           <p>
-            <strong>Estoy muy cansado/a por el tratamiento. ¿Puedo hacer arteterapia así?</strong><br />
-            Absolutamente. La arteterapia no requiere energía física. Podemos trabajar desde tu cama, con materiales mínimos, en sesiones más cortas si es necesario. He acompañado a personas en sus días más difíciles de tratamiento, y siempre encontramos una forma de crear que respete tu estado.
+            <strong>Estoy muy cansado/a por el tratamiento. ¿Puedo hacer arte como terapia así?</strong><br />
+            Absolutamente. El arte como terapia no requiere energía física. Podemos trabajar desde tu cama, con materiales mínimos, en sesiones más cortas si es necesario. He acompañado a personas en sus días más difíciles de tratamiento, y siempre encontramos una forma de crear que respete tu estado.
           </p>
 
           <p>
@@ -286,12 +286,12 @@ export default function ArticuloArteterapiaCancer() {
 
           <p>
             <strong>Tengo miedo de que si empiezo a expresar lo que siento, no pueda parar.</strong><br />
-            Entiendo ese miedo. Muchas personas lo tienen. Pero la arteterapia es un espacio contenido, con un principio y un fin, donde yo te acompaño. No estás solo/a con tus emociones. Y mi experiencia me ha enseñado que expresar lo que sentimos no nos destruye; lo que nos destruye es cargarlo en silencio.
+            Entiendo ese miedo. Muchas personas lo tienen. Pero el arte como terapia es un espacio contenido, con un principio y un fin, donde yo te acompaño. No estás solo/a con tus emociones. Y mi experiencia me ha enseñado que expresar lo que sentimos no nos destruye; lo que nos destruye es cargarlo en silencio.
           </p>
 
           <p>
             <strong>¿Es lo mismo que los talleres de manualidades que hacen en algunos hospitales?</strong><br />
-            No exactamente. Los talleres de manualidades pueden ser relajantes y valiosos, pero la arteterapia es un proceso terapéutico guiado por un profesional capacitado. Vamos más allá de la actividad: exploramos lo que surge, hacemos conexiones, profundizamos. Es la diferencia entre pintar para distraerte y pintar para sanar.
+            No exactamente. Los talleres de manualidades pueden ser relajantes y valiosos, pero el arte como terapia es un proceso terapéutico guiado por un profesional capacitado. Vamos más allá de la actividad: exploramos lo que surge, hacemos conexiones, profundizamos. Es la diferencia entre pintar para distraerte y pintar para sanar.
           </p>
 
           <p>
@@ -304,7 +304,7 @@ export default function ArticuloArteterapiaCancer() {
         <div className="mt-16 p-8 bg-[#B2F7EF]/10 rounded-2xl border border-[#B2F7EF] text-center">
           <h3 className="text-2xl text-black mb-4 font-semibold">No tienes que atravesar esto solo/a</h3>
           <p className="text-black/70 mb-6 max-w-xl mx-auto">
-            Sé lo aislante que puede sentirse un diagnóstico de cáncer. La arteterapia puede darte un lugar donde depositar todo lo que sientes, un lenguaje para lo que no tiene palabras.
+            Sé lo aislante que puede sentirse un diagnóstico de cáncer. El arte como terapia puede darte un lugar donde depositar todo lo que sientes, un lenguaje para lo que no tiene palabras.
           </p>
           <a
             href={siteConfig.calendly}
@@ -319,7 +319,7 @@ export default function ArticuloArteterapiaCancer() {
         {/* Author */}
         <div className="mt-12 pt-8 border-t border-black/10">
           <p className="text-black/60 text-sm italic">
-            Lourdes es arteterapeuta, tanatóloga, diseñadora, fotógrafa y sobreviviente de cáncer. Su experiencia personal con la enfermedad la llevó a dedicarse a acompañar a otras personas en sus procesos de sanación. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble", un testimonio de transformación y resiliencia donde comparte su historia de atravesar el cáncer y reconstruirse a través del arte.
+            Lourdes es tanatóloga, arteterapeuta, diseñadora, fotógrafa y sobreviviente de cáncer. Su experiencia personal con la enfermedad la llevó a dedicarse a acompañar a otras personas en sus procesos de sanación. Su formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido. Es autora de "Indeleble", un testimonio de transformación y resiliencia donde comparte su historia de atravesar el cáncer y reconstruirse a través del arte.
           </p>
         </div>
 

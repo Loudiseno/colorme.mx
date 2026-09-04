@@ -344,11 +344,11 @@ export default function TanatologiaPage() {
       <section className="py-8 md:py-10 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl text-black mb-6">
-            Tanatología y arteterapia: un enfoque integrador
+            Tanatología y arte como terapia: un enfoque integrador
           </h2>
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              En muchos casos, combino la tanatología con la arteterapia para ofrecer
+              En muchos casos, combino la tanatología con el arte como terapia para ofrecer
               un acompañamiento más completo. El arte puede ser una herramienta poderosa
               para expresar emociones que a veces son difíciles de poner en palabras.
             </p>
@@ -363,7 +363,7 @@ export default function TanatologiaPage() {
               href="/arteterapia-mexico"
               className="text-black hover:text-black/70 transition-colors font-medium inline-flex items-center gap-2"
             >
-              Conoce más sobre arteterapia
+              Conoce más sobre arte como terapia
               <span>→</span>
             </Link>
           </div>

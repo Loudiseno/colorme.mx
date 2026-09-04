@@ -31,8 +31,8 @@ const socialLinks = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Arteterapia y Tanatología | Acompañamiento Emocional | ColorMe',
-  description: 'Acompañamiento emocional con arteterapia y tanatología para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
+  title: 'Tanatología y Arte como terapia | Acompañamiento Emocional | ColorMe',
+  description: 'Acompañamiento emocional con tanatología y arte como terapia para sanar duelos, transitar cambios y gestionar emociones. Sesión de primera gratis.',
   alternates: {
     canonical: '/',
   },
@@ -57,14 +57,14 @@ export default function HomePage() {
             {/* Left: Practice Introduction */}
             <div className="flex flex-col justify-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
-                Arteterapia y Tanatología
+                Tanatología y Arte como terapia
               </h1>
               <p className="text-lg md:text-xl text-black/60 tracking-widest mb-6">
                 CREA.SIENTE.TRANSFORMA
               </p>
               <div className="space-y-4 text-black/70 leading-relaxed mb-8">
                 <p>
-                  ColorMe es un espacio de acompañamiento profesional para procesos de duelo, pérdida, reconexión y transformación personal a través de arteterapia y/o tanatología con enfoque somático.
+                  ColorMe es un espacio de acompañamiento profesional para procesos de duelo, pérdida, reconexión y transformación personal a través de arte como terapia y/o tanatología con enfoque somático.
                 </p>
               </div>
               <div>
@@ -86,7 +86,7 @@ export default function HomePage() {
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-6">
                     <Image
                       src="/lou-arteterapeuta-tanatologa-mexico.webp"
-                      alt="Lou - Arteterapeuta y Tanatóloga certificada en México"
+                      alt="Lou - Tanatóloga y Arteterapeuta certificada en México"
                       width={600}
                       height={450}
                       priority
@@ -101,7 +101,7 @@ export default function HomePage() {
                       </h2>
                     </div>
                     <p className="text-black font-bold mb-4">
-                      Arteterapeuta, tanatóloga, diseñadora, artista y sobreviviente de cáncer.
+                      Tanatóloga, arteterapeuta, diseñadora, artista y sobreviviente de cáncer.
                     </p>
                     <p className="text-black/70 leading-relaxed">
                       La creatividad siempre fue mi forma de conectar con el mundo. Mis propias pérdidas me llevaron a acompañar a otros en sus procesos de cambio y transformación, desde la escucha, el arte o la combinación de ambas. Mi formación integra técnicas de México, Bali, Tailandia, Malasia, India y Reino Unido.
@@ -127,19 +127,19 @@ export default function HomePage() {
       <section className="pt-2 pb-10 md:pt-3 md:pb-12 bg-[#B2F7EF]/5" id="servicios">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Arteterapia */}
+            {/* Arte como terapia */}
             <div className="bg-white rounded-2xl p-8 border border-[#B2F7EF] flex flex-col items-center text-center">
               <div className="relative w-40 h-40 mb-4">
                 <Image
                   src="/arteterapia-sesion-creativa.webp"
-                  alt="Sesión de arteterapia - expresión creativa"
+                  alt="Sesión de arte como terapia - expresión creativa"
                   width={160}
                   height={160}
                   className="object-contain"
                 />
               </div>
               <h2 className="text-3xl md:text-4xl text-black mb-4">
-                Arteterapia
+                Arte como terapia
               </h2>
               <p className="text-black/70 leading-relaxed mb-6">
                 Acompañamiento emocional a través del arte para expresar, comprender y transformar emociones, sin buscar resultados estéticos ni requerir experiencia artística.
@@ -300,7 +300,7 @@ export default function HomePage() {
                 El duelo no se supera. Se habita.
               </p>
               <p className="text-sm text-black/60 mb-4 text-center leading-snug">
-                Diario guiado de duelo y transformación (arteterapia y tanatología)
+                Diario guiado de duelo y transformación (tanatología y arte como terapia)
               </p>
               <ul className="space-y-2 mb-6 flex-1">
                 <li className="flex items-start gap-2 text-black/70 text-sm leading-snug">

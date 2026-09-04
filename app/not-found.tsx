@@ -10,7 +10,7 @@ export default function NotFound() {
         </h2>
         <p className="text-black/70 mb-8 leading-relaxed">
           Lo sentimos, la página que buscas no existe o fue movida.
-          Te invitamos a explorar nuestros servicios de arteterapia y tanatología.
+          Te invitamos a explorar nuestros servicios de tanatología y arte como terapia.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
@@ -23,7 +23,7 @@ export default function NotFound() {
             href="/arteterapia-mexico"
             className="inline-block border border-black/20 text-black px-8 py-3 rounded-full font-medium hover:bg-black/5 transition-colors"
           >
-            Conocer Arteterapia
+            Conocer Arte como terapia
           </Link>
         </div>
       </div>

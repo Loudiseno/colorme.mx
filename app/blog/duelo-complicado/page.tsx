@@ -23,7 +23,7 @@ export default function ArticuloDueloComplicado() {
           <h1 className="text-3xl md:text-5xl text-black mt-3 mb-6 leading-tight font-semibold">
             Duelo complicado: qué es y cuándo buscar ayuda
           </h1>
-          <p className="text-black/60 italic">Por Lourdes Pérez | Arteterapeuta y Tanatóloga</p>
+          <p className="text-black/60 italic">Por Lourdes Pérez | Tanatóloga y Arteterapeuta</p>
         </header>
 
         <div className="mb-12 rounded-2xl overflow-hidden">
@@ -192,7 +192,7 @@ export default function ArticuloDueloComplicado() {
           </p>
 
           <p>
-            <strong>Arteterapia.</strong> Para muchas personas, el arte ofrece una forma de expresar lo que las palabras no pueden. Puede ser especialmente útil cuando el duelo se ha estancado.
+            <strong>Arte como terapia.</strong> Para muchas personas, el arte ofrece una forma de expresar lo que las palabras no pueden. Puede ser especialmente útil cuando el duelo se ha estancado.
           </p>
 
           <h2 className="text-2xl md:text-3xl text-black font-semibold mt-8 mb-4">No tienes que hacerlo solo</h2>

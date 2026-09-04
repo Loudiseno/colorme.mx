@@ -8,10 +8,10 @@ const featuredArticles = [
   {
     href: '/blog/arteterapia-cancer',
     image: '/cancer-y-arteterapia.webp',
-    alt: 'Arteterapia para pacientes con cáncer',
-    title: 'Arteterapia para pacientes con cáncer: cómo el arte puede acompañarte durante el tratamiento',
+    alt: 'Arte como terapia para pacientes con cáncer',
+    title: 'Arte como terapia para pacientes con cáncer: cómo el arte puede acompañarte durante el tratamiento',
     description: 'El arte como herramienta de acompañamiento emocional durante el tratamiento oncológico.',
-    category: 'Arteterapia'
+    category: 'Arte como terapia'
   },
   {
     href: '/blog/duelo-perdida',
@@ -41,7 +41,7 @@ export default function BlogSection() {
             <h2 className="text-4xl md:text-5xl text-black relative z-10">Entre líneas</h2>
           </div>
           <p className="text-black/70 max-w-2xl mx-auto text-base leading-relaxed">
-            Reflexiones, información y herramientas sobre arteterapia, tanatología y el universo de las emociones. Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad a través del arte, los colores y rituales del mundo.
+            Reflexiones, información y herramientas sobre tanatología, arte como terapia y el universo de las emociones. Un lugar para explorar la vida, la pérdida, el autodescubrimiento y la creatividad a través del arte, los colores y rituales del mundo.
           </p>
         </div>
 
