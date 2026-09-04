@@ -191,7 +191,7 @@ export default function ArteterapiaPage() {
             ))}
           </div>
           <p className="max-w-3xl mx-auto mt-8 text-sm text-black/50 leading-relaxed text-center">
-            Este acompañamiento no constituye un tratamiento médico ni una intervención clínica, no realiza diagnósticos y no sustituye la atención psicológica o psiquiátrica.
+            Este acompañamiento no es un tratamiento médico ni una intervención clínica, no realiza diagnósticos y no sustituye la atención psicológica o psiquiátrica.
           </p>
         </div>
       </section>

@@ -40,7 +40,7 @@ const faqs = [
   {
     question: 'Is this a clinical or diagnostic treatment?',
     answer:
-      'No. This support does not constitute a medical treatment or a clinical intervention, does not provide diagnoses and does not replace psychological or psychiatric care. I do not carry out mental health disorder assessments, standardised psychological testing or prescribe medication.',
+      'No. This support is not a medical treatment or a clinical intervention, does not provide diagnoses and does not replace psychological or psychiatric care. I do not carry out mental health disorder assessments, standardised psychological testing or prescribe medication.',
   },
 ]
 
