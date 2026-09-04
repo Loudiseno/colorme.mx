@@ -59,8 +59,8 @@ export default function EnHomePage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-black mb-4">
                 Grief Counseling &amp; Art as Therapy
               </h1>
-              <p className="text-lg md:text-xl text-black/60 tracking-widest mb-6">
-                CREATE.FEEL.TRANSFORM
+              <p className="text-lg md:text-xl text-black/60 tracking-wide mb-6">
+                Feel, create and transform.
               </p>
               <div className="space-y-4 text-black/70 leading-relaxed mb-8">
                 <p>
