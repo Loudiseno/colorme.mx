@@ -1,15 +1,14 @@
 # Lo que NO se sube a Vercel en cada despliegue.
 #
-# Estos archivos siguen en el repositorio y en el historial de git, no se
-# borran: solo dejan de viajar en cada despliegue. Eso reduce el consumo de
-# Deployment Storage sin perder nada.
+# Next.js solo sirve lo que esta dentro de public/. Cualquier imagen que
+# quede en la raiz del repositorio no es accesible desde el sitio, pero sin
+# estas reglas viajaria en cada despliegue y consumiria almacenamiento.
 #
-# Si alguna imagen del sitio dejara de aparecer, se quita su linea de aqui.
+# Si en el futuro subes imagenes por error a la raiz, estas lineas evitan
+# que vuelvan a pesar. Para que una imagen se vea en el sitio tiene que
+# estar en public/.
 
-# --- Imagenes originales que quedaron en la raiz -------------------------
-# Son las versiones sin optimizar de las portadas del blog. Las que el sitio
-# usa viven en public/ con el nombre en minusculas y guiones. Al estar fuera
-# de public/ estas nunca se sirvieron: eran 27 MB muertos por despliegue.
+# Imagenes sueltas en la raiz
 /*.jpeg
 /*.jpg
 /*.png
@@ -17,23 +16,9 @@
 /*.JPG
 /*.JPEG
 
-# --- Borradores en markdown de la raiz ----------------------------------
-# Los articulos publicados viven en app/blog/. Estos son los borradores.
+# Borradores en markdown en la raiz (los articulos viven en app/blog/)
 /*.md
 !/README.md
 
-# --- Restos de la mudanza desde WordPress -------------------------------
-# WordPress generaba una copia de cada imagen por cada tamano. Ninguna de
-# estas esta referenciada en el sitio.
-public/*-[0-9][0-9][0-9]x[0-9][0-9][0-9].*
-public/*-[0-9][0-9][0-9][0-9]x[0-9][0-9][0-9].*
-public/*-[0-9][0-9][0-9]x[0-9][0-9][0-9][0-9].*
-public/*-[0-9][0-9][0-9][0-9]x[0-9][0-9][0-9][0-9].*
-public/AdobeStock_*
-
-# --- Archivos sueltos sin uso en el sitio -------------------------------
-public/clientess-fotos.JPG
-public/El arte de habitar tu duelo_portada.jpg
-
-# --- Basura de compilacion ----------------------------------------------
+# Cache de compilacion
 tsconfig.tsbuildinfo
