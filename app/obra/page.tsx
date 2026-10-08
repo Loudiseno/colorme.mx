@@ -73,6 +73,9 @@ const exposicionesColectivas = [
     date: '2026',
     note: 'Obra: La niña que dejó de creer en los cuentos de hadas',
     detail: {
+      image: '/la-nina-que-dejo-de-creer-en-los-cuentos-de-hadas.jpeg',
+      imageAlt:
+        'La niña que dejó de creer en los cuentos de hadas: autorretrato en técnica mixta sobre las páginas de un libro de cuentos, con una mariposa sobre los ojos',
       statement: [
         'La niña que dejó de creer en los cuentos de hadas · 40 × 50 cm · Técnica mixta: acuarela, acrílicos metálicos y detalles de hoja de oro sobre libro.',
         'Autorretrato creado sobre las páginas de un viejo libro de cuentos de hadas que, como los cuentos, alguna vez creí que tendría un final feliz.',

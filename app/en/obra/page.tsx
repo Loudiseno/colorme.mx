@@ -73,6 +73,9 @@ const groupExhibitions = [
     date: '2026',
     note: 'Work: The Girl Who Stopped Believing in Fairy Tales',
     detail: {
+      image: '/la-nina-que-dejo-de-creer-en-los-cuentos-de-hadas.jpeg',
+      imageAlt:
+        'The Girl Who Stopped Believing in Fairy Tales: mixed-media self-portrait on the pages of a fairy tale book, with a butterfly over the eyes',
       statement: [
         'The Girl Who Stopped Believing in Fairy Tales · 40 × 50 cm · Mixed media: watercolour, metallic acrylics and gold leaf details on a book.',
         'Self-portrait created on the pages of an old fairy tale book which, like fairy tales, I once believed would have a happy ending.',
