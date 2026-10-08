@@ -72,6 +72,8 @@ const exposicionesColectivas = [
     place: 'Fox Yard Studio, Stowmarket, Reino Unido',
     date: '2026',
     note: 'Obra: La niña que dejó de creer en los cuentos de hadas',
+    poster: '/la-nina-que-dejo-de-creer-en-los-cuentos-de-hadas.jpeg',
+    posterAlt: 'La niña que dejó de creer en los cuentos de hadas, autorretrato en técnica mixta sobre libro',
     detail: {
       image: '/la-nina-que-dejo-de-creer-en-los-cuentos-de-hadas.jpeg',
       imageAlt:

@@ -72,6 +72,8 @@ const groupExhibitions = [
     place: 'Fox Yard Studio, Stowmarket, UK',
     date: '2026',
     note: 'Work: The Girl Who Stopped Believing in Fairy Tales',
+    poster: '/la-nina-que-dejo-de-creer-en-los-cuentos-de-hadas.jpeg',
+    posterAlt: 'The Girl Who Stopped Believing in Fairy Tales, mixed-media self-portrait on a book',
     detail: {
       image: '/la-nina-que-dejo-de-creer-en-los-cuentos-de-hadas.jpeg',
       imageAlt:
