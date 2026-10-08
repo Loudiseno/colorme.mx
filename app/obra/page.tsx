@@ -67,6 +67,19 @@ const exposicionesColectivas = [
     note: 'Reconstrucción de viviendas en México por el sismo',
   },
   { title: 'Se la echó al plato', place: 'FloraLounge, CDMX', date: '2018' },
+  {
+    title: 'Grief and Loss',
+    place: 'Fox Yard Studio, Stowmarket, Reino Unido',
+    date: '2026',
+    note: 'Obra: La niña que dejó de creer en los cuentos de hadas',
+    detail: {
+      statement: [
+        'La niña que dejó de creer en los cuentos de hadas · 40 × 50 cm · Técnica mixta: acuarela, acrílicos metálicos y detalles de hoja de oro sobre libro.',
+        'Autorretrato creado sobre las páginas de un viejo libro de cuentos de hadas que, como los cuentos, alguna vez creí que tendría un final feliz.',
+        'La mariposa sobre mis ojos representa la transformación: cómo la pérdida puede oscurecer todo a nuestro alrededor y cambiar la manera en que nos vemos a nosotros mismos y al mundo, y al mismo tiempo darnos alas para volar hacia un lugar nuevo y descubrir otra forma de vivir la vida.',
+      ],
+    },
+  },
 ]
 
 const reconocimientos = [

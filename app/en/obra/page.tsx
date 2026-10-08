@@ -67,6 +67,19 @@ const groupExhibitions = [
     note: 'Rebuilding homes in Mexico after the earthquake',
   },
   { title: 'Se la echó al plato', place: 'FloraLounge, Mexico City', date: '2018' },
+  {
+    title: 'Grief and Loss',
+    place: 'Fox Yard Studio, Stowmarket, UK',
+    date: '2026',
+    note: 'Work: The Girl Who Stopped Believing in Fairy Tales',
+    detail: {
+      statement: [
+        'The Girl Who Stopped Believing in Fairy Tales · 40 × 50 cm · Mixed media: watercolour, metallic acrylics and gold leaf details on a book.',
+        'Self-portrait created on the pages of an old fairy tale book which, like fairy tales, I once believed would have a happy ending.',
+        'The butterfly over my eyes represents transformation: how loss can darken everything around us and change the way we see ourselves and the world, while at the same time giving us wings to fly somewhere new and discover a different way of experiencing life.',
+      ],
+    },
+  },
 ]
 
 const awards = [
