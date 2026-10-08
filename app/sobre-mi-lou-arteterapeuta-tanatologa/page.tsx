@@ -113,6 +113,7 @@ export default function SobreMi() {
               Pláticas y talleres:
             </p>
             <ul>
+              <li><strong>FUCAM</strong>, 2026 — «Pintar Octubre»<br />Sesión grupal de arte como terapia para pacientes y familiares, con motivo del mes de sensibilización sobre el cáncer de mama.</li>
               <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos»<br />Plática de tanatología y sesión grupal de arte como terapia para pacientes y familiares.</li>
               <li><strong>Oncoayuda A.C.</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
               <li><strong>Toca Fest Week de Grupo Surman</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>

@@ -113,6 +113,7 @@ export default function EnAboutPage() {
               Talks and workshops:
             </p>
             <ul>
+              <li><strong>FUCAM</strong>, 2026 — &laquo;Pintar Octubre&raquo; (Painting October)<br />Group art-as-therapy session for patients and their families, for Breast Cancer Awareness Month.</li>
               <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths)<br />Grief counseling talk and group art-as-therapy session for patients and their families.</li>
               <li><strong>Oncoayuda A.C.</strong>, 2021 — Testimonial and cancer awareness talk.</li>
               <li><strong>Toca Fest Week, Grupo Surman</strong>, 2021 — Testimonial and cancer awareness talk.</li>
