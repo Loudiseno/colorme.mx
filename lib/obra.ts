@@ -323,6 +323,15 @@ export const pinturas: ObraPiece[] = [
 
 export const mixtas: ObraPiece[] = [
   {
+    src: '/la-nina-que-dejo-de-creer-en-los-cuentos-de-hadas.jpeg',
+    alt: 'La niña que dejó de creer en los cuentos de hadas, autorretrato en técnica mixta sobre libro de cuentos de hadas, obra de Lourdes Pérez',
+    altEn: 'The Girl Who Stopped Believing in Fairy Tales, mixed-media self-portrait on a fairy tale book, artwork by Lourdes Pérez',
+    caption:
+      'La niña que dejó de creer en los cuentos de hadas\nTécnica mixta: acuarela, acrílicos metálicos y detalles de hoja de oro sobre libro\n40 × 50 cm',
+    captionEn:
+      'The Girl Who Stopped Believing in Fairy Tales\nMixed media: watercolour, metallic acrylics and gold leaf details on a book\n40 × 50 cm',
+  },
+  {
     src: '/tecnica-mixta-obra-cup-of-tea.jpeg',
     alt: 'Cup of Tea, técnica mixta sobre mapa original de la Ordnance Survey (Reino Unido), obra de Lourdes Pérez',
     altEn: 'Cup of Tea, mixed media on an original Ordnance Survey map (United Kingdom), artwork by Lourdes Pérez',
