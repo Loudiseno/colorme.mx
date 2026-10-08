@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Plus } from 'lucide-react'
 import ExpoDetail, { type ExpoDetailData } from './ExpoDetail'
+import { newestFirst } from '@/lib/newestFirst'
 
 export interface ExhibitionItem {
   title: string
@@ -33,7 +34,7 @@ export default function ExhibitionList({ items, closeLabel }: ExhibitionListProp
   return (
     <>
       <div className="border-b border-black/10">
-        {items.map((item, i) => {
+        {newestFirst(items).map((item, i) => {
           const content = (
             <>
               <div className="min-w-0 text-left">

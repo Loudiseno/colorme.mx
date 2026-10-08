@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ImageIcon } from 'lucide-react'
 import type { Expo } from '@/lib/exposiciones'
+import { newestFirst } from '@/lib/newestFirst'
 
 interface ExpoCardsProps {
   items: Expo[]
@@ -22,7 +23,7 @@ const defaultLabels = {
 export default function ExpoCards({ items, basePath, labels = defaultLabels }: ExpoCardsProps) {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-      {items.map((item) => (
+      {newestFirst(items).map((item) => (
         <Link key={item.slug} href={`${basePath}/${item.slug}`} className="group block">
           <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#F8F6F3]">
             {item.cover ? (
