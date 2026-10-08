@@ -113,7 +113,7 @@ export default function SobreMi() {
               Pláticas y talleres:
             </p>
             <ul>
-              <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos». Plática de tanatología: duelo, pérdidas y acompañamiento, para pacientes y familias, y sesión grupal de arte como terapia.</li>
+              <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos»<br />Plática de tanatología y sesión grupal de arte como terapia para pacientes y familiares.</li>
               <li><strong>Oncoayuda A.C.</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
               <li><strong>Toca Fest Week de Grupo Surman</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
               <li><strong>UFC Gym México</strong>, 2019 — Plática testimonial y de concientización sobre el cáncer.</li>

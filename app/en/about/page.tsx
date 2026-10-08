@@ -113,7 +113,7 @@ export default function EnAboutPage() {
               Talks and workshops:
             </p>
             <ul>
-              <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths). Grief counseling talk on grief, loss and accompaniment, for patients and families, plus a group art-as-therapy session.</li>
+              <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths)<br />Grief counseling talk and group art-as-therapy session for patients and their families.</li>
               <li><strong>Oncoayuda A.C.</strong>, 2021 — Testimonial and cancer awareness talk.</li>
               <li><strong>Toca Fest Week, Grupo Surman</strong>, 2021 — Testimonial and cancer awareness talk.</li>
               <li><strong>UFC Gym México</strong>, 2019 — Testimonial and cancer awareness talk.</li>
