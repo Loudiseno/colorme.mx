@@ -14,7 +14,7 @@ interface Article {
 
 const tanatologiaArticles: Article[] = [
   { href: '/blog/duelo-perdida', image: '/el-duelo.webp', alt: '¿Qué es el duelo?', title: '¿Qué es el duelo?', description: 'El proceso de pérdida, los duelos invisibles y cómo atravesarlos.' },
-  { href: '/blog/cuanto-dura-el-duelo', image: '/cuanto-dura-el-duelo.webp', alt: '¿Cuánto dura el duelo?', title: '¿Cuánto dura el duelo?', description: 'No hay tiempos fijos, cada proceso es único.' },
+  { href: '/blog/cuanto-dura-el-duelo', image: '/cuanto_dura_un_duelo_final.jpeg', alt: '¿Cuánto dura el duelo?', title: '¿Cuánto dura el duelo?', description: 'No hay tiempos fijos, cada proceso es único.' },
   { href: '/blog/duelo-complicado', image: '/duelo-complicado.webp', alt: 'Duelo complicado', title: 'Duelo complicado', description: 'Cuando el duelo se estanca y necesita atención especial.' },
   { href: '/blog/duelo-anticipado', image: '/duelo-anticipado.webp', alt: 'Duelo anticipado', title: 'Duelo anticipado', description: 'Cuando el duelo comienza antes de la pérdida.' },
   { href: '/blog/duelo-perinatal', image: '/duelo-perinatal.webp', alt: 'Duelo perinatal', title: 'Duelo perinatal', description: 'Acompañamiento en la pérdida gestacional.' },
