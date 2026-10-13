@@ -37,7 +37,7 @@ const tanatologiaArticles = [
   },
   {
     href: '/blog/cuanto-dura-el-duelo',
-    image: '/cuanto_dura_un_duelo_final.jpeg',
+    image: '/cuanto-dura-un-duelo.webp',
     title: '¿Cuánto dura el duelo?',
     description: 'No hay fecha de expiración para el duelo, pero el dolor no dura para siempre con la misma intensidad.',
     alt: '¿Cuánto dura el duelo?',
