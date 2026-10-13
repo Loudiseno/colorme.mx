@@ -58,7 +58,7 @@ export const enArticles: EnArticle[] = [
       'grieving process',
       'complicated grief',
     ],
-    image: '/cuanto_dura_un_duelo_final.jpeg',
+    image: '/cuanto-dura-un-duelo.webp',
     imageAlt: 'How long does grief last — the truth about the length of the grieving process',
     datePublished: '2026-07-30',
     readingTime: '6 min read',
