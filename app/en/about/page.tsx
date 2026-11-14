@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
+import RecognitionThumb from '@/components/RecognitionThumb'
 
 export default function EnAboutPage() {
   return (
@@ -113,7 +114,17 @@ export default function EnAboutPage() {
               Talks and workshops:
             </p>
             <ul>
-              <li><strong>FUCAM</strong>, 2026 — &laquo;Pintar Octubre&raquo; (Painting October)<br />Group art-as-therapy session for patients and their families, for Breast Cancer Awareness Month.</li>
+              <li><strong>FUCAM</strong>, 2026 — &laquo;Pintar Octubre&raquo; (Painting October)<br />Group art-as-therapy session for patients and their families, for Breast Cancer Awareness Month.
+                <RecognitionThumb
+                  src="/reconocimiento_taller_Fucam.png"
+                  alt="Certificate of recognition from FUCAM A.C. (Breast Cancer Foundation, Mexico) to Lou Pérez Irigoyen, founder of COLORME, for leading an online art therapy workshop for patients"
+                  caption="Recognition from FUCAM A.C. for the online Art Therapy workshop for patients, 2026."
+                  width={1820}
+                  height={1394}
+                  openLabel="View FUCAM recognition full size"
+                  closeLabel="Close"
+                />
+              </li>
               <li><strong>FUNAET A.C.</strong>, 2025 — &laquo;Cerrando ciclos, abriendo caminos&raquo; (Closing cycles, opening paths)<br />Grief counseling talk and group art-as-therapy session for patients and their families.</li>
               <li><strong>Oncoayuda A.C.</strong>, 2021 — Testimonial and cancer awareness talk.</li>
               <li><strong>Toca Fest Week, Grupo Surman</strong>, 2021 — Testimonial and cancer awareness talk.</li>

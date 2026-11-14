@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar } from 'lucide-react'
 import { siteConfig } from '@/lib/seo'
+import RecognitionThumb from '@/components/RecognitionThumb'
 
 export default function SobreMi() {
   return (
@@ -113,7 +114,17 @@ export default function SobreMi() {
               Pláticas y talleres:
             </p>
             <ul>
-              <li><strong>FUCAM</strong>, 2026 — «Pintar Octubre»<br />Sesión grupal de arte como terapia para pacientes y familiares, con motivo del mes de sensibilización sobre el cáncer de mama.</li>
+              <li><strong>FUCAM</strong>, 2026 — «Pintar Octubre»<br />Sesión grupal de arte como terapia para pacientes y familiares, con motivo del mes de sensibilización sobre el cáncer de mama.
+                <RecognitionThumb
+                  src="/reconocimiento_taller_Fucam.png"
+                  alt="Reconocimiento de FUCAM A.C. (Fundación de Cáncer de Mama) a Lou Pérez Irigoyen, fundadora de COLORME, por impartir el taller en línea de arteterapia para pacientes"
+                  caption="Reconocimiento de FUCAM A.C. por el taller en línea de Arte Terapia para pacientes, 2026."
+                  width={1820}
+                  height={1394}
+                  openLabel="Ver reconocimiento de FUCAM en grande"
+                  closeLabel="Cerrar"
+                />
+              </li>
               <li><strong>FUNAET A.C.</strong>, 2025 — «Cerrando ciclos, abriendo caminos»<br />Plática de tanatología y sesión grupal de arte como terapia para pacientes y familiares.</li>
               <li><strong>Oncoayuda A.C.</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
               <li><strong>Toca Fest Week de Grupo Surman</strong>, 2021 — Plática testimonial y de concientización sobre el cáncer.</li>
